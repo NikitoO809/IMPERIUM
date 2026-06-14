@@ -1,26 +1,268 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────
+   IMPERIUM — Tema "interfaz de videojuego (HUD)"
+   Negro profundo + cian neón + violeta + ámbar de rango.
+   Paneles biselados, marcas de esquina, scanlines.
+   ───────────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #04060a;
+  --foreground: #e8f1f5;
+
+  --brand: #7c5cff;        /* violeta (Discord) */
+  --brand-bright: #9b7bff;
+  --accent: #22e0ff;       /* cian neón HUD */
+  --accent-dim: #0e7c8c;
+  --rank: #ffcf5a;         /* ámbar de rango/oro */
+  --surface: #0a0e16;      /* paneles */
+  --surface-2: #0d1320;
+  --border: #1c2738;
+  --hud-line: rgba(34, 224, 255, 0.55);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand: var(--brand);
+  --color-brand-bright: var(--brand-bright);
+  --color-accent: var(--accent);
+  --color-rank: var(--rank);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --font-title: var(--font-title-imperium);
+  --font-hud: var(--font-hud-imperium);
+  --font-sans: var(--font-sans-imperium);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-imperium), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Capas de fondo ── */
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  background:
+    radial-gradient(55rem 38rem at 12% -8%, rgba(124, 92, 255, 0.30), transparent 60%),
+    radial-gradient(48rem 38rem at 95% 0%, rgba(34, 224, 255, 0.18), transparent 55%),
+    radial-gradient(45rem 45rem at 50% 115%, rgba(124, 92, 255, 0.16), transparent 60%);
+}
+
+/* Rejilla técnica de fondo */
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background-image:
+    linear-gradient(rgba(34, 224, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 224, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 35%, transparent 100%);
+}
+
+/* Líneas de escaneo (CRT) */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.16) 3px,
+    rgba(0, 0, 0, 0) 4px
+  );
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+/* Viñeta para profundidad */
+.vignette {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: radial-gradient(ellipse 120% 100% at 50% 50%, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+/* ── Tipografía utilitaria ── */
+.font-title { font-family: var(--font-title-imperium), sans-serif; }
+.font-hud { font-family: var(--font-hud-imperium), sans-serif; }
+
+.hud-label {
+  font-family: var(--font-hud-imperium), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+}
+
+.text-gradient {
+  background: linear-gradient(110deg, #ffffff 0%, var(--accent) 50%, var(--brand-bright) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-glow-accent { text-shadow: 0 0 18px rgba(34, 224, 255, 0.55); }
+.text-glow-brand { text-shadow: 0 0 22px rgba(124, 92, 255, 0.65); }
+
+/* ── Panel biselado HUD (borde luminoso vía doble capa) ── */
+.bevel {
+  --b: 14px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--b)) 0,
+    100% var(--b),
+    100% 100%,
+    var(--b) 100%,
+    0 calc(100% - var(--b))
+  );
+}
+
+.panel {
+  position: relative;
+  background: var(--border);            /* hace de "borde" */
+  --b: 14px;
+  clip-path: polygon(0 0, calc(100% - var(--b)) 0, 100% var(--b), 100% 100%, var(--b) 100%, 0 calc(100% - var(--b)));
+}
+.panel > .panel-inner {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
+    var(--surface);
+  --b: 13px;
+  clip-path: polygon(0 0, calc(100% - var(--b)) 0, 100% var(--b), 100% 100%, var(--b) 100%, 0 calc(100% - var(--b)));
+}
+
+/* Variante con borde cian activo */
+.panel-accent { background: linear-gradient(135deg, var(--accent), var(--brand)); }
+.panel-accent > .panel-inner { background: var(--surface); }
+
+/* ── Marcas de esquina (corner brackets) ── */
+.corners::before,
+.corners::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--accent);
+  z-index: 2;
+  pointer-events: none;
+}
+.corners::before {
+  top: 7px;
+  left: 7px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+.corners::after {
+  bottom: 7px;
+  right: 7px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+
+/* ── Botón HUD ── */
+.btn-hud {
+  position: relative;
+  --b: 10px;
+  clip-path: polygon(var(--b) 0, 100% 0, calc(100% - var(--b)) 100%, 0 100%);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+  will-change: transform;
+}
+.btn-hud:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 14px 40px -12px rgba(124, 92, 255, 0.9), 0 0 0 1px rgba(155, 123, 255, 0.5);
+}
+.btn-hud:active { transform: translateY(0); }
+
+/* Botón "fantasma" HUD */
+.btn-ghost {
+  --b: 10px;
+  clip-path: polygon(var(--b) 0, 100% 0, calc(100% - var(--b)) 100%, 0 100%);
+  transition: color 0.18s ease, background 0.18s ease;
+}
+
+/* ── Barra de progreso / XP ── */
+.xpbar {
+  height: 7px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+  clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%);
+}
+.xpbar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  box-shadow: 0 0 12px rgba(34, 224, 255, 0.7);
+}
+
+/* ── Hexágono (iconos / rangos) ── */
+.hex {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/* ── Animaciones ── */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float { animation: float 6s ease-in-out infinite; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 224, 255, 0.7); }
+  50% { opacity: 0.5; box-shadow: 0 0 0 6px rgba(34, 224, 255, 0); }
+}
+.live-dot { animation: pulse-dot 1.8s ease-in-out infinite; }
+
+/* Parpadeo "PRESS START" */
+@keyframes blink {
+  0%, 60% { opacity: 1; }
+  61%, 100% { opacity: 0.35; }
+}
+.blink { animation: blink 1.4s steps(1) infinite; }
+
+/* Barrido de luz sobre paneles al pasar el ratón */
+.sweep { position: relative; overflow: hidden; }
+.sweep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(34, 224, 255, 0.12) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+.sweep:hover::after { transform: translateX(120%); }
+
+.lift { transition: transform 0.25s ease; will-change: transform; }
+.lift:hover { transform: translateY(-6px); }
+
+/* Rejilla synthwave que avanza hacia el espectador */
+@keyframes grid-move {
+  from { background-position: 0 0; }
+  to { background-position: 0 60px; }
+}
+.grid-floor { animation: grid-move 1.6s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise, .float, .live-dot, .blink, .lift, .btn-hud, .sweep::after, .grid-floor { animation: none; transition: none; }
 }

@@ -1,0 +1,78 @@
+// Página de una guía concreta: cabecera + pasos interactivos (GuideRunner).
+import Link from "next/link";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { getGuide } from "@/lib/games";
+import { HudLabel, Panel } from "@/components/hud";
+import { GuideRunner } from "@/components/GuideRunner";
+
+export default async function GuidePage({
+  params,
+}: {
+  params: Promise<{ slug: string; guia: string }>;
+}) {
+  const { slug, guia } = await params;
+  const data = await getGuide(slug, guia);
+  if (!data) notFound();
+  const { meta: game, guide, completedStepIds } = data;
+
+  return (
+    <main className="mx-auto max-w-3xl px-4 pt-12 pb-4">
+      <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
+        <Link href="/" className="transition hover:text-accent">Inicio</Link>
+        <span>/</span>
+        <Link href={`/juegos/${game.slug}`} className="transition hover:text-accent">{game.name}</Link>
+        <span>/</span>
+        <Link href={`/juegos/${game.slug}/guias`} className="transition hover:text-accent">Guías</Link>
+        <span>/</span>
+        <span className="text-white/70">{guide.title}</span>
+      </div>
+
+      <HudLabel>{game.name}</HudLabel>
+      <h1 className="mt-3 mb-2 font-title text-2xl font-extrabold tracking-wide text-glow-brand sm:text-3xl">
+        {guide.title}
+      </h1>
+      <p className="mb-6 max-w-xl text-sm text-white/55">{guide.description}</p>
+
+      {/* Introducción de la guía (bloque de contexto de la fuente, no es un paso) */}
+      {(guide.intro || guide.introTitle) && (
+        <Panel corners className="mb-8">
+          <div className="panel-inner p-5">
+            {guide.introTitle && (
+              <h2 className="mb-2 font-title text-lg font-bold text-glow-accent">
+                {guide.introTitle}
+              </h2>
+            )}
+            {guide.intro
+              ?.split("\n\n")
+              .map((para, i) => (
+                <p key={i} className="mt-2 text-sm leading-relaxed text-white/65">
+                  {para}
+                </p>
+              ))}
+            {guide.introImages.length > 0 && (
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {guide.introImages.map((src) => (
+                  <span
+                    key={src}
+                    className="bevel relative block aspect-video overflow-hidden border border-white/10"
+                  >
+                    <Image
+                      src={src}
+                      alt=""
+                      fill
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </Panel>
+      )}
+
+      <GuideRunner steps={guide.steps} initialCompletedIds={completedStepIds} />
+    </main>
+  );
+}
