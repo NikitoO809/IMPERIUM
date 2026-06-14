@@ -1,0 +1,42 @@
+{
+  "slug": "dps-dummy-test",
+  "title": "Sword x Staff DPS Dummy Test",
+  "excerpt": "Cómo usar el Skill Test del juego (se desbloquea en el nivel 40) para comparar habilidades y loadouts. Metodología universal + una prueba de ejemplo específica de Sorcerer hecha por Keripo a nivel 40, con gráfica y conclusiones. Incluye las cuentas de Elemental Mastery (EM de tier Gold = 1.270 = +31,75% de daño según la regla de 40 EM = 1%).",
+  "introTitle": "Se Desbloquea En El Nivel 40",
+  "intro": "El Skill Test del juego es la forma más rápida de comparar habilidades, equipo o loadouts completos sin gastar stamina de contenido real. Se desbloquea en el nivel 40 y te permite probar contra la configuración de equipo rival que elijas, ya sea un solo boss, un solo mob o una mezcla de distintas configuraciones variables.\n\nLa prueba de ejemplo + conclusiones de abajo provienen de las pruebas de Sorcerer de Keripo. La metodología (cómo configurar el Dummy, qué poner en la barra de charms, cómo leer la gráfica) es universal: todas las clases usan el mismo Dummy. Las elecciones de habilidades concretas y los rankings de la sección de Conclusiones Clave aplican a un kit de Sorcerer. Usa la metodología para tu propia clase; no copies los rankings de habilidades si juegas Duelist, Knight o Sage.\n\nDos partes. Primero, cómo usar el Dummy y qué configurar antes de pulsar Start. Segundo, una prueba de ejemplo específica de Sorcerer a nivel 40 con la gráfica y las conclusiones.",
+  "introImages": [],
+  "sections": [
+    {
+      "title": "Configura Primero Tu Barra De Charms",
+      "content": "Configura tu barra de charms antes de pulsar nada. El tier y la selección de charms cambian los resultados más que las estadísticas de daño en bruto. Barra recomendada:\n\n• Elemental Mastery. El mayor multiplicador de daño de la barra de charms. En tier Gold, el charm de Elemental Mastery otorga 1.270 EM, lo que se traduce en +31,75% de daño según la regla estándar de 40 EM = 1% de daño. Esto no es \"escalado elemental plano que vale la pena incluir\": es el protagonista. Ponlo primero.\n\n• Water to Ice. Sigue siendo fuerte en builds de Water de Sorcerer; añade un golpe de daño extra que procea de forma fiable. Buena segunda ranura, pero con charms de tier Gold no supera en escalado a Elemental Mastery.\n\n• Unstable Aura. Pasiva que procea cada turno y se potencia mucho con habilidades de cooldown bajo. Apílala con Water to Ice en una configuración de Water Shot / Water Assault.\n\nWater to Ice y la pasiva de Wind no son excluyentes. Usa ambas junto a Elemental Mastery si tienes las tres en tier Gold.",
+      "images": []
+    },
+    {
+      "title": "Ejecutar La Prueba",
+      "content": "• 1. Ve al Skill Test. Home › Character › Skills.\n\n• 2. Pulsa el botón \"Test\".\n\n• 3. Configura el Dummy. Cambia el desplegable a \"Boss\" y pon 50 rondas, Unlimited HP, low damage. Pulsa \"Start Test\".\n\n• 4. Arma tu loadout. Cambia o edita habilidades y equipo, luego pulsa \"Start Battle\".\n\n• 5. Salta al final del combate. Pulsa el icono ⏭ para avanzar rápido.\n\n• 6. Lee el informe de daño.\n\n• 7. Ejecútala varias veces. \"Retest\" te da nuevos datos de muestra para que una sola tirada con suerte o sin ella no distorsione la lectura. \"Edit Settings\" te permite cambiar el loadout entre tiradas.\n\nEl Dummy usa las estadísticas reales de tu personaje. Lo que tengas equipado es lo que se prueba, así que no hace falta configuración extra del lado del personaje.\n\nConsejo: guarda un loadout dedicado de \"Dummy\". No pruebes con tu loadout de combate real. Guarda un loadout aparte (la palabra \"Test\" está bloqueada, así que llámalo Dummy o similar) con una sola técnica equipada. Ejecuta cada prueba con una habilidad a la vez. Los números de daño quedan limpios y las comparaciones por habilidad son mucho más fáciles de leer que los resultados con loadouts mezclados.",
+      "images": []
+    },
+    {
+      "title": "Leer El Informe",
+      "content": "Ejecuta cada vez tanto la configuración de solo boss como la de grupo de mobs. Distintas habilidades ganan en cada una, y un combate de mazmorra real se parece más a la configuración de mobs que al boss aislado.\n\n• BAvg: Daño promedio contra un solo boss grande a lo largo de 10 tiradas. Las habilidades AoE consiguen golpes extra aquí porque los bosses reciben varios impactos por lanzamiento.\n\n• MAvg: Daño promedio contra el Monster Group 2 (boss + grupo de mobs) a lo largo de 3 tiradas. Más cercano a un combate de mazmorra real donde te enfrentas a mobs más un élite.\n\n• B1–B10 / M1–M3: Muestras de tiradas individuales. La varianza entre tiradas te dice qué habilidades dependen mucho de la RNG.\n\n• Lvl: Tier de rareza de la habilidad con el que se probó la fila. El ranking relativo entre habilidades tiende a mantenerse entre rarezas aunque los números absolutos escalen hacia arriba.",
+      "images": []
+    },
+    {
+      "title": "Prueba De Ejemplo A Nivel 40",
+      "content": "Una prueba de ejemplo a nivel 40 usando el loadout de arriba. Primero la gráfica, debajo las condiciones y luego las conclusiones.\n\nNo copies estos números, copia la forma. Los valores mostrados son resultados de prueba en bruto, no daño calculado teórico. Ejecuta la prueba con tus propias estadísticas y loadout. Las habilidades de muestra están en rareza Legendary; Mythic sube los números absolutos, pero el ranking relativo entre habilidades tiende a mantenerse.",
+      "images": [
+        "https://eog.gg/assets/games/sword-x-staff/guides/dps-dummy-test-sample.webp"
+      ]
+    },
+    {
+      "title": "Conclusiones Clave (Sorcerer)",
+      "content": "Los rankings de abajo son para un kit de Sorcerer. La metodología se generaliza; las elecciones de habilidades concretas no. Si juegas Duelist, Knight o Sage, ejecuta tu propia prueba de Dummy en vez de copiar estos.\n\n• Wind's Delight gana en ambas columnas. Multi-golpe y multi-objetivo, así que encabeza el daño a boss Y el daño a mobs. Lo más parecido a una elección S-tier por defecto para contenido general de Sorcerer.\n\n• Water Assault es la opción de AoE que además funciona contra bosses. Es AoE pero los bosses reciben varios golpes de ella, por eso puntúa alto en ambas configuraciones.\n\n• Water Shot es una especialista de boss en un solo objetivo. Su cooldown cero permite que Unstable Aura y Water to Ice proceen cada turno. BAvg de primer nivel, MAvg casi al fondo porque solo golpea a un objetivo.\n\n• Stonechief Summon es directamente malo. Al fondo tanto en BAvg como en MAvg. Sáltatelo.\n\n• Wind es superior ahora mismo. La combinación de kits multi-golpe y la pasiva de wind lo pone en lo más alto.\n\n• Elemental Mastery es roto de bueno en tier Gold. 1.270 EM = +31,75% de daño. Ponerlo en la barra de charms sube cada fila de la gráfica, no solo una habilidad. Si tu ranking de prueba se ve comprimido, es porque pusiste poco EM.\n\nPerspectiva de Tier 2. Espera que Light tome el control en T2, impulsado por Chain Lightning y una pasiva de lightning que replica la pasiva de wind. Planifica el gasto en charms con eso en mente si estás ahorrando para el siguiente tier.",
+      "images": []
+    },
+    {
+      "title": "Advertencia: El Dummy No Tiene Elemento",
+      "content": "El boss de prueba no tiene elemento, así que el informe de daño ignora cualquier bonus de afinidad elemental que verías contra un objetivo real. Las builds elementales se ven más débiles en el Dummy de lo que en realidad son en contenido. Vale la pena recordarlo al comparar, por ejemplo, un Fire Sorcerer contra un Duelist físico. Usa el Dummy para comparaciones relativas dentro de una sola build, no para números absolutos entre elementos.\n\nNota sobre Elemental Mastery vs Elemental Affinity. La Affinity (el bonus por emparejamiento) es lo que queda anulado en el Dummy. La Elemental Mastery (la estadística de daño plano) no queda anulada: aplica en el Dummy y fuera del Dummy. Así que la cifra de 1.270 EM → +31,75% de daño de arriba es lo que verás de verdad en tu informe de prueba. Los bonus de Affinity por encima de eso solo entran en juego cuando luchas contra un objetivo real con tipo elemental.",
+      "images": []
+    }
+  ]
+}

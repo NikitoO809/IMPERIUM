@@ -1,0 +1,49 @@
+IMG:https://callofdragonsguides.com/wp-content/uploads/2023/09/Frost-Dragon-Guide-Call-of-Dragons.jpg
+---
+## How to defeat Frost Dragon
+
+First, you need to have at least 2 tanks that will taunt the Frost Dragons but that number should be higher, so if your main tank dies, there are others that will be able to replace it. The rest of the players should use ranged units and heroes. So we recommend that you use Syndrion, Ffraegar Nika, and Kinnara.
+When it comes topets, you should use Sand Lizard with Chain Strike Skill. Forartifacts, use Rattle Spear, Goldcrest, or Shadowblade. If you do not have them use any artifact that deals damage and boosts your critical strike.Before you start an attack, if you are an alliance leader or officer you should inform all your members when you will attack and tell them the plan, what to avoid, and how to play.
+The first thing that you have to do in order to defeat Frost Dragons is make sure that you survive as long as you can. The longer you are alive the more damage you will do. So make sure that you and your team survive and keep the troop count as high as possible for at least 5 minutes.
+You need to have a skilled tank that will position Frost Dragons. Tank must pull frost dragons on the opposite side of the attacking team. The reason is that the frost dragon is doing big AOE damage in the direction that he is facing. So when a tank pulls it, you will be able to freely attack it with range units.
+The second skill that Frost Dragons is doing is Icy Prison. You will recognize Icy Prison by the blue circle area that will appear. You have to avoid it. If you get 5 stacks, your troops will be frozen for 3 seconds meaning that you will not be able to move. Also, after 3 seconds, you will explode dealing AOE damage which can be devastating for your raiding team.
+The strongest Frost Dragons skill is Cold Front and you have to be extremely careful when he is casting this skill. You will recognize these skills by a big red circle. So when dragons start casting Cold Front make sure that you go to the wall where you will be safe. Stay there until the cast is over. If you do not leave the red circle you will receive a huge amount of damage that can one-shot you. You can also go extremely close to dragons where you will be safe from Cold Front but you will get hit with his AOE damage. So it is best to run to the wall and stay there.
+There are a few more skills that dragons have but it will be hard to explain them.So it is best that you watch thevideo guide by Hulksden Gamingwhere he explains it extremely well.After watching his video guide you will understand everything that you have to do.
+
+## Frost Dragon Skills in Lair
+
+### Glacial Surge
+Converts all devoured frozen areas into Ice Spheres and spits them on the ground to regenerate new frozen areas. Deals continuous damage to all the enemy Legions exposed. Inflicts a stack of Frost Curse.
+Damage Type: Skill Damage (Magic)Damage Value: 5% ofthe Legion’s maximum Unit Count
+### Winter’s Reckoning
+Soars rapidly and damages all enemy Legions in Lair once. Each stack of Frost Curse increases the targets’ damage taken. All Frost Curse stacks are cleared when the damage is dealt.
+Damage Type: Skill Damage (Magic)Damage Value: 3% of the Legion’s maximum Unit Count
+### Snow Day
+Generates a Frost Storm in Lair and slowly leads it to a random enemy Legion every 2min after entering battle. Deals damage once to the enemy Legion exposed. Inflicts a stack of Frost Curse.
+Damage Type: Skill Damage (Magic)Damage Value: 5% of the Legion’s maximum Unit Count
+### Icy Prison
+Inflicts a stack of Frost Curse to the enemy Legions that take its skill damage.
+Stack Effect: March Speed -3%Inflicts Frozen upon reaching 10 stacks.Frozen: Cannot move for 3sAll Frost Curse stacks are cleared when Frozen ends.
+### Healing Manastone
+When the second stage ends, the Lair produces Healing Manastone. When gathered, it heals a Legion’s lightly wounded units.
+### Primal Strength
+Immune to all debuff effects and impairment effects.
+### Draconic Wings
+Slashes with its mighty wings and damages all enemy Legions in a forward arc once.
+Damage Type: Skill Damage (Magic)Damage Factor: 1,000
+### Absolute Zero
+Exhales a surging jet of flame and damages all enemy Legions in a forward arc once.
+Damage Type: Skill Damage (Magic)Damage Factor: 1,500
+### Leaping Strike
+Leaps into the air and slams the ground and damages all surrounding enemy Legions once.
+Damage Type: Skill Damage (Magic)Damage Factor: 2,000
+### Cold Call
+Summons Ice Lizard in Lair, which will mark the target Legion once in a while and cast Frostburn.
+### Cold Front
+Flies high and spits Freeze while diving toward the ground after a short charge-up. Deals continuous damage to all the enemy Legions nearby. Inflicts a stack of Frost Curse.
+Damage Type: Skill Damage (Magic)Damage Value: 10% of the Legion’s maximum Unit Count
+The Freeze spreads outward and damages all enemy Legions once within the skill effect upon the spread ends.
+Damage Type: Skill Damage (Magic)Damage Value: 35% of the Legion’s maximum Unit Count
+### Creeping Cold
+Devours all frozen areas within Lair and draws them to its position, dealing continuous damage to all the enemy Legions exposed. Inflicts a stack of Frost Curse.
+Damage Type: Skill Damage (Magic)Damage Value: 5% of the Legion’s maximum Unit Count

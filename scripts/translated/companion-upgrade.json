@@ -1,0 +1,45 @@
+{
+  "slug": "companion-upgrade",
+  "title": "Guía de Mejora de Companions de Sword x Staff",
+  "excerpt": "Emparejamiento de estadísticas por clase y prioridad de breakpoints de nivel para mejorar a los Companions. El Knight quiere Block, los DPS quieren Crit Rate, el Sage quiere Accuracy o Healing Boost. El orden universal de mejora (todos a L20, luego los que coinciden con tu clase a L50, después L70 y por último L100) es el mismo para F2P y para mega ballenas. Incluye la ley de estadísticas L20/L50/L70/L100 (el Healing Boost es exclusivo de L100) y la nota del desbloqueo de skin en L60.",
+  "introTitle": "El Mismo Orden de Mejora, en Cualquier Nivel de Gasto",
+  "intro": "Los Companions de Sword x Staff reparten estadísticas en breakpoints fijos (nivel 20, 50, 70, 100), y los breakpoints son predecibles: el Nivel 70 repite la estadística del Nivel 20, y el Nivel 100 repite la estadística del Nivel 50. Empareja las estadísticas con el rasgo de tu clase y el orden de prioridad es idéntico tanto si eres F2P como si eres una mega ballena al máximo. Gastar más no cambia el orden; solo cambia la rapidez con la que lo completas.\n\nUna guía corta y con opinión sobre qué Companions mejorar y hasta dónde. La matemática es la misma sin importar tu gasto: cada cuenta se beneficia del mismo orden de prioridad porque los desbloqueos de estadísticas de los Companions caen en breakpoints fijos que premian la subida de nivel enfocada por encima de repartir.",
+  "introImages": [],
+  "sections": [
+    {
+      "title": "Regla de Oro: Empareja las Estadísticas con tu Clase",
+      "content": "Los Companions que priorices mejorar siempre deben coincidir con las estadísticas de tu clase activa. Prioridad de estadísticas por clase:\n\n• Knight: Block › Crit Rate. Los Companions defensivos son la prioridad. Los Knights escalan con Block, y el techo de Block es difícil de alcanzar solo con el equipo.\n\n• Sorcerer: Crit Rate › Accuracy. Companions ofensivos. El rasgo del Sorcerer ya otorga Accuracy, así que un pequeño extra de los Companions es suficiente; el Crit Rate es la estadística de daño limitante.\n\n• Duelist: Crit Rate › Accuracy. Igual que el Sorcerer. El rasgo del Duelist ya proporciona Crit Rate, así que acumular más desde los Companions lo potencia.\n\n• Sage: Accuracy › Crit Rate (build de DPS / DoT) o Healing Boost (build de sanador). El rasgo del Sage cubre todos los atributos base, así que las elecciones de Companion dependen del rol. Un Sage sanador espera hasta L100 porque el Healing Boost solo se desbloquea ahí.\n\nToca el signo de exclamación de un Companion dentro del juego para confirmar su perfil exacto de estadísticas antes de comprometer materiales de mejora.",
+      "images": []
+    },
+    {
+      "title": "La Ley de Estadísticas (Ofensivo vs Defensivo)",
+      "content": "Cada Companion cae en una de dos categorías. La categoría se identifica únicamente a partir de la estadística de L20.\n\n• Nivel 20: Primer desbloqueo. DMG Boost → Companion ofensivo. DMG Reduce → Companion defensivo. Se repite en L70.\n\n• Nivel 50: Ofensivo: Crit Rate o Accuracy. Defensivo: Block, Crit Resist o Healing Boost (el Healing Boost es exclusivo de L100 -- ver más abajo). Se repite en L100.\n\n• Nivel 60: Desbloqueo de skin. Sin cambio de estadística.\n\n• Nivel 70: Repite la estadística de L20. DMG Boost / DMG Reduce acumulado de nuevo.\n\n• Nivel 100: Repite la estadística de L50. El Healing Boost solo aparece en L100 -- un Companion sanador que detectaste en L50 con una estadística de sabor sanador no entregará el Healing Boost estelar hasta el 100.",
+      "images": []
+    },
+    {
+      "title": "Orden Universal de Mejora",
+      "content": "El mismo orden tanto si eres F2P, gastador ligero o una mega ballena al máximo. La única diferencia es cuánto tarda cada fase.\n\n• Todos a L20. Sin excepciones. Este es el suelo que desbloquea la primera concesión de estadística en cada Companion que posees. El valor marginal de llevar un cuarto Companion a L20 es mayor que empujar a tu principal de L50 a L70.\n\n• Los Companions que coinciden con tu clase a L50. Una vez que el suelo de L20 es universal, empuja a aquellos cuya estadística de L50 coincida con el rasgo de tu clase. Aquí es donde aterriza la estadística relevante para la clase y donde el Companion empieza a aportar de verdad.\n\n• Repite el patrón para L70. Lleva tu plantilla activa hacia L70 para el segundo nivel de estadística ofensiva / defensiva. Este es el largo grindeo intermedio para la mayoría de las cuentas.\n\n• Repite para L100. Punto final de mega ballena. Necesario para las builds de Sage sanador porque el Healing Boost solo se desbloquea aquí.\n\nPor qué las mega ballenas siguen el mismo orden. Incluso si tu punto final es tener a todos en L100, el orden de las operaciones sigue importando porque L20 es una pequeña inversión de material a cambio de una concesión de estadística garantizada en toda la plantilla. Saltarte el suelo de L20 en el camino hacia un único principal en L100 desperdicia la contribución por Companion durante toda la subida. La propia admisión de Maple en el vídeo fuente: \"De todos modos voy a llevar a todos al máximo, nivel 100\", y aun así sigue exactamente este orden.",
+      "images": []
+    },
+    {
+      "title": "Skins y Cosméticos",
+      "content": "Las skins se desbloquean en L60. Sin beneficio de combate. Si un Companion que no usas activamente tiene una skin que quieres, esa es la única razón válida para subirlo más allá de su desbloqueo de estadística de L50 fuera del orden universal. En cualquier otro caso, pasa de L50 y sigue adelante.",
+      "images": []
+    },
+    {
+      "title": "Regalos",
+      "content": "Cada Companion tiene regalos preferidos. Dar el regalo correcto acelera el progreso de vínculo; dar regalos equivocados desperdicia consumibles que podrían haber ido a otro Companion.\n\n• Comprueba antes de regalar. Toca el signo de exclamación en la página de detalle del Companion para ver qué regalos prefiere.\n\n• Acumula los regalos preferidos. Si un Companion prefiere un tipo de regalo que cae con frecuencia, guarda el excedente en lugar de gastarlo en Companions de menor prioridad.\n\n• No regales a Companions que estén fuera de tu orden de mejora. Aplican las mismas reglas de prioridad: regala el suelo de L20 de forma universal y luego concéntrate en los que coinciden con tu clase.",
+      "images": []
+    },
+    {
+      "title": "Errores Comunes",
+      "content": "• Subir un Companion a L100 antes de que el resto llegue a L20. El suelo de L20 se acumula en toda la plantilla. Sube primero el suelo.\n\n• Mejorar Companions ofensivos en un Knight. Los Knights no escalan con Crit Rate ni con DMG Boost como lo hacen las clases de DPS. Quédate con lo defensivo.\n\n• Subir a un Companion de Sage sanador a L70 esperando Healing Boost. El Healing Boost es exclusivo de L100. L70 solo repite la concesión de L20.\n\n• Gastar regalos sin comprobar las preferencias. El signo de exclamación existe por una razón.\n\n• Tratar la etiqueta de \"lazy\" como algo solo de F2P. El orden es idéntico para las ballenas. Seguirlo hace que las ballenas alcancen el punto final de L100 antes, no después.",
+      "images": []
+    },
+    {
+      "title": "La Hoja de Cálculo de Maple",
+      "content": "Maple mantiene una hoja de cálculo que clasifica a cada Companion por su tipo de L20 (ofensivo / defensivo) y su estadística de L50, para que puedas preseleccionar los objetivos de mejora que coinciden con tu clase sin tener que entrar en la página de detalle de cada Companion dentro del juego. Disponible a través de su Discord (enlace en la descripción de su vídeo de YouTube).",
+      "images": []
+    }
+  ]
+}

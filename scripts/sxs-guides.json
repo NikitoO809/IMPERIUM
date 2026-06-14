@@ -1,0 +1,512 @@
+[
+  {
+    "slug": "beginner-guide",
+    "url": "https://eog.gg/games/sword-x-staff/guides/beginner-guide/",
+    "category": "Beginner",
+    "title": "Sword x Staff Beginner Guide",
+    "excerpt": "Day-1 walkthrough for Sword x Staff. Class pick, why map exploration matters more than your level, the stat triangle, the launch Stellatie trap, and your first 24 hours checklist.",
+    "introTitle": "Verdantglade Is The Filter",
+    "intro": "Boltray designs Verdantglade (the first kingdom) to filter out roughly half the player base before the second kingdom starts. Almost every long-term system you will care about (Premium banner, gold-quality auctions, beast companion economy) opens in Cinder Ridge or later. Treat Verdantglade as a long tutorial and do not commit Stellatie or Voucher spends to it.\n\nDay 1 through your first week. This guide covers the four picks you actually make at character creation: class choice, where to push your level, where to spend your stat budget, and what NOT to do with the launch gacha. The trap here is treating skill-side power as a long-term investment. Almost every system rewards patience: leveling, map exploration, relic resonance, and the gacha currencies all pay out more in Cinder Ridge than in Forest. Hoard, do not spend.\n\nOnce you are past the first week, the Important Tips guide picks up with class-specific build calls, relic resonance, Mysterious NPC, Arena strategy, and the deeper spending order. If you are weighing whether to reroll, read the Reroll Guide first.",
+    "introImages": [
+      "https://eog.gg/assets/games/sword-x-staff/kingdoms/forest.webp"
+    ],
+    "sections": [
+      {
+        "title": "Should You Reroll? Probably Not",
+        "content": "Servers fill up. If your friends and guild are on a server already, rerolling can lock you out of joining them once that server hits capacity. Each reroll run takes 15-20 minutes, gets you roughly 45 free pulls plus the 10 forced tutorial pulls, and the non-reroll catch-up window is short because launch login rewards arrive on a fixed cadence.\n\nSkip rerolling if: you are on a populated server with friends or a guild, you want to start playing the actual game, or you are F2P and would rather front-load Goddess Statue exploration than spend three hours hunting for one specific skill.\n\nConsider rerolling if: you are not committed to a specific server and have a hard pull target in mind (Heavy Impact for Warrior , Water Assault for Mage ). The detailed targets and step-by-step process live in the Reroll Guide .",
+        "images": []
+      },
+      {
+        "title": "Pick A Class (You Can Switch Later, But It's Not Free)",
+        "content": "You start on the Beginner Island and are gated into Warrior or Mage (your 1st class). The first town you reach in Verdantglade is Drasilgard. Your second-class advancement unlocks at Lv.44 in Cinder Ridge: Warrior into Duelist or Knight , Mage into Sorcerer or Sage . Reclassing unlocks at Aqualis (Tier 3), but it is not lossless . Skills transfer like-for-like (Legendary→Legendary, etc.), so F2P players who don't already own the target-class skill end up RNG'ing into one. Class-specific stat tuning (relics, pet affixes, Block / Crit / Heal focus) also doesn't carry cleanly to a different class's core mechanic. See the Classes tab swap-route table before committing.\n\nSwitching before Aqualis is painful. The early reclass option restarts the new class at level 1 with no usable skills. The Aqualis reclass is the one you want even with its costs — plan to live with your launch pick until then.\n\nIf you want a clean default, pick the role you actually want to play in guild content. Duelist and Sorcerer are the two solo farmers. Knight and Sage are the two group-content specialists.\n\nSee the Classes tab for the full breakdown.",
+        "images": []
+      },
+      {
+        "title": "Every Class Needs A Solo Loadout",
+        "content": "Story progression is solo. Even pure tank or healer classes have to clear the campaign on their own, which means no class escapes the need for a damage-oriented loadout. The game gives you up to seven loadout slots . Use them.\n\nDefault loadout split most EOG members run:\n\n• Solo / story. Damage focused. The one you push the map with.\n\n• Daily Dungeon. AoE focused for mob clears.\n\n• Boss / single target. Multi-hit skills that proc passives every turn.\n\n• Group content. Tank-aware or healer-aware depending on class. Slot in the team-comp utility your kit can offer.\n\nA dedicated \"Dummy\" slot for the Skill Test at level 40 is also worth one of the remaining slots. See the DPS Dummy Test guide for the setup.",
+        "images": []
+      },
+      {
+        "title": "Map Exploration Is Your Real Level",
+        "content": "Every player level unlocks more of the map. Each unlocked area activates more Goddess Statues. More Statues mean faster experience gains, which compounds for the next two months of the game.\n\nPush exploration before anything else. Players who fall behind on map unlocks at Verdantglade never catch up to the leveling curve in Cinder Ridge. This is the only permanent advantage that does not require spending.\n\nTemporal Crystals. Two-hour idle reward grants. Use them while you still have map to unlock, or stockpile them. The two strategies are roughly equivalent in total reward output. Pick whichever fits your play schedule. The one thing not to do is forget you have them and let them rot in your inventory.",
+        "images": []
+      },
+      {
+        "title": "The Stat Triangle",
+        "content": "Three combat stats determine almost every damage interaction. They counter each other like rock paper scissors.\n\nCritical (150%): Base crit damage. Massive damage on proc. Gets reduced to 50% if the hit is blocked.\n\nAccuracy (Floor): Reduces the enemy's block chance. Does not increase damage. Creates a damage floor.\n\nBlock (50%): Blocked crit deals 50% damage instead of 150%. Knight scaling stat.\n\nFor every DPS class, Accuracy is the second-highest priority after Crit Rate . A blocked crit deals 50% damage instead of 150%, so the higher your Crit Rate climbs, the more each missing point of Accuracy costs you. Duelist and Sorcerer both run the Crit + Accuracy stack. Sage stacks Crit Rate too, even though the class trait does not provide it. Knight is the only class that stacks Block .\n\nSpeed. Determines turn order. Reach 2x the enemy's Speed and you get two rounds for every one of theirs. Not urgent in Verdantglade because the stat gap between you and Verdantglade mobs stays small, but it matters in later kingdoms.\n\nMastery. Physical Mastery scales physical skill damage. Elemental Mastery scales every elemental skill. Conversion ratio is every 40 points of Mastery = +1% damage to that damage type. Tap the stat in the menu to see the live percentage. Above flat HP and Attack on gear sub-stats. Below Crit Rate , Accuracy , and Block for class-specific scaling.",
+        "images": []
+      },
+      {
+        "title": "Power Spikes To Aim At",
+        "content": "Three account levels are worth more than any other in the first week. Plan your sessions around hitting these before chasing anything else.\n\n• Level 15: join a guild. Guilds grant resources, stat buffs, donation rewards, and access to Guild Boss drops (Skill Shard Vouchers). The EOG Discord posts an open-recruitment list in the Sword x Staff channel if you do not have a guild lined up.\n\n• Level 40: Skill Test unlock. The in-game dummy at Character › Skills › Test lets you compare loadouts without burning stamina. See the DPS Dummy Test guide .\n\n• Level 50: Fantomons unlock. The giant tree at your home base opens up Fantomons, the pet companion system. This is the single largest non-gear power spike before the second map. Do not spread Fantomon upgrade materials across the whole roster. Pick one Fantomon per role you actually run, level it to 50 for the first major stat unlock, and only spread out once your main is at 50. The Fantomon tier list has the shortlist.",
+        "images": []
+      },
+      {
+        "title": "Where You Are In The Season Timeline",
+        "content": "Sword x Staff progression runs on class tiers measured from your server's creation date , not from global launch. If you joined two weeks late, you are roughly two weeks back on this timeline, not at the same point as a launch-day account.\n\n• Tier 1 · Day 1-4: 1st class ( Warrior or Mage ) through the Beginner Island and into Verdantglade. Drasilgard is the first town. Most of this guide is Tier 1 advice.\n\n• Tier 2 · Day 4-12: Cinder Ridge unlocks (Mecha Summit, ~180K CP). Second class advancement at Lv.44 into Duelist / Knight / Sorcerer / Sage . Premium banner (pink orb) unlocks here. The Important Tips guide picks up here.\n\n• Tier 3 · Day 12-47: Aqualis unlocks (Ocean Palace Ruins, ~580K CP) and Season 1 starts . Third class advancement at Lv.82 into Berserker / Paladin / Archmage / Arcanist. Reclassing unlocks. Aquorigin Shrine ~Day 24, Season Power at Lv.100. Hellhold ~Day 33 (lasts ~2 weeks before server mergers transition into Loong Haven). Most of the systems that decide late-game power live here.\n\n• Tier 4 · Day 47+: Loong Haven unlocks — Season 2 begins. Fourth class advancement at Lv.106 into Conqueror / Guardian / Destroyer / Dominator. Season pacing slows. Permanent currency becomes the meaningful long-term carry across the next season reset.\n\nWhy this matters. Build advice and skill tier lists shift between tiers. A T1 reroll target like Heavy Impact is not the same as a T2 boss-killer; T2 Sorcerer stat priority differs from long-term Sorcerer stat priority. When you read any SxS guide on this site or elsewhere, check which tier it is written for.",
+        "images": []
+      },
+      {
+        "title": "Skill Pulls Feed Class Advancement",
+        "content": "A common F2P mistake is sitting on every skill pull \"to save for later.\" That works for Stellatie (see below), but the free Wish Goddess Statue 10-pulls are different. Class advancement requires you to actually have skills in the pool to upgrade. Moving between class-advancement tiers (e.g., 2nd class → 3rd class) requires reaching a class level threshold that you cannot hit without spending the skills you have already pulled.\n\nClaim every daily free 10-roll. Spend the skill upgrade rolls on the class branch you actually committed to. Hoard Dawnium and Stellatie, not the free-roll skill drops.",
+        "images": []
+      },
+      {
+        "title": "Level Slots, Not Individual Skills",
+        "content": "Skills and gear in Sword x Staff are slotted. The level applies to the slot, not the individual skill or piece of gear. Swapping a new skill into a leveled slot inherits the slot level. This changes the early-game upgrade math: upgrade slots without fear of obsolescing the work when you swap the contents.\n\nPractical rule for week 1: keep your four active skill slots and four gear slots leveled roughly evenly. A maxed slot with one okay skill in it does more work than four under-leveled slots with one perfect skill in one of them. Skew toward your most-used slot only after every active slot is at the same level.",
+        "images": []
+      },
+      {
+        "title": "Do Not Spend Stellatie In Verdantglade",
+        "content": "This is the single biggest trap. The blue orb ( Standard banner ) pulls from every skill in the game and has a pity counter. The pink orb ( Premium banner ) pulls only your class's skills, has a smaller pool, and only unlocks in Cinder Ridge or later. If you havent found the pink orb yet that is normal.\n\nThe skills available at the first job tier do not carry forward. Every long-term endgame skill comes from later class advancements. Spending Dawnium to buy Stellatie in the Verdantglade to roll for higher-tier skills now is the most common F2P-killing mistake.\n\n• Free-to-play: Do not buy Stellatie with Dawnium. Hold Dawnium and Radiant Stars until at least Cinder Ridge; hold Skill Shard Vouchers even longer — ideally Tier 3 (Aqualis) or later, since Cinder Ridge-tier skills get replaced again at the next advancement.\n\n• Fund-only spenders: Same. Hoard. Your budget cannot keep up with skill rerolls at this stage.\n\n• Pop-up bundle buyers: Pull until you hit Miracle quality on a launch skill, then stop. Save the rest for the next map.\n\n• Heavy spenders: Begin pre-committing pulls for Mythic-quality skills now. The Voucher milestones reward stockpiling.\n\n• Fun-first players: Spend on whatever does the most damage. Just know it will not matter long-term.\n\nSkill Shard Vouchers: hold for Tier 3 (Aqualis) or later. Burning them in Tier 2 (Cinder Ridge) wastes the voucher value — 2nd-class skills get superseded by 3rd-class skills you'll want to redeem into anyway. T3 is the earliest sensible burn target; T4 is even safer.",
+        "images": []
+      },
+      {
+        "title": "First 24 Hours Checklist",
+        "content": "• Claim the daily 10-pull. Sword x Staff grants a free 10-roll on the Wish Goddess Statue every day you log in. Do not skip a day.\n\n• Burn your launch login rewards and KonoSuba collab pulls. The collab is the largest free-pull window the global build has shown so far, with pulls spread across login and event milestones.\n\n• Push map exploration. Every Goddess Statue activated this week pays compounding EXP later. Higher leverage than any other day-1 activity.\n\n• Pick a class and push toward Cinder Ridge. Drasilgard is the first town reached in Verdantglade; your second-class advancement (Duelist / Knight / Sorcerer / Sage) waits at Cinder Ridge once you hit Lv.44 — the first real chunk of kit power.\n\n• Join a guild as soon as you hit level 15. Resources, stat buffs, and Guild Boss drops. Free progression that costs nothing to claim.\n\n• Burn stamina on Rolla first. Rolla is the early bottleneck for shop refresh purchases and most beginner crafting recipes. Run Rolla stamina nodes before anything else when stamina caps out.\n\n• Buy Destiny Fruits when the Treasury offers them. A future event requires 300. F2P should start stockpiling on day one. Whales generate enough through dungeon runs and do not need to think about it.\n\n• Do not use Dawnium on Stellatie. Hoard for Cinder Ridge.\n\n• Do not rush the Auction House at level 40. Gear in the early Auction House gets replaced within a kingdom or two. Save Dawnium for dungeon refreshes instead. Detailed dungeon refresh ladder is in the Daily Dungeons guide .\n\n• Set Guild assignment to the Smelting Workshop. Verdantglade default. Other production buildings open up once you understand the beast companion economy in later kingdoms.\n\n• Do daily Fantasy Ladder once. No ranking rewards. Just take the dailies and stop. If a stage ending in 4 or 9 walls you, that is expected and the EOG Discord has consolidated stage-clear advice.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "companion-upgrade",
+    "url": "https://eog.gg/games/sword-x-staff/guides/companion-upgrade/",
+    "category": "Resources",
+    "title": "Sword x Staff Companion Upgrade Guide",
+    "excerpt": "Class-stat matching and level breakpoint priority for upgrading Companions. Knight wants Block, DPS wants Crit Rate, Sage wants Accuracy or Healing Boost. The universal upgrade order (everyone to L20, then class-matching to L50, then L70, then L100) is the same for F2P and mega whales. Includes the L20/L50/L70/L100 stat law (Healing Boost is L100-only) and the L60 skin unlock note.",
+    "introTitle": "Same Upgrade Order, Every Spending Tier",
+    "intro": "Companions in Sword x Staff hand out stats on hard breakpoints (level 20, 50, 70, 100), and the breakpoints are predictable: Level 70 repeats the Level 20 stat, Level 100 repeats the Level 50 stat. Match the stats to your class trait, and the priority order is identical whether you are F2P or a maxed-out mega whale. Spending more does not change the order; it only changes how fast you complete it.\n\nA short, opinionated guide on which Companions to upgrade and how far. The math is the same regardless of your spending: every account benefits from the same priority order because Companion stat unlocks land at hard breakpoints that reward focused leveling over spreading.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Golden Rule: Match Stats To Class",
+        "content": "The Companions you prioritise upgrading should always match the stats of your active class. Stat priority by class:\n\n• Knight: Block › Crit Rate. Defensive Companions are the priority. Knights scale on Block, and the Block ceiling is hard to reach from gear alone.\n\n• Sorcerer: Crit Rate › Accuracy. Offensive Companions. Sorcerer's trait grants Accuracy already, so a small top-up from Companions is enough; Crit Rate is the limiting damage stat.\n\n• Duelist: Crit Rate › Accuracy. Same as Sorcerer. Duelist trait already provides Crit Rate, so stacking more from Companions compounds it.\n\n• Sage: Accuracy › Crit Rate (DPS / DoT build) or Healing Boost (healer build). Sage's trait covers all base attributes, so the Companion picks are role-dependent. A Healer Sage waits for L100 because Healing Boost only unlocks there.\n\nTap the exclamation mark on a Companion in-game to confirm its exact stat profile before committing upgrade materials.",
+        "images": []
+      },
+      {
+        "title": "The Stat Law (Offensive vs Defensive)",
+        "content": "Every Companion falls into one of two categories. The category is identifiable from the L20 stat alone.\n\n• Level 20: First unlock. DMG Boost → offensive Companion. DMG Reduce → defensive Companion. Repeats at L70.\n\n• Level 50: Offensive : Crit Rate or Accuracy. Defensive : Block, Crit Resist, or Healing Boost (Healing Boost is L100-only -- see below). Repeats at L100.\n\n• Level 60: Skin unlock. No stat change.\n\n• Level 70: Repeats the L20 stat. DMG Boost / DMG Reduce stacked again.\n\n• Level 100: Repeats the L50 stat. Healing Boost only ever appears at L100 -- a healer Companion you spotted at L50 with a healing-flavoured stat will not pay out the headline Healing Boost until 100.",
+        "images": []
+      },
+      {
+        "title": "Universal Upgrade Order",
+        "content": "Same order whether you are F2P, light spender, or a maxed-out mega whale. The only difference is how long each phase takes.\n\n• Everyone to L20. No exceptions. This is the floor that unlocks the first stat grant on every Companion you own. The marginal value of bringing a fourth Companion to L20 is higher than pushing your main from L50 to L70.\n\n• Class-matching Companions to L50. Once the L20 floor is universal, push the ones whose L50 stat matches your class trait. This is where the class-relevant stat lands and where the Companion starts pulling its weight.\n\n• Repeat the pattern for L70. Bring your active roster toward L70 for the second offensive / defensive stat tier. This is the long mid-grind for most accounts.\n\n• Repeat for L100. Mega-whale endpoint. Required for Healer Sage builds because Healing Boost only unlocks here.\n\nWhy mega whales follow the same order. Even if your endpoint is everyone at L100, the order of operations still matters because L20 is a small material investment for a guaranteed stat grant across the whole roster. Skipping the L20 floor on the way to one L100 main wastes the per-Companion contribution for the entire duration of the climb. Maple's own admission in the source video: \"I'm going to max everyone out to level 100 anyway\" and he still follows this exact order.",
+        "images": []
+      },
+      {
+        "title": "Skins And Cosmetics",
+        "content": "Skins unlock at L60 . No combat benefit. If a Companion you do not actively use has a skin you want, that is the one valid reason to push them past their L50 stat unlock outside the universal order. Otherwise skip past L50 and move on.",
+        "images": []
+      },
+      {
+        "title": "Gifts",
+        "content": "Each Companion has preferred gifts. Giving the right gift accelerates the bonding track; giving wrong gifts wastes consumables that could have gone to another Companion.\n\n• Check before gifting. Tap the exclamation mark on the Companion's detail page to see which gifts they prefer.\n\n• Stockpile preferred gifts. If a Companion prefers a gift type that drops commonly, hoard the surplus instead of dumping on lower-priority Companions.\n\n• Do not gift Companions outside your upgrade order. The same priority rules apply: gift the L20-floor universally, then concentrate on the class-matching ones.",
+        "images": []
+      },
+      {
+        "title": "Common Mistakes",
+        "content": "• Pushing one Companion to L100 before the rest hit L20. The L20 floor compounds across the roster. Bring the floor up first.\n\n• Upgrading offensive Companions on a Knight . Knights do not scale on Crit Rate or DMG Boost the way DPS classes do. Stay defensive.\n\n• Pushing a healer Sage Companion to L70 hoping for Healing Boost. Healing Boost is L100-only. L70 just repeats the L20 grant.\n\n• Spending gifts without checking preferences. The exclamation mark exists for a reason.\n\n• Treating the \"lazy\" label as F2P-only. The order is identical for whales. Following it means whales reach the L100 endpoint faster, not later.",
+        "images": []
+      },
+      {
+        "title": "Maple's Spreadsheet",
+        "content": "Maple maintains a spreadsheet that categorises every Companion by L20 type (offensive / defensive) and L50 stat, so you can shortlist class-matching upgrade targets without clicking through each Companion's detail page in-game. Available via his Discord (link in his YouTube video description).",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "daily-dungeons",
+    "url": "https://eog.gg/games/sword-x-staff/guides/daily-dungeons/",
+    "category": "Resources",
+    "title": "Sword x Staff Daily Dungeons",
+    "excerpt": "How to run the gear dungeon and the four material dungeons, the routing rule (rank on reach, not nodes), the full Dawnium refresh ladder (F2P/light 2/2/2/2, mid 4/2/4/4, $1k 6/6/6/6, $3k 8/8/8/8, $5k 10/10/10/10), the 6-run bank, and the old-shard dismantle deadline.",
+    "introTitle": "Daily Dungeons Are The Gear Pipeline",
+    "intro": "Daily Dungeons are the primary source of Gear and Gear Shards. You get 2 free runs per day , plus two F2P-accessible Dawnium refreshes at 100 and 150 Dawnium . Additional refresh slots beyond run 4 unlock through monthly card and pack tiers. Unused runs bank up to a cap of 6, so you can skip slow days and burst on a target day.\n\nDaily Dungeons split into two tracks: the main Gear dungeon (drops the gear piece itself plus shards toward star-ups) and four material dungeons (Raw Ore, Chrono Sand, Rolla feed, and the per-class consumable). Refresh strategy differs between the two. This guide covers both.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "The Routing Rule",
+        "content": "Inside each dungeon you navigate a small node graph: combat rooms, buffs, healing fountains, and one boss room at the end. Players new to the genre tend to cherry-pick \"safer\" nodes (heal rooms, smaller mob packs) thinking it conserves HP for the boss.\n\nThat ranking model is not how this game scores you. Dungeon ranking is calculated on how far you reach , not which nodes you cleared along the way. Routing to the boss directly, even through a harder combat room, scores higher than playing it safe and finishing one room shy of the boss.\n\nPractical rule. Pick the shortest path to the boss room every time. Take damage along the way as long as you survive to the boss. If you cannot survive the boss with your current loadout, swap to a tankier loadout from your seven loadout slots before entering the dungeon. Routing harder does not fix an undergeared character.",
+        "images": []
+      },
+      {
+        "title": "The Dawnium Refresh Math",
+        "content": "Two free runs per day. Two F2P-accessible paid refreshes. The paid pricing is not flat.\n\n• Run 1: Free.\n\n• Run 2: Free.\n\n• Run 3: 100 Dawnium.\n\n• Run 4: 150 Dawnium. Last refresh in the F2P-accessible band is more expensive than the first.\n\n• Run 5+: Additional refresh slots unlock through monthly card and pack tiers. The whale ladder (6, 8, 10 runs per day) is gated behind monthly spend, not pure Dawnium burn.\n\nF2P-accessible cap. 250 Dawnium per dungeon to hit run 4. Across the gear dungeon plus the four material dungeons, the F2P upper bound is 1,250 Dawnium per day. That is the spending budget you size the F2P/mid refresh ladder against. Higher tiers (6/8/10 runs) require monthly card or Month Fund subscriptions on top.",
+        "images": []
+      },
+      {
+        "title": "Material Dungeon Refresh Ladder",
+        "content": "Four material dungeons run on the same schedule, with the same refresh prices. The order is gated by which one your current class actually needs. Five tiers by monthly spend:\n\n• F2P / Light: 2 / 2 / 2 / 2. Free runs only. Skip the Dawnium refreshes on material dungeons. Save Dawnium for the gear dungeon and for Cinder Ridge-tier purchases.\n\n• Mid spender: 4 / 2 / 4 / 4. Cap three material dungeons. The \"2\" sits on whichever material your current class needs least (typically the per-class consumable when you are between class swaps).\n\n• $1,000 / mo: 6 / 6 / 6 / 6. Unlocks via monthly card / Month Fund refresh slots on top of the F2P-accessible four.\n\n• $3,000 / mo: 8 / 8 / 8 / 8. Higher card tier unlocks two additional refresh slots per dungeon.\n\n• $5,000 / mo: 10 / 10 / 10 / 10. Top whale ladder. Mandatory if you are chasing a season title; optional otherwise even at this spend.\n\nHow to read the ladder. The numbers are total runs per material dungeon per day. F2P and light spend share the same ladder because the F2P refreshes still cost Dawnium you usually need elsewhere. Mid spender is the first tier where it makes sense to actually pull the trigger on the two paid F2P refreshes plus the one extra slot whatever monthly card you hold gives you.",
+        "images": []
+      },
+      {
+        "title": "Run Banking",
+        "content": "Unused dungeon attempts bank instead of vanishing. The bank cap is 6 runs . This changes the F2P play pattern.\n\n• F2P bank-and-burst. Skip your free runs on slower days, let attempts bank, then spend them in one session on a target day. The clean pattern is \"save 4, buy 2 next day\" — skip 4 free attempts over a couple of slower days, then buy 2 paid refreshes on a burst day for a heavier session.\n\n• Watch the cap. The bank holds 6. Once full, additional unused attempts are permanently lost. Burn before you hit the ceiling.\n\n• Useful for class swaps. If you know a swap is incoming and you will need to switch which material dungeon you prioritise, banking lets you redirect attempts to the right dungeon for the post-swap class.",
+        "images": []
+      },
+      {
+        "title": "The Gear Dungeon Is Different",
+        "content": "The gear dungeon drops actual equipment plus Gear Shards. Refresh priority on this dungeon is higher than on the material dungeons because:\n\n• Gear is the slowest-replenishing resource. Materials regenerate. Gear pieces do not.\n\n• Gear Shards feed star-ups directly. The marginal value of a fourth gear-dungeon run is higher than a fourth material-dungeon run, because shards have no alternate source.\n\n• Class-specific gear sets matter. If the active dungeon rotation is dropping pieces in your class's gear set, prioritise its refresh window even if your daily Dawnium budget is short.\n\nF2P prioritisation. If you can only afford one paid refresh per day across all dungeons, spend it on the gear dungeon, not on material runs.",
+        "images": []
+      },
+      {
+        "title": "Old Dungeon Shards: Dismantle, Do Not Sit",
+        "content": "Each new dungeon that unlocks replaces the previous one's loot pool. The shard economy works on a hard cutover.\n\n• Before the next dungeon unlocks. Old shards can be sold on the Guild Market for Dawnium. Decent return.\n\n• After the next dungeon unlocks. Old shards lose their Guild Market listing. They become dismantle-only for a small material refund.\n\nTrigger to act on. When you see the new dungeon's notification appear in your daily mission list, sell any old shards you still hold within 24 hours. Otherwise the dismantle path is the only option left and the conversion rate is meaningfully worse.",
+        "images": []
+      },
+      {
+        "title": "Mistakes To Avoid",
+        "content": "• Do not let the run bank overflow. Bank cap is 6. Once you are at 6 banked attempts, any further unused attempts are permanently lost. Burn or refresh before the ceiling.\n\n• Do not \"save\" Dawnium refresh slots for tomorrow. The Dawnium itself banks. The per-day refresh slot does not. Refreshes are gated by day, runs are gated by the 6-cap bank.\n\n• Do not route safe. The ranking is on reach, not on completionist node-clearing. Routing safe costs you ranking shards.\n\n• Do not sit on old dungeon shards past the new dungeon's launch. See above.\n\n• Do not pay Dawnium to refresh material dungeons before the gear dungeon is capped. Gear pieces and shards are the higher-value drop class.\n\n• Do not chase the 8/8/8/8 or 10/10/10/10 ladder unless you are also chasing a season title. Diminishing returns kick in hard above 6 runs. Mid spender (4/2/4/4) clears every realistic gear goal short of leaderboard.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "destiny-fruit",
+    "url": "https://eog.gg/games/sword-x-staff/guides/destiny-fruit/",
+    "category": "Resources",
+    "title": "Sword x Staff Destiny Fruit Guide",
+    "excerpt": "One common use of Destiny Fruit is Destiny Exploration: spend at a specific location to roll for a missing relic. The three-step example (Relic Gallery -> source list -> spend at the location), when to pivot from pulling, and the secondary regional-unlock use (vine potions, keys, drills at the kingdom vendor).",
+    "introTitle": "Destiny Fruit Is A Relic-Filler, Not A Random Roll",
+    "intro": "One common use of Destiny Fruit is Destiny Exploration : travel to a specific location and spend Destiny Fruit there to roll for a relic that is missing from your Relic Gallery. Secondary use is regional unlocks — vine potions, keys, drills, and other items at the local kingdom vendor. There is no good reason to spend Destiny Fruit at a random map location; every spend should be targeted at something you actually need.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Example: Filling A Missing Relic With Destiny Exploration",
+        "content": "One common Destiny Fruit use case is closing a relic-gallery gap via Destiny Exploration. The three steps below walk through that example using a real in-game flow.\n\n• Step 1 — Relic Gallery. Open your Relic Gallery. Each kingdom has its own tab (Verdantglade, Cinder Ridge, Aqualis, Loong Haven, Other). Greyed-out entries are relics you do not own yet.\n\n• Step 2 — Source list. Tap the missing relic to open its detail page. Scroll to Source . You will see a list like Kingdom Gacha , Element Gacha , and a \"<Kingdom> <Area> Destiny Exploration\" entry. The Destiny Exploration entry is the targeted-spend path.\n\n• Step 3 — Spend at the location. Travel to the area listed on the source line. The confirmation dialog shows the location and the Destiny Fruit cost for that attempt — cost can vary, so read the dialog before confirming. Repeat until the relic drops.",
+        "images": [
+          "https://eog.gg/assets/games/sword-x-staff/guides/destiny-fruit-step1-gallery.webp",
+          "https://eog.gg/assets/games/sword-x-staff/guides/destiny-fruit-step2-source.webp",
+          "https://eog.gg/assets/games/sword-x-staff/guides/destiny-fruit-step3-spend.webp"
+        ]
+      },
+      {
+        "title": "When To Pivot To Destiny Exploration",
+        "content": "Destiny Exploration is a relic-filler, not a pulling replacement. The pull rate from the kingdom gacha is faster per-Destiny-Fruit-equivalent for most of the gallery. The pivot point is when pulling has slowed but the gallery is still incomplete.\n\n• Around ~70% gallery completion. Reviewer's heuristic: when you have collected roughly seven out of every ten relics in a kingdom but pulling has dried up (you have stopped, or are deliberately holding off on that banner), Destiny Exploration is how you close the gap.\n\n• Targeting set bonuses. Relics drop in sets — for example, the Faint Ember Glow set in Cinder Ridge is a 4-piece (Quake Pick, Pyrecrown, Ignic Loop, Blade Saw). Set bonuses activate at 2 / 3 / 4 owned pieces. If you are at 3/4 on a useful set and missing one specific piece, Destiny Exploration is the cleanest path to the 4-piece bonus.\n\n• Blue and purple specifically. Most accounts hit the wall on blue (rare) and purple (epic) relics, not on the top-rarity tier — gacha tends to fill the rare slots last because the rate distribution favors the show-piece relics first. Destiny Exploration is most useful precisely at the blue / purple gap.\n\n• Do not target relics you do not need. A missing relic that is not part of a set you plan to run is not worth filling. Match Destiny Exploration spend to your build plan, not to completionism.",
+        "images": []
+      },
+      {
+        "title": "Secondary Use: Regional Unlocks",
+        "content": "Destiny Fruit can also be spent at each kingdom's local vendor on region-specific items. Spendable items vary by kingdom but the recurring list includes:\n\n• Vine potions. Map-traversal consumables for the kingdom's terrain gimmicks.\n\n• Keys. Unlock chests, sub-areas, or gated content inside the kingdom.\n\n• Drills. Resource-node accelerators for the kingdom's mining / gathering layer.\n\n• Misc unlocks. Each kingdom adds its own one-time-purchase items at the local vendor.\n\nThese are nice-to-haves, not the reason Destiny Fruit exists. Cover the regional-unlock list when you have surplus fruit beyond your Destiny Exploration plan, never before.",
+        "images": []
+      },
+      {
+        "title": "Strategy By Spending Tier",
+        "content": "Destiny Exploration is the same workflow at every spending tier. What differs is how much pulling has already done for you, and therefore how big the gallery gap actually is.\n\n• F2P: Pulling alone will leave the largest gallery gap. Plan one or two priority sets per kingdom (Faint Ember Glow for Cinder Ridge fire builds, etc.) and Destiny Exploration the missing pieces to clear the 3/4 or 4/4 set bonus. Do not chase relics outside your build.\n\n• Light / Medium: Pulling clears most relics. Destiny Exploration becomes targeted cleanup — one or two specific blue / purple gaps per kingdom. Spend Destiny Fruit on the gaps, then drop any leftover into regional unlocks.\n\n• Whale: Most galleries fill from pulling alone. Destiny Exploration is reserved for the last 1–2 holdout slots per kingdom, usually low-priority pieces the gacha rate distribution skipped. Use surplus Destiny Fruit on regional unlocks.",
+        "images": []
+      },
+      {
+        "title": "Mistakes To Avoid",
+        "content": "• Spamming Destiny Fruit at a random map location. Spending without a specific missing-relic target burns fruit for no progress on the gallery. Always check the source list first.\n\n• Exploring for relics you do not need. If the missing relic is not part of a set you actually run, the slot is cosmetic. Spend on relics that activate a set bonus on a build you use.\n\n• Pivoting to Destiny Exploration too early. Gacha pulling fills the gallery faster than Destiny Exploration for the first ~70% of relics. Pull first, explore last.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "dps-dummy-test",
+    "url": "https://eog.gg/games/sword-x-staff/guides/dps-dummy-test/",
+    "category": "Combat",
+    "title": "Sword x Staff DPS Dummy Test",
+    "excerpt": "How to use the in-game Skill Test (Level 40 unlock) to compare skills and loadouts. Universal methodology + a Sorcerer-specific sample run by Keripo at Lvl 40 with chart and takeaways. Includes the Elemental Mastery math (Gold-tier EM = 1,270 = +31.75% damage at the 40 EM = 1% rule).",
+    "introTitle": "Unlocks At Level 40",
+    "intro": "The in-game Skill Test is the fastest way to compare skills, gear, or whole loadouts without burning real-content stamina. It unlocks at Level 40 and lets you test against the opposing team setup of your choice, be it a single boss, single mob, or a mix of variable different setups.\n\nThe sample run + takeaways below come from Keripo 's Sorcerer testing. The methodology (how to configure the dummy, what to slot in the charm bar, how to read the chart) is universal — every class uses the same dummy. The specific skill picks and rankings in the Key Takeaways section apply to a Sorcerer kit . Use the methodology for your own class; don't copy the skill rankings if you're playing Duelist, Knight, or Sage.\n\nTwo parts. First, how to use the dummy and what to set up before pressing Start. Second, a Sorcerer-specific sample test at Level 40 with the chart and takeaways.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Set Your Charm Bar First",
+        "content": "Set your charm bar before pressing anything. Charm tier and selection swings results harder than raw damage stats. Recommended bar:\n\n• Elemental Mastery. The single biggest damage multiplier in the charm bar. At Gold-tier the Elemental Mastery charm grants 1,270 EM , which translates to +31.75% damage at the standard 40 EM = 1% damage rule. This is not \"flat elemental scaling worth including\" — it is the headliner. Slot it first.\n\n• Water to Ice. Still strong on Sorcerer Water builds; adds a bonus damage hit that procs reliably. Good second slot, but at Gold-tier charms it does not out-scale Elemental Mastery.\n\n• Unstable Aura. Proc-per-turn passive that compounds hard with low-cooldown skills. Stack with Water to Ice on a Water Shot / Water Assault setup.\n\nWater to Ice and the Wind passive are not exclusive. Run both alongside Elemental Mastery if you have all three at Gold tier.",
+        "images": []
+      },
+      {
+        "title": "Running The Test",
+        "content": "• 1. Navigate to the Skill Test. Home › Character › Skills.\n\n• 2. Click the \"Test\" button.\n\n• 3. Configure the dummy. Change the dropdown to \"Boss\" and set 50 rounds , Unlimited HP , low damage . Click \"Start Test\".\n\n• 4. Build your loadout. Swap or edit skills and gear, then click \"Start Battle\".\n\n• 5. Skip to the end of the fight. Click the ⏭ icon to fast-forward.\n\n• 6. Read through the damage report.\n\n• 7. Run it a few times. \"Retest\" gives fresh sample data points so a single lucky or unlucky run does not skew the read. \"Edit Settings\" lets you change the loadout between runs.\n\nThe dummy uses your character's real stats. Whatever loadout is equipped is what gets tested, so no extra character-side setup is required.\n\nTip: save a dedicated \"Dummy\" loadout. Don't test with your real combat loadout. Save a separate loadout (the word \"Test\" is blocked, so name it Dummy or similar) with only a single technique slotted. Run each test with one skill at a time. The damage numbers stay clean and per-skill comparisons are far easier to read than mixed-loadout outputs.",
+        "images": []
+      },
+      {
+        "title": "Reading The Report",
+        "content": "Run both the boss-only and the mob-group setups every time. Different skills win each one, and a real dungeon fight is closer to the mob setup than the isolated boss.\n\n• BAvg: Average damage against a single large boss across 10 runs. AoE skills get extra hits here because bosses are hit multiple times per cast.\n\n• MAvg: Average damage against Monster Group 2 (boss + mob pack) across 3 runs. Closer to a real dungeon fight where you face mobs plus an elite.\n\n• B1–B10 / M1–M3: Individual run samples. Variance between runs tells you which skills are RNG-heavy.\n\n• Lvl: Skill rarity tier the row was tested at. Relative ranking between skills tends to hold across rarities even though absolute numbers scale up.",
+        "images": []
+      },
+      {
+        "title": "Sample Test At Level 40",
+        "content": "A sample run at Level 40 using the loadout above. Chart first, conditions below, then the takeaways.\n\nDon't copy these numbers, copy the shape. The values shown are raw test outputs, not theoretical calculated damage. Run the test with your own stats and loadout. Sample skills are at Legendary rarity; Mythic shifts absolute numbers up, but the relative ranking between skills tends to hold.",
+        "images": [
+          "https://eog.gg/assets/games/sword-x-staff/guides/dps-dummy-test-sample.webp"
+        ]
+      },
+      {
+        "title": "Key Takeaways (Sorcerer)",
+        "content": "Rankings below are for a Sorcerer kit. Methodology generalizes; specific skill picks do not. If you play Duelist, Knight, or Sage, run your own dummy test rather than copying these.\n\n• Wind's Delight wins both columns. Multi-hit and multi-target, so it tops boss damage AND mob damage. The closest thing to a default S-tier pick for Sorcerer general content.\n\n• Water Assault is the AoE-that-still-bosses pick. AoE but bosses get hit multiple times by it, which is why it scores high in both setups.\n\n• Water Shot is a single-target boss specialist. Zero cooldown lets Unstable Aura and Water to Ice proc every turn. Top-tier BAvg, near-bottom MAvg because it only hits one target.\n\n• Stonechief Summon straight up sucks. Bottom of both BAvg and MAvg. Skip it.\n\n• Wind is superior right now. Combination of multi-hit kits and the wind passive puts it on top.\n\n• Elemental Mastery is broken-good at Gold tier. 1,270 EM = +31.75% damage. Slotting it on the charm bar moves every row of the chart up, not just one skill. If your test ranking looks compressed, it's because you under-slotted EM.\n\nTier 2 outlook. Expect Light to take over in T2, driven by Chain Lightning and a lightning passive that mirrors the wind passive. Plan charm spend with that in mind if saving for the next tier.",
+        "images": []
+      },
+      {
+        "title": "Caveat: The Dummy Is Non-Elemental",
+        "content": "The test boss has no element, so the damage report ignores any elemental affinity bonuses you would see against a real target. Elemental builds look weaker on the dummy than they actually are in content. Worth remembering when comparing a Fire Sorcerer against a physical Duelist , for example. Use the dummy for relative comparisons inside one build, not for cross-element absolute numbers.\n\nNote on Elemental Mastery vs Elemental Affinity. Affinity (the matchup bonus) is what gets muted on the dummy. Elemental Mastery (the flat damage stat) is not muted — it applies on-dummy and off-dummy. So the 1,270 EM → +31.75% damage figure above is what you'll actually see in your test report. Affinity bonuses on top of that only kick in once you fight a real, element-typed target.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "food-guide",
+    "url": "https://eog.gg/games/sword-x-staff/guides/food-guide/",
+    "category": "Resources",
+    "title": "Sword x Staff Food Guide",
+    "excerpt": "Food is three different systems. Healing food for inside dungeons (going home is faster outside). Temporary buff food saved for the right fight (buffs do not expire in inventory). Permanent food has only three categories (HP, Attack, Speed) with bracketed diminishing returns (100% / 50% / 20% / 5% at the 10/30/50/51 thresholds) - eat passively up to ~30 in the category that matches your class, do not chase past that.",
+    "introTitle": "Food Is Three Different Systems",
+    "intro": "Food in Sword x Staff is not one feature, it is three. Healing food keeps you alive inside dungeons. Temporary buff food adds a window of stat bonuses for a specific fight. Permanent food is a long-term stat ladder that compounds for the whole season. Most players treat all three the same and lose value on every category. Three different rules apply.\n\nA focused breakdown of the three food categories, what each one is actually doing under the hood, and how to spend each so the long-term stat ladder is not wasted on short-term healing.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Healing Food",
+        "content": "The straightforward category. Each food item restores a flat or percentage amount of HP when consumed. The rule for healing food is about when to spend it, not which food to pick.\n\n• Inside a dungeon: heal with food. Dungeons do not let you teleport home mid-run. The Daily Dungeon ranking is based on how far you reach (see the Daily Dungeons guide ), so a few healing food consumed to survive an extra room is worth more than the saved food in inventory.\n\n• Outside a dungeon: do not heal with food. Returning to your home base is faster and restores HP for free. Burning healing food on overworld fights is the most common newbie waste.\n\n• Before a major fight: do not pre-heal. You start every fight at full HP from a teleport. Pre-eating healing food does nothing because there is no HP missing to restore.\n\n• Stockpile cheap healing food. Vendor-tier healing items pile up in inventory because most players forget they exist. Stack the cheap ones and use them in dungeon emergencies.",
+        "images": []
+      },
+      {
+        "title": "Temporary Buff Food",
+        "content": "Stat buff items that last for a fixed duration once consumed. Damage bonuses, defense bonuses, elemental damage bonuses, accuracy spikes. The trap is that the buff timer only starts when you eat the food, not when you receive it.\n\n• Food in inventory does not expire. A Fire-element damage buff food sitting in your bag will still be useful three weeks later. Do not eat them in a panic to \"use them up.\"\n\n• Read the affinity / target. Many buff foods only apply to a specific element, role, or content type (PvE, dungeons, raids). Eating a Light-DMG buff right before a Fire-only fight wastes the duration.\n\n• Eat right before the gate. If the buff lasts 30 minutes, you do not want to consume it five minutes before a long dungeon queue. Pop the buff right before the gate so the entire window covers the actual fight.\n\n• Save the strongest buffs for your hardest content. Most buff food drops while you are doing routine farming. The buff you save now is the buff that carries the next guild boss attempt.",
+        "images": []
+      },
+      {
+        "title": "Permanent Food (The Long-Term Ladder)",
+        "content": "Eating permanent food grants a small permanent stat increase to your character. The bonus does not wear off and does not reset at season end. There are only three permanent food categories : HP , Attack , and Speed .\n\nThe diminishing returns rule. Each category tracks how many copies you have eaten in total. The effectiveness curve is not smooth — it is bracketed:\n\n• Copies 0–10: 100% effective. The full stat bump per copy. This is the only band where the cost-per-stat is actually competitive with relics, gear rolls, or Fantomon investment.\n\n• Copies 11–30: 50% effective. Half the per-copy stat bump. Still worth eating passively as ingredients come in — this is the band most accounts coast through.\n\n• Copies 31–50: 20% effective. One-fifth value per copy. You are usually better off spending the ingredients / Dawnium on a different power source by this point.\n\n• Copies 51+: 5% effective. Functionally dead. Only chase this band if you have already capped every other lever.\n\nEat passively up to ~30 in each category, then stop. Reaching 30 in HP / Attack / Speed gives you the meaningful chunk of the curve. Going past 30 is technically positive but the Dawnium and ingredient cost per stat point is brutal. Do not chase 50+ unless you are leaderboard-pushing and every other lever is already maxed.\n\nCategory priority by class.\n\n• Sage : HP first. Sage heals scale off HP, so HP is double-duty (survival + healing throughput).\n\n• Knight : HP first. Knight is tanking. HP is the primary tank-stat ladder.\n\n• Duelist / Sorcerer (DPS): Attack first. Damage roles run their Attack copies up to 30 before touching HP.\n\n• Speed is the PvP stat. Across every class, Speed is the most important permanent-food category if you are running PvP / RTA seriously. The turn order it buys is worth more than equivalent HP or Attack in arena. Even Knights and Sages running PvP should push Speed alongside HP.\n\nNote on cost-per-stat. Permanent food is one of the more expensive power sources in the game once you start chasing past the 100%-effective band. The cost is real, the gains are small, and there are usually better Dawnium / ingredient spends available. Treat it as a passive trickle rather than an active grind.",
+        "images": []
+      },
+      {
+        "title": "Cooking The Food Yourself",
+        "content": "Most food can be cooked at your home kitchen. Recipes unlock as you progress regions. The cooking system has a few rules worth knowing before you commit recipe slots.\n\n• Ingredients come from stamina-side gathering. Push stamina on Rolla and herb nodes to feed the kitchen. The cart helps but is not enough alone.\n\n• Recipe quality scales with kingdom progression. Higher-tier kitchens unlock stronger permanent-food recipes. Do not over-invest in the early Verdantglade kitchen tier.\n\n• Cook the permanent foods you have ingredients for, even if you do not need the stat yet. Permanent food cooked now and eaten later is worth more than ingredients sitting in storage.",
+        "images": []
+      },
+      {
+        "title": "Mistakes To Avoid",
+        "content": "• Eating healing food on the overworld. Going home is faster and free.\n\n• Pre-eating buff food before queues. Wait until you are at the dungeon gate.\n\n• Chasing permanent food past 30 copies in a category. Brackets drop to 20% then 5% effective. The cost-per-stat curve is brutal — there are better Dawnium spends past this point.\n\n• Picking the wrong category for your class. Sage / Knight on Attack is a misallocation. DPS classes on HP first is a misallocation. PvP-focused accounts ignoring Speed is the most expensive misallocation of the three.\n\n• Treating permanent food as an active grind. Reviewer consensus is that this power source is real but expensive for the return. Eat passively as ingredients come in; do not stockpile Dawnium specifically to chase it.\n\n• Selling rare ingredients for Dawnium. Cook them first. Ingredients lose value once permanent recipes unlock.",
+        "images": []
+      },
+      {
+        "title": "Where Food Fits In Your Daily Loop",
+        "content": "Food is not a daily activity. It is a weekly one. Most accounts get the highest food value from a focused cooking session every 5-7 days, not constant consumption.\n\n• Cook batch. One or two sessions per week to convert ingredients into permanent food.\n\n• Eat into your priority category first. Sage / Knight feed HP. DPS feed Attack. PvP players feed Speed. Keep eating until you hit ~30 copies in that category, then drop down to passive trickle.\n\n• Stockpile temp buffs. Slot them in inventory for the next guild boss or hard dungeon push.\n\n• Top up healing food. Keep enough for two days of dungeons. Anything beyond that is dead inventory.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "gacha-and-pity",
+    "url": "https://eog.gg/games/sword-x-staff/guides/gacha-and-pity/",
+    "category": "Advanced",
+    "title": "Sword x Staff Gacha & Pity Reference",
+    "excerpt": "Drop rates and pity thresholds for every Sword x Staff pull pool. Standard Wish banner (1/7/22 rates, 10/30/70 pity, 200-pull mileage), Premium Prayer banner (class-locked, Covenite pity currency), Relic banner (50-70% collection rule), and Fantomon banner (0.8% SSR, 80 pity, 120 Bond Trinkets in dupes for Mythic evolution to level 108).",
+    "introTitle": "Pity Is The Spending Lever",
+    "intro": "Sword x Staff has four pull pools (Standard skills, Premium class-locked skills, Relics, Fantomons). They use different currencies and different pity thresholds. The pity numbers below are the budget you size every other gacha decision against. Skip them and you spend twice for the same outcome.\n\nA single reference page for every gacha pool in Sword x Staff. Each section lists the rates, the pity thresholds, the currency, and the EOG-recommended pull rule. Read top to bottom or jump to the banner you are currently pulling on.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Standard Banner (Blue Orb)",
+        "content": "Pulls from every skill in the game. The largest pool, the lowest individual hit rate, but the only pool that gives you skills you do not yet have access to.\n\n• Legendary: 1% base rate. Pity at 70 pulls.\n\n• Epic: 7% base rate. Pity at 30 pulls (Epic or higher).\n\n• Rare: 22% base rate. Pity at 10 pulls (Rare or higher).\n\n• 200-pull mileage: The first major Standard mileage target. Selectable Legendary T1 skill. Save Stellatie to land on this rather than chasing single Legendaries via raw pulls.\n\nPull rule. Free 10-rolls daily, no exceptions. Paid Stellatie purchases through Verdantglade are a trap (see the Beginner Guide ). Save the paid spend for Cinder Ridge, where the Premium banner unlocks and the target pool narrows.\n\nPity does not reset on reclass. Your Standard banner pity counter (the 70-pull Legendary track) is account-wide, not class-bound. Reclassing at Aqualis does not wipe progress toward the next Legendary. This makes the 200-pull mileage target safer to chase than it looks even if you are still deciding between class branches.",
+        "images": []
+      },
+      {
+        "title": "Premium Banner (Pink Orb)",
+        "content": "Locked behind clearing Verdantglade and reaching the next map. If you cannot find it yet, that is expected.\n\n• Currency: Covenite , not Stellatie. Covenite is a pity currency — you generate it by burning Stellatie on the Standard banner (the more Stellatie you pull, the more Covenite trickles back).\n\n• Pool: your class's skills only. Smaller pool, higher per-pull odds of useful drops. The structural reason this banner is the long-term spend target.\n\n• Class-targetable. Once you have unlocked the second-tier advancement, you can select which class pool the banner draws from.\n\n• Do not redeem early Skill Shard Vouchers for T1 or T2 skills. Early-game vouchers convert to selectable Legendaries. The early game already gives plenty of free Standard pulls, so spending them on first-tier skills wastes voucher value that gets replaced anyway. Hold them for third-tier and beyond.",
+        "images": []
+      },
+      {
+        "title": "Relic Banner (Per-Kingdom)",
+        "content": "Each kingdom has its own relic banner. Relics gate the resonance bonus system (four matching-element relics trigger resonance, which levels up every non-resonant relic of the same element). The pull rule on relics is collection-driven, not luck-driven.\n\n• 50-70% collection rule. Stay on each kingdom's relic banner until you hit roughly 50-70% of the kingdom's relic collection. Then move on.\n\n• Why 50-70% and not 100%? Diminishing returns. The first 50% of a kingdom's relic pool covers every resonance and most set bonuses. The last 30% is duplicates and minor stat coverage.\n\n• Why not less than 50%? Resonance bonuses require all four slots of an element. Pulling 30% of a kingdom and moving on leaves resonance unfinished, which costs damage scaling far in excess of any progress made in the next kingdom's relic pool.\n\nF2P will hit blue and purple relic gaps at roughly 70% gallery completion. Paid players reach 90% including Mythic relics. Once pulling slows, switch to Destiny Exploration at the missing relic's listed location to fill the rest — see the Destiny Fruit guide for the three-step example.",
+        "images": []
+      },
+      {
+        "title": "Fantomon Banner",
+        "content": "Fantomons unlock at level 50 and use a separate currency from skill pulls. The Mythic evolution rule is the single most important number on this banner.\n\n• SSR rate: 0.8% base rate.\n\n• Legendary pity: 80 pulls.\n\n• Mythic shop: 60 Bond Trinkets per copy. Aegiswing and Nyxarchon are the two launch-window Mythics.\n\n• Mythic evolution: A single Mythic copy caps at level 100. Evolution to level 108 requires 120 dupe shards — that's 2 duplicate copies on top of the base, or 120 Bond Trinkets in dupes . Plan for the full 120 before committing to a Mythic.\n\nCommon Mythic trap. Players spend 60 Bond Trinkets on Aegiswing thinking they are done, hit level 100, then realise evolving to 108 needs another 120 Bond Trinkets in dupes (2 more copies, 60 each). If you cannot afford the full 120 Bond Trinkets in dupes for the role you actually run, do not buy a Mythic. Stack SSR Fantomons in the meantime and bank trinkets.",
+        "images": []
+      },
+      {
+        "title": "Pull Order: What To Pull First",
+        "content": "A clean spending priority if you have currency in multiple pools at once:\n\n• Free Standard banner 10-rolls. Every day, no exceptions. Daily free pulls are the largest skill source over the season.\n\n• Active kingdom relic banner until 50-70% collection.\n\n• Fantomon banner if you are committing to a Mythic target. Budget for 120 Bond Trinkets in dupes before pulling (full evolution), not 60.\n\n• Premium banner once unlocked. The narrower pool gives better expected value than Standard banner pulls.\n\n• Standard banner paid pulls only after the Premium banner is unlocked and only with a specific target in the 200-pull mileage path.\n\nThis order is the F2P default. Spending tiers can deviate: heavy spenders front-load Mythic Fantomons and the Hero's Guide relic (Stellaris Path unlock via voucher spends or direct pack purchases) because both compound across every kingdom. See the Important Tips spending order for that lane.",
+        "images": []
+      },
+      {
+        "title": "Currency Quick Reference",
+        "content": "• Stellatie: Standard banner (blue orb). Convert from Dawnium in Verdantglade or Radiant Stars later.\n\n• Covenite: Premium banner (pink orb). Pity currency from burning Stellatie on the Standard banner — the more you pull on Standard, the more Covenite trickles back. Cannot be purchased directly with Dawnium.\n\n• Destiny Fruit: One common use: Destiny Exploration — spend Destiny Fruit at a specific location to roll for a missing Relic Gallery entry. Secondary use: regional unlocks (vine potions, keys, drills at the kingdom vendor). See the Destiny Fruit guide for the three-step example.\n\n• Bond Trinkets: Fantomon banner. Drops from Fantomon-themed events, daily login chains, and KonoSuba collab milestones.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "grand-treasure-hunt",
+    "url": "https://eog.gg/games/sword-x-staff/guides/grand-treasure-hunt/",
+    "category": "Resources",
+    "title": "Sword x Staff Grand Treasure Hunt",
+    "excerpt": "How to spend Aurodrasil Energy at the Grand Treasure Hunt for maximum F2P value. Save-then-spend cadences, QY Maple's three absolute principles (far-left on Floor 5, Energy banks across cycles, unique relics mandatory), Level 1-5 reward priorities, the L4 traps to skip, the Loong Haven gate for F2P, and the current Cinder Ridge / Aqualis phase rotation.",
+    "introTitle": "The Single Biggest Event Trap For F2P",
+    "intro": "The Grand Treasure Hunt is the rotating event where you spend Aurodrasil Energy at five reward tiers. The trap: most players spend every week thinking the cadence matches the event reset. It does not. Spending weekly leaves Level 5 rewards on the table because Aurodrasil Energy refreshes faster than the high-tier rewards are worth picking. Two correct cadences exist, both wait multiple weeks per spend.\n\nThe Grand Treasure Hunt is one of the highest-leverage events in the game for F2P accounts because the Level 5 reward tier sits behind a currency wall that punishes weekly spending. Pace yourself correctly and you walk away with multiple Level 5 items per cycle. Pace yourself wrong and you bleed Aurodrasil Energy on L1-L2 rewards that never compound.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Maple's Three Absolute Principles",
+        "content": "Maple compressed the event into three rules. The rest of this guide is the math + per-rotation specifics that prove them out.\n\n• 1. Floor 5 priority order: Always prioritize Floor 5. On Floor 5 the slot priority is Left > Far right > Middle — Left is the unique relic and the always-take, Far right is the secondary pick worth grabbing with leftover currency, Middle is the lowest priority. Never buy from Floors 1-4 if you cannot reach Floor 5 this cycle (cost floor is ~3,240 Energy to claim through stages 1-5). On a hoarding cycle, buy nothing from any floor; you'll need the full reserve next cycle.\n\n• 2. Energy banks: Aurodrasil Energy banks across cycles by design. F2P can stably hit Floor 5 every other cycle ; players who buy both 500-energy gift packs every cycle can hit Floor 5 every single cycle. The math is set up so the cadence works; trust it.\n\n• 3. Unique relics: F2P who haven't reached Loong Haven (Season 2) yet should skip the 1st and 3rd Grand Treasure Hunts but absolutely grab the unique relics from the 2nd and 5th . Phase 6 Lucky Statue ascensions are recommended but not mandatory; that's a personal-investment call. Once you hit Loong Haven, follow Rule 2 to redeem the unique relic every cycle.",
+        "images": []
+      },
+      {
+        "title": "Choosing Rewards For The First Four Levels",
+        "content": "Treasures at L1-L4 fall into two categories. There is no right or wrong choice between them — only preference based on what your account needs.\n\n• Seasonal Resources: Material Realm resources. Provide higher immediate Power . Faster Seasonal progression. Pick these if you're pushing rank or trying to clear current-kingdom CP thresholds.\n\n• Basic Resources: Provide lower immediate Power but strengthen long-term foundations. Pick these if you're playing for season-over-season carryover or building toward a specific Mythic / Relic target.\n\nPractical guidelines. Match the level pick to the account goal you actually have right now:\n\n• Need your first Mythic Fantomon → take Bond Trinkets at L4. The 180-Bond-Trinket evolution budget is hard to hit from companion-side activities alone; the Hunt is a real boost path.\n\n• Missing special-attribute Legendary Relics → take Legendary Auroral Badges at L4. The shortcut to filling the resonance gaps in your current kingdom's relic pool.\n\n• Skills come after Relics. If you're choosing between picking up a missing relic vs. skill shards, take the relic first — relics compound resonance, skills don't.\n\n• If you dislike low-RNG drop rates → pick Skills directly . Deterministic progress on whichever class skill you're building, no relic-pool luck involved.",
+        "images": []
+      },
+      {
+        "title": "This Cycle's Rotation (Cinder Ridge / Aqualis)",
+        "content": "The new cycle starts at tomorrow's reset and runs through six phases across the Cinder Ridge and Aqualis weeks. Two phases drop Lucky Statue and one drops Primal Gem ; those are the three picks the save-then-spend cadence below is built around.\n\n• Phase 1: Cinder Ridge. Selectable Cinder Ridge Mythic Relic (Kingdom Relic).\n\n• Phase 2: Cinder Ridge. Lucky Statue (Special Relic). Passive chance to double Dungeon chest drops; scales 10% to 60% as you stack ascensions on the Relic.\n\n• Phase 3: Aqualis. Selectable 3rd-class skill shards × 180 (Class Skill).\n\n• Phase 4: Aqualis. Primal Gem (Special Relic). Boosts Gem acquisition across all sources except packs and the trading house; scales 10% to 60% .\n\n• Phase 5: Aqualis. Selectable Aqualis Mythic Relic (Kingdom Relic).\n\n• Phase 6: Aqualis. Lucky Statue (Special Relic). Same effect as Phase 2. The Phase 6 ascension is the second copy in the same cycle; Maple flags it as recommended but not mandatory if you're tight on Aurodrasil.\n\nLucky Statue rotates back into the event roughly every 1.5 months. Phase 2 is the mandatory pickup; Phase 6 is the optional second copy in the same cycle for players willing to commit a second spend window. Primal Gem in Phase 4 slots cleanly into the save-one-week / spend-the-next cadence so the high-priority pickups happen on separate spending windows without conflict.\n\nBeyond this cycle. The unique relic on Floor 5 changes every Hunt. To plan ahead for the cycles after this one, see QY Maple's reward-rotation spreadsheet . It maps every Hunt's unique relic + stat effects so you can decide which Hunts to skip versus save through.",
+        "images": []
+      },
+      {
+        "title": "Reward Priorities By Level",
+        "content": "Five reward tiers. Each cycle the L5 reward rotates. The L1-L4 tiers stay relatively stable, so the priorities below apply across most cycles.\n\n• Level 1: Basic Treats first. Companion feed. Compounds with the companion bond economy. Cheap entry; always claim.\n\n• Level 2: Companion Gifts. Pushes companion bonds toward the next tier. Higher EXP/value ratio than Treats per Aurodrasil unit spent.\n\n• Level 3: Generic resource fill. Pick whichever resource is currently bottlenecking your cart. Wood and Stone are the safe defaults (see the cart upgrade priority ).\n\n• Level 4: Legendary Auroral Badges is the default highest-value L4 item across cycles (fills special-attribute relic gaps). Bond Trinkets become the better pick if you're chasing your first Mythic Fantomon — the 180-Trinket evolution budget is hard to hit from companion activities alone. Skip Stellatie (also drops from codes + Treasury).\n\n• Level 5: Rotates. Slot priority: Left > Far right > Middle . Left is the unique relic (always grab); Far right is the secondary pick; Middle is lowest. Standout rotations: Lucky Statue — passive Relic that scales 10% to 60% chance to double Dungeon chest drops as you stack copies. Primal Gem — 10% to 60% Gem acquisition boost across all sources except packs and trading house. Always grab both when they rotate in. Lucky Statue returns every ~1.5 months, so hit every Phase window it appears in.",
+        "images": []
+      },
+      {
+        "title": "F2P Spending Cadence: Two Options",
+        "content": "Aurodrasil Energy refreshes roughly at the cap each week. Spending weekly means you cannot afford the L5 reward window. Two patterns work.\n\n• Every 2 weeks: Approximately 4,440 currency per spend. Gets you 2 Level 5 items per cycle. Steady L5 acquisition, fewer total L1-L2 claims.\n\n• Every 3 weeks: Approximately 5,640 currency per spend. Gets you all Level 5 items per cycle. Maximum L5 throughput but slower L1-L2 income.\n\nWhich to pick. If the rotating L5 reward in the current cycle is Lucky Statue or another long-term compounder, use the 3-week cadence. If the L5 rotation is weaker, the 2-week cadence is the safer pick because you still bank one L5 per spend while staying flexible.\n\nLight spenders. Maple's specific call: buy both 500-energy gift packs every cycle (roughly $30/week of event-pack spend) and you hit Level 5 every cycle with no save-then-spend gap. That accelerates Lucky Statue ascensions and Primal Gem pickups. If you are buying the Monthly Card on top, Aurodrasil Energy refills faster from card-bonus daily caps, which means you can hit L5 every cycle even without the second 500-pack. Monitor your reserve before each spend.\n\nThe Loong Haven gate. The cadence above assumes you're still in Verdantglade or Cinder Ridge. Once you reach Loong Haven (Season 2) , the Aurodrasil income curve steepens enough that F2P can stably redeem the unique relic every cycle on the same 500-pack-free cadence. Before Loong Haven, F2P should expect to skip alternating Hunts; after, every cycle is in reach.",
+        "images": []
+      },
+      {
+        "title": "Common Mistakes",
+        "content": "• Spending any Aurodrasil Energy on a week you can't afford L5. If your reserve won't hit ~3,240 Energy by the end of the week, hard-skip the whole event. Every L1-L4 click on an off-week pushes a future L5 out of reach.\n\n• Spending every week as F2P. You cannot afford L5 on weekly cadence. Aurodrasil Energy spent on weekly L1-L2 claims is value left on the table.\n\n• Buying anything during a hoarding cycle. A hoard cycle means the reserve has to land exactly at full for next cycle's L5. Even a single L1 purchase eats into that reserve and slips you to a 3-week cadence instead of 2.\n\n• Picking the Middle slot on Floor 5. Floor 5 slot priority is Left > Far right > Middle. The middle slot is the lowest-value pick; only buy it after you've cleared Left and Far right.\n\n• Buying Stellatie at L4. Stellatie drops from redemption codes, the Treasury, and KonoSuba collab milestones. Spending Grand Treasure Hunt energy on it doubles up on a free resource.\n\n• Picking a non-Lucky-Statue / non-Primal-Gem L5 when those are in rotation. Both Special Relics scale 10% to 60% with ascensions and compound across the whole season. Other L5 rewards usually do not.\n\n• Skipping the cycle entirely when you can afford L5. Even if the L5 rotation looks weak, the 2-week cadence still walks away with L4 Legendary Auroral Badges or Bond Trinkets plus L1-L3 fill. Don't zero out if you can clear the 3,240 Energy floor.",
+        "images": []
+      },
+      {
+        "title": "Where This Fits In The Spending Order",
+        "content": "The Grand Treasure Hunt is downstream of the daily core loop. Sequence it as follows:\n\n• Free Standard banner daily 10-roll. Always first.\n\n• Daily Dungeon free runs. Two runs per day on gear + materials. See Daily Dungeons guide .\n\n• Stamina on Rolla first. Cart bottleneck. See Beginner Guide .\n\n• Destiny Exploration on missing relics. Spend Destiny Fruit at the listed location. Target relics that complete a set bonus on a build you actually run. See the Destiny Fruit guide .\n\n• Grand Treasure Hunt on the 2-week or 3-week cadence above. Not weekly.\n\nThe Grand Treasure Hunt is the event most rewarding of correct pacing. If you only learn one event-cadence rule, learn this one.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "important-tips",
+    "url": "https://eog.gg/games/sword-x-staff/guides/important-tips/",
+    "category": "Advanced",
+    "title": "Sword x Staff Important Tips",
+    "excerpt": "Beyond the Beginner Guide. Class viability, cart upgrades, Fantomon investment rules, relic resonance, Mysterious NPC + Primal Forge, Arena ticket strategy, shop refresh, spending order, and long-game pitfalls.",
+    "introTitle": "Beyond The Beginner Guide",
+    "intro": "Important Tips picks up where the Beginner Guide stops. Class-specific build calls, cart and relic priorities, the Mysterious NPC rule, shop refresh cadence, Arena strategy, and the launch storefront spending order. Read top to bottom, or jump to whichever section your account is at.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Class And Build Calls",
+        "content": "• Sage has one viable build: Dark . Light Sorcerer is a PvP-only pick. Summoner and Healer builds are not viable in the current global patch.\n\n• Duelist is the safe popular pick. Most of the playerbase is rolling it. Knight works fine and stays in demand because tanks will be rare in group content.\n\n• F2P cannot afford two elements. Relics only grant 10-15% element boost, so splitting affinity costs serious damage and slows your skill-level focus. Pick one element and finish it.",
+        "images": []
+      },
+      {
+        "title": "Cart Upgrades",
+        "content": "The cart produces overlapping resources to the dungeons plus equipment and beast feed. Upgrade priority by production tier:\n\n• Top priority: Wood + Stone. Upgrade nearly everything else in the game. Cheapest payout, longest shelf life. Upgrade these first regardless of class.\n\n• Always in demand: Chrono Sand + Raw Ore. Feed cart and stamina recipes. Never go to waste.\n\n• Conditional: Rolla. Priority scales with how aggressively you shop refresh. If you are running 3+ refreshes per day, push Rolla up. If not, leave it.\n\n• Lower priority: Battle Essence + Basic Treats. Both have alternate sources (dungeon drops, Treasury). Cart is not the bottleneck for either.\n\nFocus principle. Pick a cart strategy and stick to it. The resources you focus on should sit roughly 20-30% higher than the others throughout the season. Even cart leveling spreads payout thin and never breaks any one bottleneck.\n\nIf you have specific class targets (e.g. you know you are committing to Sorcerer and need more attack-type Fantomon feed), tilt the focused 20-30% gap toward the matching feed type.",
+        "images": []
+      },
+      {
+        "title": "Fantomon Investment Rules",
+        "content": "Fantomons unlock at level 50 and are the largest non-gear power spike in Cinder Ridge. The trap is treating them as a single pool. Three rules decide whether your investment compounds or gets wasted.\n\n• Main stat slot is not the same as combat slot. The main stat slot gives 100% of a Fantomon's stat block. The three sub-slots give 50% . The remaining collection gives 20% . Put your rarest Fantomon in the main stat slot. The combat-side deployment is a separate decision and should match the role you are playing.\n\n• Keep deployed Fantomons leveled evenly. Resonance applies the lowest level among your four deployed Fantomons to the rest of your collection. A roster at 50/50/50/20 effectively scales as if every collection bonus is at level 20. Bring the floor up before pushing the ceiling.\n\n• Mythic evolution needs three copies total. Aegiswing and Nyxarchon cost 60 Bond Trinkets per copy. The trap: a single Mythic caps at level 100. Reaching level 108 requires 120 dupe shards — that's 2 duplicate copies on top of the base, so 3 copies total = 180 Bond Trinkets . Budget for the full 180 before committing, not 60.\n\nUseful Fantomons by role. Knight : Boaro (shields) and Armopi (tanking). Duelist / Sorcerer AoE clear: Falko or Zeioletus. Sage : Mandragora (healing) and Herbote (cleanse). Universal pick when enemies stack buffs: Kels (dispel).",
+        "images": []
+      },
+      {
+        "title": "Relics And Resonance",
+        "content": "F2P players will get all blue and purple relics for roughly 70% of the Verdantglade relic pool. Paid players should pick up orange (Mythic) and below for roughly 90% coverage. If you can pick a selectable Mythic relic, Duelist / Sorcerer / Sage take Critical Rate . Knight takes Block Rate .\n\nResonance. Each element resonates with four relics. Upgrade all four of one element to the same level and every non-resonant relic of that element jumps in level at the same time. Do not spread upgrades across multiple elements. Pick one and finish it.\n\nClass element priority:\n\n• Duelist : Fire or Dark\n\n• Knight : Water or Light\n\n• Sorcerer : Light or Fire\n\n• Sage : Dark\n\nHero's Guide relic. Unlocks on the Stellaris Path — either via voucher spends or direct pack purchases. Boosts your experience gain and resonates with other relics for an additional 20% bonus. The closest thing to a hard pay-to-progress wall in Verdantglade, and the EXP curve compounds across every kingdom that follows.",
+        "images": []
+      },
+      {
+        "title": "Daily Dungeons (Quick Reference)",
+        "content": "Daily Dungeons are the primary source of Gear and Gear Shards. Two free runs per day, plus two F2P-accessible paid refreshes at 100 and 150 Dawnium . Additional refresh slots beyond run 4 unlock through monthly card and pack tiers. Once gear actually matters (Verdantglade → Cinder Ridge transition), the four-run mid-spender ladder is the cleanest Dawnium spend in the game.\n\n• Ranking is based on how far you reach. Not which nodes you pick. Optimise your route to reach the boss instead of cherry-picking \"safer\" nodes.\n\n• Dismantle old dungeon shards the moment a new dungeon unlocks. Previous-dungeon shards lose their sell value as soon as the replacement opens. They are dismantle-only after that.\n\n• Material dungeon refresh ladder. F2P / light spender 2/2/2/2 daily. Mid spender 4/2/4/4 (the 2 sits on whichever material your class needs least). $1,000/mo 6/6/6/6. $3,000/mo 8/8/8/8. $5,000/mo or season-title chasers 10/10/10/10.\n\n• Runs bank up to 6. F2P bank-and-burst: skip 4 attempts across slow days, then buy 2 paid refreshes on a burst day. Cap is hard at 6 — overflow is lost.\n\nFull breakdown including which dungeon to prioritise per class and the spending math on Dawnium refreshes is in the Daily Dungeons guide .",
+        "images": []
+      },
+      {
+        "title": "Shop Refresh Schedule",
+        "content": "• Before Aqualis opens: F2P refresh once per day, buy out the shop.\n\n• During Loong Haven: refresh twice, buy out.\n\n• After Loong Haven opens: only buy items at 80% off, refresh up to three times.\n\n• Whales: scale refresh count to your Mystery Realm material total. Bigger stash, more refreshes.",
+        "images": []
+      },
+      {
+        "title": "Mysterious NPC: Primal Forge Only",
+        "content": "The day after Chaos Invasion ends, a Mysterious NPC appears in your Home. You can spend Chaos Crystals at their shop. ONLY buy the Primal Forge. Nothing else. This rule applies to every player regardless of spending level.\n\n• Do not buy anything else. Every other item in the shop is a trap at this point in the kingdom.\n\n• Upgrade Primal Forge all the way to Immortal. Anything less and the crystals are wasted on a temporary tier.\n\n• If you cannot afford it: save your Chaos Crystals, kick out the NPC, and continue exchanging next cycle. Do not panic-spend on alternates.\n\nWhy so strict. Primal Forge is the only Chaos shop item that compounds across kingdoms. Every other purchase is replaced or made obsolete by Cinder Ridge rewards, so spending on them sets your account back.",
+        "images": []
+      },
+      {
+        "title": "Arena Ticket Strategy",
+        "content": "PvP refresh is weekly. The week resets the climb, which lets early-week pushes grab high ranks before whale-tier rosters lock the top in place.\n\n• Day 1 of a new week: dump all 20 saved tickets immediately. Everyone else is still climbing. You grab a high rank and earn free daily diamonds for the rest of the week.\n\n• After week 1, stop fighting. Rankings lock by power. Save tickets for the next reset.\n\n• Buying extra tickets in one day costs more Dawnium per ticket. Maximum profit means buying close to zero tickets after week 1.",
+        "images": []
+      },
+      {
+        "title": "Spending Order If You Open Your Wallet",
+        "content": "Best value to worst value across the launch storefront.\n\n• Monthly card. Best low-spend value. Boosts AFK gains and EXP.\n\n• Month Fund. Second-best.\n\n• Weekly Card. Third.\n\n• Pop-up packs. Last. Avoid unless you specifically need the contents.\n\nVouchers vs VIP points. Vouchers convert directly to money-equivalent value. VIP points only credit when you actually spend, so do not stockpile vouchers expecting the VIP track to catch up.",
+        "images": []
+      },
+      {
+        "title": "Long-Game Pitfalls",
+        "content": "• Do not reroll. Names are unique and there is no reroll benefit baked into the game.\n\n• Do not over-level or over-upgrade early. Past certain thresholds, power resets at season end. Only permanent currency ( Astral ) carries forward. F2P has effectively zero shot at season 1 rank, so relax and learn the systems instead of grinding.\n\n• New job advancements come with their own premium skill pulls. Each new job opens a pseudo-banner that only feeds the new pool, so save pulls ahead of each new job tier.\n\n• Affection caps at 1000 per week on summons. Overflow still accumulates as profile hearts but you cannot carry leftover affection into the next week's claim.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "reroll-guide",
+    "url": "https://eog.gg/games/sword-x-staff/guides/reroll-guide/",
+    "category": "Beginner",
+    "title": "Sword x Staff Reroll Guide",
+    "excerpt": "When to reroll, when not to, and which skills to target on Warrior and Mage openings. Why server lock-in usually outweighs the upside, the 15-20 minute reroll loop, named targets (Heavy Impact, Water Assault), and stop conditions.",
+    "introTitle": "Read This Before You Reroll",
+    "intro": "Sword x Staff has limited server capacity . Rerolling means leaving your starting server, and once a server hits its cap you cannot join it later. If your friends or guild are already on a server, rerolling can lock you out of playing with them permanently. The decision is not just about pulls. Read the Should You Reroll section before opening a new account.\n\nA focused decision tree on whether to reroll and what to target if you commit to it. The truth most reroll guides bury: in Sword x Staff the catch-up curve is short and the server lock-in is permanent, so the math rarely favours rerolling unless you have a very specific target and no social commitments to the launch server.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "Should You Reroll?",
+        "content": "Three questions decide it. Answer them honestly before opening a fresh account.\n\n• Are your friends or guild already on a specific server? If yes, do not reroll. Servers fill. The risk of getting locked out of joining them is higher than the upside of one extra Legendary skill.\n\n• Do you have a specific skill target in mind? If no, do not reroll. Rerolling without a target is rerolling for general \"good pulls,\" which is statistically the same as just playing the game and claiming dailies.\n\n• Are you committing to Warrior or Mage for the long haul? Reclassing unlocks at Aqualis but isn't lossless — skills swap like-for-like (so F2P players RNG into target-class skills they don't own) and class-specific stat tuning doesn't transfer cleanly. The launch skill pool still matters less than the eight weeks of progression you'd skip rerolling, but it isn't a free reset later either.\n\nThe catch-up window is short. Non-rerollers receive launch login rewards, KonoSuba collab pulls across milestones, and the 13 active redemption codes within their first week. After day 7-10 the gap between a rerolled account and a regular account is small enough that the social cost of rerolling usually outweighs the benefit.",
+        "images": []
+      },
+      {
+        "title": "How A Reroll Run Works",
+        "content": "If you decide to reroll, the loop is short. Expect 15-20 minutes per run.\n\n• Create a guest account. Do not bind to email or social on the first attempt. Guest accounts let you rotate cleanly without burning credentials.\n\n• Run the tutorial. Tutorial includes 10 forced pulls. Skip every cutscene that has a skip button.\n\n• Claim launch mail rewards. Compensation pulls, founder gift, and any cross-promo bundle land in your in-game mailbox at start.\n\n• Redeem launch codes. The 13 currently live codes are listed on the Codes tab . Most grant a Stellatie + Destiny Fruit + Rare Auroral Badge bundle.\n\n• Pull on the launch banner. Standard 10-pulls until you exhaust your pull pool. Roughly 45 free pulls plus the forced tutorial 10, before codes.\n\n• Check your results against the target list below. Stop and commit if you hit a target. Otherwise reset by clearing the app cache or logging out of the guest account.\n\nBind your final account. Once you have the pulls you wanted, bind to a permanent email or social account immediately. Guest-only accounts can be wiped by app reinstalls or device changes.",
+        "images": []
+      },
+      {
+        "title": "Mage Reroll Targets",
+        "content": "Mage opens into Sorcerer or Sage at the second-class advancement (Lv.44, in Cinder Ridge). The launch reroll list assumes you are going Sorcerer, which is the F2P-friendly path. Sage targets overlap heavily, so this list still pays out if you swap later.\n\n• Water Assault. The single best Mage opener. Wide AoE with respectable damage, and the Water tag synergises with the Water to Ice charm. Multi-hit, which means against medium and large enemies it can hit the same target multiple times. The closest thing to a \"must-pull\" on the Mage roll.\n\n• Gale Shield. The best early Mage protection. Note: Sorcerer eventually replaces this with Void Bubble (a stronger version), so Gale Shield is good now but not a permanent slot.\n\n• Water to Ice charm. Pairs directly with Water Assault. If you land both in the same opening, the multi-hit Water damage carries you through most of Verdantglade.\n\n• Mana Surge. Strong general Crit passive. Useful on any Mage build, including the eventual Sage swap.\n\nWhat to ignore on the Mage roll. Single-target Mage-side skills (Fireball, Frost Spear) are placeholders for the first few weeks. They get replaced by the second job tier. Do not reroll for them.",
+        "images": []
+      },
+      {
+        "title": "Warrior Reroll Targets",
+        "content": "Warrior opens into Duelist or Knight . Targets below assume Duelist, which is the more popular branch and the higher-ceiling DPS option.\n\n• Heavy Impact. The best T1 single-target boss-killer in the game. If your account drops Heavy Impact, stop rerolling. This is the single highest-value Warrior pull at launch.\n\n• Mountain Collapse. Top AoE option, but place it last in your skill rotation. Its knockback shoves enemies out of position and can ruin follow-up AoE skills if cast early.\n\n• Whirlwind Slash. The other essential AoE. Pairs cleanly with Quadrant Slash and fits any Duelist clear rotation.\n\n• Blade of Lament. Valuable lifesteal for solo content. Pushes a Duelist through Fantasy Ladder walls without forcing you into a tank build.\n\n• Counter Blade. Passive damage. Always-on contribution that does not occupy a slot rotation.\n\nWhat to ignore on the Warrior roll. Knight-leaning utility skills (Guard Defense, Charge Assault) are fine but not reroll-grade. They become useful if you commit to Knight, but the Warrior roll pool is best used chasing Duelist-side DPS skills.",
+        "images": []
+      },
+      {
+        "title": "Stop Conditions",
+        "content": "Two conditions worth stopping on. Pulling for the perfect roll wastes hours that compound against your progression.\n\n• One named target plus one supporting card. Heavy Impact + Counter Blade. Water Assault + Water to Ice charm. Either pair is enough to commit.\n\n• Three reasonable hits. If you pull three of the named targets above, that account is better than 95% of fresh accounts. Stop and bind it.\n\nDo not chase a Legendary you do not need. The standard banner pity is 70 pulls for a guaranteed Legendary, but you only get roughly 55 pulls during the reroll window. A single bad-luck account does not justify another 20-minute reset cycle.",
+        "images": []
+      },
+      {
+        "title": "What To Do If You Should Not Reroll",
+        "content": "If you ran through the decision tree and the answer was \"do not reroll,\" that is the strong default. The time spent rerolling is better invested elsewhere:\n\n• Push map exploration. Goddess Statues compound. See the Beginner Guide for why this beats every other day-1 activity.\n\n• Redeem the active codes. 13 currently live. Roughly 200 Dawnium, 13 Destiny Fruits, and 13 Stellatie across the standard bundles. Each code takes about 10 seconds.\n\n• Join a guild at level 15. Guild Boss drops include Skill Shard Vouchers, which is the highest-quality skill acquisition path in the early game outside Cinder Ridge.",
+        "images": []
+      }
+    ]
+  },
+  {
+    "slug": "void-rifts",
+    "url": "https://eog.gg/games/sword-x-staff/guides/void-rifts/",
+    "category": "Combat",
+    "title": "Sword x Staff Void Rifts",
+    "excerpt": "Biweekly Sunday event that rotates with Chaos Invasion. 10 attempts within 24 hours of spawn, then it disappears until its next rotation. 1-5 chance-progression floors per run for relic pulls up to Mythic. Group play scales rewards for non-whales.",
+    "introTitle": "Biweekly Sunday Event, 24-Hour Window",
+    "intro": "Void Rifts spawns every other Sunday and rotates with Chaos Invasion — one Sunday is Void Rifts, the next is Chaos Invasion. You get 10 attempts within 24 hours of spawn ; when the window closes the event disappears until its next rotation slot. Attempts do not bank and do not carry across rotations. Burn the full 10 on the day or lose them.\n\nCompact guide to a compact event. Read the TL;DR, knock out the run, move on.",
+    "introImages": [],
+    "sections": [
+      {
+        "title": "How A Run Works",
+        "content": "• Find a rift. Markers spawn across every region's overworld map. Region choice does not affect rewards. Contested rifts (another player already inside) lock you out — ride to the next marker.\n\n• Clear floors 1 through 5. After each floor the game rolls whether the rift continues. A clean clear does not guarantee the next floor. Higher floors mean harder enemies and fatter reward pools.\n\n• Walk out with relic pulls. Rarity rolls are independent per pull, so a single run can mix Normal / Epic / Legendary / Mythic. Currency drops scale with how many floors you cleared.",
+        "images": []
+      },
+      {
+        "title": "Group + Combat Tips",
+        "content": "• Group shape: 1 healer + 1 durable frontliner + 2 DPS. Recruit before queuing rather than brute-forcing the first attempt.\n\n• Where to find groups: in-game LFG channel, your guild, friends list, or the official Discord.\n\n• Heal between floors. The gap between floors is your only consistent recovery window. Open every new floor near full HP.\n\n• Swap loadouts when the enemy mix shifts. Freeze build for floor 1–2 mob packs, AoE / single-target swap for floor 3–4 elite-plus-adds. Use the loadout slots from the beginner guide .\n\n• Solo is fine for whales who can deep-clear high floors alone. For everyone else the group bonus more than pays for the coordination cost.",
+        "images": []
+      },
+      {
+        "title": "Event-Day Checklist",
+        "content": "• Log in on the Sunday it spawns. Check rotation against the prior Sunday — if last week was Chaos Invasion, this week is Void Rifts.\n\n• Run all 10 attempts within 24 hours. They disappear when the window closes.\n\n• Recruit before you queue. Healer + frontliner + 2 DPS.\n\n• Aim for 3–4 floor finishes. Floor 5 is bonus, not the goal.\n\n• Skip contested rifts immediately. Next marker rather than waiting.",
+        "images": []
+      }
+    ]
+  }
+]

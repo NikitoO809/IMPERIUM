@@ -1,0 +1,32 @@
+===== tieritem[1] classes=['tieritem', 'tiercode-new', 'callofdragons', 'leagueoforder', 'magic', 'pvp', 'skills'] =====
+  IMG class="" alt="vardun" src=https://www.allclash.com/wp-content/uploads/2026/04/Screenshot-1413.png
+  <div class="itemname"> Vardun
+  <a class=""> Best Build
+  <span class=""> ⓘ Details
+  <div class="tiertext"> NEW
+  <div class="maindescription"> Generation 5 mage with interesting rune mechanics. Everyone calls the end of infantry right now but honestly first of al
+  <span class="additionaldesc-name"> League of Order:
+  <span class="additionaldesc-text"> Magic
+  <span class="additionaldesc-name"> PvP:
+  <span class="additionaldesc-text"> Skills
+  <a class=""> Best Build
+  <a class=""> Best Magic Marches
+
+===== tieritem[3] classes=['tieritem', 'tiercode-as', 'callofdragons', 'springwardens', 'overall', 'pvp', 'skills'] =====
+  IMG class="" alt="seluna legendary" src=https://www.allclash.com/wp-content/uploads/2026/04/selunaleg.png
+  <div class="itemname"> Seluna Legendary
+  <a class=""> Best Build
+  <span class=""> ⓘ Details
+  <div class="tiertext"> A
+  <div class="tiertext"> ⁺
+  <div class="maindescription"> She has amazing PvP potential and is not just fun but has the burst and PvP tree that will make so much fun.
+  <span class="additionaldesc-name"> Springwardens:
+  <span class="additionaldesc-text"> Overall
+  <span class="additionaldesc-name"> PvP:
+  <span class="additionaldesc-text"> Skills
+  <div class="subtier-name"> Strength on Release:
+  <div class="subtier-rating tier-as"> A+
+  <div class="subtier-name"> Duration of Relevance:
+  <div class="subtier-rating tier-as"> A+
+  <a class=""> Best Build
+  <a class=""> Best Magic Marches

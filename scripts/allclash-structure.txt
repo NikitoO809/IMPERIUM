@@ -1,0 +1,109 @@
+Total .tieritem: 70
+Clases de .tieritem:
+    5x  tier-color-pro tieritem itemheadline
+    2x  tieritem tiercode-b callofdragons springwardens overall gathering support
+    1x  tieritem tiercode-new callofdragons leagueoforder magic pvp skills
+    1x  tieritem tiercode-new callofdragons springwardens magic rally control
+    1x  tieritem tiercode-as callofdragons springwardens overall pvp skills
+    1x  tieritem tiercode-s callofdragons leagueoforder infantry pvp mobility
+    1x  tieritem tiercode-ss callofdragons springwardens infantry garrison tank
+    1x  tieritem tiercode-a callofdragons leagueoforder cavalry pvp skills
+    1x  tieritem tiercode-as callofdragons leagueoforder cavalry rally control
+    1x  tieritem tiercode-a callofdragons springwardens overall pvp skills
+    1x  tieritem tiercode-ss callofdragons leagueoforder marksman pvp precision
+    1x  tieritem tiercode-bs callofdragons springwardens marksman pvp support
+    1x  tieritem tiercode-s callofdragons leagueoforder magic pvp skills
+    1x  tieritem tiercode-bs callofdragons wilderburg magic garrison skills
+    1x  tieritem tiercode-b callofdragons wilderburg overall gathering skills
+    1x  tieritem tiercode-bs callofdragons leagueoforder infantry rally tank
+    1x  tieritem tiercode-s callofdragons wilderburg infantry pvp support
+    1x  tieritem tiercode-ss callofdragons wilderburg cavalry pvp mobility
+    1x  tieritem tiercode-s callofdragons springwardens cavalry pvp mobility
+    1x  tieritem tiercode-bs callofdragons leagueoforder cavalry garrison skills
+    1x  tieritem tiercode-s callofdragons leagueoforder marksman pvp control
+    1x  tieritem tiercode-a callofdragons leagueoforder marksman rally skills
+    1x  tieritem tiercode-ss callofdragons leagueoforder overall pvp support
+    1x  tieritem tiercode-ss callofdragons springwardens magic pvp control
+    1x  tieritem tiercode-bs callofdragons wilderburg magic rally support
+    1x  tieritem tiercode-as callofdragons leagueoforder infantry pvp tank
+    1x  tieritem tiercode-b callofdragons springwardens infantry garrison skills
+    1x  tieritem tiercode-a callofdragons wilderburg cavalry pvp skills
+    1x  tieritem tiercode-b callofdragons leagueoforder cavalry rally tank
+    1x  tieritem tiercode-s callofdragons leagueoforder marksman pvp mobility
+    1x  tieritem tiercode-s callofdragons wilderburg marksman garrison precision
+    1x  tieritem tiercode-bs callofdragons leagueoforder magic pvp skills
+    1x  tieritem tiercode-b callofdragons wilderburg magic garrison support
+    1x  tieritem tiercode-s callofdragons leagueoforder overall pvp skills
+    1x  tieritem tiercode-as callofdragons wilderburg infantry pvp mobility
+    1x  tieritem tiercode-as callofdragons wilderburg infantry rally tank
+    1x  tieritem tiercode-a callofdragons springwardens cavalry pvp control
+    1x  tieritem tiercode-b callofdragons leagueoforder cavalry garrison skills
+    1x  tieritem tiercode-a callofdragons springwardens marksman peacekeeping mobility
+    1x  tieritem tiercode-a callofdragons springwardens marksman rally precision
+    1x  tieritem tiercode-ss callofdragons leagueoforder magic peacekeeping skills
+    1x  tieritem tiercode-ss callofdragons wilderburg marksman pvp control
+    1x  tieritem tiercode-s callofdragons springwardens magic pvp control
+    1x  tieritem tiercode-as callofdragons leagueoforder magic pvp skills
+    1x  tieritem tiercode-a callofdragons leagueoforder infantry pvp tank
+    1x  tieritem tiercode-bs callofdragons wilderburg marksman engineering mobility
+    1x  tieritem tiercode-bs callofdragons springwardens cavalry pvp mobility
+    1x  tieritem tiercode-bs callofdragons wilderburg cavalry peacekeeping skills
+    1x  tieritem tiercode-bs callofdragons leagueoforder overall pvp support
+    1x  tieritem tiercode-b callofdragons wilderburg overall rally precision
+    1x  tieritem tiercode-b callofdragons springwardens infantry garrison tank
+    1x  tieritem tiercode-b callofdragons leagueoforder marksman engineering precision
+    1x  tieritem tiercode-b callofdragons leagueoforder infantry peacekeeping skills
+    1x  tieritem tiercode-cs callofdragons leagueoforder magic pvp mobility
+    1x  tieritem tiercode-cs callofdragons springwardens magic pvp control
+    1x  tieritem tiercode-c callofdragons springwardens marksman peacekeeping precision
+    1x  tieritem tiercode-c callofdragons wilderburg infantry garrison skills
+    1x  tieritem tiercode-c callofdragons leagueoforder cavalry rally tank
+    1x  tieritem tiercode-c callofdragons springwardens infantry gathering skills
+    1x  tieritem tiercode-c callofdragons leagueoforder overall gathering support
+    1x  tieritem tiercode-c callofdragons wilderburg overall gathering skills
+    1x  tieritem tiercode-c callofdragons wilderburg overall gathering support
+    1x  tieritem tiercode-c callofdragons wilderburg overall engineering tank
+    1x  tieritem tiercode-d callofdragons leagueoforder overall peacekeeping support
+    1x  tieritem tiercode-d callofdragons wilderburg overall gathering support
+
+=== Secuencia de .tieritem (primeros 40) ===
+[0] (tier-color-pro tieritem itemheadline) "GENERATION 5 Here are all heroes of this generation"
+[1] (tieritem tiercode-new callofdragons leagueoforder magic pvp skills) "Vardun Best Build ⓘ Details NEW Generation 5 mage with inter" | 1img alt="vardun" src=...p-content/uploads/2026/04/Screenshot-1413.png
+[2] (tieritem tiercode-new callofdragons springwardens magic rally control) "Cantaman Best Build ⓘ Details NEW Designed to work along Var" | 1img alt="cantaman" src=...m/wp-content/uploads/2026/04/cantamanicon.jpg
+[3] (tieritem tiercode-as callofdragons springwardens overall pvp skills) "Seluna Legendary Best Build ⓘ Details A ⁺ She has amazing Pv" | 1img alt="seluna legendary" src=....com/wp-content/uploads/2026/04/selunaleg.png
+[4] (tieritem tiercode-s callofdragons leagueoforder infantry pvp mobility) "Joren Best Build ⓘ Details S Really a open-field monster for" | 1img alt="joren" src=...p-content/uploads/2026/03/Screenshot-1227.png
+[5] (tieritem tiercode-ss callofdragons springwardens infantry garrison tank) "Ellanir Best Build ⓘ Details S ⁺ Makes infantry more durable" | 1img alt="ellanir" src=...p-content/uploads/2026/03/Screenshot-1228.png
+[6] (tieritem tiercode-a callofdragons leagueoforder cavalry pvp skills) "Agnar Best Build ⓘ Details A Massive with incredible defense" | 1img alt="agnar" src=...p-content/uploads/2026/02/Screenshot-1124.png
+[7] (tieritem tiercode-as callofdragons leagueoforder cavalry rally control) "Freya Best Build ⓘ Details A ⁺ A little bit more contradicti" | 1img alt="freya" src=...p-content/uploads/2026/02/Screenshot-1123.png
+[8] (tieritem tiercode-a callofdragons springwardens overall pvp skills) "Seluna Best Build ⓘ Details A Flying universal epic pvp hero" | 1img alt="seluna" src=...p-content/uploads/2025/12/Screenshot-1399.png
+[9] (tieritem tiercode-ss callofdragons leagueoforder marksman pvp precision) "Ruby Best Build ⓘ Details S ⁺ A new era has come and while t" | 1img alt="ruby" src=...wp-content/uploads/2025/11/Screenshot-921.png
+[10] (tieritem tiercode-bs callofdragons springwardens marksman pvp support) "Kaelan Best Build ⓘ Details B ⁺ Not just with Ruby a new era" | 1img alt="kaelan" src=...wp-content/uploads/2025/11/Screenshot-922.png
+[11] (tier-color-pro tieritem itemheadline) "GENERATION 4 Here are all heroes of this generation"
+[12] (tieritem tiercode-b callofdragons springwardens overall gathering support) "Eirlys Best Build ⓘ Details B New epic gathering hero and sh" | 1img alt="eirlys" src=...wp-content/uploads/2025/09/Screenshot-750.png
+[13] (tieritem tiercode-s callofdragons leagueoforder magic pvp skills) "Yun-Ming Best Build ⓘ Details S Absolutely powerful and alon" | 1img alt="yun-ming" src=.../wp-content/uploads/2025/09/yun-ming-icon.png
+[14] (tieritem tiercode-bs callofdragons wilderburg magic garrison skills) "Gromara Best Build ⓘ Details B ⁺ Don't be too confused about" | 1img alt="gromara" src=...m/wp-content/uploads/2025/09/gromara-icon.png
+[15] (tieritem tiercode-b callofdragons wilderburg overall gathering skills) "Flynt Best Build ⓘ Details B There is like so much about thi" | 1img alt="flynt" src=...com/wp-content/uploads/2025/09/flynt-icon.png
+[16] (tieritem tiercode-bs callofdragons leagueoforder infantry rally tank) "Lei Kuan Best Build ⓘ Details B ⁺ Not too much happened to i" | 1img alt="lei kuan" src=.../wp-content/uploads/2025/07/lei-kuan-icon.png
+[17] (tieritem tiercode-s callofdragons wilderburg infantry pvp support) "Kuma Best Build ⓘ Details S If you seek to get infantry back" | 1img alt="kuma" src=....com/wp-content/uploads/2025/07/kuma-icon.png
+[18] (tieritem tiercode-ss callofdragons wilderburg cavalry pvp mobility) "Mardok Best Build ⓘ Details S ⁺ I admit I thought this is a " | 1img alt="mardok" src=...wp-content/uploads/2025/06/Screenshot-400.png
+[19] (tieritem tiercode-s callofdragons springwardens cavalry pvp mobility) "Neya Best Build ⓘ Details S Generation 4 cavalry with camouf" | 1img alt="neya" src=....com/wp-content/uploads/2025/05/neya-icon.png
+[20] (tieritem tiercode-bs callofdragons leagueoforder cavalry garrison skills) "Lieh-Shan Yen Best Build ⓘ Details B ⁺ There is two things y" | 1img alt="lieh-shan yen" src=...wp-content/uploads/2025/03/Screenshot-215.png
+[21] (tieritem tiercode-s callofdragons leagueoforder marksman pvp control) "Sibyl Best Build ⓘ Details S Absolutely strong. Will be the " | 1img alt="sibyl" src=...com/wp-content/uploads/2024/12/sibyl-icon.png
+[22] (tieritem tiercode-a callofdragons leagueoforder marksman rally skills) "Falgrim Best Build ⓘ Details A Top with Sibyl if you want a " | 1img alt="falgrim" src=...m/wp-content/uploads/2024/12/falgrim-icon.png
+[23] (tieritem tiercode-ss callofdragons leagueoforder overall pvp support) "Mu Hsiang Best Build ⓘ Details S ⁺ Absolutely good and worth" | 1img alt="mu hsiang" src=.../call-of-dragons-mu-hsiang-legendary-icon.png
+[24] (tier-color-pro tieritem itemheadline) "GENERATION 3 Here are all heroes of this generation"
+[25] (tieritem tiercode-ss callofdragons springwardens magic pvp control) "Thundelyn Best Build ⓘ Details S ⁺ Such a beast with aoe dam" | 1img alt="thundelyn" src=...wp-content/uploads/2024/12/thundelyn-icon.png
+[26] (tieritem tiercode-bs callofdragons wilderburg magic rally support) "Thaleia Best Build ⓘ Details B ⁺ She is really strong and wh" | 1img alt="thaleia" src=...m/wp-content/uploads/2024/12/thaleia-icon.png
+[27] (tieritem tiercode-as callofdragons leagueoforder infantry pvp tank) "Danfel Best Build ⓘ Details A ⁺ Quite infantry heavy invest " | 1img alt="danfel" src=...om/wp-content/uploads/2024/12/danfel-icon.png
+[28] (tieritem tiercode-b callofdragons springwardens infantry garrison skills) "Mogro Best Build ⓘ Details B Can do nasty stuff with his kit" | 1img alt="mogro" src=...com/wp-content/uploads/2024/12/mogro-icon.png
+[29] (tieritem tiercode-a callofdragons wilderburg cavalry pvp skills) "Urag Best Build ⓘ Details A Incredible kit overall, really c" | 1img alt="urag" src=....com/wp-content/uploads/2024/12/urag-icon.png
+[30] (tieritem tiercode-b callofdragons leagueoforder cavalry rally tank) "Tobin Best Build ⓘ Details B Please mind, he is designed to " | 1img alt="tobin" src=...com/wp-content/uploads/2024/12/tobin-icon.png
+[31] (tieritem tiercode-s callofdragons leagueoforder marksman pvp mobility) "Zayda Best Build ⓘ Details S Dethroing Ffraegar and Syndrion" | 1img alt="zayda" src=...com/wp-content/uploads/2024/12/zayda-icon.png
+[32] (tieritem tiercode-s callofdragons wilderburg marksman garrison precision) "Maggrat Best Build ⓘ Details S The new hero you want to garr" | 1img alt="maggrat" src=...m/wp-content/uploads/2024/12/maggrat-icon.png
+[33] (tieritem tiercode-bs callofdragons leagueoforder magic pvp skills) "Bertrand Best Build ⓘ Details B ⁺ Usually new heroes a super" | 1img alt="bertrand" src=.../wp-content/uploads/2024/12/bertrand-icon.png
+[34] (tieritem tiercode-b callofdragons wilderburg magic garrison support) "Tohar Best Build ⓘ Details B Usually new heroes a super stro" | 1img alt="tohar" src=...com/wp-content/uploads/2024/12/tohar-icon.png
+[35] (tier-color-pro tieritem itemheadline) "GENERATION 2 Here are all heroes of this generation"
+[36] (tieritem tiercode-s callofdragons leagueoforder overall pvp skills) "Bahorn Best Build ⓘ Details S Super strong with good pairing" | 1img alt="bahorn" src=...loads/2025/03/call-of-dragons-bahorn-icon.png
+[37] (tieritem tiercode-as callofdragons wilderburg infantry pvp mobility) "Skogul Best Build ⓘ Details A ⁺ So far infantry was used for" | 1img alt="skogul" src=...om/wp-content/uploads/2024/12/skogul-icon.png
+[38] (tieritem tiercode-as callofdragons wilderburg infantry rally tank) "Goresh Best Build ⓘ Details A ⁺ So far infantry was used for" | 1img alt="goresh" src=...loads/2023/10/call-of-dragons-goresh-icon.png
+[39] (tieritem tiercode-a callofdragons springwardens cavalry pvp control) "Forondil Best Build ⓘ Details A His kit is super interesting" | 1img alt="forondil" src=.../wp-content/uploads/2024/12/forondil-icon.png

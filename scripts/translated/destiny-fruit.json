@@ -1,0 +1,39 @@
+{
+  "slug": "destiny-fruit",
+  "title": "Guía de Destiny Fruit de Sword x Staff",
+  "excerpt": "Un uso común de la Destiny Fruit es la Destiny Exploration: gastarla en una ubicación concreta para tirar por una reliquia que te falta. El ejemplo en tres pasos (Relic Gallery -> lista de fuentes -> gastar en la ubicación), cuándo pasar de tirar a explorar, y el uso secundario de desbloqueos regionales (pociones de enredadera, llaves, taladros en el vendedor del reino).",
+  "introTitle": "La Destiny Fruit rellena reliquias, no es una tirada al azar",
+  "intro": "Un uso común de la Destiny Fruit es la Destiny Exploration : viajar a una ubicación concreta y gastar Destiny Fruit allí para tirar por una reliquia que falta en tu Relic Gallery. El uso secundario son los desbloqueos regionales: pociones de enredadera, llaves, taladros y otros objetos en el vendedor local del reino. No hay ninguna buena razón para gastar Destiny Fruit en una ubicación aleatoria del mapa; cada gasto debería apuntar a algo que realmente necesitas.",
+  "introImages": [],
+  "sections": [
+    {
+      "title": "Ejemplo: rellenar una reliquia que falta con Destiny Exploration",
+      "content": "Un caso de uso común de la Destiny Fruit es cerrar un hueco de la relic gallery mediante la Destiny Exploration. Los tres pasos de abajo recorren ese ejemplo usando un flujo real dentro del juego.\n\n• Paso 1 — Relic Gallery. Abre tu Relic Gallery. Cada reino tiene su propia pestaña (Verdantglade, Cinder Ridge, Aqualis, Loong Haven, Other). Las entradas en gris son reliquias que todavía no tienes.\n\n• Paso 2 — Lista de fuentes. Toca la reliquia que te falta para abrir su página de detalle. Baja hasta Source . Verás una lista como Kingdom Gacha , Element Gacha , y una entrada \"<Kingdom> <Area> Destiny Exploration\". La entrada de Destiny Exploration es la vía de gasto dirigido.\n\n• Paso 3 — Gasta en la ubicación. Viaja al área indicada en la línea de fuente. El cuadro de confirmación muestra la ubicación y el coste en Destiny Fruit de ese intento; el coste puede variar, así que lee el cuadro antes de confirmar. Repite hasta que caiga la reliquia.",
+      "images": [
+        "https://eog.gg/assets/games/sword-x-staff/guides/destiny-fruit-step1-gallery.webp",
+        "https://eog.gg/assets/games/sword-x-staff/guides/destiny-fruit-step2-source.webp",
+        "https://eog.gg/assets/games/sword-x-staff/guides/destiny-fruit-step3-spend.webp"
+      ]
+    },
+    {
+      "title": "Cuándo pasar a Destiny Exploration",
+      "content": "La Destiny Exploration es un rellenahuecos de reliquias, no un sustituto de tirar. La tasa de obtención de la gacha del reino es más rápida por equivalente de Destiny Fruit para la mayor parte de la galería. El punto de cambio es cuando tirar se ha ralentizado pero la galería sigue incompleta.\n\n• En torno al ~70% de la galería completada. Regla práctica del analista: cuando has reunido más o menos siete de cada diez reliquias de un reino pero las tiradas se han secado (lo has dejado, o estás aguantando deliberadamente en ese banner), la Destiny Exploration es la forma de cerrar el hueco.\n\n• Apuntar a bonus de set. Las reliquias caen en sets; por ejemplo, el set Faint Ember Glow de Cinder Ridge es de 4 piezas (Quake Pick, Pyrecrown, Ignic Loop, Blade Saw). Los bonus de set se activan con 2 / 3 / 4 piezas en tu poder. Si vas 3/4 en un set útil y te falta una pieza concreta, la Destiny Exploration es la vía más limpia para llegar al bonus de 4 piezas.\n\n• Azules y moradas en concreto. La mayoría de las cuentas se atascan en las reliquias azules (rare) y moradas (epic), no en el escalón de mayor rareza; la gacha tiende a rellenar las ranuras rare al final porque la distribución de la tasa favorece primero a las reliquias estrella. La Destiny Exploration es más útil justo en el hueco de azules / moradas.\n\n• No apuntes a reliquias que no necesitas. Una reliquia que te falta y que no forma parte de un set que pienses usar no merece la pena rellenarla. Ajusta el gasto de Destiny Exploration a tu plan de build, no al afán de completarlo todo.",
+      "images": []
+    },
+    {
+      "title": "Uso secundario: desbloqueos regionales",
+      "content": "La Destiny Fruit también se puede gastar en el vendedor local de cada reino en objetos específicos de la región. Los objetos disponibles varían según el reino, pero la lista recurrente incluye:\n\n• Pociones de enredadera. Consumibles de desplazamiento por el mapa para los trucos de terreno propios del reino.\n\n• Llaves. Desbloquean cofres, subzonas o contenido bloqueado dentro del reino.\n\n• Taladros. Aceleradores de nodos de recursos para la capa de minería / recolección del reino.\n\n• Desbloqueos varios. Cada reino añade sus propios objetos de compra única en el vendedor local.\n\nEstos son extras agradables, no la razón de ser de la Destiny Fruit. Cubre la lista de desbloqueos regionales cuando tengas fruta sobrante más allá de tu plan de Destiny Exploration, nunca antes.",
+      "images": []
+    },
+    {
+      "title": "Estrategia según el nivel de gasto",
+      "content": "La Destiny Exploration es el mismo flujo de trabajo en cualquier nivel de gasto. Lo que cambia es cuánto ha hecho ya por ti el tirar y, por tanto, lo grande que es realmente el hueco de la galería.\n\n• F2P: Solo con tiradas te quedará el mayor hueco de la galería. Planifica uno o dos sets prioritarios por reino (Faint Ember Glow para builds de fuego de Cinder Ridge, etc.) y usa la Destiny Exploration para las piezas que falten y cerrar el bonus de set 3/4 o 4/4. No persigas reliquias fuera de tu build.\n\n• Gasto ligero / medio: Tirar te cubre la mayoría de las reliquias. La Destiny Exploration pasa a ser limpieza dirigida: uno o dos huecos concretos de azules / moradas por reino. Gasta Destiny Fruit en los huecos y luego mete lo que sobre en desbloqueos regionales.\n\n• Whale: La mayoría de las galerías se llenan solo con tiradas. La Destiny Exploration queda reservada para las últimas 1–2 ranuras rezagadas por reino, normalmente piezas de baja prioridad que la distribución de la tasa de la gacha se saltó. Usa la Destiny Fruit sobrante en desbloqueos regionales.",
+      "images": []
+    },
+    {
+      "title": "Errores a evitar",
+      "content": "• Malgastar Destiny Fruit en una ubicación aleatoria del mapa. Gastar sin un objetivo concreto de reliquia que falta quema fruta sin avanzar nada en la galería. Revisa siempre la lista de fuentes primero.\n\n• Explorar por reliquias que no necesitas. Si la reliquia que falta no forma parte de un set que realmente uses, la ranura es cosmética. Gasta en reliquias que activen un bonus de set en una build que uses.\n\n• Pasarte a Destiny Exploration demasiado pronto. Tirar en la gacha rellena la galería más rápido que la Destiny Exploration durante el primer ~70% de las reliquias. Tira primero, explora al final.",
+      "images": []
+    }
+  ]
+}

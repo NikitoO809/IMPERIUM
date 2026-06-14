@@ -1,0 +1,704 @@
+{
+  "title": "Artifacts Ultimate Guide",
+  "intro": "If you’ve played this kind of game before, you likely know that a hero needs a powerful weapon to reach their full potential. In Call of Dragons, these weapons are called Artifacts. As you advance through the game, your heroes will have chances to equip some of the finest Artifacts, each with their own unique stats and abilities. In this complete guide to Call of Dragons Artifacts, we’ll dive into how you can get, level up, and equip these magical weapons, as well as what factors to consider when choosing one for your hero.",
+  "intro_images": [
+    "https://cdn.cod.guide/wp-content/uploads/2023/02/Call-of-Dragons-artifact-300x216.jpg"
+  ],
+  "source_url": "https://cod.guide/artifacts/",
+  "blocks": [
+    {
+      "title": "What are artifacts in Call of Dragons?",
+      "content": "If you’re an experienced player of Call of Dragons, you’re likely aware that your heroes need powerful weapons to maximize their potential.\n\nThese weapons, called Artifacts, can be found as you progress through the game, and they offer a range of stats and abilities that can be used to equip your heroes with the best possible gear.\n\nArtifacts are essential in boosting the combat abilities and damage output of your heroes, whether you’re battling other players in PvP or facing off against challenging PvE enemies such as\nDarklings, Dark Creatures\n, and\nBehemoths\n.\n\nAdditionally, Artifacts can also improve non-combat skills like Gathering, Legion Load Capacity, and Building Engineering.\n\nEach Artifact comes with a powerful active skill that can be utilized during battle to gain instant resources or to weaken enemy units and strengthen your own.",
+      "images": [],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Best Heroes to Use with Artifacts",
+      "content": "﻿Name\nTier\nType(s)\nHero To Pair\nRange\nAttributes\nAncient Tree Roots\nLegendary\nGathering | Health\nNone\nLegion Load Capacity +24.7% | Legion HP +5.5%\nBloodblade Banner\nLegendary\nRally | Assault\nNone\nRallied Army ATK +19.8% | Legion DEF +6.5%\nBreath of Jargentis\nLegendary\nMagic | Support\nNear\nMagic Unit Magic ATK +19.8% | Legion ATK +6.5%\nBreath of the Forest\nLegendary\nGarrison | Support\nNone\nGarrisoned Army ATK +19.8% | Legion DEF +6.5%\nFang of Ashkari\nLegendary\nMagic | PvP | Tank\nMelee\nNear\nMagic Unit DEF +19.8% | Legion DEF +6.5%\nGreymar's Warhammer\nLegendary\nInfantry | Control\nNear\nInfantry unit DEF +19.8% | Legion DEF +6.5%\nHeart of Kamasi\nLegendary\nMarksman | PvP | Support\nNear\nMarksman Unit DEF +19.8% | Legion DEF +6.5%\nKingslayer\nLegendary\nCavalry | PvP | Assault\nNear\nCavalry Unit ATK +19.8% | Legion ATK +6.5%\nKurrata's Wrath\nLegendary\nPeacekeeping\nNear\nPeacekeeping Damage +26.4% | Legion ATK +6.5%\nLucia's Horn\nLegendary\nGathering\nFar\nGather Speed +24.7% | Legion DEF + 6.5%\nPhoenix Eye\nLegendary\nMagic | Assault\nNear\nMagic Unit Magic ATK +19.8% | Legion ATK +6.5%\nShadowblade\nLegendary\nMarksman | PvP | Assault\nMedium\nMarksman Unit ATK + 19.8% | Legion ATK + 6.5%\nSorland's Blade\nLegendary\nCavalry | PvP | Assault\nNear\nCavalry Unit ATK +19.8% | Legion March Speed +7.5%\nSpringbird Feather\nLegendary\nMobility\nAny\nNone\nLegion March Speed +24.7% | Legion HP +5.5%\nSprings of Silence\nLegendary\nInfantry | PvP | Assault\nNear\nInfantry Unit ATK +19.8% | Legion ATK +6.5%\nStaff of the Prophet\nLegendary\nMagic | Mobility\nVery Far\nMagic Unit HP +16.8% | Legion HP +5.5%\nStorm Arrows\nLegendary\nCavalry | Mobility\nMedium\nCavalry Unit ATK +19.8% | Legion ATK +6.5%\nTear of Arbon\nLegendary\nMagic | PvP | Support\nNear\nMagic Unit DEF +19.8% | Legion DEF +6.5%\nAmulet of Glory\nEpic\nCavalry | Peacekeeping\nNear\nCavalry Unit HP +15.8% | Peacekeeping Damage Taken +7.5%\nArchery Master's Manuel\nEpic\nMarksman | PvP\nMarksman Unit DEF +16.8% | Legion DEF +4.5%\nBlade of Reproach\nEpic\nCavalry | Peacekeeping\nCavalry Unit ATK +16.8% | Peacekeeping Damage +7.5%\nButcher's Balde\nEpic\nInfantry | PvP | Assault\nInfantry Unit ATK +16.8% | Legion ATK +4.5%\nCentaur Bow\nEpic\nCavalry | PvP | Assault\nCavalry Unit DEF +16.8% | Legion DEF +4.5%\nCloak of Stealth\nEpic\nCavalary | Mobility\nCavalry Unit ATK +16.8% | Legion ATK +4.5%\nCodex of Prophecy\nEpic\nInfantry | Peacekeeping\nInfantry unit DEF +16.8% | Peacekeeping Damage Taken +7.5%\nFreezing Ring\nEpic\nMagic | Tank\nNear\nMagic Unit DEF +16.8% | Legion HP +4%\nGiant's Bone\nEpic\nPeackeeping\nPeacekeeping Damage +21.7% | Legion ATK +4.5%\nGreenfinger Sickle\nEpic\nGathering\nNone\nLegion Load Capacity +21.7% | Legion HP +4%\nHeartpiercer\nEpic\nMarksman | PvP | Assault\nMedium\nMarksman Unit ATK +16.8% | Legion ATK +4.5%\nHomecoming Blossom\nEpic\nMobility\nAny\nVery Far\nLegion March Speed +21.7% | Legion DEF +4.5%\nMagic Bomb\nEpic\nMagic | PvP | Assault\nFar\nMagic Unit ATK +16.8% | Legion ATK +4.5%\nPotion of Vigor\nEpic\nInfantry | Engineering\nBuild Engineering +21.7% | Legion HP +4%\nSpirit Bangle\nEpic\nMagic | PvP | Support\nMagic Unit HP +15.8% | Legion HP +4%\nStaff of Spring\nEpic\nMagic | PvP | Support\nMagic Unit HP +15.8% | Legion HP +4%\nBone Cleaver\nElite\nCavalry | PvP | Assault\nCavalry Unit ATK +14.8% | Legion DEF +4.5%\nBoots of Swiftness\nElite\nMobility\nAny\nLegion March Speed +17.7% | Legion HP +4%\nCrown of the Berserker\nElite\nCavalry | PvP\nCavalry Unit ATK +14.8% | Legion ATK +4.5%\nEver-Ice\nElite\nMagic | PvP | Assault\nMagic Unit DEF +14.8% | Legion HP +4%\nHarlequin Mask\nElite\nInfantry | Peacekeeping\nInfantry unit DEF +14.8% | Legion DEF +4.5%\nRapid Crossbow\nElite\nMarksman | PvP | Assault\nMarksman Unit HP +12.8% | Legion ATK +4.5%\nEnchanted Coins\nAdvanced\nGather | Attack\nGather Speed +10% | Legion ATK +1.5%\nJoyous Fireworkds\nAdvanced\nEngineering | Health\nBuild Engineering +10% | Legion HP +1.5%\nStorm Leaf\nAdvanced\nGather | Defense\nLegion Load Capacity +10% | legion DEF +1.5%\n\nMelee\n\nRead more:\nArtifact Tier List",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ancient-tree-roots.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/indis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/pan.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/chakcha.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ordo.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bloodblade-banner.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/hosk.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/breath-of-Jargentis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/breath-of-the-forest.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/garwood-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakhar.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/fang-of-ashkari.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/greymars-warhammer.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/garwood-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/madeline.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakhar.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/heart-of-kamasi-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kingslayer.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kurratas-wrath.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/eliana.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/lucias-horn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/indis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/chakcha.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ordo.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/phoenix-eye.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/shadowblades.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/shadowblades.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/04/Springbird-Feather.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/springs-of-silence.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/garwood-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakhar.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/madeline.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/staff-of-the-prophet.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/storm-arrows.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/tear-of-arbon.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/amulet-of-glory.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/eliana.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/archer-masters-manual.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/blade-of-reproach.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/eliana.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/butchers-blade.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/garwood-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/madeline.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakhar.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/centaur-bow.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/cloak-of-stealth.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/codex-of-prophecy.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/eliana.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/freezing-ring.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/giants-bone.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/greenfinger-sickle.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/indis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/pan.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/chakcha.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ordo.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/heartpiercer.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/homecoming-blossom.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/magic-bomb.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/potion-of-vigor.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/spirit-bangle.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/staff-of-spring.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/giants-bone.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/boots-of-swiftness.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/crown-of-the-berserker.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ever-ice.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/harlequin-mask.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nika.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/garwood-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/madeline.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakhar.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/rapid-crossbow.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gwanwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/enchanted-coins.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/indis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/pan.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/chakcha.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ordo.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/joyous-fireworks.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kregg.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/storm-leaf.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/indis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/pan.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/chakcha.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ordo.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/liliya.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/atheus.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Complete List of All Artifacts",
+      "content": "Legendary Artifacts",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/shadowblades.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Shadowblades",
+      "content": "Marksman | PvP | Assault\n\nMarksman Unit ATK +24%\nLegion ATK +22%\n\nSkill\n: Shadow Games\nCooldown\n: 1m 30s\nRage Cost\n: 1,200\n\nDeals Artifact Skill damage (Physical Damage Factor 3,600) to up to 5 enemy Legions in a designated rectangle. Each Legion takes 15% less damage per additional target.\n\nWhen thrown, these paper-thin knives fly through the night like the shadow of the moon, completing their mission without a sound.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/sorland-blade.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Soland’s Blade",
+      "content": "Cavalry | PvP | Assault\n\nCavalry Unit ATK +24%\nLegion March Speed +18%\n\nSkill\n: Sword Oath\nCooldown\n: 1m 30s\nRage Cost\n: 600\n\nDeals Artifact Skill damage (Physical Damage Factor 3,200) to up to 2 enemy Legions in a designated arc. Legions take 25% less damage per additional target. Grants your Legions Haste, increasing March Speed by 20% for 10s.\n\nSince the age of the Heptarchy, House Sorland’s Blade has had only one mission—to guard and protect, bringing glory to the Sons of the Stag.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kurratas-wrath.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Kurrata’s Wrath",
+      "content": "Peacekeeping\n\nPeacekeeping Damage +26.4%\nLegion ATK +22%\n\nSkill\n: Wolf Pack\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts on up to 10 friendly Legions in a designated circle, increasing damage they deal to Darklings and Dark Creatures by 40% for 10s.\n\nThe gauntlets that Kurrata used in a Duel of Honor. Upon the last drum beat, all of Wilderburg would know his name.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/springs-of-silence.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Springs of Silence",
+      "content": "Infantry | PvP | Assault\n\nInfantry Unit ATK +24%\nLegion ATK +22%\n\nSkill\n: Fleeting Beauty\nCooldown\n: 1m 30s\nRage Cost\n: 400\n\nDeals Artifact Skill damage to up to 3 enemy Legions in a designated arc (Physical Damage Factor 3,200). Each additional target reduces the damage dealt to each target by 15%. Legions that take damage also gain Slow, reducing their March Speed by 20% for 19s.\n\nThose cut down by these twin daggers don’t even have time to scream. The flowing blood does all the talking.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/lucias-horn.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Lucia’s Horn",
+      "content": "Gathering\n\nOverall Gather Speed +24.7%\nLegion DEF +22%\n\nSkill\n: Bounty of Nature\nCooldown\n: 2h\nRage Cost\n: None\n\nCasts immediately. After a short charge-up, a random Resource Point located in Alliance territory near your Legion is refreshed (minimum level 7, maximum level 7). Charging cannot be interrupted.\n\nA horn blessed by the Elven Queen. Its power to summon forth life has not faded with time.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ancient-tree-roots.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Ancient Tree Roots",
+      "content": "Gathering\n\nLegion Load Capacity +24.7%\nLegion HP+22%\n\nSkill\n: Geomancy\nCooldown\n: 30s\nRage Cost\n: None\n\nCasts immediately. After a short charge-up, teleports your Legion to a random unmanned high-level Resource Point within a certain range. Moving, being attacked, or gaining control effects can interrupt charging.\n\nWhere Titan fell, the Ancient Tree stands tall. The land’s memories lie deep within its labyrinthine roots.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/tear-of-arbon.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Tear of Arbon",
+      "content": "Magic | PvP | Support\n\nMagic Unit DEF +24%\nLegion DEF +22%\n\nSkill\n: Divine Mercy\nCooldown\n: 1m 30s\nRage Cost\n: 1,600\n\nCasts on up to 4 friendly Legions in a designated circle, healing lightly wounded units every 2s for 8s (Healing Factor 800).\n\nAccording to legends, this transparent stone formed from a tear of Arbon has powerful protective and healing abilities.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/fang-of-ashkari.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Fang Ashkari",
+      "content": "All-Rounder | PvP | Tank\n\nLegion DEF +24%\nLegion DEF +22%\n\nSkill\n: Thundershadow\nCooldown\n: 1m 30s\nRage Cost\n: 400\n\nCasts immediately, dealing Artifact Skill damage every second to up to 4 Legions in a circle surrounding the caster for 8s (Damage Factor 1,000). Each additional target reduces damage dealt to each target by 15%.\n\nThunder resounds in the air. Black clouds fill the sky. Demons weep, gods howl. This fang is all that remains of a once mighty dragon.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/breath-of-Jargentis.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Breath of the Forest",
+      "content": "Garrison | Support\n\nGarrisoned Army ATK +24%\nLegion DEF +22%\n\nSkill\n: Deepwoods Symphony\nCooldown\n: None\nRage Cost\n: None\n\nTakes effect while serving as Garrison Captain. When garrisoning a City or Stronghold, your Legion randomly gains one of the following effects every 30s: Ode (heals once every 2s for IOS, Healing Factor 600); Hymn (grants Vigor, increasing HP by 30% for iOS); or Aria (removes one debuff every 2s for 6s).\n\nA five-stringed lyre played by the Elven Queen. Its sound is like that of a spring breeze, enduring, full of life.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bloodblade-banner.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Bloodblade Banner",
+      "content": "Rally | Assault\n\nRallied Army ATK +24%\nLegion DEF +22%\n\nSkill\n: Warrior Spirit\nCooldown\n: None\nRage Cost\n: None\n\nOnce your Rallied Army enters battle, it deals Artifact Skill damage once every 30s (Physical Damage Factor 1,300), and your Legion gains Physical Keen, increasing their Physical ATK by 10% for 10s.\n\nThe banner of the Bloodblade Clan. Blessed by shamans, it stands unwavering, endowed with the glory of the Clan’s brave warriors.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/heart-of-kamasi-1.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Heart of Kamasi",
+      "content": "Marksman | PvP | Support\n\nMarksman Unit DEF +24%\nLegion DEF +22%\n\nSkill\n: Earthen Judgement\nCooldown\n: 1m 30s\nRage Cost\n: 1,200\n\nCasts immediately. 3 friendly Legions (including the caster) gain Physical Keen and Onslaught for IOS, increasing their Physical ATK by 30% and increasing normal attack damage dealt by 30%. Only takes effect when a Legion is composed entirely of Marksman units.\n\nAfter saving the Tavrosi from the Sunset of the Gods, the Earth Spirit Kamasi bestowed upon them a precious gem which held his remaining power—the power of the earth itself.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/staff-of-the-prophet.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Staff of the Prophet",
+      "content": "Magic | Mobility\n\nMagic Unit HP +20%\nLegion HP +17%\n\nSkill\n: Toward the Light\nCooldown\n: 8h\nRage Cost\n: 1,200\n\nCasts on a selected friendly Legion within the current Region and .within Alliance territory. After a 15s charge-up, 6 surrounding friendly Legions (including the target) are teleported to that Legion’s location. Teleportation will prioritize your Legions.\n\nLegends speak of a prophet who accepted a great mission from the God of Light. With his staffin hand, he led Humankind out of the Endless Night.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/wolf-woman-of-haelor.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Wolf-Woman of Haelor",
+      "content": "Cavalry | Mobility\n\nCavalry Unit HP +20%\nLegion HP +17%\n\nSkill\n: Wolfshadow\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nImmediately teleports your Legion to a designated empty area (range 24). Legion returns to their original position when the Skill is cast again, or 15s after casting.\n\nThe Wolf-Woman of Haelor Glacier is a well-known tale. Beneath her wolf mask, she was a true wolfrider.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/dragonrift.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Dragonrift",
+      "content": "Cavalry | Mobility\n\nCavalry Unit HP +20%\nLegion HP +17%\n\nSkill\n: Wolfshadow\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nImmediately teleports your Legion to a designated empty area (range 24). Legion returns to their original position when the Skill is cast again, or 15s after casting.\n\nThe Wolf-Woman of Haelor Glacier is a well-known tale. Beneath her wolf mask, she was a true wolfrider.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/phoenix-eye.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Phoenix Eye",
+      "content": "Magic | PvP | Assault\n\nMagic Unit ATK +24%\nLegion ATK +22%\n\nSkill\n: Burst Strike\nCooldown\n: 1m 30s\nRage Cost\n: 1,600\n\nDeals Artifact Skill damage to up to 5 surrounding enemy Legions in a circle (Magic Damage Factor 4,000). Each Legion takes 15% less damage for each additional target.\n\nAn eye lost by the Phoenix during the Sunset of the Gods. The fire that • should have died out still burns furiously within.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kingslayer.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Kingslayer",
+      "content": "Cavalry | PvP | Assault\n\nCavalry Unit ATK +24%\nLegion ATK +22%\n\nSkill\n: Burst Strike\nCooldown\n: 1m 30s\nRage Cost\n: 600\n\nDeals Artifact Skill damage (Physical Damage Factor 3,600) to up to 5 enemy Legions in a designated arc. Legions take 15% less damage per additional target. Legions that have fewer than 10% units remaining will be immediately defeated (only takes effect on Legions of other Lords).\n\nThe tolling bells signal the end of the trial. The true king’s hands shake in the twilight, and the false king’s head laughs in the flames.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/breath-of-Jargentis.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Breath of Jargentis",
+      "content": "Magic | PvP | Support\n\nMagic Unit ATK +24%\nLegion ATK +22%\n\nSkill\n: Acid Breath\nCooldown\n: 1m 30s\nRage Cost\n: 1,600\n\nInflicts DEF Break on up to 10 enemy Legions in a designated circle, reducing their DEF by 32% for 20s. If cast again, DEF Break does not stack, but its duration is reset.\n\nThe saliva of a primal, venomous dragon. What is perhaps more surprising is that the bottle containing it remains intact.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/storm-arrows.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Storm Arrows",
+      "content": "Cavalry | Mobility\n\nCavalry Unit ATK +24%\nLegion ATK +22%\n\nSkill\n: Blink\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nImmediately teleports your Legion to a designated empty area (range 30) and grants them Rampage, increasing their damage dealt by for 4s.\n\nA magical arrow used during the’ Night of Storms that changed the history of Jargand.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/springs-of-silence.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Springbird Feather",
+      "content": "Mobility\n\nLegion March Speed +24.7%\nLegion HP +17%\n\nSkill\n: Mighty Tailwind\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts immediately. Grants Haste to your Legion and up to 10 surrounding friendly Legions, increasing your Legion’s March Speed by 48% and friendly Legions’ March Speed by 32% for 10s.\n\nA feather of the Springbird that led Tiyar to Whitewing Peak. A symbol of the Holy Light.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/greymars-warhammer.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Greymar’s Warhammer",
+      "content": "Infantry | PvP | Control\n\nInfantry Unit DEF +24%\nLegion DEF +22%\n\nSkill\n: Ground Pound\nCooldown\n: 1m 30s\nRage Cost\n: 400\n\nCasts immediately. Deals Artifact Skill damage (Physical Damage Factor 3,200) to up to 5 surrounding enemy Legions in a circle and Stuns them for 2s. The damage dealt to each target is reduced by 15% for each additional target. This effect can only be triggered once every 10s.\n\nA warhammer crafted by the great weaponsmith Greymar. It is light as a feather—unless one is hit by it.\n\nEpic Artifacts",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/heartpiercer.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Heartpiercer",
+      "content": "Marksman | PvP | Assault\n\nMarksman Unit ATK +20%\nLegion ATK +18%\n\nSkill\n: Heart Shot\nCooldown\n: 1m 30s\nRage Cost\n: 1,200\n\nDeals Physical Artifact Skill damage to the target Legion (Physical Damage Factor 2,000), and has a 65% chance to inflict Physical DEF Break, reducing their Physical DEF by for 3s.\n\nA well-crafted crossbow whose arrows have only one target. Shot through the heart? This thing’s probably to blame.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/heartpiercer.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Archery Master’s Manual",
+      "content": "Marksman | PvP\n\nMarksman Unit DEF +20%\nLegion DEF +18%\n\nSkill\n: Steady Shot\nCooldown\n: 1m 30s\nRage Cost\n: 1,200\n\nCasts immediately. Your Legion gains Keen, increasing their ATK by for 20s.\n\nOne of three manuals composed by Archery Master Omer. Its exquisite drawings could be understood even by a child.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/heartpiercer.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Magic Bomb",
+      "content": "Marksman | PvP\n| Assault\n\nMarksman Unit ATK +20%\nLegion ATK +18%\n\nSkill\n: Time Bomb\nCooldown\n: 1m 30s\nRage Cost\n: 1,600\n\nThrows a Magic Bomb at the target Legion. After 8s, the Magic Bomb explodes, dealing Artifact Skill damage to up to 3 nearby enemy Legions (Magic Damage Factor 1,800). Each additional target reduces damage dealt to each target by 15%.\n\n“Hurry up, but don’t cut the wrong fuse!” “…This thing doesn’t have any, you idiot!”",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/giants-bone.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Giant’s Bone",
+      "content": "Peacekeeping\n\nPeacekeeping Damage +21.7%\nLegion ATK +18%\n\nSkill\n: Power Strike\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nDeals Artifact Skill damage to up to 3 enemy Legions in a forward arc (Damage Factor 2,000, only affects Darklings, Dark Creatures, and Behemoths). Each additional target reduces damage dealt to each target by 15%. In addition, there is a 65% chance to knock the targets Airborne for 3s.\n\nThe leg bone of a Giant, used by a warrior as a weapon. The fractures across it are signs of his power and glory.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/staff-of-spring.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Staff of Spring",
+      "content": "Magic | PvP | Support\n\nMagic Unit HP +17%\nLegion HP +15%\n\nSkill\n: Salve\nCooldown\n: 1m 30s\nRage Cost\n: 1,600\n\nHeals lightly wounded units in the target Legion (Healing Factor 2,400).\n\nThis staff is proof of the Druids’ maxim: arcane magic is a soulless art, and only the tree of life springs eternal.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/homecoming-blossom.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Homecoming Blossom",
+      "content": "Mobility\n\nLegion March Speed +21.7%\nLegion DEF +18%\n\nSkill\n: Recall\nCooldown\n: 30m\nRage Cost\n: None\n\nCasts immediately. After a short charge-up, teleports Legions back to near your City. Moving, being attacked, or receiving control effects can interrupt charging.\n\nA pair of magical plants that nurture• the bond between a traveler and their home.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/spirit-bangle.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Spirit Bangle",
+      "content": "Magic | PvP | Support\n\nMagic Unit HP +17%\nLegion HP +15%\n\nSkill\n: Cleansing Charm\nCooldown\n: 3m\nRage Cost\n: None\n\nCasts immediately. Removes 1 debuff or impairment effect from up to 5 surrounding friendly Legions. This Artifact Skill can still be cast while Legions are subject to control effects.\n\nA bangle created by the Great Shaman of the Witchtongue Clan that allows its wearer to stay calm in • the face of danger.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/potion-of-vigor.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Potion of Vigor",
+      "content": "Infantry | Engineering\n\nBuilding Engineering +21.7%\nLegion HP +15%\n\nSkill\n: Quick Build\nCooldown\n: 6h\nRage Cost\n: None\n\nCasts immediately. Increases Legions’ Engineering by 100% for 1,800s.\n\nA powerful medicine with a honey-sweet flavor which gives slaves the motivation to get through the drudgery of the workday.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/freezing-ring.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Freezing Ring",
+      "content": "Magic | Tank\n\nMagic Unit DEF +20%\nLegion HP +15%\n\nSkill\n: Frost Barrier\nCooldown\n: 4m\nRage Cost\n: None\n\nCasts immediately. Grants Ice Defense to your Legion, making it immune to all damage, but unable to carry out actions. Effective for up to 10s. After Ice Defense ends, up to 10 surrounding enemy Legions are Slowed, reducing their March Speed by 30% for 8s. Casting again while Ice Defense is still active will cancel Ice Defense prematurely.\n\nThis ice-blue ring emits a disconcertingly frigid aura. Perhaps • the secret to invincibility lies in stillness.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/cloak-of-stealth.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Cloak of Stealth",
+      "content": "Cavalry | Mobility\n\nCavalry Unit ATK +20%\nLegion ATK +18%\n\nSkill\n: Subterfuge\nCooldown\n: 1h\nRage Cost\n: None\n\nCasts immediately. Grants Legions Stealth for 1,800s, reducing their March Speed by 15%. While in Stealth, Legions cannot be normally detected, and can only be seen if they move too close to the enemy. Actively attacking, taking damage, or opening Chests will cause Stealth to expire.\n\nIn war, speed is crucial. The maker of this cloak believed that remaining unseen is just as important.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/greenfinger-sickle.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Greenfinger Sickle",
+      "content": "Gathering\n\nLegion Load Capacity +21.7%\nLegion HP +15%\n\nSkill\n: Quick Gather\nCooldown\n: 12h\nRage Cost\n: None\n\nCasts while gathering Gold, Wood, Ore, and Mana. Immediately gathers resources from a chosen Resource Point (Gold/Wood 400,000, Ore 300,000, Mana 160,000). Resources gathered cannot exceed the Legion’s resource Load Capacity or the remaining amount of resources at the Resource Point.\n\nAn elaborate sickle made with arcane magic, capable of trimming • weeds with as much precision as one’s bare hands.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/codex-of-prophecy.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Codex of Prophecy",
+      "content": "Infantry | Peacekeeping\n\nInfantry Unit DEF +20%\nPeacekeeping Damage Taken -12%\n\nSkill\n: Sacred Shield\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts immediately. Grants a Shield to your Legion and up to 9 nearby friendly Legions which can absorb a certain amount of damage from Darklings, Dark Creatures, and Behemoths only (Shield Factor 2,400) for 15s. Shields do not stack.\n\nA thousand-year-old collection of secret prophetic warnings against disaster.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/amulet-of-glory.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Amulet of Glory",
+      "content": "Cavalry | Peacekeeping\n\nInfantry Unit HP +17%\nPeacekeeping Damage Taken -12%\n\nSkill\n: Protective Aura\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts immediately. Grants a Buff once per 2s to your Legion and up to 4 nearby friendly Legions, reducing the damage they take from Darklings and Dark Creatures by for 15s.\n\nAn amulet blessed by the Light to silently safeguard believers’ faith as they walk in darkness.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/blade-of-reproach.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Blade of Reproach",
+      "content": "Cavalry | Peacekeeping\n\nCavalry Unit ATK +20%\nPeacekeeping Damage +12%\n\nSkill\n: Reproach\nCooldown\n: 45s\nRage Cost\n: None\n\nCasts on a target Legion (Darklings, Dark Creatures, and Behemoths only), dealing Artifact Skill damage once (Physical Damage Factor 2,000). If this Skill successfully kills the target Legion, 1 buff will be gained. For each buff, Reproach’s damage is increased by 20%, stacking up to 5 times. This buff effect lasts until the Legion returns to the City, or enters a Stronghold or a Resource Point.\n\nThe sword of Florin, Knight of Daybreak, given the power to repel the darkness by the priest of the Abbey of Mount Helios.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/butchers-blade.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Butcher’s Blade",
+      "content": "Infantry | PvP | Assault\n\nInfantry Unit ATK +20%\nLegion ATK +18%\n\nSkill\n: Butchering Blow\nCooldown\n: 1m 30s\nRage Cost\n: 400\n\nCasts immediately, dealing Artifact Skill damage twice to up to 3 enemy Legions in a forward arc (Physical Damage Factor 900). Each additional target reduces damage dealt to each target by 15%.\n\nThey called him the “Butcher of Dreadfang”. With this blade in hand,’ an Orcish warrior singlehandedly revived the fortunes of his clan.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/centaur-bow.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Centaur Bow",
+      "content": "Cavalry | PvP | Assault\n\nCavalry Unit DEF +20%\nLegion DEF +18%\n\nSkill\n: Hall of Arrows\nCooldown\n: 1m 30s\nRage Cost\n: 600\n\nDeals Artifact Skill damage (Physical Damage Factor 1,500) to up to 3 enemy Legions in a designated circle. Each Legion takes 15% less damage per additional target.\n\nA gift from a Centaur, who was an excellent scout… and an excellent warrior.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bomb-flinger.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Bomb Flinger",
+      "content": "Marksman | Peacekeeping\n\nMarksman Unit ATK +20%\nLegion ATK +18%\n\nSkill\n: Bombs Away\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nDeals Artifact Skill damage (Physical Damage Factor 2,400) to the target (Darklings, Dark Creatures, and Behemoths only). Also has a 80% chance to Stun targets that take damage for 2s.\n\nThe so-called “Bomb Flinger Uprising” was perhaps the most violent of all the Goblin slave rebellions over the centuries. Its downfall is attributed to neither betrayal nor conspiracy, but the miscalculations of a single idiot.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bomb-flinger.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Enchiridion of Advanced Incantations",
+      "content": "Magic  | Peacekeeping\n\nMagic Unit ATK +20%\nLegion ATK +18%\n\nSkill\n: Fireburst\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nDeals Artifact Skill damage (Magic Damage Factor 2,800) to the target (Darklings, Dark Creatures, and Behemoths only).\n\nRequired reading for anyone undertaking the Advanced Incantation exams. Any student who actually reads it from cover to cover must be either diligent or insane.\n\nRare Artifacts",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/rapid-crossbow.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Rapid Crossbow",
+      "content": "Marksman | PvP\n\nMarksman Unit HP +15%\nLegion ATK +18%\n\nSkill\n: Arrow Strafe\nCooldown\n: 1m 30s\nRage Cost\n: 1,200\n\nDeals Artifact Skill damage to the target Legion 2 times (Physical Damage Factor 500 each time).\n\nA practical and compact bow that reflects the motto of the weaponsmith who made it: user-friendliness is everything.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bone-cleaver.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Bone Cleaver",
+      "content": "Cavalry  | PvP | Assault\n\nCavalry Unit ATK +18%\nLegion DEF +14%\n\nSkill\n: Bone Smash\nCooldown\n: 1m 30s\nRage Cost\n: 600\n\nDeals Artifact Skill damage to the target Legion (Physical Damage Factor 800). Damage Factor is increased to 1,200 when the attacking Legion’s Unit Count is above 50%.\n\nIt can cut through the brush to clear. a path and slice up game for food. A necessity for travel.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bone-cleaver.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Ever-Ice",
+      "content": "Magic | PvP | Assault\n\nMagic Unit DEF +18%\nLegion HP+14%\n\nSkill\n: Ice-Cold Heart\nCooldown\n: 1m 30s\nRage Cost\n: 1,600\n\nCasts on a designated circle. After a short charge-up, deals Artifact Skill damage to 2 enemy Legion(s) (Magic Damage Factor 600) and inflicts Freeze, reducing their March Speed by 10% for 5s.\n\nA piece of ice that never melts, lasting longer any vow of love.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/crown-of-the-berserker.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Crown of the Berserker",
+      "content": "Cavalry | PvP\n\nCavalry Unit ATK +18%\nLegion ATK +14%\n\nSkill\n: Will of the Wolf\nCooldown\n: 45s\nRage Cost\n: 600\n\nCasts immediately. Your Legion gains Keen and Haste, increasing their ATK by 20% and March Speed by 20%, while also inflicting DEF Break, reducing their DEF by 10%, for 10s.\n\nA Berserker’s reward. Don this crown and greet your next bloody battle head-on.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/boots-of-swiftness.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Boots of Swiftness",
+      "content": "Mobility\n\nLegion March Speed +18%\nLegion HP +14%\n\nSkill\n: Swiftness\nCooldown\n: 45s\nRage Cost\n: None\n\nCasts immediately. Grants Haste to your Legion and up to 9 surrounding friendly Legions, increasing their March Speed by 30% for IOS. Afterward, the Legion is Fatigued and gains Slow, reducing their March Speed by for Ss.\n\nThese boots to allow soldiers to quickly race to the frontline—in exchange for total fatigue afterward.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/harlequin-mask.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Harlequin Mask",
+      "content": "Infantry | Peacekeeping\n\nInfantry unit DEF +18%\nLegion DEF +14%\n\nSkill\n: Taunt\nCooldown\n: 30s\nRage Cost\n: None\n\nCasts on a target Legion (Darklings, Dark Creatures, and Behemoths only). Attracts the target Legion’s hostility and forces it to attack the commanded Legion for 5s.\n\nWith a taunting expression and frantic movements, a true clown knows how to catch a hypocrite’s attention.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/veterans-diary.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Veteran’s Diary",
+      "content": "Infantry | PvP\n\nInfantry unit ATK +18%\nLegion ATK +14%\n\nSkill\n: Battle Hardened\nCooldown\n: 1m 30s\nRage Cost\n: 400\n\nCasts immediately. Your Legion gains Onslaught, increasing normal attack damage dealt by 60% for 10s.\n\nIt accompanied its master through life and death until a dagger separated them, and it was the one who survived.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/illusory-gems.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Illusory Gems",
+      "content": "All-Rounder\n\nLegion Load Capacity + 18.7%\nLegion HP +11%\n\nSkill\n: Gemstravaganza\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts immediately. Transforms you into the richest guy on the street.\n\nA pain-reliever developed by a certain black-robed mage. Its joys, though sweet, are short-lived.\n\nAdvanced Artifacts",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/enchanted-coins.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Enchanted Coins",
+      "content": "All-Rounder\n\nOverall Gather Speed +10%\nLegion ATK +9%\n\nSkill\n: Money Talks\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts immediately. Donate generously, and scatter your gold upon the earth.\n\nDeveloped by a certain black-robed mage, this pain-reliever cures all symptoms caused by poverty.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/storm-leaf.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Storm Leaf",
+      "content": "All-Rounder\n\nLegion Load Capacity +10%\nLegion DEF +9%\n\nSkill\n: Fierce Gale\nCooldown\n: 1m 30s\nRage Cost\n: None\n\nCasts immediately. Let them suffer the storm’s wrath… well, displeasure.\n\nWhat can a leaf do if it doesn’t want • to be carried away by the wind? Only sit and wait to grow tall.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/joyous-fireworks.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Joyous Fireworks",
+      "content": "All-Rounder\n\nBuilding Engineering +10%\nLegion HP +9%\n\nSkill\n: Perfect Moment\nCooldown\n: 30s\nRage Cost\n: None\n\nCasts immediately. Sets off joyous fireworks.\n\n“Some occasions call for fireworks,” said the shopkeeper. “Of course; I hope your life is filled with such moments.”",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/activating-artifact-1024x541.jpg"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "How to Activate Artifacts",
+      "content": "Once you have equipped your hero with an Artifact, you can access it by tapping on the small circled button located next to your hero’s avatar in the top-right corner of the game interface.\n\nDuring the battle, you can activate the Artifact’s skill, or wait for the cooldown period to finish after its first usage.\n\nEach Artifact has its unique skill, with various effects and powers.\n\nThese can range from dealing AoE dâmge to enemies, healing, to farming resources, among others.\n\nKeep in mind that each Artifact’s skill has a cooldown period and rage requirement, so you will have to wait for some time before using it again.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/opening-artifact-in-tavern-1024x576.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "How to get artifact Items?",
+      "content": "To obtain Artifacts in Call of Dragons, you can use Universal Artifact Keys at the Tavern building, where you would normally recruit heroes. Once you have some keys, simply click on the Tavern building and then the second button with the “cards” icon.\n\nThis will take you to the Artifact Draw page, where you have two options: using your keys individually or in packs of 10.\n\nFact: Opening 1 Key or 10 keys at once has the same drop-rate.\n\nAdditionally, after 90 draws, you are guaranteed a Legendary Artifact drop.\n\nRemember to use your free daily draw as soon as it becomes available because it doesn’t stack with accumulated keys.\n\nBy obtaining Artifacts, you can enhance your hero’s stats and abilities, ultimately leading to a more successful gameplay experience in Call of Dragons.",
+      "images": [],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Artifact keys",
+      "content": "Universal Artifact Keys can be collected through various means in Call of Dragons.\n\nDaily Objectives, event missions, and challenges all offer opportunities to obtain these valuable items.\n\nAdditionally, you may be lucky enough to come across them in the Goblin Market, though keep in mind that the items available there are selected at random.\n\nAnother way to obtain Universal Artifact Keys is through the Honorary Membership Store. However, you must reach Membership level 6 before you can purchase them with either Gold or Gems.\n\nIt’s important to keep an eye out for these keys as they are a valuable resource for obtaining powerful Artifacts for your heroes.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/01/universal-artifact-key.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/how-to-equip-artifact-910x1024.jpg"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "How to Equip Artifacts on Heroes",
+      "content": "After obtaining an Artifact, head to your hero’s profile page and click on the empty slot.\n\nFrom there, choose the Artifact from the list on the left and press the Equip button to assign it to your hero. You can repeat this process to increase the Artifact’s Skill or Level.\n\nTo swap an Artifact for one of your heroes, follow the same steps and click the “Replace” button to select a new Artifact.\n\nIf you want to remove an Artifact without equipping another, simply click the “Remove” button that appears after pressing “Replace”.\n\nIt’s recommended to equip your Artifacts as soon as possible to reap their benefits and progress faster in Call of Dragons.",
+      "images": [],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Artifacts Rarity",
+      "content": "Artifacts in Call of Dragons are classified into four different rarities: Advanced (green), Elite (blue), Epic (purple), and Legendary (gold).\n\nAs the rarity increases, the Artifacts become more powerful, with Legendary being the most potent.\n\nThe Advanced Artifacts are the most basic ones, and only three of them are available in the game. They do not offer any combat-related bonuses.\n\nThe Elite Artifacts have a better Damage Factor than the Advanced ones, but they are still not very powerful compared to the Epic and Legendary ones.\n\nThe Epic Artifacts offer a good Damage Factor and effective skills, making them suitable for any type of situation, whether it’s gathering, building, or combat.\n\nOn the other hand, the Legendary Artifacts are the most powerful items in the game, offering the highest Damage Factor and devastating active combat skill effects.\n\nHowever, due to their low drop rate, Legendary Artifacts are the hardest to obtain.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/advanced-artifact-Call-of-Dragons.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/elite-artifacts.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/epic-artifacts.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/legendary-artifacts.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "How to upgrade artifacts",
+      "content": "There are three ways to upgrade your Artifact: by increasing its level, star rating, and skill level.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/level-up-artifacts.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Artifact Level",
+      "content": "Your Artifact can reach a maximum level of 40. To level it up, you’ll need Arcane Dust, which comes in various levels and can be obtained from events, defeating Dark Creatures, and opening Dark Chests.\n\nThe higher the level of Arcane Dust, the more EXP points it offers.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/upgrade-artifact-star-level-1024x576.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Star Rating",
+      "content": "Your Artifact can have a star rating of up to 4 stars, which is directly related to its level.\n\nYou can achieve the second star after increasing the level to 10, the third star at level 20, and the fourth star at level 40.\n\nIn addition, you’ll need Artifact Emblems (getting from duplicated artifacts), which come in four types depending on your Artifact’s rarity: Advanced, Elite, Epic, and Legendary.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/inscrease-artifact-skill-level-1024x576.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "Skill Level",
+      "content": "You can increase your Artifact’s Skill level up to 5 using Emblems, which are duplicates of the same Artifact.\n\nThese Emblems can be obtained from the Altar building.\n\nFor example, to upgrade your Artifact’s skill level to 5, you’ll need to collect the same Artifact five times.\n\nTo upgrade any of the three features above for your Artifacts, follow these simple steps:\n\nIf the Artifact is in your bag, tap the big chest icon at the bottom of the screen to access your bag. From there, tap on the Artifact you want to upgrade and then hit the “Details” button on the right side of the screen.\nIf the Artifact is currently equipped by a hero, visit the hero’s profile and tap on the Artifact slot to bring up its details.",
+      "images": [],
+      "source_url": "https://cod.guide/artifacts/"
+    },
+    {
+      "title": "How to pick the best artifacts for your Heroes",
+      "content": "When considering Artifacts, it’s important to pay attention to which type of unit they are best suited for as this can have a significant impact on combat bonuses.\n\nYou can find this information listed below the Artifact’s level EXP bar.\n\nFor example, it’s not advisable to equip an Artifact with a Magic HP buff on a hero who excels at leading Infantry, Cavalry, or Marksman units.\n\nHowever, if you have a hero with an Overall talent, meaning they excel at leading all unit types, you can equip them with any Artifact as long as you have Magic units in your legion if the Artifact has a Magic ability.\n\nThis way, your Magic units will benefit from the Artifact’s skill.\n\nNot all Artifacts require a specific type of unit, however. Some, such as the Giant’s Bone Artifact, can be equipped by any hero with the Peakeeper talent, regardless of the type of units in their legion.\n\nOthers are designed for productivity-related activities like Gathering or Building Engineering.\n\nFor example,\nKella\n, an Elite hero with the Gather talent, is specialized in gathering Gold and has the Support talent. The ideal Artifact for her would be one suited for Gathering!\n\nThis blog is run by the community and for the community. If you want to contribute any Call of Dragons guides, tips, strategies, or any other information, please\ncontact us\nand make the CoD community become better and better every day.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/magic-atk-artifact-1024x576.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/peacekeeping-artifact-1024x576.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/01/call-of-dragons-logo.png"
+      ],
+      "source_url": "https://cod.guide/artifacts/"
+    }
+  ]
+}

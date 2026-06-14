@@ -1,0 +1,60 @@
+{
+  "slug": "important-tips",
+  "title": "Consejos Importantes de Sword x Staff",
+  "excerpt": "Más allá de la Guía para Principiantes. Viabilidad de clases, mejoras del carro, reglas de inversión en Fantomons, resonancia de relics, NPC Misterioso + Primal Forge, estrategia de tickets de Arena, refresco de tienda, orden de gasto y trampas del juego a largo plazo.",
+  "introTitle": "Más Allá de la Guía para Principiantes",
+  "intro": "Consejos Importantes retoma donde lo deja la Guía para Principiantes. Decisiones de build específicas por clase, prioridades de carro y relics, la regla del NPC Misterioso, la cadencia de refresco de tienda, la estrategia de Arena y el orden de gasto en la tienda de lanzamiento. Léelo de principio a fin, o salta a la sección en la que esté tu cuenta.",
+  "introImages": [],
+  "sections": [
+    {
+      "title": "Decisiones de Clase y Build",
+      "content": "• Sage solo tiene un build viable: Dark . El Sorcerer Light es una elección solo para PvP. Los builds de Summoner y Healer no son viables en el parche global actual.\n\n• Duelist es la elección segura y popular. La mayoría de la base de jugadores lo está usando. Knight funciona bien y se mantiene demandado porque los tanques serán escasos en el contenido de grupo.\n\n• Un jugador F2P no puede permitirse dos elementos. Las relics solo otorgan un 10-15% de bonus de elemento, así que dividir la afinidad cuesta un daño serio y ralentiza tu enfoque en subir de nivel las skills. Elige un elemento y termínalo.",
+      "images": []
+    },
+    {
+      "title": "Mejoras del Carro",
+      "content": "El carro produce recursos que se solapan con los de las mazmorras, además de equipo y alimento para bestias. Prioridad de mejora por nivel de producción:\n\n• Máxima prioridad: Madera + Piedra. Sirven para mejorar casi todo lo demás del juego. El rendimiento más barato y la vida útil más larga. Mejóralos primero sin importar tu clase.\n\n• Siempre en demanda: Chrono Sand + Raw Ore. Alimentan las recetas del carro y de stamina. Nunca se desperdician.\n\n• Condicional: Rolla. Su prioridad escala según lo agresivo que seas con el refresco de tienda. Si haces 3 o más refrescos al día, sube Rolla. Si no, déjalo.\n\n• Menor prioridad: Battle Essence + Basic Treats. Ambos tienen fuentes alternativas (drops de mazmorra, Treasury). El carro no es el cuello de botella para ninguno.\n\nPrincipio de enfoque. Elige una estrategia de carro y mantenla. Los recursos en los que te enfoques deberían estar aproximadamente un 20-30% más altos que los demás durante toda la temporada. Subir el carro de forma uniforme reparte el rendimiento de forma muy fina y nunca rompe ningún cuello de botella.\n\nSi tienes objetivos específicos de clase (por ejemplo, sabes que te vas a comprometer con Sorcerer y necesitas más alimento de Fantomon de tipo ataque), inclina ese 20-30% enfocado hacia el tipo de alimento que corresponda.",
+      "images": []
+    },
+    {
+      "title": "Reglas de Inversión en Fantomons",
+      "content": "Los Fantomons se desbloquean al nivel 50 y son el mayor pico de poder fuera del equipo en Cinder Ridge. La trampa es tratarlos como un único conjunto. Tres reglas deciden si tu inversión se acumula o se desperdicia.\n\n• La ranura de stat principal no es lo mismo que la ranura de combate. La ranura de stat principal otorga el 100% del bloque de stats de un Fantomon. Las tres sub-ranuras otorgan el 50% . El resto de la colección otorga el 20% . Pon tu Fantomon más raro en la ranura de stat principal. El despliegue del lado de combate es una decisión aparte y debe coincidir con el rol que estés jugando.\n\n• Mantén nivelados de forma pareja los Fantomons desplegados. La resonancia aplica el nivel más bajo entre tus cuatro Fantomons desplegados al resto de tu colección. Un roster a 50/50/50/20 escala efectivamente como si cada bonus de colección estuviera al nivel 20. Sube el suelo antes de empujar el techo.\n\n• La evolución Mythic necesita tres copias en total. Aegiswing y Nyxarchon cuestan 60 Bond Trinkets por copia. La trampa: un solo Mythic se topa al nivel 100. Alcanzar el nivel 108 requiere 120 dupe shards — eso son 2 copias duplicadas además de la base, así que 3 copias en total = 180 Bond Trinkets . Presupuesta los 180 completos antes de comprometerte, no 60.\n\nFantomons útiles por rol. Knight : Boaro (escudos) y Armopi (tanqueo). Limpieza AoE de Duelist / Sorcerer: Falko o Zeioletus. Sage : Mandragora (curación) y Herbote (limpieza de estados). Elección universal cuando los enemigos acumulan buffs: Kels (dispel).",
+      "images": []
+    },
+    {
+      "title": "Relics y Resonancia",
+      "content": "Los jugadores F2P conseguirán todas las relics azules y moradas para aproximadamente el 70% del pool de relics de Verdantglade. Los jugadores de pago deberían recoger las naranjas (Mythic) y por debajo para aproximadamente un 90% de cobertura. Si puedes elegir una relic Mythic seleccionable, Duelist / Sorcerer / Sage toman Crit Rate . Knight toma Block .\n\nResonancia. Cada elemento resuena con cuatro relics. Sube las cuatro de un elemento al mismo nivel y todas las relics no resonantes de ese elemento suben de nivel al mismo tiempo. No repartas las mejoras entre varios elementos. Elige uno y termínalo.\n\nPrioridad de elemento por clase:\n\n• Duelist : Fire o Dark\n\n• Knight : Water o Light\n\n• Sorcerer : Light o Fire\n\n• Sage : Dark\n\nRelic Hero's Guide. Se desbloquea en el Stellaris Path — ya sea mediante gasto de vouchers o compras directas de packs. Aumenta tu ganancia de experiencia y resuena con otras relics para un bonus adicional del 20%. Lo más parecido a un muro duro de pagar-para-progresar en Verdantglade, y la curva de EXP se acumula a lo largo de cada reino que sigue.",
+      "images": []
+    },
+    {
+      "title": "Mazmorras Diarias (Referencia Rápida)",
+      "content": "Las Mazmorras Diarias son la fuente principal de equipo y Gear Shards. Dos tiradas gratis al día, más dos refrescos de pago accesibles para F2P a 100 y 150 Dawnium . Las ranuras de refresco adicionales más allá de la tirada 4 se desbloquean mediante niveles de tarjetas mensuales y packs. Una vez que el equipo realmente importa (transición de Verdantglade → Cinder Ridge), la escalera de cuatro tiradas para gastadores medios es el gasto de Dawnium más limpio del juego.\n\n• El ranking se basa en hasta dónde llegas. No en qué nodos eliges. Optimiza tu ruta para llegar al jefe en lugar de escoger nodos «más seguros».\n\n• Desmantela los shards de mazmorras antiguas en cuanto se desbloquee una nueva mazmorra. Los shards de la mazmorra anterior pierden su valor de venta tan pronto como abre el reemplazo. Después de eso solo se pueden desmantelar.\n\n• Escalera de refresco de mazmorras de material. Gastador F2P / ligero 2/2/2/2 al día. Gastador medio 4/2/4/4 (el 2 va en el material que tu clase menos necesite). 1.000$/mes 6/6/6/6. 3.000$/mes 8/8/8/8. 5.000$/mes o los que persiguen título de temporada 10/10/10/10.\n\n• Las tiradas se acumulan hasta 6. Acumula-y-explota F2P: salta 4 intentos a lo largo de días flojos, luego compra 2 refrescos de pago en un día de explosión. El tope es fijo en 6 — lo que se desborde se pierde.\n\nEl desglose completo, incluyendo qué mazmorra priorizar por clase y las cuentas de gasto en refrescos de Dawnium, está en la guía de Mazmorras Diarias .",
+      "images": []
+    },
+    {
+      "title": "Horario de Refresco de Tienda",
+      "content": "• Antes de que abra Aqualis: F2P refresca una vez al día, vacía la tienda.\n\n• Durante Loong Haven: refresca dos veces, vacía la tienda.\n\n• Después de que abra Loong Haven: compra solo los artículos al 80% de descuento, refresca hasta tres veces.\n\n• Ballenas: escala el número de refrescos a tu total de material de Mystery Realm. Cuanto mayor sea el stock, más refrescos.",
+      "images": []
+    },
+    {
+      "title": "NPC Misterioso: Solo Primal Forge",
+      "content": "El día después de que termine la Chaos Invasion, aparece un NPC Misterioso en tu Home. Puedes gastar Chaos Crystals en su tienda. SOLO compra el Primal Forge. Nada más. Esta regla se aplica a todos los jugadores sin importar su nivel de gasto.\n\n• No compres nada más. Cualquier otro artículo de la tienda es una trampa en este punto del reino.\n\n• Mejora el Primal Forge hasta el final, hasta Immortal. Cualquier cosa por debajo y los crystals se desperdician en un nivel temporal.\n\n• Si no puedes permitírtelo: guarda tus Chaos Crystals, echa al NPC y sigue intercambiando en el siguiente ciclo. No gastes en pánico en alternativas.\n\nPor qué es tan estricto. El Primal Forge es el único artículo de la tienda de Chaos que se acumula a lo largo de los reinos. Cualquier otra compra es reemplazada o queda obsoleta por las recompensas de Cinder Ridge, así que gastar en ellas hace retroceder tu cuenta.",
+      "images": []
+    },
+    {
+      "title": "Estrategia de Tickets de Arena",
+      "content": "El refresco de PvP es semanal. La semana reinicia la escalada, lo que permite que los empujes de principio de semana agarren rangos altos antes de que los rosters de nivel ballena fijen la cima en su sitio.\n\n• Día 1 de una semana nueva: suelta los 20 tickets guardados de inmediato. Todos los demás todavía están escalando. Agarras un rango alto y ganas diamantes diarios gratis durante el resto de la semana.\n\n• Después de la semana 1, deja de pelear. Los rankings se fijan por poder. Guarda los tickets para el siguiente reinicio.\n\n• Comprar tickets extra en un solo día cuesta más Dawnium por ticket. El máximo beneficio significa comprar casi cero tickets después de la semana 1.",
+      "images": []
+    },
+    {
+      "title": "Orden de Gasto Si Abres la Cartera",
+      "content": "Del mejor valor al peor valor en toda la tienda de lanzamiento.\n\n• Monthly card. El mejor valor para gasto bajo. Aumenta las ganancias AFK y la EXP.\n\n• Month Fund. El segundo mejor.\n\n• Weekly Card. El tercero.\n\n• Pop-up packs. El último. Evítalos a menos que necesites específicamente su contenido.\n\nVouchers vs puntos VIP. Los vouchers se convierten directamente en valor equivalente a dinero. Los puntos VIP solo se acreditan cuando realmente gastas, así que no acumules vouchers esperando que el track VIP los alcance.",
+      "images": []
+    },
+    {
+      "title": "Trampas del Juego a Largo Plazo",
+      "content": "• No hagas reroll. Los nombres son únicos y no hay ningún beneficio de reroll integrado en el juego.\n\n• No subas de nivel ni mejores en exceso al principio. Pasados ciertos umbrales, el poder se reinicia al final de temporada. Solo la moneda permanente ( Astral ) se conserva. Los F2P tienen efectivamente cero posibilidades de rango en la temporada 1, así que relájate y aprende los sistemas en lugar de farmear.\n\n• Los nuevos avances de clase vienen con sus propias tiradas de skills premium. Cada nueva clase abre un pseudo-banner que solo alimenta el nuevo pool, así que guarda tiradas antes de cada nuevo nivel de clase.\n\n• El cariño se topa en 1000 por semana en las invocaciones. El exceso se sigue acumulando como corazones de perfil, pero no puedes arrastrar el cariño sobrante a la reclamación de la semana siguiente.",
+      "images": []
+    }
+  ]
+}

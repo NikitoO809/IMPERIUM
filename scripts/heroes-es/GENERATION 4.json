@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Eirlys",
+    "descriptionEs": "Nueva heroína épica de recolección, y tiene varios trucos bajo la manga cuando se disputa un Resource Point. No cambia el juego, pero parece divertida y seguro encontrará un buen hueco en tus marchas de recolección. Tiene 2 Holistic Skills que dan un bonus global de recolección, así que construirla es algo que deberías hacer de verdad."
+  },
+  {
+    "name": "Yun-Ming",
+    "descriptionEs": "Absolutamente poderoso y, junto a un buen emparejamiento y con el war pet, la magia vuelve a estar sobre la mesa y más fuerte que nunca. El héroe de magia más poderoso de Call of Dragons por la forma en que arrasa con su pasiva."
+  },
+  {
+    "name": "Gromara",
+    "descriptionEs": "No te confundas demasiado con lo de magic garrison; estoy seguro de que le pusieron esa etiqueta solo para no hacerla demasiado poderosa en cuanto a las opciones del árbol de habilidades. Está muy diseñada para funcionar junto a Yun-Ming, porque lanza ese enorme bonus de habilidad mágica que se reinicia cuando se lanza una rage skill, pero como Yun-Ming no tiene una activa sino una habilidad primaria pasiva, esto está activo todo el tiempo. Sin él no es realmente tan destacable, de ahí esa sinergia, y para garrison directamente no le veo el sentido."
+  },
+  {
+    "name": "Flynt",
+    "descriptionEs": "Hay tanto que decir de este héroe que es difícil resumirlo sin escribir un ensayo completo aquí, así que ten en cuenta que esta es una descripción muy simplificada. El héroe roba Gold y es universal, y aunque muchos jugadores pasan por alto las curiosas opciones de emparejamiento, la parte más interesante del héroe es que tiene 2 habilidades globales (llamadas holistic skills) que aumentan de forma pasiva el resultado de la recolección para todos los héroes, incluso si nunca usas a Flynt activamente. Esto es la Skill 4 y la Awaken Skill. Aparte de eso, puedes usar a Flynt para enredar un poco, pero sinceramente no es un héroe para usar activamente a menos que andes corto de marchas de recolección; eso sí, es uno para llevar al máximo y tener esa pasiva."
+  },
+  {
+    "name": "Lei Kuan",
+    "descriptionEs": "Hacía tiempo que no pasaba gran cosa con la infantería y, aunque Lei Kuan tiene cosas geniales en su kit, también es un comandante de rally y parte de su kit hace exactamente eso. Ahora bien, también funciona en combate a campo abierto cuando puedes construir las marchas adecuadas, y este es un punto de inversión que depende mucho de tu roster y de si tienes alguno de los héroes de infantería más recientes."
+  },
+  {
+    "name": "Kuma",
+    "descriptionEs": "Si buscas volver a poner la infantería en forma, él es el héroe que lo logrará, con un montón de cosas geniales en su kit. Necesita emparejamientos de infantería de alto nivel, pero si consigues que se den, tendrás una auténtica bestia en tu escuadrón."
+  },
+  {
+    "name": "Mardok",
+    "descriptionEs": "Admito que pensé que era una broma que no entendía. Es un nuevo héroe épico de caballería que es increíblemente fuerte, incluso más fuerte que bastantes legendarios del juego, con una utilidad impresionante. Y como probablemente estés sentado sobre recursos de sobra, es un héroe que puedes construir fácilmente ahora. Tiene bastante daño, pero lo increíble es su defense break y la utilidad que aporta. Si quieres una buena incorporación para tu línea de caballería, él es el héroe a construir sin excepción."
+  },
+  {
+    "name": "Neya",
+    "descriptionEs": "Caballería de Generation 4 con camuflaje y locas habilidades para cazar objetivos, ignorando HP y con un motor de rage integrado. Inversión dura, especialmente porque la caballería tiene el papel que tiene en el juego, pero es increíblemente fuerte y divertida si tienes cartera para ella. La mayoría de los jugadores no la tendrá, por eso el ranking debe tomarse con pinzas; pero como solo clasifico en base a lo que hace un héroe y no a lo que cuesta construirlo, la tenemos en un buen puesto."
+  },
+  {
+    "name": "Lieh-Shan Yen",
+    "descriptionEs": "Hay dos razones por las que lo construirías. La Opción 1 es la más viable para los jugadores que leen esto, y es usarlo junto a Neya para una legión de caballería de emboscada increíblemente fuerte que cace lo que sea que haya en el mapa. La otra opción es la parte de garrison, que solo es viable para un puñado de jugadores en cada servidor, y ellos lo llevarán al máximo y pagarán por todo, así que dudo que alguno de ellos esté leyendo esto. Así que invierte en él solo si piensas construir a Neya hasta el final."
+  },
+  {
+    "name": "Sibyl",
+    "descriptionEs": "Absolutamente fuerte. Será la Maggrat más poderosa, y recordarás cómo dominó al salir; y como puedes emparejarla con los potentes tiradores, desde Nico hasta Maggrat, también es viable sin tener que llevar al máximo a Falgrim de inmediato. Incluso puedes emparejarla con Nico y tener una configuración de tiradores sólida y actual si hasta ahora no has invertido demasiado en tiradores. O simplemente usa a la legendaria Mu Hsiang con ella. Vale la pena la inversión."
+  },
+  {
+    "name": "Falgrim",
+    "descriptionEs": "De primera junto a Sibyl si quieres una marcha tope de gama para principios de S3, pero le falta compatibilidad con otros héroes aparte de Kinnara. Si quieres gastar y llevarlo al máximo, súbelo y úsalo con Sibyl y serás una potencia; pero si tienes que decidir entre él y Sibyl a dónde va tu inversión, Sibyl es mucho más flexible por sí sola con otros héroes que Falgrim."
+  },
+  {
+    "name": "Mu Hsiang",
+    "descriptionEs": "Absolutamente buena y digna de construir. Mejora casi todas las marchas y funciona muy bien con muchísimas configuraciones. Al principio de la S3, dará otro gran impulso a las marchas de magia en torno a Thundelyn y Thaleia, así que si quieres dominar al comienzo de la S3, ella es tu objetivo."
+  }
+]

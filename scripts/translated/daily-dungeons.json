@@ -1,0 +1,45 @@
+{
+  "slug": "daily-dungeons",
+  "title": "Daily Dungeons de Sword x Staff",
+  "excerpt": "Cómo correr la Daily Dungeon de Gear y las cuatro dungeons de materiales, la regla de ruteo (te puntúan por hasta dónde llegas, no por los nodos), la escalera completa de refresco con Dawnium (F2P/ligero 2/2/2/2, medio 4/2/4/4, $1k 6/6/6/6, $3k 8/8/8/8, $5k 10/10/10/10), el banco de 6 runs y la fecha límite para desmantelar los Gear Shards viejos.",
+  "introTitle": "Las Daily Dungeons Son La Tubería De Gear",
+  "intro": "Las Daily Dungeons son la fuente principal de Gear y Gear Shards. Tienes 2 runs gratis al día , más dos refrescos con Dawnium accesibles para F2P a 100 y 150 Dawnium . Las casillas de refresco adicionales más allá del run 4 se desbloquean a través de los niveles de Month Fund y de packs mensuales. Los runs no usados se acumulan hasta un tope de 6, así que puedes saltarte los días lentos y reventar en un día objetivo.\n\nLas Daily Dungeons se dividen en dos vías: la Daily Dungeon principal de Gear (suelta la pieza de Gear en sí más Gear Shards para subir de estrellas) y cuatro dungeons de materiales (Raw Ore, Chrono Sand, alimento de Rolla y el consumible específico de tu clase). La estrategia de refresco difiere entre ambas. Esta guía cubre las dos.",
+  "introImages": [],
+  "sections": [
+    {
+      "title": "La Regla De Ruteo",
+      "content": "Dentro de cada dungeon navegas un pequeño grafo de nodos: salas de combate, buffs, fuentes de curación y una sala de jefe al final. Los jugadores nuevos en el género tienden a escoger nodos «más seguros» (salas de curación, packs de mobs más pequeños) pensando que conserva HP para el jefe.\n\nEse modelo de ranking no es como te puntúa el juego. El ranking de la dungeon se calcula según hasta dónde llegas , no según qué nodos limpiaste por el camino. Rutear directo al jefe, incluso atravesando una sala de combate más difícil, puntúa más alto que jugar a lo seguro y terminar a una sala del jefe.\n\nRegla práctica. Escoge el camino más corto a la sala del jefe cada vez. Recibe daño por el camino mientras sobrevivas hasta el jefe. Si no puedes sobrevivir al jefe con tu loadout actual, cambia a un loadout más tanque entre tus siete casillas de loadout antes de entrar a la dungeon. Rutear más difícil no arregla a un personaje con poco gear.",
+      "images": []
+    },
+    {
+      "title": "La Matemática Del Refresco Con Dawnium",
+      "content": "Dos runs gratis al día. Dos refrescos pagados accesibles para F2P. El precio de pago no es plano.\n\n• Run 1: Gratis.\n\n• Run 2: Gratis.\n\n• Run 3: 100 Dawnium.\n\n• Run 4: 150 Dawnium. El último refresco en la banda accesible para F2P es más caro que el primero.\n\n• Run 5+: Las casillas de refresco adicionales se desbloquean a través de los niveles de Month Fund y de packs mensuales. La escalera de whale (6, 8, 10 runs al día) está bloqueada detrás de gasto mensual, no de puro quemado de Dawnium.\n\nTope accesible para F2P. 250 Dawnium por dungeon para llegar al run 4. Entre la Daily Dungeon de Gear más las cuatro dungeons de materiales, el límite superior F2P es de 1,250 Dawnium al día. Ese es el presupuesto de gasto contra el que dimensionas la escalera de refresco F2P/medio. Los niveles más altos (6/8/10 runs) requieren además suscripciones de Month Fund o packs mensuales por encima de eso.",
+      "images": []
+    },
+    {
+      "title": "Escalera De Refresco De Las Dungeons De Materiales",
+      "content": "Las cuatro dungeons de materiales corren en el mismo horario, con los mismos precios de refresco. El orden está condicionado por cuál necesita realmente tu clase actual. Cinco niveles según el gasto mensual:\n\n• F2P / Ligero: 2 / 2 / 2 / 2. Solo runs gratis. Sáltate los refrescos con Dawnium en las dungeons de materiales. Guarda el Dawnium para la Daily Dungeon de Gear y para las compras de nivel Cinder Ridge.\n\n• Gastador medio: 4 / 2 / 4 / 4. Tope tres dungeons de materiales. El «2» va sobre el material que tu clase actual necesite menos (típicamente el consumible específico de la clase cuando estás entre cambios de clase).\n\n• $1,000 / mes: 6 / 6 / 6 / 6. Se desbloquea vía casillas de refresco de Month Fund / packs mensuales por encima de las cuatro accesibles para F2P.\n\n• $3,000 / mes: 8 / 8 / 8 / 8. Un nivel de pack más alto desbloquea dos casillas de refresco adicionales por dungeon.\n\n• $5,000 / mes: 10 / 10 / 10 / 10. La escalera tope de whale. Obligatoria si vas detrás de un título de temporada; opcional en caso contrario, incluso con este gasto.\n\nCómo leer la escalera. Los números son el total de runs por dungeon de materiales por día. F2P y gasto ligero comparten la misma escalera porque los refrescos F2P igual cuestan Dawnium que normalmente necesitas en otro lado. El gastador medio es el primer nivel donde tiene sentido apretar de verdad el gatillo en los dos refrescos F2P pagados más la casilla extra que te dé el pack mensual que tengas.",
+      "images": []
+    },
+    {
+      "title": "Banco De Runs",
+      "content": "Los intentos de dungeon no usados se acumulan en vez de desvanecerse. El tope del banco es 6 runs . Esto cambia el patrón de juego F2P.\n\n• Acumular-y-reventar F2P. Sáltate tus runs gratis en los días lentos, deja que los intentos se acumulen, y luego gástalos en una sola sesión en un día objetivo. El patrón limpio es «guarda 4, compra 2 al día siguiente»: sáltate 4 intentos gratis a lo largo de un par de días lentos, y luego compra 2 refrescos pagados en un día de reventón para una sesión más pesada.\n\n• Vigila el tope. El banco aguanta 6. Una vez lleno, los intentos no usados adicionales se pierden de forma permanente. Quema antes de tocar el techo.\n\n• Útil para cambios de clase. Si sabes que viene un cambio y vas a necesitar cambiar qué dungeon de materiales priorizas, acumular te deja redirigir intentos a la dungeon correcta para la clase post-cambio.",
+      "images": []
+    },
+    {
+      "title": "La Daily Dungeon De Gear Es Diferente",
+      "content": "La Daily Dungeon de Gear suelta equipo real más Gear Shards. La prioridad de refresco en esta dungeon es más alta que en las dungeons de materiales porque:\n\n• El Gear es el recurso que se repone más lento. Los materiales se regeneran. Las piezas de Gear no.\n\n• Los Gear Shards alimentan las subidas de estrellas directamente. El valor marginal de un cuarto run de la Daily Dungeon de Gear es más alto que el de un cuarto run de dungeon de materiales, porque los shards no tienen fuente alternativa.\n\n• Los sets de Gear específicos de clase importan. Si la rotación de dungeon activa está soltando piezas del set de Gear de tu clase, prioriza su ventana de refresco aunque tu presupuesto diario de Dawnium esté corto.\n\nPriorización F2P. Si solo puedes permitirte un refresco pagado al día entre todas las dungeons, gástalo en la Daily Dungeon de Gear, no en runs de materiales.",
+      "images": []
+    },
+    {
+      "title": "Gear Shards Viejos: Desmantela, No Te Quedes Sentado",
+      "content": "Cada nueva dungeon que se desbloquea reemplaza el pool de loot de la anterior. La economía de shards funciona con un corte duro.\n\n• Antes de que se desbloquee la siguiente dungeon. Los shards viejos se pueden vender en el Guild Market por Dawnium. Retorno decente.\n\n• Después de que se desbloquea la siguiente dungeon. Los shards viejos pierden su listado en el Guild Market. Pasan a ser solo desmantelables por un pequeño reembolso de material.\n\nDisparador para actuar. Cuando veas aparecer la notificación de la nueva dungeon en tu lista de misiones diarias, vende cualquier shard viejo que aún tengas dentro de las 24 horas. De lo contrario, la vía de desmantelar es la única opción que queda y la tasa de conversión es significativamente peor.",
+      "images": []
+    },
+    {
+      "title": "Errores A Evitar",
+      "content": "• No dejes que el banco de runs se desborde. El tope del banco es 6. Una vez que estás en 6 intentos acumulados, cualquier intento no usado adicional se pierde de forma permanente. Quema o refresca antes del techo.\n\n• No «guardes» casillas de refresco con Dawnium para mañana. El Dawnium en sí se acumula. La casilla de refresco por día no. Los refrescos están condicionados por día, los runs están condicionados por el banco con tope de 6.\n\n• No rutees a lo seguro. El ranking es por hasta dónde llegas, no por limpiar todos los nodos como completista. Rutear a lo seguro te cuesta shards de ranking.\n\n• No te quedes sentado sobre Gear Shards viejos pasado el lanzamiento de la nueva dungeon. Ver arriba.\n\n• No pagues Dawnium para refrescar dungeons de materiales antes de haber topado la Daily Dungeon de Gear. Las piezas de Gear y los shards son la clase de loot de mayor valor.\n\n• No persigas la escalera 8/8/8/8 o 10/10/10/10 a menos que también estés persiguiendo un título de temporada. Los rendimientos decrecientes pegan fuerte por encima de 6 runs. El gastador medio (4/2/4/4) limpia cualquier meta de gear realista salvo el liderato.",
+      "images": []
+    }
+  ]
+}

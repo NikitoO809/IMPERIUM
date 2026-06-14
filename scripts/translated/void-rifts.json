@@ -1,0 +1,25 @@
+{
+  "slug": "void-rifts",
+  "title": "Sword x Staff Void Rifts",
+  "excerpt": "Evento quincenal de los domingos que rota con Chaos Invasion. 10 intentos dentro de las 24 horas tras su aparición; luego desaparece hasta su siguiente rotación. De 1 a 5 pisos de progresión por suerte por partida para conseguir tiradas de relics hasta Mythic. El juego en grupo escala las recompensas para quienes no son whales.",
+  "introTitle": "Evento quincenal de los domingos, ventana de 24 horas",
+  "intro": "Void Rifts aparece cada dos domingos y rota con Chaos Invasion: un domingo toca Void Rifts y el siguiente Chaos Invasion. Tienes 10 intentos dentro de las 24 horas tras su aparición; cuando se cierra la ventana, el evento desaparece hasta su siguiente turno de rotación. Los intentos no se acumulan ni se trasladan entre rotaciones. Gástalos los 10 ese día o los pierdes.\n\nGuía compacta para un evento compacto. Lee el resumen, despacha la partida y sigue adelante.",
+  "introImages": [],
+  "sections": [
+    {
+      "title": "Cómo funciona una partida",
+      "content": "• Encuentra un rift. Los marcadores aparecen por el mapa del mundo abierto de cada región. La elección de la región no afecta a las recompensas. Los rifts en disputa (con otro jugador ya dentro) te bloquean el acceso: ve hacia el siguiente marcador.\n\n• Limpia los pisos del 1 al 5. Después de cada piso el juego tira para ver si el rift continúa. Limpiar un piso de forma limpia no garantiza el siguiente. Los pisos más altos suponen enemigos más difíciles y mejores pozos de recompensas.\n\n• Sal con tiradas de relics. Las tiradas de rareza son independientes en cada tirada, así que una sola partida puede mezclar Normal / Epic / Legendary / Mythic. Las recompensas de moneda escalan según cuántos pisos hayas limpiado.",
+      "images": []
+    },
+    {
+      "title": "Consejos de grupo y combate",
+      "content": "• Composición del grupo: 1 healer + 1 frontliner resistente + 2 DPS. Recluta antes de entrar a la cola en lugar de forzar el primer intento a la fuerza.\n\n• Dónde encontrar grupos: el canal LFG dentro del juego, tu guild, la lista de amigos o el Discord oficial.\n\n• Cúrate entre pisos. El intervalo entre pisos es tu única ventana de recuperación constante. Empieza cada piso nuevo cerca del HP máximo.\n\n• Cambia de loadout cuando cambie la mezcla de enemigos. Build de congelación para los grupos de mobs de los pisos 1 y 2, y cambio a AoE / objetivo único para los pisos 3 y 4 con élites más adds. Usa las ranuras de loadout de la guía para principiantes.\n\n• El solitario está bien para los whales que pueden limpiar a fondo pisos altos por su cuenta. Para todos los demás, el bono de grupo compensa con creces el coste de coordinarse.",
+      "images": []
+    },
+    {
+      "title": "Checklist del día del evento",
+      "content": "• Conéctate el domingo en que aparece. Comprueba la rotación frente al domingo anterior: si la semana pasada fue Chaos Invasion, esta semana es Void Rifts.\n\n• Haz los 10 intentos dentro de las 24 horas. Desaparecen cuando se cierra la ventana.\n\n• Recluta antes de entrar a la cola. Healer + frontliner + 2 DPS.\n\n• Apunta a terminar entre 3 y 4 pisos. El piso 5 es un extra, no el objetivo.\n\n• Salta de inmediato los rifts en disputa. Ve al siguiente marcador en lugar de esperar.",
+      "images": []
+    }
+  ]
+}
