@@ -177,13 +177,10 @@ function ArtifactoGrid({ blocks }: { blocks: SectionBlock[] }) {
   const listaBlock = blocks.find(b => b.orderIndex === 3);
   const individuales = blocks.filter(b => b.orderIndex >= 4 && b.orderIndex <= 52);
 
-  // Detectar tier de cada artefacto por su imagen (Legendary=order 4-21, Epic=22-36, Elite=37-46, Adv=47-52)
-  // Usamos rangos de order_index que coinciden con los tiers scrapeados
+  // El tier es explícito: se guarda en meta.tier al montar (ver build_sql.py).
+  // Antes se deducía por el rango de order_index, lo que se rompía al reordenar.
   function getTier(b: SectionBlock): string {
-    if (b.orderIndex <= 21) return "Legendary";
-    if (b.orderIndex <= 36) return "Epic";
-    if (b.orderIndex <= 46) return "Elite";
-    return "Advanced";
+    return b.meta?.tier ?? "";
   }
 
   const visible = tier === "Todos" ? individuales : individuales.filter(b => getTier(b) === tier);

@@ -15,12 +15,14 @@ import {
   GiftIcon,
   CalendarIcon,
   WrenchIcon,
+  ShieldIcon,
 } from "@/components/icons";
 
 // Icono por sección
 const SECTION_ICON: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   guias: BookIcon,
   heroes: UsersIcon,
+  facciones: ShieldIcon,
   "war-pets": PawIcon,
   behemoths: DragonIcon,
   artefactos: GemIcon,
@@ -34,6 +36,7 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
   "call-of-dragons": {
     guias:        "https://cdn.cod.guide/wp-content/uploads/2023/10/Call-of-Dragons-power-guide-1024x576.jpg",
     heroes:       "https://cdn.cod.guide/wp-content/uploads/2023/01/promoting-star-level-in-Call-of-Dragons-1024x576.jpg",
+    facciones:    "https://www.allclash.com/wp-content/uploads/2023/04/call-of-dragons-best-factions-2023.jpg",
     "war-pets":   "https://cdn.cod.guide/wp-content/uploads/2023/08/Skill-Card-Store-1024x576.jpg",
     behemoths:    "https://cdn.cod.guide/wp-content/uploads/2023/01/Call-of-Dragons-Behemoths-1024x576.png",
     artefactos:   "https://cdn.cod.guide/wp-content/uploads/2023/02/opening-artifact-in-tavern-1024x576.png",

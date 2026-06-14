@@ -20,6 +20,9 @@ export type Block = {
   sourceUrl: string | null;
   isVerified: boolean;
   images: string[];
+  // Metadatos estructurados por bloque (jsonb). P. ej. { tier: "Legendary" } en
+  // artefactos. Siempre es un objeto (vacío si no hay nada).
+  meta: { tier?: string } & Record<string, unknown>;
 };
 
 export type SectionContent = {
@@ -41,6 +44,7 @@ type BlockRow = {
   source_url: string | null;
   is_verified: boolean;
   images: string[] | null;
+  meta: ({ tier?: string } & Record<string, unknown>) | null;
 };
 type SectionRow = {
   id: string;
@@ -53,7 +57,7 @@ type SectionRow = {
 };
 
 const SECTION_SELECT =
-  "id, slug, title, intro_title, intro, intro_images, section_blocks(id, order_index, title, content, source_url, is_verified, images)";
+  "id, slug, title, intro_title, intro, intro_images, section_blocks(id, order_index, title, content, source_url, is_verified, images, meta)";
 
 function mapBlock(b: BlockRow): Block {
   return {
@@ -64,6 +68,7 @@ function mapBlock(b: BlockRow): Block {
     sourceUrl: b.source_url,
     isVerified: b.is_verified,
     images: b.images ?? [],
+    meta: b.meta ?? {},
   };
 }
 

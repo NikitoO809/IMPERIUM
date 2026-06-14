@@ -905,16 +905,19 @@ export type GameSection = {
   slug: string;
   label: string;
   desc: string;
-  ready: boolean; // true = ya tiene contenido; false = pendiente de cargar
+  // Pista de catálogo. La fuente REAL de "listo/pendiente" por juego es la BD,
+  // vía getReadySections() (sections.ts); el Hub usa esa, no este campo. Mantener
+  // este flag acorde a la realidad evita confusión.
+  ready: boolean;
 };
 
 export const GAME_SECTIONS: GameSection[] = [
   { slug: "guias", label: "Guías", desc: "Primeros pasos, progresión, edificios, cuentas, mapas y temporadas.", ready: true },
   { slug: "heroes", label: "Héroes", desc: "Tier list por temporada, fichas, parejas y builds de talentos.", ready: true },
-  { slug: "facciones", label: "Facciones", desc: "Guía de facciones: cuál elegir en cada fase del juego.", ready: false },
+  { slug: "facciones", label: "Facciones", desc: "Guía de facciones: cuál elegir en cada fase del juego.", ready: true },
   { slug: "war-pets", label: "War Pets", desc: "Tier list y datos de las mascotas de guerra.", ready: false },
-  { slug: "behemoths", label: "Behemoths", desc: "Datos y estrategia contra behemoths.", ready: false },
-  { slug: "artefactos", label: "Artefactos", desc: "Tier list y datos de artefactos.", ready: false },
+  { slug: "behemoths", label: "Behemoths", desc: "Datos y estrategia contra behemoths.", ready: true },
+  { slug: "artefactos", label: "Artefactos", desc: "Tier list y datos de artefactos.", ready: true },
   { slug: "codigos", label: "Códigos", desc: "Códigos de canje vigentes y sus recompensas.", ready: false },
   { slug: "eventos", label: "Eventos", desc: "Guías de los eventos del juego.", ready: false },
   { slug: "herramientas", label: "Herramientas", desc: "Calculadoras de recursos, speedups y más.", ready: false },
