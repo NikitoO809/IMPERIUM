@@ -1,0 +1,44 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "resumen",
+  "title": "Resumen — Sword x Staff",
+  "intro_title": "Sword x Staff en EOG",
+  "intro": "Hub de Sword x Staff en Eden of Gaming. Parche 1.0 activo. Servidor: mundo de Kanstein, cinco reinos, cuatro clases avanzadas. Desarrollado por Boltray Games.",
+  "intro_images": [
+    "https://eog.gg/assets/games/sword-x-staff/kingdoms/forest.webp"
+  ],
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "is_published": false,
+  "render_type": "generic",
+  "order_index": 9,
+  "label": "Resumen del Juego",
+  "description": "Vista general, actualizaciones recientes y estado del meta en SxS",
+  "icon": "book",
+  "cover_image": "https://eog.gg/assets/games/sword-x-staff/kingdoms/forest.webp",
+  "items": [
+    {
+      "title": "¿Qué contiene este Hub?",
+      "content": "Recursos disponibles en IMPERIUM para Sword x Staff:\n\n• Tier List de Clases — mejor clase por estilo de combate, para todas las regiones\n• Guías — de principiante a endgame, incluyendo clases y sistemas\n• Builds — cargas curadas y Build Maker por rol\n• Habilidades — base de datos de habilidades, Fantomons y Compañeros\n• Roadmap — progresión día a día hasta la Temporada 5\n• Códigos — canjea recompensas gratuitas del período de lanzamiento\n• Veredicto — análisis de lanzamiento por el equipo de EOG",
+      "images": [
+        "https://eog.gg/assets/games/sword-x-staff/kingdoms/forest.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Actualizaciones Recientes",
+      "content": "19 mayo 2026 — LANZAMIENTO GLOBAL: Sword x Staff disponible en iOS, Android y PC (vía emulador). Desarrollado por Boltray Games. Mundo de Kanstein, cinco reinos, cuatro clases avanzadas.\n\n19 mayo 2026 — COLABORACIÓN KonoSuba: evento de lanzamiento activo. Más de 650 pulls gratuitos distribuidos entre recompensas de inicio de sesión e hitos de eventos.\n\n29 julio 2026 (estimado) — PRÓXIMO: Segundo arco de KonoSuba programado. Guarda Wish Stones y Destiny Fruits para la rotación.",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Sobre el Juego",
+      "content": "Sword x Staff es un RPG idle de fantasía con sistema de habilidades intercambiables. A diferencia de otros gachas, la rareza que se colecciona son las habilidades — no los personajes. Esto permite personalizar libremente el rol de tu personaje sin importar qué clase elegiste al inicio.\n\nEl juego progresa por regiones: cada región desbloquea nuevas clases avanzadas (job changes) y sistemas de contenido. Las primeras dos semanas están diseñadas para exploración sin necesidad de gastar.",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "builds",
+  "title": "Builds — Sword x Staff",
+  "intro_title": "Cargas Curadas (En desarrollo)",
+  "intro": "Estos loadouts son los mismos que usan los miembros del guild de mayor rango de EOG ahora mismo. Espera ajustes y clases adicionales a medida que el meta se consolide.",
+  "intro_images": [
+    "https://eog.gg/assets/sxs/classes/warrior.png"
+  ],
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "is_published": false,
+  "render_type": "generic",
+  "order_index": 4,
+  "label": "Builds",
+  "icon": "wrench",
+  "cover_image": "https://eog.gg/assets/sxs/classes/warrior.png",
+  "description": "Loadouts curados por el equipo de EOG — en desarrollo",
+  "items": [
+    {
+      "title": "Principiantes (PVE)",
+      "content": "Técnicas (×4): Cyclone · Ice Spike · Fireball · Iron Thorn\nEncantos (×4): Unstable Aura · Elemental Mystery · Elemental Body · Tough Soul\n\nCarga equilibrada para el primer trabajo. Cubre daño único, AoE y supervivencia básica antes de comprometerte con un perfil de daño.",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/cyclone.webp",
+        "https://eog.gg/assets/sxs/skills/ice-spike.webp",
+        "https://eog.gg/assets/sxs/skills/fireball.webp",
+        "https://eog.gg/assets/sxs/skills/iron-thorn.webp",
+        "https://eog.gg/assets/sxs/skills/unstable-aura.webp",
+        "https://eog.gg/assets/sxs/skills/elemental-mystery.webp",
+        "https://eog.gg/assets/sxs/skills/elemental-body.webp",
+        "https://eog.gg/assets/sxs/skills/tough-soul.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Daño en Área (PVE)",
+      "content": "Técnicas (×4): Cyclone · Water Assault · Blazing Fire Ring · Fireball\nEncantos (×4): Elemental Mystery · Unstable Aura · Mana Surge · Gale Shield\n\nBuild de limpieza multi-objetivo. Mana Surge sostiene el tiempo de actividad de hechizos para que la rotación AoE nunca se interrumpa.",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/cyclone.webp",
+        "https://eog.gg/assets/sxs/skills/water-assault.webp",
+        "https://eog.gg/assets/sxs/skills/blazing-fire-ring.webp",
+        "https://eog.gg/assets/sxs/skills/fireball.webp",
+        "https://eog.gg/assets/sxs/skills/elemental-mystery.webp",
+        "https://eog.gg/assets/sxs/skills/unstable-aura.webp",
+        "https://eog.gg/assets/sxs/skills/mana-surge.webp",
+        "https://eog.gg/assets/sxs/skills/gale-shield.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "DPS Objetivo Único (PVE)",
+      "content": "Técnicas (×4): Wind's Delight · Tempest Sphere · Flame Jet · Water Shot\nEncantos (×4): Elemental Mystery · Unstable Aura · Mana Surge · Gale Shield\n\nCarga enfocada en jefes. Wind's Delight y Tempest Sphere acumulan daño en objetivos prioritarios; Mana Surge mantiene la rotación.",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/winds-delight.webp",
+        "https://eog.gg/assets/sxs/skills/tempest-sphere.webp",
+        "https://eog.gg/assets/sxs/skills/flame-jet.webp",
+        "https://eog.gg/assets/sxs/skills/water-shot.webp",
+        "https://eog.gg/assets/sxs/skills/elemental-mystery.webp",
+        "https://eog.gg/assets/sxs/skills/unstable-aura.webp",
+        "https://eog.gg/assets/sxs/skills/mana-surge.webp",
+        "https://eog.gg/assets/sxs/skills/gale-shield.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Soporte de Equipo (PVE)",
+      "content": "Técnicas (×4): Stonechief Summon · Void Blessing · Iron Thorn · Healing Touch\nEncantos (×4): Flaming Path · Tough Soul · Elemental Body · Gale Shield\n\nKit para contenido grupal. Stonechief Summon y Healing Touch cuidan el HP del equipo; Flaming Path e Iron Thorn controlan y dañan.",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/stonechief-summon.webp",
+        "https://eog.gg/assets/sxs/skills/void-blessing.webp",
+        "https://eog.gg/assets/sxs/skills/iron-thorn.webp",
+        "https://eog.gg/assets/sxs/skills/healing-touch.webp",
+        "https://eog.gg/assets/sxs/skills/flaming-path.webp",
+        "https://eog.gg/assets/sxs/skills/tough-soul.webp",
+        "https://eog.gg/assets/sxs/skills/elemental-body.webp",
+        "https://eog.gg/assets/sxs/skills/gale-shield.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    }
+  ]
+}

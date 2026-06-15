@@ -1,104 +1,128 @@
-// Inicio — bienvenida y accesos a las secciones de la web.
-import Link from "next/link";
-import { Panel, HudLabel } from "@/components/hud";
-import { DiscordIcon, BookIcon, ChartIcon, UsersIcon } from "@/components/icons";
-import { LoginButton } from "@/components/auth/LoginButton";
+// Inicio — portada de la comunidad (sistema neutro: zinc + oro único).
+// Hero central (isla cliente), datos de Discord EN VIVO sin caja,
+// juegos esperados (suscripción) y MMORPG con preregistro.
+import { HomeHero } from "@/components/HomeHero";
+import { UpcomingGames } from "@/components/UpcomingGames";
+import { PreRegisterGames } from "@/components/PreRegisterGames";
+import { Reveal } from "@/components/ui/Reveal";
+import { Magnetic } from "@/components/ui/Magnetic";
+import { DiscordIcon } from "@/components/icons";
+import { getDiscordStats, DISCORD_INVITE_URL } from "@/lib/discord";
+import { getUpcomingGames } from "@/lib/upcoming";
+import { PREREGISTER_GAMES } from "@/lib/preregister-games";
 
-const SECTIONS = [
-  {
-    href: "/juegos",
-    icon: BookIcon,
-    title: "Juegos y guías",
-    desc: "Elige tu juego y sigue las guías interactivas paso a paso.",
-    cta: "Explorar juegos",
-  },
-  {
-    href: "/mi-progreso",
-    icon: ChartIcon,
-    title: "Mi progreso",
-    desc: "Consulta tu avance en cada guía y retoma donde lo dejaste.",
-    cta: "Ver mi avance",
-  },
-  {
-    href: "/comunidad",
-    icon: UsersIcon,
-    title: "Comunidad",
-    desc: "Mira a los demás jugadores y la clasificación en tiempo real.",
-    cta: "Ver comunidad",
-  },
-];
+export default async function Inicio() {
+  const [discord, upcoming] = await Promise.all([getDiscordStats(), getUpcomingGames()]);
+  const nf = new Intl.NumberFormat("es-ES");
 
-export default function Inicio() {
   return (
     <main className="relative">
-      {/* ───── Hero ───── */}
-      <section className="mx-auto max-w-6xl px-4 pt-14 pb-12 text-center sm:pt-20">
-        <div className="rise flex justify-center">
-          <HudLabel>Comunidad de Discord · ES</HudLabel>
-        </div>
+      {/* ───── Hero (isla cliente) ───── */}
+      <HomeHero
+        members={discord ? nf.format(discord.memberCount) : "—"}
+        online={discord ? nf.format(discord.onlineCount) : "—"}
+      />
 
-        <div className="rise mt-8" style={{ animationDelay: "0.05s" }}>
-          <img
-            src="/brand/dragon-trans.png"
-            alt="Dragón de IMPERIUM"
-            className="float mx-auto h-28 w-auto sm:h-40"
-            style={{ filter: "drop-shadow(0 0 35px rgba(34,224,255,0.4))" }}
-          />
-        </div>
+      {/* ───── Comunidad / Discord (datos en vivo, sin caja) ───── */}
+      <section className="mx-auto max-w-7xl px-4 pb-28 sm:px-6">
+        <Reveal>
+          <div className="flex flex-col gap-8 border-y border-white/8 py-8 sm:flex-row sm:items-center sm:gap-10">
+            <div>
+              <span className="eyebrow">El servidor ahora mismo</span>
+              <p className="mt-3 max-w-sm text-sm leading-relaxed text-zinc-500">
+                Veinte años de comunidad. Estos son los datos en vivo del Discord.
+              </p>
+            </div>
 
-        <h1
-          className="rise -mt-2 font-title text-5xl font-black leading-none tracking-[0.06em] text-glow-brand sm:text-7xl"
-          style={{ animationDelay: "0.1s" }}
-        >
-          IMPERIUM
-        </h1>
+            <div className="grid grid-cols-3 divide-x divide-white/8 sm:ml-auto">
+              <Stat value="20" label="Años" />
+              <Stat value={discord ? nf.format(discord.memberCount) : "—"} label="Miembros" />
+              <Stat value={discord ? nf.format(discord.onlineCount) : "—"} label="Online" live />
+            </div>
 
-        <p
-          className="rise mx-auto mt-6 max-w-xl text-base text-white/65 sm:text-lg"
-          style={{ animationDelay: "0.16s" }}
-        >
-          Guías de juego interactivas, tu progreso guardado y la comunidad jugando
-          a tu lado. Empezamos por Call of Dragons.
-        </p>
-
-        <div className="rise mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row" style={{ animationDelay: "0.22s" }}>
-          <LoginButton className="btn-hud flex w-full items-center justify-center gap-2.5 bg-gradient-to-r from-brand to-brand-bright px-7 py-3.5 text-white sm:w-auto">
-            <DiscordIcon className="h-5 w-5" />
-            <span className="font-hud font-bold tracking-[0.1em]">ENTRAR CON DISCORD</span>
-          </LoginButton>
-          <Link href="/juegos" className="btn-ghost flex w-full items-center justify-center bg-white/5 px-7 py-3.5 font-hud font-semibold tracking-wide text-white/85 ring-1 ring-white/10 transition hover:text-white sm:w-auto">
-            Ver las guías
-          </Link>
-        </div>
+            {DISCORD_INVITE_URL ? (
+              <Magnetic strength={0.3} className="sm:ml-2">
+                <a
+                  href={DISCORD_INVITE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pill pill-primary"
+                >
+                  <DiscordIcon className="h-5 w-5" />
+                  <span>Únete</span>
+                </a>
+              </Magnetic>
+            ) : (
+              <p className="text-faint text-xs sm:ml-2">
+                {/* Miguel: pega tu invitación en NEXT_PUBLIC_DISCORD_INVITE para activar este botón. */}
+                Invitación de Discord pendiente.
+              </p>
+            )}
+          </div>
+        </Reveal>
       </section>
 
-      {/* ───── Accesos a secciones ───── */}
-      <section className="mx-auto max-w-6xl px-4 pb-16">
-        <div className="mb-8 flex items-center gap-3">
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-accent/40" />
-          <h2 className="font-title text-lg font-extrabold tracking-[0.15em]">SECCIONES</h2>
-          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-accent/40" />
-        </div>
+      {/* ───── Juegos que esperamos (suscripción) ───── */}
+      {upcoming.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 pb-28 sm:px-6">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Próximos juegos"
+              title="Lo que esperamos juntos"
+              sub="Apúntate y te avisamos cuando empecemos. De paso ves cuánta gente lo espera."
+            />
+          </Reveal>
+          <Reveal className="mt-10">
+            <UpcomingGames games={upcoming} />
+          </Reveal>
+        </section>
+      )}
 
-        <div className="grid gap-5 sm:grid-cols-3">
-          {SECTIONS.map((s) => (
-            <Link key={s.href} href={s.href} className="block">
-              <Panel corners className="sweep lift h-full">
-                <div className="panel-inner flex h-full flex-col p-6">
-                  <span className="hex grid h-12 w-12 place-items-center bg-brand/15 ring-1 ring-accent/20">
-                    <s.icon className="h-5 w-5 text-accent" />
-                  </span>
-                  <h3 className="mt-4 font-title text-lg font-bold">{s.title}</h3>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-white/55">{s.desc}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 font-hud text-sm font-semibold text-accent">
-                    {s.cta} <span>▸</span>
-                  </span>
-                </div>
-              </Panel>
-            </Link>
-          ))}
-        </div>
+      {/* ───── MMORPG con preregistro (reemplaza la antigua bento) ───── */}
+      <section className="mx-auto max-w-7xl px-4 pb-32 sm:px-6">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Más esperados"
+            title="MMORPG en el horizonte"
+            sub="Los MMORPG más esperados según la comunidad. Entra a cada ficha y sigue sus novedades; cuando abra el preregistro oficial, lo enlazamos aquí."
+          />
+        </Reveal>
+        <Reveal className="mt-10">
+          <PreRegisterGames games={PREREGISTER_GAMES} />
+        </Reveal>
       </section>
     </main>
+  );
+}
+
+// Encabezado de sección: eyebrow + display (sin degradado de texto).
+function SectionHeading({
+  eyebrow,
+  title,
+  sub,
+}: {
+  eyebrow: string;
+  title: string;
+  sub?: string;
+}) {
+  return (
+    <div className="max-w-2xl">
+      <span className="eyebrow">{eyebrow}</span>
+      <h2 className="font-display mt-4 text-3xl text-white sm:text-4xl">{title}</h2>
+      {sub && <p className="mt-4 max-w-[60ch] text-base leading-relaxed text-zinc-400">{sub}</p>}
+    </div>
+  );
+}
+
+// Métrica en vivo: número monoespaciado + etiqueta.
+function Stat({ value, label, live = false }: { value: string; label: string; live?: boolean }) {
+  return (
+    <div className="px-5 first:pl-0 last:pr-0">
+      <div className="flex items-center gap-1.5">
+        {live && <span className="live-dot h-1.5 w-1.5 rounded-full bg-gold" />}
+        <span className="font-num text-2xl text-white sm:text-3xl">{value}</span>
+      </div>
+      <span className="mt-1.5 block text-[10px] uppercase tracking-[0.16em] text-zinc-500">{label}</span>
+    </div>
   );
 }

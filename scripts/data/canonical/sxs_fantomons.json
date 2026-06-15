@@ -1,0 +1,177 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "fantomons",
+  "title": "Fantomons — Sword x Staff (13 indexados)",
+  "intro_title": "Fantomons",
+  "intro": "Las criaturas compañeras de Sword x Staff. Cada Fantomon tiene habilidades pasivas y técnicas activas que complementan tu estilo de juego. Rainbow > SSR > SR > R. El desbloqueo adulto se produce en el nivel 108 (Loong Haven, Día 47+).",
+  "intro_images": [
+    "https://eog.gg/assets/sxs/fantomons/aegiswing.webp"
+  ],
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "is_published": false,
+  "render_type": "tier-list",
+  "order_index": 3,
+  "label": "Fantomons",
+  "icon": "paw",
+  "cover_image": "https://eog.gg/assets/sxs/fantomons/aegiswing.webp",
+  "description": "13 Fantomons con rareza y habilidades",
+  "items": [
+    {
+      "title": "Aegiswing",
+      "content": "Rareza: Rainbow\n\nRadiant Sanctuary · PASSIVE · At the start of battle, grants the character Guardian Angel for 3 turns. When this status expires, restores 50% of their lost HP and grants them Power Unsealed for the entire battle. · Radiant Halo · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/aegiswing.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "SSS",
+        "rareza": "Rainbow"
+      }
+    },
+    {
+      "title": "Armopi",
+      "content": "Rareza: SSR",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/armopi.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "S",
+        "rareza": "SSR"
+      }
+    },
+    {
+      "title": "Boaro",
+      "content": "Rareza: SR\n\nMountain Protection · PASSIVE · Triggers when the caster cumulatively loses 15% of max HP, granting a shield based on the caster's DEF. Can trigger up to 5 times per battle. · Crash · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/boaro.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "A",
+        "rareza": "SR"
+      }
+    },
+    {
+      "title": "Chomusuke",
+      "content": "Rareza: SR",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/chomusuke.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "A",
+        "rareza": "SR"
+      }
+    },
+    {
+      "title": "Falko",
+      "content": "Rareza: SR\n\nGolden Flash · PASSIVE · When a damaging Technique is used on enemies, deals Physical DMG once to one of the targets and all enemies 1 grid around. · Golden Feather · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/falko.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "A",
+        "rareza": "SR"
+      }
+    },
+    {
+      "title": "Herbote",
+      "content": "Rareza: SSR",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/herbote.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "S",
+        "rareza": "SSR"
+      }
+    },
+    {
+      "title": "Kels",
+      "content": "Rareza: SSR\n\nPurging Spell · PASSIVE · When a damaging Technique is used on enemies, deals Water DMG once to one of the targets and randomly dispels 1 buff. Can trigger only once per turn. · Water Orb · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/kels.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "S",
+        "rareza": "SSR"
+      }
+    },
+    {
+      "title": "Mandragora",
+      "content": "Rareza: SSR",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/mandragora.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "S",
+        "rareza": "SSR"
+      }
+    },
+    {
+      "title": "Nyxarchon",
+      "content": "Rareza: Rainbow\n\nRequiem Blast · PASSIVE · When a damaging Technique is used on enemies, deals Dark DMG once to one of the targets and all enemies 2 grids around, with a 100% chance to inflict 1 stack of 10% DEF Reduction (max 3 stacks) for 2 turns. Can trigger only twice every 2 turns. (Large targets may take multiple hits.) · Shadow Sweep · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/nyxarchon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "SSS",
+        "rareza": "Rainbow"
+      }
+    },
+    {
+      "title": "Pandarial",
+      "content": "Rareza: SR",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/pandarial.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "A",
+        "rareza": "SR"
+      }
+    },
+    {
+      "title": "Sylvaerie",
+      "content": "Rareza: SSR\n\nWind Embrace · PASSIVE · Increases the caster's ATK and SPD for 1 turn after the caster's turn ends. · Glow Glob · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/sylvaerie.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "S",
+        "rareza": "SSR"
+      }
+    },
+    {
+      "title": "Terragon",
+      "content": "Rareza: SR",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/terragon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "A",
+        "rareza": "SR"
+      }
+    },
+    {
+      "title": "Zeioletus",
+      "content": "Rareza: SSR\n\nLotus Step · PASSIVE · When a damaging Technique is used on enemies, deals Light DMG once to one of the targets and all enemies 1 grid around, knocking them airborne. Can trigger only twice every 2 turns. (Deals 20% more DMG to large targets.) · Aura Shot · TECHNIQUE",
+      "images": [
+        "https://eog.gg/assets/sxs/fantomons/zeioletus.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tier": "S",
+        "rareza": "SSR"
+      }
+    }
+  ]
+}

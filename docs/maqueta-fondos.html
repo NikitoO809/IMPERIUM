@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IMPERIUM — Maqueta de fondos (elige 1 de 5)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #060608;
+    --brand: #7c5cff;
+    --brand-2: #9a7bff;
+    --accent: #22e0ff;
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    background: var(--ink);
+    color: #fff;
+    overflow: hidden;
+  }
+
+  /* ─────────── Contenedor del fondo ─────────── */
+  #bg { position: fixed; inset: 0; z-index: -4; overflow: hidden; background: var(--ink); }
+  .layer { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; }
+  #bg[data-mode="aurora"]  .l-aurora,
+  #bg[data-mode="minimal"] .l-minimal,
+  #bg[data-mode="grid"]    .l-grid,
+  #bg[data-mode="stars"]   .l-stars,
+  #bg[data-mode="synth"]   .l-synth { opacity: 1; }
+
+  /* Grano de película (común a todos) */
+  .grain {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  /* Viñeta (común) */
+  .vignette { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background: radial-gradient(ellipse 120% 100% at 50% 50%, transparent 55%, rgba(0,0,0,0.55) 100%); }
+
+  /* ── 1. AURORA: orbes que derivan ── */
+  .l-aurora::before, .l-aurora::after {
+    content: ""; position: absolute; border-radius: 50%; width: 60vw; height: 60vw; will-change: transform;
+  }
+  .l-aurora::before { top: -18vw; left: -8vw;
+    background: radial-gradient(circle, rgba(124,92,255,0.34), transparent 62%);
+    animation: aur-a 26s ease-in-out infinite alternate; }
+  .l-aurora::after { top: -10vw; right: -10vw; width: 52vw; height: 52vw;
+    background: radial-gradient(circle, rgba(34,224,255,0.24), transparent 62%);
+    animation: aur-b 32s ease-in-out infinite alternate; }
+  @keyframes aur-a { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(14vw,10vw) scale(1.15)} 100%{transform:translate(6vw,22vw) scale(1.05)} }
+  @keyframes aur-b { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(-12vw,14vw) scale(1.2)} 100%{transform:translate(-20vw,4vw) scale(1.1)} }
+
+  /* ── 2. MINIMAL: negro casi liso + un halo arriba ── */
+  .l-minimal {
+    background:
+      radial-gradient(38rem 22rem at 50% -8%, rgba(124,92,255,0.22), transparent 60%),
+      radial-gradient(30rem 20rem at 80% 5%, rgba(34,224,255,0.08), transparent 55%);
+  }
+
+  /* ── 3. REJILLA técnica difuminada ── */
+  .l-grid {
+    background-image:
+      linear-gradient(rgba(34,224,255,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34,224,255,0.06) 1px, transparent 1px);
+    background-size: 52px 52px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, #000 30%, transparent 100%);
+            mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, #000 30%, transparent 100%);
+  }
+  .l-grid::after { content: ""; position: absolute; inset: 0;
+    background: radial-gradient(36rem 22rem at 50% -6%, rgba(124,92,255,0.18), transparent 60%); }
+
+  /* ── 4. ESTRELLAS a la deriva ── */
+  .l-stars { background: radial-gradient(40rem 30rem at 50% 120%, rgba(124,92,255,0.10), transparent 60%); }
+  .star { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #fff;
+    animation: twinkle var(--t, 4s) ease-in-out infinite; }
+  @keyframes twinkle { 0%,100%{opacity:var(--o,.5); transform:scale(1)} 50%{opacity:.15; transform:scale(.6)} }
+  .stars-drift { position: absolute; inset: 0; animation: drift 90s linear infinite; }
+  @keyframes drift { from{transform:translateY(0)} to{transform:translateY(-40px)} }
+
+  /* ── 5. SYNTHWAVE: sol + suelo en perspectiva ── */
+  .l-synth { background: linear-gradient(180deg, #0a0612 0%, #160a2e 55%, #2a0f3e 100%); }
+  .synth-sun { position: absolute; left: 50%; top: 30%; width: 320px; height: 320px; transform: translate(-50%,-50%);
+    border-radius: 50%; background: radial-gradient(circle, #ff8ad6 0%, #b15cff 45%, transparent 70%);
+    filter: blur(6px); opacity: 0.8; }
+  .synth-floor { position: absolute; left: 50%; bottom: 0; width: 200%; height: 55%; transform: translateX(-50%);
+    background-image:
+      linear-gradient(rgba(34,224,255,0.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34,224,255,0.4) 1px, transparent 1px);
+    background-size: 60px 60px;
+    transform: translateX(-50%) perspective(340px) rotateX(74deg);
+    transform-origin: bottom center;
+    -webkit-mask-image: linear-gradient(transparent, #000 40%);
+            mask-image: linear-gradient(transparent, #000 40%);
+    animation: floor 1.8s linear infinite; }
+  @keyframes floor { from{background-position:0 0} to{background-position:0 60px} }
+
+  /* ─────────── Portada de ejemplo (común) ─────────── */
+  .stage { position: relative; height: 100%; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+  .eyebrow { display: inline-flex; align-items: center; gap: .5rem; border-radius: 9999px;
+    padding: .34rem .9rem; font-size: 10px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+    color: rgba(255,255,255,.65); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  h1 { font-size: clamp(3.5rem, 12vw, 8rem); font-weight: 800; letter-spacing: -0.02em; line-height: .92;
+    margin-top: 1.4rem; background: linear-gradient(180deg,#fff,rgba(255,255,255,.62));
+    -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { max-width: 34rem; margin: 1.6rem auto 0; font-size: 1.1rem; line-height: 1.6; color: rgba(255,255,255,.62); }
+  .cta { margin-top: 2.4rem; display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; }
+  .pill { display: inline-flex; align-items: center; gap: .7rem; border-radius: 9999px;
+    padding: .7rem .7rem .7rem 1.4rem; font-weight: 600; font-size: .95rem; cursor: pointer;
+    border: none; transition: transform .5s var(--ease), box-shadow .5s var(--ease); }
+  .pill:active { transform: scale(.97); }
+  .pill-primary { color:#fff; background: linear-gradient(180deg, var(--brand-2), #6b46ff);
+    box-shadow: 0 12px 32px -12px rgba(124,92,255,.85), inset 0 1px 0 0 rgba(255,255,255,.28); }
+  .pill-ghost { color: rgba(255,255,255,.85); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); }
+  .badge { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+    background: rgba(255,255,255,.16); transition: transform .5s var(--ease); }
+  .pill:hover .badge { transform: translate(2px,-1px) scale(1.06); }
+  .pill-ghost .badge { background: rgba(255,255,255,.08); }
+
+  /* ─────────── Selector de fondos ─────────── */
+  .switch { position: fixed; left: 50%; bottom: 1.5rem; transform: translateX(-50%); z-index: 10;
+    display: flex; gap: .35rem; padding: .45rem; border-radius: 9999px;
+    background: rgba(18,18,24,.7); border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 30px 60px -30px rgba(0,0,0,.9); }
+  .switch button { border: none; cursor: pointer; border-radius: 9999px; padding: .6rem 1.1rem;
+    font-family: inherit; font-weight: 600; font-size: .82rem; color: rgba(255,255,255,.6);
+    background: transparent; transition: all .35s var(--ease); }
+  .switch button:hover { color: #fff; }
+  .switch button.active { color: #fff; background: rgba(255,255,255,.12); }
+  .hint { position: fixed; top: 1.4rem; left: 50%; transform: translateX(-50%); z-index: 10;
+    font-size: .8rem; color: rgba(255,255,255,.4); letter-spacing: .02em; }
+  @media (prefers-reduced-motion: reduce) {
+    .l-aurora::before, .l-aurora::after, .stars-drift, .star, .synth-floor { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+  <!-- Fondo conmutable -->
+  <div id="bg" data-mode="aurora">
+    <div class="layer l-aurora"></div>
+    <div class="layer l-minimal"></div>
+    <div class="layer l-grid"></div>
+    <div class="layer l-stars"><div class="stars-drift" id="starfield"></div></div>
+    <div class="layer l-synth"><div class="synth-sun"></div><div class="synth-floor"></div></div>
+  </div>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+
+  <p class="hint">Maqueta IMPERIUM · pulsa abajo para cambiar el fondo</p>
+
+  <!-- Portada de ejemplo -->
+  <div class="stage">
+    <span class="eyebrow"><span class="dot"></span> Comunidad de Discord · ES</span>
+    <h1>IMPERIUM</h1>
+    <p class="sub">Una comunidad que juega junta. Guías interactivas, tu progreso guardado y gente con quien jugar.</p>
+    <div class="cta">
+      <button class="pill pill-primary">Entrar con Discord <span class="badge">↗</span></button>
+      <button class="pill pill-ghost">Ver las guías <span class="badge">→</span></button>
+    </div>
+  </div>
+
+  <!-- Selector -->
+  <div class="switch" id="switch">
+    <button data-mode="aurora" class="active">Aurora</button>
+    <button data-mode="minimal">Minimal</button>
+    <button data-mode="grid">Rejilla</button>
+    <button data-mode="stars">Estrellas</button>
+    <button data-mode="synth">Synthwave</button>
+  </div>
+
+  <script>
+    // Genera el campo de estrellas (modo 4)
+    (function () {
+      const field = document.getElementById("starfield");
+      const N = 90;
+      let html = "";
+      for (let i = 0; i < N; i++) {
+        const x = (Math.random() * 100).toFixed(2);
+        const y = (Math.random() * 130).toFixed(2);
+        const o = (0.3 + Math.random() * 0.6).toFixed(2);
+        const t = (2.5 + Math.random() * 5).toFixed(1);
+        const s = Math.random() < 0.2 ? 3 : 2;
+        html += `<span class="star" style="left:${x}%;top:${y}%;--o:${o};--t:${t}s;width:${s}px;height:${s}px"></span>`;
+      }
+      field.innerHTML = html;
+    })();
+
+    // Conmuta el fondo
+    const bg = document.getElementById("bg");
+    document.getElementById("switch").addEventListener("click", function (e) {
+      const btn = e.target.closest("button");
+      if (!btn) return;
+      bg.dataset.mode = btn.dataset.mode;
+      this.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+    });
+  </script>
+</body>
+</html>

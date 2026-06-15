@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IMPERIUM — Dragón + nombre (elige composición)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0a0a0b;
+    --gold: #e3b341;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Outfit", system-ui, sans-serif;
+    background:
+      radial-gradient(60rem 42rem at 50% -12%, rgba(255,255,255,0.04), transparent 60%),
+      var(--ink);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  /* Emblema del dragón teñido a champán/acero */
+  .tint-emblem { filter: grayscale(1) sepia(0.35) saturate(1.5) hue-rotate(2deg) brightness(1.06) contrast(1.02); }
+
+  .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 6rem 1.5rem 3rem; }
+  .eyebrow { display: inline-flex; align-items: center; gap: .5rem; border-radius: 9999px;
+    padding: .32rem .85rem; font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+    color: rgba(255,255,255,.6); background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); margin-bottom: 2rem; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+  /* Contenedor emblema: dragón detrás (z0) + título delante (z2) */
+  .emblem { position: relative; display: flex; align-items: center; justify-content: center; }
+  .dragon { position: absolute; z-index: 0; pointer-events: none; left: 50%; top: 50%;
+    transform: translate(-50%, -50%); opacity: .9;
+    -webkit-mask-image: radial-gradient(closest-side, #000 60%, transparent 100%);
+            mask-image: radial-gradient(closest-side, #000 60%, transparent 100%); }
+  .title { position: relative; z-index: 2; font-weight: 600; letter-spacing: -0.03em; line-height: .9;
+    font-size: clamp(3.5rem, 13vw, 9rem);
+    text-shadow: 0 4px 40px rgba(0,0,0,.55); }
+  .sub { max-width: 36rem; margin: 2rem auto 0; font-size: 1.05rem; line-height: 1.6; color: rgba(255,255,255,.5); position: relative; z-index: 2; }
+  .cta { margin-top: 2.5rem; display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; position: relative; z-index: 2; }
+  .pill { display: inline-flex; align-items: center; gap: .6rem; border-radius: 9999px;
+    padding: .62rem 1.3rem; font-weight: 500; font-size: .92rem; cursor: pointer; border: none; transition: transform .3s var(--ease); }
+  .pill:active { transform: translateY(1px) scale(.99); }
+  .pill-primary { color:#1a1407; background: var(--gold); }
+  .pill-ghost { color: rgba(255,255,255,.86); background: transparent; border: 1px solid rgba(255,255,255,.14); }
+
+  /* ───────────── VARIANTES ───────────── */
+
+  /* 1 · Centrado: el dragón abraza el nombre por detrás */
+  [data-v="1"] .dragon { width: 620px; transform: translate(-50%, -56%); opacity: .9; }
+
+  /* 2 · Emerge por arriba: alas y cabeza asoman sobre las letras */
+  [data-v="2"] .dragon { width: 560px; transform: translate(-50%, -82%); opacity: .92; }
+  [data-v="2"] .title { margin-top: 3.5rem; }
+
+  /* 3 · Marca de agua: dragón gigante y tenue, texto nítido encima */
+  [data-v="3"] .dragon { width: 1000px; transform: translate(-50%, -50%); opacity: .22; filter: grayscale(1) sepia(.35) saturate(1.4) brightness(1.05) blur(1px); }
+  [data-v="3"] .title { font-size: clamp(4rem, 15vw, 11rem); }
+
+  /* 4 · Sale desde abajo: el cuerpo nace tras la línea base */
+  [data-v="4"] .dragon { width: 600px; transform: translate(-50%, -30%); opacity: .85;
+    -webkit-mask-image: radial-gradient(closest-side at 50% 40%, #000 55%, transparent 100%);
+            mask-image: radial-gradient(closest-side at 50% 40%, #000 55%, transparent 100%); }
+
+  /* 5 · Asimétrico: el dragón asoma tras el final del nombre */
+  [data-v="5"] .emblem { justify-content: flex-start; }
+  [data-v="5"] .dragon { left: auto; right: -8%; top: 50%; transform: translate(0, -52%); width: 520px; opacity: .85; }
+  [data-v="5"] .hero { align-items: flex-start; text-align: left; padding-left: 8vw; }
+  [data-v="5"] .sub, [data-v="5"] .cta { margin-left: 0; justify-content: flex-start; }
+
+  /* 6 · Solo silueta: dragón muy grande detrás, recortado por el título */
+  [data-v="6"] .dragon { width: 760px; transform: translate(-50%, -54%); opacity: .5; }
+  [data-v="6"] .title { font-size: clamp(4rem, 16vw, 12rem); -webkit-text-stroke: 1px rgba(255,255,255,.0); }
+
+  /* ───────────── Selector ───────────── */
+  .switch { position: fixed; left: 50%; bottom: 1.5rem; transform: translateX(-50%); z-index: 10;
+    display: flex; gap: .3rem; padding: .4rem; border-radius: 9999px; max-width: 95vw; flex-wrap: wrap; justify-content: center;
+    background: rgba(18,18,24,.75); border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+  .switch button { border: none; cursor: pointer; border-radius: 9999px; padding: .55rem .95rem;
+    font-family: inherit; font-weight: 600; font-size: .78rem; color: rgba(255,255,255,.6); background: transparent; transition: all .3s var(--ease); }
+  .switch button:hover { color: #fff; }
+  .switch button.active { color: #1a1407; background: var(--gold); }
+  .hint { position: fixed; top: 1.4rem; left: 50%; transform: translateX(-50%); z-index: 10;
+    font-size: .8rem; color: rgba(255,255,255,.4); }
+</style>
+</head>
+<body>
+  <p class="hint">Maqueta IMPERIUM · dragón + nombre · pulsa abajo para cambiar de composición</p>
+
+  <div class="hero" data-v="1" id="hero">
+    <span class="eyebrow"><span class="dot"></span> Comunidad de Discord · ES</span>
+    <div class="emblem">
+      <img class="dragon tint-emblem" src="../public/brand/dragon-trans.png" alt="Dragón de IMPERIUM" />
+      <h1 class="title">IMPERIUM</h1>
+    </div>
+    <p class="sub">Una comunidad que juega junta. Guías paso a paso, tu progreso guardado y gente con quien jugar.</p>
+    <div class="cta">
+      <button class="pill pill-primary">Entrar con Discord</button>
+      <button class="pill pill-ghost">Ver las guías</button>
+    </div>
+  </div>
+
+  <div class="switch" id="switch">
+    <button data-v="1" class="active">1 · Centrado</button>
+    <button data-v="2">2 · Emerge arriba</button>
+    <button data-v="3">3 · Marca de agua</button>
+    <button data-v="4">4 · Sale abajo</button>
+    <button data-v="5">5 · Asimétrico</button>
+    <button data-v="6">6 · Silueta XL</button>
+  </div>
+
+  <script>
+    const hero = document.getElementById("hero");
+    document.getElementById("switch").addEventListener("click", function (e) {
+      const btn = e.target.closest("button");
+      if (!btn) return;
+      hero.dataset.v = btn.dataset.v;
+      this.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+    });
+  </script>
+</body>
+</html>

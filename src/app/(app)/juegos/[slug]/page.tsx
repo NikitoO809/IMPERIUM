@@ -4,7 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { GAME_SECTIONS } from "@/lib/demo-data";
 import { getGameMeta } from "@/lib/games";
-import { getReadySections } from "@/lib/sections";
+import { getHubSections } from "@/lib/sections";
 import { Panel, HudLabel } from "@/components/hud";
 import {
   BookIcon,
@@ -31,6 +31,18 @@ const SECTION_ICON: Record<string, React.ComponentType<React.SVGProps<SVGSVGElem
   herramientas: WrenchIcon,
 };
 
+// Registro de iconos por CLAVE (lo que guarda game_sections.icon para secciones
+// dinámicas). Si la sección no trae clave, se cae a SECTION_ICON por slug.
+const ICON_BY_KEY: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  book: BookIcon, users: UsersIcon, shield: ShieldIcon, paw: PawIcon,
+  dragon: DragonIcon, gem: GemIcon, gift: GiftIcon, calendar: CalendarIcon, wrench: WrenchIcon,
+};
+
+// "war-pets" → "War Pets" (fallback de nombre para secciones sin label)
+function prettify(slug: string) {
+  return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
+
 // Imagen de portada por sección (por juego)
 const SECTION_COVERS: Record<string, Record<string, string>> = {
   "call-of-dragons": {
@@ -44,6 +56,12 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
     eventos:      "https://cdn.cod.guide/wp-content/uploads/2023/01/Call-of-Dragons-Events-300x169.png",
     herramientas: "https://cdn.cod.guide/wp-content/uploads/2023/03/call-of-dragons-background.jpg",
   },
+  "sword-x-staff": {
+    // 'guias' es ruta especial (sin fila en game_sections); su portada va aquí.
+    // Las secciones dinámicas (p. ej. fantomons) traen su cover_image desde la BD.
+    guias:   "https://eog.gg/assets/games/sword-x-staff/kingdoms/forest.webp",
+    codigos: "https://eog.gg/assets/games/sword-x-staff/card.webp",
+  },
 };
 
 export default async function GameHub({
@@ -55,7 +73,7 @@ export default async function GameHub({
   const game = await getGameMeta(slug);
   if (!game) notFound();
 
-  const ready = await getReadySections(slug);
+  const hubSections = await getHubSections(slug);
   const covers = SECTION_COVERS[slug] ?? {};
 
   return (
@@ -90,82 +108,83 @@ export default async function GameHub({
         <span className="h-px flex-1 bg-gradient-to-l from-transparent to-accent/40" />
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {GAME_SECTIONS.map((s) => {
-          const Icon = SECTION_ICON[s.slug] ?? BookIcon;
-          const isReady = ready.has(s.slug);
-          const coverImg = covers[s.slug];
+      {hubSections.length === 0 ? (
+        <Panel className="opacity-80">
+          <div className="panel-inner p-8 text-center text-sm text-white/55">
+            Aún no hay secciones con contenido para este juego. ¡Pronto habrá más!
+          </div>
+        </Panel>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {hubSections.map((s) => {
+            // Presentación: la BD manda; si está vacía, se cae al catálogo del código.
+            const meta = GAME_SECTIONS.find((g) => g.slug === s.slug);
+            const label = s.label ?? meta?.label ?? prettify(s.slug);
+            const desc = s.description ?? meta?.desc ?? "";
+            const Icon = (s.icon ? ICON_BY_KEY[s.icon] : undefined) ?? SECTION_ICON[s.slug] ?? BookIcon;
+            const coverImg = s.coverImage ?? covers[s.slug] ?? undefined;
 
-          const card = (
-            <Panel corners={isReady} className={`group h-full ${isReady ? "sweep lift" : "opacity-70"}`}>
-              <div className="panel-inner flex h-full flex-col">
+            return (
+              <Link key={s.slug} href={`/juegos/${game.slug}/${s.slug}`} className="block h-full">
+                <Panel corners className="group h-full sweep lift">
+                  <div className="panel-inner flex h-full flex-col">
 
-                {/* Imagen de cabecera */}
-                <div className="relative h-36 w-full overflow-hidden border-b border-white/8">
-                  {coverImg ? (
-                    <>
-                      <Image
-                        src={coverImg}
-                        alt={s.label}
-                        fill
-                        unoptimized
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      {/* Overlay HUD: oscurece + tiñe de violeta */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                      <div className="absolute inset-0 bg-brand/25 mix-blend-color" />
-                      {isReady && <div className="scanlines absolute inset-0 opacity-20" />}
-                    </>
-                  ) : (
-                    <div className="absolute inset-0 bg-brand/8" />
-                  )}
+                    {/* Imagen de cabecera */}
+                    <div className="relative h-36 w-full overflow-hidden border-b border-white/8">
+                      {coverImg ? (
+                        <>
+                          <Image
+                            src={coverImg}
+                            alt={label}
+                            fill
+                            unoptimized
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
+                          {/* Overlay HUD: oscurece + tiñe de violeta */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                          <div className="absolute inset-0 bg-brand/25 mix-blend-color" />
+                          <div className="scanlines absolute inset-0 opacity-20" />
+                        </>
+                      ) : (
+                        <div className="absolute inset-0 bg-brand/8" />
+                      )}
 
-                  {/* Ícono flotante sobre la imagen */}
-                  <div className="absolute bottom-3 left-4 z-10">
-                    <span className="hex grid h-10 w-10 place-items-center bg-black/60 ring-1 ring-accent/40 backdrop-blur-sm group-hover:ring-accent/70 transition-all">
-                      <Icon className="h-4 w-4 text-accent" />
-                    </span>
-                  </div>
+                      {/* Ícono flotante sobre la imagen */}
+                      <div className="absolute bottom-3 left-4 z-10">
+                        <span className="hex grid h-10 w-10 place-items-center bg-black/60 ring-1 ring-accent/40 backdrop-blur-sm group-hover:ring-accent/70 transition-all">
+                          <Icon className="h-4 w-4 text-accent" />
+                        </span>
+                      </div>
 
-                  {/* Badge estado */}
-                  <div className="absolute right-3 top-3 z-10">
-                    {isReady ? (
-                      <span className="hud-label rounded border border-emerald-400/30 bg-black/60 px-1.5 py-0.5 text-[9px] text-emerald-400/90 backdrop-blur-sm">
-                        LISTO
+                      {/* Solo se muestran secciones con contenido → siempre LISTO */}
+                      <div className="absolute right-3 top-3 z-10">
+                        <span className="hud-label rounded border border-emerald-400/30 bg-black/60 px-1.5 py-0.5 text-[9px] text-emerald-400/90 backdrop-blur-sm">
+                          LISTO
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Texto */}
+                    <div className="flex flex-1 flex-col p-4">
+                      <h3 className="font-title text-base font-bold leading-tight group-hover:text-accent transition-colors">
+                        {label}
+                      </h3>
+                      <p className="mt-1.5 flex-1 text-xs leading-relaxed text-white/50">
+                        {desc}
+                      </p>
+                      <span className="mt-4 inline-flex items-center gap-1.5 font-hud text-xs font-semibold text-accent/80 group-hover:text-accent transition-colors">
+                        Abrir <span>▸</span>
                       </span>
-                    ) : (
-                      <span className="hud-label rounded border border-amber-400/30 bg-black/60 px-1.5 py-0.5 text-[9px] text-amber-400/70 backdrop-blur-sm">
-                        PRÓXIMO
-                      </span>
-                    )}
+                    </div>
+
                   </div>
-                </div>
-
-                {/* Texto */}
-                <div className="flex flex-1 flex-col p-4">
-                  <h3 className="font-title text-base font-bold leading-tight group-hover:text-accent transition-colors">
-                    {s.label}
-                  </h3>
-                  <p className="mt-1.5 flex-1 text-xs leading-relaxed text-white/50">
-                    {s.desc}
-                  </p>
-                  <span className={`mt-4 inline-flex items-center gap-1.5 font-hud text-xs font-semibold ${isReady ? "text-accent/80 group-hover:text-accent" : "text-white/30"} transition-colors`}>
-                    {isReady ? "Abrir" : "Próximamente"} {isReady && <span>▸</span>}
-                  </span>
-                </div>
-
-              </div>
-            </Panel>
-          );
-
-          return (
-            <Link key={s.slug} href={`/juegos/${game.slug}/${s.slug}`} className="block h-full">
-              {card}
-            </Link>
-          );
-        })}
-      </div>
+                </Panel>
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </main>
   );
 }

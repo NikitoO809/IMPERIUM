@@ -1,0 +1,427 @@
+{
+  "class": {
+    "regions": [
+      {
+        "tier": "T1",
+        "tierKey": "t1",
+        "region": "Verdantglade",
+        "subtitle": "1st class · Warrior & Mage",
+        "notes": [
+          {
+            "tag": "Investment",
+            "text": "Grades assume a built-out account. The Sorcerer and Archmage only reach their S-tier ceiling with heavy investment, while the Warrior line (Duelist, Berserker) hits its grades far sooner. For low to medium spenders, the Warrior line returns more power per resource than the Mage line, making it the stronger value pick until your account can fund a caster's full scaling."
+          },
+          {
+            "tag": "Early game",
+            "text": "Verdantglade clears with any class. There is no meaningful gap at this tier. Pick the class you want to play long-term and focus on leveling."
+          }
+        ],
+        "classes": []
+      },
+      {
+        "tier": "T2",
+        "tierKey": "t2",
+        "region": "Cinder Ridge",
+        "subtitle": "2nd class advancement at Lv.44",
+        "notes": [
+          {
+            "tag": "Investment",
+            "text": "Grades assume a built-out account. The Sorcerer and Archmage only reach their S-tier ceiling with heavy investment, while the Warrior line (Duelist, Berserker) hits its grades far sooner. For low to medium spenders, the Warrior line returns more power per resource than the Mage line, making it the stronger value pick until your account can fund a caster's full scaling."
+          }
+        ],
+        "classes": []
+      },
+      {
+        "tier": "T3",
+        "tierKey": "t3",
+        "region": "Aqualis",
+        "subtitle": "3rd class advancement & reclass unlock",
+        "notes": [
+          {
+            "tag": "Investment",
+            "text": "Grades assume a built-out account. The Sorcerer and Archmage only reach their S-tier ceiling with heavy investment, while the Warrior line (Duelist, Berserker) hits its grades far sooner. For low to medium spenders, the Warrior line returns more power per resource than the Mage line, making it the stronger value pick until your account can fund a caster's full scaling."
+          }
+        ],
+        "classes": [
+          {
+            "name": "Berserker",
+            "line": "Duelist line",
+            "icon": "https://eog.gg/assets/sxs/classes/berserker.png",
+            "grades": {
+              "PvE": {
+                "grade": "S",
+                "desc": "Best solo clearer at Aqualis - Hunter's Judgment drags a pack into Eclipse Slash's multi-hit burst while Blade of Judgment detonates Marks across the pile."
+              },
+              "Dragon & Chaos": {
+                "grade": "A",
+                "desc": "Strong, but single-target-leaning: the Dragon check is a sustained-AoE race the ranged lines push harder, so its burst keeps pace rather than leading."
+              },
+              "PvP": {
+                "grade": "A",
+                "desc": "Real burst with a Dark leap to open, but melee has to commit to close - the ranged casters out-position it in a duel, holding it just below the top."
+              },
+              "4v4": {
+                "grade": "A",
+                "desc": "Brings burst and a pack-pull, but a teamfight rewards the AoE zoning an Archmage provides more than single-target dives."
+              }
+            }
+          },
+          {
+            "name": "Paladin",
+            "line": "Knight line",
+            "icon": "https://eog.gg/assets/sxs/classes/paladin.png",
+            "grades": {
+              "PvE": {
+                "grade": "SS",
+                "desc": "Facerolls PvE: a massive single hit plus total survivability means it never dies and still clears, the top PvE pick of the tier."
+              },
+              "Dragon & Chaos": {
+                "grade": "D",
+                "desc": "The Knight line's defining weakness - Dragon & Chaos is a pure DPS race, and a kit built on shields and reflects simply cannot push the damage check in time."
+              },
+              "PvP": {
+                "grade": "S",
+                "desc": "Bulk plus one enormous nuke wins duels of attrition - it outlasts and then one-shots, so survivability translates straight into arena value."
+              },
+              "4v4": {
+                "grade": "S",
+                "desc": "Anchors the frontline and still threatens with Forceful Charge, holding space while the team works behind it."
+              }
+            }
+          },
+          {
+            "name": "Archmage",
+            "line": "Sorcerer line",
+            "icon": "https://eog.gg/assets/sxs/classes/archmage.png",
+            "grades": {
+              "PvE": {
+                "grade": "S",
+                "desc": "Ranged AoE melts packs from full screen - Divine Wrath's barrage plus Meteoric Flames clears as fast as anything that isn't a Berserker pull."
+              },
+              "Dragon & Chaos": {
+                "grade": "S",
+                "desc": "Rare for a non-Duelist: its AoE-plus-element synergy actually pushes the sustained DPS check, so it holds S where the tank line collapses."
+              },
+              "PvP": {
+                "grade": "SSS",
+                "desc": "Crown tier - range plus a pulling vortex controls the duel entirely, dictating spacing the melee classes can never close on."
+              },
+              "4v4": {
+                "grade": "SSS",
+                "desc": "Zones the entire enemy team from range; the same AoE that clears packs wins the teamfight before it starts."
+              }
+            }
+          },
+          {
+            "name": "Arcanist",
+            "line": "Sage line",
+            "icon": "https://eog.gg/assets/sxs/classes/arcanist.png",
+            "grades": {
+              "PvE": {
+                "grade": "B",
+                "desc": "Control over clear - its kit leans on Erosion and slows, so it kills at a crawl and pushes PvE the slowest of the tier."
+              },
+              "Dragon & Chaos": {
+                "grade": "C",
+                "desc": "A debuff kit cannot move the Dragon DPS check; without a party to enable, it stalls hardest here."
+              },
+              "PvP": {
+                "grade": "A",
+                "desc": "Climbs in the arena: Erosion and Slow grind down a single opponent over a long duel, swinging fights damage alone would lose."
+              },
+              "4v4": {
+                "grade": "A",
+                "desc": "Chip damage and control support the team - it enables more than it kills, which a coordinated 4v4 rewards."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "tier": "T4",
+        "tierKey": "t4",
+        "region": "Loong Haven",
+        "subtitle": "4th class advancement",
+        "notes": [
+          {
+            "tag": "Investment",
+            "text": "Grades assume a built-out account. The Sorcerer and Archmage only reach their S-tier ceiling with heavy investment, while the Warrior line (Duelist, Berserker) hits its grades far sooner. For low to medium spenders, the Warrior line returns more power per resource than the Mage line, making it the stronger value pick until your account can fund a caster's full scaling."
+          }
+        ],
+        "classes": [
+          {
+            "name": "Conqueror",
+            "line": "Duelist line",
+            "icon": "https://eog.gg/assets/sxs/classes/conqueror.png",
+            "grades": {
+              "PvE": {
+                "grade": "SSS",
+                "desc": "Peak of the line - fire-fuelled multi-hits clear packs faster than anything else at Loong Haven."
+              },
+              "Dragon & Chaos": {
+                "grade": "SSS",
+                "desc": "Unlike the rest of the field its burst is sustained, so it pushes the Dragon DPS check from the front and holds the crown."
+              },
+              "PvP": {
+                "grade": "SSS",
+                "desc": "Burst plus lifesteal wins duels outright - it kills before the trade matters."
+              },
+              "4v4": {
+                "grade": "SSS",
+                "desc": "AoE that ignores a slice of defense carries teamfights, turning grouped enemies into the ideal target."
+              }
+            }
+          },
+          {
+            "name": "Guardian",
+            "line": "Knight line",
+            "icon": "https://eog.gg/assets/sxs/classes/guardian.png",
+            "grades": {
+              "PvE": {
+                "grade": "A",
+                "desc": "Clears safely behind shields and counters, but not at the pace of the DPS lines - a solid A rather than a top pick."
+              },
+              "Dragon & Chaos": {
+                "grade": "D",
+                "desc": "Same wall as ever: a defensive, counter-based kit can't keep up with the Dragon DPS race, so it bottoms out."
+              },
+              "PvP": {
+                "grade": "S",
+                "desc": "Bulk plus the Light Sword Array counter wins attrition duels, where outlasting the opponent is the whole game."
+              },
+              "4v4": {
+                "grade": "SSS",
+                "desc": "The best frontline anchor in the tier - Taunt and space control let it dictate where the teamfight happens."
+              }
+            }
+          },
+          {
+            "name": "Destroyer",
+            "line": "Sorcerer line",
+            "icon": "https://eog.gg/assets/sxs/classes/destroyer.png",
+            "grades": {
+              "PvE": {
+                "grade": "S",
+                "desc": "Keeps the line's ranged-AoE identity, staying a fast, safe pack clearer from full distance."
+              },
+              "Dragon & Chaos": {
+                "grade": "B",
+                "desc": "Pushes the check solidly but not from the front - its synergy lags the Conqueror here, so it slips to a mid grade."
+              },
+              "PvP": {
+                "grade": "S",
+                "desc": "Multi-element burst with chaining damage duels well, punishing anyone who can't close the gap."
+              },
+              "4v4": {
+                "grade": "A",
+                "desc": "Strong AoE, but it brings less hard control than the rivals, so it supports the teamfight rather than dominating it."
+              }
+            }
+          },
+          {
+            "name": "Dominator",
+            "line": "Sage line",
+            "icon": "https://eog.gg/assets/sxs/classes/dominator.png",
+            "grades": {
+              "PvE": {
+                "grade": "A",
+                "desc": "Where the support line finally carries real damage - summons and Dark bursts clear PvE at a genuine pace for the first time."
+              },
+              "Dragon & Chaos": {
+                "grade": "D",
+                "desc": "Still debuff- and sustain-reliant, so it can't move the Dragon DPS check fast enough and falls to the bottom."
+              },
+              "PvP": {
+                "grade": "S",
+                "desc": "Control plus summon pressure wins duels - a decoy and chaos damage tie the opponent down while it chips them out."
+              },
+              "4v4": {
+                "grade": "A",
+                "desc": "Summons and team buffs make it a strong enabler, lifting the whole squad more than its own damage suggests."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "tier": "T5",
+        "tierKey": "t5",
+        "region": "Aethyris",
+        "subtitle": "5th class advancement",
+        "notes": [
+          {
+            "tag": "Investment",
+            "text": "Grades assume a built-out account. The Sorcerer and Archmage only reach their S-tier ceiling with heavy investment, while the Warrior line (Duelist, Berserker) hits its grades far sooner. For low to medium spenders, the Warrior line returns more power per resource than the Mage line, making it the stronger value pick until your account can fund a caster's full scaling."
+          }
+        ],
+        "classes": [
+          {
+            "name": "Ravager",
+            "line": "Duelist line",
+            "icon": "https://eog.gg/assets/sxs/classes/ravager.png",
+            "grades": {
+              "PvE": {
+                "grade": "B",
+                "desc": "The line falls off at endgame - its melee burst no longer scales with Aethyris content, so it only clears modestly now."
+              },
+              "Dragon & Chaos": {
+                "grade": "C",
+                "desc": "Loses the sustained DPS race outright; the burst that carried earlier tiers can't keep pace with the endgame check."
+              },
+              "PvP": {
+                "grade": "C",
+                "desc": "Outpaced by the ranged and sustain classes in long endgame duels, where its all-in burst runs dry."
+              },
+              "4v4": {
+                "grade": "C",
+                "desc": "Lacks the control a late-game teamfight demands, so it brings the least of the four lines here."
+              }
+            }
+          },
+          {
+            "name": "Templar",
+            "line": "Knight line",
+            "icon": "https://eog.gg/assets/sxs/classes/templar.png",
+            "grades": {
+              "PvE": {
+                "grade": "S",
+                "desc": "Survivability carries a clean clear - it grinds through Aethyris safely even if it never tops the speed charts."
+              },
+              "Dragon & Chaos": {
+                "grade": "D",
+                "desc": "The line's one eternal weakness follows it to the end: a tank cannot push the Dragon DPS check even at endgame."
+              },
+              "PvP": {
+                "grade": "A",
+                "desc": "Bulk plus burst trades well, outlasting opponents before punishing with Last Stand."
+              },
+              "4v4": {
+                "grade": "SSS",
+                "desc": "The ultimate anchor - nothing holds a frontline or controls space in 4v4 better at endgame."
+              }
+            }
+          },
+          {
+            "name": "Magister",
+            "line": "Sorcerer line",
+            "icon": "https://eog.gg/assets/sxs/classes/magister.png",
+            "grades": {
+              "PvE": {
+                "grade": "S",
+                "desc": "Ranged AoE keeps clearing content fast right into the endgame, an evergreen farm pick."
+              },
+              "Dragon & Chaos": {
+                "grade": "S",
+                "desc": "Unlike the other lines it actually pushes the Dragon check, thanks to AoE-plus-element synergy that holds up at endgame."
+              },
+              "PvP": {
+                "grade": "A",
+                "desc": "Strong, just a touch off the very top arena picks - its zoning wins most duels but not the mirror against pure sustain."
+              },
+              "4v4": {
+                "grade": "A",
+                "desc": "Zones from range with heavy AoE, a hair less control than the top teamfighters but reliably front-tier."
+              }
+            }
+          },
+          {
+            "name": "Prophet",
+            "line": "Sage line",
+            "icon": "https://eog.gg/assets/sxs/classes/prophet.png",
+            "grades": {
+              "PvE": {
+                "grade": "SSS",
+                "desc": "The line's payoff: sustain finally paired with top-end damage, so it clears as fast as anything at Aethyris."
+              },
+              "Dragon & Chaos": {
+                "grade": "SSS",
+                "desc": "Finally clears the DPS check that held the support line back for four tiers - the only class outside the Duelist/Sorcerer lines to do so."
+              },
+              "PvP": {
+                "grade": "SSS",
+                "desc": "Control, damage, and self-sustain together make it nearly unkillable in a duel - it simply outlasts and out-damages."
+              },
+              "4v4": {
+                "grade": "SSS",
+                "desc": "Heals, controls, and kills at once - it dominates teamfights from every angle, the complete endgame package."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "fantomon": {
+    "updated": "Updated: May 20, 2026 · Patch 1.0",
+    "context": {
+      "title": "Launch-Week Tier List",
+      "text": "Sword x Staff launched globally on May 19. This list reflects EOG's launch-week read on Verdantglade Fantomons. Stats unlock at Fantomon levels 20, 50, 70, and 100, so a Fantomon's effective tier shifts as you level it. Use this to shortlist, then test against your own bottleneck."
+    },
+    "intro": "Fantomons are the pet companions that unlock at account level 50 through the giant tree at your home base. Each provides passive stats and joins the active battle line. Most players run four core Fantomons leveled evenly rather than dumping resources into one.",
+    "groups": [
+      {
+        "title": "Mythical",
+        "fantomons": [
+          {
+            "name": "Aegiswing",
+            "type": "Attack · Main DPS bond",
+            "note": "Damage-leaning trait set. Common pick for any Duelist or Sorcerer team that wants ceiling damage.",
+            "icon": "https://eog.gg/assets/sxs/fantomons/aegiswing.webp"
+          },
+          {
+            "name": "Nyxarchon",
+            "type": "Attack · Main DPS bond",
+            "note": "The other Mythical attacker. Slot together with Aegiswing for stacked attack-side traits.",
+            "icon": "https://eog.gg/assets/sxs/fantomons/nyxarchon.webp"
+          }
+        ]
+      },
+      {
+        "title": "Healer / Charm",
+        "fantomons": [
+          {
+            "name": "Mandragora",
+            "type": "Charm / Heal · Sustain bond",
+            "note": "Adds heal procs to Sage rotations. Worth slotting if you are running guild boss DoT phases.",
+            "icon": "https://eog.gg/assets/sxs/fantomons/mandragora.webp"
+          },
+          {
+            "name": "Herbote",
+            "type": "Charm / Heal · Sustain bond",
+            "note": "Pairs with Mandragora for redundant heal coverage. Sage primary, Sorcerer secondary.",
+            "icon": "https://eog.gg/assets/sxs/fantomons/herbote.webp"
+          }
+        ]
+      }
+    ],
+    "breakpointsIntro": "Stat tiers from a single Fantomon do not unlock smoothly. They land at four discrete levels.",
+    "breakpoints": [
+      {
+        "label": "Level 20",
+        "val": "Minor stat (Damage Bonus, Resistance, etc.)"
+      },
+      {
+        "label": "Level 50",
+        "val": "Major stat (Crit Rate, Accuracy, Block Rate, etc.)"
+      },
+      {
+        "label": "Level 70",
+        "val": "Second minor stat"
+      },
+      {
+        "label": "Level 100",
+        "val": "Second major stat"
+      }
+    ],
+    "plans": [
+      {
+        "tag": "F2P plan",
+        "text": "F2P plan: Get every Fantomon to level 20 first. Then raise the four that match your class trait ( Crit Rate for DPS, Block Rate for Knight ) to level 50 for the major stat unlock. Push to 100 only on the ones you actually use."
+      },
+      {
+        "tag": "Whale plan",
+        "text": "Whale plan: Skip the spread. Max the Fantomons you actually run. The per-stat payoff stacks linearly, so the cap is more about which roster you commit to than which one you pull next."
+      }
+    ]
+  }
+}

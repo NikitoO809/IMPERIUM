@@ -1,0 +1,3189 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "habilidades",
+  "title": "Habilidades — Sword x Staff (264 indexadas)",
+  "intro_title": "Base de Datos de Habilidades",
+  "intro": "264 habilidades indexadas. Filtra por Tipo (Técnica / Encanto) y por Clase para encontrar las que necesitas.",
+  "intro_images": [
+    "https://eog.gg/assets/sxs/skills/aqua-vortex.webp"
+  ],
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "is_published": false,
+  "render_type": "tier-list",
+  "order_index": 2,
+  "label": "Habilidades",
+  "icon": "gem",
+  "cover_image": "https://eog.gg/assets/sxs/skills/aqua-vortex.webp",
+  "description": "264 habilidades con íconos — filtrables por tipo y clase",
+  "items": [
+    {
+      "title": "Aberrancy",
+      "content": "Tipo: Encanto\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/aberrancy.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Abyssal Hand",
+      "content": "Tipo: Técnica\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/abyssal-hand.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Adamant Stance",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/adamant-stance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Air Break",
+      "content": "Tipo: Técnica\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/air-break.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Aqua Vortex",
+      "content": "Tipo: Técnica\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/aqua-vortex.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Asura's Grasp",
+      "content": "Tipo: Técnica\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/asuras-grasp.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Blade of Judgment",
+      "content": "Tipo: Encanto\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blade-of-judgment.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Blade of Lament",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blade-of-lament.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Blade Siphon",
+      "content": "Tipo: Encanto\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blade-siphon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Blade Storm",
+      "content": "Tipo: Técnica\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blade-storm.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Blade Tempest",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blade-tempest.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Blast Spirit",
+      "content": "Tipo: Técnica\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blast-spirit.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Blazing Clash",
+      "content": "Tipo: Encanto\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blazing-clash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Blazing Claw",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blazing-claw.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Blazing Fire Ring",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blazing-fire-ring.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Blazing Momentum",
+      "content": "Tipo: Encanto\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/blazing-momentum.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Block Awareness",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/block-awareness.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Block Mastery",
+      "content": "Tipo: Encanto\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/block-mastery.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Boiling Bloodlust",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/boiling-bloodlust.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Chaos Rune",
+      "content": "Tipo: Técnica\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/chaos-rune.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Counter Blade",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/counter-blade.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Crag Collapse",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/crag-collapse.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Crimson Whirl",
+      "content": "Tipo: Técnica\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/crimson-whirl.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Crit Mastery",
+      "content": "Tipo: Encanto\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/crit-mastery.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Crusader's Might",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/crusaders-might.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Crystal Armor",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/crystal-armor.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Curse Resonance",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/curse-resonance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Cursed Armor",
+      "content": "Tipo: Encanto\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/cursed-armor.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Cyclone",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/cyclone.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Cyclone Lament",
+      "content": "Tipo: Encanto\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/cyclone-lament.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Dark Bullet",
+      "content": "Tipo: Técnica\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dark-bullet.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Dark Starburst",
+      "content": "Tipo: Técnica\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dark-starburst.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Darkness Descends",
+      "content": "Tipo: Técnica\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/darkness-descends.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Darkness's Slash",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/darknesss-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Dawnburst",
+      "content": "Tipo: Técnica\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dawnburst.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Decoy",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/decoy.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Decoy Clone",
+      "content": "Tipo: Técnica\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/decoy-clone.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Defensive Assault",
+      "content": "Tipo: Encanto\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/defensive-assault.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Desperate Protection",
+      "content": "Tipo: Técnica\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/desperate-protection.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Desperate Shadow",
+      "content": "Tipo: Técnica\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/desperate-shadow.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Desperate Valor",
+      "content": "Tipo: Encanto\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/desperate-valor.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Dew's Blessing",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dews-blessing.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Dewdrop",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dewdrop.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Divine Wrath",
+      "content": "Tipo: Técnica\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/divine-wrath.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Diving Gale",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/diving-gale.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Dominant Gaze",
+      "content": "Tipo: Encanto\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dominant-gaze.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Doom Blade",
+      "content": "Tipo: Técnica\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/doom-blade.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Drain Touch",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/drain-touch.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Dreadful Shadow",
+      "content": "Tipo: Técnica\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/dreadful-shadow.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Drifting Leaf",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/drifting-leaf.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Earthquake",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/earthquake.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Eclipse Slash",
+      "content": "Tipo: Técnica\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/eclipse-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Edge Strike",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/edge-strike.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Elemental Body",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/elemental-body.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Elemental Harmony",
+      "content": "Tipo: Encanto\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/elemental-harmony.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Elemental Mystery",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/elemental-mystery.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Ember Flare",
+      "content": "Tipo: Encanto\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/ember-flare.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Energy Burst",
+      "content": "Tipo: Técnica\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/energy-burst.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Explosion Magic",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/explosion-magic.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Explosive Spirit",
+      "content": "Tipo: Encanto\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/explosive-spirit.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Eye for an Eye",
+      "content": "Tipo: Encanto\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/eye-for-an-eye.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Falling Dark Star",
+      "content": "Tipo: Encanto\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/falling-dark-star.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Feline Dance",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/feline-dance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Fiery Burst",
+      "content": "Tipo: Encanto\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fiery-burst.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Fiery Rejuvenation",
+      "content": "Tipo: Encanto\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fiery-rejuvenation.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Fiery Star Trail",
+      "content": "Tipo: Técnica\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fiery-star-trail.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Fighting Spirit",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fighting-spirit.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Fire Blast",
+      "content": "Tipo: Técnica\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fire-blast.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Fire Slash",
+      "content": "Tipo: Técnica\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fire-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Fireball",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/fireball.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "First Light",
+      "content": "Tipo: Técnica\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/first-light.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Flame Aura",
+      "content": "Tipo: Técnica\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flame-aura.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Flame Jet",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flame-jet.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Flame Wolf Summon",
+      "content": "Tipo: Técnica\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flame-wolf-summon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Flaming Heel",
+      "content": "Tipo: Encanto\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flaming-heel.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Flaming Path",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flaming-path.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Flash Dash",
+      "content": "Tipo: Técnica\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flash-dash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Flash Fire",
+      "content": "Tipo: Técnica\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flash-fire.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Flickering Blade",
+      "content": "Tipo: Técnica\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flickering-blade.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Flickering Stars",
+      "content": "Tipo: Técnica\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flickering-stars.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Flowing Doom",
+      "content": "Tipo: Técnica\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/flowing-doom.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Forceful Charge",
+      "content": "Tipo: Técnica\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/forceful-charge.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Formation Breaker",
+      "content": "Tipo: Técnica\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/formation-breaker.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Frame of Battles",
+      "content": "Tipo: Encanto\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frame-of-battles.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Frenzy Totem",
+      "content": "Tipo: Técnica\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frenzy-totem.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Frigid Aura",
+      "content": "Tipo: Encanto\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frigid-aura.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Frigid Glint",
+      "content": "Tipo: Encanto\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frigid-glint.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Frost Guard",
+      "content": "Tipo: Encanto\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frost-guard.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Frost Thorn",
+      "content": "Tipo: Técnica\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frost-thorn.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Frostbite Blossom",
+      "content": "Tipo: Técnica\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frostbite-blossom.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Frostsoul Ward",
+      "content": "Tipo: Encanto\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frostsoul-ward.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Frosty Nova",
+      "content": "Tipo: Técnica\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/frosty-nova.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Gale Dance",
+      "content": "Tipo: Técnica\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/gale-dance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Gale Shield",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/gale-shield.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Giant Shark",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/giant-shark.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Glacial Song",
+      "content": "Tipo: Técnica\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/glacial-song.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Goddess of Water",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/goddess-of-water.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Grand Giftfall",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/grand-giftfall.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Gravity Pull",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/gravity-pull.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Great Luck",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/great-luck.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Guardian Ring",
+      "content": "Tipo: Técnica\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/guardian-ring.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Hamper Strike",
+      "content": "Tipo: Técnica\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/hamper-strike.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Heal",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/heal.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Healing Mastery",
+      "content": "Tipo: Encanto\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/healing-mastery.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Healing Shift",
+      "content": "Tipo: Encanto\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/healing-shift.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Healing Touch",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/healing-touch.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Heart of Challenge",
+      "content": "Tipo: Técnica\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/heart-of-challenge.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Heart of Flame",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/heart-of-flame.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Heavy Impact",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/heavy-impact.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Hellfire Requiem",
+      "content": "Tipo: Técnica\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/hellfire-requiem.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Hexed Blast",
+      "content": "Tipo: Técnica\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/hexed-blast.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Holy Aegis",
+      "content": "Tipo: Encanto\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/holy-aegis.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Holy Bulwark",
+      "content": "Tipo: Encanto\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/holy-bulwark.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Holy Purification",
+      "content": "Tipo: Técnica\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/holy-purification.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Holy Recuperation",
+      "content": "Tipo: Encanto\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/holy-recuperation.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Holy Restoration",
+      "content": "Tipo: Encanto\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/holy-restoration.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Hook",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/hook.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Howling Hurricane",
+      "content": "Tipo: Técnica\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/howling-hurricane.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Hunter's Judgment",
+      "content": "Tipo: Técnica\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/hunters-judgment.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Ice Spike",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/ice-spike.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Incarnation of Light",
+      "content": "Tipo: Encanto\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/incarnation-of-light.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Incinerating Wolf",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/incinerating-wolf.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Indomitable Will",
+      "content": "Tipo: Encanto\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/indomitable-will.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Insight",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/insight.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Insightful Eye",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/insightful-eye.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Inspiration",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/inspiration.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Iron Fortress",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/iron-fortress.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Iron Slashes",
+      "content": "Tipo: Técnica\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/iron-slashes.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Iron Thorn",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/iron-thorn.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Iron Will",
+      "content": "Tipo: Encanto\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/iron-will.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Last Stand",
+      "content": "Tipo: Técnica\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/last-stand.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Leaf Arrow",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/leaf-arrow.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Leap Attack",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/leap-attack.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Life Blessing",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/life-blessing.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Light Burst",
+      "content": "Tipo: Técnica\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/light-burst.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Light of Dawn",
+      "content": "Tipo: Técnica\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/light-of-dawn.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Light Sword Array",
+      "content": "Tipo: Técnica\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/light-sword-array.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Lightning Chain",
+      "content": "Tipo: Técnica\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/lightning-chain.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Lightning Mystery",
+      "content": "Tipo: Encanto\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/lightning-mystery.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Linked Misfortune",
+      "content": "Tipo: Encanto\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/linked-misfortune.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Lion Combo",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/lion-combo.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Luminous Shield",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/luminous-shield.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Lunarwater Threads",
+      "content": "Tipo: Técnica\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/lunarwater-threads.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Mana Blast",
+      "content": "Tipo: Técnica\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/mana-blast.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Mana Surge",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/mana-surge.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Mantra of Blessings",
+      "content": "Tipo: Encanto\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/mantra-of-blessings.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Massive Quake",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/massive-quake.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Meteoric Flames",
+      "content": "Tipo: Técnica\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/meteoric-flames.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Misty Vapor",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/misty-vapor.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Mountain Collapse",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/mountain-collapse.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "My Name Is Megumin!",
+      "content": "Tipo: Encanto\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/my-name-is-megumin.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Nature's Beauty",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/natures-beauty.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Night Curse",
+      "content": "Tipo: Técnica\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/night-curse.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Night's Blessing",
+      "content": "Tipo: Encanto\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/nights-blessing.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Oath of Vigil",
+      "content": "Tipo: Encanto\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/oath-of-vigil.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Overhealing",
+      "content": "Tipo: Encanto\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/overhealing.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Overload Protection",
+      "content": "Tipo: Encanto\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/overload-protection.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Panflow Streak",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/panflow-streak.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Phantom Assault",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/phantom-assault.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Phantom Blade",
+      "content": "Tipo: Técnica\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/phantom-blade.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Phantom Light",
+      "content": "Tipo: Encanto\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/phantom-light.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Piercing Assault",
+      "content": "Tipo: Encanto\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/piercing-assault.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Potential Rebirth",
+      "content": "Tipo: Encanto\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/potential-rebirth.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Potential Vitality",
+      "content": "Tipo: Encanto\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/potential-vitality.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Protective Rune",
+      "content": "Tipo: Técnica\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/protective-rune.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Punch",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/punch.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Punishment Sigil",
+      "content": "Tipo: Encanto\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/punishment-sigil.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Pure Protection",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/pure-protection.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Pursuit of Victory",
+      "content": "Tipo: Encanto\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/pursuit-of-victory.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Quadrant Slash",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/quadrant-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Radiant Restoration",
+      "content": "Tipo: Técnica\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/radiant-restoration.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Radiant Rhythm",
+      "content": "Tipo: Técnica\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/radiant-rhythm.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Radiant Sear",
+      "content": "Tipo: Encanto\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/radiant-sear.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Radiant Warp",
+      "content": "Tipo: Encanto\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/radiant-warp.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Raging Maelstrom",
+      "content": "Tipo: Técnica\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/raging-maelstrom.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Raging Wildfire",
+      "content": "Tipo: Encanto\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/raging-wildfire.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Rapid Cast",
+      "content": "Tipo: Encanto\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/rapid-cast.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Rebound",
+      "content": "Tipo: Encanto\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/rebound.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Reflective Armor",
+      "content": "Tipo: Encanto\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/reflective-armor.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Rejuvenating Elixir",
+      "content": "Tipo: Encanto\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/rejuvenating-elixir.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Rejuvenating Rain",
+      "content": "Tipo: Técnica\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/rejuvenating-rain.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Relentless Frenzy",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/relentless-frenzy.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Repelling Wind",
+      "content": "Tipo: Encanto\nClase: Archimago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/repelling-wind.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Archimago"
+      }
+    },
+    {
+      "title": "Restrain",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/restrain.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Resurrection",
+      "content": "Tipo: Encanto\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/resurrection.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Ricocheting Shield",
+      "content": "Tipo: Técnica\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/ricocheting-shield.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Ring of Omen",
+      "content": "Tipo: Encanto\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/ring-of-omen.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Ripple Impact",
+      "content": "Tipo: Encanto\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/ripple-impact.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Riptide",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/riptide.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Rock Break",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/rock-break.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Rock Rex Summon",
+      "content": "Tipo: Técnica\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/rock-rex-summon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Sacred Create Water",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/sacred-create-water.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Sacred Rhythm",
+      "content": "Tipo: Encanto\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/sacred-rhythm.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Sacred Shine",
+      "content": "Tipo: Técnica\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/sacred-shine.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Sanctified Soul",
+      "content": "Tipo: Técnica\nClase: Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/sanctified-soul.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Templario"
+      }
+    },
+    {
+      "title": "Scarlet Zeal",
+      "content": "Tipo: Encanto\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/scarlet-zeal.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Seismic Tide",
+      "content": "Tipo: Técnica\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/seismic-tide.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Shadow End",
+      "content": "Tipo: Técnica\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadow-end.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Shadow Erosion",
+      "content": "Tipo: Encanto\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadow-erosion.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Shadow Impact",
+      "content": "Tipo: Técnica\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadow-impact.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Shadow of Termination",
+      "content": "Tipo: Técnica\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadow-of-termination.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Shadow Vengeance",
+      "content": "Tipo: Encanto\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadow-vengeance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Shadowstep",
+      "content": "Tipo: Encanto\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadowstep.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Shadowy Current",
+      "content": "Tipo: Encanto\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shadowy-current.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Sharp Feathers",
+      "content": "Tipo: Encanto\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/sharp-feathers.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Shattering Dance",
+      "content": "Tipo: Técnica\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shattering-dance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Shattering Ice",
+      "content": "Tipo: Encanto\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shattering-ice.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Shattering Sigil",
+      "content": "Tipo: Técnica\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/shattering-sigil.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Snipe",
+      "content": "Tipo: Técnica\nClase: Monstruo",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/snipe.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Monstruo"
+      }
+    },
+    {
+      "title": "Solaris Storm",
+      "content": "Tipo: Técnica\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/solaris-storm.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Soul Breaker",
+      "content": "Tipo: Encanto\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-breaker.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Soul Impact",
+      "content": "Tipo: Encanto\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-impact.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Soul Pact Resonance",
+      "content": "Tipo: Encanto\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-pact-resonance.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Soul Piercer",
+      "content": "Tipo: Técnica\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-piercer.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Soul Protection",
+      "content": "Tipo: Encanto\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-protection.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Soul Reap",
+      "content": "Tipo: Técnica\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-reap.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Soul Spark",
+      "content": "Tipo: Encanto\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-spark.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Soul Splash",
+      "content": "Tipo: Encanto\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soul-splash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Soulbond Restoration",
+      "content": "Tipo: Encanto\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soulbond-restoration.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Soulfire Protection",
+      "content": "Tipo: Encanto\nClase: Berserker",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soulfire-protection.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Berserker"
+      }
+    },
+    {
+      "title": "Soulweave",
+      "content": "Tipo: Encanto\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/soulweave.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Source of Vitality",
+      "content": "Tipo: Encanto\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/source-of-vitality.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Spirit Aegis",
+      "content": "Tipo: Técnica\nClase: Dominador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/spirit-aegis.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Dominador"
+      }
+    },
+    {
+      "title": "Spirit in Fire",
+      "content": "Tipo: Encanto\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/spirit-in-fire.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Star Shattering Slash",
+      "content": "Tipo: Técnica\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/star-shattering-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Starlight Burst",
+      "content": "Tipo: Técnica\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/starlight-burst.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Stone Skin",
+      "content": "Tipo: Encanto\nClase: Paladín",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/stone-skin.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Paladín"
+      }
+    },
+    {
+      "title": "Stonechief Summon",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/stonechief-summon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Storm Rhapsody",
+      "content": "Tipo: Técnica\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/storm-rhapsody.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Strength Rules",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/strength-rules.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Stunning Strike",
+      "content": "Tipo: Técnica\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/stunning-strike.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Summoner's Frenzy",
+      "content": "Tipo: Encanto\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/summoners-frenzy.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Summoning Pact",
+      "content": "Tipo: Encanto\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/summoning-pact.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Sunset Sword",
+      "content": "Tipo: Técnica\nClase: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/sunset-sword.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Duelista"
+      }
+    },
+    {
+      "title": "Swirling Blade",
+      "content": "Tipo: Técnica\nClase: Guardián",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/swirling-blade.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guardián"
+      }
+    },
+    {
+      "title": "Tactical Adaptation",
+      "content": "Tipo: Encanto\nClase: Conquistador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/tactical-adaptation.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Conquistador"
+      }
+    },
+    {
+      "title": "Tempest Edge",
+      "content": "Tipo: Encanto\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/tempest-edge.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Devastador"
+      }
+    },
+    {
+      "title": "Tempest Sphere",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/tempest-sphere.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Thalasson Summon",
+      "content": "Tipo: Técnica\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/thalasson-summon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Thunder Judgment",
+      "content": "Tipo: Encanto\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/thunder-judgment.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Thunder of Judgment",
+      "content": "Tipo: Técnica\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/thunder-of-judgment.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Thunderbolt Mark",
+      "content": "Tipo: Encanto\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/thunderbolt-mark.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Tough Soul",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/tough-soul.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Treantling Summon",
+      "content": "Tipo: Técnica\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/treantling-summon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Twin Gale",
+      "content": "Tipo: Técnica\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/twin-gale.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Unstable Aura",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/unstable-aura.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Valor Surge",
+      "content": "Tipo: Técnica\nClase: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/valor-surge.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Caballero"
+      }
+    },
+    {
+      "title": "Vital Rhythm",
+      "content": "Tipo: Encanto\nClase: Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/vital-rhythm.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Magistro"
+      }
+    },
+    {
+      "title": "Void Blessing",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/void-blessing.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Void Bubble",
+      "content": "Tipo: Encanto\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/void-bubble.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Void Chant",
+      "content": "Tipo: Técnica\nClase: Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/void-chant.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Profeta"
+      }
+    },
+    {
+      "title": "Warrior's Essence",
+      "content": "Tipo: Encanto\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/warriors-essence.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Water Assault",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/water-assault.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Water Shot",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/water-shot.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Water to Ice",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/water-to-ice.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Waterling Summon",
+      "content": "Tipo: Técnica\nClase: Arcanista",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/waterling-summon.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Arcanista"
+      }
+    },
+    {
+      "title": "Weakening Hex",
+      "content": "Tipo: Técnica\nClase: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/weakening-hex.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Sabio"
+      }
+    },
+    {
+      "title": "Whirlwind Slash",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/whirlwind-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Wind Blade Slash",
+      "content": "Tipo: Técnica\nClase: Guerrero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/wind-blade-slash.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Guerrero"
+      }
+    },
+    {
+      "title": "Wind Blade Spiral",
+      "content": "Tipo: Técnica\nClase: Destructor",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/wind-blade-spiral.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Destructor"
+      }
+    },
+    {
+      "title": "Wind's Delight",
+      "content": "Tipo: Técnica\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/winds-delight.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Técnica",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Wind's Shadow",
+      "content": "Tipo: Encanto\nClase: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/winds-shadow.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Hechicero"
+      }
+    },
+    {
+      "title": "Wind's Whisper",
+      "content": "Tipo: Encanto\nClase: Mago",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/winds-whisper.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Mago"
+      }
+    },
+    {
+      "title": "Windless Lord",
+      "content": "Tipo: Encanto\nClase: Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/skills/windless-lord.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {
+        "tipo": "Encanto",
+        "clase": "Devastador"
+      }
+    }
+  ]
+}

@@ -1,24 +1,19 @@
 import type { Metadata } from "next";
-import { Orbitron, Chakra_Petch, Inter } from "next/font/google";
+import { Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-// Título principal: estilo sci-fi / videojuego
-const title = Orbitron({
-  variable: "--font-title-imperium",
-  subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
-});
-
-// Etiquetas de HUD, botones, números: tecnológica
-const hud = Chakra_Petch({
-  variable: "--font-hud-imperium",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-// Texto largo legible
-const sans = Inter({
+// Display + cuerpo: grotesca premium (sistema neutro tipo Geist/Outfit).
+const sans = Outfit({
   variable: "--font-sans-imperium",
+  subsets: ["latin"],
+});
+
+// Display comparte familia (jerarquia por peso/tracking, no por fuente).
+const title = sans;
+
+// Numeros y datos: monoespaciada tecnica.
+const mono = JetBrains_Mono({
+  variable: "--font-mono-imperium",
   subsets: ["latin"],
 });
 
@@ -36,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${title.variable} ${hud.variable} ${sans.variable} h-full antialiased`}
+      className={`${title.variable} ${mono.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

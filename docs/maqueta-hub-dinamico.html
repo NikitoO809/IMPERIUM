@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IMPERIUM — Maqueta Hub dinámico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#7c5cff; --accent:#22e0ff; --rank:#ffcf5a;
+    --bg:#07070d; --panel:#0e0e18;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:Inter,system-ui,sans-serif; color:#e8e8f0; background:var(--bg);
+    background-image:
+      radial-gradient(900px 500px at 20% -5%, rgba(124,92,255,.18), transparent 60%),
+      radial-gradient(800px 500px at 100% 0%, rgba(34,224,255,.10), transparent 55%),
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size:auto,auto,42px 42px,42px 42px;
+    min-height:100vh; padding:32px 20px 64px;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+  .note{
+    font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+    color:#9aa0c0; border:1px dashed rgba(154,160,192,.35); padding:8px 12px; display:inline-block;
+    border-radius:6px; margin-bottom:28px;
+  }
+  /* Cabecera de juego */
+  .ghead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:36px 0 8px}
+  .tag{font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+  .gtitle{font-family:Orbitron,sans-serif;font-weight:900;font-size:32px;letter-spacing:.04em;margin-top:8px;
+    text-shadow:0 0 22px rgba(124,92,255,.55)}
+  .gsub{color:#9aa0c0;font-size:13px;margin-top:8px;max-width:560px}
+  .rank{width:54px;height:54px;flex:none;display:grid;place-items:center;font-family:Orbitron;font-weight:900;font-size:20px;color:#000;
+    background:linear-gradient(135deg,var(--rank),#d99b1f);
+    clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+  /* Divisor SECCIONES */
+  .divider{display:flex;align-items:center;gap:14px;margin:26px 0 18px}
+  .divider span{height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(34,224,255,.4))}
+  .divider span:last-child{background:linear-gradient(270deg,transparent,rgba(34,224,255,.4))}
+  .divider h2{font-family:Orbitron;font-weight:800;font-size:15px;letter-spacing:.22em}
+  /* Rejilla */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.grid{grid-template-columns:1fr}}
+  /* Panel */
+  .panel{
+    position:relative; background:linear-gradient(160deg,rgba(20,20,34,.95),rgba(10,10,20,.95));
+    border:1px solid rgba(124,92,255,.38);
+    clip-path:polygon(16px 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%,0 16px);
+    box-shadow:0 0 0 1px rgba(0,0,0,.4), 0 0 22px rgba(124,92,255,.12);
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    overflow:hidden;
+  }
+  .panel:hover{transform:translateY(-5px);border-color:rgba(34,224,255,.6);box-shadow:0 10px 30px rgba(124,92,255,.25)}
+  .panel.dim{opacity:.62;filter:saturate(.7)}
+  /* corner brackets */
+  .panel::before,.panel::after{content:"";position:absolute;width:14px;height:14px;z-index:3;pointer-events:none}
+  .panel::before{top:6px;right:6px;border-top:2px solid var(--accent);border-right:2px solid var(--accent)}
+  .panel::after{bottom:6px;left:6px;border-bottom:2px solid var(--accent);border-left:2px solid var(--accent)}
+  /* portada */
+  .cover{position:relative;height:140px;overflow:hidden;background:#16162a}
+  .cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .panel:hover .cover img{transform:scale(1.06)}
+  .ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.15) 60%,transparent)}
+  .tint{position:absolute;inset:0;background:var(--brand);opacity:.25;mix-blend-mode:color}
+  .scan{position:absolute;inset:0;opacity:.18;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.5) 0 1px,transparent 1px 3px)}
+  .hex{position:absolute;left:14px;bottom:12px;width:40px;height:40px;display:grid;place-items:center;z-index:2;
+    background:rgba(0,0,0,.62);outline:1px solid rgba(34,224,255,.45);
+    clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+  .hex svg{width:18px;height:18px;color:var(--accent)}
+  .badge{position:absolute;top:12px;right:12px;z-index:4;font-family:'Chakra Petch',sans-serif;font-size:9px;
+    letter-spacing:.1em;padding:2px 7px;border-radius:4px;background:rgba(0,0,0,.6);backdrop-filter:blur(3px)}
+  .badge.listo{color:#54f0b8;border:1px solid rgba(84,240,184,.4)}
+  .badge.prox{color:#ffcf5a;border:1px solid rgba(255,207,90,.4)}
+  .body{padding:14px 16px 18px}
+  .body h3{font-family:Orbitron;font-weight:700;font-size:15px;letter-spacing:.02em}
+  .panel:hover .body h3{color:var(--accent)}
+  .body p{font-size:12px;line-height:1.5;color:#9aa0c0;margin-top:6px}
+  .callout{margin:14px 0 0;padding:10px 14px;border-left:3px solid var(--brand);background:rgba(124,92,255,.08);
+    font-size:13px;color:#c9ccea;border-radius:0 6px 6px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="note">Maqueta visual · no es la web real · así quedaría el Hub con secciones dinámicas</p>
+
+  <div id="cod"></div>
+  <p class="callout"><b>Call of Dragons:</b> exactamente igual que hoy. El cambio es interno (las secciones se leen de la base de datos), no visual.</p>
+
+  <div id="sxs"></div>
+  <p class="callout"><b>Sword x Staff:</b> muestra <b>solo sus secciones reales</b> (Compañeros, Gacha, Mazmorras…) y ya <b>no</b> aparecen Héroes ni Behemoths, que no existen en este juego. Las secciones de ejemplo se sustituirán por las que descubra la Fase&nbsp;1.</p>
+</div>
+
+<script>
+const ICONS = {
+  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9a2 2 0 0 1 2 2v15H8a2 2 0 0 1-2-2z"/><path d="M9 7h5M9 11h5"/></svg>',
+  users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 6a3 3 0 0 1 0 6"/><path d="M19 20a6 6 0 0 0-3-5"/></svg>',
+  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg>',
+  paw:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="11" r="1.7"/><circle cx="10" cy="7" r="1.7"/><circle cx="14" cy="7" r="1.7"/><circle cx="18" cy="11" r="1.7"/><path d="M8 16.5c0-2.4 1.8-4 4-4s4 1.6 4 4-1.8 3-4 3-4-.6-4-3z"/></svg>',
+  dragon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-2 1-3.2 2-4.2.2 1.3 1 2.2 2 2.2-.2-2-1-4 1-6z"/></svg>',
+  gem:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 11L3 9z"/><path d="M3 9h18"/></svg>',
+  gift:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="9" width="16" height="11" rx="1"/><path d="M4 13h16M12 9v11M12 9c-2-4-6-3-6 0M12 9c2-4 6-3 6 0"/></svg>',
+  calendar:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M4 9h16M8 3v4M16 3v4"/></svg>',
+  wrench:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.5 6.5a4 4 0 0 0-5 5l-5.5 5.5 2.5 2.5L12 14a4 4 0 0 0 5-5l-2.2 2.2-2-2z"/></svg>',
+  dice:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="15" r="1"/><circle cx="9" cy="15" r="1"/><circle cx="15" cy="9" r="1"/></svg>',
+  dungeon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V9a8 8 0 0 1 16 0v11"/><path d="M4 20h16M9 20v-7a3 3 0 0 1 6 0v7"/></svg>',
+  info:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/></svg>'
+};
+const GRADS = ['linear-gradient(135deg,#2a2150,#7c5cff)','linear-gradient(135deg,#10324a,#22e0ff)','linear-gradient(135deg,#3a2150,#b06cff)','linear-gradient(135deg,#142a4a,#3a8bff)','linear-gradient(135deg,#2a1a40,#6c4cff)','linear-gradient(135deg,#103a3a,#22e0c0)'];
+
+const COD = {
+  name:'Call of Dragons', tag:'Estrategia / RTS', rank:'S',
+  sub:'Reino de dragones, héroes legendarios y guerra por territorios.',
+  sections:[
+    {label:'Guías', icon:'book', ready:true, desc:'Primeros pasos, progresión, cuentas y mapas.', img:'https://cdn.cod.guide/wp-content/uploads/2023/10/Call-of-Dragons-power-guide-1024x576.jpg'},
+    {label:'Héroes', icon:'users', ready:true, desc:'Tier list por temporada, fichas y builds.', img:'https://cdn.cod.guide/wp-content/uploads/2023/01/promoting-star-level-in-Call-of-Dragons-1024x576.jpg'},
+    {label:'Facciones', icon:'shield', ready:true, desc:'Cuál elegir en cada fase del juego.', img:'https://www.allclash.com/wp-content/uploads/2023/04/call-of-dragons-best-factions-2023.jpg'},
+    {label:'War Pets', icon:'paw', ready:false, desc:'Tier list y datos de las mascotas de guerra.', img:'https://cdn.cod.guide/wp-content/uploads/2023/08/Skill-Card-Store-1024x576.jpg'},
+    {label:'Behemoths', icon:'dragon', ready:true, desc:'Datos y estrategia contra behemoths.', img:'https://cdn.cod.guide/wp-content/uploads/2023/01/Call-of-Dragons-Behemoths-1024x576.png'},
+    {label:'Artefactos', icon:'gem', ready:true, desc:'Tier list y datos de artefactos.', img:'https://cdn.cod.guide/wp-content/uploads/2023/02/opening-artifact-in-tavern-1024x576.png'},
+    {label:'Códigos', icon:'gift', ready:false, desc:'Códigos de canje vigentes y recompensas.', img:'https://cdn.cod.guide/wp-content/uploads/2023/02/Call-of-Dragons-Alliance-1024x576.png'},
+    {label:'Eventos', icon:'calendar', ready:false, desc:'Guías de los eventos del juego.', img:'https://cdn.cod.guide/wp-content/uploads/2023/01/Call-of-Dragons-Events-300x169.png'},
+    {label:'Herramientas', icon:'wrench', ready:false, desc:'Calculadoras de recursos y speedups.', img:'https://cdn.cod.guide/wp-content/uploads/2023/03/call-of-dragons-background.jpg'}
+  ]
+};
+const SXS = {
+  name:'Sword x Staff', tag:'RPG / Gacha', rank:'A',
+  sub:'Aventura gacha con compañeros, mazmorras y eventos. (Secciones de ejemplo.)',
+  sections:[
+    {label:'Guías', icon:'book', ready:true, desc:'Inicio, reroll, progresión y consejos.'},
+    {label:'Compañeros', icon:'paw', ready:true, desc:'Mejores compañeros, mejoras y parejas.'},
+    {label:'Gacha / Tiradas', icon:'dice', ready:true, desc:'Sistema de invocación, pity y prioridades.'},
+    {label:'Mazmorras', icon:'dungeon', ready:true, desc:'Mazmorras diarias, grietas y recompensas.'},
+    {label:'Eventos', icon:'calendar', ready:true, desc:'Eventos activos y cómo aprovecharlos.'},
+    {label:'Consejos', icon:'info', ready:true, desc:'Trucos y errores comunes a evitar.'}
+  ]
+};
+
+function card(s,i){
+  const cover = s.img
+    ? `<img src="${s.img}" alt="" onerror="this.style.display='none';this.parentElement.style.background='${GRADS[i%GRADS.length]}'">`
+    : '';
+  const bg = s.img ? '' : ` style="background:${GRADS[i%GRADS.length]}"`;
+  const badge = s.ready ? `<span class="badge listo">LISTO</span>` : `<span class="badge prox">PRÓXIMO</span>`;
+  return `<article class="panel${s.ready?'':' dim'}">
+    <div class="cover"${bg}>${cover}<div class="ov"></div><div class="tint"></div><div class="scan"></div>
+      <span class="hex">${ICONS[s.icon]||ICONS.book}</span>${badge}
+    </div>
+    <div class="body"><h3>${s.label}</h3><p>${s.desc}</p></div>
+  </article>`;
+}
+function hub(g){
+  return `<div class="ghead"><div>
+      <div class="tag">${g.tag}</div><div class="gtitle">${g.name}</div><div class="gsub">${g.sub}</div>
+    </div><div class="rank">${g.rank}</div></div>
+    <div class="divider"><span></span><h2>SECCIONES</h2><span></span></div>
+    <div class="grid">${g.sections.map(card).join('')}</div>`;
+}
+document.getElementById('cod').innerHTML = hub(COD);
+document.getElementById('sxs').innerHTML = hub(SXS);
+</script>
+</body>
+</html>

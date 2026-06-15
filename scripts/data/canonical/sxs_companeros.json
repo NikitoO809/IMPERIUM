@@ -1,0 +1,336 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "companeros",
+  "title": "Compañeros — Sword x Staff (35 indexados)",
+  "intro_title": "Compañeros",
+  "intro": "35 compañeros indexados. Cada compañero progresa de Blackiron hasta Saint. Son distintos de los Fantomons: los compañeros son personajes del mundo del juego, cada uno compatible con líneas de clase específicas.",
+  "intro_images": [
+    "https://eog.gg/assets/sxs/companions/akane.webp"
+  ],
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "is_published": false,
+  "render_type": "generic",
+  "order_index": 5,
+  "label": "Compañeros",
+  "icon": "users",
+  "cover_image": "https://eog.gg/assets/sxs/companions/akane.webp",
+  "description": "35 compañeros con clases compatibles y rangos",
+  "items": [
+    {
+      "title": "Akane",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/akane.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Aqua",
+      "content": "Rangos: 1 RANKS · BLACKIRON\nClases compatibles: Sabio",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/mage.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Astrid",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Sabio · Arcanista · Dominador · Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/sorcerer.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Braulio",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/archmage.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Chief",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Sabio · Arcanista · Dominador · Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/destroyer.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Darkness",
+      "content": "Rangos: 1 RANKS · BLACKIRON\nClases compatibles: Caballero",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/magister.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Eiichi",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/aqua.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Freya",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/sage.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Gerald",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/astrid.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Hermes",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/arcanist.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Hui",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/dominator.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Isla",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Sabio · Arcanista · Dominador · Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/prophet.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Jiangwang",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/braulio.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Juubee",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/warrior.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Karlos",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/knight.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Kazuma",
+      "content": "Rangos: 1 RANKS · BLACKIRON\nClases compatibles: Duelista",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/paladin.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Killian",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Sabio · Arcanista · Dominador · Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/guardian.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Mateo",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/templar.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Mayoi",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/chief.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Megumin",
+      "content": "Rangos: 1 RANKS · BLACKIRON\nClases compatibles: Hechicero",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/darkness.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Micaela",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/eiichi.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Ming",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/duelist.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Mio",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/berserker.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Molly",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/conqueror.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Naira",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/classes/ravager.png"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Ophelia",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/freya.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Qin",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/gerald.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Reina",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/hermes.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Starfrost Santa - Chief",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/hui.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Starfrost Wish - Molly",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/isla.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Suimo",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Sabio · Arcanista · Dominador · Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/jiangwang.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Suzu",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Sabio · Arcanista · Dominador · Profeta",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/juubee.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Sylvia",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Mago · Hechicero · Archimago · Destructor · Magistro",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/karlos.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Vigard",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Caballero · Paladín · Guardián · Templario",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/kazuma.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Wuji",
+      "content": "Rangos: 5 RANKS · BLACKIRON → SAINT\nClases compatibles: Guerrero · Duelista · Berserker · Conquistador · Devastador",
+      "images": [
+        "https://eog.gg/assets/sxs/companions/killian.webp"
+      ],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    }
+  ]
+}

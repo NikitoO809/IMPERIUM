@@ -1,0 +1,63 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "roadmap",
+  "title": "Roadmap — Sword x Staff",
+  "intro_title": "Roadmap de Progresión (215 días)",
+  "intro": "Ruta de progresión día a día desde la ventana de lanzamiento (Verdantglade) hasta el desbloqueo de la Temporada 5 (Hapadi). 4 temporadas · 6 cambios de trabajo · 350M de muro de poder final. Las fechas están en horario del servidor (Asia, GMT+7). Las fechas pasadas son reales; las futuras son estimaciones marcadas con ~.",
+  "intro_images": [
+    "https://eog.gg/assets/games/sword-x-staff/kingdoms/mountain.webp"
+  ],
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "is_published": false,
+  "render_type": "generic",
+  "order_index": 7,
+  "label": "Roadmap",
+  "icon": "calendar",
+  "cover_image": "https://eog.gg/assets/games/sword-x-staff/kingdoms/mountain.webp",
+  "description": "Progresión día a día de las 4 temporadas (215 días mapeados)",
+  "items": [
+    {
+      "title": "Bloque ENDGAME ROADMAP",
+      "content": "A day-by-day progression route from the Verdantglade launch window to the Season 5 Hapadi unlock, compiled by EOG analysts and laid out on a visual timeline by Eden of Gaming. Every region gate, dungeon power wall, job change, and reward window is plotted below. Use the filters to isolate just the dungeons you need to out-gear, or the treasure windows you can't afford to miss. Power values are placeholders pending live-server confirmation.\nDates count from the global launch on May 19, 2026 in server time (Asia, GMT+7). Past days are actual; upcoming dates are estimates (marked with ~) projected from the cadence and can shift with patches, maintenance, or schedule changes. The daily reset is 8:00 PM (GMT+7), which is 6:00 AM PT / 9:00 AM ET the same calendar day for North American players, so each date below holds in both regions.\n215\ndías mapeados\n4\ntemporadas\n6\ncambios de trabajo\n350M\nMuro de Poder Final\nEverything\nRegions\nDungeons\nJob Changes\nTreasure\nMini-games\nSeasonal Maps\nMythic",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Ventana de Lanzamiento — Verdantglade + Cinder Ridge (Días 1–8)",
+      "content": "Ventana de Lanzamiento\nVerdantglade + Cinder Ridge\nDay 1 - 8\n1\nDía Tue May 19, 2026\nRegión\nVerdantglade\nDesbloqueo de región\nMazmorra\nAuroradrasil\nNormal\nHard\n36K\n4\nDía Fri May 22, 2026\nRegión\nCinder Ridge\nDesbloqueo de región\nCambio de Trabajo\n2nd Job Change\nLv. 44\nClass Lv. 20 + 1st Job Lv. 18\nMazmorra\nMecha Summit\nNormal\nHard\n180K\n8\nDía Tue May 26, 2026\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Cinder Ridge",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Temporada 1 — Aqualis (Días 12–43)",
+      "content": "SEASON 1\nAqualis\nDay 12 - 43\n12\nDía Sat May 30, 2026\nRegión\nAqualis\nInicio Temporada 1\nDesbloqueo de región\nCambio de Trabajo\n3rd Job Change\nLv. 82\nClass Lv. 48 + 2nd Job Lv. 16\nMazmorra\nOcean Palace Ruins\nNormal\nHard\n580K\n14\nDía Mon Jun 1, 2026\nEspeculación\nPossible Summer Event\nRumoured 300 Destiny Fruits. Unconfirmed.\n15\nDía Tue Jun 2, 2026\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue\nMinijuego\nBingo Draw\n22\nDía Tue Jun 9, 2026\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\n3rd Job Skill Fragment x180\nMinijuego\nLucky Scratch\n24\nDía Thu Jun 11, 2026\nMazmorra\nAquaorigin Shrine\nRequires Lv. 100\nNormal\n930K\nHard\n1.45M\nNightmare\n2.05M\n26\nDía Sat Jun 13, 2026\nMapa Estacional\nWhaleback Island\nSeasonal map unlocks\n29\nDía ~ Tue Jun 16, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem\nMinijuego\nFeneck's Puzzle\n33\nDía ~ Sat Jun 20, 2026 ESTIMADO\nMazmorra\nHellhold\nNormal\n2.25M\nHard\n2.75M\nNightmare\n3.9M\nInferno\n6.2M\n36\nDía ~ Tue Jun 23, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Aqualis\nMinijuego\nBingo Draw\n43\nDía ~ Tue Jun 30, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue\nMinijuego\nLucky Scratch",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Temporada 2 — Loong Haven (Días 47–113)",
+      "content": "SEASON 2\nLoong Haven\nDay 47 - 113\n47\nDía ~ Sat Jul 4, 2026 ESTIMADO\nRegión\nLoong Haven\nInicio Temporada 2\nDesbloqueo de región\nCambio de Trabajo\n4th Job Change\nLv. 106\nClass Lv. 89 + 3rd Job Lv. 19\nMazmorra\nDemonseal Gorge\nNormal\nHard\n2.35M\nDesbloqueo\nFantomon Adult Unlock\nLevel 108\nDesbloqueo\nGem Tower\nLevel 116\n50\nDía ~ Tue Jul 7, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\n4th Job Skill Fragment x180\nMinijuego\nFeneck's Puzzle\n57\nDía ~ Tue Jul 14, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem\nMinijuego\nBingo Draw\n60\nDía ~ Fri Jul 17, 2026 ESTIMADO\nMazmorra\nWarlord's Rest\nRequires Lv. 130\nNormal\n3.55M\nHard\n5M\nNightmare\n6M\n64\nDía ~ Tue Jul 21, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Loong Haven\nMinijuego\nLucky Scratch\n71\nDía ~ Tue Jul 28, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue\nMinijuego\nFeneck's Puzzle\nMapa Estacional\nThe Tower of Babel\nSeasonal map unlocks\n73\nDía ~ Thu Jul 30, 2026 ESTIMADO\nMazmorra\nCloudcrest Temple\nNormal\n6.2M\nHard\n7.7M\nNightmare\n9.8M\n78\nDía ~ Tue Aug 4, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\n4th Job Skill Fragment x180\nMinijuego\nBingo Draw\nRELICS\nLoong Haven Phase 2 Relics\nUnlocks\n85\nDía ~ Tue Aug 11, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem\nMinijuego\nLucky Scratch\n86\nDía ~ Wed Aug 12, 2026 ESTIMADO\nMazmorra\nBladeshire\nNormal\n10M\nHard\n12.5M\nNightmare\n15.8M\n92\nDía ~ Tue Aug 18, 2026 ESTIMADO\nMYTHIC FANTOMON\nPandarial\nMythic Fantomon available\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Loong Haven II\nMinijuego\nFeneck's Puzzle\n99\nDía ~ Tue Aug 25, 2026 ESTIMADO\nMazmorra\nCelestial Cloudship\nNormal\n16.5M\nHard\n20M\nNightmare\n24.5M\nInferno\n40M\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue\nMinijuego\nBingo Draw\n106\nDía ~ Tue Sep 1, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\n4th Job Skill Fragment x180\nMinijuego\nLucky Scratch\n113\nDía ~ Tue Sep 8, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem\nMinijuego\nFeneck's Puzzle",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Temporada 3 — Aethyris (Días 114+)",
+      "content": "SEASON 3\nAethyris\nDay 114 - 211\n114\nDía ~ Wed Sep 9, 2026 ESTIMADO\nRegión\nAethyris\nSeason 3 Start\nMap unlocks\nCambio de Trabajo\n5th Job Change\nLv. 136\nClass Lv. 180 + 4th Job Lv. 40\nMazmorra\nCrystal Spiral Tree\nNormal\nHard\n9M\n120\nDía ~ Tue Sep 15, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Box\nCHOICE\nMythic Relic Box - Aethyris\nMinijuego\nBingo Draw\n127\nDía ~ Tue Sep 22, 2026 ESTIMADO\nMazmorra\nEternal Flower Garden\nRequires Lv. 160\nNormal\n12.5M\nHard\n15M\nNightmare\n18M\nInferno\n28.5M\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue / Golden Divine Tree\nMinijuego\nLucky Scratch\n128\nDía ~ Wed Sep 23, 2026 ESTIMADO\nMapa Estacional\nStarry Sea Cruise\nSeasonal map unlocks\n134\nDía ~ Tue Sep 29, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\n5th Job Skill Fragment x180\nMinijuego\nFeneck's Puzzle\n141\nDía ~ Tue Oct 6, 2026 ESTIMADO\nMazmorra\nBattle Abyss Fortress\nNormal\n20M\nHard\n26M\nNightmare\n30M\nInferno\n46M\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem / Philosopher's Stone\nMinijuego\nBingo Draw\n144\nDía ~ Fri Oct 9, 2026 ESTIMADO\nRELICS\nAethyris Phase 2 Relics\nUnlocks\n148\nDía ~ Tue Oct 13, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Aethyris II\nMinijuego\nLucky Scratch\n155\nDía ~ Tue Oct 20, 2026 ESTIMADO\nMazmorra\nPurification Garden\nNormal\n32.5M\nHard\n43M\nNightmare\n50.5M\nInferno\n75M\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue / Golden Divine Tree\nMinijuego\nFeneck's Puzzle\n160\nDía ~ Sun Oct 25, 2026 ESTIMADO\nMYTHIC FANTOMON\nRainbow Star Spirit\nMythic Fantomon available\n162\nDía ~ Tue Oct 27, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\n5th Job Skill Fragment x180\nMinijuego\nBingo Draw\n169\nDía ~ Tue Nov 3, 2026 ESTIMADO\nMazmorra\nOrder Temple\nNormal\n55M\nHard\n65M\nNightmare\n82M\nInferno\n115M\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem / Philosopher's Stone\nMinijuego\nLucky Scratch\n174\nDía ~ Sun Nov 8, 2026 ESTIMADO\nRELICS\nAethyris Phase 3 Relics\nUnlocks\n176\nDía ~ Tue Nov 10, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Aethyris III\nMinijuego\nFeneck's Puzzle\n183\nDía ~ Tue Nov 17, 2026 ESTIMADO\nMazmorra\nBlazing Sun Spire\nNormal\n84.5M\nHard\n100M\nNightmare\n120M\nInferno\n180M\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue / Golden Divine Tree\nMinijuego\nBingo Draw\n190\nDía ~ Tue Nov 24, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\n5th Job Skill Fragment x180\nMinijuego\nLucky Scratch\n197\nDía ~ Tue Dec 1, 2026 ESTIMADO\nMazmorra\nSovereign's Nest\nNormal\n125M\nHard\n145M\nNightmare\n180M\nInferno\n250M\nCaza del Tesoro\nGrand Treasure Hunt\nPrimal Gem / Philosopher's Stone\nMinijuego\nFeneck's Puzzle\n203\nDía ~ Mon Dec 7, 2026 ESTIMADO\nMazmorra\nSovereign's Nest\nFinal power wall\nAbyss\n350M\n204\nDía ~ Tue Dec 8, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nCHOICE\nMythic Relic Box - Aethyris III\nMinijuego\nBingo Draw\n211\nDía ~ Tue Dec 15, 2026 ESTIMADO\nCaza del Tesoro\nGrand Treasure Hunt\nLucky Statue / Golden Divine Tree\nMinijuego\nLucky Scratch",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    },
+    {
+      "title": "Temporada 4 — Hapadi",
+      "content": "SEASON 5\nHapadi\nDay 215\n215\nDía ~ Sat Dec 19, 2026 ESTIMADO\nRegión\nHapadi\nSeason 5 Start\nDesbloqueo de región\nCambio de Trabajo\n6th Job Change\nLv. 172\nClass Lv. 280 + 5th Job Lv. 50\nRoute compiled by EOG analysts. Visual timeline and presentation by Eden of Gaming.",
+      "images": [],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": {}
+    }
+  ]
+}

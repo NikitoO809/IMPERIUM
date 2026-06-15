@@ -80,12 +80,22 @@ def _build_section(data: dict) -> str:
     lines.append(f"    select id from public.game_sections where game_id = v_game and slug = {lit(slug)});")
     lines.append(f"  delete from public.game_sections where game_id = v_game and slug = {lit(slug)};")
     lines.append("")
+    # Presentación de la sección (la usa el Hub dinámico). Con defaults sensatos.
+    label = data.get("label") or data["title"]
+    cover = data.get("cover_image") or (data.get("intro_images") or [None])[0]
+    render_type = data.get("render_type") or "generic"
+    order_index = int(data.get("order_index") or 0)
     lines.append("  insert into public.game_sections")
-    lines.append("    (game_id, slug, title, intro_title, intro, intro_images, is_published)")
+    lines.append("    (game_id, slug, title, intro_title, intro, intro_images, is_published,")
+    lines.append("     label, description, icon, cover_image, render_type, order_index)")
     lines.append("  values")
     lines.append(
         f"    (v_game, {lit(slug)}, {lit(data['title'])}, {lit(data.get('intro_title'))}, "
-        f"{lit(data.get('intro'))}, {arr(data.get('intro_images'))}, {is_pub})"
+        f"{lit(data.get('intro'))}, {arr(data.get('intro_images'))}, {is_pub},"
+    )
+    lines.append(
+        f"     {lit(label)}, {lit(data.get('description'))}, {lit(data.get('icon'))}, "
+        f"{lit(cover)}, {lit(render_type)}, {order_index})"
     )
     lines.append("  returning id into v_section;")
     lines.append("")

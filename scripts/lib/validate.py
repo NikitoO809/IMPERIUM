@@ -44,8 +44,12 @@ DOLLAR_TAG = "$IMPERIUM$"
 # Secciones del Hub que SÍ usan el modelo genérico game_sections/section_blocks.
 # (guias y heroes tienen su propia implementación y no se montan por aquí.)
 KNOWN_SECTION_SLUGS = {
+    # Call of Dragons
     "facciones", "war-pets", "behemoths", "artefactos",
     "codigos", "eventos", "herramientas",
+    # Sword x Staff
+    "tier-list", "builds", "roadmap", "habilidades",
+    "fantomons", "companeros", "veredicto", "resumen",
 }
 
 # Prefijos mágicos cuyo resto del contenido debe ser JSON válido.

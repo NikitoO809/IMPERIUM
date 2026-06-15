@@ -18,6 +18,7 @@ export type GameMeta = {
   description: string;
   tag: string;
   rank: string;
+  coverImage: string | null;
 };
 
 export type Step = {
@@ -100,11 +101,12 @@ type GameRow = {
   slug: string;
   name: string;
   description: string | null;
+  cover_image: string | null;
   guides: GuideRow[];
 };
 
 const GAME_TREE_SELECT =
-  "id, slug, name, description, guides(id, slug, title, description, order_index, intro_title, intro, intro_images, guide_steps(id, order_index, title, content, source_url, is_verified, images))";
+  "id, slug, name, description, cover_image, guides(id, slug, title, description, order_index, intro_title, intro, intro_images, guide_steps(id, order_index, title, content, source_url, is_verified, images))";
 
 function mapStep(s: StepRow): Step {
   return {
@@ -295,6 +297,7 @@ export async function getCatalog(): Promise<GameCard[]> {
       name: g.name,
       description: g.description,
       ...present(g.slug),
+      coverImage: null,
       guideCount: g.guides.length,
       completionPct: 0,
     }));
@@ -318,6 +321,7 @@ export async function getCatalog(): Promise<GameCard[]> {
       name: g.name,
       description: g.description ?? "",
       ...present(g.slug),
+      coverImage: g.cover_image ?? null,
       guideCount: g.guides.length,
       completionPct: total ? Math.round((done / total) * 100) : 0,
     };
@@ -334,6 +338,7 @@ export async function getGameMeta(slug: string): Promise<GameMeta | null> {
     name: tree.name,
     description: tree.description ?? "",
     ...present(tree.slug),
+    coverImage: tree.cover_image ?? null,
   };
 }
 
@@ -359,7 +364,7 @@ export async function getGuidesForGame(
     };
   });
   return {
-    meta: { id: tree.id, slug: tree.slug, name: tree.name, description: tree.description ?? "", ...present(tree.slug) },
+    meta: { id: tree.id, slug: tree.slug, name: tree.name, description: tree.description ?? "", ...present(tree.slug), coverImage: tree.cover_image ?? null },
     guides,
   };
 }
@@ -380,7 +385,7 @@ export async function getGuide(
   const completed = await fetchCompletedStepIds();
   const steps = sortByOrder(gd.guide_steps).map(mapStep);
   return {
-    meta: { id: tree.id, slug: tree.slug, name: tree.name, description: tree.description ?? "", ...present(tree.slug) },
+    meta: { id: tree.id, slug: tree.slug, name: tree.name, description: tree.description ?? "", ...present(tree.slug), coverImage: tree.cover_image ?? null },
     guide: {
       id: gd.id,
       slug: gd.slug,

@@ -12,6 +12,10 @@ import { HudLabel } from "@/components/hud";
 import { SectionContent } from "@/components/SectionContent";
 import { ArtifactosViewer } from "@/components/ArtifactosViewer";
 import { BehemothsViewer } from "@/components/BehemothsViewer";
+import { TierListViewer } from "@/components/TierListViewer";
+import { RoadmapViewer } from "@/components/RoadmapViewer";
+import { BuildsViewer } from "@/components/BuildsViewer";
+import { ClassTierViewer } from "@/components/ClassTierViewer";
 import { SectionPlaceholder } from "@/components/SectionPlaceholder";
 
 export default async function GameSectionPage({
@@ -21,17 +25,21 @@ export default async function GameSectionPage({
 }) {
   const { slug, seccion } = await params;
 
-  // La sección debe existir en el catálogo del Hub.
-  const sec = GAME_SECTIONS.find((s) => s.slug === seccion);
-  if (!sec) notFound();
-
   const game = await getGameMeta(slug);
   if (!game) notFound();
 
   const content = await getSectionContent(slug, seccion);
 
-  // Sin contenido cargado todavía → placeholder.
+  // Etiqueta del catálogo del Hub (si la sección está en él). Las secciones
+  // dinámicas creadas por juego (p. ej. 'fantomons') NO están en el catálogo,
+  // así que NO exigimos que esté: basta con que tenga contenido.
+  const sec = GAME_SECTIONS.find((s) => s.slug === seccion);
+  const sectionLabel = sec?.label ?? content?.title ?? seccion;
+
+  // Sin contenido: si es una sección conocida del catálogo, placeholder; si es
+  // desconocida y sin contenido, 404 (de verdad no existe).
   if (!content) {
+    if (!sec) notFound();
     return (
       <SectionPlaceholder
         gameSlug={game.slug}
@@ -42,8 +50,27 @@ export default async function GameSectionPage({
     );
   }
 
+  // Tipo de visor: lo manda render_type de la BD; si es 'generic', caemos al
+  // mapeo por slug (así artefactos/behemoths de CoD siguen igual aunque no se
+  // haya rellenado render_type).
+  const rt =
+    content.renderType !== "generic"
+      ? content.renderType
+      : seccion === "artefactos"
+      ? "artifact-table"
+      : seccion === "behemoths"
+      ? "behemoth"
+      : "generic";
+  const widthClass =
+    rt === "artifact-table" || rt === "tier-list" ? "max-w-6xl"
+    : rt === "class-tier" ? "max-w-5xl"
+    : rt === "behemoth" ? "max-w-5xl"
+    : rt === "builds" ? "max-w-4xl"
+    : rt === "roadmap" ? "max-w-3xl"
+    : "max-w-3xl";
+
   return (
-    <main className={`mx-auto px-4 pt-12 pb-16 ${seccion === "artefactos" ? "max-w-6xl" : seccion === "behemoths" ? "max-w-5xl" : "max-w-3xl"}`}>
+    <main className={`mx-auto px-4 pt-12 pb-16 ${widthClass}`}>
       <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>
         <span>/</span>
@@ -51,18 +78,26 @@ export default async function GameSectionPage({
         <span>/</span>
         <Link href={`/juegos/${game.slug}`} className="transition hover:text-accent">{game.name}</Link>
         <span>/</span>
-        <span className="text-white/70">{sec.label}</span>
+        <span className="text-white/70">{sectionLabel}</span>
       </div>
 
       <HudLabel>{game.name}</HudLabel>
       <h1 className="mt-3 mb-6 font-title text-2xl font-extrabold tracking-wide text-glow-brand sm:text-3xl">
-        {content.title || sec.label}
+        {content.title || sectionLabel}
       </h1>
 
-      {seccion === "artefactos"
+      {rt === "artifact-table"
         ? <ArtifactosViewer section={content} />
-        : seccion === "behemoths"
+        : rt === "behemoth"
         ? <BehemothsViewer section={content} />
+        : rt === "tier-list"
+        ? <TierListViewer section={content} />
+        : rt === "roadmap"
+        ? <RoadmapViewer section={content} />
+        : rt === "builds"
+        ? <BuildsViewer section={content} />
+        : rt === "class-tier"
+        ? <ClassTierViewer section={content} />
         : <SectionContent section={content} />
       }
     </main>

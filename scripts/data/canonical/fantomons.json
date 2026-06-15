@@ -1,0 +1,47 @@
+{
+  "game": "sword-x-staff",
+  "kind": "section",
+  "slug": "fantomons",
+  "title": "Fantomons",
+  "label": "Fantomons",
+  "description": "Tier list de los Fantomons (compañeros mascota) de la semana de lanzamiento.",
+  "icon": "paw",
+  "cover_image": "https://eog.gg/assets/sxs/fantomons/aegiswing.webp",
+  "render_type": "tier-list",
+  "order_index": 2,
+  "is_published": false,
+  "source_url": "https://eog.gg/games/sword-x-staff/",
+  "intro_title": "Tier list de lanzamiento",
+  "intro": "Sword x Staff se lanzó globalmente el 19 de mayo (Patch 1.0). Esta lista refleja la lectura de EOG en la semana de lanzamiento sobre los Fantomons de Verdantglade. Las estadísticas se desbloquean en los niveles 20, 50, 70 y 100 del Fantomon, así que el tier efectivo de un Fantomon cambia según lo subas de nivel. Úsala para preseleccionar y luego prueba contra tu propio cuello de botella.\n\nLos Fantomons son los compañeros mascota que se desbloquean al nivel de cuenta 50, a través del árbol gigante en tu base de origen. Cada uno aporta estadísticas pasivas y se une a la línea de batalla activa. La mayoría de jugadores llevan cuatro Fantomons principales subidos de forma pareja en lugar de repartir los materiales por todo el roster: sube cada Fantomon a nivel 20 primero y luego maximiza los que de verdad usas.",
+  "intro_images": [],
+  "items": [
+    {
+      "title": "Aegiswing",
+      "content": "Set de rasgos orientado al daño. Elección común para cualquier equipo de Duelist o Sorcerer que busque techo de daño.",
+      "images": ["https://eog.gg/assets/sxs/fantomons/aegiswing.webp"],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": { "tier": "Mythical", "rol": "Attack — DPS principal" }
+    },
+    {
+      "title": "Nyxarchon",
+      "content": "El otro atacante Mythical. Combínalo con Aegiswing para acumular rasgos del lado de ataque.",
+      "images": ["https://eog.gg/assets/sxs/fantomons/nyxarchon.webp"],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": { "tier": "Mythical", "rol": "Attack — DPS principal" }
+    },
+    {
+      "title": "Mandragora",
+      "content": "Añade procs de curación a las rotaciones de Sage. Vale la pena si haces fases de DoT del jefe de gremio.",
+      "images": ["https://eog.gg/assets/sxs/fantomons/mandragora.webp"],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": { "tier": "Healer / Charm", "rol": "Charm / Heal — Sustain" }
+    },
+    {
+      "title": "Herbote",
+      "content": "Se empareja con Mandragora para cobertura de curación redundante. Sage como principal, Sorcerer como secundario.",
+      "images": ["https://eog.gg/assets/sxs/fantomons/herbote.webp"],
+      "source_url": "https://eog.gg/games/sword-x-staff/",
+      "meta": { "tier": "Healer / Charm", "rol": "Charm / Heal — Sustain" }
+    }
+  ]
+}

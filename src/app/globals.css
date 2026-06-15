@@ -1,24 +1,30 @@
 @import "tailwindcss";
 
 /* ─────────────────────────────────────────────
-   IMPERIUM — Tema "interfaz de videojuego (HUD)"
-   Negro profundo + cian neón + violeta + ámbar de rango.
-   Paneles biselados, marcas de esquina, scanlines.
+   IMPERIUM — Tema neutro "taste"
+   Base off-black (zinc) + UN acento sólido: oro imperial.
+   Sin glows de neón, sin degradados de marca, sin lila.
    ───────────────────────────────────────────── */
 
 :root {
-  --background: #04060a;
-  --foreground: #e8f1f5;
+  --background: #0a0a0b;      /* off-black (no negro puro) */
+  --foreground: #ededef;      /* zinc-100 */
 
-  --brand: #7c5cff;        /* violeta (Discord) */
-  --brand-bright: #9b7bff;
-  --accent: #22e0ff;       /* cian neón HUD */
-  --accent-dim: #0e7c8c;
-  --rank: #ffcf5a;         /* ámbar de rango/oro */
-  --surface: #0a0e16;      /* paneles */
-  --surface-2: #0d1320;
-  --border: #1c2738;
-  --hud-line: rgba(34, 224, 255, 0.55);
+  --brand: #e3b341;           /* acento único: oro imperial */
+  --brand-bright: #f0c860;
+  --accent: #e3b341;          /* mismo acento (1 solo) */
+  --accent-dim: #8a6a1f;
+  --rank: #e3b341;
+  --surface: #131316;         /* superficies (zinc-900) */
+  --surface-2: #1a1a1e;
+  --border: #26262b;          /* zinc-800 */
+  --hud-line: rgba(227, 179, 65, 0.45);
+
+  /* neutro */
+  --ink: #0a0a0b;
+  --gold: #e3b341;
+  --hairline: rgba(255, 255, 255, 0.08);
+  --ease-fluid: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @theme inline {
@@ -27,12 +33,14 @@
   --color-brand: var(--brand);
   --color-brand-bright: var(--brand-bright);
   --color-accent: var(--accent);
+  --color-gold: var(--gold);
   --color-rank: var(--rank);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-border: var(--border);
-  --font-title: var(--font-title-imperium);
-  --font-hud: var(--font-hud-imperium);
+  --font-title: var(--font-sans-imperium);
+  --font-hud: var(--font-mono-imperium);
+  --font-mono: var(--font-mono-imperium);
   --font-sans: var(--font-sans-imperium);
 }
 
@@ -48,7 +56,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Capas de fondo ── */
+/* ── Capas de fondo (HUD heredadas — se mantienen para páginas sin migrar) ── */
 .mesh-bg {
   position: fixed;
   inset: 0;
@@ -59,7 +67,6 @@ body {
     radial-gradient(45rem 45rem at 50% 115%, rgba(124, 92, 255, 0.16), transparent 60%);
 }
 
-/* Rejilla técnica de fondo */
 .grid-overlay {
   position: fixed;
   inset: 0;
@@ -71,7 +78,6 @@ body {
   mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 35%, transparent 100%);
 }
 
-/* Líneas de escaneo (CRT) */
 .scanlines {
   position: fixed;
   inset: 0;
@@ -98,27 +104,17 @@ body {
 }
 
 /* ── Tipografía utilitaria ── */
-.font-title { font-family: var(--font-title-imperium), sans-serif; }
-.font-hud { font-family: var(--font-hud-imperium), sans-serif; }
+.font-title { font-family: var(--font-sans-imperium), sans-serif; }
+.font-hud { font-family: var(--font-mono-imperium), monospace; }
 
 .hud-label {
-  font-family: var(--font-hud-imperium), monospace;
+  font-family: var(--font-mono-imperium), monospace;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
-  font-weight: 600;
+  letter-spacing: 0.18em;
+  font-weight: 500;
 }
 
-.text-gradient {
-  background: linear-gradient(110deg, #ffffff 0%, var(--accent) 50%, var(--brand-bright) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.text-glow-accent { text-shadow: 0 0 18px rgba(34, 224, 255, 0.55); }
-.text-glow-brand { text-shadow: 0 0 22px rgba(124, 92, 255, 0.65); }
-
-/* ── Panel biselado HUD (borde luminoso vía doble capa) ── */
+/* ── Panel biselado HUD (heredado, páginas sin migrar) ── */
 .bevel {
   --b: 14px;
   clip-path: polygon(
@@ -133,7 +129,7 @@ body {
 
 .panel {
   position: relative;
-  background: var(--border);            /* hace de "borde" */
+  background: var(--border);
   --b: 14px;
   clip-path: polygon(0 0, calc(100% - var(--b)) 0, 100% var(--b), 100% 100%, var(--b) 100%, 0 calc(100% - var(--b)));
 }
@@ -145,12 +141,9 @@ body {
   --b: 13px;
   clip-path: polygon(0 0, calc(100% - var(--b)) 0, 100% var(--b), 100% 100%, var(--b) 100%, 0 calc(100% - var(--b)));
 }
-
-/* Variante con borde cian activo */
 .panel-accent { background: linear-gradient(135deg, var(--accent), var(--brand)); }
 .panel-accent > .panel-inner { background: var(--surface); }
 
-/* ── Marcas de esquina (corner brackets) ── */
 .corners::before,
 .corners::after {
   content: "";
@@ -161,42 +154,23 @@ body {
   z-index: 2;
   pointer-events: none;
 }
-.corners::before {
-  top: 7px;
-  left: 7px;
-  border-top: 2px solid;
-  border-left: 2px solid;
-}
-.corners::after {
-  bottom: 7px;
-  right: 7px;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-}
+.corners::before { top: 7px; left: 7px; border-top: 2px solid; border-left: 2px solid; }
+.corners::after { bottom: 7px; right: 7px; border-bottom: 2px solid; border-right: 2px solid; }
 
-/* ── Botón HUD ── */
 .btn-hud {
   position: relative;
   --b: 10px;
   clip-path: polygon(var(--b) 0, 100% 0, calc(100% - var(--b)) 100%, 0 100%);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+  transition: transform 0.18s ease, background 0.18s ease;
   will-change: transform;
 }
-.btn-hud:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.08);
-  box-shadow: 0 14px 40px -12px rgba(124, 92, 255, 0.9), 0 0 0 1px rgba(155, 123, 255, 0.5);
-}
-.btn-hud:active { transform: translateY(0); }
-
-/* Botón "fantasma" HUD */
+.btn-hud:active { transform: translateY(1px); }
 .btn-ghost {
   --b: 10px;
   clip-path: polygon(var(--b) 0, 100% 0, calc(100% - var(--b)) 100%, 0 100%);
   transition: color 0.18s ease, background 0.18s ease;
 }
 
-/* ── Barra de progreso / XP ── */
 .xpbar {
   height: 7px;
   background: rgba(255, 255, 255, 0.07);
@@ -206,22 +180,12 @@ body {
 .xpbar > span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, var(--brand), var(--accent));
-  box-shadow: 0 0 12px rgba(34, 224, 255, 0.7);
+  background: var(--gold);
 }
 
-/* ── Hexágono (iconos / rangos) ── */
-.hex {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
+.hex { clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
 
-/* ── Animaciones ── */
-@keyframes rise {
-  from { opacity: 0; transform: translateY(22px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.rise { animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
-
+/* ── Animaciones heredadas ── */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -229,40 +193,158 @@ body {
 .float { animation: float 6s ease-in-out infinite; }
 
 @keyframes pulse-dot {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 224, 255, 0.7); }
-  50% { opacity: 0.5; box-shadow: 0 0 0 6px rgba(34, 224, 255, 0); }
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(227, 179, 65, 0.6); }
+  50% { opacity: 0.5; box-shadow: 0 0 0 5px rgba(227, 179, 65, 0); }
 }
 .live-dot { animation: pulse-dot 1.8s ease-in-out infinite; }
-
-/* Parpadeo "PRESS START" */
-@keyframes blink {
-  0%, 60% { opacity: 1; }
-  61%, 100% { opacity: 0.35; }
-}
-.blink { animation: blink 1.4s steps(1) infinite; }
-
-/* Barrido de luz sobre paneles al pasar el ratón */
-.sweep { position: relative; overflow: hidden; }
-.sweep::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(115deg, transparent 30%, rgba(34, 224, 255, 0.12) 50%, transparent 70%);
-  transform: translateX(-120%);
-  transition: transform 0.6s ease;
-}
-.sweep:hover::after { transform: translateX(120%); }
 
 .lift { transition: transform 0.25s ease; will-change: transform; }
 .lift:hover { transform: translateY(-6px); }
 
-/* Rejilla synthwave que avanza hacia el espectador */
-@keyframes grid-move {
-  from { background-position: 0 0; }
-  to { background-position: 0 60px; }
+@media (prefers-reduced-motion: reduce) {
+  .float, .live-dot, .lift, .btn-hud { animation: none; transition: none; }
 }
-.grid-floor { animation: grid-move 1.6s linear infinite; }
+
+/* ═══════════════════════════════════════════════
+   SISTEMA NEUTRO — base off-black + oro único.
+   Material liquid-glass sobrio (1px inner border + sombra tintada),
+   pills sólidas con feedback táctil, reveals de scroll. Sin glows.
+   ═══════════════════════════════════════════════ */
+
+/* ── Fondo: off-black + leve luz cenital neutra (sin color) ── */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  background:
+    radial-gradient(60rem 42rem at 50% -12%, rgba(255, 255, 255, 0.04), transparent 60%),
+    var(--ink);
+}
+
+/* Grano de película (capa fija, sin coste de scroll) */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Tiñe un logo de color (p.ej. el dragón azul) a emblema champán/acero
+   acorde a la paleta neutra+oro, sin tener que reeditar el PNG. */
+.tint-emblem {
+  filter: grayscale(1) sepia(0.35) saturate(1.5) hue-rotate(2deg) brightness(1.06) contrast(1.02);
+}
+
+/* ── Tipografía ── */
+.font-display {
+  font-family: var(--font-sans-imperium), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.font-num {
+  font-family: var(--font-mono-imperium), monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.text-soft { color: rgba(255, 255, 255, 0.6); }
+.text-faint { color: rgba(255, 255, 255, 0.42); }
+
+/* ── Eyebrow (microbadge sobre titulares) ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.32rem 0.85rem;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--hairline);
+}
+
+/* ── Material liquid-glass sobrio ── */
+.glass {
+  position: relative;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 50px -30px rgba(0, 0, 0, 0.8);
+}
+.glass-inner {
+  position: relative;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0));
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Realce sobrio al pasar el ratón (sombra tintada al fondo, no glow) */
+.glass-hover {
+  transition: transform 0.4s var(--ease-fluid), box-shadow 0.4s var(--ease-fluid), border-color 0.4s var(--ease-fluid);
+  will-change: transform;
+}
+.group:hover .glass-hover,
+.glass-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 34px 60px -32px rgba(0, 0, 0, 0.9);
+}
+
+/* ── Pills sólidas con feedback táctil ── */
+.pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 9999px;
+  padding: 0.62rem 0.62rem 0.62rem 1.3rem;
+  font-weight: 500;
+  font-size: 0.92rem;
+  line-height: 1;
+  transition: transform 0.3s var(--ease-fluid), background 0.3s var(--ease-fluid), border-color 0.3s var(--ease-fluid);
+  will-change: transform;
+}
+.pill:active { transform: translateY(1px) scale(0.99); }
+.pill-primary { color: #1a1407; background: var(--gold); }
+.pill-primary:hover { background: var(--brand-bright); }
+.pill-ghost {
+  color: rgba(255, 255, 255, 0.86);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.pill-ghost:hover { color: #fff; background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.24); }
+
+/* Círculo del icono anidado (button-in-button) */
+.icon-badge {
+  display: grid;
+  place-items: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s var(--ease-fluid);
+}
+.pill:hover .icon-badge { transform: translateX(2px); }
+.pill-ghost .icon-badge { background: rgba(255, 255, 255, 0.10); }
+
+/* ── Reveal de scroll (entrada sobria, transform + opacity) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 0.7s var(--ease-fluid), transform 0.7s var(--ease-fluid);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .rise, .float, .live-dot, .blink, .lift, .btn-hud, .sweep::after, .grid-floor { animation: none; transition: none; }
+  .reveal, .glass-hover, .pill, .icon-badge { transition: none; }
+  .reveal { opacity: 1; transform: none; }
 }

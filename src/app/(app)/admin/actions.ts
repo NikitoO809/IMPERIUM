@@ -44,7 +44,6 @@ function parseImages(raw: string): string[] {
 function revalidateAll() {
   revalidatePath("/admin", "layout");
   revalidatePath("/juegos", "layout");
-  revalidatePath("/mi-progreso");
   revalidatePath("/comunidad");
 }
 
