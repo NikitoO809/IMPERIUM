@@ -1,10 +1,13 @@
 "use client";
 
-// Hook que indica si el usuario actual es admin (para mostrar el enlace
-// al panel solo a quien corresponde). El acceso real lo protege el servidor.
+// Hook que indica si el usuario actual es STAFF (supremo/admin/moderador),
+// para mostrar el enlace al panel solo a quien corresponde. El acceso real
+// lo protege el servidor (requireStaff). Mantiene el nombre useIsAdmin por
+// compatibilidad con quien ya lo importa.
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
+import { isStaff, type Rank } from "@/lib/ranks";
 
 export function useIsAdmin() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -20,7 +23,7 @@ export function useIsAdmin() {
         .select("role")
         .eq("id", data.user.id)
         .maybeSingle();
-      if (active) setIsAdmin(profile?.role === "admin");
+      if (active) setIsAdmin(isStaff((profile?.role ?? "user") as Rank));
     });
     return () => {
       active = false;
