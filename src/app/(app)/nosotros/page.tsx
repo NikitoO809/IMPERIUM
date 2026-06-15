@@ -1,60 +1,39 @@
 // Sección Nosotros — qué es IMPERIUM, su historia y quiénes administran la web.
-// Contenido estático editable. Los textos marcados [EJEMPLO — reemplazar] son
-// plantilla: cámbialos por la historia y los administradores reales.
+// El contenido se edita desde el panel de admin (/admin/nosotros) y se guarda en
+// Supabase. Si Supabase no está configurado o no hay datos, se usan los textos de
+// ejemplo (FALLBACK_*) para que la página nunca quede vacía.
 import Link from "next/link";
 import { Panel, HudLabel } from "@/components/hud";
 import { DiscordIcon, ShieldIcon, BookIcon, UsersIcon } from "@/components/icons";
+import { getAboutContent, type TimelineItem, type AdminMember } from "@/lib/about";
 
 export const metadata = {
   title: "Nosotros — IMPERIUM",
   description: "Quiénes somos, nuestra historia y el equipo que administra IMPERIUM.",
 };
 
-// ── Historia: hitos de la comunidad (orden cronológico) ──────────
-// [EJEMPLO — reemplazar] por los hitos reales de IMPERIUM.
-const TIMELINE: { year: string; title: string; text: string }[] = [
-  {
-    year: "2023",
-    title: "[EJEMPLO] Nace la comunidad",
-    text: "Un grupo de jugadores se reúne en Discord para coordinar partidas y compartir estrategias. [EJEMPLO — reemplazar]",
-  },
-  {
-    year: "2024",
-    title: "[EJEMPLO] Crecemos juntos",
-    text: "La comunidad se organiza, suma miembros y empieza a dominar sus primeros juegos en equipo. [EJEMPLO — reemplazar]",
-  },
-  {
-    year: "2025",
-    title: "[EJEMPLO] Llega la web IMPERIUM",
-    text: "Creamos esta web con guías interactivas para que cualquier miembro mejore más rápido. [EJEMPLO — reemplazar]",
-  },
+// ── Fallbacks (se usan solo si no hay contenido en la base de datos) ──
+const FALLBACK_INTRO =
+  "IMPERIUM es una comunidad de jugadores de Discord. Aquí coordinamos partidas, compartimos estrategias y montamos guías interactivas para que todo el equipo mejore más rápido.";
+
+const FALLBACK_TIMELINE: TimelineItem[] = [
+  { id: "1", orderIndex: 1, year: "2023", title: "Nace la comunidad", description: "Un grupo de jugadores se reúne en Discord para coordinar partidas y compartir estrategias." },
+  { id: "2", orderIndex: 2, year: "2024", title: "Crecemos juntos", description: "La comunidad se organiza, suma miembros y empieza a dominar sus primeros juegos en equipo." },
+  { id: "3", orderIndex: 3, year: "2025", title: "Llega la web IMPERIUM", description: "Creamos esta web con guías interactivas para que cualquier miembro mejore más rápido." },
 ];
 
-// ── Administradores del sitio ────────────────────────────────────
-// [EJEMPLO — reemplazar] por las personas reales del equipo.
-// avatar: URL de imagen (Discord, etc.) o null para mostrar la inicial.
-const ADMINS: { name: string; role: string; bio: string; avatar: string | null }[] = [
-  {
-    name: "[EJEMPLO] Nombre 1",
-    role: "Fundador / Líder",
-    bio: "Lidera la comunidad y dirige la estrategia general. [EJEMPLO — reemplazar]",
-    avatar: null,
-  },
-  {
-    name: "[EJEMPLO] Nombre 2",
-    role: "Administrador",
-    bio: "Gestiona el Discord y modera el día a día de la comunidad. [EJEMPLO — reemplazar]",
-    avatar: null,
-  },
-  {
-    name: "[EJEMPLO] Nombre 3",
-    role: "Editor de guías",
-    bio: "Investiga y monta las guías de juego en la web. [EJEMPLO — reemplazar]",
-    avatar: null,
-  },
+const FALLBACK_ADMINS: AdminMember[] = [
+  { id: "1", orderIndex: 1, name: "Nombre 1", role: "Fundador / Líder", bio: "Lidera la comunidad y dirige la estrategia general.", avatarUrl: null },
+  { id: "2", orderIndex: 2, name: "Nombre 2", role: "Administrador", bio: "Gestiona el Discord y modera el día a día de la comunidad.", avatarUrl: null },
+  { id: "3", orderIndex: 3, name: "Nombre 3", role: "Editor de guías", bio: "Investiga y monta las guías de juego en la web.", avatarUrl: null },
 ];
 
-export default function NosotrosPage() {
+export default async function NosotrosPage() {
+  const about = await getAboutContent();
+  const intro = about?.intro?.trim() ? about.intro : FALLBACK_INTRO;
+  const timeline = about && about.timeline.length > 0 ? about.timeline : FALLBACK_TIMELINE;
+  const admins = about && about.admins.length > 0 ? about.admins : FALLBACK_ADMINS;
+
   return (
     <main className="mx-auto max-w-4xl px-4 pt-12 pb-16">
       <HudLabel>La comunidad</HudLabel>
@@ -62,9 +41,7 @@ export default function NosotrosPage() {
         Sobre IMPERIUM
       </h1>
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/65 sm:text-base">
-        IMPERIUM es una comunidad de jugadores de Discord. Aquí coordinamos
-        partidas, compartimos estrategias y montamos guías interactivas para que
-        todo el equipo mejore más rápido. <span className="text-white/40">[EJEMPLO — reemplazar por la descripción real de la comunidad]</span>
+        {intro}
       </p>
 
       {/* ── Nuestra historia ─────────────────────────────────── */}
@@ -75,15 +52,17 @@ export default function NosotrosPage() {
       </div>
 
       <ol className="relative ml-3 border-l border-white/12 pl-6">
-        {TIMELINE.map((item) => (
-          <li key={item.year} className="relative mb-7 last:mb-0">
+        {timeline.map((item) => (
+          <li key={item.id} className="relative mb-7 last:mb-0">
             {/* Punto en la línea */}
             <span className="absolute -left-[31px] top-1 grid h-4 w-4 place-items-center rounded-full border border-accent/60 bg-zinc-950">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             </span>
             <span className="hud-label text-[11px] text-accent/80">{item.year}</span>
             <h3 className="mt-1 font-title text-base font-bold">{item.title}</h3>
-            <p className="mt-1 text-sm leading-relaxed text-white/60">{item.text}</p>
+            {item.description && (
+              <p className="mt-1 text-sm leading-relaxed text-white/60">{item.description}</p>
+            )}
           </li>
         ))}
       </ol>
@@ -96,20 +75,20 @@ export default function NosotrosPage() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        {ADMINS.map((admin) => (
-          <Panel key={admin.name} className="lift" innerClassName="p-5">
+        {admins.map((admin) => (
+          <Panel key={admin.id} className="lift" innerClassName="p-5">
             <div className="flex items-center gap-4">
               {/* Avatar o inicial */}
-              {admin.avatar ? (
+              {admin.avatarUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  src={admin.avatar}
+                  src={admin.avatarUrl}
                   alt={admin.name}
                   className="h-14 w-14 shrink-0 rounded-full object-cover ring-1 ring-accent/30"
                 />
               ) : (
                 <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full border border-accent/30 bg-black/40 font-title text-xl font-bold text-accent/80">
-                  {admin.name.replace(/^\[EJEMPLO\]\s*/, "").charAt(0)}
+                  {admin.name.charAt(0)}
                 </span>
               )}
               <div className="min-w-0">
@@ -120,7 +99,7 @@ export default function NosotrosPage() {
                 </span>
               </div>
             </div>
-            <p className="mt-3 text-sm leading-relaxed text-white/60">{admin.bio}</p>
+            {admin.bio && <p className="mt-3 text-sm leading-relaxed text-white/60">{admin.bio}</p>}
           </Panel>
         ))}
       </div>

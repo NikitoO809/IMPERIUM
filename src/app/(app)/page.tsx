@@ -9,10 +9,14 @@ import { Magnetic } from "@/components/ui/Magnetic";
 import { DiscordIcon } from "@/components/icons";
 import { getDiscordStats, DISCORD_INVITE_URL } from "@/lib/discord";
 import { getUpcomingGames } from "@/lib/upcoming";
-import { PREREGISTER_GAMES } from "@/lib/preregister-games";
+import { getPreRegisterGames } from "@/lib/preregister-games";
 
 export default async function Inicio() {
-  const [discord, upcoming] = await Promise.all([getDiscordStats(), getUpcomingGames()]);
+  const [discord, upcoming, preregister] = await Promise.all([
+    getDiscordStats(),
+    getUpcomingGames(),
+    getPreRegisterGames(),
+  ]);
   const nf = new Intl.NumberFormat("es-ES");
 
   return (
@@ -88,7 +92,7 @@ export default async function Inicio() {
           />
         </Reveal>
         <Reveal className="mt-10">
-          <PreRegisterGames games={PREREGISTER_GAMES} />
+          <PreRegisterGames games={preregister} />
         </Reveal>
       </section>
     </main>

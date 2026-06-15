@@ -159,20 +159,6 @@ function BehemothDetail({
         </div>
       </Panel>
 
-      {/* Fuente */}
-      {block.sourceUrl && (
-        <p className="mt-3 text-right text-xs text-white/25">
-          Fuente:{" "}
-          <a
-            href={block.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition hover:text-accent"
-          >
-            callofdragonsguides.com
-          </a>
-        </p>
-      )}
     </div>
   );
 }

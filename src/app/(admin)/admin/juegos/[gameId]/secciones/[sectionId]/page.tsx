@@ -1,7 +1,8 @@
 // Panel de admin — gestionar una sección y sus bloques de contenido.
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { requireAdmin, getAdminSection } from "@/lib/admin";
+import { requireStaff, getAdminSection } from "@/lib/admin";
+import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { ImagePreview } from "@/components/admin/ImagePreview";
@@ -22,7 +23,8 @@ export default async function AdminSectionPage({
 }: {
   params: Promise<{ gameId: string; sectionId: string }>;
 }) {
-  await requireAdmin();
+  const { rank } = await requireStaff();
+  const userCanPublish = canPublish(rank);
   const { gameId, sectionId } = await params;
   const data = await getAdminSection(sectionId);
   if (!data) notFound();
@@ -89,20 +91,22 @@ export default async function AdminSectionPage({
             </button>
           </form>
 
-          {/* Zona peligrosa */}
-          <div className="mt-6 rounded-lg border border-red-500/20 bg-red-500/5 px-4 py-3">
-            <p className="mb-2 font-title text-[10px] font-bold text-red-300/80">Eliminar sección</p>
-            <form action={deleteSection}>
-              <input type="hidden" name="id" value={section.id} />
-              <input type="hidden" name="game_id" value={gameId} />
-              <ConfirmButton
-                message={`¿Eliminar "${section.title}" y todos sus bloques?`}
-                className={btnDanger}
-              >
-                <span className="hud-label text-[10px]">Eliminar</span>
-              </ConfirmButton>
-            </form>
-          </div>
+          {/* Zona peligrosa — solo admin/supremo */}
+          {userCanPublish && (
+            <div className="mt-6 rounded-lg border border-red-500/20 bg-red-500/5 px-4 py-3">
+              <p className="mb-2 font-title text-[10px] font-bold text-red-300/80">Eliminar sección</p>
+              <form action={deleteSection}>
+                <input type="hidden" name="id" value={section.id} />
+                <input type="hidden" name="game_id" value={gameId} />
+                <ConfirmButton
+                  message={`¿Eliminar "${section.title}" y todos sus bloques?`}
+                  className={btnDanger}
+                >
+                  <span className="hud-label text-[10px]">Eliminar</span>
+                </ConfirmButton>
+              </form>
+            </div>
+          )}
         </div>
 
         {/* Col der: bloques */}
@@ -142,7 +146,7 @@ export default async function AdminSectionPage({
                 </div>
 
                 {/* Form */}
-                <form action={updateBlock} className="grid gap-3 p-5 sm:grid-cols-2">
+                <form id={`block-${b.id}`} action={updateBlock} className="grid gap-3 p-5 sm:grid-cols-2">
                   <input type="hidden" name="id" value={b.id} />
                   <input type="hidden" name="order_index" value={b.orderIndex} />
                   <div className="sm:col-span-2">
@@ -162,22 +166,22 @@ export default async function AdminSectionPage({
                     <label className={labelCls}>Fuente</label>
                     <input name="source_url" defaultValue={b.sourceUrl ?? ""} className={inputCls} placeholder="https://..." />
                   </div>
-                  <div className="sm:col-span-2 flex flex-wrap items-center gap-4">
-                    <label className="flex cursor-pointer items-center gap-2 text-sm text-white/65">
-                      <input type="checkbox" name="is_verified" defaultChecked={b.isVerified} className="h-3.5 w-3.5 accent-[#22e0ff]" />
-                      Verificado
-                    </label>
-                    <button type="submit" className={btnPrimary}>
-                      <span className="hud-label text-[10px]">Guardar bloque</span>
-                    </button>
-                    <form action={deleteBlock}>
-                      <input type="hidden" name="id" value={b.id} />
-                      <ConfirmButton message={`¿Eliminar "${b.title}"?`} className={btnDanger}>
-                        <span className="hud-label text-[9px]">Eliminar</span>
-                      </ConfirmButton>
-                    </form>
-                  </div>
+                  <label className="sm:col-span-2 flex cursor-pointer items-center gap-2 text-sm text-white/65">
+                    <input type="checkbox" name="is_verified" defaultChecked={b.isVerified} className="h-3.5 w-3.5 accent-[#22e0ff]" />
+                    Verificado
+                  </label>
                 </form>
+                <div className="flex flex-wrap items-center gap-4 px-5 pb-5">
+                  <button type="submit" form={`block-${b.id}`} className={btnPrimary}>
+                    <span className="hud-label text-[10px]">Guardar bloque</span>
+                  </button>
+                  <form action={deleteBlock}>
+                    <input type="hidden" name="id" value={b.id} />
+                    <ConfirmButton message={`¿Eliminar "${b.title}"?`} className={btnDanger}>
+                      <span className="hud-label text-[9px]">Eliminar</span>
+                    </ConfirmButton>
+                  </form>
+                </div>
               </div>
             ))}
             {blocks.length === 0 && <p className="text-sm text-white/35">Sin bloques todavía.</p>}

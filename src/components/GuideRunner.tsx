@@ -265,20 +265,9 @@ export function GuideRunner({
                   </div>
                 )}
 
-                {/* Footer: fuente + anterior / siguiente */}
+                {/* Footer: navegación anterior / siguiente */}
                 <div className="mt-6 flex items-center justify-between gap-4">
-                  {activeStep.sourceUrl ? (
-                    <a
-                      href={activeStep.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[10px] text-accent/50 underline hover:text-accent transition-colors"
-                    >
-                      Fuente
-                    </a>
-                  ) : (
-                    <span />
-                  )}
+                  <span />
 
                   <div className="flex gap-2">
                     {activeIdx > 0 && (

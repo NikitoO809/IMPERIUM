@@ -1,14 +1,16 @@
 // Panel de admin — dashboard. Solo accesible para role = admin.
 import Link from "next/link";
-import { requireAdmin, getAdminGames, getAdminUsers } from "@/lib/admin";
+import { requireStaff, getAdminGames, getAdminUsers } from "@/lib/admin";
+import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { GamesTable } from "@/components/admin/GamesTable";
 import { labelCls, inputCls, textareaCls, btnPrimary } from "@/components/admin/styles";
 import { createGame } from "./actions";
 
 export default async function AdminPage() {
-  await requireAdmin();
+  const { rank } = await requireStaff();
   const [games, users] = await Promise.all([getAdminGames(), getAdminUsers()]);
+  const userCanPublish = canPublish(rank);
 
   const totalGuides = games.reduce((n, g) => n + g.guideCount, 0);
   const totalPublished = games.reduce((n, g) => n + g.publishedGuideCount, 0);
@@ -84,7 +86,7 @@ export default async function AdminPage() {
           </div>
 
           {/* Tabla de juegos con búsqueda + filtros */}
-          <GamesTable games={games} />
+          <GamesTable games={games} canPublish={userCanPublish} />
         </div>
 
         {/* ── Acceso rápido a miembros ── */}

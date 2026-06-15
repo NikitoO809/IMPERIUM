@@ -7,7 +7,7 @@ import { setGamePublished } from "@/app/(admin)/admin/actions";
 
 type Filter = "all" | "published" | "draft";
 
-export function GamesTable({ games }: { games: AdminGame[] }) {
+export function GamesTable({ games, canPublish }: { games: AdminGame[]; canPublish: boolean }) {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
 
@@ -127,18 +127,20 @@ export function GamesTable({ games }: { games: AdminGame[] }) {
                   </td>
                   <td className="px-4 py-3.5">
                     <div className="flex items-center justify-end gap-2">
-                      <form action={setGamePublished}>
-                        <input type="hidden" name="id" value={g.id} />
-                        <input type="hidden" name="value" value={String(!g.isPublished)} />
-                        <button
-                          type="submit"
-                          className="btn-hud bg-white/8 px-2.5 py-1.5 text-white/60 hover:text-white"
-                        >
-                          <span className="hud-label text-[9px]">
-                            {g.isPublished ? "Desp." : "Pub."}
-                          </span>
-                        </button>
-                      </form>
+                      {canPublish && (
+                        <form action={setGamePublished}>
+                          <input type="hidden" name="id" value={g.id} />
+                          <input type="hidden" name="value" value={String(!g.isPublished)} />
+                          <button
+                            type="submit"
+                            className="btn-hud bg-white/8 px-2.5 py-1.5 text-white/60 hover:text-white"
+                          >
+                            <span className="hud-label text-[9px]">
+                              {g.isPublished ? "Desp." : "Pub."}
+                            </span>
+                          </button>
+                        </form>
+                      )}
                       <Link
                         href={`/admin/juegos/${g.id}`}
                         className="btn-hud bg-brand px-2.5 py-1.5 text-white"

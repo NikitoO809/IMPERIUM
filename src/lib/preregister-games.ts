@@ -10,6 +10,10 @@
 // La fecha de lanzamiento de la web es poco fiable (contradice el estado), por
 // eso no se incluye: añade `releaseWindow` solo con un dato real y verificado.
 
+import "server-only";
+import { createClient } from "@/lib/supabase/server";
+import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
+
 export type PreRegisterGame = {
   key: string; // clave estable y única
   name: string;
@@ -31,7 +35,8 @@ export type PreRegisterGame = {
 const MMORPG = "https://www.mmorpg.com";
 const LOGO = "https://images.mmorpg.com/images/games/logos/32";
 
-export const PREREGISTER_GAMES: PreRegisterGame[] = [
+// Fallback si no hay base de datos / tabla vacía (mantiene la home funcionando).
+export const FALLBACK_PREREGISTER: PreRegisterGame[] = [
   {
     key: "chrono-odyssey",
     name: "Chrono Odyssey",
@@ -154,3 +159,69 @@ export const PREREGISTER_GAMES: PreRegisterGame[] = [
     website: "https://morefunstudios.com/",
   },
 ];
+
+// ── Lectura desde la base de datos (con fallback al array) ───────
+type PreRegRow = {
+  id: string;
+  key: string;
+  name: string;
+  genre: string | null;
+  status: string | null;
+  hype: number | null;
+  platforms: string[] | null;
+  developer: string | null;
+  publisher: string | null;
+  release_window: string | null;
+  blurb: string | null;
+  image: string | null;
+  info_url: string | null;
+  website: string | null;
+  prereg_url: string | null;
+  order_index: number;
+};
+
+function rowToGame(r: PreRegRow): PreRegisterGame {
+  return {
+    key: r.key,
+    name: r.name,
+    genre: r.genre ?? "",
+    status: r.status ?? "",
+    hype: r.hype ?? undefined,
+    platforms: r.platforms ?? undefined,
+    developer: r.developer ?? undefined,
+    publisher: r.publisher ?? undefined,
+    releaseWindow: r.release_window ?? undefined,
+    blurb: r.blurb ?? "",
+    image: r.image,
+    infoUrl: r.info_url ?? "",
+    website: r.website ?? undefined,
+    preRegisterUrl: r.prereg_url ?? undefined,
+  };
+}
+
+const PREREG_SELECT =
+  "id, key, name, genre, status, hype, platforms, developer, publisher, release_window, blurb, image, info_url, website, prereg_url, order_index";
+
+// Lista pública para la home (desde la tabla, con fallback al array).
+export async function getPreRegisterGames(): Promise<PreRegisterGame[]> {
+  if (!SUPABASE_CONFIGURED) return FALLBACK_PREREGISTER;
+  const supabase = await createClient();
+  const { data } = await supabase.from("preregister_games").select(PREREG_SELECT).order("order_index");
+  const rows = (data ?? []) as PreRegRow[];
+  if (rows.length === 0) return FALLBACK_PREREGISTER;
+  return rows.map(rowToGame);
+}
+
+// Para el panel: incluye id y orderIndex (para editar / reordenar).
+export type AdminPreRegisterGame = PreRegisterGame & { id: string; orderIndex: number };
+
+export async function getAdminPreRegisterGames(): Promise<AdminPreRegisterGame[]> {
+  if (!SUPABASE_CONFIGURED) return [];
+  const supabase = await createClient();
+  const { data } = await supabase.from("preregister_games").select(PREREG_SELECT).order("order_index");
+  return ((data ?? []) as PreRegRow[]).map((r) => ({
+    ...rowToGame(r),
+    id: r.id,
+    orderIndex: r.order_index,
+  }));
+}

@@ -278,16 +278,6 @@ export default async function HeroBuildPage({
           {builds.map((b) => (
             <BuildBlock key={b.id} build={b} />
           ))}
-          {builds[0]?.sourceUrl && (
-            <a
-              href={builds[0].sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[11px] text-white/30 hover:text-accent/60 transition text-right"
-            >
-              Fuente: allclash.com ↗
-            </a>
-          )}
         </div>
       )}
     </main>

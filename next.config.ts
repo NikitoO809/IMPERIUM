@@ -8,7 +8,21 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.allclash.com" },
       { protocol: "https", hostname: "cdn.cod.guide" },
       { protocol: "https", hostname: "callofdragonsguides.com" },
+      // Imágenes subidas por el staff a Supabase Storage (bucket público).
+      { protocol: "https", hostname: "fihjqermiqhuubwepfcc.supabase.co", pathname: "/storage/v1/object/public/**" },
     ],
+  },
+  // Permite que /sw.js (servido desde la raíz) controle el scope /admin.
+  async headers() {
+    return [
+      {
+        source: "/sw.js",
+        headers: [
+          { key: "Service-Worker-Allowed", value: "/admin" },
+          { key: "Cache-Control", value: "no-cache" },
+        ],
+      },
+    ];
   },
 };
 

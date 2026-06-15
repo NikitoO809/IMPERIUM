@@ -1,25 +1,65 @@
 // Capa de datos del PANEL DE ADMIN (lado servidor).
-// Lee TODO (incluido lo no publicado) porque el usuario es admin y las
-// políticas RLS (Fase 2/4) se lo permiten via is_admin().
+// Lee TODO (incluido lo no publicado) porque el usuario es staff y las
+// políticas RLS se lo permiten vía is_staff() / is_admin().
 import "server-only";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { type Rank, isStaff, canPublish } from "@/lib/ranks";
 
-// Comprueba que hay sesión y que el usuario es admin; si no, redirige a inicio.
-// Devuelve el id del admin.
-export async function requireAdmin(): Promise<string> {
+export type { Rank };
+
+export type StaffSession = { id: string; rank: Rank };
+
+// Lee la sesión actual y su rango (o null si no hay sesión / no es staff).
+async function getRank(): Promise<StaffSession | null> {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/");
+  if (!user) return null;
   const { data: profile } = await supabase
     .from("profiles")
     .select("role")
     .eq("id", user.id)
     .maybeSingle();
-  if (profile?.role !== "admin") redirect("/");
-  return user.id;
+  const rank = (profile?.role ?? "user") as Rank;
+  return { id: user.id, rank };
+}
+
+// Lee la sesión y su rango SIN redirigir (para el layout / sidebar).
+export async function getOptionalStaff(): Promise<StaffSession | null> {
+  const session = await getRank();
+  if (!session || !isStaff(session.rank)) return null;
+  return session;
+}
+
+// Exige sesión de STAFF (supremo/admin/moderador). Devuelve id + rango.
+// Si no hay sesión o es miembro normal, redirige a inicio.
+export async function requireStaff(): Promise<StaffSession> {
+  const session = await getRank();
+  if (!session || !isStaff(session.rank)) redirect("/");
+  return session;
+}
+
+// Exige rango con permiso de publicación (supremo/admin).
+export async function requirePublisher(): Promise<StaffSession> {
+  const session = await getRank();
+  if (!session || !canPublish(session.rank)) redirect("/");
+  return session;
+}
+
+// Exige rango Supremo (gestión de rangos del equipo).
+export async function requireSupremo(): Promise<StaffSession> {
+  const session = await getRank();
+  if (!session || session.rank !== "supremo") redirect("/");
+  return session;
+}
+
+// Compatibilidad: muchas páginas llaman `requireAdmin()` y usan el id.
+// Ahora deja entrar a todo el staff (la UI y las acciones afinan permisos).
+export async function requireAdmin(): Promise<string> {
+  const { id } = await requireStaff();
+  return id;
 }
 
 export type AdminGame = {

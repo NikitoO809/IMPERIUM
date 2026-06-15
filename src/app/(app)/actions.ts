@@ -12,7 +12,7 @@
 import { revalidatePath } from "next/cache";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
-import { UPCOMING_GAMES } from "@/lib/upcoming";
+import { getUpcomingGameList } from "@/lib/upcoming";
 import {
   sendFeedEmbed,
   buildScoreboardContent,
@@ -26,7 +26,8 @@ export type ToggleResult =
 
 // Suscribe o desuscribe al usuario actual del juego indicado.
 export async function toggleSubscription(gameKey: string): Promise<ToggleResult> {
-  const game = UPCOMING_GAMES.find((g) => g.key === gameKey);
+  const games = await getUpcomingGameList();
+  const game = games.find((g) => g.key === gameKey);
   if (!game) return { ok: false, error: "unknown_game" };
 
   const supabase = await createClient();
@@ -108,7 +109,8 @@ async function refreshScoreboard(
   counts?: Map<string, number>
 ): Promise<void> {
   const tally = counts ?? (await fetchCounts(supabase));
-  const content = buildScoreboardContent(tally);
+  const games = await getUpcomingGameList();
+  const content = buildScoreboardContent(tally, games);
 
   const { data: messageId } = await supabase.rpc("get_scoreboard_message_id");
   if (messageId) {

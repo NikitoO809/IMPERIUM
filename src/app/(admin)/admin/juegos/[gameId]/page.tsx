@@ -1,7 +1,8 @@
 // Panel de admin — gestionar un juego: datos, guías y secciones.
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { requireAdmin, getAdminGame, getAdminSections } from "@/lib/admin";
+import { requireStaff, getAdminGame, getAdminSections } from "@/lib/admin";
+import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
@@ -21,7 +22,8 @@ export default async function AdminGamePage({
 }: {
   params: Promise<{ gameId: string }>;
 }) {
-  await requireAdmin();
+  const { rank } = await requireStaff();
+  const userCanPublish = canPublish(rank);
   const { gameId } = await params;
   const [data, sections] = await Promise.all([getAdminGame(gameId), getAdminSections(gameId)]);
   if (!data) notFound();
@@ -137,13 +139,15 @@ export default async function AdminGamePage({
                         </td>
                         <td className="px-4 py-3 text-right">
                           <div className="flex items-center justify-end gap-2">
-                            <form action={setGuidePublished}>
-                              <input type="hidden" name="id" value={gd.id} />
-                              <input type="hidden" name="value" value={String(!gd.isPublished)} />
-                              <button type="submit" className="btn-hud bg-white/8 px-2 py-1 text-white/55 hover:text-white">
-                                <span className="hud-label text-[9px]">{gd.isPublished ? "Desp." : "Pub."}</span>
-                              </button>
-                            </form>
+                            {userCanPublish && (
+                              <form action={setGuidePublished}>
+                                <input type="hidden" name="id" value={gd.id} />
+                                <input type="hidden" name="value" value={String(!gd.isPublished)} />
+                                <button type="submit" className="btn-hud bg-white/8 px-2 py-1 text-white/55 hover:text-white">
+                                  <span className="hud-label text-[9px]">{gd.isPublished ? "Desp." : "Pub."}</span>
+                                </button>
+                              </form>
+                            )}
                             <Link href={`/admin/guias/${gd.id}`} className="btn-hud bg-brand px-2 py-1 text-white">
                               <span className="hud-label text-[9px]">Editar ▸</span>
                             </Link>
@@ -157,24 +161,26 @@ export default async function AdminGamePage({
             </div>
           </section>
 
-          {/* Zona peligrosa */}
-          <div className="rounded-lg border border-red-500/20 bg-red-500/5 px-5 py-4">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <p className="font-title text-xs font-bold text-red-300/80">Eliminar juego</p>
-                <p className="mt-0.5 text-[11px] text-white/35">Borra el juego y todo su contenido. Irreversible.</p>
+          {/* Zona peligrosa — solo admin/supremo pueden borrar el juego entero */}
+          {userCanPublish && (
+            <div className="rounded-lg border border-red-500/20 bg-red-500/5 px-5 py-4">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="font-title text-xs font-bold text-red-300/80">Eliminar juego</p>
+                  <p className="mt-0.5 text-[11px] text-white/35">Borra el juego y todo su contenido. Irreversible.</p>
+                </div>
+                <form action={deleteGame}>
+                  <input type="hidden" name="id" value={game.id} />
+                  <ConfirmButton
+                    message={`¿Eliminar "${game.name}" con todo su contenido?`}
+                    className={btnDanger}
+                  >
+                    <span className="hud-label text-[10px]">Eliminar</span>
+                  </ConfirmButton>
+                </form>
               </div>
-              <form action={deleteGame}>
-                <input type="hidden" name="id" value={game.id} />
-                <ConfirmButton
-                  message={`¿Eliminar "${game.name}" con todo su contenido?`}
-                  className={btnDanger}
-                >
-                  <span className="hud-label text-[10px]">Eliminar</span>
-                </ConfirmButton>
-              </form>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Col der: secciones */}

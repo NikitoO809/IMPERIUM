@@ -1,7 +1,8 @@
 // Panel de admin — gestionar una guía: portada, intro, pasos con ↑↓.
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { requireAdmin, getAdminGuide } from "@/lib/admin";
+import { requireStaff, getAdminGuide } from "@/lib/admin";
+import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { ImagePreview } from "@/components/admin/ImagePreview";
@@ -13,7 +14,8 @@ export default async function AdminGuidePage({
 }: {
   params: Promise<{ guideId: string }>;
 }) {
-  await requireAdmin();
+  const { rank } = await requireStaff();
+  const userCanPublish = canPublish(rank);
   const { guideId } = await params;
   const data = await getAdminGuide(guideId);
   if (!data) notFound();
@@ -101,20 +103,22 @@ export default async function AdminGuidePage({
             </button>
           </form>
 
-          {/* Zona peligrosa */}
-          <div className="mt-6 rounded-lg border border-red-500/20 bg-red-500/5 px-4 py-3">
-            <p className="mb-2 font-title text-[10px] font-bold text-red-300/80">Eliminar guía</p>
-            <form action={deleteGuide}>
-              <input type="hidden" name="id" value={guide.id} />
-              <input type="hidden" name="game_id" value={guide.gameId} />
-              <ConfirmButton
-                message={`¿Eliminar "${guide.title}" y todos sus pasos?`}
-                className={btnDanger}
-              >
-                <span className="hud-label text-[10px]">Eliminar guía</span>
-              </ConfirmButton>
-            </form>
-          </div>
+          {/* Zona peligrosa — solo admin/supremo */}
+          {userCanPublish && (
+            <div className="mt-6 rounded-lg border border-red-500/20 bg-red-500/5 px-4 py-3">
+              <p className="mb-2 font-title text-[10px] font-bold text-red-300/80">Eliminar guía</p>
+              <form action={deleteGuide}>
+                <input type="hidden" name="id" value={guide.id} />
+                <input type="hidden" name="game_id" value={guide.gameId} />
+                <ConfirmButton
+                  message={`¿Eliminar "${guide.title}" y todos sus pasos?`}
+                  className={btnDanger}
+                >
+                  <span className="hud-label text-[10px]">Eliminar guía</span>
+                </ConfirmButton>
+              </form>
+            </div>
+          )}
         </div>
 
         {/* Col der: pasos */}
@@ -161,7 +165,7 @@ export default async function AdminGuidePage({
                 </div>
 
                 {/* Formulario */}
-                <form action={updateStep} className="grid gap-3 p-5 sm:grid-cols-2">
+                <form id={`step-${s.id}`} action={updateStep} className="grid gap-3 p-5 sm:grid-cols-2">
                   <input type="hidden" name="id" value={s.id} />
                   <input type="hidden" name="order_index" value={s.orderIndex} />
 
@@ -182,22 +186,22 @@ export default async function AdminGuidePage({
                     <label className={labelCls}>Fuente</label>
                     <input name="source_url" defaultValue={s.sourceUrl ?? ""} className={inputCls} placeholder="https://..." />
                   </div>
-                  <div className="sm:col-span-2 flex flex-wrap items-center gap-4">
-                    <label className="flex cursor-pointer items-center gap-2 text-sm text-white/65">
-                      <input type="checkbox" name="is_verified" defaultChecked={s.isVerified} className="h-3.5 w-3.5 accent-[#22e0ff]" />
-                      Verificado
-                    </label>
-                    <button type="submit" className={btnPrimary}>
-                      <span className="hud-label text-[10px]">Guardar paso</span>
-                    </button>
-                    <form action={deleteStep}>
-                      <input type="hidden" name="id" value={s.id} />
-                      <ConfirmButton message={`¿Eliminar "${s.title}"?`} className={btnDanger}>
-                        <span className="hud-label text-[9px]">Eliminar</span>
-                      </ConfirmButton>
-                    </form>
-                  </div>
+                  <label className="sm:col-span-2 flex cursor-pointer items-center gap-2 text-sm text-white/65">
+                    <input type="checkbox" name="is_verified" defaultChecked={s.isVerified} className="h-3.5 w-3.5 accent-[#22e0ff]" />
+                    Verificado
+                  </label>
                 </form>
+                <div className="flex flex-wrap items-center gap-4 px-5 pb-5">
+                  <button type="submit" form={`step-${s.id}`} className={btnPrimary}>
+                    <span className="hud-label text-[10px]">Guardar paso</span>
+                  </button>
+                  <form action={deleteStep}>
+                    <input type="hidden" name="id" value={s.id} />
+                    <ConfirmButton message={`¿Eliminar "${s.title}"?`} className={btnDanger}>
+                      <span className="hud-label text-[9px]">Eliminar</span>
+                    </ConfirmButton>
+                  </form>
+                </div>
               </div>
             ))}
 

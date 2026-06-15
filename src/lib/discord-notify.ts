@@ -7,7 +7,7 @@
 // Todo es best-effort: si el webhook no está puesto o Discord falla, no rompe
 // la suscripción (que ya quedó guardada en la BD).
 import "server-only";
-import { UPCOMING_GAMES, type UpcomingGame } from "@/lib/upcoming";
+import { type UpcomingGame } from "@/lib/upcoming";
 
 const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL ?? "";
 
@@ -43,8 +43,13 @@ export async function sendFeedEmbed(
 }
 
 // ── TABLERO: texto con el total por juego ────────────────────
-export function buildScoreboardContent(counts: Map<string, number>): string {
-  const lines = UPCOMING_GAMES.map(
+// Recibe la lista de juegos (desde la tabla upcoming_games) para no depender
+// de datos en código.
+export function buildScoreboardContent(
+  counts: Map<string, number>,
+  games: UpcomingGame[]
+): string {
+  const lines = games.map(
     (g) => `${g.emoji} **${g.name}** — ${counts.get(g.key) ?? 0}`
   );
   return `📊 **Esperando por juego** · se actualiza solo\n\n${lines.join("\n")}`;
