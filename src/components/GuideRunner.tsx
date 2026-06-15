@@ -9,6 +9,7 @@ import { createClient } from "@/lib/supabase/client";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
 import { useUser } from "@/lib/use-user";
 import { Panel, XpBar } from "@/components/hud";
+import { RichText } from "@/components/RichText";
 import { LoginButton } from "@/components/auth/LoginButton";
 import { DiscordIcon } from "@/components/icons";
 
@@ -235,14 +236,8 @@ export function GuideRunner({
                   </button>
                 </div>
 
-                {/* Texto del paso */}
-                <div className="space-y-3">
-                  {activeStep.content.split("\n\n").map((para, i) => (
-                    <p key={i} className="text-sm leading-relaxed text-white/60">
-                      {para}
-                    </p>
-                  ))}
-                </div>
+                {/* Texto del paso (listas, tablas y saltos de línea con formato HUD) */}
+                <RichText content={activeStep.content} />
 
                 {/* Imágenes — object-contain para que nunca se recorten */}
                 {activeStep.images && activeStep.images.length > 0 && (
