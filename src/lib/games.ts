@@ -129,6 +129,7 @@ function demoTree(slug: string): GameRow | null {
     slug: g.slug,
     name: g.name,
     description: g.description,
+    cover_image: null,
     guides: g.guides.map((gd) => ({
       id: gd.slug,
       slug: gd.slug,
