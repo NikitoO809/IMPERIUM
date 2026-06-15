@@ -5,6 +5,7 @@ import { getAdminUpcomingGames } from "@/lib/upcoming";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { ImagePreview } from "@/components/admin/ImagePreview";
+import { EmojiPicker } from "@/components/admin/EmojiPicker";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
 import {
   createUpcomingGame,
@@ -110,7 +111,7 @@ export default async function AdminProximosPage() {
                 </div>
                 <div>
                   <label className={labelCls}>Emoji (círculo de color en Discord)</label>
-                  <input name="emoji" defaultValue={g.emoji} className={inputCls} placeholder="🟣" />
+                  <EmojiPicker name="emoji" defaultValue={g.emoji} />
                 </div>
                 <div>
                   <label className={labelCls}>Color del aviso</label>
@@ -168,7 +169,7 @@ export default async function AdminProximosPage() {
               </div>
               <div>
                 <label className={labelCls}>Emoji</label>
-                <input name="emoji" defaultValue="🟣" className={inputCls} />
+                <EmojiPicker name="emoji" defaultValue="🟣" />
               </div>
               <div>
                 <label className={labelCls}>Color del aviso</label>

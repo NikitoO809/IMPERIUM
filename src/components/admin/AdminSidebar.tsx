@@ -2,19 +2,28 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { type Rank, RANK_LABEL, RANK_BADGE, canPublish } from "@/lib/ranks";
+import { type Rank, RANK_LABEL, RANK_BADGE, canPublish, isSupremo } from "@/lib/ranks";
 
-type NavItem = { href: string; label: string; icon: string; exact: boolean; publishersOnly?: boolean };
+type NavItem = {
+  href: string;
+  label: string;
+  icon: string;
+  exact: boolean;
+  publishersOnly?: boolean;
+  supremoOnly?: boolean;
+  badgeKey?: "pending";
+};
 
 const NAV: NavItem[] = [
   { href: "/admin", label: "Panel", icon: "▣", exact: true },
+  { href: "/admin/aprobaciones", label: "Aprobaciones", icon: "✓", exact: false, supremoOnly: true, badgeKey: "pending" },
   { href: "/admin/proximos", label: "Próximos juegos", icon: "◆", exact: false, publishersOnly: true },
   { href: "/admin/horizonte", label: "MMORPG horizonte", icon: "✧", exact: false, publishersOnly: true },
   { href: "/admin/nosotros", label: "Nosotros", icon: "✦", exact: false, publishersOnly: true },
   { href: "/admin/miembros", label: "Miembros", icon: "◉", exact: false },
 ];
 
-export function AdminSidebar({ rank }: { rank: Rank }) {
+export function AdminSidebar({ rank, pendingCount = 0 }: { rank: Rank; pendingCount?: number }) {
   const path = usePathname();
 
   function isActive(href: string, exact: boolean) {
@@ -22,8 +31,12 @@ export function AdminSidebar({ rank }: { rank: Rank }) {
     return path.startsWith(href);
   }
 
-  // Filtra la navegación según el rango (Nosotros solo para admin/supremo).
-  const items = NAV.filter((item) => !item.publishersOnly || canPublish(rank));
+  // Filtra la navegación según el rango.
+  const items = NAV.filter((item) => {
+    if (item.supremoOnly && !isSupremo(rank)) return false;
+    if (item.publishersOnly && !canPublish(rank)) return false;
+    return true;
+  });
 
   return (
     <aside className="relative z-10 flex w-52 shrink-0 flex-col border-r border-white/10 bg-black/55 backdrop-blur-sm">
@@ -63,7 +76,12 @@ export function AdminSidebar({ rank }: { rank: Rank }) {
                   }`}
                 >
                   <span className="text-[11px]">{item.icon}</span>
-                  <span className="font-hud">{item.label}</span>
+                  <span className="flex-1 font-hud">{item.label}</span>
+                  {item.badgeKey === "pending" && pendingCount > 0 && (
+                    <span className="grid h-5 min-w-5 place-items-center rounded-full bg-amber-400 px-1.5 font-title text-[10px] font-bold text-black">
+                      {pendingCount}
+                    </span>
+                  )}
                 </Link>
               </li>
             );

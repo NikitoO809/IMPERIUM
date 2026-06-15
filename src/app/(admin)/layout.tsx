@@ -3,7 +3,7 @@
 import type { Metadata, Viewport } from "next";
 import { AdminSidebar } from "@/components/admin/AdminSidebar";
 import { PwaRegister } from "@/components/admin/PwaRegister";
-import { getOptionalStaff } from "@/lib/admin";
+import { getOptionalStaff, getPendingChangesCount } from "@/lib/admin";
 
 export const metadata: Metadata = {
   title: "IMPERIUM Admin",
@@ -24,6 +24,8 @@ export default async function AdminGroupLayout({ children }: { children: React.R
   const session = await getOptionalStaff();
   // Rango por defecto 'user' si no hay sesión staff (la página hará el redirect).
   const rank = session?.rank ?? "user";
+  // Solo el Supremo ve el contador de cambios pendientes.
+  const pendingCount = rank === "supremo" ? await getPendingChangesCount() : 0;
 
   return (
     <div className="relative flex min-h-screen">
@@ -36,10 +38,16 @@ export default async function AdminGroupLayout({ children }: { children: React.R
       <PwaRegister />
 
       {/* Sidebar fija a la izquierda */}
-      <AdminSidebar rank={rank} />
+      <AdminSidebar rank={rank} pendingCount={pendingCount} />
 
       {/* Contenido principal */}
       <div className="relative flex min-w-0 flex-1 flex-col overflow-auto">
+        {/* Aviso para admins / moderadores: sus cambios pasan por aprobación */}
+        {(rank === "admin" || rank === "moderador") && (
+          <div className="border-b border-amber-400/20 bg-amber-400/10 px-8 py-2 text-center font-hud text-[11px] text-amber-200/90">
+            Tus cambios se envían al Supremo para aprobación antes de aplicarse.
+          </div>
+        )}
         {children}
       </div>
     </div>

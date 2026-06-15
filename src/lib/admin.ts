@@ -344,3 +344,49 @@ export async function getAdminSection(sectionId: string): Promise<{
       })),
   };
 }
+
+// ── Cola de aprobación (cambios pendientes) ──────────────────────
+
+export type PendingChange = {
+  id: string;
+  label: string;
+  authorName: string | null;
+  createdAt: string;
+};
+
+// Cambios pendientes de revisión. El Supremo ve todos; un autor ve los suyos
+// (la RLS lo decide). Resuelve el nombre del autor con una segunda consulta
+// (change_requests.author_id apunta a auth.users, no a profiles).
+export async function getPendingChanges(): Promise<PendingChange[]> {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("change_requests")
+    .select("id, label, created_at, author_id")
+    .eq("status", "pending")
+    .order("created_at", { ascending: false });
+  const rows = (data ?? []) as { id: string; label: string; created_at: string; author_id: string }[];
+  if (rows.length === 0) return [];
+
+  const authorIds = [...new Set(rows.map((r) => r.author_id))];
+  const { data: profs } = await supabase.from("profiles").select("id, username").in("id", authorIds);
+  const nameMap = new Map<string, string | null>(
+    ((profs ?? []) as { id: string; username: string | null }[]).map((p) => [p.id, p.username])
+  );
+
+  return rows.map((r) => ({
+    id: r.id,
+    label: r.label,
+    authorName: nameMap.get(r.author_id) ?? null,
+    createdAt: r.created_at,
+  }));
+}
+
+// Nº de cambios pendientes (para el badge del menú). 0 si la tabla no aplica.
+export async function getPendingChangesCount(): Promise<number> {
+  const supabase = await createClient();
+  const { count } = await supabase
+    .from("change_requests")
+    .select("id", { count: "exact", head: true })
+    .eq("status", "pending");
+  return count ?? 0;
+}
