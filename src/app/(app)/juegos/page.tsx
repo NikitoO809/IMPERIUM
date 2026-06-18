@@ -1,9 +1,17 @@
 // Sección Juegos — grid para elegir juego (lee de la base de datos).
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getCatalog, UPCOMING_PLACEHOLDERS } from "@/lib/games";
 import { Panel, HudLabel, XpBar } from "@/components/hud";
 import { LockIcon } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "Juegos",
+  description:
+    "Catálogo de juegos de IMPERIUM. Cada juego reúne sus guías interactivas, builds y herramientas.",
+  alternates: { canonical: "/juegos" },
+};
 
 export default async function JuegosPage() {
   const games = await getCatalog();

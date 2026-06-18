@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, JetBrains_Mono } from "next/font/google";
+import { siteUrl } from "@/lib/seo";
 import "./globals.css";
 
 // Display + cuerpo: grotesca premium (sistema neutro tipo Geist/Outfit).
@@ -16,14 +17,6 @@ const mono = JetBrains_Mono({
   variable: "--font-mono-imperium",
   subsets: ["latin"],
 });
-
-// URL pública del sitio. En Vercel se detecta sola (VERCEL_PROJECT_PRODUCTION_URL);
-// si tienes dominio propio, ponlo en NEXT_PUBLIC_SITE_URL.
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
 
 const SHARE_TITLE = "IMPERIUM — Tu comunidad de juego";
 const SHARE_DESC = "Guías, builds y asistente IA para tus juegos. Únete a la comunidad.";

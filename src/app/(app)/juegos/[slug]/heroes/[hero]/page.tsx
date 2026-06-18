@@ -8,6 +8,8 @@ import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
 import { getGameMeta } from "@/lib/games";
 import { getHeroesByGame } from "@/lib/heroes";
 import { HudLabel, Panel } from "@/components/hud";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo";
 import type { Hero, HeroBuild } from "@/lib/heroes";
 
 const CLASS_ES: Record<string, string> = {
@@ -222,6 +224,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/juegos/${slug}/heroes/${heroSlug}` },
     openGraph: {
       title,
       description,
@@ -249,6 +252,15 @@ export default async function HeroBuildPage({
 
   return (
     <main className="mx-auto max-w-4xl px-4 pt-12 pb-20">
+      <JsonLd
+        schema={breadcrumbSchema([
+          { name: "Inicio", path: "/" },
+          { name: "Juegos", path: "/juegos" },
+          { name: game.name, path: `/juegos/${game.slug}` },
+          { name: "Héroes", path: `/juegos/${game.slug}/heroes` },
+          { name: hero.name, path: `/juegos/${game.slug}/heroes/${heroSlug}` },
+        ])}
+      />
       {/* Migas */}
       <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>

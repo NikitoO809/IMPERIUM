@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Comunidad",
   description:
     "Las mejores hazañas de la comunidad IMPERIUM: capturas, vídeos y momentazos en los juegos que jugamos.",
+  alternates: { canonical: "/comunidad" },
 };
 
 export default async function ComunidadPage() {

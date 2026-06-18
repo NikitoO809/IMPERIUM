@@ -10,6 +10,14 @@ import { DiscordIcon } from "@/components/icons";
 import { getDiscordStats, DISCORD_INVITE_URL } from "@/lib/discord";
 import { getUpcomingGames } from "@/lib/upcoming";
 import { getPreRegisterGames } from "@/lib/preregister-games";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/seo";
+
+// La home es la portada de la comunidad: declaramos la marca (Organization) y el
+// sitio (WebSite) como datos estructurados, y fijamos su URL canónica.
+export const metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default async function Inicio() {
   const [discord, upcoming, preregister] = await Promise.all([
@@ -21,6 +29,7 @@ export default async function Inicio() {
 
   return (
     <main className="relative">
+      <JsonLd schema={[organizationSchema(), websiteSchema()]} />
       {/* ───── Hero (isla cliente) ───── */}
       <HomeHero
         members={discord ? nf.format(discord.memberCount) : "—"}

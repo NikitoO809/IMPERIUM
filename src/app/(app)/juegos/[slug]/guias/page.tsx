@@ -1,10 +1,36 @@
 // Sección Guías del juego: grid de tarjetas (2 col desktop).
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getGuidesForGame } from "@/lib/games";
+import { getGuidesForGame, getGameMeta } from "@/lib/games";
 import { Panel, HudLabel, XpBar } from "@/components/hud";
 import { BookIcon } from "@/components/icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo";
+
+// Metadata SEO de la lista de guías (reutiliza getGameMeta; Next deduplica el fetch).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const game = await getGameMeta(slug);
+  if (!game) return { title: "Guías" };
+  const title = `Guías — ${game.name}`;
+  const description = `Todas las guías interactivas de ${game.name} paso a paso en IMPERIUM.`;
+  return {
+    title,
+    description,
+    alternates: { canonical: `/juegos/${slug}/guias` },
+    openGraph: {
+      title,
+      description,
+      ...(game.coverImage ? { images: [{ url: game.coverImage }] } : {}),
+    },
+  };
+}
 
 export default async function GuiasSection({
   params,
@@ -18,6 +44,14 @@ export default async function GuiasSection({
 
   return (
     <main className="mx-auto max-w-5xl px-4 pt-12 pb-16">
+      <JsonLd
+        schema={breadcrumbSchema([
+          { name: "Inicio", path: "/" },
+          { name: "Juegos", path: "/juegos" },
+          { name: game.name, path: `/juegos/${game.slug}` },
+          { name: "Guías", path: `/juegos/${game.slug}/guias` },
+        ])}
+      />
       {/* Breadcrumb */}
       <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>

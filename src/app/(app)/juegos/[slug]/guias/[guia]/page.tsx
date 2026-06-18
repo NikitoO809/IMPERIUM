@@ -8,6 +8,8 @@ import { HudLabel, Panel } from "@/components/hud";
 import { GuideRunner } from "@/components/GuideRunner";
 import { ImageZoom } from "@/components/ImageZoom";
 import { TalentBuildsViewer } from "@/components/TalentBuildsViewer";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema, articleSchema } from "@/lib/seo";
 
 // Metadata SEO por guía (reutiliza getGuide; Next deduplica el fetch).
 export async function generateMetadata({
@@ -25,6 +27,7 @@ export async function generateMetadata({
   return {
     title: guide.title,
     description,
+    alternates: { canonical: `/juegos/${slug}/guias/${guia}` },
     openGraph: {
       title: guide.title,
       description,
@@ -43,8 +46,25 @@ export default async function GuidePage({
   if (!data) notFound();
   const { meta: game, guide, completedStepIds } = data;
 
+  // Datos estructurados: migas de pan + ficha de artículo de la guía.
+  const description =
+    guide.description || `Guía de ${game.name}: ${guide.title}. Paso a paso en IMPERIUM.`;
+  const breadcrumb = breadcrumbSchema([
+    { name: "Inicio", path: "/" },
+    { name: game.name, path: `/juegos/${game.slug}` },
+    { name: "Guías", path: `/juegos/${game.slug}/guias` },
+    { name: guide.title, path: `/juegos/${game.slug}/guias/${guide.slug}` },
+  ]);
+  const article = articleSchema({
+    title: guide.title,
+    description,
+    path: `/juegos/${game.slug}/guias/${guide.slug}`,
+    image: guide.introImages[0],
+  });
+
   return (
     <main className="mx-auto max-w-5xl px-4 pt-12 pb-4">
+      <JsonLd schema={[breadcrumb, article]} />
       <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>
         <span>/</span>

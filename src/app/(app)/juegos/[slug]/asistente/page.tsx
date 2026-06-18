@@ -1,6 +1,7 @@
 // Página del ASISTENTE IA de un juego. Es pública (escaparate): todo el mundo
 // la ve, pero solo Tester+ logueados pueden USARLA. Ruta estática → Next la
 // prioriza sobre la ruta dinámica [seccion].
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGameMeta } from "@/lib/games";
@@ -17,6 +18,22 @@ import {
   getExampleQuestions,
   getSampleExchange,
 } from "@/lib/assistant";
+
+// El asistente es una herramienta interactiva (no contenido para buscar): la
+// marcamos como noindex para no gastar presupuesto de rastreo en ella, pero
+// dejamos que Google siga sus enlaces (follow).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const game = await getGameMeta(slug);
+  return {
+    title: game ? `Asistente IA — ${game.name}` : "Asistente IA",
+    robots: { index: false, follow: true },
+  };
+}
 
 export default async function GameAssistantPage({
   params,

@@ -4,13 +4,7 @@
 import type { MetadataRoute } from "next";
 import { getCatalog, getGuidesForGame } from "@/lib/games";
 import { getHubSections } from "@/lib/sections";
-
-// URL pública del sitio (misma lógica que layout.tsx).
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
+import { siteUrl } from "@/lib/seo";
 
 // Secciones que tienen su propia ruta (no van por la ruta genérica [seccion]).
 const SPECIAL_SECTIONS = new Set(["guias", "heroes"]);

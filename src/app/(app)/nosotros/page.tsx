@@ -10,6 +10,7 @@ import { getAboutContent, type TimelineItem, type AdminMember } from "@/lib/abou
 export const metadata = {
   title: "Nosotros — IMPERIUM",
   description: "Quiénes somos, nuestra historia y el equipo que administra IMPERIUM.",
+  alternates: { canonical: "/nosotros" },
 };
 
 // ── Fallbacks (se usan solo si no hay contenido en la base de datos) ──

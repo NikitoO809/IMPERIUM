@@ -10,6 +10,8 @@ import { GAME_SECTIONS } from "@/lib/demo-data";
 import { getGameMeta } from "@/lib/games";
 import { getSectionContent } from "@/lib/sections";
 import { HudLabel } from "@/components/hud";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo";
 import { SectionContent } from "@/components/SectionContent";
 import { ArtifactosViewer } from "@/components/ArtifactosViewer";
 import { BehemothsViewer } from "@/components/BehemothsViewer";
@@ -40,6 +42,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/juegos/${slug}/${seccion}` },
     openGraph: {
       title,
       description,
@@ -103,6 +106,14 @@ export default async function GameSectionPage({
 
   return (
     <main className={`mx-auto px-4 pt-12 pb-16 ${widthClass}`}>
+      <JsonLd
+        schema={breadcrumbSchema([
+          { name: "Inicio", path: "/" },
+          { name: "Juegos", path: "/juegos" },
+          { name: game.name, path: `/juegos/${game.slug}` },
+          { name: sectionLabel, path: `/juegos/${game.slug}/${seccion}` },
+        ])}
+      />
       <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>
         <span>/</span>

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Salón de la Fama",
   description:
     "La élite de la comunidad IMPERIUM. Los jugadores más destacados y sus hazañas.",
+  alternates: { canonical: "/fama" },
 };
 
 export default async function FamaPage() {

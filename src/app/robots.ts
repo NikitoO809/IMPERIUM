@@ -1,12 +1,7 @@
 // robots.txt para buscadores: permite todo el sitio público, bloquea /admin y
 // apunta al sitemap. La URL base usa la misma lógica que layout.tsx.
 import type { MetadataRoute } from "next";
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
+import { siteUrl } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
   return {

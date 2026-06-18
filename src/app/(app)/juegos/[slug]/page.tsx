@@ -7,6 +7,8 @@ import { GAME_SECTIONS } from "@/lib/demo-data";
 import { getGameMeta } from "@/lib/games";
 import { getHubSections } from "@/lib/sections";
 import { getAssistantIdentity } from "@/lib/assistant";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo";
 import { Panel, HudLabel } from "@/components/hud";
 import {
   BookIcon,
@@ -79,6 +81,7 @@ export async function generateMetadata({
   return {
     title: game.name,
     description,
+    alternates: { canonical: `/juegos/${slug}` },
     openGraph: {
       title: game.name,
       description,
@@ -102,6 +105,13 @@ export default async function GameHub({
 
   return (
     <main className="mx-auto max-w-5xl px-4 pt-12 pb-16">
+      <JsonLd
+        schema={breadcrumbSchema([
+          { name: "Inicio", path: "/" },
+          { name: "Juegos", path: "/juegos" },
+          { name: game.name, path: `/juegos/${game.slug}` },
+        ])}
+      />
       {/* migas de pan */}
       <div className="mb-6 flex items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>
