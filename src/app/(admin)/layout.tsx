@@ -1,8 +1,10 @@
 // Layout exclusivo del panel de administración.
 // No usa el header/footer del sitio público — tiene su propia estructura con sidebar.
 import type { Metadata, Viewport } from "next";
+import { cookies } from "next/headers";
 import { AdminSidebar } from "@/components/admin/AdminSidebar";
 import { PwaRegister } from "@/components/admin/PwaRegister";
+import { AdminToast } from "@/components/admin/AdminToast";
 import { getOptionalStaff, getPendingChangesCount } from "@/lib/admin";
 
 export const metadata: Metadata = {
@@ -27,6 +29,17 @@ export default async function AdminGroupLayout({ children }: { children: React.R
   // Solo el Supremo ve el contador de cambios pendientes.
   const pendingCount = rank === "supremo" ? await getPendingChangesCount() : 0;
 
+  // Aviso "flash" tras un guardado (lo deja el server action en una cookie).
+  let flash: { message: string; kind: "ok" | "pending"; t: number } | null = null;
+  const flashRaw = (await cookies()).get("admin_flash")?.value;
+  if (flashRaw) {
+    try {
+      flash = JSON.parse(flashRaw);
+    } catch {
+      flash = null;
+    }
+  }
+
   return (
     <div className="relative flex min-h-screen">
       {/* Fondos HUD (mismo sistema que el sitio público) */}
@@ -36,6 +49,13 @@ export default async function AdminGroupLayout({ children }: { children: React.R
 
       {/* Registra el service worker (PWA) solo dentro del admin */}
       <PwaRegister />
+
+      {/* Aviso flotante tras guardar / aprobar / rechazar */}
+      <AdminToast
+        token={String(flash?.t ?? "")}
+        message={flash?.message ?? ""}
+        kind={flash?.kind ?? "ok"}
+      />
 
       {/* Sidebar fija a la izquierda */}
       <AdminSidebar rank={rank} pendingCount={pendingCount} />

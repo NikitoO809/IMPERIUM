@@ -10,6 +10,7 @@
 // executor) o rechaza (descarta). Las políticas RLS/triggers refuerzan todo.
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
 
 type DB = Awaited<ReturnType<typeof createClient>>;
@@ -89,6 +90,20 @@ function revalidateHorizon() {
 function revalidateCommunity() {
   revalidatePath("/admin/comunidad");
   revalidatePath("/comunidad");
+}
+
+// Deja un "aviso flash" para que el panel muestre un toast tras guardar.
+// Va en una cookie corta (no httpOnly → el toast la borra al mostrarse). El
+// campo `t` la hace única en cada guardado para que el aviso reaparezca aunque
+// el texto se repita. Next devuelve la UI ya con la cookie en el mismo viaje.
+async function setFlash(message: string, kind: "ok" | "pending" = "ok") {
+  const store = await cookies();
+  store.set("admin_flash", JSON.stringify({ message, kind, t: Date.now() }), {
+    path: "/",
+    maxAge: 30,
+    httpOnly: false,
+    sameSite: "lax",
+  });
 }
 
 // FormData <-> JSON (para guardar el cambio pendiente y re-ejecutarlo al aprobar).
@@ -731,6 +746,7 @@ async function gate(
   }
   if (ctx.rank === "supremo") {
     await EXECUTORS[key](fd, ctx.supabase);
+    await setFlash("Cambios guardados", "ok");
     return { executed: true };
   }
   // Admin / Moderador → queda pendiente de aprobación del Supremo.
@@ -742,6 +758,7 @@ async function gate(
   });
   if (error) throw new Error(error.message);
   revalidatePath("/admin", "layout");
+  await setFlash("Enviado al Supremo para aprobación", "pending");
   return { executed: false };
 }
 
@@ -948,6 +965,7 @@ export async function approveChange(fd: FormData) {
     .update({ status: "approved", reviewed_at: new Date().toISOString(), reviewer_id: ctx.userId })
     .eq("id", id);
   revalidatePath("/admin", "layout");
+  await setFlash("Cambio aprobado y aplicado", "ok");
 }
 
 export async function rejectChange(fd: FormData) {
@@ -958,6 +976,7 @@ export async function rejectChange(fd: FormData) {
     .eq("id", str(fd, "id"));
   if (error) throw new Error(error.message);
   revalidatePath("/admin", "layout");
+  await setFlash("Cambio rechazado", "ok");
 }
 
 // ── Usuarios (rangos) — solo el Supremo, directo (no pasa por la cola) ──
@@ -973,4 +992,5 @@ export async function setUserRole(fd: FormData) {
   const { error } = await ctx.supabase.from("profiles").update({ role }).eq("id", targetId);
   if (error) throw new Error(error.message);
   revalidatePath("/admin", "layout");
+  await setFlash("Rango actualizado", "ok");
 }
