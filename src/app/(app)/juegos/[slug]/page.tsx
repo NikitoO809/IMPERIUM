@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { GAME_SECTIONS } from "@/lib/demo-data";
 import { getGameMeta } from "@/lib/games";
 import { getHubSections } from "@/lib/sections";
+import { getAssistantIdentity } from "@/lib/assistant";
 import { Panel, HudLabel } from "@/components/hud";
 import {
   BookIcon,
@@ -75,6 +76,7 @@ export default async function GameHub({
 
   const hubSections = await getHubSections(slug);
   const covers = SECTION_COVERS[slug] ?? {};
+  const assistant = getAssistantIdentity(slug, game.name);
 
   return (
     <main className="mx-auto max-w-5xl px-4 pt-12 pb-16">
@@ -100,6 +102,34 @@ export default async function GameHub({
           {game.rank}
         </span>
       </div>
+
+      {/* Asistente IA — escaparate destacado */}
+      <Link href={`/juegos/${game.slug}/asistente`} className="mt-8 block">
+        <Panel corners className="group sweep lift">
+          <div className="panel-inner flex items-center gap-4 p-5">
+            <span className="hex grid h-14 w-14 shrink-0 place-items-center bg-gradient-to-br from-brand to-accent/70 font-title text-2xl font-extrabold text-black">
+              ◆
+            </span>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <h3 className="font-title text-lg font-bold group-hover:text-accent transition-colors">
+                  {assistant.name} · Asistente IA
+                </h3>
+                <span className="hud-label rounded border border-accent/30 bg-accent/10 px-1.5 py-0.5 text-[8px] text-accent">
+                  NUEVO
+                </span>
+              </div>
+              <p className="mt-1 text-xs leading-relaxed text-white/55">
+                Pregúntale lo que quieras sobre {game.name}: builds, héroes, eventos, estrategias…
+                Sabe de todas las guías y responde al instante.
+              </p>
+            </div>
+            <span className="hidden shrink-0 font-hud text-sm font-semibold text-accent/80 group-hover:text-accent transition-colors sm:inline">
+              Probar ▸
+            </span>
+          </div>
+        </Panel>
+      </Link>
 
       {/* Paneles de secciones */}
       <div className="mb-6 mt-10 flex items-center gap-3">

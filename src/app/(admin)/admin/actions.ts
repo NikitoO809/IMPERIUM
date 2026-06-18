@@ -961,7 +961,7 @@ export async function rejectChange(fd: FormData) {
 }
 
 // ── Usuarios (rangos) — solo el Supremo, directo (no pasa por la cola) ──
-const ASSIGNABLE_RANKS = ["admin", "moderador", "user"];
+const ASSIGNABLE_RANKS = ["admin", "moderador", "tester", "user"];
 
 export async function setUserRole(fd: FormData) {
   const ctx = await getStaffClient();

@@ -129,6 +129,7 @@ export default async function AdminMiembrosPage() {
             <span className="text-amber-300/70">♛ Supremo</span>: control total ·{" "}
             <span className="text-accent/70">Admin</span>: crea, edita y publica ·{" "}
             <span className="text-emerald-300/70">Moderador</span>: crea y edita (no publica) ·{" "}
+            <span className="text-sky-300/70">Tester</span>: usa el asistente IA (sin panel) ·{" "}
             <span className="text-white/50">Miembro</span>: sin acceso al panel
           </p>
         )}
