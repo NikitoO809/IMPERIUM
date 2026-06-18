@@ -138,13 +138,26 @@ export default async function AdminGuidePage({
 
           <div className="space-y-3">
             {steps.map((s, idx) => (
-              <div
+              <details
                 key={s.id}
-                className="overflow-hidden rounded-lg border border-white/10 bg-black/30"
+                className="group overflow-hidden rounded-lg border border-white/10 bg-black/30"
               >
-                {/* Cabecera del paso */}
-                <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.02] px-5 py-2.5">
-                  <div className="flex gap-1">
+                {/* Cabecera del paso (clic para abrir / cerrar) */}
+                <summary className="flex cursor-pointer list-none items-center gap-3 px-5 py-3 transition-colors hover:bg-white/[0.02]">
+                  <span className="font-hud text-[10px] text-accent/60">
+                    PASO {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <span className="flex-1 truncate font-hud text-sm text-white/70">{s.title}</span>
+                  {s.isVerified && (
+                    <span className="font-hud text-[9px] text-emerald-400/70">✓ verificado</span>
+                  )}
+                  <span className="text-white/30 transition-transform group-open:rotate-180">▾</span>
+                </summary>
+
+                <div className="border-t border-white/8 px-5 pt-4">
+                  {/* Reordenar */}
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="font-hud text-[9px] tracking-widest text-white/25">ORDEN</span>
                     {idx > 0 && (
                       <form action={moveStep}>
                         <input type="hidden" name="id" value={s.id} />
@@ -162,17 +175,9 @@ export default async function AdminGuidePage({
                       </form>
                     )}
                   </div>
-                  <span className="font-hud text-[10px] text-accent/60">
-                    PASO {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <span className="flex-1 truncate font-hud text-sm text-white/70">{s.title}</span>
-                  {s.isVerified && (
-                    <span className="font-hud text-[9px] text-emerald-400/70">✓ verificado</span>
-                  )}
-                </div>
 
                 {/* Formulario */}
-                <form id={`step-${s.id}`} action={updateStep} className="grid gap-3 p-5 sm:grid-cols-2">
+                <form id={`step-${s.id}`} action={updateStep} className="grid gap-3 sm:grid-cols-2">
                   <input type="hidden" name="id" value={s.id} />
                   <input type="hidden" name="order_index" value={s.orderIndex} />
 
@@ -199,7 +204,7 @@ export default async function AdminGuidePage({
                     Verificado
                   </label>
                 </form>
-                <div className="flex flex-wrap items-center gap-4 px-5 pb-5">
+                <div className="flex flex-wrap items-center gap-4 pb-5 pt-1">
                   <button type="submit" form={`step-${s.id}`} className={btnPrimary}>
                     <span className="hud-label text-[10px]">Guardar paso</span>
                   </button>
@@ -211,7 +216,8 @@ export default async function AdminGuidePage({
                     </ConfirmButton>
                   </form>
                 </div>
-              </div>
+                </div>
+              </details>
             ))}
 
             {steps.length === 0 && (

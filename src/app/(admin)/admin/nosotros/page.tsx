@@ -107,9 +107,15 @@ export default async function AdminNosotrosPage() {
 
             <div className="space-y-3">
               {timeline.map((item, idx) => (
-                <div key={item.id} className="overflow-hidden rounded-lg border border-white/10 bg-black/30">
-                  <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.02] px-4 py-2">
-                    <div className="flex gap-1">
+                <details key={item.id} className="group overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                  <summary className="flex cursor-pointer list-none items-center gap-3 px-4 py-2.5 transition-colors hover:bg-white/[0.02]">
+                    <span className="font-hud text-[10px] text-accent/60">{item.year}</span>
+                    <span className="flex-1 truncate font-hud text-sm text-white/70">{item.title}</span>
+                    <span className="text-white/30 transition-transform group-open:rotate-180">▾</span>
+                  </summary>
+                  <div className="border-t border-white/8 px-4 pt-3">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="font-hud text-[9px] tracking-widest text-white/25">ORDEN</span>
                       {idx > 0 && (
                         <form action={moveTimelineItem}>
                           <input type="hidden" name="id" value={item.id} />
@@ -125,10 +131,7 @@ export default async function AdminNosotrosPage() {
                         </form>
                       )}
                     </div>
-                    <span className="font-hud text-[10px] text-accent/60">{item.year}</span>
-                    <span className="flex-1 truncate font-hud text-sm text-white/70">{item.title}</span>
-                  </div>
-                  <form id={`tl-${item.id}`} action={updateTimelineItem} className="grid gap-3 px-4 pt-4">
+                  <form id={`tl-${item.id}`} action={updateTimelineItem} className="grid gap-3">
                     <input type="hidden" name="id" value={item.id} />
                     <input type="hidden" name="order_index" value={item.orderIndex} />
                     <div className="grid gap-3 sm:grid-cols-[100px_1fr]">
@@ -146,7 +149,7 @@ export default async function AdminNosotrosPage() {
                       <textarea name="description" defaultValue={item.description ?? ""} className={textareaCls} rows={2} />
                     </div>
                   </form>
-                  <div className="flex items-center gap-3 px-4 pb-4 pt-3">
+                  <div className="flex items-center gap-3 pb-4 pt-3">
                     <button type="submit" form={`tl-${item.id}`} className={btnPrimary}>
                       <span className="hud-label text-[10px]">Guardar</span>
                     </button>
@@ -158,7 +161,8 @@ export default async function AdminNosotrosPage() {
                       </ConfirmButton>
                     </form>
                   </div>
-                </div>
+                  </div>
+                </details>
               ))}
               {timeline.length === 0 && <p className="text-sm text-white/35">Sin hitos todavía.</p>}
             </div>
@@ -207,9 +211,15 @@ export default async function AdminNosotrosPage() {
 
             <div className="space-y-3">
               {admins.map((m, idx) => (
-                <div key={m.id} className="overflow-hidden rounded-lg border border-white/10 bg-black/30">
-                  <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.02] px-4 py-2">
-                    <div className="flex gap-1">
+                <details key={m.id} className="group overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                  <summary className="flex cursor-pointer list-none items-center gap-3 px-4 py-2.5 transition-colors hover:bg-white/[0.02]">
+                    <span className="flex-1 truncate font-hud text-sm text-white/70">{m.name}</span>
+                    <span className="font-hud text-[9px] text-accent/60">{m.role}</span>
+                    <span className="text-white/30 transition-transform group-open:rotate-180">▾</span>
+                  </summary>
+                  <div className="border-t border-white/8 px-4 pt-3">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="font-hud text-[9px] tracking-widest text-white/25">ORDEN</span>
                       {idx > 0 && (
                         <form action={moveAboutAdmin}>
                           <input type="hidden" name="id" value={m.id} />
@@ -225,10 +235,7 @@ export default async function AdminNosotrosPage() {
                         </form>
                       )}
                     </div>
-                    <span className="flex-1 truncate font-hud text-sm text-white/70">{m.name}</span>
-                    <span className="font-hud text-[9px] text-accent/60">{m.role}</span>
-                  </div>
-                  <form id={`adm-${m.id}`} action={updateAboutAdmin} className="grid gap-3 px-4 pt-4">
+                  <form id={`adm-${m.id}`} action={updateAboutAdmin} className="grid gap-3">
                     <input type="hidden" name="id" value={m.id} />
                     <input type="hidden" name="order_index" value={m.orderIndex} />
                     <div className="grid gap-3 sm:grid-cols-2">
@@ -258,7 +265,7 @@ export default async function AdminNosotrosPage() {
                       <ImagePreview name="avatar_url" defaultValue={m.avatarUrl ?? ""} placeholder="https://... (opcional)" />
                     </div>
                   </form>
-                  <div className="flex items-center gap-3 px-4 pb-4 pt-3">
+                  <div className="flex items-center gap-3 pb-4 pt-3">
                     <button type="submit" form={`adm-${m.id}`} className={btnPrimary}>
                       <span className="hud-label text-[10px]">Guardar</span>
                     </button>
@@ -270,7 +277,8 @@ export default async function AdminNosotrosPage() {
                       </ConfirmButton>
                     </form>
                   </div>
-                </div>
+                  </div>
+                </details>
               ))}
               {admins.length === 0 && <p className="text-sm text-white/35">Sin administradores todavía.</p>}
             </div>

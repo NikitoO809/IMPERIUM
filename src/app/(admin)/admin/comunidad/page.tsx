@@ -231,12 +231,21 @@ export default async function AdminComunidadPage() {
 
           <div className="mt-4 space-y-2">
             {topPlayers.map((p, idx) => (
-              <div key={p.id} className="overflow-hidden rounded-lg border border-white/10 bg-black/30">
-                <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.02] px-3 py-2">
+              <details key={p.id} className="group overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                <summary className="flex cursor-pointer list-none items-center gap-3 px-3 py-2.5 transition-colors hover:bg-white/[0.02]">
                   <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: p.accent, boxShadow: `0 0 8px ${p.accent}` }} />
                   <span className="flex-1 truncate font-hud text-sm text-white/80">{p.name}</span>
                   {p.role && <span className="hidden font-hud text-[10px] text-white/35 sm:inline">{p.role}</span>}
-                  <div className="flex gap-1">
+                  {p.isPublished ? (
+                    <span className="rounded-md bg-emerald-400/10 px-2 py-0.5 font-hud text-[9px] text-emerald-300 ring-1 ring-emerald-400/30">Visible</span>
+                  ) : (
+                    <span className="rounded-md bg-white/5 px-2 py-0.5 font-hud text-[9px] text-white/40 ring-1 ring-white/10">Oculto</span>
+                  )}
+                  <span className="text-white/30 transition-transform group-open:rotate-180">▾</span>
+                </summary>
+                <div className="border-t border-white/8 px-3 pt-3">
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="font-hud text-[9px] tracking-widest text-white/25">ORDEN</span>
                     {idx > 0 && (
                       <form action={moveTopPlayer}>
                         <input type="hidden" name="id" value={p.id} />
@@ -251,16 +260,15 @@ export default async function AdminComunidadPage() {
                         <button type="submit" className="btn-hud px-2 py-0.5 text-[11px] text-white/40 hover:text-white">↓</button>
                       </form>
                     )}
+                    <form action={setTopPlayerPublished}>
+                      <input type="hidden" name="id" value={p.id} />
+                      <input type="hidden" name="value" value={p.isPublished ? "false" : "true"} />
+                      <button type="submit" className="btn-hud bg-white/5 px-2.5 py-0.5 text-[9px] text-white/60 hover:text-white">
+                        {p.isPublished ? "Ocultar" : "Mostrar"}
+                      </button>
+                    </form>
                   </div>
-                  <form action={setTopPlayerPublished}>
-                    <input type="hidden" name="id" value={p.id} />
-                    <input type="hidden" name="value" value={p.isPublished ? "false" : "true"} />
-                    <button type="submit" className="btn-hud bg-white/5 px-2.5 py-0.5 text-[9px] text-white/60 hover:text-white">
-                      {p.isPublished ? "Ocultar" : "Mostrar"}
-                    </button>
-                  </form>
-                </div>
-                <form id={`tp-${p.id}`} action={updateTopPlayer} className="grid gap-3 px-3 pt-3 sm:grid-cols-2">
+                <form id={`tp-${p.id}`} action={updateTopPlayer} className="grid gap-3 sm:grid-cols-2">
                   <input type="hidden" name="id" value={p.id} />
                   <input type="hidden" name="order_index" value={p.orderIndex} />
                   <div>
@@ -284,7 +292,7 @@ export default async function AdminComunidadPage() {
                     <textarea name="achievement" defaultValue={p.achievement} className={textareaCls} rows={2} placeholder="Ej: Lideró el primer Behemoth élite en menos de 2 minutos." />
                   </div>
                 </form>
-                <div className="flex items-center gap-3 px-3 pb-3 pt-2">
+                <div className="flex items-center gap-3 pb-3 pt-2">
                   <button type="submit" form={`tp-${p.id}`} className={btnPrimary}>
                     <span className="hud-label text-[10px]">Guardar</span>
                   </button>
@@ -295,7 +303,8 @@ export default async function AdminComunidadPage() {
                     </ConfirmButton>
                   </form>
                 </div>
-              </div>
+                </div>
+              </details>
             ))}
             {topPlayers.length === 0 && (
               <p className="text-sm text-white/35">Aún no hay jugadores destacados. Añade el primero abajo.</p>
