@@ -1,7 +1,7 @@
 "use client";
 // Galería interactiva de héroes agrupados por generación.
 // Clic en un héroe → modal con detalle + botón "Ver build" que abre nueva pestaña.
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import Image from "next/image";
 import type { Hero } from "@/lib/heroes";
 
@@ -30,6 +30,64 @@ const ROLE_ES: Record<string, string> = {
   PvP: "PvP", Garrison: "Guarnición", Rally: "Rally",
   Peacekeeping: "Pacificación", Gathering: "Recolección", Engineering: "Ingeniería",
 };
+
+// Orden preferido de cada dimensión para los chips de filtro (los valores no
+// listados se colocan al final, alfabéticamente).
+const CLASS_ORDER = ["Overall", "Infantry", "Magic", "Marksman", "Cavalry"];
+const TIER_ORDER = ["S+", "S", "A+", "A", "B+", "B", "C+", "C", "D", "NEW"];
+const ROLE_ORDER = ["PvP", "Rally", "Garrison", "Peacekeeping", "Gathering", "Engineering"];
+
+// Valores únicos presentes en los héroes, ordenados según `order` (resto al final).
+function orderedValues(values: string[], order: string[]): string[] {
+  const uniq = [...new Set(values)].filter(Boolean);
+  return uniq.sort((a, b) => {
+    const ia = order.indexOf(a);
+    const ib = order.indexOf(b);
+    return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib) || a.localeCompare(b);
+  });
+}
+
+// ── Controles de filtro ──────────────────────────────────────
+function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`hud-label rounded border px-2.5 py-1 text-[10px] font-bold transition-all ${
+        active
+          ? "border-accent bg-accent/15 text-accent"
+          : "border-white/15 text-white/55 hover:border-accent/50 hover:text-accent"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
+// Una fila de filtro (etiqueta + "Todos" + un chip por valor). Se oculta si solo
+// hay un valor posible (no tiene sentido filtrar por algo que no varía).
+function FilterRow({
+  label, options, value, onChange, labelMap,
+}: {
+  label: string;
+  options: string[];
+  value: string;
+  onChange: (v: string) => void;
+  labelMap?: Record<string, string>;
+}) {
+  if (options.length <= 1) return null;
+  return (
+    <div className="flex flex-wrap items-center gap-1.5">
+      <span className="hud-label mr-1 w-16 shrink-0 text-[10px] text-white/35">{label}</span>
+      <Chip active={value === ""} onClick={() => onChange("")}>Todos</Chip>
+      {options.map((o) => (
+        <Chip key={o} active={value === o} onClick={() => onChange(o)}>
+          {labelMap?.[o] ?? o}
+        </Chip>
+      ))}
+    </div>
+  );
+}
 
 // ── Ficha compacta ───────────────────────────────────────────
 function HeroCard({ hero, onClick }: { hero: Hero; onClick: () => void }) {
@@ -173,12 +231,49 @@ export function HeroesGallery({
   const [selected, setSelected] = useState<Hero | null>(null);
   const close = useCallback(() => setSelected(null), []);
 
-  const byGen = new Map<number, Hero[]>();
-  for (const h of heroes) {
-    if (!byGen.has(h.generation)) byGen.set(h.generation, []);
-    byGen.get(h.generation)!.push(h);
-  }
-  const generations = [...byGen.keys()].sort((a, b) => b - a);
+  // ── Estado de los filtros ──
+  const [cls, setCls] = useState("");
+  const [tier, setTier] = useState("");
+  const [role, setRole] = useState("");
+  const [faction, setFaction] = useState("");
+  const [query, setQuery] = useState("");
+
+  // Valores disponibles para cada filtro (derivados de los héroes reales).
+  const classes = useMemo(() => orderedValues(heroes.map((h) => h.heroClass), CLASS_ORDER), [heroes]);
+  const tiers = useMemo(() => orderedValues(heroes.map((h) => h.tier), TIER_ORDER), [heroes]);
+  const roles = useMemo(() => orderedValues(heroes.map((h) => h.role), ROLE_ORDER), [heroes]);
+  const factions = useMemo(() => orderedValues(heroes.map((h) => h.faction), []), [heroes]);
+
+  // Héroes que pasan todos los filtros activos (AND) + búsqueda por nombre.
+  const q = query.trim().toLowerCase();
+  const filtered = useMemo(
+    () =>
+      heroes.filter(
+        (h) =>
+          (!cls || h.heroClass === cls) &&
+          (!tier || h.tier === tier) &&
+          (!role || h.role === role) &&
+          (!faction || h.faction === faction) &&
+          (!q || h.name.toLowerCase().includes(q)),
+      ),
+    [heroes, cls, tier, role, faction, q],
+  );
+
+  // Agrupado por generación (solo generaciones con resultados).
+  const byGen = useMemo(() => {
+    const m = new Map<number, Hero[]>();
+    for (const h of filtered) {
+      if (!m.has(h.generation)) m.set(h.generation, []);
+      m.get(h.generation)!.push(h);
+    }
+    return m;
+  }, [filtered]);
+  const generations = useMemo(() => [...byGen.keys()].sort((a, b) => b - a), [byGen]);
+
+  const hasFilters = Boolean(cls || tier || role || faction || q);
+  const clearAll = () => {
+    setCls(""); setTier(""); setRole(""); setFaction(""); setQuery("");
+  };
 
   if (heroes.length === 0) {
     return (
@@ -192,22 +287,69 @@ export function HeroesGallery({
 
   return (
     <>
-      <div className="flex flex-col gap-10">
-        {generations.map((gen) => (
-          <section key={gen}>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="hud-label text-[11px] text-accent/70">{"// "}GENERACIÓN {gen}</span>
-              <div className="flex-1 h-px bg-white/10" />
-              <span className="text-[10px] text-white/30">{byGen.get(gen)!.length} héroes</span>
-            </div>
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-3">
-              {byGen.get(gen)!.map((h) => (
-                <HeroCard key={h.id} hero={h} onClick={() => setSelected(h)} />
-              ))}
-            </div>
-          </section>
-        ))}
+      {/* Barra de filtros */}
+      <div className="panel mb-6">
+        <div className="panel-inner flex flex-col gap-3 p-4">
+          <div className="flex items-center gap-2">
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Buscar héroe por nombre…"
+              aria-label="Buscar héroe por nombre"
+              className="flex-1 rounded-md border border-white/12 bg-black/40 px-3 py-2 text-sm text-white/90 outline-none placeholder:text-white/30 focus:border-accent/50"
+            />
+            {hasFilters && (
+              <button
+                type="button"
+                onClick={clearAll}
+                className="hud-label shrink-0 rounded border border-white/15 px-3 py-2 text-[10px] font-bold text-white/55 transition hover:border-accent/50 hover:text-accent"
+              >
+                Limpiar
+              </button>
+            )}
+          </div>
+          <FilterRow label="Clase" options={classes} value={cls} onChange={setCls} labelMap={CLASS_ES} />
+          <FilterRow label="Tier" options={tiers} value={tier} onChange={setTier} />
+          <FilterRow label="Rol" options={roles} value={role} onChange={setRole} labelMap={ROLE_ES} />
+          <FilterRow label="Facción" options={factions} value={faction} onChange={setFaction} />
+        </div>
       </div>
+
+      {/* Contador de resultados */}
+      <p className="mb-5 text-xs text-white/40">
+        {filtered.length === heroes.length
+          ? `${heroes.length} héroes`
+          : `${filtered.length} de ${heroes.length} héroes`}
+      </p>
+
+      {filtered.length === 0 ? (
+        <div className="panel">
+          <div className="panel-inner p-8 text-center text-sm text-white/40">
+            Ningún héroe coincide con el filtro.{" "}
+            <button type="button" onClick={clearAll} className="text-accent underline">
+              Quitar filtros
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="flex flex-col gap-10">
+          {generations.map((gen) => (
+            <section key={gen}>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="hud-label text-[11px] text-accent/70">{"// "}GENERACIÓN {gen}</span>
+                <div className="flex-1 h-px bg-white/10" />
+                <span className="text-[10px] text-white/30">{byGen.get(gen)!.length} héroes</span>
+              </div>
+              <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-3">
+                {byGen.get(gen)!.map((h) => (
+                  <HeroCard key={h.id} hero={h} onClick={() => setSelected(h)} />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
 
       {selected && (
         <HeroModal hero={selected} gameSlug={gameSlug} onClose={close} />
