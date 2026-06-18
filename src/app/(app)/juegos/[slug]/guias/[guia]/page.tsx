@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { getGuide } from "@/lib/games";
 import { HudLabel, Panel } from "@/components/hud";
 import { GuideRunner } from "@/components/GuideRunner";
+import { ImageZoom } from "@/components/ImageZoom";
 import { TalentBuildsViewer } from "@/components/TalentBuildsViewer";
 
 // Metadata SEO por guía (reutiliza getGuide; Next deduplica el fetch).
@@ -43,7 +44,7 @@ export default async function GuidePage({
   const { meta: game, guide, completedStepIds } = data;
 
   return (
-    <main className="mx-auto max-w-3xl px-4 pt-12 pb-4">
+    <main className="mx-auto max-w-5xl px-4 pt-12 pb-4">
       <div className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/45">
         <Link href="/" className="transition hover:text-accent">Inicio</Link>
         <span>/</span>
@@ -63,34 +64,35 @@ export default async function GuidePage({
       {/* Introducción de la guía (bloque de contexto de la fuente, no es un paso) */}
       {(guide.intro || guide.introTitle) && (
         <Panel corners className="mb-8">
-          <div className="panel-inner p-5">
+          <div className="panel-inner p-5 sm:p-7">
             {guide.introTitle && (
-              <h2 className="mb-2 font-title text-lg font-bold text-glow-accent">
+              <h2 className="mb-2 font-title text-xl font-bold text-glow-accent">
                 {guide.introTitle}
               </h2>
             )}
             {guide.intro
               ?.split("\n\n")
               .map((para, i) => (
-                <p key={i} className="mt-2 text-sm leading-relaxed text-white/65">
+                <p key={i} className="mt-2 max-w-3xl text-base leading-relaxed text-white/70">
                   {para}
                 </p>
               ))}
             {guide.introImages.length > 0 && (
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {guide.introImages.map((src) => (
-                  <span
+                  <ImageZoom
                     key={src}
-                    className="bevel relative block aspect-video overflow-hidden border border-white/10"
+                    src={src}
+                    className="bevel relative block aspect-video w-full overflow-hidden border border-white/10"
                   >
                     <Image
                       src={src}
                       alt=""
                       fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
-                  </span>
+                  </ImageZoom>
                 ))}
               </div>
             )}

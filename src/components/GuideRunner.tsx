@@ -10,6 +10,7 @@ import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
 import { useUser } from "@/lib/use-user";
 import { Panel, XpBar } from "@/components/hud";
 import { RichText } from "@/components/RichText";
+import { ImageZoom } from "@/components/ImageZoom";
 import { LoginButton } from "@/components/auth/LoginButton";
 import { DiscordIcon } from "@/components/icons";
 
@@ -173,7 +174,7 @@ export function GuideRunner({
                         )}
                       </span>
                       <span
-                        className={`text-[11px] leading-tight transition-colors ${
+                        className={`text-[13px] leading-snug transition-colors ${
                           isActive
                             ? "text-white"
                             : checked
@@ -211,7 +212,7 @@ export function GuideRunner({
                       )}
                     </div>
                     <h2
-                      className={`font-title text-lg font-bold leading-snug sm:text-xl ${
+                      className={`font-title text-xl font-bold leading-snug sm:text-2xl ${
                         done.has(activeStep.id) ? "line-through decoration-accent/50" : ""
                       }`}
                     >
@@ -239,23 +240,24 @@ export function GuideRunner({
                 {/* Texto del paso (listas, tablas y saltos de línea con formato HUD) */}
                 <RichText content={activeStep.content} />
 
-                {/* Imágenes — object-contain para que nunca se recorten */}
+                {/* Imágenes — object-contain para que nunca se recorten; clic para ampliar */}
                 {activeStep.images && activeStep.images.length > 0 && (
                   <div className="mt-5 grid gap-3 sm:grid-cols-2">
                     {activeStep.images.map((src) => (
-                      <span
+                      <ImageZoom
                         key={src}
-                        className="bevel relative flex min-h-[160px] items-center justify-center overflow-hidden rounded border border-white/10 bg-black/30 p-2"
+                        src={src}
+                        className="bevel relative flex min-h-[200px] w-full items-center justify-center overflow-hidden rounded border border-white/10 bg-black/30 p-2"
                       >
                         <Image
                           src={src}
                           alt=""
-                          width={480}
-                          height={320}
+                          width={640}
+                          height={420}
                           sizes="(max-width: 640px) 100vw, 50vw"
-                          className="max-h-64 w-auto object-contain"
+                          className="max-h-80 w-auto object-contain"
                         />
-                      </span>
+                      </ImageZoom>
                     ))}
                   </div>
                 )}

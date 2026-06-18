@@ -19,13 +19,13 @@ function TextTable({ lines }: { lines: string[] }) {
   const cols = headers.length;
   return (
     <div className="my-3 overflow-x-auto rounded border border-white/10">
-      <table className="w-full text-left text-xs">
+      <table className="w-full text-left text-sm">
         <thead>
           <tr className="border-b border-white/10 bg-brand/20">
             {headers.map((h, i) => (
               <th
                 key={i}
-                className="hud-label whitespace-nowrap px-3 py-2 text-[9px] font-semibold text-accent/70"
+                className="hud-label whitespace-nowrap px-3 py-2.5 text-[10px] font-semibold text-accent/70"
               >
                 {h}
               </th>
@@ -41,8 +41,8 @@ function TextTable({ lines }: { lines: string[] }) {
               {Array.from({ length: cols }).map((_, ci) => (
                 <td
                   key={ci}
-                  className={`whitespace-nowrap px-3 py-2 ${
-                    ci === 0 ? "font-semibold text-white/85" : "text-white/55"
+                  className={`whitespace-nowrap px-3 py-2.5 ${
+                    ci === 0 ? "font-semibold text-white/85" : "text-white/60"
                   }`}
                 >
                   {cells[ci]?.trim() || "—"}
@@ -79,10 +79,10 @@ function Block({ text }: { text: string }) {
         i++;
       }
       out.push(
-        <ul key={key++} className="my-1 space-y-1.5">
+        <ul key={key++} className="my-1 space-y-2">
           {items.map((it, j) => (
-            <li key={j} className="flex gap-2.5 text-sm leading-relaxed text-white/60">
-              <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent/70" />
+            <li key={j} className="flex gap-2.5 text-base leading-relaxed text-white/70">
+              <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-accent/70" />
               <span>{it}</span>
             </li>
           ))}
@@ -97,10 +97,10 @@ function Block({ text }: { text: string }) {
         i++;
       }
       out.push(
-        <ol key={key++} className="my-1 space-y-1.5">
+        <ol key={key++} className="my-1 space-y-2">
           {items.map((it, j) => (
-            <li key={j} className="flex gap-2.5 text-sm leading-relaxed text-white/60">
-              <span className="hud-label mt-0.5 shrink-0 text-[10px] font-bold text-accent/70">
+            <li key={j} className="flex gap-2.5 text-base leading-relaxed text-white/70">
+              <span className="hud-label mt-1 shrink-0 text-[11px] font-bold text-accent/70">
                 {String(j + 1).padStart(2, "0")}
               </span>
               <span>{it}</span>
@@ -112,7 +112,7 @@ function Block({ text }: { text: string }) {
     }
     // Línea normal → párrafo (se respeta el salto de línea simple).
     out.push(
-      <p key={key++} className="text-sm leading-relaxed text-white/60">
+      <p key={key++} className="text-base leading-relaxed text-white/70">
         {lines[i]}
       </p>
     );
