@@ -5,6 +5,7 @@
 import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
+import { logDbError } from "@/lib/log";
 
 export type TimelineItem = {
   id: string;
@@ -50,6 +51,10 @@ export async function getAboutContent(): Promise<AboutContent | null> {
       .order("tier")
       .order("order_index"),
   ]);
+
+  if (pageRes.error) logDbError("getAboutContent.about_page", pageRes.error);
+  if (timelineRes.error) logDbError("getAboutContent.about_timeline", timelineRes.error);
+  if (adminsRes.error) logDbError("getAboutContent.about_admins", adminsRes.error);
 
   const timeline = (timelineRes.data ?? []).map((t) => ({
     id: t.id,

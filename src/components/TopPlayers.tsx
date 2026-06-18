@@ -58,7 +58,8 @@ function Starfield() {
       mouse.ty = -9999;
     }
 
-    function frame() {
+    // Dibuja un único fotograma del campo de estrellas.
+    function draw() {
       t += 0.016;
       mouse.x += (mouse.tx - mouse.x) * 0.08;
       mouse.y += (mouse.ty - mouse.y) * 0.08;
@@ -107,20 +108,66 @@ function Starfield() {
           ctx!.stroke();
         }
       }
-
-      raf = requestAnimationFrame(frame);
     }
 
+    // ¿El usuario pide menos movimiento? Entonces no animamos.
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Control del bucle: solo corre rAF si la pestaña está visible Y el canvas
+    // está en pantalla (ahorra batería/CPU cuando no se ve nada).
+    let visible = !document.hidden;
+    let onScreen = true;
+
+    function frame() {
+      draw();
+      raf = requestAnimationFrame(frame);
+    }
+    function startLoop() {
+      if (reduceMotion || raf) return; // ya corriendo o sin animación
+      if (!visible || !onScreen) return; // nada que ver
+      raf = requestAnimationFrame(frame);
+    }
+    function stopLoop() {
+      if (raf) {
+        cancelAnimationFrame(raf);
+        raf = 0;
+      }
+    }
+
+    function onVisibility() {
+      visible = !document.hidden;
+      if (visible) startLoop();
+      else stopLoop();
+    }
+
+    // Pausa cuando el canvas sale del viewport y reanuda al volver a entrar.
+    const io = new IntersectionObserver(
+      (entries) => {
+        onScreen = entries[0]?.isIntersecting ?? true;
+        if (onScreen) startLoop();
+        else stopLoop();
+      },
+      { threshold: 0 },
+    );
+    io.observe(canvas);
+
     build();
-    frame();
+    if (reduceMotion) {
+      draw(); // un único fotograma estático
+    } else {
+      startLoop();
+    }
     window.addEventListener("resize", build);
     window.addEventListener("pointermove", onMove);
     window.addEventListener("pointerleave", onLeave);
+    document.addEventListener("visibilitychange", onVisibility);
     return () => {
-      cancelAnimationFrame(raf);
+      stopLoop();
+      io.disconnect();
       window.removeEventListener("resize", build);
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerleave", onLeave);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, []);
 

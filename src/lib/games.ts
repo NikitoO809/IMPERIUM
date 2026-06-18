@@ -9,6 +9,7 @@ import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
 import { GAMES as DEMO_GAMES } from "@/lib/demo-data";
+import { logDbError } from "@/lib/log";
 
 // ── Tipos que consumen las páginas ───────────────────────────
 export type GameMeta = {
@@ -108,6 +109,18 @@ type GameRow = {
 const GAME_TREE_SELECT =
   "id, slug, name, description, cover_image, guides(id, slug, title, description, order_index, intro_title, intro, intro_images, guide_steps(id, order_index, title, content, source_url, is_verified, images))";
 
+// Select LIGERO para el catálogo: solo ids de pasos (para contar avance) y nº de guías.
+// No trae el contenido de cada paso (títulos, textos, imágenes) que el catálogo no usa.
+const CATALOG_SELECT = "id, slug, name, description, cover_image, guides(id, guide_steps(id))";
+type CatalogRow = {
+  id: string;
+  slug: string;
+  name: string;
+  description: string | null;
+  cover_image: string | null;
+  guides: { id: string; guide_steps: { id: string }[] }[];
+};
+
 function mapStep(s: StepRow): Step {
   return {
     id: s.id,
@@ -162,7 +175,10 @@ async function fetchGameTree(slug: string): Promise<GameRow | null> {
     .eq("slug", slug)
     .eq("is_published", true)
     .maybeSingle();
-  if (error || !data) return null;
+  if (error || !data) {
+    if (error) logDbError("fetchGameTree", error);
+    return null;
+  }
   return data as unknown as GameRow;
 }
 
@@ -173,11 +189,12 @@ async function fetchCompletedStepIds(): Promise<Set<string>> {
   const { data: userData } = await supabase.auth.getUser();
   const userId = userData.user?.id;
   if (!userId) return new Set();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("step_progress")
     .select("step_id")
     .eq("user_id", userId)
     .eq("completed", true);
+  if (error) logDbError("fetchCompletedStepIds", error);
   return new Set((data ?? []).map((r: { step_id: string }) => r.step_id));
 }
 
@@ -191,100 +208,6 @@ export async function getSessionUserId(): Promise<string | null> {
   const supabase = await createClient();
   const { data } = await supabase.auth.getUser();
   return data.user?.id ?? null;
-}
-
-// ── Roster (Fase 3) ──────────────────────────────────────────
-export type RosterMember = {
-  userId: string;
-  username: string;
-  avatar: string | null;
-  progressVisible: boolean;
-  completedCount: number; // solo fiable si es visible o si eres tú
-  isSelf: boolean;
-};
-
-export type RosterData = {
-  gameId: string;
-  gameSlug: string;
-  gameName: string;
-  stepIds: string[]; // todos los pasos publicados (para recalcular en vivo)
-  totalSteps: number;
-  members: RosterMember[];
-  // null si no hay sesión; si hay, dice si ya es miembro y su privacidad.
-  me: { userId: string; isMember: boolean; progressVisible: boolean } | null;
-};
-
-type MembershipRow = {
-  user_id: string;
-  progress_visible: boolean;
-  joined_at: string;
-  profiles: { username: string | null; avatar_url: string | null } | null;
-};
-
-// Datos iniciales del roster de un juego (el componente cliente los refresca en vivo).
-export async function getRoster(gameSlug: string): Promise<RosterData | null> {
-  const tree = await fetchGameTree(gameSlug);
-  if (!tree) return null;
-
-  const stepIds = tree.guides.flatMap((gd) => gd.guide_steps.map((s) => s.id));
-  const base: RosterData = {
-    gameId: tree.id,
-    gameSlug: tree.slug,
-    gameName: tree.name,
-    stepIds,
-    totalSteps: stepIds.length,
-    members: [],
-    me: null,
-  };
-
-  if (!SUPABASE_CONFIGURED) return base;
-  const supabase = await createClient();
-
-  const { data: userData } = await supabase.auth.getUser();
-  const userId = userData.user?.id ?? null;
-
-  // Miembros del juego (perfil + privacidad).
-  const { data: membershipData } = await supabase
-    .from("game_memberships")
-    .select("user_id, progress_visible, joined_at, profiles(username, avatar_url)")
-    .eq("game_id", tree.id)
-    .order("joined_at");
-  const memberships = (membershipData ?? []) as unknown as MembershipRow[];
-
-  // Avance: RLS solo devuelve el propio + el de miembros que lo comparten.
-  let counts = new Map<string, number>();
-  if (userId && stepIds.length) {
-    const { data: progressData } = await supabase
-      .from("step_progress")
-      .select("user_id")
-      .eq("completed", true)
-      .in("step_id", stepIds);
-    counts = tallyByUser(progressData ?? []);
-  }
-
-  const members: RosterMember[] = memberships.map((m) => ({
-    userId: m.user_id,
-    username: m.profiles?.username || "Jugador",
-    avatar: m.profiles?.avatar_url ?? null,
-    progressVisible: m.progress_visible,
-    completedCount: counts.get(m.user_id) ?? 0,
-    isSelf: m.user_id === userId,
-  }));
-
-  const mine = userId ? memberships.find((m) => m.user_id === userId) : undefined;
-  return {
-    ...base,
-    members,
-    me: userId
-      ? { userId, isMember: Boolean(mine), progressVisible: mine?.progress_visible ?? true }
-      : null,
-  };
-}
-
-function tallyByUser(rows: { user_id: string }[]): Map<string, number> {
-  const m = new Map<string, number>();
-  for (const r of rows) m.set(r.user_id, (m.get(r.user_id) ?? 0) + 1);
-  return m;
 }
 
 // ── API pública para las páginas ─────────────────────────────
@@ -306,13 +229,16 @@ export async function getCatalog(): Promise<GameCard[]> {
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("games")
-    .select(GAME_TREE_SELECT)
+    .select(CATALOG_SELECT)
     .eq("is_published", true)
     .order("created_at");
-  if (error || !data) return [];
+  if (error || !data) {
+    if (error) logDbError("getCatalog", error);
+    return [];
+  }
 
   const completed = await fetchCompletedStepIds();
-  return (data as unknown as GameRow[]).map((g) => {
+  return (data as unknown as CatalogRow[]).map((g) => {
     const steps = g.guides.flatMap((gd) => gd.guide_steps);
     const total = steps.length;
     const done = steps.filter((s) => completed.has(s.id)).length;

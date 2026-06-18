@@ -3,6 +3,7 @@
 // Hero de la portada (isla cliente): escudo central — dragón arriba y el
 // nombre IMPERIUM debajo — con entrada escalonada por spring physics.
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { LoginButton } from "@/components/auth/LoginButton";
 import { Magnetic } from "@/components/ui/Magnetic";
@@ -27,20 +28,24 @@ export function HomeHero({ members, online }: { members: string; online: string 
           Comunidad de Discord · ES
         </motion.span>
 
-        {/* Dragón (arriba) con halo neutro de apoyo */}
-        <motion.div variants={item} className="relative mt-8">
+        {/* Dragón (arriba) con halo neutro de apoyo.
+            Es el elemento LCP: NO lleva el variant `item` (opacity:0) para que
+            no espere a la animación de entrada; se pinta de inmediato con priority. */}
+        <div className="relative mt-8">
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 h-[120%] w-[120%] -translate-x-1/2 -translate-y-1/2 rounded-full"
             style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.06), transparent 70%)" }}
             aria-hidden
           />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/brand/dragon-trans.png"
             alt="Dragón de IMPERIUM"
+            width={208}
+            height={78}
+            priority
             className="tint-emblem float relative mx-auto h-40 w-auto sm:h-52"
           />
-        </motion.div>
+        </div>
 
         {/* Nombre (debajo, tucked justo bajo el dragón) */}
         <motion.h1

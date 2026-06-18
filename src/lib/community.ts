@@ -6,6 +6,7 @@
 import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
+import { logDbError } from "@/lib/log";
 
 export type Achievement = {
   id: string;
@@ -75,10 +76,11 @@ function sortRecent(a: Achievement, b: Achievement): number {
 export async function getCommunityAchievements(): Promise<Achievement[]> {
   if (!SUPABASE_CONFIGURED) return [];
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("community_achievements")
     .select(SELECT)
     .eq("is_published", true);
+  if (error) logDbError("getCommunityAchievements.community_achievements", error);
   return ((data ?? []) as unknown as AchievementRow[]).map(mapAchievement).sort(sortRecent);
 }
 
@@ -86,7 +88,8 @@ export async function getCommunityAchievements(): Promise<Achievement[]> {
 export async function getAdminCommunityAchievements(): Promise<Achievement[]> {
   if (!SUPABASE_CONFIGURED) return [];
   const supabase = await createClient();
-  const { data } = await supabase.from("community_achievements").select(SELECT);
+  const { data, error } = await supabase.from("community_achievements").select(SELECT);
+  if (error) logDbError("getAdminCommunityAchievements.community_achievements", error);
   return ((data ?? []) as unknown as AchievementRow[]).map(mapAchievement).sort(sortRecent);
 }
 
@@ -135,11 +138,12 @@ function mapTopPlayer(r: TopPlayerRow): TopPlayer {
 export async function getTopPlayers(): Promise<TopPlayer[]> {
   if (!SUPABASE_CONFIGURED) return [];
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("community_top_players")
     .select(TP_SELECT)
     .eq("is_published", true)
     .order("order_index");
+  if (error) logDbError("getTopPlayers.community_top_players", error);
   return ((data ?? []) as unknown as TopPlayerRow[]).map(mapTopPlayer);
 }
 
@@ -147,9 +151,10 @@ export async function getTopPlayers(): Promise<TopPlayer[]> {
 export async function getAdminTopPlayers(): Promise<TopPlayer[]> {
   if (!SUPABASE_CONFIGURED) return [];
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("community_top_players")
     .select(TP_SELECT)
     .order("order_index");
+  if (error) logDbError("getAdminTopPlayers.community_top_players", error);
   return ((data ?? []) as unknown as TopPlayerRow[]).map(mapTopPlayer);
 }

@@ -5,6 +5,7 @@ import "server-only";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { type Rank, isStaff, canPublish } from "@/lib/ranks";
+import { logDbError } from "@/lib/log";
 
 export type { Rank };
 
@@ -17,11 +18,12 @@ async function getRank(): Promise<StaffSession | null> {
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) return null;
-  const { data: profile } = await supabase
+  const { data: profile, error } = await supabase
     .from("profiles")
     .select("role")
     .eq("id", user.id)
     .maybeSingle();
+  if (error) logDbError("getRank.profiles", error);
   const rank = (profile?.role ?? "user") as Rank;
   return { id: user.id, rank };
 }
@@ -129,10 +131,11 @@ export type AdminBlock = {
 
 export async function getAdminGames(): Promise<AdminGame[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("games")
     .select("id, slug, name, description, is_published, guides(id, is_published), game_sections(id, is_published)")
     .order("created_at");
+  if (error) logDbError("getAdminGames.games", error);
   return (data ?? []).map((g) => {
     const allGuides = (g.guides as { id: string; is_published: boolean }[] | null) ?? [];
     const allSections = (g.game_sections as { id: string; is_published: boolean }[] | null) ?? [];
@@ -154,13 +157,14 @@ export async function getAdminGame(
   gameId: string
 ): Promise<{ game: AdminGame; guides: AdminGuide[] } | null> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("games")
     .select(
       "id, slug, name, description, is_published, guides(id, slug, title, description, order_index, is_published, intro_title, intro, intro_images), game_sections(id, is_published)"
     )
     .eq("id", gameId)
     .maybeSingle();
+  if (error) logDbError("getAdminGame.games", error);
   if (!data) return null;
   type GuideRaw = {
     id: string; slug: string; title: string; description: string | null;
@@ -206,13 +210,14 @@ export async function getAdminGuide(guideId: string): Promise<{
   steps: AdminStep[];
 } | null> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("guides")
     .select(
       "id, slug, title, description, order_index, is_published, game_id, intro_title, intro, intro_images, games(id, name), guide_steps(id, order_index, title, content, source_url, is_verified, images)"
     )
     .eq("id", guideId)
     .maybeSingle();
+  if (error) logDbError("getAdminGuide.guides", error);
   if (!data) return null;
 
   type DataShape = {
@@ -260,10 +265,11 @@ export async function getAdminGuide(guideId: string): Promise<{
 
 export async function getAdminUsers(): Promise<AdminUser[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("profiles")
     .select("id, username, avatar_url, role")
     .order("created_at");
+  if (error) logDbError("getAdminUsers.profiles", error);
   return (data ?? []).map((u) => ({
     id: u.id,
     username: u.username,
@@ -276,11 +282,12 @@ export async function getAdminUsers(): Promise<AdminUser[]> {
 
 export async function getAdminSections(gameId: string): Promise<AdminSection[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("game_sections")
     .select("id, slug, title, intro_title, intro, render_type, order_index, is_published, section_blocks(id)")
     .eq("game_id", gameId)
     .order("order_index");
+  if (error) logDbError("getAdminSections.game_sections", error);
   type SecRaw = {
     id: string; slug: string; title: string; intro_title: string | null; intro: string | null;
     render_type: string | null; order_index: number; is_published: boolean; section_blocks: { id: string }[] | null;
@@ -307,13 +314,14 @@ export async function getAdminSection(sectionId: string): Promise<{
   blocks: AdminBlock[];
 } | null> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("game_sections")
     .select(
       "id, slug, title, intro_title, intro, render_type, order_index, is_published, game_id, games(id, name, slug), section_blocks(id, order_index, title, content, source_url, is_verified, images)"
     )
     .eq("id", sectionId)
     .maybeSingle();
+  if (error) logDbError("getAdminSection.game_sections", error);
   if (!data) return null;
 
   type SectionShape = {
@@ -370,16 +378,18 @@ export type PendingChange = {
 // (change_requests.author_id apunta a auth.users, no a profiles).
 export async function getPendingChanges(): Promise<PendingChange[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("change_requests")
     .select("id, label, created_at, author_id")
     .eq("status", "pending")
     .order("created_at", { ascending: false });
+  if (error) logDbError("getPendingChanges.change_requests", error);
   const rows = (data ?? []) as { id: string; label: string; created_at: string; author_id: string }[];
   if (rows.length === 0) return [];
 
   const authorIds = [...new Set(rows.map((r) => r.author_id))];
-  const { data: profs } = await supabase.from("profiles").select("id, username").in("id", authorIds);
+  const { data: profs, error: profsError } = await supabase.from("profiles").select("id, username").in("id", authorIds);
+  if (profsError) logDbError("getPendingChanges.profiles", profsError);
   const nameMap = new Map<string, string | null>(
     ((profs ?? []) as { id: string; username: string | null }[]).map((p) => [p.id, p.username])
   );
@@ -395,9 +405,10 @@ export async function getPendingChanges(): Promise<PendingChange[]> {
 // Nº de cambios pendientes (para el badge del menú). 0 si la tabla no aplica.
 export async function getPendingChangesCount(): Promise<number> {
   const supabase = await createClient();
-  const { count } = await supabase
+  const { count, error } = await supabase
     .from("change_requests")
     .select("id", { count: "exact", head: true })
     .eq("status", "pending");
+  if (error) logDbError("getPendingChangesCount.change_requests", error);
   return count ?? 0;
 }

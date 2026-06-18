@@ -1,10 +1,12 @@
 // Página dedicada a la build de un héroe: /juegos/[slug]/heroes/[hero]
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
 import { getGameMeta } from "@/lib/games";
+import { getHeroesByGame } from "@/lib/heroes";
 import { HudLabel, Panel } from "@/components/hud";
 import type { Hero, HeroBuild } from "@/lib/heroes";
 
@@ -198,6 +200,34 @@ async function getHeroWithBuild(gameSlug: string, heroSlug: string) {
   }));
 
   return { hero, builds };
+}
+
+// Metadata SEO por héroe (reutiliza getGameMeta + getHeroesByGame).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; hero: string }>;
+}): Promise<Metadata> {
+  const { slug, hero: heroSlug } = await params;
+  const game = await getGameMeta(slug);
+  if (!game) return { title: "Héroe" };
+
+  const heroes = await getHeroesByGame(slug);
+  const hero = heroes.find((h) => h.slug === heroSlug);
+  if (!hero) return { title: `Héroe — ${game.name}` };
+
+  const title = `${hero.name} — ${game.name}`;
+  const description =
+    hero.description?.trim() || `Build y guía de ${hero.name} en ${game.name}.`;
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      ...(hero.imageUrl ? { images: [{ url: hero.imageUrl }] } : {}),
+    },
+  };
 }
 
 // ── Página ───────────────────────────────────────────────────

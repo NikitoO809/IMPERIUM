@@ -3,6 +3,7 @@
 // de datos, lo muestra con el diseño HUD; si no, muestra el placeholder.
 // Las secciones "guias" y "heroes" tienen sus propias carpetas (rutas estáticas,
 // que Next prioriza sobre esta dinámica).
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GAME_SECTIONS } from "@/lib/demo-data";
@@ -18,6 +19,34 @@ import { BuildsViewer } from "@/components/BuildsViewer";
 import { ClassTierViewer } from "@/components/ClassTierViewer";
 import { EventosViewer } from "@/components/EventosViewer";
 import { SectionPlaceholder } from "@/components/SectionPlaceholder";
+
+// Metadata SEO por sección (reutiliza getGameMeta + getSectionContent, deduplicados).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; seccion: string }>;
+}): Promise<Metadata> {
+  const { slug, seccion } = await params;
+  const game = await getGameMeta(slug);
+  if (!game) return { title: "Sección" };
+
+  const content = await getSectionContent(slug, seccion);
+  const sec = GAME_SECTIONS.find((s) => s.slug === seccion);
+  const label = content?.title || sec?.label || seccion;
+  const title = `${label} — ${game.name}`;
+  const description =
+    content?.intro?.trim() || sec?.desc || `${label} de ${game.name} en IMPERIUM.`;
+  const cover = content?.introImages[0];
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      ...(cover ? { images: [{ url: cover }] } : {}),
+    },
+  };
+}
 
 export default async function GameSectionPage({
   params,

@@ -82,7 +82,16 @@ export async function POST(req: Request) {
     return json({ error: "Necesitas el rango Tester o superior para usar el asistente." }, 403);
   }
 
-  // 4) Límite diario (atómico, en la BD)
+  // Contenido del juego (la única fuente del bot). Lo validamos ANTES de consumir
+  // cupo: si el juego no tiene contenido, el usuario no debe perder una pregunta.
+  const game = await buildGameCorpus(gameSlug);
+  if (!game) {
+    return json({ error: "Ese juego aún no tiene contenido para el asistente." }, 404);
+  }
+  const systemPrompt = buildSystemPrompt(gameSlug, game.gameName, game.corpus);
+
+  // 4) Límite diario (atómico, en la BD). Se consume lo más tarde posible, con todo
+  // ya validado, y se reembolsa abajo si la IA falla sin entregar respuesta.
   const { data: quota, error: quotaErr } = await supabase.rpc("assistant_try_consume", {
     p_limit: ASSISTANT_DAILY_LIMIT,
   });
@@ -101,22 +110,17 @@ export async function POST(req: Request) {
   const question = messages[messages.length - 1].content;
   let historyId: string | null = null;
   try {
-    const { data: hist } = await supabase
+    const { data: hist, error: histErr } = await supabase
       .from("assistant_history")
       .insert({ user_id: user.id, game_slug: gameSlug, question })
       .select("id")
       .maybeSingle();
+    if (histErr) console.error("[asistente] insert assistant_history:", histErr);
     historyId = (hist as { id: string } | null)?.id ?? null;
-  } catch {
+  } catch (e) {
+    console.error("[asistente] insert assistant_history (throw):", e);
     historyId = null;
   }
-
-  // Contenido del juego (la única fuente del bot)
-  const game = await buildGameCorpus(gameSlug);
-  if (!game) {
-    return json({ error: "Ese juego aún no tiene contenido para el asistente." }, 404);
-  }
-  const systemPrompt = buildSystemPrompt(gameSlug, game.gameName, game.corpus);
 
   // Llamada a Claude con caché de prompt (el contenido del juego se cachea →
   // las siguientes preguntas cuestan una fracción).
@@ -140,7 +144,17 @@ export async function POST(req: Request) {
             controller.enqueue(encoder.encode(event.delta.text));
           }
         }
-      } catch {
+      } catch (e) {
+        console.error("[asistente] stream de Anthropic:", e);
+        // Si la IA falló SIN entregar nada, devuelve el cupo: no es justo cobrar la
+        // pregunta por un fallo del proveedor.
+        if (!full) {
+          try {
+            await supabase.rpc("assistant_refund");
+          } catch (refundErr) {
+            console.error("[asistente] assistant_refund:", refundErr);
+          }
+        }
         controller.enqueue(encoder.encode("\n\n(Ups, se me cruzaron los cables. Prueba otra vez.)"));
       } finally {
         controller.close();
@@ -148,8 +162,8 @@ export async function POST(req: Request) {
         if (historyId && full) {
           try {
             await supabase.from("assistant_history").update({ answer: full }).eq("id", historyId);
-          } catch {
-            /* no pasa nada */
+          } catch (e) {
+            console.error("[asistente] update assistant_history:", e);
           }
         }
       }

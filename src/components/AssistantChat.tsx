@@ -398,6 +398,7 @@ export function AssistantChat({
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   disabled={busy || outOfQuota}
+                  aria-label={`Escribe tu pregunta para ${assistantName}`}
                   placeholder={
                     outOfQuota
                       ? "Has gastado tus preguntas de hoy. Vuelve mañana 👊"

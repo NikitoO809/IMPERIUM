@@ -118,6 +118,38 @@ function jsonToFd(payload: Record<string, string> | null): FormData {
   return fd;
 }
 
+// Intercambia el order_index de un elemento con su vecino (subir/bajar), opcionalmente
+// acotado a un "padre" (p.ej. los pasos de UNA guía). Centraliza la lógica que antes
+// estaba repetida en cada move* y, a diferencia de antes, comprueba los errores de los
+// dos UPDATE (si uno falla, lanza en vez de dejar el orden a medias en silencio).
+// Solo revalida (con la función indicada) si de verdad hubo intercambio.
+async function swapOrder(
+  supabase: DB,
+  table: string,
+  fd: FormData,
+  revalidate: () => void,
+  parent?: { column: string; value: string }
+) {
+  const id = str(fd, "id");
+  const direction = str(fd, "direction") as "up" | "down";
+  let query = supabase.from(table).select("id, order_index");
+  if (parent) query = query.eq(parent.column, parent.value);
+  const { data: all, error: selErr } = await query.order("order_index");
+  if (selErr) throw new Error(selErr.message);
+  if (!all) return;
+  const idx = all.findIndex((r: { id: string }) => r.id === id);
+  if (idx === -1) return;
+  const adjIdx = direction === "up" ? idx - 1 : idx + 1;
+  if (adjIdx < 0 || adjIdx >= all.length) return;
+  const cur = all[idx];
+  const adj = all[adjIdx];
+  const { error: e1 } = await supabase.from(table).update({ order_index: adj.order_index }).eq("id", cur.id);
+  if (e1) throw new Error(e1.message);
+  const { error: e2 } = await supabase.from(table).update({ order_index: cur.order_index }).eq("id", adj.id);
+  if (e2) throw new Error(e2.message);
+  revalidate();
+}
+
 // ════════════════════════════════════════════════════════════════
 // EXECUTORS — la lógica real de cada operación (sin redirect; eso lo
 // maneja el wrapper público). Se ejecutan o al instante (Supremo) o al
@@ -247,24 +279,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateAll();
   },
   moveStep: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const guideId = str(fd, "guide_id");
-    const { data: all } = await supabase
-      .from("guide_steps")
-      .select("id, order_index")
-      .eq("guide_id", guideId)
-      .order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((s) => s.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("guide_steps").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("guide_steps").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateAll();
+    await swapOrder(supabase, "guide_steps", fd, revalidateAll, { column: "guide_id", value: str(fd, "guide_id") });
   },
   deleteStep: async (fd, supabase) => {
     const { error } = await supabase.from("guide_steps").delete().eq("id", str(fd, "id"));
@@ -362,24 +377,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateAll();
   },
   moveBlock: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const sectionId = str(fd, "section_id");
-    const { data: all } = await supabase
-      .from("section_blocks")
-      .select("id, order_index")
-      .eq("section_id", sectionId)
-      .order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((b) => b.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("section_blocks").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("section_blocks").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateAll();
+    await swapOrder(supabase, "section_blocks", fd, revalidateAll, { column: "section_id", value: str(fd, "section_id") });
   },
   deleteBlock: async (fd, supabase) => {
     const { error } = await supabase.from("section_blocks").delete().eq("id", str(fd, "id"));
@@ -421,19 +419,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateUpcoming();
   },
   moveUpcomingGame: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const { data: all } = await supabase.from("upcoming_games").select("id, order_index").order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((r) => r.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("upcoming_games").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("upcoming_games").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateUpcoming();
+    await swapOrder(supabase, "upcoming_games", fd, revalidateUpcoming);
   },
   deleteUpcomingGame: async (fd, supabase) => {
     const { error } = await supabase.from("upcoming_games").delete().eq("id", str(fd, "id"));
@@ -489,19 +475,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateHorizon();
   },
   movePreRegisterGame: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const { data: all } = await supabase.from("preregister_games").select("id, order_index").order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((r) => r.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("preregister_games").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("preregister_games").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateHorizon();
+    await swapOrder(supabase, "preregister_games", fd, revalidateHorizon);
   },
   deletePreRegisterGame: async (fd, supabase) => {
     const { error } = await supabase.from("preregister_games").delete().eq("id", str(fd, "id"));
@@ -548,19 +522,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateAbout();
   },
   moveTimelineItem: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const { data: all } = await supabase.from("about_timeline").select("id, order_index").order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((r) => r.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("about_timeline").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("about_timeline").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateAbout();
+    await swapOrder(supabase, "about_timeline", fd, revalidateAbout);
   },
   deleteTimelineItem: async (fd, supabase) => {
     const { error } = await supabase.from("about_timeline").delete().eq("id", str(fd, "id"));
@@ -600,19 +562,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateAbout();
   },
   moveAboutAdmin: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const { data: all } = await supabase.from("about_admins").select("id, order_index").order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((r) => r.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("about_admins").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("about_admins").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateAbout();
+    await swapOrder(supabase, "about_admins", fd, revalidateAbout);
   },
   deleteAboutAdmin: async (fd, supabase) => {
     const { error } = await supabase.from("about_admins").delete().eq("id", str(fd, "id"));
@@ -709,22 +659,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     revalidateCommunity();
   },
   moveTopPlayer: async (fd, supabase) => {
-    const id = str(fd, "id");
-    const direction = str(fd, "direction") as "up" | "down";
-    const { data: all } = await supabase
-      .from("community_top_players")
-      .select("id, order_index")
-      .order("order_index");
-    if (!all) return;
-    const idx = all.findIndex((r) => r.id === id);
-    if (idx === -1) return;
-    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
-    if (adjIdx < 0 || adjIdx >= all.length) return;
-    const cur = all[idx];
-    const adj = all[adjIdx];
-    await supabase.from("community_top_players").update({ order_index: adj.order_index }).eq("id", cur.id);
-    await supabase.from("community_top_players").update({ order_index: cur.order_index }).eq("id", adj.id);
-    revalidateCommunity();
+    await swapOrder(supabase, "community_top_players", fd, revalidateCommunity);
   },
   deleteTopPlayer: async (fd, supabase) => {
     const { error } = await supabase.from("community_top_players").delete().eq("id", str(fd, "id"));

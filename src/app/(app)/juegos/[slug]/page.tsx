@@ -1,4 +1,5 @@
 // Hub del juego: muestra info del juego + los paneles de secciones.
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -64,6 +65,27 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
     codigos: "https://eog.gg/assets/games/sword-x-staff/card.webp",
   },
 };
+
+// Metadata SEO por juego (reutiliza getGameMeta; Next deduplica el fetch).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const game = await getGameMeta(slug);
+  if (!game) return { title: "Juego" };
+  const description = game.description || `Guías, builds y comunidad de ${game.name} en IMPERIUM.`;
+  return {
+    title: game.name,
+    description,
+    openGraph: {
+      title: game.name,
+      description,
+      ...(game.coverImage ? { images: [{ url: game.coverImage }] } : {}),
+    },
+  };
+}
 
 export default async function GameHub({
   params,

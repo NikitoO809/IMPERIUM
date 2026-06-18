@@ -13,6 +13,7 @@
 import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
+import { logDbError } from "@/lib/log";
 
 export type PreRegisterGame = {
   key: string; // clave estable y única
@@ -206,7 +207,8 @@ const PREREG_SELECT =
 export async function getPreRegisterGames(): Promise<PreRegisterGame[]> {
   if (!SUPABASE_CONFIGURED) return FALLBACK_PREREGISTER;
   const supabase = await createClient();
-  const { data } = await supabase.from("preregister_games").select(PREREG_SELECT).order("order_index");
+  const { data, error } = await supabase.from("preregister_games").select(PREREG_SELECT).order("order_index");
+  if (error) logDbError("getPreRegisterGames.preregister_games", error);
   const rows = (data ?? []) as PreRegRow[];
   if (rows.length === 0) return FALLBACK_PREREGISTER;
   return rows.map(rowToGame);
@@ -218,7 +220,8 @@ export type AdminPreRegisterGame = PreRegisterGame & { id: string; orderIndex: n
 export async function getAdminPreRegisterGames(): Promise<AdminPreRegisterGame[]> {
   if (!SUPABASE_CONFIGURED) return [];
   const supabase = await createClient();
-  const { data } = await supabase.from("preregister_games").select(PREREG_SELECT).order("order_index");
+  const { data, error } = await supabase.from("preregister_games").select(PREREG_SELECT).order("order_index");
+  if (error) logDbError("getAdminPreRegisterGames.preregister_games", error);
   return ((data ?? []) as PreRegRow[]).map((r) => ({
     ...rowToGame(r),
     id: r.id,

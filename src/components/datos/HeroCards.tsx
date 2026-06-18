@@ -2,6 +2,7 @@
 
 // Formato 2: catálogo de tarjetas con filtros por chips.
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import {
   TIERS,
   CLASSES,
@@ -144,13 +145,14 @@ export function HeroCards() {
           return (
             <Panel key={h.name} className="sweep lift">
               <div className="panel-inner p-3">
-                {/* Retrato del héroe */}
-                <div className="relative overflow-hidden rounded-lg bg-black/40 ring-1 ring-white/10">
-                  <img
+                {/* Retrato del héroe. El ratio vive en el contenedor (fill) para evitar CLS. */}
+                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-black/40 ring-1 ring-white/10">
+                  <Image
                     src={`/heroes/${slug}.png`}
                     alt={`Retrato de ${h.name}`}
-                    loading="lazy"
-                    className="aspect-[4/5] w-full object-cover"
+                    fill
+                    sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
+                    className="object-cover"
                   />
                   {/* Insignia de tier */}
                   <span className={`absolute left-2 top-2 grid h-8 w-8 place-items-center rounded font-title text-xs font-extrabold shadow-lg ${TIER_STYLE[h.tier]}`}>

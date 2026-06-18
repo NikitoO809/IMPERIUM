@@ -93,7 +93,7 @@ function HeroModal({
         <div className="panel-inner p-0 overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-            <span className="hud-label text-[10px] text-accent/60">// HÉROE · GEN. {hero.generation}</span>
+            <span className="hud-label text-[10px] text-accent/60">{"// "}HÉROE · GEN. {hero.generation}</span>
             <button
               onClick={onClose}
               className="text-white/40 hover:text-white transition text-xl leading-none px-1"
@@ -131,7 +131,7 @@ function HeroModal({
                 ["Especialidad", hero.specialty || "—"],
               ].map(([label, val]) => (
                 <div key={label} className="flex flex-col gap-0.5">
-                  <span className="hud-label text-[10px] text-accent/60">// {label}</span>
+                  <span className="hud-label text-[10px] text-accent/60">{"// "}{label}</span>
                   <span className="text-white/85 font-medium">{val}</span>
                 </div>
               ))}
@@ -196,7 +196,7 @@ export function HeroesGallery({
         {generations.map((gen) => (
           <section key={gen}>
             <div className="flex items-center gap-3 mb-4">
-              <span className="hud-label text-[11px] text-accent/70">// GENERACIÓN {gen}</span>
+              <span className="hud-label text-[11px] text-accent/70">{"// "}GENERACIÓN {gen}</span>
               <div className="flex-1 h-px bg-white/10" />
               <span className="text-[10px] text-white/30">{byGen.get(gen)!.length} héroes</span>
             </div>

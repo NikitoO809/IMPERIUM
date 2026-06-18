@@ -7,6 +7,7 @@ import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
 import { GAME_SECTIONS } from "@/lib/demo-data";
+import { logDbError } from "@/lib/log";
 
 // Secciones que tienen su propia implementación (no usan este sistema genérico).
 // "heroes" tiene galería interactiva propia (HeroesGallery).
@@ -78,12 +79,13 @@ function mapBlock(b: BlockRow): Block {
 // Id del juego por slug (RLS decide si es visible). null si no existe/visible.
 async function gameIdBySlug(slug: string): Promise<string | null> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("games")
     .select("id")
     .eq("slug", slug)
     .eq("is_published", true)
     .maybeSingle();
+  if (error) logDbError("gameIdBySlug", error);
   return (data as { id: string } | null)?.id ?? null;
 }
 
@@ -104,7 +106,10 @@ export async function getSectionContent(
     .eq("game_id", gameId)
     .eq("slug", sectionSlug)
     .maybeSingle();
-  if (error || !data) return null;
+  if (error || !data) {
+    if (error) logDbError("getSectionContent", error);
+    return null;
+  }
 
   const row = data as unknown as SectionRow;
   const blocks = [...row.section_blocks]
@@ -131,28 +136,20 @@ export async function getReadySections(gameSlug: string): Promise<Set<string>> {
   if (!gameId) return ready;
   const supabase = await createClient();
 
-  // guias: lista si hay alguna guía publicada
-  const { count: guideCount } = await supabase
-    .from("guides")
-    .select("id", { count: "exact", head: true })
-    .eq("game_id", gameId)
-    .eq("is_published", true);
-  if ((guideCount ?? 0) > 0) ready.add("guias");
+  // Las tres consultas solo dependen de gameId, no entre sí → en paralelo (1 round-trip).
+  const [guidesRes, heroesRes, sectionsRes] = await Promise.all([
+    supabase.from("guides").select("id", { count: "exact", head: true }).eq("game_id", gameId).eq("is_published", true),
+    supabase.from("heroes").select("id", { count: "exact", head: true }).eq("game_id", gameId).eq("is_published", true),
+    supabase.from("game_sections").select("slug").eq("game_id", gameId),
+  ]);
+  if (guidesRes.error) logDbError("getReadySections.guides", guidesRes.error);
+  if (heroesRes.error) logDbError("getReadySections.heroes", heroesRes.error);
+  if (sectionsRes.error) logDbError("getReadySections.sections", sectionsRes.error);
 
-  // heroes: lista si hay héroes publicados
-  const { count: heroCount } = await supabase
-    .from("heroes")
-    .select("id", { count: "exact", head: true })
-    .eq("game_id", gameId)
-    .eq("is_published", true);
-  if ((heroCount ?? 0) > 0) ready.add("heroes");
-
+  if ((guidesRes.count ?? 0) > 0) ready.add("guias");
+  if ((heroesRes.count ?? 0) > 0) ready.add("heroes");
   // secciones genéricas (eventos, codigos, war-pets...): las visibles en game_sections
-  const { data } = await supabase
-    .from("game_sections")
-    .select("slug")
-    .eq("game_id", gameId);
-  for (const r of (data ?? []) as { slug: string }[]) {
+  for (const r of (sectionsRes.data ?? []) as { slug: string }[]) {
     if (r.slug !== "heroes") ready.add(r.slug); // heroes lo maneja su propia ruta
   }
 
@@ -182,23 +179,24 @@ export async function getHubSections(gameSlug: string): Promise<HubSection[]> {
 
   const out: HubSection[] = [];
 
-  // guias: hay alguna guía visible. NO filtramos is_published aquí: la RLS ya
-  // decide (el público solo ve publicadas; el admin ve también los borradores),
-  // así Miguel puede revisar borradores desde el Hub.
-  const { count: guideCount } = await supabase
-    .from("guides")
-    .select("id", { count: "exact", head: true })
-    .eq("game_id", gameId);
-  if ((guideCount ?? 0) > 0) {
+  // Las tres consultas solo dependen de gameId → en paralelo (1 round-trip en vez de 3).
+  // NO filtramos is_published en guías/secciones aquí: la RLS ya decide (el público solo
+  // ve publicadas; el admin ve también los borradores), así Miguel los revisa desde el Hub.
+  const [guidesRes, secsRes, heroesRes] = await Promise.all([
+    supabase.from("guides").select("id", { count: "exact", head: true }).eq("game_id", gameId),
+    supabase.from("game_sections").select("slug, label, description, icon, cover_image, render_type, order_index, section_blocks(count)").eq("game_id", gameId),
+    supabase.from("heroes").select("id", { count: "exact", head: true }).eq("game_id", gameId).eq("is_published", true),
+  ]);
+  if (guidesRes.error) logDbError("getHubSections.guides", guidesRes.error);
+  if (secsRes.error) logDbError("getHubSections.sections", secsRes.error);
+  if (heroesRes.error) logDbError("getHubSections.heroes", heroesRes.error);
+
+  if ((guidesRes.count ?? 0) > 0) {
     out.push({ slug: "guias", kind: "guias", renderType: "guias", label: null, description: null, icon: null, coverImage: null, orderIndex: 0 });
   }
 
   // secciones genéricas con AL MENOS un bloque (excluye heroes; va por su tabla)
-  const { data: secs } = await supabase
-    .from("game_sections")
-    .select("slug, label, description, icon, cover_image, render_type, order_index, section_blocks(count)")
-    .eq("game_id", gameId);
-  for (const r of (secs ?? []) as Array<Record<string, unknown>>) {
+  for (const r of (secsRes.data ?? []) as Array<Record<string, unknown>>) {
     if (r.slug === "heroes") continue;
     const sb = r.section_blocks as Array<{ count: number }> | undefined;
     const blockCount = Array.isArray(sb) ? sb[0]?.count ?? 0 : 0;
@@ -216,12 +214,7 @@ export async function getHubSections(gameSlug: string): Promise<HubSection[]> {
   }
 
   // heroes: por la tabla heroes (lógica heredada, su propia ruta /heroes)
-  const { count: heroCount } = await supabase
-    .from("heroes")
-    .select("id", { count: "exact", head: true })
-    .eq("game_id", gameId)
-    .eq("is_published", true);
-  if ((heroCount ?? 0) > 0) {
+  if ((heroesRes.count ?? 0) > 0) {
     out.push({ slug: "heroes", kind: "heroes", renderType: "tier-list", label: null, description: null, icon: null, coverImage: null, orderIndex: 0 });
   }
 

@@ -8,6 +8,7 @@
 import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
+import { logDbError } from "@/lib/log";
 
 export type UpcomingGame = {
   key: string; // clave estable (= game_subscriptions.game_key)
@@ -49,10 +50,11 @@ type UpcomingRow = {
 export async function getUpcomingGameList(): Promise<UpcomingGame[]> {
   if (!SUPABASE_CONFIGURED) return FALLBACK_UPCOMING;
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("upcoming_games")
     .select("key, name, tag, blurb, image, emoji, color")
     .order("order_index");
+  if (error) logDbError("getUpcomingGameList.upcoming_games", error);
   const rows = (data ?? []) as UpcomingRow[];
   if (rows.length === 0) return FALLBACK_UPCOMING;
   return rows.map((r) => ({
@@ -84,11 +86,13 @@ export type AdminUpcomingGame = {
 export async function getAdminUpcomingGames(): Promise<AdminUpcomingGame[]> {
   if (!SUPABASE_CONFIGURED) return [];
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("upcoming_games")
     .select("id, key, name, tag, blurb, image, emoji, color, order_index")
     .order("order_index");
-  const { data: counts } = await supabase.rpc("upcoming_game_counts");
+  if (error) logDbError("getAdminUpcomingGames.upcoming_games", error);
+  const { data: counts, error: countsError } = await supabase.rpc("upcoming_game_counts");
+  if (countsError) logDbError("getAdminUpcomingGames.upcoming_game_counts", countsError);
   const countMap = new Map<string, number>(
     (counts ?? []).map((r: { game_key: string; subscribers: number }) => [
       r.game_key,
@@ -128,7 +132,8 @@ export async function getUpcomingGames(): Promise<UpcomingGameCard[]> {
   const supabase = await createClient();
 
   // Conteos públicos (RPC con security definer: solo totales, no quién).
-  const { data: counts } = await supabase.rpc("upcoming_game_counts");
+  const { data: counts, error: countsError } = await supabase.rpc("upcoming_game_counts");
+  if (countsError) logDbError("getUpcomingGames.upcoming_game_counts", countsError);
   const countMap = new Map<string, number>(
     (counts ?? []).map((r: { game_key: string; subscribers: number }) => [
       r.game_key,
@@ -142,11 +147,12 @@ export async function getUpcomingGames(): Promise<UpcomingGameCard[]> {
   } = await supabase.auth.getUser();
   let mine = new Set<string>();
   if (user) {
-    const { data } = await supabase
+    const { data, error } = await supabase
       .from("game_subscriptions")
       .select("game_key")
       .eq("user_id", user.id)
       .eq("active", true);
+    if (error) logDbError("getUpcomingGames.game_subscriptions", error);
     mine = new Set((data ?? []).map((r: { game_key: string }) => r.game_key));
   }
 

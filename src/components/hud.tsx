@@ -35,7 +35,7 @@ export function HudLabel({
 }) {
   return (
     <span className={`hud-label text-[11px] text-accent/80 ${className}`}>
-      <span className="text-accent/50">// </span>
+      <span className="text-accent/50">{"// "}</span>
       {children}
     </span>
   );

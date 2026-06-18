@@ -1,9 +1,16 @@
 // Salón de la FAMA — la élite de la comunidad sobre un fondo espacial
 // interactivo. Pulsa un nombre para ver su hazaña. Se gestiona desde
 // /admin/comunidad (sección "Mejores jugadores").
+import type { Metadata } from "next";
 import { getTopPlayers } from "@/lib/community";
 import { TopPlayers } from "@/components/TopPlayers";
 import { HudLabel } from "@/components/hud";
+
+export const metadata: Metadata = {
+  title: "Salón de la Fama",
+  description:
+    "La élite de la comunidad IMPERIUM. Los jugadores más destacados y sus hazañas.",
+};
 
 export default async function FamaPage() {
   const players = await getTopPlayers();

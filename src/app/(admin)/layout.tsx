@@ -9,6 +9,8 @@ import { getOptionalStaff, getPendingChangesCount } from "@/lib/admin";
 
 export const metadata: Metadata = {
   title: "IMPERIUM Admin",
+  // El panel no debe indexarse ni seguirse por buscadores.
+  robots: { index: false, follow: false },
   // Manifest que hace el panel instalable como app (acotado a /admin).
   manifest: "/admin.webmanifest",
   appleWebApp: {

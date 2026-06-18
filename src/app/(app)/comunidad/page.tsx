@@ -1,9 +1,16 @@
 // Sección Comunidad — MURO DE LOGROS de los juegos que jugamos. Hazañas con
 // imágenes y vídeos, gestionadas desde el panel (/admin/comunidad).
 // (Los "Mejores jugadores" viven ahora en su propia sección: /fama.)
+import type { Metadata } from "next";
 import { getCommunityAchievements } from "@/lib/community";
 import { HudLabel } from "@/components/hud";
 import { CommunityAchievements } from "@/components/CommunityAchievements";
+
+export const metadata: Metadata = {
+  title: "Comunidad",
+  description:
+    "Las mejores hazañas de la comunidad IMPERIUM: capturas, vídeos y momentazos en los juegos que jugamos.",
+};
 
 export default async function ComunidadPage() {
   const achievements = await getCommunityAchievements();

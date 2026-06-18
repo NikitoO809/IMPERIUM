@@ -110,10 +110,15 @@ function ArtifactCard({ block }: { block: SectionBlock }) {
 
 // Tabla de héroes con imágenes
 function HeroTable({ raw }: { raw: string }) {
-  let rows: ArtifactRow[];
-  try { rows = JSON.parse(raw); } catch { return <p className="text-red-400 text-sm">Error al cargar tabla.</p>; }
-
+  // El hook va SIEMPRE primero: nunca debe haber un return antes de un hook
+  // (regla de los hooks de React). Por eso el parseo va después.
   const [filter, setFilter] = useState<string>("Todos");
+
+  let rows: ArtifactRow[] = [];
+  let parseError = false;
+  try { rows = JSON.parse(raw); } catch { parseError = true; }
+  if (parseError) return <p className="text-red-400 text-sm">Error al cargar tabla.</p>;
+
   const visible = filter === "Todos" ? rows : rows.filter(r => r.tier === filter);
 
   return (

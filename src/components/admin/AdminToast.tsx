@@ -13,11 +13,17 @@ export function AdminToast({ token, message, kind }: Props) {
 
   useEffect(() => {
     if (!message) return;
-    setShow(true);
+    // Mostramos en el siguiente frame: así el navegador pinta primero el estado
+    // oculto (opacity-0) y la transición de entrada se ve de verdad. De paso evita
+    // el setState síncrono dentro del effect.
+    const raf = requestAnimationFrame(() => setShow(true));
     // Borramos la cookie: ya cumplió su función (evita que se repita el aviso).
     document.cookie = "admin_flash=; path=/; max-age=0";
     const hide = setTimeout(() => setShow(false), 3500);
-    return () => clearTimeout(hide);
+    return () => {
+      cancelAnimationFrame(raf);
+      clearTimeout(hide);
+    };
     // token cambia en cada guardado (lleva un timestamp) → reaparece aunque el
     // texto se repita.
   }, [token, message]);

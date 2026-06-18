@@ -25,7 +25,7 @@ export default function MaquetaConstelacion() {
       <section className="mx-auto max-w-5xl px-6 pt-28 sm:pt-36">
         <div className="rise max-w-2xl">
           <p className="font-mono text-xs tracking-[0.3em] text-cyan-300/70">
-            // COMUNIDAD DE DISCORD
+            {"// COMUNIDAD DE DISCORD"}
           </p>
           <h1 className="mt-6 text-5xl font-light leading-[1.05] tracking-tight sm:text-7xl">
             Guías que

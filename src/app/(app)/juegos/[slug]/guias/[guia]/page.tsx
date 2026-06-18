@@ -1,4 +1,5 @@
 // Página de una guía concreta: cabecera + pasos interactivos (GuideRunner).
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -6,6 +7,30 @@ import { getGuide } from "@/lib/games";
 import { HudLabel, Panel } from "@/components/hud";
 import { GuideRunner } from "@/components/GuideRunner";
 import { TalentBuildsViewer } from "@/components/TalentBuildsViewer";
+
+// Metadata SEO por guía (reutiliza getGuide; Next deduplica el fetch).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; guia: string }>;
+}): Promise<Metadata> {
+  const { slug, guia } = await params;
+  const data = await getGuide(slug, guia);
+  if (!data) return { title: "Guía" };
+  const { meta: game, guide } = data;
+  const description =
+    guide.description || `Guía de ${game.name}: ${guide.title}. Paso a paso en IMPERIUM.`;
+  const cover = guide.introImages[0];
+  return {
+    title: guide.title,
+    description,
+    openGraph: {
+      title: guide.title,
+      description,
+      ...(cover ? { images: [{ url: cover }] } : {}),
+    },
+  };
+}
 
 export default async function GuidePage({
   params,
