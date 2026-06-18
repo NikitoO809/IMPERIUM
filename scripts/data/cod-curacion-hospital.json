@@ -1,0 +1,83 @@
+{
+  "game": "call-of-dragons",
+  "kind": "guide",
+  "slug": "curacion-hospital",
+  "title": "Hospital y Curación de Tropas",
+  "description": "Cómo funciona el hospital y los dos tipos de curación: Free Healing con Elixir (gratis) y Resource Healing (con recursos), y cómo sacarles el máximo partido.",
+  "order_index": 8,
+  "is_published": false,
+  "intro_images": [
+    "https://cdn.cod.guide/wp-content/uploads/2023/02/Call-of-Dragons-Healing-Guide-1024x576.png"
+  ],
+  "source_url": "https://cod.guide/healing/",
+  "items": [
+    {
+      "title": "Los hospitales en Call of Dragons",
+      "content": "El hospital es el lugar al que van tus tropas gravemente heridas (severely wounded) tras la batalla. El hospital no tiene límite de tropas gravemente heridas que puede albergar. Como principiante, conviene usar tu hospital de forma eficiente.\n\nHay dos tipos de curación en los hospitales: uno es la Free Healing (curación gratis); el otro es la Resources Healing (curación con recursos).",
+      "images": []
+    },
+    {
+      "title": "Free Healing (curación con Elixir)",
+      "content": "La Free Healing es donde puedes curar tus tropas gravemente heridas usando el Elixir, que se produce con el tiempo. No necesitas gastar recursos ni speedups en ello. Literalmente solo tienes que esperar.\n\n1 Elixir = 1 tropa curada.\n\nLa curación con Elixir no cuesta recursos. Cada botella de Elixir cura 1 unidad gravemente herida. La velocidad de producción de Elixir está determinada por el nivel de tu Hospital y tu Unit Count total (incluyendo las Legions en tu Hospital). Cuanto mayor sea tu Unit Count total y el nivel de esas unidades, más rápida será tu velocidad de producción de Elixir. Activar las Policies correspondientes también aumentará tu velocidad de producción de Elixir. Se puede producir un máximo de 2.000.000 de Elixir al día.\n\nActivar la Free Healing en tu Policy también aumenta tu velocidad de curación. Si eres F2P o gastas poco, elegir Free Healing en la Policy es tu mejor opción.\n\n¡Pasa a la siguiente sección para ver cómo sacarle el máximo partido a la curación con Elixir!",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/07/elixir.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/07/elixir-healing-Call-of-Dragons-1024x614.jpg"
+      ]
+    },
+    {
+      "title": "Resource Healing (curación con recursos)",
+      "content": "La Resources Healing, por otro lado, no es recomendable si eres F2P o gastas poco. Curar tropas, especialmente desde T4, es muy caro.\n\nA menos que seas una ballena (whale), la curación con recursos no debería ser una opción. La Resources Healing te permite curar al instante tus tropas en el hospital a cambio de pagar recursos.\n\nElegir Resource Healing costará recursos, pero cura las Legions al instante. La Resource Healing tiene un límite diario máximo, determinado por el nivel de tu Hospital y tu Unit Count total (incluyendo las Legions en tu Hospital). Cuanto mayor sea tu total de unidades y el nivel de esas unidades, más rápida será tu Heal Speed. Además, activar las Policies correspondientes también aumentará tu límite diario de Resource Healing hasta un máximo de 3.000.000.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/03/resource-healing-in-Call-of-Dragons-1024x513.png"
+      ]
+    },
+    {
+      "title": "El sistema de curación de Call of Dragons",
+      "content": "Al aumentar tu velocidad de free healing a diario, puedes curar más tropas por día.\n\nAsí que si quieres aumentar tu free healing, debes trabajar las habilidades de free healing en las Policies en lugar de elegir la resource healing.\n\nLa resource healing te permite aumentar, por supuesto, la capacidad de la curación instantánea que puedes hacer con recursos.\n\nTen en cuenta que la Free healing tiene un máximo de 2M y la Resource healing un máximo de 3M. Así que considera esto: solo hay una diferencia de 1M de tropas.\n\n¿De verdad gastarías 3M en coste de recursos de curación? ¿o prefieres curar gratis 2M al día, que puedes obtener a razón de 83.000 por hora hasta un máximo de 2M?\n\nElegir Free healing no significa que no puedas hacer resource healing, simplemente estaría más limitada.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/07/elixir-healing-policy.png"
+      ]
+    },
+    {
+      "title": "¿Free Healing o Resource Healing?",
+      "content": "Elegir free healing es la jugada correcta; avanzando hacia el end game quizá siga siendo free healing y tal vez algo de resource healing.\n\nPero veo que el factor más limitante para los jugadores será la stamina más que las tropas.\n\nSospecho que los jugadores tendrán muchas más tropas de las que pueden usar cuando lleguemos al late game, debido a que la capacidad del hospital es ilimitada.\n\nEn el early game, trabaja las policies de resource healing diarias. Te enfrentarás a muchas guerras civiles de servidor en el early game, y será un dolor de cabeza si no puedes farmear recursos durante ese tiempo.",
+      "images": []
+    },
+    {
+      "title": "Cómo aprovechar la curación con Elixir (Free Healing)",
+      "content": "Esta nueva mecánica reconfigura la forma en que estrategizamos y jugamos a Call of Dragons, con un fuerte enfoque en la actividad del jugador y el uso hábil de los items de Elixir.\n\nLa curación con Elixir ha sustituido al sistema anterior, donde las tropas se recuperaban automáticamente con el tiempo.\n\nAhora, tus tropas se curan mediante Elixir.\n\nCurar tropas requiere Elixir en los hospitales.\n\nLos hospitales producen Elixir con el tiempo.\n\nA pesar del periodo de adaptación inicial, es crucial entender que esta mecánica no perjudica necesariamente a los jugadores gratuitos frente a los que gastan.\n\nLa participación activa es la clave para hacer de Call of Dragons una experiencia más dinámica y gratificante para los jugadores dedicados.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/07/elixir.png"
+      ]
+    },
+    {
+      "title": "¿Cómo conseguir items de Elixir?",
+      "content": "Los items de Elixir no los produce el hospital de tu juego; en cambio, recoges estas valiosas pociones en la Merit store mediante el combate.\n\nAl usar un item de Elixir, aumenta la capacidad de curación en el hospital, lo que significa que puedes restaurar más tropas de una sola vez.\n\nElixir en la Merit Store\n\nTen en cuenta, no obstante, que la curación se hace por lotes y tiene un tope máximo para evitar abusos.\n\nSe puede producir un máximo de 2 millones de Elixir al día.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/07/elixir-in-merit-store-1024x560.png"
+      ]
+    },
+    {
+      "title": "Maximizar la curación con Elixir",
+      "content": "Call of Dragons te anima a estar siempre al tanto de tu juego. Si tienes unidades heridas y no aprovechas tu free healing con Elixir a diario, estás desperdiciando un valioso potencial de recuperación.\n\nUsa tu Elixir con sensatez para regenerar tropas a diario y mantener la fuerza de tu ejército.\n\nCuando se trata de curar, recuerda que no todas las tropas son iguales.\n\nLas unidades de tier más alto aportan más valor, y es una jugada inteligente mejorar a los soldados de tier más bajo siempre que sea posible (espera hasta que tus marchas estén llenas).\n\nEsto se debe a la proporción de curación uno a uno: curar una tropa de tier 2 cuesta lo mismo que curar una de tier 3.\n\nUna de las características más destacadas de la curación con Elixir es la capacidad de curar tus unidades de forma selectiva.\n\nA diferencia del sistema antiguo, donde el juego elegía a quién curar, ahora tienes control sobre qué unidades reciben atención. Esta flexibilidad permite decisiones más estratégicas según tus necesidades inmediatas en el campo de batalla.",
+      "images": []
+    },
+    {
+      "title": "Potenciar tu curación con Elixir",
+      "content": "Aumentar el nivel de tu hospital e implementar policies puede mejorar tu curación diaria con Elixir. Se recomienda encarecidamente centrarse solo en la Elixir Healing aquí.\n\nTambién puedes beneficiarte de varios buffs, como los del Behemoth o de ciertas manastones.\n\nTu enfoque debe estar en potenciar la free Elixir healing en lugar de la resource healing, para ahorrar recursos valiosos y progresar de forma más efectiva en el juego.",
+      "images": []
+    },
+    {
+      "title": "¿Cuándo usar los items de Elixir?",
+      "content": "Usar tus items de Elixir debe ser una decisión estratégica.\n\nDependiendo de tu estilo de juego y de la situación, hay muchas formas de usar los items de Elixir. En la mayoría de los casos, querrás usarlo cuando necesites tus tropas de inmediato para los combates. De lo contrario, puedes simplemente dejar tus tropas curándose en los hospitales, pero asegúrate de que tu Elixir no alcance el tope (cap).\n\nAunque es esencial mantener un flujo constante de curación, recuerda que estas pociones no son infinitas. Guárdalas para batallas intensas o eventos donde tener un ejército más grande y sano te dé una ventaja significativa.\n\nDosifica tu proceso de curación y ten cuidado con tus reservas de Elixir.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/07/elixir-potion.png"
+      ]
+    },
+    {
+      "title": "Conclusión",
+      "content": "En conclusión, aunque la función de curación con Elixir en Call of Dragons presenta nuevos retos, también introduce elementos de juego gratificantes. Pone el énfasis en la actividad del jugador y en la toma de decisiones estratégicas, haciendo el juego más atractivo.\n\nAhora que cuentas con este conocimiento, ¡vuelve al mundo de Call of Dragons y conquista el campo de batalla!",
+      "images": []
+    }
+  ]
+}

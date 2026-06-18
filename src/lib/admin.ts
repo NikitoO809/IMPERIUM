@@ -70,6 +70,8 @@ export type AdminGame = {
   isPublished: boolean;
   guideCount: number;
   publishedGuideCount: number;
+  sectionCount: number;
+  publishedSectionCount: number;
 };
 
 export type AdminGuide = {
@@ -110,6 +112,7 @@ export type AdminSection = {
   renderType: string;
   orderIndex: number;
   blockCount: number;
+  isPublished: boolean;
 };
 
 export type AdminBlock = {
@@ -128,10 +131,11 @@ export async function getAdminGames(): Promise<AdminGame[]> {
   const supabase = await createClient();
   const { data } = await supabase
     .from("games")
-    .select("id, slug, name, description, is_published, guides(id, is_published)")
+    .select("id, slug, name, description, is_published, guides(id, is_published), game_sections(id, is_published)")
     .order("created_at");
   return (data ?? []).map((g) => {
     const allGuides = (g.guides as { id: string; is_published: boolean }[] | null) ?? [];
+    const allSections = (g.game_sections as { id: string; is_published: boolean }[] | null) ?? [];
     return {
       id: g.id,
       slug: g.slug,
@@ -140,6 +144,8 @@ export async function getAdminGames(): Promise<AdminGame[]> {
       isPublished: g.is_published,
       guideCount: allGuides.length,
       publishedGuideCount: allGuides.filter((gd) => gd.is_published).length,
+      sectionCount: allSections.length,
+      publishedSectionCount: allSections.filter((s) => s.is_published).length,
     };
   });
 }
@@ -151,7 +157,7 @@ export async function getAdminGame(
   const { data } = await supabase
     .from("games")
     .select(
-      "id, slug, name, description, is_published, guides(id, slug, title, description, order_index, is_published, intro_title, intro, intro_images)"
+      "id, slug, name, description, is_published, guides(id, slug, title, description, order_index, is_published, intro_title, intro, intro_images), game_sections(id, is_published)"
     )
     .eq("id", gameId)
     .maybeSingle();
@@ -175,6 +181,7 @@ export async function getAdminGame(
       intro: gd.intro,
       introImages: gd.intro_images ?? [],
     }));
+  const allSections = (data.game_sections as { id: string; is_published: boolean }[] | null) ?? [];
   return {
     game: {
       id: data.id,
@@ -184,6 +191,8 @@ export async function getAdminGame(
       isPublished: data.is_published,
       guideCount: guides.length,
       publishedGuideCount: guides.filter((gd) => gd.isPublished).length,
+      sectionCount: allSections.length,
+      publishedSectionCount: allSections.filter((s) => s.is_published).length,
     },
     guides,
   };
@@ -269,12 +278,12 @@ export async function getAdminSections(gameId: string): Promise<AdminSection[]> 
   const supabase = await createClient();
   const { data } = await supabase
     .from("game_sections")
-    .select("id, slug, title, intro_title, intro, render_type, order_index, section_blocks(id)")
+    .select("id, slug, title, intro_title, intro, render_type, order_index, is_published, section_blocks(id)")
     .eq("game_id", gameId)
     .order("order_index");
   type SecRaw = {
     id: string; slug: string; title: string; intro_title: string | null; intro: string | null;
-    render_type: string | null; order_index: number; section_blocks: { id: string }[] | null;
+    render_type: string | null; order_index: number; is_published: boolean; section_blocks: { id: string }[] | null;
   };
   return (data ?? []).map((s: unknown) => {
     const r = s as SecRaw;
@@ -287,6 +296,7 @@ export async function getAdminSections(gameId: string): Promise<AdminSection[]> 
       renderType: r.render_type ?? "generic",
       orderIndex: r.order_index,
       blockCount: r.section_blocks?.length ?? 0,
+      isPublished: r.is_published,
     };
   });
 }
@@ -300,7 +310,7 @@ export async function getAdminSection(sectionId: string): Promise<{
   const { data } = await supabase
     .from("game_sections")
     .select(
-      "id, slug, title, intro_title, intro, render_type, order_index, game_id, games(id, name, slug), section_blocks(id, order_index, title, content, source_url, is_verified, images)"
+      "id, slug, title, intro_title, intro, render_type, order_index, is_published, game_id, games(id, name, slug), section_blocks(id, order_index, title, content, source_url, is_verified, images)"
     )
     .eq("id", sectionId)
     .maybeSingle();
@@ -308,7 +318,7 @@ export async function getAdminSection(sectionId: string): Promise<{
 
   type SectionShape = {
     id: string; slug: string; title: string; intro_title: string | null; intro: string | null;
-    render_type: string | null; order_index: number; game_id: string;
+    render_type: string | null; order_index: number; is_published: boolean; game_id: string;
     games: unknown;
     section_blocks: {
       id: string; order_index: number; title: string; content: string | null;
@@ -328,6 +338,7 @@ export async function getAdminSection(sectionId: string): Promise<{
       renderType: d.render_type ?? "generic",
       orderIndex: d.order_index,
       blockCount: (d.section_blocks ?? []).length,
+      isPublished: d.is_published,
       gameId: d.game_id,
     },
     game: { id: game?.id ?? d.game_id, name: game?.name ?? "Juego", slug: game?.slug ?? "" },

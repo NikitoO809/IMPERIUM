@@ -16,6 +16,7 @@ const DEFAULT_NAV: NavItem[] = [
   { href: "/juegos", label: "Juegos" },
   { href: "/nosotros", label: "Nosotros" },
   { href: "/comunidad", label: "Comunidad" },
+  { href: "/fama", label: "Fama" },
 ];
 
 const ADMIN_NAV: NavItem = { href: "/admin", label: "Admin" };

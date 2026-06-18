@@ -20,6 +20,7 @@ const NAV: NavItem[] = [
   { href: "/admin/proximos", label: "Próximos juegos", icon: "◆", exact: false, publishersOnly: true },
   { href: "/admin/horizonte", label: "MMORPG horizonte", icon: "✧", exact: false, publishersOnly: true },
   { href: "/admin/nosotros", label: "Nosotros", icon: "✦", exact: false, publishersOnly: true },
+  { href: "/admin/comunidad", label: "Comunidad", icon: "🏅", exact: false, publishersOnly: true },
   { href: "/admin/miembros", label: "Miembros", icon: "◉", exact: false },
 ];
 

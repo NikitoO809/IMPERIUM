@@ -6,6 +6,8 @@ import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { ImagePreview } from "@/components/admin/ImagePreview";
+import { PreviewButton } from "@/components/admin/PreviewButton";
+import { FormatHint } from "@/components/admin/FormatHint";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
 import { updateGuide, deleteGuide, createStep, updateStep, deleteStep, moveStep } from "../../actions";
 
@@ -44,7 +46,7 @@ export default async function AdminGuidePage({
 
         {/* Col izq: info + portada */}
         <div className="w-72 shrink-0 overflow-auto border-r border-white/8 px-6 py-6">
-          <form action={updateGuide} className="grid gap-4">
+          <form id="guide-info" action={updateGuide} className="grid gap-4">
             <input type="hidden" name="id" value={guide.id} />
             <input type="hidden" name="order_index" value={guide.orderIndex} />
 
@@ -101,6 +103,11 @@ export default async function AdminGuidePage({
             <button type="submit" className={btnPrimary}>
               <span className="hud-label text-[11px]">Guardar guía</span>
             </button>
+            <PreviewButton
+              formId="guide-info"
+              fields={{ title: "intro_title", content: "intro", image: "cover_image" }}
+              label="Vista previa de la presentación"
+            />
           </form>
 
           {/* Zona peligrosa — solo admin/supremo */}
@@ -176,6 +183,7 @@ export default async function AdminGuidePage({
                   <div className="sm:col-span-2">
                     <label className={labelCls}>Contenido</label>
                     <textarea name="content" defaultValue={s.content ?? ""} className={textareaCls} rows={3} />
+                    <FormatHint />
                   </div>
                   <div className="sm:col-span-2">
                     <label className={labelCls}>Imagen principal</label>
@@ -195,6 +203,7 @@ export default async function AdminGuidePage({
                   <button type="submit" form={`step-${s.id}`} className={btnPrimary}>
                     <span className="hud-label text-[10px]">Guardar paso</span>
                   </button>
+                  <PreviewButton formId={`step-${s.id}`} />
                   <form action={deleteStep}>
                     <input type="hidden" name="id" value={s.id} />
                     <ConfirmButton message={`¿Eliminar "${s.title}"?`} className={btnDanger}>
@@ -217,7 +226,7 @@ export default async function AdminGuidePage({
               <span className="hud-label text-[10px]">NUEVO PASO</span>
             </summary>
             <div className="mt-2 overflow-hidden rounded-lg border border-white/10 bg-black/30 p-5">
-              <form action={createStep} className="grid gap-3 sm:grid-cols-2">
+              <form id="step-new" action={createStep} className="grid gap-3 sm:grid-cols-2">
                 <input type="hidden" name="guide_id" value={guide.id} />
                 <input type="hidden" name="order_index" value={steps.length + 1} />
                 <div className="sm:col-span-2">
@@ -227,6 +236,7 @@ export default async function AdminGuidePage({
                 <div className="sm:col-span-2">
                   <label className={labelCls}>Contenido</label>
                   <textarea name="content" className={textareaCls} rows={3} />
+                  <FormatHint />
                 </div>
                 <div className="sm:col-span-2">
                   <label className={labelCls}>Imagen principal</label>
@@ -242,6 +252,7 @@ export default async function AdminGuidePage({
                     <input type="checkbox" name="is_verified" className="h-3.5 w-3.5 accent-[#22e0ff]" />
                     Verificado
                   </label>
+                  <PreviewButton formId="step-new" />
                   <button type="submit" className={btnPrimary}>
                     <span className="hud-label text-[10px]">Añadir paso</span>
                   </button>

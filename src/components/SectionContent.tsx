@@ -2,6 +2,7 @@
 // Mismo estilo HUD que la página de guía, pero SIN casillas de progreso.
 import Image from "next/image";
 import { Panel } from "@/components/hud";
+import { RichText } from "@/components/RichText";
 import type { SectionContent as SectionData } from "@/lib/sections";
 
 // ── Rejillas de imágenes según cantidad ──────────────────────────────────────
@@ -258,9 +259,7 @@ export function SectionContent({ section }: { section: SectionData }) {
                     {block.title && (
                       <h3 className="font-title text-base font-bold">{block.title}</h3>
                     )}
-                    {block.content.split("\n\n").map((para, i) => (
-                      <p key={i} className="mt-1.5 text-sm leading-relaxed text-white/55">{para}</p>
-                    ))}
+                    <RichText content={block.content} className="mt-1.5" />
                   </div>
                   <div className="bevel relative h-20 w-20 shrink-0 overflow-hidden border border-white/15 bg-black/40">
                     <Image
@@ -278,9 +277,7 @@ export function SectionContent({ section }: { section: SectionData }) {
                   {block.title && (
                     <h3 className="mt-1 font-title text-base font-bold">{block.title}</h3>
                   )}
-                  {block.content.split("\n\n").map((para, i) => (
-                    <p key={i} className="mt-1.5 text-sm leading-relaxed text-white/55">{para}</p>
-                  ))}
+                  <RichText content={block.content} className="mt-1.5" />
                   <ImageDisplay images={block.images} />
                 </>
               )}

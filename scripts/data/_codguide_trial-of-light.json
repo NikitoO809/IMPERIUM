@@ -1,0 +1,44 @@
+{
+  "slug": "trial-of-light",
+  "url": "https://cod.guide/trial-of-light/",
+  "title": "Trial of Light Event Guide",
+  "cover": "https://cdn.cod.guide/wp-content/uploads/2023/06/Trial-of-Light-Event-1024x584.jpg",
+  "n_sections": 4,
+  "sections": [
+    {
+      "title": "Trial of Light Event",
+      "content": "1. During the event, there are 3 battlefields available, with 1 unlocked each day. Challenges can be undertaken on all 3 battlefields before the event ends.\n\n2. After entering the battlefield, the battle will take place as follows:\n\n3. Your Legions will gain Warrior Points for every enemy they defeat in battle. When you reach a certain number of Warrior Points, your Warrior Level will increase. The higher your Warrior Level, the stronger your attributes. You will lose Warrior Points over time, but your Warrior Level will not be reduced.\n\n4. Different enemies, Heroes, Artifacts, and Legions are available on each battlefield. Rewards for each battlefield can only be claimed once.\n\n5. Each battlefield has two difficulty levels. The higher difficulty level has stronger enemies, but also confers more points.\n\n6. New challenges cannot be started 10 minutes prior to the end of the event. This does not affect any ongoing challenges.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/06/trial-of-light-rules.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/06/Trial-of-Light-Event-Guide-1024x576.jpg",
+        "https://cdn.cod.guide/wp-content/uploads/2023/06/Trial-of-Light-Event-Guide-2-1024x576.jpg"
+      ]
+    },
+    {
+      "title": "Unstoppable: Cavalry speed greatly increased",
+      "content": "Available Heroes:\n\nAvailable Artifact: Kingslayer\n\n• Increases the Physical DEF of your Legion’s units by 400%.\n\n• Your Legion’s Melee units deal 300% more normal attack damage.\n\n• When your Legion is composed entirely of Cavalry units, they gain 100% March Speed for 5s every time they defeat an enemy Legion.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/alistair.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/emrys.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kingslayer.png"
+      ]
+    },
+    {
+      "title": "Steel Battalion: Infantry DEF greatly increased.",
+      "content": "Available Heroes:\n\nAvailable Artifact: Dragonscale Armor\n\n• Increases the Physical DEF of your Legion’s units by 200%.\n\n• Receive 100% more healing when leading a Melee Legion.\n\n• When healed, your Legion gains 200% Physical DEF and Magic DEF for 5s.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/garwood-1.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/bakhar.png"
+      ]
+    },
+    {
+      "title": "On Target: Marksman attack effects greatly increased.",
+      "content": "Available Heroes:\n\nAvailable Artifact: Shadowblade\n\n• Increases the Physical DEF of your Legion’s units by 200%.\n\n• Increases the normal attack Crit Rate of Ranged units in your Legion by 100%.\n\n• Your Legion’s Marksman units deal 200% more normal attack Crit damage.\n\nRate this post",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/nico.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/shadowblades.png"
+      ]
+    }
+  ]
+}

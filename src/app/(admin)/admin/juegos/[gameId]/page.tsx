@@ -5,8 +5,9 @@ import { requireStaff, getAdminGame, getAdminSections } from "@/lib/admin";
 import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
+import { CardPreviewButton } from "@/components/admin/CardPreviewButton";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
-import { updateGame, deleteGame, createGuide, setGuidePublished, createSection } from "../../actions";
+import { updateGame, deleteGame, createGuide, setGuidePublished, createSection, setSectionPublished, publishAllContent } from "../../actions";
 
 const RENDER_TYPES = [
   { value: "generic", label: "Solo texto / tarjetas" },
@@ -28,6 +29,11 @@ export default async function AdminGamePage({
   const [data, sections] = await Promise.all([getAdminGame(gameId), getAdminSections(gameId)]);
   if (!data) notFound();
   const { game, guides } = data;
+
+  // Contenido que el público NO ve todavía (está oculto / en borrador).
+  const hiddenSections = sections.filter((s) => !s.isPublished).length;
+  const hiddenGuides = guides.filter((gd) => !gd.isPublished).length;
+  const hiddenTotal = hiddenSections + hiddenGuides;
 
   return (
     <div className="flex h-full flex-col">
@@ -52,6 +58,38 @@ export default async function AdminGamePage({
         </div>
       </header>
 
+      {/* Aviso: hay contenido oculto al público */}
+      {hiddenTotal > 0 && (
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-amber-400/20 bg-amber-400/[0.07] px-8 py-3">
+          <div className="flex items-center gap-2.5">
+            <span className="text-amber-300">⚠</span>
+            <p className="font-hud text-[12px] text-amber-100/80">
+              El público NO ve{" "}
+              {hiddenSections > 0 && (
+                <span className="font-bold text-amber-200">
+                  {hiddenSections} {hiddenSections === 1 ? "sección" : "secciones"}
+                </span>
+              )}
+              {hiddenSections > 0 && hiddenGuides > 0 && " ni "}
+              {hiddenGuides > 0 && (
+                <span className="font-bold text-amber-200">
+                  {hiddenGuides} {hiddenGuides === 1 ? "guía" : "guías"}
+                </span>
+              )}
+              {" "}de este juego (están en borrador).
+            </p>
+          </div>
+          {userCanPublish && (
+            <form action={publishAllContent}>
+              <input type="hidden" name="game_id" value={game.id} />
+              <button type="submit" className="btn-hud bg-amber-400/90 px-3 py-1.5 text-black">
+                <span className="hud-label text-[10px] font-bold">Mostrar todo al público</span>
+              </button>
+            </form>
+          )}
+        </div>
+      )}
+
       {/* Contenido en dos columnas */}
       <div className="flex flex-1 gap-0 overflow-auto">
 
@@ -63,7 +101,7 @@ export default async function AdminGamePage({
             <h2 className="mb-3 font-title text-[10px] font-bold tracking-[0.2em] text-white/40">
               DATOS
             </h2>
-            <form action={updateGame} className="grid gap-3 sm:grid-cols-2">
+            <form id="game-info" action={updateGame} className="grid gap-3 sm:grid-cols-2">
               <input type="hidden" name="id" value={game.id} />
               <div>
                 <label className={labelCls}>Nombre</label>
@@ -77,10 +115,11 @@ export default async function AdminGamePage({
                 <label className={labelCls}>Descripción</label>
                 <textarea name="description" defaultValue={game.description ?? ""} className={textareaCls} rows={2} />
               </div>
-              <div className="sm:col-span-2">
+              <div className="sm:col-span-2 flex items-center gap-3">
                 <button type="submit" className={btnPrimary}>
                   <span className="hud-label text-[11px]">Guardar</span>
                 </button>
+                <CardPreviewButton formId="game-info" fields={{ title: "name", text: "description" }} />
               </div>
             </form>
           </section>
@@ -221,19 +260,41 @@ export default async function AdminGamePage({
               <p className="text-xs text-white/30">Sin secciones todavía.</p>
             ) : (
               sections.map((sec) => (
-                <Link
+                <div
                   key={sec.id}
-                  href={`/admin/juegos/${gameId}/secciones/${sec.id}`}
-                  className="flex items-center justify-between rounded-lg border border-white/8 bg-black/20 px-4 py-2.5 transition-colors hover:border-accent/30 hover:bg-white/5"
+                  className="overflow-hidden rounded-lg border border-white/8 bg-black/20 transition-colors hover:border-accent/30"
                 >
-                  <div>
-                    <div className="font-hud text-sm text-white/80">{sec.title}</div>
-                    <div className="mt-0.5 font-hud text-[9px] text-white/30">
-                      {sec.blockCount} bloques · {sec.renderType}
+                  <Link
+                    href={`/admin/juegos/${gameId}/secciones/${sec.id}`}
+                    className="flex items-center justify-between px-4 py-2.5 hover:bg-white/5"
+                  >
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span
+                          title={sec.isPublished ? "Visible al público" : "Oculta al público"}
+                          className={`h-1.5 w-1.5 rounded-full ${sec.isPublished ? "bg-emerald-400" : "bg-amber-400/60"}`}
+                        />
+                        <span className="font-hud text-sm text-white/80">{sec.title}</span>
+                      </div>
+                      <div className="mt-0.5 pl-3.5 font-hud text-[9px] text-white/30">
+                        {sec.blockCount} bloques · {sec.renderType}
+                      </div>
                     </div>
-                  </div>
-                  <span className="text-xs text-white/30">▸</span>
-                </Link>
+                    <span className="text-xs text-white/30">▸</span>
+                  </Link>
+                  {userCanPublish && (
+                    <form action={setSectionPublished} className="border-t border-white/5 px-4 py-1.5">
+                      <input type="hidden" name="id" value={sec.id} />
+                      <input type="hidden" name="value" value={String(!sec.isPublished)} />
+                      <button
+                        type="submit"
+                        className="font-hud text-[9px] text-white/45 transition-colors hover:text-accent"
+                      >
+                        {sec.isPublished ? "● Visible — ocultar al público" : "○ Oculta — mostrar al público"}
+                      </button>
+                    </form>
+                  )}
+                </div>
               ))
             )}
           </div>

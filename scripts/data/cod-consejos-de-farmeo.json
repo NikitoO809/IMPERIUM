@@ -1,0 +1,93 @@
+{
+  "game": "call-of-dragons",
+  "kind": "guide",
+  "slug": "consejos-de-farmeo",
+  "title": "Consejos de Farmeo de Recursos",
+  "description": "Trucos para recolectar recursos más rápido en el early game: gatherers, eventos, exploración, alianzas y cuentas de farmeo.",
+  "order_index": 5,
+  "is_published": false,
+  "intro_images": [
+    "https://cdn.cod.guide/wp-content/uploads/2023/02/farm-quicker-in-Call-of-Dragons-1024x576.png"
+  ],
+  "source_url": "https://cod.guide/farming-tips/",
+  "items": [
+    {
+      "title": "Gatherers",
+      "content": "Estos son los 4 gatherers (recolectores) que hay en Call of Dragons ahora mismo:\n\nAlgunos héroes de tipo Overall como Ordo también pueden funcionar como pequeños gatherers, ya que tiene una habilidad que aumenta la velocidad de recolección.\n\nEstos gatherers ganan EXP solo con recolectar recursos, además farmean súper rápido y ofrecen recompensas extra al completar la recolección.\n\nAsegúrate de darles el mejor árbol de talentos de farmeo para maximizar su velocidad de recolección.\n\nSiempre debes tener activo el buff de gathering boost y los 4 production boosts. No tengas miedo de usarlos todos, vas a tener un montón. A largo plazo, marcan una diferencia enorme.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/kella.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/chakcha.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/pan.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/indis.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/ordo.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/06/farming-buffs.png"
+      ]
+    },
+    {
+      "title": "Usa los items de aceleración (speedups)",
+      "content": "Antes que nada, atrévete a usar los items de aceleración (speedups). Cuando empieza una temporada, arranca siempre con un evento de poder.\n\nEl poder en el early game es la medida más clara a la hora de buscar una alianza fuerte. No quedarse atrás al principio es la clave. Además, durante el early game, no tener suficientes tropas para farmear o atacar es un verdadero dolor de cabeza. No dudes en gastar esos speedups de entrenamiento para llenar la capacidad de tu Legion durante la primera semana.",
+      "images": []
+    },
+    {
+      "title": "Completa los eventos Road to Glory",
+      "content": "Haz lo posible por llenar las recompensas.\n\nEn la etapa temprana, obtener una gran cantidad de consumo al mismo tiempo apoyándote en eventos y misiones te dará un retorno suficiente.\n\nAcuérdate siempre de terminar este evento por completo.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/road-to-glory-event-Call-of-Dragons-1024x576.png"
+      ]
+    },
+    {
+      "title": "Sigue las misiones principales (Main Quests)",
+      "content": "Lo siguiente es seguir las misiones que más recompensan.\n\nLas misiones principales (Mainline quests) son rentables, fáciles de completar y una guía para un desarrollo saludable. Incluyen principalmente el nivel del City Hall (recompensan muchas gemas).\n\nDerrota a las criaturas oscuras (dark creatures), y mejora héroes o artefactos hasta un nivel concreto, o entrena cierta cantidad de tropas.\n\nEstas misiones principales o bien te guían para mejorar tu capacidad o ponen a prueba tu poder actual para ver si es sólido, a la vez que dan muchas recompensas, así que seguir las misiones principales nunca estará mal.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/wonder-in-Call-of-Dragons-1024x615.png"
+      ]
+    },
+    {
+      "title": "Exploración",
+      "content": "Además, Call of Dragons tiene mucha jugabilidad de exploración y recompensas.\n\nPrimero, los wonders (maravillas) están repartidos por todo el mapa. Estos wonders tienen una serie de misiones que recompensan con tropas voladoras de Nivel IV, que eran outcasts poderosos en el early game.\n\nEl mapa también contiene una gran cantidad de Villages (aldeas), free supplies (suministros gratis), campamentos misteriosos, etc. Hay muchas recompensas como recursos e items de aceleración.\n\nDesbloquea todos los Free Supplies del mapa con un solo clic. Lee más aquí.\n\nLa exploración es un complemento útil para cubrir la falta inicial de recursos e items de aceleración.",
+      "images": []
+    },
+    {
+      "title": "Vacía tu CP (Command Point)",
+      "content": "Usar de forma constante tu Command Point hará que ganes más packs de recursos.\n\nAunque puedan ser pequeños, estos packs se irán acumulando con el tiempo y aportarán recursos sustanciales.\n\nRecogerlos lleva aproximadamente 5 minutos cada 8-12 horas, lo cual resultará muy ventajoso a largo plazo.\n\nAdemás, no los perderás cuando el servidor se reinicie ni cuando te ataquen (raid).",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/cp.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/06/empty-your-cp.png"
+      ]
+    },
+    {
+      "title": "City Hall Nivel 12",
+      "content": "En los niveles 10-12 del City Hall, desbloqueas policies (políticas) y tecnología militar.\n\nHay una diferencia enorme entre las clases con tech y sin tech, y las policies aportan una gran cantidad de stats y habilidades de recolección de tropas y gemas.\n\nPero antes de subir al Hall 12, necesitas decidir a qué alianza y a qué región quieres seguir a continuación, o a qué grupo de amigos y en qué región quieres seguir.\n\nPorque una vez que termines la mejora del City Hall 12, solo podrás ir a la alianza correspondiente cuando el nivel se abra y tu área sea tomada por la Outland Alliance entre zonas (cross-zone).\n\nDicho de forma sencilla, ya no podrás cambiar de región para unirte a alianzas durante un periodo de tiempo tras completar el City Hall 12, a menos que te cueste resetear todas las policies. A esto se le llama Resurgence.\n\nActividades de alianza",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/farming-exp-with-your-alliance-members-1024x576.png"
+      ]
+    },
+    {
+      "title": "Únete a una alianza",
+      "content": "Debido a que los distintos miembros de una alianza pueden estar en diferentes zonas horarias, combinado con los retos de Augurstone Progress contra los jefes y niveles de alianza, la construcción de carreteras y banderas de alianza, y el inicio de algunas actividades de alianza como escoltar recursos de la alianza, etc.\n\nAsegúrate de prestar atención a las marcas de alianza, a los correos y a los chats que los oficiales de la alianza configuran cada vez que estés conectado. En la medida de lo posible, cumple con los requisitos de la alianza, asiste a las actividades a tiempo, y mantener tu propio poder dentro de la alianza no es lo último.\n\nSi los oficiales de la alianza están inactivos o la alianza pierde miembros con frecuencia, plantéate cambiar de alianza.\n\nConsejos: Los jefes de alianza del mismo tipo pero con bonificaciones distintas pueden otorgar varias muertes. Por tanto, los jefes de baja dificultad en el early game pueden dar lugar a una situación en la que los equipos de jugadores de una misma área cambian de alianza de forma colectiva para matar jefes y conseguir muchas recompensas.\n\nSi puedes sumarte al jefe de otro jugador y matar a un behemoth, te recompensarán con gemas y migración de ciudad.\n\nLee más: Guía de Alianzas",
+      "images": []
+    },
+    {
+      "title": "Cuentas de farmeo (Farm Accounts)",
+      "content": "Crear una cuenta de farmeo puede simplificarte la vida. Con una cuenta pequeña dedicada a farmear recursos, puedes aumentar tu recolección semanal de recursos.\n\nEsta estrategia es mejor para jugadores dedicados que estén dispuestos a crear una cuenta nueva e invertir más tiempo para maximizar la eficiencia.\n\nPara crear una cuenta de farmeo, echa un vistazo a nuestra guía de farm account aquí.\n\nNecesitarás mejorar tu alliance resource center rápidamente para proporcionar a tu cuenta principal la mayor cantidad de recursos posible.\n\nAdemás: ¡Puedes crear más si tienes tiempo!",
+      "images": []
+    },
+    {
+      "title": "¡Activa tus notificaciones!",
+      "content": "Para muchos jugadores puede parecer de sentido común, pero es importante activar las notificaciones en tu PC/móvil y enviar de inmediato a tus gatherers a farmear cuando regresen a tu ciudad.\n\nAlgunas personas no priorizan el farmeo al principio porque creen que tienen suficientes packs de recursos. Aunque esto puede ser cierto al inicio, una vez que el nivel de tu city hall llegue a alrededor de 17, empezarás a notar una escasez de recursos que continuará hasta que obtengas las T5.\n\nSi te tomas el juego en serio y quieres avanzar más rápido que tus compañeros, es crucial farmear de forma eficiente y frecuente.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/06/destroy-small-cities.png"
+      ]
+    },
+    {
+      "title": "Atacar a otros jugadores (Raiding)",
+      "content": "Para quienes están avanzados en el juego, aquí tienes un consejo de farmeo que puedes usar.\n\nTu objetivo es explorar (scout) las ciudades cercanas, en particular las de nivel bajo. Los jugadores que han dejado el juego o que han agotado sus recursos son tus objetivos.\n\nSin embargo, asegúrate de que no tengan demasiadas tropas defendiendo su ciudad. No querrás sufrir demasiadas bajas.\n\nTambién es obligatorio calcular el coste de entrenar tus tropas por si mueren.\n\nPor ejemplo, si atacas una aldea con 2 millones de recursos y pierdes 3k tropas T4, aún podrías obtener beneficio. Pero si atacas una ciudad con 10 millones de recursos y pierdes 8k tropas, el beneficio será más significativo, aunque tengas que esperar dos días para volver a entrenar tus tropas.",
+      "images": []
+    },
+    {
+      "title": "Resumen",
+      "content": "El desarrollo temprano, por un lado, depende de estar mucho tiempo conectado y de un alto uso de recolección de recursos e items de aceleración; por otro lado, presta atención a unirte al círculo de jugadores activos lo antes posible.\n\nCrecer juntos en una alianza activa es aún más rápido, y tener amigos hace tu experiencia de juego aún mejor.\n\nDespués de todo, el lobo solitario y el grupo activo, ¿cuál es más atractivo?",
+      "images": []
+    }
+  ]
+}

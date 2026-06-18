@@ -1,39 +1,38 @@
-// Sección Comunidad — roster del juego EN VIVO (Supabase Realtime).
-// Lista a los miembros del juego y su avance, respetando la privacidad
-// de cada uno (progress_visible). La parte dinámica vive en RosterLive.
-import { getRoster } from "@/lib/games";
+// Sección Comunidad — MURO DE LOGROS de los juegos que jugamos. Hazañas con
+// imágenes y vídeos, gestionadas desde el panel (/admin/comunidad).
+// (Los "Mejores jugadores" viven ahora en su propia sección: /fama.)
+import { getCommunityAchievements } from "@/lib/community";
 import { HudLabel } from "@/components/hud";
-import { RosterLive } from "@/components/RosterLive";
-
-const GAME_SLUG = "call-of-dragons";
+import { CommunityAchievements } from "@/components/CommunityAchievements";
 
 export default async function ComunidadPage() {
-  const roster = await getRoster(GAME_SLUG);
-  const gameName = roster?.gameName ?? "Call of Dragons";
+  const achievements = await getCommunityAchievements();
 
   return (
-    <main className="mx-auto max-w-3xl px-4 pt-12 pb-12">
-      <HudLabel>Roster · {gameName}</HudLabel>
+    <main className="mx-auto max-w-6xl px-4 pt-12 pb-12">
+      <HudLabel>Comunidad</HudLabel>
       <div className="mt-3 flex items-center justify-between gap-4">
         <h1 className="font-title text-3xl font-extrabold tracking-wide text-glow-brand sm:text-4xl">
-          Comunidad
+          Logros
         </h1>
         <span className="flex items-center gap-2 bg-accent/10 px-3 py-1.5 ring-1 ring-accent/30 bevel">
-          <span className="live-dot h-1.5 w-1.5 rounded-full bg-accent" />
-          <span className="hud-label text-[10px] text-accent">En vivo</span>
+          <span className="hud-label text-[10px] text-accent">IMPERIUM</span>
         </span>
       </div>
       <p className="mt-3 max-w-xl text-sm text-white/55">
-        Jugadores del mismo juego y su avance. Cada quien decide si comparte su progreso.
+        Las mejores hazañas de la comunidad en los juegos que jugamos: capturas, vídeos y
+        momentazos. Lo más reciente, arriba.
       </p>
 
-      {roster ? (
-        <RosterLive initial={roster} />
-      ) : (
-        <p className="mt-8 text-sm text-white/40">
-          El roster no está disponible ahora mismo. Inténtalo de nuevo en un momento.
-        </p>
-      )}
+      <div className="mt-8">
+        {achievements.length > 0 ? (
+          <CommunityAchievements achievements={achievements} />
+        ) : (
+          <p className="text-sm text-white/40">
+            Todavía no hay logros publicados. Vuelve pronto.
+          </p>
+        )}
+      </div>
     </main>
   );
 }

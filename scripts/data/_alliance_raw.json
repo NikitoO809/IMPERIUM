@@ -1,0 +1,155 @@
+{
+  "title": "Call of Dragons Alliance Guide",
+  "intro": {
+    "text": [
+      "Being part of an alliance in Call of Dragons is the most important thing if you want to progress and have fun. There are numerous reasons why you should be in an alliance, like donations, help, technology, alliance events, and so much more.",
+      "Call of Dragons is a team game, and if you are not part of the alliance, you will simply miss so many benefits. So in this guide, we will cover everything that you need to know about alliances."
+    ],
+    "images": []
+  },
+  "sections": [
+    {
+      "title": "Create or join an alliance?",
+      "text": [
+        "A lot of players wonder if they should create an alliance or join an existing one in Call of Dragons. You should definitely join an existing one if you are a free-to-play player or someone who does not have too much free time. The reason is that leading an alliance is time-consuming. You have to make a plan of development, manage members, lead a war, plan how you will build an alliance-building, talk to other alliances, and so much more. So being the leader of an alliance is a hard task.",
+        "If you are a free-to-play player and want to lead an alliance, you will have a hard time. First, you will be ignored and attacked constantly by pay-to-win players, and on top of that, it will be hard for you to attract members to join your alliance.",
+        "So it is best to join an existing alliance, but if you love challenges, feel free to create one."
+      ],
+      "images": []
+    },
+    {
+      "title": "How to create an alliance in Call of Dragons",
+      "text": [
+        "To create an alliance in Call of Dragons, you must have city hall on level 4, and you will need 1500 gems. When you have requirements, simply go to the alliance tab in the lower right part of the screen, and you will see the option to create an alliance. From there, you will choose an alliance name, design a banner, and set some alliance rules and descriptions. After that, you can start attracting members.",
+        "We recommend you leave a join request under “Anyone can join the alliance” because you need as many players as you can get for the new alliance so you can start building alliance buildings."
+      ],
+      "images": []
+    },
+    {
+      "title": "Alliance ranks",
+      "text": [
+        "Each alliance can have over 150 players, and without an alliance rank, it would be impossible to manage all players. That is why each alliance has four different ranks and a leader.",
+        "Alliance leader: he is a player who can manage all other roles, delete the alliance, and cannot be kicked from the alliance. The only time an alliance leader will be kicked out and lose the title of leader is if he has not logged in for an extended period of time.",
+        "Rank 4 officers: each alliance can have 8 alliance officers. They can manage all players and have access to almost all functions in an alliance. Rank 4 officers can get alliance titles from alliance leaders.",
+        "Rank 3, 2, and 1: they are all the same, but there are 3 different ones so the alliance leader and officer can manage all players easier. Usually, players in rank 1 are new to the alliance.",
+        "Here is a list of all ranks and the privileges they have.",
+        "Privileges | R1 | R2 | R3 | R4 | Leader",
+        "Alliance Help | X | X | X | X | X",
+        "Alliance Chat | X | X | X | X | X",
+        "Send Alliance Mail |  | X | X | X | X",
+        "Quit Alliance | X | X | X | X | ",
+        "Online Status (Titled Officers Only) |  |  |  | X | X",
+        "Adjust Member Rank |  |  |  | X | X",
+        "Invitations |  |  |  | X | X",
+        "Join Applications |  |  |  | X | X",
+        "Remove Members |  |  |  | X | X",
+        "Build / Upgrade Alliance Buildings |  |  |  | X | X",
+        "Alliance Marker |  |  |  | X | X",
+        "Research Alliance Technology |  |  |  | X | X",
+        "Restock Alliance Store |  |  |  | X | X",
+        "Check Member Position |  |  |  | X | X",
+        "Toggle Alliance Siege Tower Auto-Attack |  |  |  | X | X",
+        "Summon Behemoths |  |  |  | X | X",
+        "Set Garrison Captain (Titled Officers Only) |  |  |  | X | X",
+        "Dismiss Garrison Legion (Titled Officers Only) |  |  |  | X | X",
+        "Union Management |  |  |  |  | X",
+        "Edit Alliance Info |  |  |  |  | X",
+        "Appoint Officers |  |  |  |  | X",
+        "Remove Alliance Buildings |  |  |  |  | X",
+        "Disband Alliance |  |  |  |  | X",
+        "Initiate Behemoth battle preparation |  |  |  | X | X",
+        "Initiate Behemoth Elite Raids |  |  |  | X | X",
+        "Issue Alliance Decrees (Titled Officers Only) |  |  |  | X | X"
+      ],
+      "images": [
+        "https://callofdragonsguides.com/wp-content/uploads/2023/02/Alliance-ranks.jpg"
+      ]
+    },
+    {
+      "title": "How to teleport to alliance territory",
+      "text": [
+        "To teleport into alliance territory, you will need relocation items that you can get from various places. Zoom out of the map and find the territory of your alliance. After that, all you have to do is click on the place where you want to relocate, and the relocation option will show up. There are a few other ways to relocate your city that we covered and explained in the Call of Dragons relocation guide ."
+      ],
+      "images": []
+    },
+    {
+      "title": "Alliance territory",
+      "text": [
+        "There are a few important bonuses and things that you get from alliance territory that you have to know. The first and most important one is that when your city is on your alliance territory, enemy players cannot attack it. This is important to know, especially if you are a new player. Stronger players always look for new players so they can steal their resources. So always make sure that you are on alliance territory and do not have to worry about getting attacked.",
+        "One more important thing is gathering on alliance territory. When you send your troops to gather on alliance territory, enemy players cannot attack you. On top of that, you are getting a 25% faster gathering speed, and part of the resources are going to alliance storage.",
+        "So make sure that you are part of the alliance and teleport to alliance territory as soon as possible."
+      ],
+      "images": []
+    },
+    {
+      "title": "Alliance storehouse",
+      "text": [
+        "The storehouse is a palace where alliance resources will be stored and produced. Resources are used for building buildings, and towers, and researching. The amount of resources produced by the alliance is determined by how many resources its members gather on territory, how many towers and resource points it has, its technology, and so on.",
+        "1. Alliance territory will continuously produce Alliance resources, as well as producing extra individual resources for all members.",
+        "2. The more terrain types covered by an Alliance’s territory, the greater their resource production.",
+        "3. Alliance Help, Alliance Tech contributions, and building Alliance Buildings will greatly increase Alliance Points.",
+        "4. Alliance Tech can increase the Alliance Storehouse storage limit."
+      ],
+      "images": [
+        "https://callofdragonsguides.com/wp-content/uploads/2023/02/Alliance-storehouse.jpg"
+      ]
+    },
+    {
+      "title": "Alliance technology",
+      "text": [
+        "Alliance technology is one of these that will drastically improve and speed up your progression. Some technologies will speed up your gathering, researching, and building, while others will improve the strength of your units so you can fight enemies and darkling forts easier.",
+        "Each time you donate resources to alliance technology, you will get member points that you can spend in the alliance store. Keep in mind that the limit is 10,000 member points, and do not spend gems on alliance technology."
+      ],
+      "images": [
+        "https://callofdragonsguides.com/wp-content/uploads/2023/02/Alliance-technology.jpg"
+      ]
+    },
+    {
+      "title": "Alliance store",
+      "text": [
+        "The Alliance Store is a great place to get items that will speed up your progression or items that you need at that exact moment. To purchase items, you will need Member Points and Merits Points . You can get them by doing various activities like donating to alliance technology, fighting, building, etc."
+      ],
+      "images": [
+        "https://callofdragonsguides.com/wp-content/uploads/2023/02/Alliance-store-1.jpg"
+      ]
+    },
+    {
+      "title": "Alliance help",
+      "text": [
+        "This is one of the best features that you will find in the alliance. Each time you put something into research or building, alliance members can help you. Each help will reduce the time needed to build or research by 1%. The total amount of help that you can get depends on the level of your alliance center.",
+        "So make sure that you upgrade the alliance center as much as possible. The impact of alliance help at the beginning will be low, but you will notice it when you get to the end game, where a lot of research needs over 50 days."
+      ],
+      "images": [
+        "https://callofdragonsguides.com/wp-content/uploads/2023/02/Alliance-help-.jpg"
+      ]
+    },
+    {
+      "title": "Alliance gifts",
+      "text": [
+        "Alliance gifts are a feature where every alliance member will get a free gift for different alliance activities. With these gifts, you can get various items like resources and speedups. There are 3 different sections of gifts:",
+        "- Rare : Every player will get a gift when someone in their alliance purchases a bundle from the shop.",
+        "- Common : Every player will get a gift when the alliance defeats darkling forts , the dark Eliana army, or loots a dark chest.",
+        "- Blessing Chest : This is the best chest, but in order to open it, the alliance must collect a certain number of keys. Keys are obtained from rare and common chests. The more members the alliance has, the more keys it will get.",
+        "That is why we recommend you join an alliance full of active players, especially pay-to-win players. The amount of speed that you will accumulate over time is insane. One of the best ways for an alliance to get a lot of chests is to destroy darling forts. There is no limit to how many can be destroyed."
+      ],
+      "images": []
+    },
+    {
+      "title": "Behemoths",
+      "text": [
+        "Behemoths are creatures in Call of Dragons that are scattered all over the map. Alliances can capture them, and once they do, the whole alliance will get buffs. Also, the alliance is able to summon the Behemoth they have captured to help them fight enemies.",
+        "There are a lot of different Behemoths, and each one of them has its own unique skills and playstyle. So if you need more information about them, check out our guide on Call of Dragons Behemoths . There you will find all of the information you need to defeat them, such as locations, skills, and much more."
+      ],
+      "images": [
+        "https://callofdragonsguides.com/wp-content/uploads/2023/02/Behemoths-call-of-dragons.jpg"
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "text": [
+        "Alliance plays a big part in players’ progression in Call of Dragons. No matter if you are a new or old player, you have to be in an alliance. The amount of benefit you will receive is insane, and it is simply not worth it to play the game without an alliance. So make sure that you join one as soon as possible, and try to join a top alliance with a lot of active players."
+      ],
+      "images": []
+    }
+  ]
+}

@@ -5,9 +5,10 @@ import { requireStaff, getAdminSection } from "@/lib/admin";
 import { canPublish } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
-import { ImagePreview } from "@/components/admin/ImagePreview";
+import { SectionBlocksEditor } from "@/components/admin/SectionBlocksEditor";
+import { PreviewButton } from "@/components/admin/PreviewButton";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
-import { updateSection, deleteSection, createBlock, updateBlock, deleteBlock, moveBlock } from "../../../../actions";
+import { updateSection, setSectionPublished, deleteSection } from "../../../../actions";
 
 const RENDER_TYPES = [
   { value: "generic", label: "Solo texto / tarjetas" },
@@ -42,10 +43,17 @@ export default async function AdminSectionPage({
           <span>/</span>
           <span className="text-white/60">{section.title}</span>
         </nav>
-        <HudLabel>Editar sección</HudLabel>
-        <h1 className="mt-0.5 font-title text-xl font-extrabold tracking-wide text-glow-brand">
-          {section.title}
-        </h1>
+        <div className="flex items-center justify-between">
+          <div>
+            <HudLabel>Editar sección</HudLabel>
+            <h1 className="mt-0.5 font-title text-xl font-extrabold tracking-wide text-glow-brand">
+              {section.title}
+            </h1>
+          </div>
+          <span className={`font-hud text-[10px] ${section.isPublished ? "text-emerald-400/80" : "text-amber-400/70"}`}>
+            {section.isPublished ? "● visible al público" : "○ oculta"}
+          </span>
+        </div>
       </header>
 
       {/* Contenido en dos columnas */}
@@ -56,7 +64,7 @@ export default async function AdminSectionPage({
           <p className="mb-3 font-title text-[9px] font-bold tracking-widest text-white/35">
             CONFIGURACIÓN
           </p>
-          <form action={updateSection} className="grid gap-3">
+          <form id="section-config" action={updateSection} className="grid gap-3">
             <input type="hidden" name="id" value={section.id} />
             <div>
               <label className={labelCls}>Nombre</label>
@@ -89,7 +97,38 @@ export default async function AdminSectionPage({
             <button type="submit" className={btnPrimary}>
               <span className="hud-label text-[10px]">Guardar configuración</span>
             </button>
+            <PreviewButton
+              formId="section-config"
+              fields={{ title: "intro_title", content: "intro" }}
+              label="Vista previa de la intro"
+            />
           </form>
+
+          {/* Visibilidad al público — solo admin/supremo */}
+          {userCanPublish && (
+            <div className="mt-6 rounded-lg border border-white/10 bg-black/20 px-4 py-3">
+              <p className="mb-1 font-title text-[10px] font-bold tracking-widest text-white/35">
+                VISIBILIDAD
+              </p>
+              <p className="mb-3 text-[11px] leading-snug text-white/40">
+                {section.isPublished
+                  ? "Esta sección se ve en la web aunque no hayas iniciado sesión."
+                  : "Oculta: solo el equipo la ve. El público no la verá en la web."}
+              </p>
+              <form action={setSectionPublished}>
+                <input type="hidden" name="id" value={section.id} />
+                <input type="hidden" name="value" value={String(!section.isPublished)} />
+                <button
+                  type="submit"
+                  className={`btn-hud w-full px-3 py-2 ${section.isPublished ? "bg-white/8 text-white/65 hover:text-white" : "bg-brand text-white"}`}
+                >
+                  <span className="hud-label text-[10px]">
+                    {section.isPublished ? "Ocultar al público" : "Mostrar al público"}
+                  </span>
+                </button>
+              </form>
+            </div>
+          )}
 
           {/* Zona peligrosa — solo admin/supremo */}
           {userCanPublish && (
@@ -109,123 +148,9 @@ export default async function AdminSectionPage({
           )}
         </div>
 
-        {/* Col der: bloques */}
+        {/* Col der: bloques — índice + editor (master-detail) */}
         <div className="flex-1 overflow-auto px-8 py-6">
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="font-title text-[10px] font-bold tracking-[0.2em] text-white/40">
-              BLOQUES ({blocks.length})
-            </h2>
-          </div>
-
-          <div className="space-y-3">
-            {blocks.map((b, idx) => (
-              <div key={b.id} className="overflow-hidden rounded-lg border border-white/10 bg-black/30">
-                {/* Cabecera */}
-                <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.02] px-5 py-2.5">
-                  <div className="flex gap-1">
-                    {idx > 0 && (
-                      <form action={moveBlock}>
-                        <input type="hidden" name="id" value={b.id} />
-                        <input type="hidden" name="direction" value="up" />
-                        <input type="hidden" name="section_id" value={section.id} />
-                        <button type="submit" className="btn-hud px-2 py-0.5 text-[11px] text-white/40 hover:text-white">↑</button>
-                      </form>
-                    )}
-                    {idx < blocks.length - 1 && (
-                      <form action={moveBlock}>
-                        <input type="hidden" name="id" value={b.id} />
-                        <input type="hidden" name="direction" value="down" />
-                        <input type="hidden" name="section_id" value={section.id} />
-                        <button type="submit" className="btn-hud px-2 py-0.5 text-[11px] text-white/40 hover:text-white">↓</button>
-                      </form>
-                    )}
-                  </div>
-                  <span className="font-hud text-[10px] text-accent/60">#{String(idx + 1).padStart(2, "0")}</span>
-                  <span className="flex-1 truncate font-hud text-sm text-white/70">{b.title}</span>
-                  {b.isVerified && <span className="font-hud text-[9px] text-emerald-400/70">✓</span>}
-                </div>
-
-                {/* Form */}
-                <form id={`block-${b.id}`} action={updateBlock} className="grid gap-3 p-5 sm:grid-cols-2">
-                  <input type="hidden" name="id" value={b.id} />
-                  <input type="hidden" name="order_index" value={b.orderIndex} />
-                  <div className="sm:col-span-2">
-                    <label className={labelCls}>Título</label>
-                    <input name="title" defaultValue={b.title} required className={inputCls} />
-                  </div>
-                  <div className="sm:col-span-2">
-                    <label className={labelCls}>Contenido</label>
-                    <textarea name="content" defaultValue={b.content} className={textareaCls} rows={3} />
-                  </div>
-                  <div className="sm:col-span-2">
-                    <label className={labelCls}>Imagen</label>
-                    <ImagePreview name="main_image" defaultValue={b.images[0] ?? ""} placeholder="https://..." />
-                    <input type="hidden" name="extra_images" value={b.images.slice(1).join("\n")} />
-                  </div>
-                  <div className="sm:col-span-2">
-                    <label className={labelCls}>Fuente</label>
-                    <input name="source_url" defaultValue={b.sourceUrl ?? ""} className={inputCls} placeholder="https://..." />
-                  </div>
-                  <label className="sm:col-span-2 flex cursor-pointer items-center gap-2 text-sm text-white/65">
-                    <input type="checkbox" name="is_verified" defaultChecked={b.isVerified} className="h-3.5 w-3.5 accent-[#22e0ff]" />
-                    Verificado
-                  </label>
-                </form>
-                <div className="flex flex-wrap items-center gap-4 px-5 pb-5">
-                  <button type="submit" form={`block-${b.id}`} className={btnPrimary}>
-                    <span className="hud-label text-[10px]">Guardar bloque</span>
-                  </button>
-                  <form action={deleteBlock}>
-                    <input type="hidden" name="id" value={b.id} />
-                    <ConfirmButton message={`¿Eliminar "${b.title}"?`} className={btnDanger}>
-                      <span className="hud-label text-[9px]">Eliminar</span>
-                    </ConfirmButton>
-                  </form>
-                </div>
-              </div>
-            ))}
-            {blocks.length === 0 && <p className="text-sm text-white/35">Sin bloques todavía.</p>}
-          </div>
-
-          {/* Nuevo bloque */}
-          <details className="mt-4 group">
-            <summary className="btn-hud flex w-full cursor-pointer list-none items-center gap-2 bg-white/5 px-4 py-3 text-left">
-              <span className="font-bold text-accent">+</span>
-              <span className="hud-label text-[10px]">NUEVO BLOQUE</span>
-            </summary>
-            <div className="mt-2 overflow-hidden rounded-lg border border-white/10 bg-black/30 p-5">
-              <form action={createBlock} className="grid gap-3 sm:grid-cols-2">
-                <input type="hidden" name="section_id" value={section.id} />
-                <input type="hidden" name="order_index" value={blocks.length + 1} />
-                <div className="sm:col-span-2">
-                  <label className={labelCls}>Título</label>
-                  <input name="title" required className={inputCls} placeholder="Ej: IMPERIUMCODE25" />
-                </div>
-                <div className="sm:col-span-2">
-                  <label className={labelCls}>Contenido</label>
-                  <textarea name="content" className={textareaCls} rows={3} />
-                </div>
-                <div className="sm:col-span-2">
-                  <label className={labelCls}>Imagen</label>
-                  <ImagePreview name="main_image" placeholder="https://..." />
-                  <input type="hidden" name="extra_images" value="" />
-                </div>
-                <div className="sm:col-span-2">
-                  <label className={labelCls}>Fuente</label>
-                  <input name="source_url" className={inputCls} placeholder="https://..." />
-                </div>
-                <div className="sm:col-span-2 flex items-center gap-4">
-                  <label className="flex cursor-pointer items-center gap-2 text-sm text-white/65">
-                    <input type="checkbox" name="is_verified" className="h-3.5 w-3.5 accent-[#22e0ff]" />
-                    Verificado
-                  </label>
-                  <button type="submit" className={btnPrimary}>
-                    <span className="hud-label text-[10px]">Añadir bloque</span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </details>
+          <SectionBlocksEditor sectionId={section.id} blocks={blocks} />
         </div>
       </div>
     </div>

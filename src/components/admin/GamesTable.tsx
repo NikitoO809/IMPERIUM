@@ -124,6 +124,11 @@ export function GamesTable({ games, canPublish }: { games: AdminGame[]; canPubli
                         borrador
                       </span>
                     )}
+                    {g.sectionCount - g.publishedSectionCount > 0 && (
+                      <div className="mt-1 font-hud text-[9px] text-amber-300/70" title="Secciones ocultas al público">
+                        ⚠ {g.sectionCount - g.publishedSectionCount} secc. ocultas
+                      </div>
+                    )}
                   </td>
                   <td className="px-4 py-3.5">
                     <div className="flex items-center justify-end gap-2">

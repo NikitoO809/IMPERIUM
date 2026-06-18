@@ -49,7 +49,8 @@ export function TierListViewer({ section }: { section: SectionContent }) {
     const map: Record<string, Set<string>> = {};
     for (const e of entities) {
       for (const [k, v] of Object.entries(e.meta ?? {})) {
-        if (k === "tier" || v == null || v === "") continue;
+        // 'info' y 'build' son textos largos por entidad (van en su modal), no filtros.
+        if (k === "tier" || k === "info" || k === "build" || v == null || v === "") continue;
         (map[k] ??= new Set()).add(String(v));
       }
     }
@@ -61,6 +62,8 @@ export function TierListViewer({ section }: { section: SectionContent }) {
   const [q, setQ] = useState("");
   const [tier, setTier] = useState<string | null>(null);
   const [sel, setSel] = useState<Record<string, string | null>>({});
+  // Mini cuadro (modal) de Info / Build de una entidad.
+  const [modal, setModal] = useState<{ title: string; kind: "info" | "build"; text: string } | null>(null);
 
   const list = useMemo(() => {
     return entities
@@ -155,6 +158,8 @@ export function TierListViewer({ section }: { section: SectionContent }) {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {list.map((e) => {
           const t = tierOf(e)!;
+          const infoText = typeof e.meta?.info === "string" ? e.meta.info : "";
+          const buildText = typeof e.meta?.build === "string" ? e.meta.build : "";
           return (
             <Panel key={e.id} className="sweep lift">
               <div className="panel-inner p-3">
@@ -181,6 +186,29 @@ export function TierListViewer({ section }: { section: SectionContent }) {
                 {e.content && (
                   <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-white/50">{e.content}</p>
                 )}
+                {/* Botones Info / Build → abren el mini cuadro */}
+                {(infoText || buildText) && (
+                  <div className="mt-2.5 flex gap-1.5">
+                    {infoText && (
+                      <button
+                        type="button"
+                        onClick={() => setModal({ title: e.title, kind: "info", text: infoText })}
+                        className="flex-1 rounded-md bg-white/8 px-2 py-1.5 font-hud text-[10px] text-white/70 ring-1 ring-white/10 transition hover:bg-white/15 hover:text-white"
+                      >
+                        Info
+                      </button>
+                    )}
+                    {buildText && (
+                      <button
+                        type="button"
+                        onClick={() => setModal({ title: e.title, kind: "build", text: buildText })}
+                        className="flex-1 rounded-md bg-accent/15 px-2 py-1.5 font-hud text-[10px] text-accent ring-1 ring-accent/30 transition hover:bg-accent/25"
+                      >
+                        Build
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
             </Panel>
           );
@@ -189,6 +217,38 @@ export function TierListViewer({ section }: { section: SectionContent }) {
 
       {list.length === 0 && (
         <p className="py-10 text-center text-sm text-white/40">No hay resultados con esos filtros.</p>
+      )}
+
+      {/* Mini cuadro de Info / Build */}
+      {modal && (
+        <div className="fixed inset-0 z-[100] grid place-items-center p-4" role="dialog" aria-modal="true">
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={() => setModal(null)} aria-hidden />
+          <div className="relative z-10 w-full max-w-md">
+            <Panel corners>
+              <div className="panel-inner p-5">
+                <div className="mb-3 flex items-start justify-between gap-3">
+                  <div>
+                    <span className="hud-label text-[10px] text-accent/70">
+                      {modal.kind === "info" ? "Información" : "Build recomendada"}
+                    </span>
+                    <h3 className="font-title text-lg font-bold text-glow-accent">{modal.title}</h3>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setModal(null)}
+                    aria-label="Cerrar"
+                    className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white/8 text-white/60 ring-1 ring-white/10 transition hover:text-white"
+                  >
+                    ✕
+                  </button>
+                </div>
+                {modal.text.split("\n\n").map((p, i) => (
+                  <p key={i} className="mt-2 text-sm leading-relaxed text-white/75">{p}</p>
+                ))}
+              </div>
+            </Panel>
+          </div>
+        </div>
       )}
     </div>
   );

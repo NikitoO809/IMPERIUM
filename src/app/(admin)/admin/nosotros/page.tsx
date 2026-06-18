@@ -5,6 +5,7 @@ import { getAboutContent } from "@/lib/about";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { ImagePreview } from "@/components/admin/ImagePreview";
+import { CardPreviewButton } from "@/components/admin/CardPreviewButton";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
 import {
   updateAboutIntro,
@@ -22,6 +23,8 @@ export default async function AdminNosotrosPage() {
   await requirePublisher();
   const about = await getAboutContent();
   const intro = about?.intro ?? "";
+  const quote = about?.quote ?? "";
+  const games = about?.games ?? [];
   const timeline = about?.timeline ?? [];
   const admins = about?.admins ?? [];
 
@@ -44,21 +47,48 @@ export default async function AdminNosotrosPage() {
             DESCRIPCIÓN GENERAL
           </h2>
           <div className="rounded-lg border border-white/10 bg-black/30 p-5">
-            <form action={updateAboutIntro} className="grid gap-3">
+            <form id="about-intro" action={updateAboutIntro} className="grid gap-3">
               <div>
                 <label className={labelCls}>Texto de presentación de la comunidad</label>
                 <textarea
                   name="intro"
                   defaultValue={intro}
                   className={textareaCls}
-                  rows={4}
-                  placeholder="IMPERIUM es una comunidad de jugadores de Discord..."
+                  rows={6}
+                  placeholder="IMPERIUM nació en 2006 en Silkroad Online..."
                 />
+                <p className="mt-1 font-hud text-[10px] text-white/30">
+                  Deja una línea en blanco entre párrafos para separarlos.
+                </p>
               </div>
               <div>
+                <label className={labelCls}>Nuestro recorrido (juegos) — uno por línea</label>
+                <textarea
+                  name="games"
+                  defaultValue={games.join("\n")}
+                  className={textareaCls}
+                  rows={5}
+                  placeholder={"Silkroad Online\nBlade & Soul\nMIR4"}
+                />
+                <p className="mt-1 font-hud text-[10px] text-white/30">
+                  Cada juego aparece como una etiqueta en la página.
+                </p>
+              </div>
+              <div>
+                <label className={labelCls}>Frase de cierre (la última línea se resalta en grande)</label>
+                <textarea
+                  name="quote"
+                  defaultValue={quote}
+                  className={textareaCls}
+                  rows={4}
+                  placeholder={"Porque los juegos cambian. Los servidores desaparecen.\nPero IMPERIUM permanece."}
+                />
+              </div>
+              <div className="flex items-center gap-3">
                 <button type="submit" className={btnPrimary}>
                   <span className="hud-label text-[11px]">Guardar descripción</span>
                 </button>
+                <CardPreviewButton formId="about-intro" fields={{ text: "intro" }} />
               </div>
             </form>
           </div>
@@ -120,6 +150,7 @@ export default async function AdminNosotrosPage() {
                     <button type="submit" form={`tl-${item.id}`} className={btnPrimary}>
                       <span className="hud-label text-[10px]">Guardar</span>
                     </button>
+                    <CardPreviewButton formId={`tl-${item.id}`} fields={{ title: "title", badge: "year", text: "description" }} />
                     <form action={deleteTimelineItem}>
                       <input type="hidden" name="id" value={item.id} />
                       <ConfirmButton message={`¿Eliminar el hito "${item.title}"?`} className={btnDanger}>
@@ -139,7 +170,7 @@ export default async function AdminNosotrosPage() {
                 <span className="hud-label text-[10px]">NUEVO HITO</span>
               </summary>
               <div className="mt-2 rounded-lg border border-white/10 bg-black/30 p-4">
-                <form action={createTimelineItem} className="grid gap-3">
+                <form id="tl-new" action={createTimelineItem} className="grid gap-3">
                   <input type="hidden" name="order_index" value={timeline.length + 1} />
                   <div className="grid gap-3 sm:grid-cols-[100px_1fr]">
                     <div>
@@ -155,9 +186,12 @@ export default async function AdminNosotrosPage() {
                     <label className={labelCls}>Descripción</label>
                     <textarea name="description" className={textareaCls} rows={2} />
                   </div>
-                  <button type="submit" className={btnPrimary}>
-                    <span className="hud-label text-[10px]">Añadir hito</span>
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <CardPreviewButton formId="tl-new" fields={{ title: "title", badge: "year", text: "description" }} />
+                    <button type="submit" className={btnPrimary}>
+                      <span className="hud-label text-[10px]">Añadir hito</span>
+                    </button>
+                  </div>
                 </form>
               </div>
             </details>
@@ -206,6 +240,14 @@ export default async function AdminNosotrosPage() {
                         <label className={labelCls}>Rol</label>
                         <input name="role" defaultValue={m.role} required className={inputCls} />
                       </div>
+                      <div>
+                        <label className={labelCls}>Nivel en el organigrama</label>
+                        <select name="tier" defaultValue={String(m.tier)} className={inputCls}>
+                          <option value="0">Líder</option>
+                          <option value="1">Administración</option>
+                          <option value="2">Moderación</option>
+                        </select>
+                      </div>
                     </div>
                     <div>
                       <label className={labelCls}>Biografía</label>
@@ -220,6 +262,7 @@ export default async function AdminNosotrosPage() {
                     <button type="submit" form={`adm-${m.id}`} className={btnPrimary}>
                       <span className="hud-label text-[10px]">Guardar</span>
                     </button>
+                    <CardPreviewButton formId={`adm-${m.id}`} variant="person" fields={{ image: "avatar_url", title: "name", subtitle: "role", text: "bio" }} />
                     <form action={deleteAboutAdmin}>
                       <input type="hidden" name="id" value={m.id} />
                       <ConfirmButton message={`¿Eliminar a "${m.name}"?`} className={btnDanger}>
@@ -239,7 +282,7 @@ export default async function AdminNosotrosPage() {
                 <span className="hud-label text-[10px]">NUEVO ADMINISTRADOR</span>
               </summary>
               <div className="mt-2 rounded-lg border border-white/10 bg-black/30 p-4">
-                <form action={createAboutAdmin} className="grid gap-3">
+                <form id="adm-new" action={createAboutAdmin} className="grid gap-3">
                   <input type="hidden" name="order_index" value={admins.length + 1} />
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div>
@@ -250,6 +293,14 @@ export default async function AdminNosotrosPage() {
                       <label className={labelCls}>Rol</label>
                       <input name="role" required className={inputCls} placeholder="Ej: Fundador / Líder" />
                     </div>
+                    <div>
+                      <label className={labelCls}>Nivel en el organigrama</label>
+                      <select name="tier" defaultValue="1" className={inputCls}>
+                        <option value="0">Líder</option>
+                        <option value="1">Administración</option>
+                        <option value="2">Moderación</option>
+                      </select>
+                    </div>
                   </div>
                   <div>
                     <label className={labelCls}>Biografía</label>
@@ -259,9 +310,12 @@ export default async function AdminNosotrosPage() {
                     <label className={labelCls}>Foto / avatar (URL)</label>
                     <ImagePreview name="avatar_url" placeholder="https://... (opcional)" />
                   </div>
-                  <button type="submit" className={btnPrimary}>
-                    <span className="hud-label text-[10px]">Añadir administrador</span>
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <CardPreviewButton formId="adm-new" variant="person" fields={{ image: "avatar_url", title: "name", subtitle: "role", text: "bio" }} />
+                    <button type="submit" className={btnPrimary}>
+                      <span className="hud-label text-[10px]">Añadir administrador</span>
+                    </button>
+                  </div>
                 </form>
               </div>
             </details>

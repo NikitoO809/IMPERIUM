@@ -1,0 +1,105 @@
+{
+  "game": "call-of-dragons",
+  "kind": "guide",
+  "slug": "builds-arbol-de-talentos",
+  "title": "Builds de Árbol de Talentos",
+  "description": "Los mejores builds de árbol de talentos por héroe en Call of Dragons: capturas de cada distribución para PvP, Behemoths, Pacificación, Marksman y más, con su retrato y filtro por modo.",
+  "order_index": 11,
+  "is_published": false,
+  "source_url": "https://cod.guide/talent-tree-builds/",
+  "intro_images": [
+    "https://cdn.cod.guide/wp-content/uploads/2023/01/Gwanwyn-Call-of-Dragons-Talent-Tree-Build-for-Field-Battle-1024x726.jpg"
+  ],
+  "items": [
+    {
+      "title": "Gwanwyn",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/gwanwyn.png\", \"credit\": \"Créditos: Abused Panda\", \"intro\": \"Una de las 3 heroínas iniciales en Call of Dragons. Es una heroína fantástica para el principio de la partida que te ayuda a erradicar a los Darklings con una eficacia extrema. Es fácil de subir de nivel, excelente luchando contra los Behemoths y muy buena en PvP si se construye correctamente.\\n\\nArtefacto recomendado: Shadow Blade. Emparejamientos recomendados: Hosk, Madeline, Kregg, Atheus, Alistair.\\n\\nEl build de talentos se centra en el ataque básico, que tiende a convertir el duro caparazón del rival en algo blando y vulnerable. Apoyarse mucho en el ataque básico también significa que tienes movilidad para reposicionarte en una mala situación sin preocuparte de perder la rabia acumulada para usar una habilidad.\\n\\nMejores emparejamientos:\\n\\nHosk: La mejor pareja disponible ahora mismo, usando sus habilidades 1 y 3. Madeline: Posible opción improvisada, ya que no hay muchos héroes que aumenten el ataque base. Kregg: Fácil de emparejar, ya que los eventos dan muchas de sus medallas al principio. Atheus: Opción alternativa porque funcionan sus habilidades 1, 2 y la mitad de la 3. Alistair: Opción alternativa porque funcionan sus habilidades 1 y 2.\\n\\nEl build de talentos se centra en el ataque básico, que tiende a convertir el duro caparazón del rival en algo blando y vulnerable. Apoyarse mucho en el ataque básico también te da la movilidad para moverte en una mala situación sin preocuparte de perder la rabia acumulada para usar una habilidad.\\n\\nMejores emparejamientos:\\n\\nNika: Por si consigues muchas medallas suyas al principio. Buenas habilidades 1 y 2. Emrys: Por si consigues muchas medallas suyas al principio. Buenas habilidades 1 y 2. Kregg: Fácil de emparejar, ya que los eventos dan muchas de sus medallas al principio. Atheus: Opción alternativa porque funcionan sus habilidades 1, 2 y la mitad de la 3. Alistair: Opción alternativa porque funcionan sus habilidades 1 y 2.\\n\\nEl build de talentos se centra en ganar estadísticas, ya que al principio de la partida puede que te falten y es una forma fácil de conseguir muchas. Este árbol también prioriza un fuerte daño explosivo (nuke), así que conviene emparejarla con un suplente que destaque usando daño de habilidad.\\n\\nMejores emparejamientos:\\n\\nNika: Por si consigues muchas medallas suyas al principio. Buenas habilidades 1 y 2. Emrys: Por si consigues muchas medallas suyas al principio. Buenas habilidades 1 y 2. Kregg: Fácil de emparejar, ya que los eventos dan muchas de sus medallas al principio. Atheus: Opción alternativa porque funcionan sus habilidades 1, 2 y la mitad de la 3. Alistair: Opción alternativa porque funcionan sus habilidades 1 y 2.\\n\\nEl build de talentos se centra en dañar a los Darklings para que tengas un ejército sólido cazándolos mientras el resto farmea experiencia sin problemas.\\n\\nMejores emparejamientos:\\n\\nNika: Por si consigues muchas medallas suyas al principio. Buenas habilidades 1 y 2. Emrys: Por si consigues muchas medallas suyas al principio. Buenas habilidades 1 y 2. Kregg: Fácil de emparejar, ya que los eventos dan muchas de sus medallas al principio. Atheus: Opción alternativa porque funcionan sus habilidades 1, 2 y la mitad de la 3. Alistair: Opción alternativa porque funcionan sus habilidades 1 y 2.\", \"builds\": [{\"label\": \"Batalla campal\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/01/Gwanwyn-Call-of-Dragons-Talent-Tree-Build-for-Field-Battle-1024x726.jpg\"}, {\"label\": \"Pacificación\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/01/gwanwyn-peacekeeping-talent-tree-build-1024x722.jpg\"}, {\"label\": \"PvP (nuke)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/01/gwanwyn-pvp-nuke-talent-tree-1024x722.jpg\"}, {\"label\": \"Pacificación (objetivo único)\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/01/gwanwyn-peacekeeping-single-target-talent-build-1024x722.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Bakhar",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/bakhar.png\", \"credit\": \"Créditos: Abused Panda\", \"intro\": \"Es un héroe agresivo en Call of Dragons que rinde de maravilla cuando se usa con movilidad y rapidez. Muy bueno para PvP o para rellenar una ranura de ejército extra.\\n\\nArtefacto recomendado: Giant's Bone, Springs of Silence, Cloak of Stealth. Emparejamientos recomendados: Nika, Madeline, Atheus, Alistair.\\n\\nEl build de talentos se centra en sorprender a tu rival moviéndote a su retaguardia para machacarlo. Por eso tienes una sola oportunidad de acertar o fallar. Se apoya mucho en la velocidad de marcha y el daño de habilidad.\\n\\nArtefacto recomendado: Cloak of Stealth\\n\\nMejores emparejamientos:\\n\\nNika: El árbol está pensado teniéndola a ella como suplente. Melanie: Otra buena pareja para este build por el sustain y el contraataque que aporta. Atheus: Posible opción para probar el build. Alistair: Posible opción para probar el build.\\n\\nEl build de talentos se centra en luchas LvSL para intercambiar méritos en un reino pacífico y se apoya mucho en el daño de habilidad.\\n\\nArtefactos recomendados: Giant's Bone y Springs of Silence\\n\\nMejores emparejamientos:\\n\\nNika: Funciona de maravilla para una pelea LvSL, capaz de destrozar por igual a caballería, arqueros y magos. Atheus: No es la mejor, pero no hay muchas más opciones, jeje. Alistair: No es la mejor, pero no hay muchas más opciones, jeje.\", \"builds\": [{\"label\": \"Batalla campal (objetivo único)\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/01/bakhar-field-battle-single-target-build-1024x722.jpg\"}, {\"label\": \"1 vs 1\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/01/bakhar-talent-tree-build-1v1-1024x722.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Waldyr",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/waldyr.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Behemoths y DPS\", \"mode\": \"Behemoths\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr-behemoths-and-dps-talent-tree-build-1024x722.jpg\"}, {\"label\": \"PvP 1 vs 1\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr-pvp-1vs1-talent-tree-1024x722.jpg\"}, {\"label\": \"PvP general\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr-pvp-talent-tree-1024x722.jpg\"}, {\"label\": \"Magia\", \"mode\": \"Magia\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr-magic-talent-tree-1024x722.jpg\"}, {\"label\": \"Habilidad\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/waldyr-skill-talent-tree-1024x722.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Liliya",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/liliya.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"PvP (por Shinchi42)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-pvp-talent-tree-Call-of-Dragons-1024x552.jpg\"}, {\"label\": \"Pacificación (por Shinchi42)\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-peacekeeping-talent-tree-1-1024x552.jpg\"}, {\"label\": \"Para Behemoths\", \"mode\": \"Behemoths\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-behemoths-talent-tree-build-1024x722.jpg\"}, {\"label\": \"Magia\", \"mode\": \"Magia\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-magic-talent-tree-1024x722.jpg\"}, {\"label\": \"Habilidad\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-skill-talent-tree-1024x722.jpg\"}, {\"label\": \"1 vs 1 (rage)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-rage-1v1-talent-tree-1024x722.jpg\"}, {\"label\": \"Pacificación (no recomendada)\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/liliya-peacekeeping-talent-tree-1024x722.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Kregg",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kregg.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Marksman\", \"mode\": \"Marksman\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/marksman-kregg-pvp-talent-tree-build-1024x612.jpg\"}, {\"label\": \"Para Behemoths\", \"mode\": \"Behemoths\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/kregg-behenmoths-talent-tree-build-1024x602.jpg\"}, {\"label\": \"Movilidad\", \"mode\": \"Movilidad\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/kregg-mobility-talent-tree-build-1024x602.jpg\"}, {\"label\": \"Velocidad\", \"mode\": \"Movilidad\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/kregg-speed-build-guide-1024x602.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Alwyn",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/alwyn.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Magia\", \"mode\": \"Magia\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn-magic-build-for-pvp-1024x619.jpg\"}, {\"label\": \"Control\", \"mode\": \"Control\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/alwyn-control-talent-tree-build-1024x619.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Eliana",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/eliana.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"General\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/eliana-overall-build-talent-tree-1024x722.jpg\"}, {\"label\": \"Apoyo\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/eliana-support-talent-tree-1-1-1024x722.jpg\"}, {\"label\": \"Pacificación\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/eliana-peacekeeping-build-1-1024x722.jpg\"}, {\"label\": \"Tanque\", \"mode\": \"Tanque\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/eliana-tank-build-1024x722.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Atheus",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/atheus.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Movilidad\", \"mode\": \"Movilidad\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/atheus-mobily-talent-tree-build-1024x619.jpg\"}, {\"label\": \"PvP\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/atheus-pvp-talent-tree-build-1024x673.jpg\"}, {\"label\": \"Magia\", \"mode\": \"Magia\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/atheus-magic-talent-tree-1024x673.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Alistair",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/alistair.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"General\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/alistair-talent-tree-1024x564.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Theia",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/theia.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"PvP\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/theia-pvp-build-1-1024x673.jpg\"}, {\"label\": \"General\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/theia-overall-build-guide-1024x673.jpg\"}, {\"label\": \"Apoyo\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/theia-supoprt-build-1024x673.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Emrys",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/emrys.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Movilidad\", \"mode\": \"Movilidad\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/emrys-mobility-speed-build-1024x722.jpg\"}, {\"label\": \"PvP\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/emrys-pvp-talent-build-1024x896.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Nico",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/nico.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Behemoths\", \"mode\": \"Behemoths\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nico-behemoths-talent-tree-build-1024x673.jpg\"}, {\"label\": \"Marksman\", \"mode\": \"Marksman\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nico-marksman-talent-tree-1024x673.jpg\"}, {\"label\": \"PvP (precisión)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nico-precision-pvp-1024x673.jpg\"}, {\"label\": \"PvP (velocidad)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nico-pvp-speed-build-1024x673.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Nika",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/nika.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Infantería\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nika-infantry-build-Call-of-Dragons-1024x673.jpg\"}, {\"label\": \"Pacificación\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nika-peacekeeing-talent-guide-1024x659.jpg\"}, {\"label\": \"Habilidad\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nika-skill-build-talent-1024x673.jpg\"}, {\"label\": \"Habilidad (rage)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/nika-skill-rage-build-1024x673.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Bakshi",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/bakshi.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Campo abierto\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/bakshi-open-field-talent-tree-1024x576.jpg\"}, {\"label\": \"Pacificación\", \"mode\": \"Pacificación\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/bakshi-peackeeping-talent-tree-1024x576.jpg\"}, {\"label\": \"Habilidad (rage)\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/bakshi-rage-skill-tree-cod-1024x576.jpg\"}, {\"label\": \"PvP 1 vs 1\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/bakshi-pvp-1vs1-talent-build-1024x659.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Velyn",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/velyn-1.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Magia y control\", \"mode\": \"Control\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/velyn-magic-control-talent-tree-1024x630.jpg\"}, {\"label\": \"Magia (2)\", \"mode\": \"Magia\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/velyn-magic-2-talent-tree-1024x647.jpg\"}, {\"label\": \"Control\", \"mode\": \"Control\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/velyn-control-talent-tree-1024x647.jpg\"}, {\"label\": \"Control\", \"mode\": \"Control\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/velyn-control-talent-tree-1024x647.jpg\"}, {\"label\": \"PvP\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/velyn-pvp-talent-tree-1024x647.jpg\"}, {\"label\": \"Todoterreno\", \"mode\": \"Mixto\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/02/velyn-all-rounder-1024x647.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Kinnara",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara-1.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Marksman\", \"mode\": \"Marksman\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara-marksman-talent-tree-1024x647.jpg\"}, {\"label\": \"Control\", \"mode\": \"Control\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara-control-talent-tree-1024x647.jpg\"}, {\"label\": \"Behemoths\", \"mode\": \"Behemoths\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara-behemoth-talent-tree-1024x647.jpg\"}, {\"label\": \"PvP\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara-pvp-talent-tree-1024x647.jpg\"}, {\"label\": \"Todoterreno\", \"mode\": \"Mixto\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/kinnara-all-rounder-talent-tree-1024x647.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Madeline",
+      "content": "__TALENTS__{\"portrait\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/madeline.png\", \"credit\": null, \"intro\": null, \"builds\": [{\"label\": \"Infantería\", \"mode\": \"General\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/medaline-infantry-talent-tree-3-1024x889.jpg\"}, {\"label\": \"PvP\", \"mode\": \"PvP\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/medaline-pvp-talent-tree-1024x889.jpg\"}, {\"label\": \"Tanque\", \"mode\": \"Tanque\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/madeline-tank-talent-tree-1024x889.jpg\"}]}",
+      "images": []
+    },
+    {
+      "title": "Farming",
+      "content": "__TALENTS__{\"portrait\": null, \"credit\": null, \"intro\": \"Leer más: Guía de farmeo\", \"builds\": [{\"label\": \"Recolección\", \"mode\": \"Farmeo\", \"img\": \"https://cdn.cod.guide/wp-content/uploads/2023/03/gathering-talent-tree-call-of-dragon-1024x795.jpg\"}]}",
+      "images": []
+    }
+  ]
+}

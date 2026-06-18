@@ -1,0 +1,132 @@
+{
+  "game": "call-of-dragons",
+  "kind": "guide",
+  "slug": "conseguir-recursos",
+  "title": "Cómo Conseguir Recursos",
+  "description": "Guía completa de las mejores formas de obtener oro, madera, mineral y maná en Call of Dragons: héroes y unidades de recolección, artefactos, misiones, eventos, tecnología y mucho más.",
+  "order_index": 6,
+  "is_published": false,
+  "intro_images": [
+    "https://cdn.cod.guide/wp-content/uploads/2023/02/pan-gathering-skill-in-Call-of-Dragons-1024x576.png"
+  ],
+  "source_url": "https://cod.guide/get-resources/",
+  "items": [
+    {
+      "title": "Usa héroes de recolección adecuados",
+      "content": "Los héroes en Call of Dragons vienen en muchas formas y tamaños, cada uno con su utilidad especial. Mientras que algunos son más adecuados para escaramuzas PvP, atacar Bastiones de otros jugadores o enfrentarse a Darklings y fuerzas oscuras, otros son más útiles para recolectar recursos.\n\nIndis (Legendaria) y Pan (Épica) son excelentes ejemplos de héroes que destacan en la recolección de recursos.\n\nTanto Indis como Pan tienen habilidades y talentos especiales que los hacen ideales para recoger oro, madera, mineral y maná de los puntos de recursos.\n\nPor ejemplo, el árbol de talentos de recolección de Pan se centra en maximizar la eficiencia de recolección, como aumentar la velocidad de recolección y la capacidad de carga de recursos, e incluso otorgar un 50% de bonificación a la producción de recursos de tu ciudad durante una hora si Pan y su legión han estado recolectando durante al menos una hora.\n\nSi tienes alguno de estos héroes, asegúrate de maximizar sus talentos de recolección para aprovechar al máximo tu potencial de recolección de recursos.",
+      "images": []
+    },
+    {
+      "title": "Usa unidades de recolección adecuadas (tropas)",
+      "content": "Si formas parte de las facciones League of Order, Springwardens o Wilderburg en Call of Dragons, tendrás acceso a la unidad de transporte respectiva de cada facción:\n\n- Workhorses para la League of Order,\n\n- Work-Elks para los Springwardens\n\n- Workrhinos de Wilderburg.\n\nAl recolectar recursos de los puntos de recursos, estas son las mejores unidades de transporte que puedes usar, ya que tienen la mayor capacidad de carga de recursos. Cada unidad de transporte tiene además sus propios beneficios especiales.\n\nPor ejemplo, los Workrhinos de Wilderburg obtienen recursos extra después de que un punto de recursos se agota. Los Work-Elks de los Springwardens tienen la mayor velocidad al dirigirse a los puntos de recursos. Los Workhorses de la League of Order tienen la mayor capacidad de carga.\n\nPero es importante señalar que los Workhorses de mayor nivel no ofrecen más capacidad de carga, ya que los Workhorses de nivel 1 tienen la más alta.\n\nAdemás, la facción League of Order obtiene una bonificación de +10% de velocidad de recolección, lo que vale la pena tener en cuenta a la hora de decidir a qué facción unirse.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/Gathering-Artifact-1024x576.png"
+      ]
+    },
+    {
+      "title": "Usa artefactos de recolección",
+      "content": "Hacer uso de un artefacto de recolección es tan efectivo como tener un héroe de recolección en Call of Dragons. Puedes conseguir estos artefactos usando Llaves de Artefacto Universal en el Altar (el mismo lugar donde reclutas héroes).\n\nEstos son algunos de los mejores artefactos a considerar:\n\n- Ancient Tree Roots: este artefacto Legendario aumenta la capacidad de carga de recursos de tu legión en un 24,7% y su HP en un 2% cuando está completamente mejorado. También te permite teletransportar instantáneamente a tu legión a un punto de recursos de alto nivel aleatorio dentro de un cierto rango.\n\n- Greenfinger Sickle: este artefacto Épico aumenta la capacidad de carga de recursos de tu legión en un 21,7%. También te permite recolectar 400.000 de madera, 300.000 de mineral o 160.000 de maná de un punto de recursos elegido. Sin embargo, la cantidad de recursos recolectados no debe superar la capacidad de carga de la legión ni la cantidad restante de recursos en el punto. Además, tiene un tiempo de recarga de 12 horas.\n\n- Enchanted Coins: artefacto Avanzado pero muy útil, aumenta mucho la velocidad de recolección general.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/main-quest-Call-of-Dragons-1024x471.png"
+      ]
+    },
+    {
+      "title": "Completa misiones",
+      "content": "Completar misiones principales y secundarias en Call of Dragons es una forma ideal de conseguir recursos, especialmente en las primeras etapas del juego.\n\nEstas misiones son muy gratificantes; te proporcionan oro, madera, mineral y otras ventajas como gemas y mejoras. Para acceder a la página de misiones, simplemente toca el icono del pergamino situado en la esquina superior izquierda.\n\nUna vez que termines una misión, aparecerá una burbuja roja con un número que te informará de cuántas misiones has completado para que puedas canjear tus recompensas.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/Call-of-Dragons-Daily-Quests-Rewards-1024x576.png"
+      ]
+    },
+    {
+      "title": "Hacer desafíos (misiones diarias)",
+      "content": "Los desafíos son tareas similares a las que se encuentran en las misiones principales y secundarias, pero están relacionados con eventos específicos y ofrecen recompensas diferentes.\n\nDurante el evento Titan's Legacy, completar desafíos diarios, semanales o de temporada te dará Rune EXP y Keys of Titan, ambos necesarios para abrir el gran cofre situado en la parte superior de la página de desafíos.\n\nUna vez que la barra de progreso esté llena, el cofre te recompensará con gemas, aceleradores, madera, mineral, maná y otras cosas buenas; el tipo y la cantidad de recompensas dependen de tu nivel de runa actual.\n\nComo el nivel de runa 1 requiere 6 desafíos diarios para abrir el cofre, estos son los más fáciles de completar, siendo los desafíos de temporada los más difíciles.\n\nPuedes alternar entre estas tres categorías y consultar los requisitos de cada desafío tocando las pestañas situadas debajo de la barra de progreso del cofre.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/Alliance-Territory-Rewards-1024x576.png"
+      ]
+    },
+    {
+      "title": "Recoge las recompensas del territorio de alianza cada día",
+      "content": "¿Quieres conseguir oro y recursos extra? Los miembros de una alianza pueden aprovechar una recompensa especial, pero solo si su alianza tiene un territorio.\n\nEl tamaño del territorio determina la cantidad de recursos que puedes recibir, lo que incluye oro, madera, mineral y maná.\n\nLa recompensa se acumula durante un periodo de 24 horas, así que asegúrate de reclamarla a diario para no perdértela. Para recogerla, abre el menú de la alianza y selecciona la opción 'Territorio'.\n\nLuego, si hay recursos disponibles, simplemente toca el botón 'Reclamar' y se añadirán a tu cuenta.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/01/Call-of-Dragons-Dark-Chests-1024x765.png"
+      ]
+    },
+    {
+      "title": "Conseguir Dark Chests",
+      "content": "Derrotar a las Darkling Legions en Call of Dragons es una gran manera de conseguir recursos y subir de nivel a tu héroe. Al vencer a una Darkling Legion, serás recompensado con una Darkling Key. Usa estas llaves para abrir los Dark Chests repartidos por el mapa fuera de tu ciudad.\n\nPara abrir el cofre, debes tener el número necesario de llaves y luego derrotar a los Darkling Guards que lo custodian. La dificultad y la forma de las criaturas pueden variar, y pueden ser bastante difíciles de derrotar si tu legión no es lo suficientemente fuerte.\n\nCuanto más grande sea el cofre, más recompensas podrás recoger. Estos Dark Chests contienen muchos recursos valiosos, incluidos Resource Bundles con una buena cantidad de recursos.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/system-mail-gift-1024x576.png"
+      ]
+    },
+    {
+      "title": "Regalos del sistema en el correo",
+      "content": "Cada vez que tu ciudad alcanza un nuevo nivel, recibirás una recompensa especial por correo con madera, mineral, Gold Keys y otras cosas buenas, enviada a través de la pestaña del sistema en el correo del juego.\n\nLos desarrolladores también pueden enviar recompensas tras una actualización importante o un mantenimiento del servidor.\n\nAsí que asegúrate de revisar siempre tu correo y recoger las recompensas que te ayudarán a avanzar. Puedes recogerlas individualmente o simplemente pulsar el botón \"Leer y reclamar todo\", como se muestra en la captura de pantalla.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/01/Strongest-Lord-Event-Call-of-Dragons-1024x576.png"
+      ]
+    },
+    {
+      "title": "Completar eventos",
+      "content": "¡Los eventos son una gran manera de conseguir más recursos en Call of Dragons!\n\nEl juego suele organizar eventos especiales que implican tareas como recolectar un determinado recurso, mejorar edificios o iniciar sesión durante un número específico de días.\n\nPor ejemplo, el evento Strongest Lord tiene una serie de misiones a lo largo de 5 días en las que puedes recibir muchos recursos completando las misiones indicadas. Las recompensas incluyen fichas de héroe, Gold Keys y Llaves de Artefacto Universal.\n\nPara llegar a la página de eventos, simplemente toca el icono del pergamino (el primer icono) en la parte superior derecha de tu pantalla.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/Daily-Deals-Call-of-Dragons-1024x576.png"
+      ]
+    },
+    {
+      "title": "Ofertas diarias gratuitas",
+      "content": "¡Dirígete a la página del Mercado y echa un vistazo a la pestaña de Daily Deals! Encontrarás algunos paquetes premium, así como un cofre diario gratuito lleno de recursos.\n\nSolo hace falta un toque para reclamar los recursos.\n\nLas recompensas no son muchas, pero definitivamente son útiles al principio del juego.\n\nPara encontrar esta página, toca la ranura animada (que cambia con cada promoción) situada junto al icono de eventos en la esquina superior derecha. Luego, toca la pestaña Daily Deals como se muestra en la captura de arriba.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/gathering-boost-1024x576.png"
+      ]
+    },
+    {
+      "title": "Gathering Boost",
+      "content": "Los objetos Resource Boost y Gathering Boost pueden dar un gran impulso a tu producción de recursos y a tu velocidad de recolección. Vienen en dos formatos, de 8 horas y de 24 horas, y se pueden consumir antes de enviar a tus tropas a recolectar recursos.\n\nEstos objetos se pueden encontrar en el edificio Shop y se pueden comprar con gemas. La producción de madera, maná y mineral se puede aumentar en un 25% con estos objetos.\n\nUn boost de 8 horas te costará 70 gemas, y un objeto de boost de recursos de 24 horas costará 300 gemas. Pero nunca se recomienda comprarlos con gemas. Puedes conseguirlos gratis en muchos eventos.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/01/green-wood-boost.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/8-hour-gathering-boost.png",
+        "https://cdn.cod.guide/wp-content/uploads/2023/01/alliance-tech-Call-of-Dragons-1024x576.png"
+      ]
+    },
+    {
+      "title": "Tecnología de economía",
+      "content": "El árbol de tecnología de economía (Economy Tech Tree) en Call of Dragons es imprescindible a la hora de desarrollar tu Bastión.\n\nAl investigar ciertas mejoras como Logging Techniques y Forestry, puedes aumentar la producción de recursos y la velocidad de recolección de tu ciudad.\n\nAdemás, investigar el árbol de tecnología de economía aumentará tu capacidad de carga, que es la cantidad de recursos que tus legiones pueden tomar de los puntos de recursos. Para aumentar aún más la capacidad de carga, puedes investigar la tecnología Container Upgrade.\n\nPor último, investigar Mana Prospering permitirá que tus legiones recolecten maná. Por lo tanto, es sensato centrarse en investigar el árbol de tecnología de economía antes que el militar.\n\nHacerlo mejorará tu producción de recursos y desbloqueará nuevas funciones relacionadas con los recursos que serán beneficiosas a largo plazo.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/Call-of-Dragons-Resource-Tokens-1024x576.png"
+      ]
+    },
+    {
+      "title": "Objetos de recursos",
+      "content": "Puedes conseguir recursos haciendo misiones, recolectando de los puntos de recursos, abriendo cofres y participando en eventos, así como a través de la Tienda.\n\nSi tienes suficientes gemas, puedes usarlas para comprar objetos de recursos. Por ejemplo, un objeto de 1,5M de madera te costará 2.300 gemas.\n\nPara acceder a la pestaña de objetos de recursos de la Tienda, toca el edificio Store y luego selecciona el tercer icono, el de la bolsa de monedas. Desplázate hacia abajo y elige el objeto de recurso que quieras comprar.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/Upgrading-Honorary-VIP-Membership-1-1024x576.png"
+      ]
+    },
+    {
+      "title": "Honorary Membership",
+      "content": "Situada en el edificio Store, la Honorary Membership ofrece numerosas ventajas.\n\nCada día se puede reclamar una recompensa que contiene recursos. Mejorar el nivel de la Honorary Membership desbloquea mejores recompensas y buffs para los recursos de la ciudad.\n\nPor ejemplo, mejorar al nivel 1 otorga 5 nuevos buffs de recursos, incluida la producción de mineral, maná y madera, y un aumento del 5% en la velocidad de recolección.\n\nCuanto más alto sea el nivel de la Honorary Membership, mejores serán los buffs y las recompensas diarias.\n\nAdemás, la pestaña Store de esta página da acceso a un conjunto de objetos con descuento justo al lado de la pestaña Perks.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/goblin-merchant-Call-of-Dragons-1024x576.png"
+      ]
+    },
+    {
+      "title": "Goblin Merchants",
+      "content": "Una vez que tu ciudad sube al nivel 6, el edificio Hall of Order te da acceso al Goblin Market. El Goblin Merchant aparecerá en tu ciudad periódicamente, ofreciendo varios objetos y recursos a precios con descuento.\n\nHace poco compré 50.000 de oro por solo 40.000 de madera, un descuento fijo del -25%, y 7.500 de mineral por solo 5 gemas.\n\n¡Mantente atento al Goblin Merchant y aprovecha sus ofertas!",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/opening-Call-of-Dragons-chests-1024x576.png"
+      ]
+    },
+    {
+      "title": "Abrir cofres",
+      "content": "La función de reclutamiento de héroes (Hero Recruitment) en el edificio Altar te da la oportunidad de reclutar nuevos héroes. Sin embargo, las probabilidades de conseguir grandes héroes son escasas, por lo que tienes más posibilidades de obtener objetos de recursos.\n\nEstos objetos se pueden recibir tanto del reclutamiento del Silver Chest como del Gold Chest.\n\nTienes un 76,2% de probabilidad de conseguir objetos de recursos Avanzados (hasta 50.000 recursos), y un 3,2% de probabilidad de conseguir objetos de recursos Elite, por ejemplo, 150.000 de oro/madera o 112.000 de mineral.\n\nNota: abrir 10 llaves a la vez no aumenta tus probabilidades de conseguir recompensas. Simplemente ábrelas si necesitas recursos.",
+      "images": [
+        "https://cdn.cod.guide/wp-content/uploads/2023/02/rewards-chatting-heroes-1024x576.png"
+      ]
+    },
+    {
+      "title": "Regalos por charlar con los héroes",
+      "content": "¡Sí, lo has entendido bien! En Call of Dragons, los héroes también pueden ofrecerte regalos especiales. Esto se consigue entablando breves conversaciones con ellos, tras las cuales te ofrecerán un regalo especial que incluye recursos y otros objetos esenciales.\n\nPara hacerlo, mientras estás dentro de tu ciudad, los héroes disponibles para charlar tendrán un icono de bocadillo de 3 puntos, que te informa de que puedes iniciar la conversación.\n\nUna vez que tocas ese icono, el héroe te dirá algo o te pedirá consejo y tendrás que elegir una opción. La respuesta que des afectará a si te ofrece un regalo o no.\n\nEsta función también aumenta tu nivel de reputación con cada héroe, a través del cual puedes desbloquear una serie de cosas interesantes, como historias sobre el héroe y audios cortos.",
+      "images": []
+    }
+  ]
+}

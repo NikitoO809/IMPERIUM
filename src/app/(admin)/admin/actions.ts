@@ -86,6 +86,10 @@ function revalidateHorizon() {
   revalidatePath("/admin/horizonte");
   revalidatePath("/");
 }
+function revalidateCommunity() {
+  revalidatePath("/admin/comunidad");
+  revalidatePath("/comunidad");
+}
 
 // FormData <-> JSON (para guardar el cambio pendiente y re-ejecutarlo al aprobar).
 function fdToJson(fd: FormData): Record<string, string> {
@@ -283,6 +287,25 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     if (error) throw new Error(error.message);
     revalidateAll();
   },
+  setSectionPublished: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("game_sections")
+      .update({ is_published: str(fd, "value") === "true" })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateAll();
+  },
+  // Publica de golpe TODAS las guías y secciones de un juego (atajo "mostrar
+  // todo al público"). Útil tras scrapear un juego nuevo, donde todo nace oculto.
+  publishAllContent: async (fd, supabase) => {
+    const gameId = str(fd, "game_id");
+    if (!gameId) throw new Error("Falta el juego");
+    const r1 = await supabase.from("guides").update({ is_published: true }).eq("game_id", gameId);
+    if (r1.error) throw new Error(r1.error.message);
+    const r2 = await supabase.from("game_sections").update({ is_published: true }).eq("game_id", gameId);
+    if (r2.error) throw new Error(r2.error.message);
+    revalidateAll();
+  },
   deleteSection: async (fd, supabase) => {
     const { error } = await supabase.from("game_sections").delete().eq("id", str(fd, "id"));
     if (error) throw new Error(error.message);
@@ -473,9 +496,13 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
 
   // ── Nosotros ──
   updateAboutIntro: async (fd, supabase) => {
-    const { error } = await supabase
-      .from("about_page")
-      .upsert({ id: 1, intro: str(fd, "intro") || null, updated_at: new Date().toISOString() });
+    const { error } = await supabase.from("about_page").upsert({
+      id: 1,
+      intro: str(fd, "intro") || null,
+      quote: str(fd, "quote") || null,
+      games: parseImages(str(fd, "games")), // una por línea (reutiliza el parser de líneas)
+      updated_at: new Date().toISOString(),
+    });
     if (error) throw new Error(error.message);
     revalidateAbout();
   },
@@ -529,17 +556,20 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     const name = str(fd, "name");
     const role = str(fd, "role");
     if (!name || !role) throw new Error("Faltan datos");
+    const tierStr = str(fd, "tier");
     const { error } = await supabase.from("about_admins").insert({
       name,
       role,
       bio: str(fd, "bio") || null,
       avatar_url: str(fd, "avatar_url") || null,
+      tier: tierStr === "" ? 1 : Number(tierStr),
       order_index: Number(str(fd, "order_index")) || 0,
     });
     if (error) throw new Error(error.message);
     revalidateAbout();
   },
   updateAboutAdmin: async (fd, supabase) => {
+    const tierStr = str(fd, "tier");
     const { error } = await supabase
       .from("about_admins")
       .update({
@@ -547,6 +577,7 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
         role: str(fd, "role"),
         bio: str(fd, "bio") || null,
         avatar_url: str(fd, "avatar_url") || null,
+        tier: tierStr === "" ? 1 : Number(tierStr),
         order_index: Number(str(fd, "order_index")) || 0,
       })
       .eq("id", str(fd, "id"));
@@ -572,6 +603,118 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     const { error } = await supabase.from("about_admins").delete().eq("id", str(fd, "id"));
     if (error) throw new Error(error.message);
     revalidateAbout();
+  },
+
+  // ── Comunidad: logros (hazañas con imágenes y vídeos) ──
+  createAchievement: async (fd, supabase) => {
+    const title = str(fd, "title");
+    if (!title) throw new Error("Falta el título");
+    const { error } = await supabase.from("community_achievements").insert({
+      title,
+      description: str(fd, "description") || null,
+      game: str(fd, "game") || null,
+      author_name: str(fd, "author_name") || null,
+      author_avatar: str(fd, "author_avatar") || null,
+      achieved_on: str(fd, "achieved_on") || null,
+      images: parseImages(str(fd, "images")),
+      videos: parseImages(str(fd, "videos")),
+      accent: str(fd, "accent") || "#7c5cff",
+    });
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+  updateAchievement: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("community_achievements")
+      .update({
+        title: str(fd, "title"),
+        description: str(fd, "description") || null,
+        game: str(fd, "game") || null,
+        author_name: str(fd, "author_name") || null,
+        author_avatar: str(fd, "author_avatar") || null,
+        achieved_on: str(fd, "achieved_on") || null,
+        images: parseImages(str(fd, "images")),
+        videos: parseImages(str(fd, "videos")),
+        accent: str(fd, "accent") || "#7c5cff",
+      })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+  setAchievementPublished: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("community_achievements")
+      .update({ is_published: str(fd, "value") === "true" })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+  deleteAchievement: async (fd, supabase) => {
+    const { error } = await supabase.from("community_achievements").delete().eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+
+  // ── Comunidad: mejores jugadores ──
+  createTopPlayer: async (fd, supabase) => {
+    const name = str(fd, "name");
+    if (!name) throw new Error("Falta el nombre");
+    const { error } = await supabase.from("community_top_players").insert({
+      name,
+      role: str(fd, "role") || null,
+      achievement: str(fd, "achievement") || null,
+      avatar_url: str(fd, "avatar_url") || null,
+      accent: str(fd, "accent") || "#22e0ff",
+      order_index: Number(str(fd, "order_index")) || 0,
+    });
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+  updateTopPlayer: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("community_top_players")
+      .update({
+        name: str(fd, "name"),
+        role: str(fd, "role") || null,
+        achievement: str(fd, "achievement") || null,
+        avatar_url: str(fd, "avatar_url") || null,
+        accent: str(fd, "accent") || "#22e0ff",
+        order_index: Number(str(fd, "order_index")) || 0,
+      })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+  setTopPlayerPublished: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("community_top_players")
+      .update({ is_published: str(fd, "value") === "true" })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
+  },
+  moveTopPlayer: async (fd, supabase) => {
+    const id = str(fd, "id");
+    const direction = str(fd, "direction") as "up" | "down";
+    const { data: all } = await supabase
+      .from("community_top_players")
+      .select("id, order_index")
+      .order("order_index");
+    if (!all) return;
+    const idx = all.findIndex((r) => r.id === id);
+    if (idx === -1) return;
+    const adjIdx = direction === "up" ? idx - 1 : idx + 1;
+    if (adjIdx < 0 || adjIdx >= all.length) return;
+    const cur = all[idx];
+    const adj = all[adjIdx];
+    await supabase.from("community_top_players").update({ order_index: adj.order_index }).eq("id", cur.id);
+    await supabase.from("community_top_players").update({ order_index: cur.order_index }).eq("id", adj.id);
+    revalidateCommunity();
+  },
+  deleteTopPlayer: async (fd, supabase) => {
+    const { error } = await supabase.from("community_top_players").delete().eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateCommunity();
   },
 };
 
@@ -661,6 +804,13 @@ export async function createSection(fd: FormData) {
 export async function updateSection(fd: FormData) {
   await gate("updateSection", fd, `Editar sección: ${str(fd, "title")}`);
 }
+export async function setSectionPublished(fd: FormData) {
+  const pub = str(fd, "value") === "true";
+  await gate("setSectionPublished", fd, `${pub ? "Mostrar" : "Ocultar"} una sección`, { requirePublisher: true });
+}
+export async function publishAllContent(fd: FormData) {
+  await gate("publishAllContent", fd, "Mostrar al público TODO el contenido de un juego", { requirePublisher: true });
+}
 export async function deleteSection(fd: FormData) {
   const gameId = str(fd, "game_id");
   const { executed } = await gate("deleteSection", fd, "Eliminar una sección (y sus bloques)", { requirePublisher: true });
@@ -736,6 +886,39 @@ export async function moveAboutAdmin(fd: FormData) {
 }
 export async function deleteAboutAdmin(fd: FormData) {
   await gate("deleteAboutAdmin", fd, "Eliminar un administrador", { requirePublisher: true });
+}
+
+// Comunidad — logros
+export async function createAchievement(fd: FormData) {
+  await gate("createAchievement", fd, `Crear logro: ${str(fd, "title") || "(nuevo)"}`, { requirePublisher: true });
+}
+export async function updateAchievement(fd: FormData) {
+  await gate("updateAchievement", fd, `Editar logro: ${str(fd, "title")}`, { requirePublisher: true });
+}
+export async function setAchievementPublished(fd: FormData) {
+  const pub = str(fd, "value") === "true";
+  await gate("setAchievementPublished", fd, `${pub ? "Mostrar" : "Ocultar"} un logro`, { requirePublisher: true });
+}
+export async function deleteAchievement(fd: FormData) {
+  await gate("deleteAchievement", fd, "Eliminar un logro", { requirePublisher: true });
+}
+
+// Comunidad — mejores jugadores
+export async function createTopPlayer(fd: FormData) {
+  await gate("createTopPlayer", fd, `Añadir jugador top: ${str(fd, "name") || "(nuevo)"}`, { requirePublisher: true });
+}
+export async function updateTopPlayer(fd: FormData) {
+  await gate("updateTopPlayer", fd, `Editar jugador top: ${str(fd, "name")}`, { requirePublisher: true });
+}
+export async function setTopPlayerPublished(fd: FormData) {
+  const pub = str(fd, "value") === "true";
+  await gate("setTopPlayerPublished", fd, `${pub ? "Mostrar" : "Ocultar"} un jugador top`, { requirePublisher: true });
+}
+export async function moveTopPlayer(fd: FormData) {
+  await gate("moveTopPlayer", fd, "Reordenar mejores jugadores", { requirePublisher: true });
+}
+export async function deleteTopPlayer(fd: FormData) {
+  await gate("deleteTopPlayer", fd, "Quitar a un jugador top", { requirePublisher: true });
 }
 
 // ════════════════════════════════════════════════════════════════

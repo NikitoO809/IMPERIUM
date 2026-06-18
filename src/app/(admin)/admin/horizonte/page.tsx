@@ -5,6 +5,7 @@ import { getAdminPreRegisterGames } from "@/lib/preregister-games";
 import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { ImagePreview } from "@/components/admin/ImagePreview";
+import { CardPreviewButton } from "@/components/admin/CardPreviewButton";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
 import {
   createPreRegisterGame,
@@ -147,6 +148,10 @@ export default async function AdminHorizontePage() {
                   <button type="submit" form={`pr-${g.id}`} className={btnPrimary}>
                     <span className="hud-label text-[10px]">Guardar</span>
                   </button>
+                  <CardPreviewButton
+                    formId={`pr-${g.id}`}
+                    fields={{ image: "image", title: "name", badge: "hype", subtitle: "genre", text: "blurb", meta: ["status", "platforms", "release_window", "developer"] }}
+                  />
                   <form action={deletePreRegisterGame}>
                     <input type="hidden" name="id" value={g.id} />
                     <ConfirmButton message={`¿Quitar "${g.name}" de la lista?`} className={btnDanger}>
@@ -169,7 +174,7 @@ export default async function AdminHorizontePage() {
             <span className="hud-label text-[10px]">NUEVO JUEGO</span>
           </summary>
           <div className="mt-2 overflow-hidden rounded-lg border border-white/10 bg-black/30 p-5">
-            <form action={createPreRegisterGame} className="grid gap-3 sm:grid-cols-2">
+            <form id="pr-new" action={createPreRegisterGame} className="grid gap-3 sm:grid-cols-2">
               <input type="hidden" name="order_index" value={games.length + 1} />
               <div>
                 <label className={labelCls}>Nombre <span className="text-red-400">*</span></label>
@@ -223,7 +228,11 @@ export default async function AdminHorizontePage() {
                 <label className={labelCls}>Enlace de preregistro (opcional)</label>
                 <input name="prereg_url" className={inputCls} placeholder="https://..." />
               </div>
-              <div className="sm:col-span-2">
+              <div className="sm:col-span-2 flex items-center gap-3">
+                <CardPreviewButton
+                  formId="pr-new"
+                  fields={{ image: "image", title: "name", badge: "hype", subtitle: "genre", text: "blurb", meta: ["status", "platforms", "release_window", "developer"] }}
+                />
                 <button type="submit" className={btnPrimary}>
                   <span className="hud-label text-[10px]">Agregar juego</span>
                 </button>

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getGuide } from "@/lib/games";
 import { HudLabel, Panel } from "@/components/hud";
 import { GuideRunner } from "@/components/GuideRunner";
+import { TalentBuildsViewer } from "@/components/TalentBuildsViewer";
 
 export default async function GuidePage({
   params,
@@ -72,7 +73,13 @@ export default async function GuidePage({
         </Panel>
       )}
 
-      <GuideRunner steps={guide.steps} initialCompletedIds={completedStepIds} />
+      {/* Si los pasos son builds de talentos (__TALENTS__), usa el visor especial;
+          si no, el lector de pasos interactivo normal. */}
+      {guide.steps[0]?.content.startsWith("__TALENTS__") ? (
+        <TalentBuildsViewer steps={guide.steps} />
+      ) : (
+        <GuideRunner steps={guide.steps} initialCompletedIds={completedStepIds} />
+      )}
     </main>
   );
 }
