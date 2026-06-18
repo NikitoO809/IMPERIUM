@@ -17,10 +17,35 @@ const mono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+// URL pública del sitio. En Vercel se detecta sola (VERCEL_PROJECT_PRODUCTION_URL);
+// si tienes dominio propio, ponlo en NEXT_PUBLIC_SITE_URL.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
+const SHARE_TITLE = "IMPERIUM — Tu comunidad de juego";
+const SHARE_DESC = "Guías, builds y asistente IA para tus juegos. Únete a la comunidad.";
+
 export const metadata: Metadata = {
-  title: "IMPERIUM — Guías de juego de la comunidad",
-  description:
-    "La comunidad de IMPERIUM. Guías interactivas, progreso compartido y jugadores en tiempo real. Empezamos por Call of Dragons.",
+  metadataBase: new URL(siteUrl),
+  applicationName: "IMPERIUM",
+  title: { default: SHARE_TITLE, template: "%s · IMPERIUM" },
+  description: SHARE_DESC,
+  openGraph: {
+    type: "website",
+    siteName: "IMPERIUM",
+    locale: "es_ES",
+    url: "/",
+    title: SHARE_TITLE,
+    description: SHARE_DESC,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SHARE_TITLE,
+    description: SHARE_DESC,
+  },
 };
 
 export default function RootLayout({
