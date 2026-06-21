@@ -119,20 +119,54 @@ function VideoTile({ url, accent }: { url: string; accent: string }) {
   const [playing, setPlaying] = useState(false);
   const video = classifyVideo(url);
 
+  // Archivo subido a Storage → reproductor nativo dentro de la propia web.
   if (video.type === "file") {
     return (
       <div className="overflow-hidden rounded-lg bg-black ring-1 ring-white/10">
-        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
         <video src={video.url} controls className="max-h-80 w-full bg-black object-contain" />
       </div>
     );
   }
+
+  // YouTube → NO se incrusta. Algunos vídeos (música con derechos de autor)
+  // tienen bloqueada la reproducción embebida y mostrarían "Vídeo no disponible".
+  // En su lugar, la miniatura es un enlace que abre YouTube en otra pestaña.
+  if (video.provider === "youtube") {
+    return (
+      <a
+        href={video.watchUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group/v relative block aspect-video w-full overflow-hidden rounded-lg bg-black ring-1 ring-white/10"
+      >
+        {video.thumb ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={video.thumb} alt="Vídeo" className="h-full w-full object-cover opacity-80 transition group-hover/v:scale-105 group-hover/v:opacity-100" />
+        ) : (
+          <span className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${accent}33, #0a0a16)` }} />
+        )}
+        <span className="absolute inset-0 grid place-items-center">
+          <span
+            className="grid h-14 w-14 place-items-center rounded-full ring-2 transition group-hover/v:scale-110"
+            style={{ background: `${accent}cc`, boxShadow: `0 0 24px ${accent}aa`, borderColor: accent }}
+          >
+            <span className="ml-1 text-xl text-black">▶</span>
+          </span>
+        </span>
+        {/* Aviso de que se abrirá en YouTube */}
+        <span className="absolute bottom-2 right-2 rounded bg-black/70 px-1.5 py-0.5 font-hud text-[9px] uppercase tracking-wider text-white/85 backdrop-blur-sm">
+          Ver en YouTube ↗
+        </span>
+      </a>
+    );
+  }
+
+  // Google Drive → su visor sí permite incrustar; se reproduce dentro de la web.
   if (playing) {
-    const src = video.provider === "youtube" ? `${video.embedUrl}?autoplay=1` : video.embedUrl;
     return (
       <div className="relative aspect-video overflow-hidden rounded-lg bg-black ring-1 ring-white/10">
         <iframe
-          src={src}
+          src={video.embedUrl}
           title="Vídeo del logro"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

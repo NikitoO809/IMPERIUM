@@ -31,13 +31,21 @@ export function driveId(url: string): string | null {
 }
 
 export type VideoKind =
-  | { type: "embed"; provider: "youtube" | "drive"; embedUrl: string; thumb: string | null }
+  // `watchUrl` = enlace para ABRIR el vídeo en su web de origen (YouTube/Drive).
+  // Útil cuando el vídeo no se puede incrustar (p. ej. música con derechos).
+  | { type: "embed"; provider: "youtube" | "drive"; embedUrl: string; watchUrl: string; thumb: string | null }
   | { type: "file"; url: string };
 
 export function classifyVideo(url: string): VideoKind {
   const yt = youtubeId(url);
   if (yt) {
-    return { type: "embed", provider: "youtube", embedUrl: `https://www.youtube.com/embed/${yt}`, thumb: youtubeThumb(yt) };
+    return {
+      type: "embed",
+      provider: "youtube",
+      embedUrl: `https://www.youtube.com/embed/${yt}`,
+      watchUrl: `https://www.youtube.com/watch?v=${yt}`,
+      thumb: youtubeThumb(yt),
+    };
   }
   const dr = driveId(url);
   if (dr) {
@@ -45,6 +53,7 @@ export function classifyVideo(url: string): VideoKind {
       type: "embed",
       provider: "drive",
       embedUrl: `https://drive.google.com/file/d/${dr}/preview`,
+      watchUrl: `https://drive.google.com/file/d/${dr}/view`,
       thumb: `https://drive.google.com/thumbnail?id=${dr}&sz=w1280`,
     };
   }
