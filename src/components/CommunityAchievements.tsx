@@ -123,7 +123,7 @@ function VideoTile({ url, accent }: { url: string; accent: string }) {
   if (video.type === "file") {
     return (
       <div className="overflow-hidden rounded-lg bg-black ring-1 ring-white/10">
-        <video src={video.url} controls className="max-h-80 w-full bg-black object-contain" />
+        <video src={video.url} controls className="max-h-[65vh] w-full bg-black object-contain" />
       </div>
     );
   }
@@ -258,7 +258,9 @@ function AchievementModal({
           )}
 
           {a.videos.length > 0 && (
-            <div className="grid gap-3 sm:grid-cols-2">
+            // Vídeos a ANCHO COMPLETO (una sola columna) para que se vean grandes:
+            // son el contenido principal del logro.
+            <div className="space-y-3">
               {a.videos.map((v, i) => (
                 <VideoTile key={i} url={v} accent={a.accent} />
               ))}
