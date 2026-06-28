@@ -1,0 +1,35 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "basic-builds-arcane-staff",
+  "title": "Builds básicas: Arcane Staff",
+  "description": "Nuestra última guía echa un vistazo a esta arma de mago.",
+  "order_index": 22,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/basic-builds-arcane-staff+97",
+  "intro_title": null,
+  "intro": "Bienvenido a otra de nuestras guías de Basic Builds para jugadores de nivel principiante a intermedio.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/13c24e0ed093bdc36248111f9ae00e2855ad91ff.png"],
+  "items": [
+    {
+      "title": "Características",
+      "content": "Esta build muestra el Arcane Staff, un arma de mago destacable por sus ataques en cadena, su daño constante y su movilidad.\n\n¡Aquí tienes el desglose completo!",
+      "images": []
+    },
+    {
+      "title": "Equipo y habilidades utilizadas",
+      "content": "Adept's Arcane Staff\n\n• Chain Missile: Un proyectil que golpea a un enemigo y luego salta hacia un máximo de dos objetivos adicionales. Inflige más daño al primer objetivo. Todos los enemigos golpeados reciben una Arcane Charge, que puede activarse con otras habilidades activas o con ataques automáticos para infligir daño adicional.\n• Enigma Blade: Un ataque en área que inflige daño en un cono frente a ti. Si golpeas al menos a un enemigo, desbloqueas una segunda parte opcional que te permite teletransportarte una corta distancia.\n• Arcane Orb: Lanzas un Arcane Orb que explota al impactar con el primer objetivo, infligiendo daño en un amplio radio a la vez que purga todos los buffs enemigos y silencia a los objetivos durante un breve tiempo.\n\nAdept's Scholar Cowl\n\n• Energy Shield: Tu Cowl tiene un hechizo defensivo que reduce el daño que recibes a la vez que recupera energía por cada golpe recibido.\n\nAdept's Cleric Robe\n\n• Everlasting Spirit: La habilidad activa de la túnica ofrece un escudo al recibir daño que te vuelve invulnerable y aumenta tu daño en un 20% durante 3 segundos.\n\nAdept's Soldier Boots\n\n• Rejuvenating Sprint: La habilidad activa de tus botas es un sprint que además te cura ligeramente.\n\nAdept's Torch: Aumenta pasivamente la velocidad de ataque y reduce los tiempos de reutilización.\n\nAdept's Bag: Aumenta la capacidad de carga de peso.\n\nAdept's Cape: Aumenta la Energy y la regeneración pasiva de Energy.\n\nMinor Poison Potion: Inflige un efecto de daño en el tiempo a los objetivos y reduce sus resistencias mientras dura.\n\nCatfish: Comida buff que aumenta enormemente la regeneración de vida fuera de combate, devolviéndote a la vida completa rápidamente tras limpiar enemigos.\n\nJourneyman's Riding Horse: Te lleva rápidamente por el mapa a la vez que añade más capacidad de carga.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/341a6a80d08cdd3fa2fd8eb255b055c15804b683.jpeg", "https://assets.albiononline.com/uploads/media/default/media/14fad79d9a4c6c9872b607e390ac6184901c4d95.jpeg"]
+    },
+    {
+      "title": "Pros y contras",
+      "content": "Pros:\n\n• Buena velocidad de limpieza\n• Movilidad e interrupciones\n• Adecuada para combates a gran escala (aunque requeriría piezas de armadura diferentes)\n• Económica\n\nContras:\n\n• Build de baja defensa\n• Problemas al luchar contra varios enemigos",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/789d2a856723a18d1d4b9e4337d4a2d44a6bdaa9.jpeg"]
+    },
+    {
+      "title": "Estilo de juego",
+      "content": "• Tu hechizo Q inflige un daño considerable al primer objetivo que golpea, mientras encadena hacia dos objetivos adicionales con una cantidad de daño menor. Cada enemigo golpeado recibe una Arcane Charge.\n• Las Arcane Charges pueden consumirse usando un ataque automático o una habilidad de daño directo como Enigma Blade o Arcane Orb.\n• Tu habilidad W golpea a todos los enemigos en un cono frente a ti, infligiendo una buena cantidad de daño y consumiendo cualquier Arcane Charge para daño extra. Golpear al menos a un enemigo también desbloquea la habilidad combo Flicker, que te permite teletransportarte una corta distancia volviéndote brevemente invulnerable, pero aumentando el tiempo de reutilización de este hechizo.\n• Tu habilidad E lanza un orbe en una dirección marcada, colisionando con el primer objetivo que golpea e infligiendo daño a su alrededor. Al purgar todos los buffs del objetivo y silenciarlo durante un breve tiempo, es una interrupción rápida y eficaz. También consume Arcane Charges para infligir daño adicional.\n• La pasiva, Lingering Power, es una gran herramienta para maximizar tu daño, especialmente cuando luchas contra un solo objetivo. Cada vez que lanzas un hechizo, aumenta tu velocidad de ataque y tu alcance de ataque durante los siguientes tres ataques básicos. Como estás usando un hechizo Q con un tiempo de reutilización muy bajo, puedes usar esta pasiva para derribar rápidamente a enemigos duros.\n• Cuando tengas poca Energy o necesites Energy extra, usa la habilidad de tu Cowl. Por cada golpe recibido recuperas algo de Energy a la vez que reduces en general el daño que recibes.\n• La potente habilidad defensiva de la túnica puede usarse para evitar daño. Mientras recibas daño en la ventana de 1,5 segundos tras la activación, obtienes un escudo de invulnerabilidad que te vuelve inmune al daño a la vez que aumenta tu daño en un 20% durante 3 segundos.\n• Tus botas ofrecen una habilidad de sprint que puede recuperar rápidamente una pequeña cantidad de vida, a la vez que proporciona mayor velocidad de movimiento.\n• Un encuentro con enemigos debería verse más o menos así:\n  • Lanza tu Q para infligir daño y aplicar Arcane Charges.\n  • Usa tu W para consumir Arcane Charges.\n  • Lanza tu Q de nuevo para volver a aplicar Arcane Charges.\n  • Usa tu habilidad E para consumir esas cargas.\n  • Relanza tu Q y consume Arcane Charges mediante ataques automáticos, hasta que tu W y tu E salgan del tiempo de reutilización de nuevo.\n  • Cuando te enfrentes a un solo enemigo, alterna entre el hechizo Q y los ataques automáticos para máximo daño, usando la W y la E de forma situacional o cuando se necesite daño adicional.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/1b498f22add8652d36f73c486e2753c7eb06ce6f.jpeg"]
+    }
+  ]
+}

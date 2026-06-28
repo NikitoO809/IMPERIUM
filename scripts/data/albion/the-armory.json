@@ -1,0 +1,51 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "the-armory",
+  "title": "El Armory",
+  "description": "Descubre builds efectivas para cada tipo de contenido en Albion.",
+  "order_index": 3,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/armory+117",
+  "intro_title": null,
+  "intro": "Corrupted Dungeons, PvP en grupo, PvP en solitario, las Mists, la Arena, Faction Warfare… con tantas formas diferentes de luchar en Albion, puede ser difícil saber qué equipo llevar contigo. Ahí es donde entra el Armory.\n\nEsta herramienta utiliza datos de juego constantemente actualizados para ofrecerte builds sugeridas para cada tipo de contenido. Puedes buscar por objetos específicos para encontrar una build que use tu arma favorita, filtrar por diversas métricas para encontrar una build que vaya a maximizar tu daño o supervivencia, o explorar una combinación de objetos completamente nueva y aprender a dominar un cierto tipo de contenido. El Armory te permite explorar incontables builds con un solo clic, antes de guardarlas como Loadouts para comprar, equipar y lanzarte a la acción.\n\n¿Listo para probar una nueva build? Entonces sigue leyendo y aprende a sacar el máximo partido a esta herramienta.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/9a3ae128765ca1d15520bf85117ff28178c0dbda.jpeg"],
+  "items": [
+    {
+      "title": "Acceder al Armory",
+      "content": "Desde el Player Menu\n\nLa forma más sencilla de acceder al Armory es a través del Player Menu. Así es cómo encontrarlo en escritorio, móvil y consola.\n\n• Escritorio y móvil: haz clic o toca el Avatar de tu personaje (posición por defecto: arriba a la izquierda) para abrir el Player Menu. Desde aquí, selecciona 'Armory'.\n• Mando: abre el radial menu (cruceta a la derecha), y cambia a Player Actions (alterna entre los menús con RB/LB). Desde aquí, selecciona la opción Armory.\n\nDesde Item Details\n\nTambién puedes acceder al Armory desde los Item Details de un arma. Selecciona un arma y desplázate hacia abajo hasta 'Recommended Builds'. Aquí puedes ver builds potenciales para uno o más tipos de contenido que incluyen esta arma. Hacer clic en 'View Build' junto a una de estas abrirá esa build específica dentro del Armory.\n\nTen en cuenta que esto solo es posible con armas, no con objetos de Armor, offhands, u otros objetos.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/347f143f9d6894d9bd6200e46889ad0951c6dd08.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/4ac5da06c532fb8ede9c94bf2ce36f12af06b3f5.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/d10d9fb57050574513b7953d2f05c7089c4fbc3d.jpeg"
+      ]
+    },
+    {
+      "title": "Usar el Armory",
+      "content": "Cuando abres el Armory desde el Player Menu, se te presentará el Activity Overview. Esto te muestra una amplia gama de tipos de contenido diferentes, desde Open World hasta las Depths y todo lo demás. Puedes navegar por ellos en busca de un tipo de contenido que te interese, o puedes filtrarlos por tamaño de grupo y tipo de actividad (como PvE, PvP, o contenido instanciado).\n\nSeleccionar uno de estos tipos de contenido abre un desglose detallado de diferentes builds recomendadas para ese contenido. A la izquierda puedes desplazarte por estas diferentes builds, categorizadas por su arma principal.\n\nSeleccionar una de las builds de esta lista mostrará su equipo a la derecha, junto con las habilidades sugeridas para cada objeto. También puedes ver la comida y pociones sugeridas para complementar cada build. Algunas builds tienen opciones alternativas para habilidades, comida y pociones, por las que puedes navegar usando las flechas debajo de las secciones de Equipment y Abilities.\n\nTambién puedes usar filtros para centrarte en equipo concreto dentro de un tipo de contenido.\n\nSelecciona 'Filter' en la parte superior de la lista de builds, y se abrirá una ventana que te permite seleccionar objetos específicos, grupos de objetos, o una combinación de estos. Por ejemplo, si quieres una build efectiva que use un Great Arcane Staff y Plate Armor, puedes seleccionar Arcane Staff → Great Arcane Staff para la ranura de arma, y Plate Armor para la ranura de Armor.\n\nHacer clic en confirmar mostrará entonces una lista de builds para ese tipo de contenido que utilizan estos objetos específicos. Esto resulta especialmente útil si tienes equipo principal que te gusta usar porque se adapta a tu estilo de juego, y buscas objetos complementarios para sacar lo mejor de él en una situación dada.\n\nPuedes volver al Activity Overview en cualquier momento haciendo clic en este icono junto al desplegable de Activity:\n\nMétricas\n\nLa parte inferior de la ventana muestra las fortalezas y debilidades relativas de una build seleccionada en diversas métricas. Estas métricas cambian dependiendo del tipo de contenido que hayas seleccionado, mostrándote las más relevantes para cada campo.\n\nEl rendimiento de cada build en estas áreas se visualiza en un Radar Chart, lo que te permite centrarte fácilmente en las áreas que son importantes para ti. Por ejemplo, si quieres una build de Gathering que te permita escapar con facilidad, puedes navegar por las sugerencias y ver cuáles puntúan más alto en la métrica \"Escape\". Como alternativa, puedes mirar el panorama general y encontrar una build que sea un sólido todoterreno.\n\nAdemás, un menú desplegable en la parte superior de la interfaz te permite seleccionar una métrica concreta en la que centrarte. Esto ajustará la lista para mostrar aquellas builds que son fuertes en esa área. Por ejemplo, seleccionar Lethality te mostrará una lista de builds con una alta tasa de muertes en tu tipo de contenido seleccionado. Luego puedes navegar por esa lista y mirar el Radar Chart para hacerte una idea de cómo rinde cada build en las demás métricas relevantes.\n\nPor último, puedes filtrar por builds recientes o builds establecidas. Recent builds usa datos de juego recientes para mostrarte aquellas que han estado rindiendo bien últimamente, dándote opciones más cercanas al meta actual. Established builds, por otro lado, te muestra aquellas que han rendido durante un período más largo, dándote opciones más perennes que probablemente tengan éxito independientemente de los cambios en el meta.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/66795d92fdbe9cbbf8a8dabf50a1b634d8f49214.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/1da374f468400026c93928e048676e7ee68d29e4.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/1d935187dbbca1aa080bcc69f76ad011e42b75c1.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/5883c516afcc99704d1f3fd6b8fa14e4fdb1ce7e.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/a5c3e6bcaa576d8063947bd14be3967e90c1f0bf.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/c9038d354adb7260d52d3460aec5b80ae95d6df6.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/0439b78178a0655daf0a46359479a34dc67d5bcc.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/ca1f59c11b987c56d7b003ca1a509d0d9485aa1b.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/ea40ea332c52d370b180e5fc0e96dd58e8f6e881.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/6a5cee4c21f6900970b55b0f7d7f3c52565cf9ca.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/e58babb0c3d574a083a58499fbd252792f8d3bd9.jpeg"
+      ]
+    },
+    {
+      "title": "Guardar una build",
+      "content": "Si has encontrado una build que te interesa, puedes guardarla como un Loadout para poder comprarla al instante desde el Marketplace. Haz clic en el botón Save en la parte inferior de la ventana.\n\nEsto abrirá una ventana donde podrás asignar a tu Loadout un nombre, icono y color de fondo. También puedes elegir un nivel de Tier, Enchantment y Quality para la build. Seleccionar 'Advanced Settings' te permite seleccionar Tier, Enchantment y Quality a nivel de objeto individual. Por ejemplo, si quieres una build de Tier 6.1, pero solo quieres una poción de Tier 5 para acompañarla, puedes hacerlo fácilmente aquí.\n\nHacer clic en 'Create' guardará entonces tu build seleccionada como un Loadout y lo abrirá dentro de la interfaz de Loadouts. Aquí puedes editarlo y guardarlo más si lo deseas.\n\n¡Ahora ya tienes un loadout del Armory! Si visitas un Marketplace, puedes seleccionarlo desde la pestaña Loadouts y comprarlo y equiparlo al instante antes de lanzarte al contenido de tu elección.\n\nEl Armory ofrece una forma fácil de encontrar una configuración de equipo efectiva para cualquier tipo de contenido que te interese, dándote la opción de construir en torno a tu arma favorita o explorar algo completamente nuevo. Con tantas combinaciones de objetos disponibles en Albion, esta es la forma más fácil de obtener opciones probadas y actualizadas con un solo clic.\n\nTanto si eres un jugador nuevo que busca explorar un nuevo tipo de contenido, como un veterano curtido que quiere probar una nueva arma, el Armory es tu amigo. ¡Explora tus opciones ahora y pruébalas en el fragor de la batalla!",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/5328cf634126d3eed13f4b80281a7666879a3d97.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/11b1e0253cf8f3a028c080eb53710f590e4a87b0.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/ec3c7c5c53b939e3018724f619fc664bea93c3ec.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/f6fb4e95c3974f571c9d0cc17089551c69ad72c7.jpeg"
+      ]
+    }
+  ]
+}

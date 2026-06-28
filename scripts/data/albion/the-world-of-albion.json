@@ -1,0 +1,52 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "the-world-of-albion",
+  "title": "El mundo de Albion",
+  "description": "Un recorrido por las principales partes del mundo abierto de Albion.",
+  "order_index": 2,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/the-world-of-albion+86",
+  "intro_title": null,
+  "intro": "¡Bienvenido a Albion, Aventurero!\n\nEl vasto mundo abierto de Albion está compuesto por cientos de zonas que abarcan cinco biomas diferentes a lo largo de dos continentes enormes. Todo puede resultar un poco abrumador, así que lo desglosaremos con las siguientes secciones:\n\n• Los cinco biomas\n• Los dos continentes\n• Las ciudades de Albion\n• Cómo moverse",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/a2cdc576df03596c30c1b4eac3be02482a50dd69.jpeg"],
+  "items": [
+    {
+      "title": "Los cinco biomas de Albion",
+      "content": "Las zonas de mundo abierto de Albion pertenecen a uno de cinco biomas (Steppe, Forest, Swamp, Mountain o Highlands), que determinan qué recursos y criaturas contienen. Además de sus propios elementos visuales y terreno distintivos, cada bioma contiene tres de los cinco recursos naturales principales:\n\n• Steppe: hide, fiber, ore\n• Forest: wood, hide, stone\n• Swamp: fiber, wood, hide\n• Mountain: ore, stone, fiber\n• Highlands: wood, stone, ore\n• El pescado se puede encontrar en los cinco biomas\n\nMientras que todo el Royal Continent está dividido equitativamente en cinco enormes regiones de bioma, las Outlands, en cambio, tienen \"subregiones\" de bioma que cambian a menudo de zona en zona. Cada una de las principales zonas de bioma en el Royal Continent tiene su propia Starter Town y Royal City correspondientes, con Caerleon en el centro y sin asociación a ningún bioma concreto.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/b6b014fa5fce5c218c20fd4e75248d091be6d1c3.jpeg"
+      ]
+    },
+    {
+      "title": "El Royal Continent: el corazón de Albion",
+      "content": "Después de terminar el tutorial (que tiene lugar en su propia mini-isla separada), serás transportado al Royal Continent para empezar tu aventura. El Royal Continent es la enorme masa de tierra meridional de Albion, y alberga las cinco Starter Towns del juego (donde aterrizarás por primera vez tras el tutorial) y las seis Royal Cities.\n\nEl Royal Continent contiene blue, yellow y red zones, pero no black zones (consulta Zones and Flagging para más información). Así, aunque el PvP de botín completo es posible, el PvP de black zone, 100% sin flag y siempre hostil, está limitado a las Outlands.",
+      "images": []
+    },
+    {
+      "title": "Las Outlands: la frontera salvaje de Albion",
+      "content": "Las Outlands son la principal masa de tierra septentrional de Albion, accesible desde el Royal Continent a través de cinco Realmgates en cada una de las cinco Royal Cities. Todas las zonas de las Outlands son black zones, lo que significa que se aplican las reglas de \"el ganador se lo lleva todo\", y cualquier jugador puede atacar a cualquier otro sin pérdida de reputación. Las Outlands son donde tiene lugar gran parte de la guild warfare de Albion, con gremios luchando por territorios y colocando Hideouts.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/e2bcece68b18927ce0ee8e1bad884208395f015b.jpeg"
+      ]
+    },
+    {
+      "title": "Reinos alternativos",
+      "content": "El mundo abierto de Albion incluye reinos que existen en planos alternativos fuera de las regiones cartografiadas. Estos reinos son inestables, y presentan conexiones de zona impredecibles, limitaciones de tamaño de grupo y condiciones variables de entrada/salida.\n\nRoads of Avalon: las Roads of Avalon son una red de cientos de regiones, accesibles a través de portales que se abren al azar por todo el mundo abierto. Una vez dentro, se aplican las reglas de PvP de Black Zone, y cualquier portal que encuentres podría llevar a cualquier parte del mundo abierto de Albion, o más adentro en las Roads, sin que ninguna conexión sea permanente.\n\nThe Mists: una región mágica a la que se puede entrar a través de portales efímeros. Estas áreas no corresponden a ningún bioma concreto y pueden contener todos los recursos. También puedes encontrar conexiones de un solo sentido a diferentes partes del mundo o un portal a la City in the Mists: Brecilien. Las Mists también presentan criaturas únicas que no se encuentran en ningún otro lugar, las cuales tienen una probabilidad de soltar artefactos raros y valiosos al ser derrotadas.",
+      "images": []
+    },
+    {
+      "title": "Las ciudades y pueblos de Albion",
+      "content": "Starter Towns: cada gran región de bioma en el Royal Continent alberga una de las cinco \"Starter Towns\": Steppe Cross, Mountain Cross, Swamp Cross, Forest Cross y Highlands Cross. Estos pueblos ofrecen marketplaces básicos y crafting/refining stations para los jugadores que están empezando.\n\nRoyal Cities: cada una de las cinco regiones de bioma del Royal Continent también corresponde a una Royal City:\n\n• Lymhurst (Forest)\n• Bridgewatch (Steppe)\n• Fort Sterling (Mountain)\n• Martlock (Highlands)\n• Thetford (Swamp)\n\nUna sexta ciudad, Caerleon, se sitúa en el centro del Royal Continent.\n\nAdemás de sus propias bonificaciones únicas de fabricación y refinado, las Royal Cities ofrecen parcelas de terreno en venta, acceso a islas privadas y de gremio, marketplaces locales gestionados por jugadores, la posibilidad de unirse a la Faction de la ciudad y luchar en el sistema de Faction Warfare de Albion, y (con la excepción de Caerleon) acceso a las Outlands a través de Realmgate.\n\nRests (pueblos de las Outlands): aunque las Outlands son generalmente salvajes y hostiles, tres pequeños pueblos llamados Rests (Merlyn's Rest, Morgana's Rest y Arthur's Rest) ofrecen la oportunidad de comprar y vender mercancías, fabricar objetos, refinar recursos y desconectarse de forma segura en medio de las zonas más peligrosas de Albion.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/3f62750de37449b1711f0b1a93cc50fb439ded80.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/5c4e88c18fd5a74277da4e53ebb513bd48a8e7d4.jpeg"
+      ]
+    },
+    {
+      "title": "Cómo moverse por Albion",
+      "content": "A pie o montado: la mejor manera de ver lo que Albion tiene para ofrecer es simplemente salir al mundo, ya sea a pie o sobre una montura de confianza. Tanto si tienes un destino en mente como si solo estás explorando, seguro que te encuentras con algo nuevo cada vez que sales. Por lo general, querrás llevar una montura contigo por la velocidad y el peso de carga adicionales que ofrecen.\n\nFast travel: en Albion, el fast travel está limitado a destinos específicos, y solo puede iniciarse a través del Travel Planner o de los NPC Island Merchant. Como el comercio y el transporte son partes esenciales de la economía de Albion, el fast travel a la mayoría de los destinos solo es gratis cuando tu inventario está completamente vacío, y se vuelve drásticamente más caro con cada objeto adicional.\n\nRealmgates y Portal Towns: cada una de las cinco Royal Cities tiene un Realmgate que conduce a una Portal Town que comparte un Marketplace y un Bank con su ciudad correspondiente. Cada una de estas conduce luego a una parte diferente de las Outlands.",
+      "images": []
+    }
+  ]
+}

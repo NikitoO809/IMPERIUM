@@ -1,0 +1,45 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "guild-finder",
+  "title": "Guild Finder",
+  "description": "¡Encuentra un gremio y desbloquea más de lo que Albion tiene para ofrecer!",
+  "order_index": 17,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/guild-finder+106",
+  "intro_title": null,
+  "intro": "Aunque Albion Online se puede disfrutar como solo player, unirte a un gremio añade enormes capas a la experiencia de juego. Ser miembro de un gremio desbloquea una gran cantidad de contenido, te permite beneficiarte del conocimiento de tus compañeros de gremio, te da seguridad en grupo en las zonas más peligrosas de Albion, y mucho más. Si te unes a un gremio, descubrirás que el juego se abre a un nivel completamente nuevo que no habías experimentado antes.\n\nPara que sea fácil encontrar el gremio adecuado, existe un Guild Finder dentro del juego que puede ayudarte a buscar aquellos cuyas actividades, idiomas, zonas horarias y mucho más se ajusten a lo que buscas. Sigue leyendo para descubrir cómo sacarle el máximo partido y disfrutar de Albion Online al máximo.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/c672f66e7c4154cdd4a6cb303f02e2b8f02e3701.png"],
+  "items": [
+    {
+      "title": "¿Por qué unirse a un gremio?",
+      "content": "Unirte a un gremio puede aportar muchas ventajas. Por ejemplo:\n\n• Tener una comunidad de jugadores que te ayude a guiarte por Albion Online\n• Acceso a una Guild Island o a Hideouts, con almacenamiento adicional en el banco y la posibilidad de construir casas y tiendas\n• Apoyo y protección de tus compañeros de gremio en zonas peligrosas como las Outlands y las Roads of Avalon\n• Los Hideouts y los Territorios también pueden proporcionar cierto nivel de protección en las Outlands\n• Compañeros de equipo para actividades de grupo como Hellgates y dungeons de grupo\n• La posibilidad de desbloquear recompensas del Albion Journal por participar en el gremio\n• Servidores de Discord dedicados para comunicarte y recibir orientación de tus compañeros de gremio\n\nSin embargo, hay algunas cosas a tener en cuenta cuando busques un gremio:\n\n• Algunos gremios pueden tener requisitos sobre quién puede unirse (por ejemplo, debes tener cierta cantidad de Fame)\n• También puede que se te exija unirte al servidor de Discord del gremio y usar el chat de voz\n• Los gremios pueden deducir automáticamente impuestos (taxes) de la Silver que obtienes al matar mobs, para financiar las instalaciones y actividades del gremio",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/c0382c2d79f31c3784e4999981282473b4c6e54e.png"]
+    },
+    {
+      "title": "Abrir el Guild Finder",
+      "content": "Para abrir el Guild Finder en escritorio, haz clic en el icono de escudo (Guilds) en la parte superior de la pantalla y elige Guild Finder en el menú desplegable (atajo: Shift+G).\n\nSi estás en móvil, toca el icono del menú principal en la esquina superior derecha de la pantalla y luego toca Guild Finder en el menú.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/9f4f7f9c5db534f104614af9aae988f953f6681f.png"]
+    },
+    {
+      "title": "Navegar por el Guild Finder",
+      "content": "Tres pestañas en el lado derecho de la ventana principal del Guild Finder ofrecen distintas formas de encontrar el gremio adecuado.\n\n• Beginner Recommendations (Recomendaciones para principiantes)\n• Esta pestaña se abre por defecto\n• Usa el selector de Guild Language en el lado izquierdo de la ventana para elegir tu idioma\n• Se recomiendan automáticamente nueve gremios que pueden interesarte, según factores como la ubicación del gremio y la hora del día a la que sueles jugar\n• Haz clic o toca las flechas de navegación izquierda y derecha en la parte inferior de la ventana para moverte entre las páginas de recomendaciones\n• Puedes hacer clic o tocar el escudo de un gremio para ver sus detalles de reclutamiento\n\n• Guild Name Search (Búsqueda por nombre de gremio)\n• Usa esta pestaña si ya conoces el nombre del gremio que buscas\n• Introduce el nombre del gremio en el cuadro de búsqueda y luego haz clic o toca el icono del gremio para ver sus detalles de reclutamiento\n\n• Guild Filter (Filtro de gremios)\n• Esta pestaña te permite seleccionar criterios para acotar el tipo de gremio que buscas\n• Puedes filtrar por factores individuales como si un gremio es apto para principiantes, el número de miembros activos del gremio y las actividades concretas que quieres hacer con tus compañeros\n• Consulta \"Consejos para usar el Guild Filter\", más adelante en esta guía, para más información",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/f8cd1f5bbc3f0ad262944eb5c3cf9d6a4392ddf3.png", "https://assets.albiononline.com/uploads/media/default/media/186c38d6398331678beabacc0db3e6f1240299ec.png", "https://assets.albiononline.com/uploads/media/default/media/95a5fbd3a40dbde641fdf958c57ea902b98a54ff.png"]
+    },
+    {
+      "title": "Unirse a un gremio",
+      "content": "Cuando hayas encontrado un gremio al que quieras unirte, puedes hacer clic en Apply (Solicitar) o Join (Unirse), según si el gremio requiere una solicitud o permite a los jugadores unirse al instante.\n\n• 'Apply' te permite enviar un mensaje a los líderes del gremio; los líderes reciben un correo dentro del juego con tu solicitud y pueden aceptarla o rechazarla dentro del mensaje\n• 'Join' te añade al gremio de inmediato\n\nServidores de Discord\n\n• Si tienes el cliente de Discord instalado y el botón azul de Discord está activo, puedes hacer clic en el botón para recibir una invitación al servidor de Discord del gremio\n• Normalmente, en este punto se te exige completar una solicitud para acceder al servidor\n• Si te aceptan, podrás comunicarte con otros miembros del gremio en la app de Discord, tanto por chat de voz como de texto\n• Los miembros del gremio a menudo hacen streaming dentro del servidor de Discord, al que puedes unirte o simplemente ver\n\nUsar Discord para charlar con personas que ya están en un gremio concreto también puede ayudarte a tomar una mejor decisión sobre si quieres o no unirte a ese gremio. Si el botón de Discord no está activo, significa que el gremio no ha proporcionado una invitación de Discord.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/c0be785d593bb4d975acb84b1b74e16de6eec295.png"]
+    },
+    {
+      "title": "Consejos para usar el Guild Filter",
+      "content": "Aquí tienes algunas indicaciones para ayudarte a usar la pestaña Guild Filter de forma eficaz:\n\n• Selecciona la opción \"Guild Requirements Met\" para asegurarte de ver gremios cuyos requisitos de admisión cumple actualmente tu personaje\n• Los requisitos pueden incluir una cantidad mínima de Fame total, o una cantidad mínima de PvP Fame\n• Si eres nuevo en Albion Online, considera seleccionar el filtro Beginner-Friendly Guilds para incluir en la lista solo los gremios que aceptan jugadores nuevos\n• Si no encuentras lo que buscas y necesitas empezar de cero, haz clic o toca Reset All Filters en la parte superior del panel izquierdo\n• Puedes usar la opción 'Sort By' en la esquina superior derecha de la ventana para ordenar los resultados por actividad, rankings o distintos tipos de Fame, en orden ascendente o descendente",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/65aff553e629ba7c224a25ae4a1aa7184e50a992.png"]
+    },
+    {
+      "title": "Para oficiales de gremio: cómo controlar la ficha de tu gremio",
+      "content": "• Los jugadores de tu gremio que tengan el permiso \"Edit Recruitment Settings\" pueden controlar cómo aparece tu gremio en el Guild Finder\n• Para hacerlo, abre la interfaz del gremio (Guild UI) y haz clic en la pestaña Recruitment\n• El campo Type controla si los jugadores que quieren unirse a tu gremio pueden hacerlo de inmediato (sin revisión por parte de los líderes del gremio) o deben solicitar la entrada\n• Selecciona \"Looking for Beginners\" si tu gremio es apto para principiantes\n• Tras especificar los Languages, Active Times, Home City y Activities de tu gremio, baja y haz clic en Settings para establecer los requisitos mínimos que los jugadores deben cumplir para unirse al gremio\n• En el campo Discord, introduce la última parte del enlace de invitación del servidor de Discord de tu gremio; no incluyas la barra (/) delante\n• Puedes introducir tu propio texto en el campo Guild Description, que aparecerá a los posibles miembros cuando hagan clic en el escudo de tu gremio en el Guild Finder\n• Puedes usar New Member Mail para crear un mensaje de bienvenida que se enviará por correo dentro del juego a los nuevos miembros en cuanto se unan",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/64684567a487dec5d046faaa21d66431184f4b57.png"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "basic-builds-battle-bracers",
+  "title": "Builds básicas: Battle Bracers",
+  "description": "Nuestra última guía examina estos War Gloves.",
+  "order_index": 29,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/basic-builds-battle-bracers+94",
+  "intro_title": null,
+  "intro": "Bienvenido a otra de nuestras guías de Basic Builds para jugadores de nivel principiante a intermedio. Cada guía presenta una build sugerida y describe cómo funcionan sus habilidades en conjunto. Puedes probarlas tal cual, o usarlas como punto de partida para crear tus propias builds.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/55049b5983e31405e513c859be1badd3dfc769c7.png"],
+  "items": [
+    {
+      "title": "Características",
+      "content": "Esta build muestra los Battle Bracers, un arma de guerrero (warrior) con alta movilidad, daño y habilidades de control de masas cortas.\n\n¡Aquí tienes el desglose completo!",
+      "images": []
+    },
+    {
+      "title": "Equipo y habilidades utilizadas",
+      "content": "Adept's Battle Bracers\n\n• Dragon Leap: un combo de corto alcance que te permite hacer un dash e infligir daño en un radio pequeño. Puede activarse una segunda vez para lanzar brevemente a los enemigos por los aires.\n• Triple Kick: un dash lento a través de los enemigos, infligiendo daño hasta tres veces.\n• Falcon Smash: levitas, volviéndote inmune al control de masas. Con el segundo lanzamiento te lanzas en picado a un área apuntada, infligiendo daño en un radio de 6 m.\n\nAdept's Mage Cowl\n\n• Firebreath: tu Cowl tiene un hechizo ofensivo que incendia brevemente a los enemigos en un pequeño cono frente a ti.\n\nAdept's Mercenary Jacket\n\n• Bloodlust: la habilidad activa de esta chaqueta te permite recuperar algo de salud cada vez que haces un ataque automático o lanzas un hechizo de daño.\n\nAdept's Soldier Boots\n\n• Rejuvenating Sprint: la habilidad activa de tus botas es un sprint que además te cura ligeramente.\n\nAdept's Bag: aumenta la capacidad de carga de peso.\n\nAdept's Cape: aumenta la Energy y la regeneración pasiva de Energy.\n\nMinor Poison Potion: inflige un efecto de daño por tiempo a los objetivos y reduce sus resistencias durante su duración.\n\nBeef Stew: aumenta tu daño.\n\nJourneyman's Riding Horse: te lleva rápidamente por el mapa al tiempo que añade más capacidad de carga.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/0f445d91c05f7071ddddeb4ce97fe44cb7543062.jpeg", "https://assets.albiononline.com/uploads/media/default/media/a81a174b65ccd61460f25ff4e86cf0f2e5098b2a.jpeg"]
+    },
+    {
+      "title": "Pros y contras",
+      "content": "Pros:\n\n• Mucha movilidad, lo que te permite esquivar hechizos o escapar de un combate\n• Muchas habilidades de control de masas a pequeña escala\n• Build viable para 1v1 y duelos\n• Asequible\n\nContras:\n\n• Velocidad de limpieza media\n• Requiere práctica\n• No apta para combates a gran escala",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/4bb4a01afdbeff4cc98b20a4eda7989f96b126a4.jpeg"]
+    },
+    {
+      "title": "Estilo de juego",
+      "content": "• Tu habilidad Q es un combo de dos partes en el que haces un dash en una dirección apuntada, infligiendo daño. Usar la habilidad de nuevo realizará otro dash, lanzando a los enemigos por los aires y dejando el hechizo con un enfriamiento de 7 segundos, mientras que no hacerlo te permitirá reutilizar la primera parte tras 2 segundos. Para maximizar el daño, usa solo la primera parte; la segunda parte es mejor para interrumpir o rematar a un objetivo.\n• La habilidad W es otro dash que tiene tres instancias de daño. Te permite atravesar un grupo de objetivos e infligir daño en las cercanías, de modo que puedas infligir la cantidad completa de daño a tus objetivos. Si golpeas a un jugador, será arrastrado contigo. Para maximizar el daño, apunta cerca de tu ubicación actual, infligiendo daño en un área concentrada. Apuntar más lejos te permitirá viajar más, pero repartirá el daño.\n• Tu habilidad principal es un combo de dos partes. Primero levitas, volviéndote inmune al control de masas. Luego puedes relanzar para lanzarte en picado hacia un área apuntada, infligiendo daño en una amplia zona. Es una buena apertura, ya que puedes golpear a un grupo de enemigos mientras están inactivos.\n• Tus ataques automáticos pueden potenciar aún más tu daño. La primera pasiva \"Fatal Fury\" aumenta tu daño con cada ataque automático. Como los gloves tienen una alta velocidad de ataque, puedes encajar algunos ataques entre tus habilidades para elevar tu daño.\n• El cowl tiene un hechizo de daño adicional para acabar rápido con grupos.\n• La chaqueta puede recuperar salud. Es mejor usarla en combinación con tus habilidades de arma si pueden golpear a varios objetivos, o cuando atacas automáticamente a un enemigo durante unos segundos.\n• Tus botas tienen una habilidad de sprint que puede recuperar una pequeña cantidad de salud rápidamente a la vez que proporciona mayor velocidad.\n• Un encuentro debería verse más o menos así:\n• Usa tu E para levitar, luego relanza para lanzarte en picado hacia el objetivo o los objetivos.\n• Usa la primera parte de tu Q para infligir daño.\n• Usa tu W para aplicar daño adicional.\n• Alterna entre usar tu primera Q y ataques automáticos.\n• Usa tu chaqueta cuando estés por debajo del 60% de salud, idealmente en combinación con hechizos de área contra grupos o ataques automáticos contra enemigos individuales.\n• Si la energía se convierte en un problema, prueba a cambiar a Cloth Sandals para usar Energetic Sprint.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/be0cf0f1219315be61c4872863acb9d252ff48fd.jpeg"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "basic-builds-dual-swords",
+  "title": "Builds básicas: Dual Swords",
+  "description": "Echa un vistazo a nuestra build sugerida para esta arma a dos manos.",
+  "order_index": 21,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/basic-builds-dual-swords+98",
+  "intro_title": null,
+  "intro": "Bienvenido a otra de nuestras guías de Basic Builds para jugadores de nivel principiante a intermedio. Cada guía presenta una build sugerida y describe cómo funcionan sus habilidades en conjunto. Puedes probarlas tal cual, o usarlas como punto de partida para crear tus propias builds.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/dd34e42ba32c04596710d6b4f60bc232cbb54f3d.jpeg"],
+  "items": [
+    {
+      "title": "Características",
+      "content": "Esta build se basa en las Dual Swords, un arma de guerrero a dos manos con gran movilidad que inflige daño constante y aplica Heroic Charges.\n\n¡Aquí tienes el desglose completo!",
+      "images": []
+    },
+    {
+      "title": "Equipo y habilidades utilizadas",
+      "content": "Adept's Dual Swords\n\n• Heroic Strike/Heroic Cleave: Puedes elegir entre dos hechizos para la ranura Q, uno para objetivos individuales y otro para daño en área. Ambos te aplican Heroic Charges.\n• Blade Cyclone: Giras en una dirección marcada, infligiendo daño a los enemigos que atraviesas. Si hay al menos una Heroic Charge activa, inflige más daño a la vez que consume una carga.\n• Spinning Blades: Tu habilidad principal realiza un dash en una dirección marcada, volviéndote inmune a los efectos de control de masas hasta el impacto. Inflige daño al impactar y aumenta tu velocidad de ataque y el daño de tus ataques automáticos durante tres segundos si golpea al menos a un enemigo.\n\nAdept's Mage Cowl\n\n• Firebreath: Tu Cowl tiene un hechizo ofensivo que prende fuego brevemente a los enemigos en un pequeño cono frente a ti.\n\nAdept's Mercenary Jacket\n\n• Bloodlust: La habilidad activa de esta chaqueta te permite recuperar algo de vida cada vez que haces un ataque automático o lanzas un hechizo de daño.\n\nAdept's Soldier Boots\n\n• Rejuvenating Sprint: La habilidad activa de tus botas es un sprint que además te cura ligeramente.\n\nAdept's Bag: Aumenta la capacidad de carga de peso.\n\nAdept's Cape: Aumenta la Energy y la regeneración pasiva de Energy.\n\nMinor Poison Potion: Inflige un efecto de daño en el tiempo a los objetivos y reduce sus resistencias mientras dura.\n\nRoast Pork: Recupera vida en función del daño que infliges.\n\nJourneyman's Riding Horse: Te lleva rápidamente por el mapa a la vez que añade más capacidad de carga.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/0718fc4ea69bf3651751deb9ebc84e090f2514b6.jpeg", "https://assets.albiononline.com/uploads/media/default/media/52116ecf8169ce671f83c16487e4f0539613c24a.jpeg"]
+    },
+    {
+      "title": "Pros y contras",
+      "content": "Pros:\n\n• Movilidad muy alta\n• Muchos buffs que potencian tus ataques básicos y habilidades\n• Buena velocidad de limpieza\n• Build viable para 1v1 y duelos\n• Económica\n\nContras:\n\n• La mayoría de las habilidades W situacionales se desbloquean a niveles más altos\n• Depende mucho de mantenerte pegado a los objetivos\n• No es adecuada para combates a gran escala",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/e0a28b1487e4e4e4a378d3d3a65aaddec5f8cd16.jpeg"]
+    },
+    {
+      "title": "Estilo de juego",
+      "content": "• Tu ranura Q ofrece la elección entre una habilidad de objetivo único y una habilidad de área. La habilidad de objetivo único es mejor en escenarios 1v1, mientras que la de área inflige daño a todos los objetivos dentro de alcance. Ambas habilidades aplican una Heroic Charge, mientras que golpear a tres o más objetivos con Heroic Cleave aplica dos cargas.\n• Las Heroic Charges aumentan tu velocidad de movimiento y de ataque. Puedes tener un máximo de tres cargas a la vez. Muchas habilidades de Sword pueden usar Heroic Charges para potenciar sus efectos.\n• La habilidad W te permite girar en una dirección marcada, y puede infligir daño en tres instancias. El daño puede aumentarse aún más consumiendo una Heroic Charge. Es una gran herramienta para reposicionarte durante un encuentro con enemigos a la vez que repartes daño.\n• Tu habilidad principal, con su dash de largo alcance, te permite esquivar y atravesar habilidades de control de masas mientras infliges daño y potencias tus ataques básicos durante tres segundos. No utiliza Heroic Charges, pero con su bonificación de velocidad de ataque y daño funciona bien con las Heroic Charges de todos modos, potenciando aún más tus ataques automáticos.\n• El cowl tiene un hechizo de daño adicional que ayuda a derribar rápidamente grupos de enemigos.\n• La chaqueta puede usarse para recuperar vida. Se usa mejor en combinación con tu habilidad W o con el aumento de velocidad de ataque de la habilidad E.\n• Tus botas tienen una habilidad de sprint que puede recuperar rápidamente una pequeña porción de vida a la vez que proporciona mayor velocidad de movimiento.\n• Un encuentro con enemigos debería verse más o menos así:\n  • Usa tu Q para iniciar el combate y ganar Heroic Charges. Repite hasta tener al menos dos cargas.\n  • Usa tu W para infligir daño o cambiar de posición.\n  • Usa tu E cuando necesites esquivar una habilidad de control de masas, o cuando tengas tres Heroic Charges para maximizar el daño de tus ataques automáticos posteriores.\n  • Usa tu chaqueta en combinación con tus habilidades de área o con la velocidad de ataque potenciada cuando tengas poca vida.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/ab615a1ba4017ca43b010ea329f6cf5edcca7ef5.jpeg"]
+    }
+  ]
+}

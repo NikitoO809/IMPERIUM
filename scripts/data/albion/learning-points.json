@@ -1,0 +1,49 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "learning-points",
+  "title": "Learning Points",
+  "description": "Acelera tu progreso usando los Learning Points de forma inteligente.",
+  "order_index": 5,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/learning-points+103",
+  "intro_title": null,
+  "intro": "Desarrollar tu personaje en Albion Online es un viaje con muchas posibilidades, y los Learning Points pueden ayudarte a progresar esencialmente cinco veces más rápido. Esta guía muestra cómo funcionan los Learning Points, cómo conseguirlos, y cómo usarlos sabiamente para avanzar en las áreas que te importan.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/2766ac484f0092728f6336638d640205a791706b.png"],
+  "items": [
+    {
+      "title": "¿Qué son los Learning Points?",
+      "content": "Los Learning Points (LP para abreviar) permiten a tu personaje acelerar considerablemente el progreso en cualquier área del Destiny Board. La cantidad de Learning Points que tienes puede verse en la parte superior del Destiny Board:\n\nPuedes usar los Learning Points activando Quick Learn en el Destiny Board, mediante el interruptor de la parte superior.\n\nCuando esto se hace, cualquier nodo (un nivel de maestría de una habilidad específica) en el que tengas Quick Learn activado consumirá Learning Points, multiplicando por cinco cualquier Fame que ganes hacia el progreso de ese nodo. Tener Quick Learn activado en un nodo gastará automáticamente Learning Points a medida que ganas Fame para él.\n\nComo la cantidad de Fame necesaria para completar un nodo varía, también varía la cantidad de Learning Points que gastarías para completarlo con Quick Learn. Cada Learning Point cuenta esencialmente como más Fame en niveles más altos del Destiny Board. Puedes ver la cantidad de Learning Points necesarios para completar un nodo haciendo clic en él:",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/e962ff2650c9acd203de00e7aca0c6db957dcc94.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/5865ef06a0f0d4e8818221b9e8f0666a025cde55.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/ae9e5f200e85e6435b208a4544422100ee9dcb3a.jpeg"
+      ]
+    },
+    {
+      "title": "Quick Learn",
+      "content": "Siempre que Quick Learn está activado, tu Destiny Board entra en un estado potenciado (boosted), indicado por efectos visuales en el centro y en cualquier nodo para el que Quick Learn esté activado.\n\nPuedes alternar Quick Learn en los propios nodos individuales. Como alternativa, puedes abrir el Quick Learn menu en la parte superior del Destiny Board:\n\nAquí puedes ver tus ajustes de Quick Learn por categoría, y hacer clic en el nombre de cada categoría muestra esa sección concreta en el Destiny Board.\n\nLas categorías de nodos se dividen aquí en dos tipos:\n\n• Generalist Nodes: estos cubren tipos de habilidad más amplios, como Bow Fighter, o Hammer Crafter\n• Specialist Nodes: estos cubren actividades más específicas, como Longbow Combat Specialist, o Forge Hammers Crafting Specialist",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/b3dda1e183eddf99a026ac2c4fd0dc7703e89da8.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/ad220ed13cb3e5cb24e5d142c319e3215a7d8034.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/7ab4c9e2ea6c1fd6b26308aa84e8f4e1b3ee28d2.jpeg"
+      ]
+    },
+    {
+      "title": "¿Cómo consigo Learning Points?",
+      "content": "Los Learning Points pueden obtenerse de varias formas:\n\n• Ganas automáticamente 30 LP cada día por tener estado Premium activo\n• También recibirás 500 Learning Points la primera vez que compres 7 días de Premium o más para un personaje\n• Los personajes sin Premium pueden ganar 10 Learning Points completando el daily Adventurer's Challenge\n• Puedes obtener Tomes of Learning completando ciertas misiones del Albion Journal. Estos recompensan una cierta cantidad de Learning Points cuando se usan, dependiendo de su tier",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/4b02ca55e22f4f1fddb5b31a35505c933b6f7e20.jpeg"
+      ]
+    },
+    {
+      "title": "¿Cómo puedo usar los Learning Points?",
+      "content": "Los Learning Points pueden usarse para progresar en casi cualquier área de tu Destiny Board. Aquí tienes algunas de las más comunes:\n\nCombat\n\nPuedes gastar Learning Points en la maestría de Weapon/Armor para desbloquear la capacidad de usar objetos de tier superior. Si se usan en los nodos de especialización del exterior del Destiny Board, pueden potenciar el Item Power de cada objeto.\n\nConsejo: dado que la Fame de combate es comparativamente fácil de conseguir en Albion, quizá quieras considerar usar tus Learning Points en otras áreas en las que desees progresar primero.\n\nCrafting\n\nDe forma similar al combate, la maestría de crafting te permite fabricar objetos de tier superior, mientras que la especialización reduce los costes de Focus y aumenta las probabilidades de fabricar objetos de mayor calidad.\n\nConsejo: a menudo se recomienda usar Learning Points para progresar a través de las especializaciones de crafting de nivel inferior, lo que te permite desbloquear fácilmente fabricación más valiosa y de mayor nivel.\n\nRefining\n\nCuando se trata de refinado, el primer nivel dentro de un nodo desbloquea la capacidad de refinar un nuevo tier de materiales. Después de eso, niveles adicionales aumentan tu eficiencia de Focus.\n\nConsejo: si te interesa el refinado, a menudo se recomienda usar Learning Points para aumentar tu especialización y convertirte en un maestro refinador.\n\nGathering\n\nLos Gathering nodes funcionan como el refinado. Alcanzar el primer nivel de un nodo desbloqueará un nuevo tier de herramientas de recolección y armadura de recolección, mientras que niveles posteriores dentro de un nodo aumentan la velocidad de recolección y el rendimiento de recursos dentro de ese tier.\n\nConsejo: la recolección es un gran lugar para usar Learning Points al principio. A menudo se recomienda usar Learning Points para desbloquear el primer nivel de un nuevo tier de recolección, de modo que puedas usar mejores herramientas y armadura de recolección mientras empiezas a progresar hacia el siguiente tier.\n\nLos Learning Points no pueden usarse para potenciar el progreso a través de los nodos Adventurer y Reaver, ni en nodos de nivel inferior (por debajo de los niveles Generalist).\n\nCómo gastas tus Learning Points depende en última instancia de ti, y realmente depende de las actividades que quieras hacer en Albion. Y recuerda, si en algún momento no estás seguro, siempre puedes conservar tus Learning Points por ahora y usarlos más tarde. ¡Feliz aprendizaje!",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/5cf6cc80053a63d81da587dec20d82533b6a9412.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/582640b9761da2bbaa2671ed033aaa2783d44ae0.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/942432c8e485ff3eeb185110b5e2bd652d446d17.jpeg"
+      ]
+    }
+  ]
+}

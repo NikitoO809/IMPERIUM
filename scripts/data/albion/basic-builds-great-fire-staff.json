@@ -1,0 +1,35 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "basic-builds-great-fire-staff",
+  "title": "Builds básicas: Great Fire Staff",
+  "description": "La siguiente de nuestra serie de Basic Builds ofrece una configuración inicial para este bastón versátil.",
+  "order_index": 25,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/basic-builds-great-fire-staff+90",
+  "intro_title": null,
+  "intro": "Bienvenido a otra de nuestras guías de Basic Builds para jugadores de nivel principiante a intermedio.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/3457f3981094b29c26e786f82e53c26a318f85ae.png"],
+  "items": [
+    {
+      "title": "Características",
+      "content": "Esta build se basa en el Great Fire Staff, un bastón de magia con grandes hechizos de área de efecto, gran daño explosivo y efectos adicionales de daño en el tiempo.",
+      "images": []
+    },
+    {
+      "title": "Equipo y habilidades utilizadas",
+      "content": "Adept's Great Fire Staff\n\n• Burning Field: Tu Q dispara un orbe al suelo, infligiendo daño directo y daño adicional en el tiempo.\n• Flame Blast: Tu Q prende fuego a un enemigo, lo que termina en una explosión tras un breve tiempo.\n• Flame Pillar: Tu habilidad principal crea un pilar de llamas que daña a los enemigos en una amplia zona. Golpear al menos a un enemigo reducirá aún más el tiempo de reutilización del hechizo.\n\nAdept's Scholar Cowl\n\n• Energy Shield: Tu Cowl tiene un hechizo defensivo que reduce el daño que recibes a la vez que recupera energía por cada golpe recibido.\n\nAdept's Cleric Robe\n\n• Everlasting Spirit: La habilidad activa de la túnica ofrece un escudo al recibir daño que te vuelve invulnerable y aumenta tu daño en un 20% durante 3 segundos.\n\nAdept's Soldier Boots\n\n• Wanderlust: La habilidad activa de tus botas es una habilidad de movimiento con carga que te permite escapar de combates o dar caza a los objetivos.\n\nAdept's Bag: Aumenta la capacidad de carga de peso.\n\nAdept's Cape: Aumenta la Energy y la regeneración pasiva de Energy.\n\nMinor Poison Potion: Inflige un efecto de daño en el tiempo a los objetivos y reduce sus resistencias mientras dura.\n\nCatfish: Comida buff que aumenta enormemente la regeneración de vida fuera de combate, devolviéndote a la vida completa rápidamente tras limpiar enemigos.\n\nJourneyman's Riding Horse: Te lleva rápidamente por el mapa a la vez que añade más capacidad de carga.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/48c304c28d49e533b61f63b82ed4c418e69fa383.jpeg", "https://assets.albiononline.com/uploads/media/default/media/e98a5e9bad2cd64ac2f37e8f550d6cfd3ade328a.jpeg"]
+    },
+    {
+      "title": "Pros y contras",
+      "content": "Pros:\n\n• Velocidad de limpieza rápida\n• Grandes hechizos de área de efecto\n• Buena para grupos pequeños de PvE\n• Buena para PvP a pequeña escala\n• Económica\n\nContras:\n\n• Sin movilidad adicional más allá del hechizo de las botas\n• Tiempos de canalización y lanzamiento largos\n• No es adecuada para combates a gran escala",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/23addec23c8311893100d1c228c80e6619164a27.png"]
+    },
+    {
+      "title": "Estilo de juego",
+      "content": "• Tu hechizo Q crea un campo de fuego que inflige daño al instante y cada 0,5 segundos a los enemigos que haya dentro; intenta mantener a los enemigos dentro el mayor tiempo posible.\n• Debido a su tiempo de reutilización relativamente alto, tienes mucho tiempo para hacer kiting a los enemigos y aplicar ataques automáticos adicionales que, combinados con tu pasiva \"Burn\", infligen un daño considerable.\n• Tu habilidad W prende fuego a los enemigos y les coloca una bomba. Tras 1,6 segundos explota e inflige daño en un radio de 5 m. Intenta colocarla sobre enemigos que estén cerca unos de otros para que todos reciban daño.\n• Tu hechizo E funciona mejor como apertura, ya que te permite golpear a los enemigos mientras están quietos. Tiene un tiempo de reutilización relativamente corto que se reduce aún más al golpear al menos a un enemigo. Usa este hechizo lo más a menudo posible para maximizar el daño.\n• Cuando tengas poca Energy o necesites Energy extra, usa la habilidad de tu Cowl. Por cada golpe recibido recuperas algo de Energy a la vez que reduces en general el daño que recibes.\n• La potente habilidad defensiva de la túnica puede usarse para evitar daño. Mientras recibas daño en la ventana de 1,5 segundos tras la activación, obtienes un escudo de invulnerabilidad que te vuelve inmune al daño a la vez que aumenta tu daño en un 20% durante 3 segundos.\n• Tus botas compensan tu falta de movilidad. Tienen una habilidad de carga que ofrece escape de los combates. Aunque te permite cubrir grandes distancias, tiene un tiempo de reutilización de 1 minuto.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/d03f45507931107091faf885be4394494eea4ea3.png"]
+    }
+  ]
+}

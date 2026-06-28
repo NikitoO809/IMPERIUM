@@ -1,0 +1,50 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "awakened-weapons",
+  "title": "Armas Despertadas",
+  "description": "Personaliza tus armas para adaptarlas a tu estilo de juego y escribe tu nombre en la historia de Albion.",
+  "order_index": 11,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/awakened-weapons+113",
+  "intro_title": null,
+  "intro": "Las Armas Despertadas son elementos únicos en el arsenal de Albion Online. Los jugadores pueden tomar armas Pristine (con encantamiento .4) y mejorar ciertas cualidades, como el Item Power, la velocidad de los ataques automáticos, la defensa y muchas más. Esto te permite personalizar un arma para adaptarla a tu estilo de juego y conseguir una ventaja en el fragor de la batalla. Y, además, las Armas Despertadas contienen registros de sus anteriores propietarios, ¡escribiendo tu nombre en la historia de Albion!\n\nSigue leyendo para aprender a conseguir y usar estos poderosos objetos…",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/084931d3445e8083727c76abad8de11358c6f77f.jpeg"],
+  "items": [
+    {
+      "title": "Cómo Despertar un Arma",
+      "content": "Antes de poder personalizar un arma, hay que Despertarla en la Artifact Foundry. Es un proceso sencillo, y funciona así:\n\n• Ve a una Artifact Foundry\n• Selecciona la pestaña de Armas Despertadas\n• Coloca un Arma Encantada Pristine (.4) en la ranura\n• Paga el coste requerido de Silver, Siphoned Energy y Avalonian Energy\n• Este coste aumenta dependiendo del tier del arma",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/dca0899f88b1f62b6abac9d32e7e06ebb317ab06.jpeg"]
+    },
+    {
+      "title": "Sintonización (Attunement)",
+      "content": "Una vez que has despertado un arma, quedará sintonizada (attuned) con tu personaje. Una vez hecho esto, puedes empezar a personalizarla añadiendo Traits (rasgos). Solo el personaje con el que un arma está sintonizada puede beneficiarse de los Traits que se le añaden.\n\nPara añadir Traits a tu Arma Despertada, primero debes ganar Attunement Points para ella. Para ganar Attunement Points, simplemente gana Fame de PvE mientras usas esa arma. Las armas de Tier 6 o superior solo pueden ganar Attunement Points en zonas de PvP con full-loot. La cantidad máxima de Attunement Points que un arma puede tener aumenta según su Legendary Rating; más sobre esto a continuación.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/5f8231f9f0fc5ba980e6bc1a235c9e9ac6b01170.jpeg"]
+    },
+    {
+      "title": "Añadir Traits",
+      "content": "Tras ganar suficientes Attunement Points, puedes empezar a añadir Traits a tu Arma Despertada. Ve de nuevo a la Artifact Foundry y sigue estos pasos:\n\n• Selecciona la pestaña de Armas Despertadas\n• Coloca tu Arma Despertada en la ranura\n• Selecciona Modify Trait\n• Haz clic en Add Trait\n• Esto cuesta una cierta cantidad de Silver y Attunement Points\n\nA continuación se te ofrecerán tres Traits seleccionados al azar para añadir a tu arma, de los cuales puedes elegir uno. Ten en cuenta que algunos Traits solo se pueden añadir a ciertos tipos de armas:\n\n• Healing Cast: disponible para Holy Staffs y Nature Staffs\n• Attack Range: disponible para Bows, Crossbows, Fire Staffs, Arcane Staffs, Cursed Staffs, Holy Staffs y Nature Staffs\n• Resilience Penetration: disponible para Axes, Hammers, Maces, Swords, War Gloves, Daggers, Spears y Quarterstaffs",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/4aa1bb4debccfd82d854654fa683c152f66fbdf4.jpeg"]
+    },
+    {
+      "title": "Mejorar y Reemplazar Traits",
+      "content": "Cuando añades por primera vez un nuevo Trait a un arma, su impacto es relativamente bajo. Sin embargo, una vez que se ha añadido un Trait, se puede mejorar (upgrade) en la Artifact Foundry. Este proceso funciona así:\n\n• Abre la pestaña de Armas Despertadas de la Artifact Foundry\n• Coloca tu Arma Despertada en la ranura\n• Haz clic en el Trait que quieres mejorar\n• Selecciona Upgrade Trait en la ventana que aparece\n• Paga los costes de Silver y Attunement haciendo clic en Upgrade\n\nEl Trait mejorará una cantidad determinada al azar, y su nuevo valor se muestra en la ventana. Puedes seguir mejorando un Trait hasta que alcance su valor máximo posible. Para ver el rango de valores posibles de un Trait, selecciónalo en la Artifact Foundry y luego haz clic en la flecha de la esquina superior de la ventana que aparece, como se muestra abajo:\n\nRecuerda que cada mejora cuesta Attunement Points, así que para seguir mejorándolo necesitarás usar el arma para ganar suficientes Attunement Points.\n\nTambién es posible reemplazar Traits existentes en un Arma Despertada. Simplemente sigue el mismo proceso que usarías para mejorar un Trait, pero selecciona 'Replace Trait' en la ventana que aparece. Hacer clic en Replace te ofrecerá tres nuevos Traits seleccionados al azar para elegir. Sin embargo, tu Trait anterior se perderá si haces esto.\n\nNota: Al añadir, reemplazar o mejorar Traits, se pueden usar Focus Points para reducir significativamente el coste de Attunement Points.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/76c02afa2736ca18a7f6d74988c58ba00875beba.jpeg", "https://assets.albiononline.com/uploads/media/default/media/b47f93f495658cf097b0dd236e156b69a1f1bebe.jpeg"]
+    },
+    {
+      "title": "Strain (Tensión)",
+      "content": "Strain es una estadística que determina cuán alto será el coste de Silver y Attunement Points para hacer más cambios en el arma. Cada vez que haces un cambio en un Arma Despertada, se añade Strain. Puedes ver el Strain actual de un arma haciendo clic en ella y luego desplazándote hasta sus estadísticas.\n\nEl Strain puede acumularse bastante rápido, así que llevar todos los Traits de un arma a su nivel máximo posible sería un esfuerzo extremadamente costoso. Por esta razón es importante considerar cuidadosamente hasta dónde mejorar cada Trait, ya que el análisis coste-beneficio cambia significativamente con cada mejora.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/b33cc639443eca7d0986eb670f6d7ae6d25a3f2f.jpeg"]
+    },
+    {
+      "title": "Comerciar y Resintonizar",
+      "content": "Cuando un Arma Despertada se obtiene como botín, independientemente de si la soltó un jugador o un mob, quedará automáticamente sintonizada con quien la recibe, que puede disfrutar de inmediato de sus Traits. Sin embargo, un Arma Despertada no se puede comerciar en el Marketplace sin antes desencantarse y perder sus Traits.\n\nUn Arma Despertada sí puede comerciarse directamente de un personaje a otro, pero en ese caso debe ser Resintonizada (Reattuned) con su nuevo propietario en la Artifact Foundry.\n\nPara Resintonizar un Arma Despertada, simplemente:\n\n• Abre la pestaña de Armas Despertadas de la Artifact Foundry\n• Coloca el arma en la ranura\n• Pulsa Reattune, pagando el coste de Silver mostrado\n\nEl coste de Silver de Resintonizar un arma depende de su Strain y su Tier.\n\nUna vez que un arma ha sido Resintonizada con tu personaje, puedes añadir, mejorar o reemplazar Traits como de costumbre.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/36ac36fa0414aa996de53b547380b79fbfa65dd3.jpeg"]
+    },
+    {
+      "title": "Legendary Rating",
+      "content": "Cada Arma Despertada tiene un Legendary Rating. Esta puntuación determina cuántos Traits puede tener un arma, hasta un máximo de tres. Además, cuanto mayor sea el Legendary Rating de un arma, mayores serán las probabilidades de que entre en el loot pool de Albion cuando su propietario sea asesinado, en lugar de ser destruida. Por lo tanto, un arma con un Legendary Rating alto tiene una mayor probabilidad de permanecer en el juego, con un registro de su creador y de todos aquellos con quienes ha estado Sintonizada.\n\nLas Armas Despertadas pueden marcar la diferencia en combate, si estás dispuesto a dedicar el tiempo y el Silver necesarios para crear una que se adapte a tu estilo de juego. Y recuerda, tener un Arma Despertada sintonizada con tu personaje escribe tu nombre en su historia para la posteridad, para que lo vean todos por cuyas manos pueda pasar. ¡Así que dirígete a la Artifact Foundry, empieza a crear tu arma personalizada y entra en la historia de Albion a través de una de estas poderosas armas!",
+      "images": []
+    }
+  ]
+}

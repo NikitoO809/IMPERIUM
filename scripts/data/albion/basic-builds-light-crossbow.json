@@ -1,0 +1,35 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "basic-builds-light-crossbow",
+  "title": "Builds básicas: Light Crossbow",
+  "description": "Nuestra segunda guía de build de combate se centra en esta arma de daño explosivo.",
+  "order_index": 24,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/basic-builds-light-crossbow+89",
+  "intro_title": null,
+  "intro": "Esta es la segunda guía de Basic Builds para jugadores de nivel principiante a intermedio. Cada guía presenta una build sugerida y describe sus habilidades. Puedes probarlas tal cual, o usarlas como punto de partida para crear las tuyas propias.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/240de21634ced878ea0a6a4e2a393d1c9ed3e117.png"],
+  "items": [
+    {
+      "title": "Características",
+      "content": "Esta build se basa en la Light Crossbow, que cuenta con un fuerte daño explosivo que derriba rápidamente a pequeños grupos de enemigos.\n\nDesglose completo:",
+      "images": []
+    },
+    {
+      "title": "Equipo y habilidades utilizadas",
+      "content": "Adept's Light Crossbow\n\n• Explosive Bolt: Tu Q es una habilidad de daño en área con un tiempo de reutilización corto.\n• Caltrops: Tu W lanza una trampa que reduce la velocidad del enemigo y aumenta la tuya.\n• Exploding Shot: Esta habilidad E lanza una bomba sobre tu objetivo que explota tras una breve duración.\n\nAdept's Scholar Cowl\n\n• Energy Shield: Tu Cowl tiene un hechizo defensivo que reduce el daño recibido y recupera energía por cada golpe recibido mientras está activo.\n\nAdept's Cleric Robe\n\n• Everlasting Spirit: La habilidad activa de la túnica ofrece un escudo al recibir daño que te vuelve invulnerable y aumenta tu daño en un 20% durante 3 segundos.\n\nAdept's Soldier Boots\n\n• Wanderlust: La habilidad activa de tus botas es una habilidad de movimiento con carga que te permite escapar de combates o dar caza a los objetivos.\n\nAdept's Shield: Aumenta pasivamente las defensas y la resistencia al control de masas.\n\nAdept's Bag: Aumenta la capacidad de carga de peso.\n\nAdept's Cape: Aumenta la Energy y la regeneración pasiva de Energy.\n\nMinor Poison Potion: Inflige un efecto de daño en el tiempo a los objetivos y reduce sus resistencias mientras dura.\n\nCatfish: Comida buff que aumenta enormemente la regeneración de vida fuera de combate, devolviéndote a la vida completa rápidamente tras limpiar enemigos.\n\nJourneyman's Riding Horse: Te lleva rápidamente por el mapa a la vez que añade más capacidad de carga.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/fd9fe3310925a0a958e4b531464de54a8d1f3d8b.jpeg", "https://assets.albiononline.com/uploads/media/default/media/b6041e16cc8e778d08fd945b552addc4f3bde09c.jpeg"]
+    },
+    {
+      "title": "Pros y contras de la build",
+      "content": "Pros:\n\n• Gran daño explosivo\n• Velocidad de limpieza rápida\n• Buena para grupos pequeños de PvE\n• Económica\n\nContras:\n\n• Sin movilidad adicional más allá del hechizo de las botas\n• No es adecuada para combates a gran escala",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/dec5eff53268e5e5301fcb6c7f35383c3ef77b5a.jpeg"]
+    },
+    {
+      "title": "Estilo de juego",
+      "content": "• Tu hechizo Q es tu herramienta básica. Con su bajo tiempo de reutilización y su alto daño base, es ideal para limpiar enemigos. Entre Qs puedes usar tu W, tu E o ataques automáticos.\n• Tu habilidad W lanza una trampa que no inflige mucho daño pero ralentiza a los enemigos, a la vez que aumenta tu velocidad de movimiento. Tiene un tiempo de reutilización bajo, lo que permite usarla a menudo. (Este hechizo se desbloquea en Crossbows de nivel 15, así que es posible que tengas que derrotar a más enemigos antes de poder usarlo.)\n• Tu habilidad E, Exploding Shot, es una buena habilidad de inicio que coloca una bomba en tu objetivo. Inflige poco daño inicial pero explota tras 2 segundos, infligiendo más daño en un radio mayor. Si el objetivo muere antes de la explosión, no inflige daño en área.\n• Combinar estas habilidades con tu pasiva, Well-Prepared, desbloquea aún más potencial de daño. Para usarla eficazmente, usa tu Q como cuarto hechizo. Esto elimina inmediatamente su tiempo de reutilización y podrás usar la Q dos veces seguidas rápidamente. Como tu Q tiene un tiempo de reutilización corto y dispones de habilidades adicionales, puedes encadenar varias rotaciones de la pasiva rápidamente.\n• Cuando tengas poca Energy o necesites Energy extra, usa la habilidad de tu Cowl. Por cada golpe recibido recuperas algo de Energy a la vez que reduces en general el daño que recibes.\n• La potente habilidad defensiva de la túnica puede usarse para evitar daño. Mientras recibas daño en la ventana de 1,5 segundos tras la activación, obtienes un escudo de invulnerabilidad que te vuelve inmune al daño a la vez que aumenta tu daño en un 20% durante 3 segundos.\n• Tus botas compensan tu falta de movilidad. Tienen una habilidad de carga que ofrece escape de los combates. Aunque te permite cubrir grandes distancias, tiene un tiempo de reutilización de 1 minuto.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/bcebfe213a89a89e82a70a79d6739002d3ac1088.jpeg"]
+    }
+  ]
+}

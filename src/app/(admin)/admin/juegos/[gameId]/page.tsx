@@ -7,7 +7,7 @@ import { HudLabel } from "@/components/hud";
 import { ConfirmButton } from "@/components/admin/ConfirmButton";
 import { CardPreviewButton } from "@/components/admin/CardPreviewButton";
 import { labelCls, inputCls, textareaCls, btnPrimary, btnDanger } from "@/components/admin/styles";
-import { updateGame, deleteGame, createGuide, setGuidePublished, createSection, setSectionPublished, publishAllContent } from "../../actions";
+import { updateGame, deleteGame, createGuide, setGuidePublished, createSection, setSectionPublished, publishAllContent, setGamePublished } from "../../actions";
 
 const RENDER_TYPES = [
   { value: "generic", label: "Solo texto / tarjetas" },
@@ -52,9 +52,25 @@ export default async function AdminGamePage({
               {game.name}
             </h1>
           </div>
-          <span className={`font-hud text-[10px] ${game.isPublished ? "text-emerald-400/80" : "text-amber-400/70"}`}>
-            {game.isPublished ? "● publicado" : "○ borrador"}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className={`font-hud text-[10px] ${game.isPublished ? "text-emerald-400/80" : "text-amber-400/70"}`}>
+              {game.isPublished ? "● publicado" : "○ borrador"}
+            </span>
+            {userCanPublish && (
+              <form action={setGamePublished}>
+                <input type="hidden" name="id" value={game.id} />
+                <input type="hidden" name="value" value={String(!game.isPublished)} />
+                <button
+                  type="submit"
+                  className={`btn-hud px-3 py-1.5 ${game.isPublished ? "bg-white/8 text-white/60" : "bg-emerald-400/90 text-black"}`}
+                >
+                  <span className="hud-label text-[10px] font-bold">
+                    {game.isPublished ? "Despublicar juego" : "Publicar juego"}
+                  </span>
+                </button>
+              </form>
+            )}
+          </div>
         </div>
       </header>
 

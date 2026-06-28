@@ -1,0 +1,63 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "focus-points",
+  "title": "Focus Points",
+  "description": "Usa los Focus Points para aumentar tu productividad en fabricación, refinado y agricultura.",
+  "order_index": 10,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/focus-points+73",
+  "intro_title": null,
+  "intro": "En Albion Online, los Focus Points se pueden usar para hacer muchas actividades más eficientes y rentables, especialmente la fabricación, el refinado y la agricultura. Entender cómo usar el Focus correctamente puede ahorrarte muchos recursos y ayudarte a progresar más rápido en el juego, y esta guía te dará algunos consejos sobre cómo hacerlo. Sigue leyendo para saber más...",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/60905ec38aeeda8b254166ae8be22e611af2b9c5.png"],
+  "items": [
+    {
+      "title": "Cómo conseguir Focus Points",
+      "content": "Si tu personaje tiene el estado Premium, ganarás automáticamente 10.000 Focus Points al día, y puedes tener un máximo de 30.000 puntos en cualquier momento. Una vez que alcanzas ese límite, dejarán de acumularse hasta que gastes algunos, así que es importante usarlos sabiamente para evitar desperdiciarlos.\n\nAdemás de los que ganas a diario por tener Premium, los Focus Points se pueden conseguir a través de las Focus Restoration Potions. Estas pociones vienen en distintos tamaños, ofreciendo entre 500 y 20.000 Focus Points, según su tier. Puedes obtener estas pociones como recompensa por completar misiones del Albion Journal o de los cofres mensuales del Adventurer's Challenge.\n\nPara ver cuántos Focus Points tienes, abre tu inventario. En la esquina superior verás una pequeña flecha. Haz clic en esa flecha y aparecerá una pestaña de estadísticas, con tus Focus Points actuales mostrados cerca de la parte superior.\n\nAhora veamos algunas de las formas en que se pueden usar los Focus Points.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/722d23248b8729a03ec5274a3b0cc28f50d50540.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/544b2f565bc892812eef27af5da84460c4c7f125.jpeg"
+      ]
+    },
+    {
+      "title": "Agricultura (cultivos y hierbas)",
+      "content": "Al cosechar cultivos y hierbas que has plantado en una isla, hay una pequeña probabilidad de que recibas una semilla de vuelta. Sin embargo, las probabilidades de que esto ocurra suelen ser bastante bajas. Para mejorarlas, puedes usar Focus Points para regar tus cultivos, lo que mejora las probabilidades de recuperar una semilla.\n\nEncontrarás el botón Water (regar) haciendo clic en tu cultivo plantado y mirando en la parte inferior de la ventana que aparece.\n\nPuedes regar un cultivo en cualquier momento antes de que esté completamente crecido. Al principio, regar consume bastantes Focus Points, pero a medida que aumenta tu especialización en agricultura, la cantidad de Focus requerida irá disminuyendo gradualmente.\n\nSolo puedes regar cada cultivo una vez. Por esa razón, lo mejor es usar tus Focus Points en cultivos más caros o raros, donde recuperar una semilla es más importante.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/04cf81ce720a62509b3d27baed1edcba76339695.jpeg"
+      ]
+    },
+    {
+      "title": "Agricultura (animales)",
+      "content": "De forma similar a cómo los cultivos pueden devolver semillas al cosecharse, hay una pequeña probabilidad de que los animales que crías produzcan una cría cuando están completamente crecidos. Para mejorar las probabilidades de que esto ocurra, puedes usar Focus para nurture (cuidar) al animal. Cuidarlo aumenta significativamente las probabilidades de que se produzca una cría.\n\nPuedes cuidar a cada animal una vez al día. Como la mayoría de los animales tardan más de un día en crecer, puedes usar Focus Points cada día hasta que el animal esté completamente crecido.\n\nAl igual que con el riego de los cultivos, encontrarás el botón Nurture (cuidar) haciendo clic en el animal que estás criando y mirando en la parte inferior de la ventana que aparece. Al principio, cuidar consume muchos Focus Points, pero este coste se reduce a medida que aumenta tu especialización en cría de animales.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/6b6ff8d79f1118ba1287de24c2fa2be11efc5b0d.jpeg"
+      ]
+    },
+    {
+      "title": "Fabricación y refinado",
+      "content": "Cada vez que fabricas objetos o refinas materiales, una parte de los recursos que usas se te devuelve. Esto se llama Resource Return Rate (RRR). En las Royal Cities, el RRR base para fabricar y refinar es del 15,2%. Sin embargo, cuando usas Focus, tu RRR aumenta significativamente, a menudo triplicándose. Eso significa que recuperas más materiales de lo que pones, puedes fabricar o refinar más objetos y, en consecuencia, puedes obtener mucho más beneficio.\n\nUsar Focus es especialmente valioso al fabricar objetos caros o refinar materiales de tier alto, ya que te ayuda a estirar más tus recursos y maximizar tus beneficios. Además, fabricar con Focus aumenta las probabilidades de que produzcas un objeto de mayor calidad, con mayor Item Power y mayor valor.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/39893c66a969cb5879d293a4caf931772eefea6d.jpeg"
+      ]
+    },
+    {
+      "title": "Estudiar (Studying)",
+      "content": "Si quieres subir de nivel tus habilidades de fabricación en Albion Online, una buena opción es estudiar objetos. Cuando estudias un objeto, lo destruyes a cambio de una gran cantidad de Crafting Fame. Normalmente, cuando estudias un objeto, obtienes el 275% del Fame que habrías ganado fabricándolo. Si tienes Premium activo, ese número sube al 413%. Y si usas Focus, puede aumentar hasta el 656%. En otras palabras, cada objeto que destruyes estudiándolo puede darte el Fame equivalente a fabricar unas seis veces y media el mismo objeto, lo que lo convierte en una de las formas más rápidas de perfeccionar tus habilidades de fabricación.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/6713086450624e50b16f0fa9dac7efbde4bbb198.jpeg"
+      ]
+    },
+    {
+      "title": "Despertar armas (Awakening Weapons)",
+      "content": "Si tienes un arma Pristine (nivel de encantamiento .4), puedes llevarla a la Artifact Foundry para awaken (despertarla). Despertar tu arma le otorga rasgos poderosos que mejoran ciertas estadísticas. Para despertar un arma, necesitarás Silver y algo llamado Attunement, que puedes ganar matando enemigos en el mundo abierto.\n\nUna vez que un arma está despierta, puedes añadir, mejorar o cambiar sus rasgos. El Focus se puede usar durante este proceso para reducir la cantidad de Attunement requerida para ello. Como resultado, tendrás más oportunidades de adaptar un arma a tu estilo de juego.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/3bd80483a4479d42c5498a94ad3a5b77488e1638.jpeg"
+      ]
+    },
+    {
+      "title": "Por qué deberías usar los Focus Points",
+      "content": "El Focus es uno de los muchos beneficios de tener el estado Premium, y es importante no dejar que se desperdicie. Usar los Focus Points de forma inteligente puede marcar una gran diferencia en áreas como la agricultura y la fabricación, y para muchos jugadores es clave para sus ingresos. Usar Focus te permite ofrecer mejores precios sin dejar de ser rentable, dándote ventaja sobre otros jugadores.\n\nYa sea que decidas fabricar, refinar, criar animales o cultivar, los Focus Points son una herramienta extremadamente valiosa en tu arsenal. ¡Úsalos con sabiduría y cosecha las recompensas!",
+      "images": []
+    }
+  ]
+}

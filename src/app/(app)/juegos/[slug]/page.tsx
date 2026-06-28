@@ -66,6 +66,10 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
     guias:   "https://eog.gg/assets/games/sword-x-staff/kingdoms/forest.webp",
     codigos: "https://eog.gg/assets/games/sword-x-staff/card.webp",
   },
+  "albion-online": {
+    // 'guias' es ruta especial; su portada va aquí (imagen oficial de Albion).
+    guias: "https://albiononline.com/assets/images/header/header-faye.jpg",
+  },
 };
 
 // Metadata SEO por juego (reutiliza getGameMeta; Next deduplica el fetch).

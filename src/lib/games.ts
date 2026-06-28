@@ -71,6 +71,7 @@ export const UPCOMING_PLACEHOLDERS: UpcomingCard[] = [
 const PRESENTATION: Record<string, { tag: string; rank: string }> = {
   "call-of-dragons": { tag: "Estrategia", rank: "S" },
   "sword-x-staff": { tag: "RPG / Gacha", rank: "S" },
+  "albion-online": { tag: "MMORPG", rank: "S" },
 };
 function present(slug: string) {
   return PRESENTATION[slug] ?? { tag: "Juego", rank: "S" };

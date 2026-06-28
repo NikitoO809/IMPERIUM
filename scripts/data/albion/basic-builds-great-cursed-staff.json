@@ -1,0 +1,35 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "basic-builds-great-cursed-staff",
+  "title": "Builds básicas: Great Cursed Staff",
+  "description": "Nuestra última guía examina esta poderosa arma de mago.",
+  "order_index": 28,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/basic-builds-great-cursed-staff+93",
+  "intro_title": null,
+  "intro": "Bienvenido a otra de nuestras guías de Basic Builds para jugadores de nivel principiante a intermedio. Cada guía presenta una build sugerida y describe cómo funcionan sus habilidades en conjunto. Puedes probarlas tal cual, o usarlas como punto de partida para crear tus propias builds.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/4f1057fcf7e0c0640abfa1ccc46361e7683a3861.png"],
+  "items": [
+    {
+      "title": "Características",
+      "content": "Esta build presenta el Great Cursed Staff, un arma de mago que inflige daño durante un periodo de tiempo prolongado.\n\n¡Aquí tienes el desglose completo!",
+      "images": []
+    },
+    {
+      "title": "Equipo y habilidades utilizadas",
+      "content": "Adept's Great Cursed Staff\n\n• Cursed Sickle: lanza una hoz en línea frente a ti que regresa a su posición de lanzamiento. Aplica una carga de Vile Curse a cada enemigo que atraviesa, que puede acumularse hasta 4 veces.\n• Armor Piercer: tu W lanza un rayo demoníaco frente a ti, infligiendo daño y reduciendo brevemente las resistencias de tus enemigos.\n• Area of Decay: tu habilidad principal canaliza un área que aplica una carga de Vile Curse cada 0,8 segundos. Puede canalizarse durante hasta 3,2 segundos.\n\nAdept's Mage Cowl\n\n• Firebreath: tu Cowl tiene un hechizo ofensivo que incendia brevemente a los enemigos en un pequeño cono frente a ti.\n\nAdept's Cleric Robe\n\n• Everlasting Spirit: la habilidad activa de la túnica ofrece un escudo al recibir daño que te hace invulnerable y aumenta tu daño un 20% durante 3 segundos.\n\nAdept's Soldier Boots\n\n• Wanderlust: la habilidad activa de tus botas es una habilidad de movimiento con carga que te permite escapar de combates o perseguir objetivos.\n\nAdept's Bag: aumenta la capacidad de carga de peso.\n\nAdept's Cape: aumenta la Energy y la regeneración pasiva de Energy.\n\nMinor Poison Potion: inflige un efecto de daño por tiempo a los objetivos y reduce sus resistencias durante su duración.\n\nCatfish: comida de buff que aumenta enormemente la regeneración de salud fuera de combate, devolviéndote rápidamente a la salud máxima tras limpiar mobs.\n\nJourneyman's Riding Horse: te lleva rápidamente por el mapa al tiempo que añade más capacidad de carga.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/8b70638b889694bb92ad1b3ce3757bbb733b0634.jpeg", "https://assets.albiononline.com/uploads/media/default/media/86083db86f9e549fac6f8bf82658014348e48b88.jpeg"]
+    },
+    {
+      "title": "Pros y contras",
+      "content": "Pros:\n\n• Velocidad de limpieza rápida contra grupos de enemigos\n• Buena para grupos pequeños de PvE y PvP\n• Los hechizos de daño por tiempo permiten moverse entre lanzamientos de habilidades\n• Asequible\n\nContras:\n\n• Las cargas de Vile Curse pueden mantenerte en combate durante un periodo prolongado\n• No es útil en combates a gran escala",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/5330d81f56118d4a1324d0ffc1e962f8e19f5d9d.jpeg"]
+    },
+    {
+      "title": "Estilo de juego",
+      "content": "• Tu hechizo Q lanza un Cursed Sickle en la dirección apuntada que regresa de vuelta a su posición de lanzamiento. Esto puede colocar dos cargas de Vile Curse sobre tus enemigos con cada hoz. Posiciónate para golpear a la mayor cantidad de objetivos posible.\n• Las cargas de Vile Curse pueden acumularse hasta cuatro veces, pero es mejor que las reabastezcas. Lanzar la \"quinta\" carga infligirá esencialmente el daño directo equivalente a cuatro acumulaciones sobre el objetivo, conservando a la vez 4 cargas.\n• Tu W puede usarse como apoyo de daño adicional, ya que reduce las resistencias del enemigo a la vez que inflige daño directo.\n• Puede cambiarse por Grudge para combatir a enemigos individuales más duros. Esto potencia tus ataques automáticos en función de cuánto tiempo lleves sin atacar.\n• Tu habilidad E canaliza un efecto en el suelo que aplica rápidamente cargas de Vile Curse, aunque no puedes moverte ni usar ningún otro hechizo mientras la canalizas.\n• El cowl tiene un hechizo de daño adicional que puede acabar rápido con grupos de enemigos.\n• La túnica tiene una potente habilidad defensiva. Mientras recibas daño en la ventana de 1,5 segundos tras la activación, recibirás un escudo de invulnerabilidad que te hace inmune al daño a la vez que aumenta tu daño un 20% durante un total de 3 segundos.\n• Tus botas compensan tu falta de movilidad. Tienen una habilidad con carga que permite una huida rápida. Aunque esto te permite cubrir mucha distancia, viene con un enfriamiento de 1 minuto.\n• Un encuentro con enemigos debería verse más o menos así:\n• Lanza tu Cursed Sickle hacia el enemigo.\n• Lanza tu W para reducir sus resistencias.\n• Usa tu E cuando estés en una posición cómoda. No dudes en cancelar el hechizo si necesitas esquivar una habilidad enemiga.\n• Relanza tu Q mientras haces kiting y atacas automáticamente. Concéntrate en reabastecer las cargas de Vile Curse para maximizar el daño.\n• Usa tu túnica cuando esperes recibir una ráfaga de daño. Esto te hará invulnerable durante 3 segundos a la vez que aumenta tu daño.\n• Si la energía se convierte en un problema, se recomienda usar la pasiva energetic, que reabastecerá tu energía continuamente cada vez que uses un ataque básico.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/e7cfa02f479993c956e0bcf4098879bec2957c68.jpeg"]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "guild-seasons",
+  "title": "Guild Seasons",
+  "description": "¡Conquista Albion con tu gremio y obtén valiosas recompensas!",
+  "order_index": 19,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/guild-seasons+100",
+  "intro_title": null,
+  "intro": "Ser miembro de un gremio tiene muchos beneficios, y la colaboración es clave en Albion Online. Unirte a un gremio te permite participar en la Guild Warfare, encontrar jugadores para actividades de grupo, disfrutar de la seguridad de los Hideouts y los Territorios, así como avanzar y mejorar tu Conqueror's Challenge con más facilidad.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/cce8b5e9ab7439b9ba58a0be0f6be676744087ce.jpeg"],
+  "items": [
+    {
+      "title": "Guild Warfare",
+      "content": "Durante las Guild Seasons, los jugadores pueden colaborar con su gremio para conquistar y asaltar territorios, tomar castles y participar en diversos desafíos con el fin de ganar Season Points que beneficiarán tanto al gremio en su conjunto como a sus miembros individuales.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/3f8dc5923ab1b70f3f075eb990ce0e80011cfc35.jpeg"]
+    },
+    {
+      "title": "Estructura de la temporada",
+      "content": "Cada Guild Season dura aproximadamente 8 semanas y se puede dividir en 2 segmentos de 4 semanas cada uno, delimitados por los Invasion Days. Durante estos, todos los territorios se vuelven neutrales y deben reconquistarse, y los gremios necesitan derribar a un Territory Guardian para reclamar una Territory Tower para sí mismos.\n\nFuera de los Invasion Days, los territorios pueden ser asaltados y se les pueden declarar ataques durante su prime time, que depende de su región. El prime time dura una hora, al final de la cual un porcentaje de la Raw Energy y la Siphoned Energy de un territorio se convierte en Season Points.\n\nLa primera parte de la temporada otorga puntos normales, mientras que los Season Points de territorio se duplican durante las cuatro semanas finales.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/012a0d918a277247c6f5e96aa0e9f6a9fbb86aef.jpeg"]
+    },
+    {
+      "title": "Ganar Season Points",
+      "content": "Los Season Points se pueden generar a través de muchos tipos distintos de contenido. Incluso un gremio que no posee territorios o que no se centra en el PvP puede escalar lo suficiente como para declarar su propio Headquarters.\n\nTerritorios\n\nMantener territorios como gremio es una gran manera de generar muchos Season Points. Tras capturar un territorio en un Invasion Day o después de un ataque exitoso, puedes subirlo de nivel usando Power Crystals. Los territorios de nivel más alto generan más puntos, mientras que la calidad de la región amplifica este efecto.\n\nSi tu gremio forma parte de una alianza, los Season Points obtenidos de los territorios se compartirán con ella. El 50% de todos los puntos van directamente a tu gremio, mientras que el 50% restante se reparte entre todos los demás gremios de la alianza, incluido el tuyo.\n\nMantener muchos territorios como gremio o alianza también aumenta el Control Cost. Si este número supera 15, se aplica un Siphoned Energy Drain, y si supera 25, todos los miembros individuales se enfrentan a penalizaciones de Fame y Silver.\n\nGuild Might Levels\n\nLos Guild Might Levels permiten que cada miembro del gremio contribuya al esfuerzo del gremio a través de distintas actividades. Cada nivel alcanzado otorga directamente al gremio una cierta cantidad de Season Points.\n\nSi estás en un gremio y quieres consultar su progreso, puedes hacerlo dentro de la Guild UI.\n\nGuild Challenge\n\nLa Guild Challenge es una herramienta adicional para que los jugadores aporten Season Points. Puedes subirla de nivel adquiriendo Challenge Points. Estos se pueden obtener matando mobs, recolectando o pescando, y son idénticos a los que se usan para progresar en el Adventurer's Challenge. Los puntos de bonificación diarios no cuentan para la Guild Challenge.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/5ffec00240bd0b3a970a012385d0d87e281fc872.jpeg", "https://assets.albiononline.com/uploads/media/default/media/1957905f0fe184f22f277148f99ca4f81e0d61ea.jpeg"]
+    },
+    {
+      "title": "Beneficios para el gremio",
+      "content": "Los gremios pueden hacerse un nombre conquistando y manteniendo numerosos objetivos en las Outlands, mientras escalan en los season rankings. Esto aumenta su visibilidad de cara a nuevos miembros y otorga valiosas recompensas.\n\nControlar territorios genera Siphoned Energy, que actúa como un ingreso pasivo para los gremios. Los gremios pueden usar Silver para lanzar ataques sobre territorios enemigos, mejorar la infraestructura del gremio, o dar regears u otros beneficios a sus miembros. Cuantos más Season Points consiga un gremio, mejor será la ubicación en la que podrá declarar un Headquarters Hideout. Los Headquarters Hideouts son una forma especial de Hideout que se vuelve invulnerable a los ataques enemigos siempre que reciba suficiente energía de los Power Cores.\n\nAquí tienes un resumen de cuántos Season Points necesitas para declarar un Headquarters en distintas regiones:\n\n• 200.000: Quality 6 / Tier 8\n• 120.000: Quality 5 / Tier 8\n• 80.000: Quality 4 / Tier 8\n• 40.000: Quality 3 / Tier 7\n• 20.000: Quality 3 / Tier 6\n• 10.000: Quality 1 / Tier 6\n• 1.000: Roads of Avalon",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/ceb9a504e99e716a6579a2d537541fdc98f73cec.jpeg"]
+    },
+    {
+      "title": "Beneficios para los miembros del gremio",
+      "content": "Los jugadores pueden obtener una serie de recompensas participando activamente en las actividades del gremio. Si el gremio posee Hideouts o territorios, pueden usar Power Cores y Power Crystals para subir de nivel sus Hideouts y territorios respectivamente, ganando al mismo tiempo una cantidad significativa de Might para su Conqueror's Challenge personal, y obtener Favor para comprar objetos adicionales en el Energy Manipulator.\n\nPoseer territorios y Hideouts como gremio también proporciona seguridad a tus miembros. Aquí pueden reunirse, almacenar su equipo o buscar refugio de un grupo enemigo. Subir de nivel un Hideout usando Power Cores también aumenta la tasa de retorno de recursos de los objetos fabricados allí, lo que es una gran forma de que los crafters aumenten sus márgenes de beneficio.\n\nAdemás, escalar en los rankings de gremios mejorará tu Conqueror's Chest personal dentro de la Conqueror's Challenge.\n\nCuando un territorio genera Siphoned Energy, todos los miembros del gremio también recibirán un bonus diario de Might que pueden reclamar en la interfaz de la Conqueror's Challenge.",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/3db493578e1fb6cc45e619029230b22d1ca2fe52.jpeg"]
+    },
+    {
+      "title": "Recompensas personales",
+      "content": "También puedes ganar Might y Favor cuando juegas activamente y participas en las actividades del gremio. El Might se usa para progresar en la Conqueror's Challenge, que se puede ver en la Activities UI. Avanzar en tu Conqueror's Challenge desbloqueará un Small, Medium o Grand Conqueror's Chest, cada uno más valioso. Además, si tu gremio alcanza un rango más alto, también mejorará el Conqueror's Chest, lo que amplía y aumenta las recompensas.\n\nEl Might se gana mediante actividades en lethal areas, incluyendo objetivos de gremio, PvE, recolección, Hellgates y más. También se gana algo de Might cuando tu gremio sube de nivel dentro de un tramo de temporada (season bracket).\n\nEl Favor se puede usar en el Energy Manipulator para comprar diversos objetos como Tomes of Insight, Siphoned Energy o Avalonian Crests. El Favor se gana de actividades que otorgan Might pero que no llevan botín directo asociado, como Power Crystals, Power Cores o algunas actividades de PvE. Además, puedes ganar Favor por cada 5.000, 10.000 y 15.000 de Might obtenidos cada semana.\n\nLos gremios juegan un papel central en el mundo de Albion, así que si te interesa unirte a uno, ¡puedes usar el Guild Finder para encontrar uno y comenzar tu misión de conquistar Albion!",
+      "images": ["https://assets.albiononline.com/uploads/media/default/media/df1d2b6bc19e96e5bd597d41e3a3e242b245f566.jpeg"]
+    }
+  ]
+}

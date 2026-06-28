@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.allclash.com" },
       { protocol: "https", hostname: "cdn.cod.guide" },
       { protocol: "https", hostname: "callofdragonsguides.com" },
+      { protocol: "https", hostname: "albiononline.com" },
+      { protocol: "https", hostname: "assets.albiononline.com" },
       // Imágenes subidas por el staff a Supabase Storage (bucket público).
       { protocol: "https", hostname: "fihjqermiqhuubwepfcc.supabase.co", pathname: "/storage/v1/object/public/**" },
     ],

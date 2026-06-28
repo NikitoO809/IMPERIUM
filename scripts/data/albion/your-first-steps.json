@@ -1,0 +1,68 @@
+{
+  "kind": "guide",
+  "game": "albion-online",
+  "slug": "your-first-steps",
+  "title": "Tus primeros pasos en Albion Online",
+  "description": "¿Eres nuevo en Albion y no sabes por dónde empezar? ¡Lee esta guía!",
+  "order_index": 1,
+  "is_published": false,
+  "source_url": "https://albiononline.com/guides/article/beginner-guide+109",
+  "intro_title": null,
+  "intro": "Cuando entras en Albion Online por primera vez, estás entrando en un mundo de posibilidades infinitas. Con tanto por delante, puede ser difícil saber exactamente por dónde empezar, y Albion tiene un montón de actividades que quizá no sean visibles a primera vista.\n\nPara darte el mejor comienzo posible, hemos recopilado algunas actividades de nivel principiante y objetivos personales que te introducirán en las principales mecánicas del juego, a la vez que te ponen en buena posición para explorar todo lo demás que el juego tiene para ofrecer. Tener una comprensión básica de cada actividad te ayudará a progresar mucho más rápido y a convertirte en quien quieres ser en Albion.",
+  "intro_images": ["https://assets.albiononline.com/uploads/media/default/media/37fe9cb36ef1298687b45043f6c2e354a13db50c.jpeg"],
+  "items": [
+    {
+      "title": "Primeros pasos",
+      "content": "Tu primer objetivo como jugador nuevo es viajar a una Royal City. Hay cinco de ellas en Albion, una en cada bioma:\n\n• Bridgewatch (Steppe)\n• Lymhurst (Forest)\n• Martlock (Highland)\n• Thetford (Swamp)\n• Fort Sterling (Mountain)\n\nLo antes posible, abandona tu Starter Town y dirígete a la ciudad más cercana, a dos regiones de distancia, que puedes encontrar abriendo el World Map (atajo: M). Por ejemplo, esta imagen muestra Bridgewatch en relación con su Starter Town, Steppe Cross:\n\nCada ciudad tiene un banco para almacenar, un Marketplace para comprar y vender objetos, y muchas otras comodidades para tus primeras aventuras.\n\nUna vez que hayas llegado a una ciudad, es hora de empezar a ganar Fame. La Fame es el equivalente en Albion Online a los puntos de experiencia, y ganar Fame desbloquea armas y equipo más poderosos.\n\n• Matar enemigos te da Combat Fame, que desbloquea armas de tier superior\n• Recolectar recursos te da Gathering Fame, que desbloquea herramientas de tier superior (con las que puedes recolectar recursos más valiosos)\n• Fabricar objetos y refinar materiales te da Crafting Fame, que te permite fabricar y refinar objetos de tier superior\n\nPuedes ver tu progreso en estas áreas en el Destiny Board, que es el árbol de habilidades de Albion. Aquí puedes ver las ramas de combate, fabricación y recolección del Destiny Board:\n\nAhora veamos algunas buenas formas de ganar Fame.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/e171dc10fb5d0b03f80cd2c1fd1fcc1f84fa3171.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/fc91c7e01ac4b4c8b32a41398ae788fa42d9e68a.jpeg"
+      ]
+    },
+    {
+      "title": "Objetivos de combate para tus primeros días",
+      "content": "Consigue equipo de Tier 4\n\nUna vez que empieces a usar un arma de Tier 4, tendrás acceso a muchas habilidades nuevas y podrás afrontar mayores desafíos. Matar enemigos con un arma de tu elección te dará Combat Fame para esa arma, hasta que desbloquees la capacidad de usar su versión de Tier 4.\n\nAlbion Online tiene un arma para cada estilo de juego. Aquí tienes algunas armas divertidas que quizá quieras probar:\n\n• Dual Swords\n• Battleaxe\n• Bow\n• Fire Staff\n\nPara más sugerencias de equipo, consulta nuestras guías de Basic Build.\n\nAdéntrate en las Yellow Zones\n\nDespués de equipar gear de Tier 4, dirígete a las Yellow Zones. Las Yellow Zones siguen siendo muy seguras, pero ofrecen mucha más Fame y contenido que las Blue Zones.\n\nEl combate jugador contra jugador (PvP) puede ocurrir aquí, pero no tengas miedo: la derrota solo resultará en un derribo (no una muerte) y dañará tus objetos (que puedes reparar en una Repair Station en una ciudad, por una pequeña tarifa). ¡No perderás ninguna posesión!\n\nPuedes ver claramente en el World Map dónde están tus Yellow Zones más cercanas por el cuadrado de color junto a su nombre:\n\nDerrota a los Roaming Mobs y limpia los Mob Camps\n\nEn el mundo abierto, te encontrarás con Roaming Mobs, enemigos que literalmente vagan por el mundo en lugar de quedarse en campamentos. Aunque pueden suponer un verdadero desafío, ofrecen cantidades serias de Fame. Esto te ayudará a subir de nivel tu equipo y te hará aún más fuerte, además de afinar tus habilidades de combate.\n\nOtra actividad divertida son los Dynamic Encampments, campamentos de enemigos temporales que aparecen en ubicaciones aleatorias en regiones de Tier 5 en adelante, en versiones en solitario y en grupo. Ganar suficiente Fame matando a los enemigos de uno de estos desbloqueará un Cache (un tipo de cofre) que contiene botín valioso. Las posibles ubicaciones de Encampment se pueden reconocer en el Region Map: busca puntos como este:\n\nExplora las Mists y encuentra la ciudad de Brecilien\n\nMientras exploras el mundo abierto, mantén un ojo atento a los curiosos Will o' Wisps. Seguirlos abrirá un portal hacia las Mists, una región mágica llena de Roaming Mobs, Mob Camps, recursos, criaturas míticas y más. Completar ciertas tareas en las Mists, como liberar Wisps capturados, aumentará tu Standing con la esquiva ciudad de Brecilien. Alcanza un Standing lo bastante alto y podrás revelar un portal a la propia ciudad…\n\nEsta imagen muestra cómo es un Wisp:",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/7618b493c445fb50c4c00b0ed22bb4253bd66531.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/e170579144a970a04d8a9fe3ba415fc3540834ad.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/9a30a6ab5cdeb774dfdc2321743dfaa513128e5e.jpeg"
+      ]
+    },
+    {
+      "title": "Objetivos económicos para tus primeros días",
+      "content": "Si quieres jugar la vertiente económica del juego, o si simplemente buscas ganar algo más de Silver, aquí tienes algunos objetivos tempranos que alcanzar:\n\nSube de nivel tus herramientas de recolección\n\nHay 5 recursos diferentes en Albion, cada uno con su propia profesión de recolección en el Destiny Board. Cada vez que recolectes un material, ganarás Gathering Fame y progresarás en su profesión correspondiente.\n\nLos Learning Points, que te permiten acelerar tu progreso en cualquier nodo del Destiny Board, pueden ser especialmente beneficiosos al subir de nivel la recolección.\n\nUna vez que alcances un nuevo nivel en una profesión, puedes comprar una herramienta mejor y recolectar materiales de tier superior. Como objetivo personal, deberías intentar llevar al menos una herramienta a Tier 4 pronto.\n\nAquí puedes ver el nivel que necesitas alcanzar en el Destiny Board para desbloquear las herramientas de Tier 4:\n\nConsejo: comer un Pork Pie aumentará significativamente tu rendimiento de recolección y tu capacidad de carga durante 30 minutos.\n\nFabrica equipo y véndelo\n\nPuedes coger tus materiales recolectados y refinarlos en la crafting station apropiada de una ciudad. Como alternativa, puedes comprar los materiales que necesites para fabricar equipo en el Marketplace.\n\nHay 3 tipos de stations para armas y armaduras (Warrior's Forge, Hunter's Lodge, Mage Tower). Aquí hay pestañas para armas, armaduras, y una tercera pestaña para estudiar. Estudiar te permite ganar Crafting Fame adicional de un objeto no deseado, pero lo destruye en el proceso.\n\nLa station del Toolmaker te permite fabricar y estudiar accesorios como bolsas, capas y herramientas.\n\nLuego puedes usar los objetos terminados tú mismo, o venderlos en el Marketplace.\n\nLas crafting stations se encuentran justo a las afueras de la plaza principal de una ciudad, como puedes ver en el Region Map:",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/4ddf6482c1fb3b5459f5bdbad05f0960ae11e372.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/bc40879776fdd4bf535110bdbc10a6067195f8a1.jpeg"
+      ]
+    },
+    {
+      "title": "El Albion Journal",
+      "content": "El Albion Journal es una función que rastrea tu progreso a través del juego, mientras te recompensa por alcanzar objetivos específicos a medida que avanzas.\n\nPulsa J para abrirlo, o ve a través del menú de Actividades.\n\nEl Albion Journal ofrece misiones para casi cualquier actividad en Albion, y ofrece una recompensa por completar cada una. Estas misiones actúan como objetivos claros y alcanzables en las primeras etapas del juego, y van escalando gradualmente hasta logros de alto nivel a medida que progresas.\n\nPuedes rastrear hasta tres misiones de tu elección en el HUD, o tener misiones sugeridas automáticamente que se adapten a tu nivel de juego. Haz clic en este icono para ver tus misiones rastreadas:\n\nEl Albion Journal es una gran forma de medir tu progreso en las primeras etapas del juego, además de proporcionar una manera de ganar algo de Fame o Silver extra para ayudarte aún más en tu camino.",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/892af31dbec25d0f1a8feb84170c07ce5a42cd79.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/7c22b382a59c9b394750878f2c0babfbd4226f23.jpeg",
+        "https://assets.albiononline.com/uploads/media/default/media/abc92a7c9600b0f76fc4d8a481b07cd61ad458ac.jpeg"
+      ]
+    },
+    {
+      "title": "Consejos adicionales",
+      "content": "• No estás obligado a fabricar cada objeto tú mismo. El mercado impulsado por jugadores de Albion casi con seguridad tendrá el equipo y las herramientas que necesitas para tu viaje. Ser autosuficiente al principio puede ahorrarte Silver, pero costarte un tiempo valioso.\n• Mejora tu montura cuando consigas suficiente Silver. Un Journeyman's Riding Horse es un compañero rápido que puede llevarte de A a B, mientras que un Journeyman's Ox puede ayudarte a transportar grandes cargas de recursos u objetos.\n• El mercado en Albion Online está impulsado por jugadores. Si vendes un objeto directamente, significa que has cumplido la Buy Order de otro jugador. Si creas una Sell Order, necesita que otro jugador la compre manualmente. ¡Ten cuidado con cómo vendes tus objetos para no perder Silver! Aquí puedes ver la interfaz para crear una Sell Order:",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/6faf3af2dafac19fc72a4d22932acd1754447966.jpeg"
+      ]
+    },
+    {
+      "title": "Juego en grupo",
+      "content": "Solo eres fuerte; con compañeros, imparable. Albion ofrece muchas actividades dirigidas a jugadores en solitario, pero se abre aún más cuando empiezas a formar equipo con otros.\n\nAquí tienes algunas actividades de grupo en las que puedes participar desde el principio.\n\nFaction Warfare\n\nUna vez que tengas gear de T4, estás listo para empezar a luchar en Faction Warfare. Busca al Faction Warmaster en una de las Royal Cities para alistarte y ganar recompensas valiosas. En Blue, Yellow y Red Zones puedes luchar contra jugadores de otras facciones y capturar o defender Faction Outposts. Tus contribuciones a la causa te darán puntos que pueden comprar objetos especiales en el Faction Warmaster.\n\nCompite en la Arena y la Crystal Arena\n\nAlbion tiene dos modos de arena no letales, de 5 contra 5. La Arena es la versión casual, mientras que la Crystal Arena es más competitiva, con clasificaciones. ¡Únete a la cola de uno de estos modos y gana una partida para ganar recompensas!\n\nPara apuntarte a una batalla de Arena, simplemente selecciona Arena desde el menú de Actividades.\n\nÚnete a un gremio\n\nSer miembro de un gremio abre un montón de contenido, te permite beneficiarte del conocimiento y la orientación de otros, y te da seguridad en números en las regiones más arriesgadas, pero más gratificantes, de Albion.\n\nAlbion Online tiene un Guild Finder dentro del juego, que facilita encontrar un gremio acogedor y amigable para principiantes. ¡Consulta nuestra guía y ve a encontrar a tus compañeros!",
+      "images": [
+        "https://assets.albiononline.com/uploads/media/default/media/c0382c2d79f31c3784e4999981282473b4c6e54e.png"
+      ]
+    },
+    {
+      "title": "Recursos útiles",
+      "content": "Si quieres saber más sobre las diferentes actividades en Albion Online, te recomendamos consultar nuestra sección de guías o la Albion Online Wiki. Si tienes preguntas, puedes hacerlas en nuestro Beginner's Questions Forum, el chat /help dentro del juego, o en nuestro Discord oficial. Aquí tienes algunos enlaces para ayudarte:\n\n• Guías oficiales\n• Albion Online Wiki\n• Foro oficial\n• Discord oficial",
+      "images": []
+    }
+  ]
+}
