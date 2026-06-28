@@ -1,15 +1,12 @@
-// Favicon generado: SOLO el dragón de IMPERIUM, fondo transparente (sin recuadro).
+// Favicon generado: las INICIALES "IMP" en violeta de marca, fondo TRANSPARENTE
+// (sin recuadro). Se ve bien tanto en pestañas claras como oscuras.
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 
 export const runtime = "nodejs";
 export const size = { width: 64, height: 64 };
 export const contentType = "image/png";
 
-export default async function Icon() {
-  const dragon = await readFile(join(process.cwd(), "public/brand/dragon-violeta.png"));
-  const src = `data:image/png;base64,${dragon.toString("base64")}`;
+export default function Icon() {
   return new ImageResponse(
     (
       <div
@@ -20,10 +17,17 @@ export default async function Icon() {
           alignItems: "center",
           justifyContent: "center",
           background: "transparent",
+          fontFamily: "sans-serif",
+          fontWeight: 900,
+          fontSize: 38,
+          lineHeight: 1,
+          letterSpacing: -2,
+          color: "#7c5cff",
+          // Brillo HUD sutil para que las letras "resalten".
+          textShadow: "0 0 6px rgba(124,92,255,0.55)",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} width={64} height={47} alt="" style={{ objectFit: "contain" }} />
+        IMP
       </div>
     ),
     { ...size }
