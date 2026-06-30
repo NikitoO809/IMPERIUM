@@ -1,6 +1,7 @@
 // Inicio — portada de la comunidad (sistema neutro: zinc + oro único).
 // Hero central (isla cliente), datos de Discord EN VIVO sin caja,
 // juegos esperados (suscripción) y MMORPG con preregistro.
+import Link from "next/link";
 import { HomeHero } from "@/components/HomeHero";
 import { UpcomingGames } from "@/components/UpcomingGames";
 import { PreRegisterGames } from "@/components/PreRegisterGames";
@@ -106,6 +107,12 @@ export default async function Inicio() {
         </Reveal>
         <Reveal className="mt-10">
           <PreRegisterGames games={preregister} />
+        </Reveal>
+        <Reveal className="mt-8 flex justify-center">
+          <Link href="/proximos" className="pill pill-ghost">
+            <span>Ver todos los próximos</span>
+            <span aria-hidden>→</span>
+          </Link>
         </Reveal>
       </section>
     </main>

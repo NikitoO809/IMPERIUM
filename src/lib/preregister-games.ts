@@ -214,6 +214,21 @@ export async function getPreRegisterGames(): Promise<PreRegisterGame[]> {
   return rows.map(rowToGame);
 }
 
+// Una ficha individual por su `key` (para el "mundo" del juego próximo).
+// Usa el fallback si Supabase no está configurado o no está en la tabla.
+export async function getPreRegisterGame(key: string): Promise<PreRegisterGame | null> {
+  if (!SUPABASE_CONFIGURED) return FALLBACK_PREREGISTER.find((g) => g.key === key) ?? null;
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("preregister_games")
+    .select(PREREG_SELECT)
+    .eq("key", key)
+    .maybeSingle();
+  if (error) logDbError("getPreRegisterGame.preregister_games", error);
+  if (data) return rowToGame(data as PreRegRow);
+  return FALLBACK_PREREGISTER.find((g) => g.key === key) ?? null;
+}
+
 // Para el panel: incluye id y orderIndex (para editar / reordenar).
 export type AdminPreRegisterGame = PreRegisterGame & { id: string; orderIndex: number };
 

@@ -14,6 +14,7 @@ type NavItem = { href: string; label: string };
 const DEFAULT_NAV: NavItem[] = [
   { href: "/", label: "Inicio" },
   { href: "/juegos", label: "Juegos" },
+  { href: "/proximos", label: "Próximos" },
   { href: "/nosotros", label: "Nosotros" },
   { href: "/comunidad", label: "Comunidad" },
   { href: "/fama", label: "Fama" },
