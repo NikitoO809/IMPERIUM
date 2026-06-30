@@ -5,12 +5,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGameMeta } from "@/lib/games";
-import { canUseAssistant } from "@/lib/ranks";
+import { canUseAssistant, assistantDailyLimit } from "@/lib/ranks";
 import { HudLabel } from "@/components/hud";
 import { AssistantChat } from "@/components/AssistantChat";
 import {
   ASSISTANT_CONFIGURED,
-  ASSISTANT_DAILY_LIMIT,
   getViewerRank,
   getRemainingToday,
   getUserHistory,
@@ -88,7 +87,7 @@ export default async function GameAssistantPage({
         mode={mode}
         exampleQuestions={getExampleQuestions(slug)}
         sample={getSampleExchange(slug, game.name)}
-        dailyLimit={ASSISTANT_DAILY_LIMIT}
+        dailyLimit={assistantDailyLimit(viewer?.rank ?? "veterano")}
         initialRemaining={remaining}
         initialHistory={history}
         discordInvite={process.env.NEXT_PUBLIC_DISCORD_INVITE}

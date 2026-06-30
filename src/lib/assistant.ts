@@ -6,7 +6,7 @@
 import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_CONFIGURED } from "@/lib/supabase/auth-config";
-import { type Rank } from "@/lib/ranks";
+import { type Rank, assistantDailyLimit } from "@/lib/ranks";
 
 // ¿Está la clave de Anthropic puesta? Si no, el bot queda "en espera": el
 // escaparate y el candado funcionan, pero no responde (no rompe la web).
@@ -16,7 +16,8 @@ export const ASSISTANT_CONFIGURED =
 // Modelo: Haiku 4.5 (rápido y barato; sobra para responder sobre texto dado).
 export const ASSISTANT_MODEL = "claude-haiku-4-5";
 
-// Límite de preguntas por usuario y día (red de seguridad de coste).
+// Límite de preguntas por usuario y día. Valor de REFERENCIA (Veterano); el
+// cupo real lo decide el rango vía `assistantDailyLimit(rank)` en `ranks.ts`.
 export const ASSISTANT_DAILY_LIMIT = 10;
 
 // ── Identidad del bot por juego (nombre temático) ────────────────────────────
@@ -84,7 +85,16 @@ export async function getRemainingToday(): Promise<number | null> {
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) return null;
-  const { data, error } = await supabase.rpc("assistant_remaining", { p_limit: ASSISTANT_DAILY_LIMIT });
+  // El cupo depende del rango del usuario (Veterano 10 · Fundador 30 · Leyenda 100 …).
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("role")
+    .eq("id", user.id)
+    .maybeSingle();
+  const rank = (profile?.role ?? "user") as Rank;
+  const { data, error } = await supabase.rpc("assistant_remaining", {
+    p_limit: assistantDailyLimit(rank),
+  });
   if (error) return null;
   return typeof data === "number" ? data : null;
 }

@@ -4,6 +4,7 @@
 import { HomeHero } from "@/components/HomeHero";
 import { UpcomingGames } from "@/components/UpcomingGames";
 import { PreRegisterGames } from "@/components/PreRegisterGames";
+import { CommunityLive } from "@/components/CommunityLive";
 import { Reveal } from "@/components/ui/Reveal";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { DiscordIcon } from "@/components/icons";
@@ -74,6 +75,9 @@ export default async function Inicio() {
           </div>
         </Reveal>
       </section>
+
+      {/* ───── La comunidad en directo (presencia + actividad + Fundadores) ───── */}
+      <CommunityLive />
 
       {/* ───── Juegos que esperamos (suscripción) ───── */}
       {upcoming.length > 0 && (

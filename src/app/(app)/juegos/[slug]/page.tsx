@@ -167,6 +167,50 @@ export default async function GameHub({
         </Panel>
       </Link>
 
+      {/* Discusión de la comunidad — acceso destacado */}
+      <Link href={`/juegos/${game.slug}/discusion`} className="mt-4 block">
+        <Panel corners className="group sweep lift">
+          <div className="panel-inner flex items-center gap-4 p-5">
+            <span className="hex grid h-14 w-14 shrink-0 place-items-center bg-gradient-to-br from-brand to-rank/70 font-title text-2xl font-extrabold text-black">
+              ▣
+            </span>
+            <div className="min-w-0 flex-1">
+              <h3 className="font-title text-lg font-bold group-hover:text-accent transition-colors">
+                Discusión de {game.name}
+              </h3>
+              <p className="mt-1 text-xs leading-relaxed text-white/55">
+                Pregunta, comenta y organiza con la comunidad. Todos pueden leer; los donantes escriben.
+              </p>
+            </div>
+            <span className="hidden shrink-0 font-hud text-sm font-semibold text-accent/80 group-hover:text-accent transition-colors sm:inline">
+              Entrar ▸
+            </span>
+          </div>
+        </Panel>
+      </Link>
+
+      {/* Alianzas — acceso destacado */}
+      <Link href={`/juegos/${game.slug}/alianzas`} className="mt-4 block">
+        <Panel corners className="group sweep lift">
+          <div className="panel-inner flex items-center gap-4 p-5">
+            <span className="hex grid h-14 w-14 shrink-0 place-items-center bg-gradient-to-br from-rank to-accent/70 font-title text-2xl font-extrabold text-black">
+              ⬡
+            </span>
+            <div className="min-w-0 flex-1">
+              <h3 className="font-title text-lg font-bold group-hover:text-accent transition-colors">
+                Alianzas de {game.name}
+              </h3>
+              <p className="mt-1 text-xs leading-relaxed text-white/55">
+                Encuentra gente para entrar juntos. Los donantes crean alianzas; cualquiera se une.
+              </p>
+            </div>
+            <span className="hidden shrink-0 font-hud text-sm font-semibold text-accent/80 group-hover:text-accent transition-colors sm:inline">
+              Ver ▸
+            </span>
+          </div>
+        </Panel>
+      </Link>
+
       {/* Paneles de secciones */}
       <div className="mb-6 mt-10 flex items-center gap-3">
         <span className="h-px flex-1 bg-gradient-to-r from-transparent to-accent/40" />

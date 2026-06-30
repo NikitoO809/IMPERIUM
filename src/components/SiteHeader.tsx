@@ -73,11 +73,23 @@ export function SiteHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }) {
           <div className="flex items-center gap-3">
             {user ? (
               <div className="hidden items-center gap-2.5 sm:flex">
-                {user.avatar && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={user.avatar} alt="" className="h-8 w-8 rounded-full ring-1 ring-white/15" />
-                )}
-                <span className="max-w-[110px] truncate text-[13px] text-zinc-300">{user.name}</span>
+                <Link
+                  href={`/u/${user.id}`}
+                  title="Mi perfil"
+                  className="group flex items-center gap-2.5"
+                >
+                  {user.avatar && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={user.avatar}
+                      alt=""
+                      className="h-8 w-8 rounded-full ring-1 ring-white/15 transition group-hover:ring-gold/50"
+                    />
+                  )}
+                  <span className="max-w-[110px] truncate text-[13px] text-zinc-300 transition group-hover:text-white">
+                    {user.name}
+                  </span>
+                </Link>
                 <form action="/auth/signout" method="post">
                   <button className="rounded-full border border-white/12 px-3.5 py-1.5 text-[12px] font-medium text-zinc-300 transition-colors hover:border-white/24 hover:text-white">
                     Salir
@@ -127,11 +139,20 @@ export function SiteHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }) {
                 );
               })}
               {user ? (
-                <form action="/auth/signout" method="post" className="mt-2">
-                  <button className="w-full rounded-full border border-white/12 px-4 py-3 text-sm font-medium text-zinc-300 hover:text-white">
-                    Cerrar sesión · {user.name}
-                  </button>
-                </form>
+                <>
+                  <Link
+                    href={`/u/${user.id}`}
+                    onClick={() => setOpen(false)}
+                    className="mt-1 rounded-lg px-3 py-3 text-sm font-medium text-zinc-300 transition-colors hover:bg-white/5 hover:text-white"
+                  >
+                    Mi perfil
+                  </Link>
+                  <form action="/auth/signout" method="post" className="mt-1">
+                    <button className="w-full rounded-full border border-white/12 px-4 py-3 text-sm font-medium text-zinc-300 hover:text-white">
+                      Cerrar sesión · {user.name}
+                    </button>
+                  </form>
+                </>
               ) : (
                 <LoginButton className="pill pill-primary mt-2 w-full justify-center">
                   <DiscordIcon className="h-4 w-4" />

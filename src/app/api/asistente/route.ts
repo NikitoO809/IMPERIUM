@@ -6,11 +6,10 @@
 //  4) hay un límite diario de preguntas por usuario.
 import Anthropic from "@anthropic-ai/sdk";
 import { createClient } from "@/lib/supabase/server";
-import { canUseAssistant, type Rank } from "@/lib/ranks";
+import { canUseAssistant, assistantDailyLimit, type Rank } from "@/lib/ranks";
 import {
   ASSISTANT_CONFIGURED,
   ASSISTANT_MODEL,
-  ASSISTANT_DAILY_LIMIT,
   buildGameCorpus,
   buildSystemPrompt,
 } from "@/lib/assistant";
@@ -71,7 +70,7 @@ export async function POST(req: Request) {
     return json({ error: "Inicia sesión con Discord para usar el asistente." }, 401);
   }
 
-  // 3) ¿Rango Tester o superior?
+  // 3) ¿Rango donante (Veterano) o superior?
   const { data: profile } = await supabase
     .from("profiles")
     .select("role")
@@ -79,8 +78,10 @@ export async function POST(req: Request) {
     .maybeSingle();
   const rank = (profile?.role ?? "user") as Rank;
   if (!canUseAssistant(rank)) {
-    return json({ error: "Necesitas el rango Tester o superior para usar el asistente." }, 403);
+    return json({ error: "Necesitas ser Veterano (donante) o superior para usar el asistente." }, 403);
   }
+  // Cupo diario según el rango (Veterano 10 · Fundador 30 · Leyenda 100 …).
+  const dailyLimit = assistantDailyLimit(rank);
 
   // Contenido del juego (la única fuente del bot). Lo validamos ANTES de consumir
   // cupo: si el juego no tiene contenido, el usuario no debe perder una pregunta.
@@ -93,7 +94,7 @@ export async function POST(req: Request) {
   // 4) Límite diario (atómico, en la BD). Se consume lo más tarde posible, con todo
   // ya validado, y se reembolsa abajo si la IA falla sin entregar respuesta.
   const { data: quota, error: quotaErr } = await supabase.rpc("assistant_try_consume", {
-    p_limit: ASSISTANT_DAILY_LIMIT,
+    p_limit: dailyLimit,
   });
   const row = Array.isArray(quota) ? quota[0] : quota;
   if (quotaErr) {
@@ -101,7 +102,7 @@ export async function POST(req: Request) {
   }
   if (!row?.allowed) {
     return json(
-      { error: `Has llegado a tu límite de ${ASSISTANT_DAILY_LIMIT} preguntas por hoy. Vuelve mañana 👊` },
+      { error: `Has llegado a tu límite de ${dailyLimit} preguntas por hoy. Vuelve mañana 👊` },
       429
     );
   }
