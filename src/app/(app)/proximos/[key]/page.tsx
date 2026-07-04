@@ -82,9 +82,14 @@ export default async function ProximoWorld({
       <div className="panel">
         <div className="panel-inner flex flex-col gap-5 p-6 sm:flex-row sm:items-center">
           <span className="grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl bg-black/40 ring-1 ring-white/10">
-            {game.image ? (
+            {game.heroImage || game.image ? (
+              // Artwork local (mismo dominio → siempre carga, aunque el móvil bloquee dominios externos).
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={game.image} alt={`Logo de ${game.name}`} className="max-h-14 w-auto object-contain" />
+              <img
+                src={game.heroImage ?? game.image!}
+                alt={`Portada de ${game.name}`}
+                className="h-full w-full object-cover"
+              />
             ) : (
               <span className="font-title text-sm text-white/40">{game.name.slice(0, 2)}</span>
             )}

@@ -186,6 +186,8 @@ function GameModal({ game, onClose }: { game: PreRegisterGame; onClose: () => vo
   const href = hasPre ? game.preRegisterUrl! : game.website?.trim() || game.infoUrl;
   const ctaLabel = hasPre ? "Preregistrarse" : "Ver juego";
   const x = enrich(game);
+  // Artwork local (mismo dominio → nunca lo bloquea un adblock del móvil).
+  const cover = game.heroImage ?? game.image;
 
   return (
     <motion.div
@@ -202,87 +204,95 @@ function GameModal({ game, onClose }: { game: PreRegisterGame; onClose: () => vo
         role="dialog"
         aria-modal="true"
         aria-label={`Detalles de ${game.name}`}
-        className="glass relative z-10 w-full max-w-lg"
+        className="glass relative z-10 flex max-h-[calc(100dvh-2rem)] w-full max-w-lg flex-col overflow-hidden"
         initial={{ opacity: 0, scale: 0.94, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 10 }}
         transition={{ type: "spring", stiffness: 200, damping: 22 }}
       >
-        <div className="glass-inner p-6 sm:p-7">
-          {/* Cerrar */}
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label="Cerrar"
-            className="absolute right-4 top-4 grid h-8 w-8 place-items-center rounded-full border border-white/10 bg-white/[0.04] text-zinc-400 transition-colors hover:text-white"
-          >
-            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden>
-              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-          </button>
+        {/* Cerrar (pinado sobre la cabecera, fuera del scroll) */}
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Cerrar"
+          className="absolute right-3.5 top-3.5 z-20 grid h-9 w-9 place-items-center rounded-full border border-white/15 bg-black/50 text-white/80 backdrop-blur-sm transition-colors hover:bg-black/70 hover:text-white"
+        >
+          <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden>
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          </svg>
+        </button>
 
-          <div className="flex items-center gap-4">
-            <div className="grid h-20 w-20 shrink-0 place-items-center rounded-2xl bg-white/[0.03] ring-1 ring-white/10">
-              {game.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={game.image} alt={`Logo de ${game.name}`} className="max-h-14 w-auto object-contain" />
-              ) : (
-                <span className="font-display text-sm text-zinc-600">{game.name.slice(0, 2)}</span>
-              )}
-            </div>
-            <div>
-              <h3 className="font-display text-2xl text-white">{game.name}</h3>
-              <div className="mt-1.5 flex items-center gap-2 text-xs">
-                <span className="text-zinc-400">{game.status}</span>
+        {/* Cuerpo con scroll propio: el modal nunca se sale de la pantalla */}
+        <div className="min-h-0 flex-1 overflow-y-auto">
+          {/* Cabecera: banner con el artwork local (mismo dominio → siempre carga) */}
+          <div className="relative">
+            {cover ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={cover} alt={`Artwork de ${game.name}`} className="aspect-[16/9] w-full object-cover" />
+            ) : (
+              <div className="grid aspect-[16/9] w-full place-items-center bg-white/[0.03]">
+                <span className="font-display text-3xl text-zinc-700">{game.name.slice(0, 2)}</span>
+              </div>
+            )}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0b0b0d] via-black/25 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+              <div className="flex flex-wrap items-center gap-2 text-xs">
+                <span className="text-zinc-300">{game.status}</span>
                 {typeof game.hype === "number" && (
-                  <span className="inline-flex items-center gap-1 rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 font-medium text-gold">
+                  <span className="inline-flex items-center gap-1 rounded-full border border-gold/40 bg-black/50 px-2 py-0.5 font-medium text-gold backdrop-blur-sm">
                     <span className="font-num">{game.hype.toFixed(1)}</span> hype
                   </span>
                 )}
               </div>
+              <h3 className="font-display mt-2 text-2xl leading-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,.7)] sm:text-3xl">
+                {game.name}
+              </h3>
             </div>
           </div>
 
-          <p className="mt-5 text-sm leading-relaxed text-zinc-400">{game.blurb}</p>
+          {/* Contenido */}
+          <div className="p-6 sm:p-7">
+            <p className="text-sm leading-relaxed text-zinc-400">{game.blurb}</p>
 
-          {/* Lo que ofrece */}
-          {x.highlights.length > 0 && (
-            <div className="mt-5">
-              <p className="text-[10px] uppercase tracking-[0.16em] text-zinc-500">Lo que ofrece</p>
-              <ul className="mt-2.5 space-y-2">
-                {x.highlights.slice(0, 4).map((h, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm leading-snug text-zinc-300">
-                    <svg viewBox="0 0 24 24" className="mt-0.5 h-4 w-4 shrink-0 text-gold" fill="none" aria-hidden>
-                      <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <span>{h}</span>
-                  </li>
-                ))}
-              </ul>
+            {/* Lo que ofrece */}
+            {x.highlights.length > 0 && (
+              <div className="mt-5">
+                <p className="text-[10px] uppercase tracking-[0.16em] text-zinc-500">Lo que ofrece</p>
+                <ul className="mt-2.5 space-y-2">
+                  {x.highlights.slice(0, 4).map((h, i) => (
+                    <li key={i} className="flex items-start gap-2.5 text-sm leading-snug text-zinc-300">
+                      <svg viewBox="0 0 24 24" className="mt-0.5 h-4 w-4 shrink-0 text-gold" fill="none" aria-hidden>
+                        <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <dl className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-white/8 pt-5">
+              <Meta label="Género" value={game.genre} />
+              <Meta label="Estado" value={game.status} />
+              {x.platforms?.length ? <Meta label="Plataformas" value={x.platforms.join(" · ")} /> : null}
+              {x.developer ? <Meta label="Estudio" value={x.developer} /> : null}
+              {x.publisher ? <Meta label="Editora" value={x.publisher} /> : null}
+              {x.businessModel ? <Meta label="Modelo" value={x.businessModel} /> : null}
+              {x.engine ? <Meta label="Motor" value={x.engine} /> : null}
+              {x.releaseWindow ? <Meta label="Lanzamiento" value={x.releaseWindow} wide /> : null}
+            </dl>
+
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <a href={href} target="_blank" rel="noopener noreferrer" className="pill pill-primary">
+                <span>{ctaLabel}</span>
+                <span className="icon-badge">
+                  <ArrowUpRight className="h-4 w-4" />
+                </span>
+              </a>
+              <button type="button" onClick={onClose} className="pill pill-ghost">
+                <span>Cerrar</span>
+              </button>
             </div>
-          )}
-
-          <dl className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-white/8 pt-5">
-            <Meta label="Género" value={game.genre} />
-            <Meta label="Estado" value={game.status} />
-            {x.platforms?.length ? <Meta label="Plataformas" value={x.platforms.join(" · ")} /> : null}
-            {x.developer ? <Meta label="Estudio" value={x.developer} /> : null}
-            {x.publisher ? <Meta label="Editora" value={x.publisher} /> : null}
-            {x.businessModel ? <Meta label="Modelo" value={x.businessModel} /> : null}
-            {x.engine ? <Meta label="Motor" value={x.engine} /> : null}
-            {x.releaseWindow ? <Meta label="Lanzamiento" value={x.releaseWindow} wide /> : null}
-          </dl>
-
-          <div className="mt-7 flex items-center gap-3">
-            <a href={href} target="_blank" rel="noopener noreferrer" className="pill pill-primary">
-              <span>{ctaLabel}</span>
-              <span className="icon-badge">
-                <ArrowUpRight className="h-4 w-4" />
-              </span>
-            </a>
-            <button type="button" onClick={onClose} className="pill pill-ghost">
-              <span>Cerrar</span>
-            </button>
           </div>
         </div>
       </motion.div>
