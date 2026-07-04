@@ -27,6 +27,7 @@ export type PreRegisterGame = {
   releaseWindow?: string; // p.ej. "2026" (solo si es fiable)
   blurb: string; // una frase
   image: string | null; // logo (null → degradado con el nombre)
+  heroImage?: string | null; // artwork grande (portada). Se sirve desde /public/proximos.
   infoUrl: string; // ficha del juego (mmorpg.com) — siempre presente
   website?: string; // web OFICIAL del juego (verificada). El botón "Ver juego"
   //                   la usa si existe; si no, cae a infoUrl (ficha).
@@ -175,6 +176,7 @@ type PreRegRow = {
   release_window: string | null;
   blurb: string | null;
   image: string | null;
+  hero_image: string | null;
   info_url: string | null;
   website: string | null;
   prereg_url: string | null;
@@ -194,6 +196,7 @@ function rowToGame(r: PreRegRow): PreRegisterGame {
     releaseWindow: r.release_window ?? undefined,
     blurb: r.blurb ?? "",
     image: r.image,
+    heroImage: r.hero_image ?? undefined,
     infoUrl: r.info_url ?? "",
     website: r.website ?? undefined,
     preRegisterUrl: r.prereg_url ?? undefined,
@@ -201,7 +204,7 @@ function rowToGame(r: PreRegRow): PreRegisterGame {
 }
 
 const PREREG_SELECT =
-  "id, key, name, genre, status, hype, platforms, developer, publisher, release_window, blurb, image, info_url, website, prereg_url, order_index";
+  "id, key, name, genre, status, hype, platforms, developer, publisher, release_window, blurb, image, hero_image, info_url, website, prereg_url, order_index";
 
 // Lista pública para la home (desde la tabla, con fallback al array).
 export async function getPreRegisterGames(): Promise<PreRegisterGame[]> {
