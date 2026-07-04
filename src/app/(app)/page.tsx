@@ -3,6 +3,7 @@
 // juegos esperados (suscripción) y MMORPG con preregistro.
 import Link from "next/link";
 import { HomeHero } from "@/components/HomeHero";
+import { GamesRunway } from "@/components/GamesRunway";
 import { UpcomingGames } from "@/components/UpcomingGames";
 import { PreRegisterGames } from "@/components/PreRegisterGames";
 import { CommunityLive } from "@/components/CommunityLive";
@@ -37,6 +38,9 @@ export default async function Inicio() {
         members={discord ? nf.format(discord.memberCount) : "—"}
         online={discord ? nf.format(discord.onlineCount) : "—"}
       />
+
+      {/* ───── Pasarela: los juegos que hicieron historia (banda a todo el ancho) ───── */}
+      <GamesRunway />
 
       {/* ───── Comunidad / Discord (datos en vivo, sin caja) ───── */}
       <section className="mx-auto max-w-7xl px-4 pb-28 sm:px-6">
