@@ -70,6 +70,11 @@ function hexToInt(raw: string): number {
   return Number.isFinite(n) ? n : 0x7c5cff;
 }
 
+// Normaliza el tier de un Titán a uno válido.
+function titanTier(raw: string): "diamante" | "rubi" | "oro" {
+  return raw === "diamante" || raw === "rubi" ? raw : "oro";
+}
+
 function revalidateAll() {
   revalidatePath("/admin", "layout");
   revalidatePath("/juegos", "layout");
@@ -90,6 +95,10 @@ function revalidateHorizon() {
 function revalidateCommunity() {
   revalidatePath("/admin/comunidad");
   revalidatePath("/comunidad");
+}
+function revalidateFama() {
+  revalidatePath("/admin/titanes");
+  revalidatePath("/fama");
 }
 
 // Deja un "aviso flash" para que el panel muestre un toast tras guardar.
@@ -666,6 +675,64 @@ const EXECUTORS: Record<string, (fd: FormData, supabase: DB) => Promise<void>> =
     if (error) throw new Error(error.message);
     revalidateCommunity();
   },
+
+  // ── Salón de los Titanes ──
+  createTitan: async (fd, supabase) => {
+    const ign = str(fd, "ign");
+    if (!ign) throw new Error("Falta el nombre");
+    const { error } = await supabase.from("titanes").insert({
+      ign,
+      epiteto: str(fd, "epiteto") || null,
+      avatar_url: str(fd, "avatar_url") || null,
+      vip_level: Number(str(fd, "vip_level")) || 0,
+      power: Number(str(fd, "power")) || 0,
+      mythics: Number(str(fd, "mythics")) || 0,
+      castle_level: Number(str(fd, "castle_level")) || 0,
+      tier: titanTier(str(fd, "tier")),
+      is_founder: str(fd, "is_founder") === "on",
+      quote: str(fd, "quote") || null,
+      order_index: Number(str(fd, "order_index")) || 0,
+      is_published: true,
+    });
+    if (error) throw new Error(error.message);
+    revalidateFama();
+  },
+  updateTitan: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("titanes")
+      .update({
+        ign: str(fd, "ign"),
+        epiteto: str(fd, "epiteto") || null,
+        avatar_url: str(fd, "avatar_url") || null,
+        vip_level: Number(str(fd, "vip_level")) || 0,
+        power: Number(str(fd, "power")) || 0,
+        mythics: Number(str(fd, "mythics")) || 0,
+        castle_level: Number(str(fd, "castle_level")) || 0,
+        tier: titanTier(str(fd, "tier")),
+        is_founder: str(fd, "is_founder") === "on",
+        quote: str(fd, "quote") || null,
+        order_index: Number(str(fd, "order_index")) || 0,
+      })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateFama();
+  },
+  setTitanPublished: async (fd, supabase) => {
+    const { error } = await supabase
+      .from("titanes")
+      .update({ is_published: str(fd, "value") === "true" })
+      .eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateFama();
+  },
+  moveTitan: async (fd, supabase) => {
+    await swapOrder(supabase, "titanes", fd, revalidateFama);
+  },
+  deleteTitan: async (fd, supabase) => {
+    const { error } = await supabase.from("titanes").delete().eq("id", str(fd, "id"));
+    if (error) throw new Error(error.message);
+    revalidateFama();
+  },
 };
 
 // ── gate: ejecutar directo (Supremo) o encolar para aprobación ────
@@ -871,6 +938,24 @@ export async function moveTopPlayer(fd: FormData) {
 }
 export async function deleteTopPlayer(fd: FormData) {
   await gate("deleteTopPlayer", fd, "Quitar a un jugador top", { requirePublisher: true });
+}
+
+// Salón de los Titanes
+export async function createTitan(fd: FormData) {
+  await gate("createTitan", fd, `Añadir Titán: ${str(fd, "ign") || "(nuevo)"}`, { requirePublisher: true });
+}
+export async function updateTitan(fd: FormData) {
+  await gate("updateTitan", fd, `Editar Titán: ${str(fd, "ign")}`, { requirePublisher: true });
+}
+export async function setTitanPublished(fd: FormData) {
+  const pub = str(fd, "value") === "true";
+  await gate("setTitanPublished", fd, `${pub ? "Mostrar" : "Ocultar"} un Titán`, { requirePublisher: true });
+}
+export async function moveTitan(fd: FormData) {
+  await gate("moveTitan", fd, "Reordenar Titanes", { requirePublisher: true });
+}
+export async function deleteTitan(fd: FormData) {
+  await gate("deleteTitan", fd, "Quitar a un Titán", { requirePublisher: true });
 }
 
 // ════════════════════════════════════════════════════════════════

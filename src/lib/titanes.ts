@@ -67,7 +67,7 @@ export const FALLBACK_TITANES: Titan[] = [
   { id: "valor", ign: "Valor", epiteto: "El Constante", avatarUrl: null, vipLevel: 12, power: 49_000_000, mythics: 2, castleLevel: 28, tier: "oro", isFounder: false, quote: "" },
 ];
 
-// ── Web pública: solo Titanes publicados, ordenados (override manual → VIP → poder) ──
+// ── Web pública: solo Titanes publicados, en el orden del panel (order_index) ──
 export async function getTitanes(): Promise<Titan[]> {
   if (!SUPABASE_CONFIGURED) return FALLBACK_TITANES;
   const supabase = await createClient();
@@ -75,11 +75,29 @@ export async function getTitanes(): Promise<Titan[]> {
     .from("titanes")
     .select(SELECT)
     .eq("is_published", true)
-    .order("sort_order", { ascending: true, nullsFirst: false })
-    .order("vip_level", { ascending: false })
-    .order("power", { ascending: false });
+    .order("order_index", { ascending: true });
   if (error) logDbError("getTitanes.titanes", error);
   const rows = (data ?? []) as unknown as TitanRow[];
   if (rows.length === 0) return FALLBACK_TITANES;
   return rows.map(mapTitan);
+}
+
+// ── Panel de admin: TODOS los Titanes (publicados u ocultos), con id/orden ──
+export type AdminTitan = Titan & { orderIndex: number; isPublished: boolean };
+
+type AdminTitanRow = TitanRow & { order_index: number; is_published: boolean };
+
+export async function getAdminTitanes(): Promise<AdminTitan[]> {
+  if (!SUPABASE_CONFIGURED) return [];
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("titanes")
+    .select(`${SELECT}, order_index, is_published`)
+    .order("order_index");
+  if (error) logDbError("getAdminTitanes.titanes", error);
+  return ((data ?? []) as unknown as AdminTitanRow[]).map((r) => ({
+    ...mapTitan(r),
+    orderIndex: r.order_index,
+    isPublished: r.is_published,
+  }));
 }
