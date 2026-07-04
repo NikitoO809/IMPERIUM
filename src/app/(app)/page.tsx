@@ -4,14 +4,12 @@
 import Link from "next/link";
 import { HeroParticles } from "@/components/HeroParticles";
 import { GamesRunway } from "@/components/GamesRunway";
-import { UpcomingGames } from "@/components/UpcomingGames";
 import { PreRegisterGames } from "@/components/PreRegisterGames";
 import { CommunityLive } from "@/components/CommunityLive";
 import { Reveal } from "@/components/ui/Reveal";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { DiscordIcon } from "@/components/icons";
 import { getDiscordStats, DISCORD_INVITE_URL } from "@/lib/discord";
-import { getUpcomingGames } from "@/lib/upcoming";
 import { getPreRegisterGames } from "@/lib/preregister-games";
 import { JsonLd } from "@/components/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
@@ -23,9 +21,8 @@ export const metadata = {
 };
 
 export default async function Inicio() {
-  const [discord, upcoming, preregister] = await Promise.all([
+  const [discord, preregister] = await Promise.all([
     getDiscordStats(),
-    getUpcomingGames(),
     getPreRegisterGames(),
   ]);
   const nf = new Intl.NumberFormat("es-ES");
@@ -83,22 +80,6 @@ export default async function Inicio() {
 
       {/* ───── La comunidad en directo (presencia + actividad + Fundadores) ───── */}
       <CommunityLive />
-
-      {/* ───── Juegos que esperamos (suscripción) ───── */}
-      {upcoming.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 pb-28 sm:px-6">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Próximos juegos"
-              title="Lo que esperamos juntos"
-              sub="Apúntate y te avisamos cuando empecemos. De paso ves cuánta gente lo espera."
-            />
-          </Reveal>
-          <Reveal className="mt-10">
-            <UpcomingGames games={upcoming} />
-          </Reveal>
-        </section>
-      )}
 
       {/* ───── MMORPG con preregistro (reemplaza la antigua bento) ───── */}
       <section className="mx-auto max-w-7xl px-4 pb-32 sm:px-6">

@@ -3,8 +3,10 @@
 // (Los "Mejores jugadores" viven ahora en su propia sección: /fama.)
 import type { Metadata } from "next";
 import { getCommunityAchievements } from "@/lib/community";
+import { getUpcomingGames } from "@/lib/upcoming";
 import { HudLabel } from "@/components/hud";
 import { CommunityAchievements } from "@/components/CommunityAchievements";
+import { UpcomingGames } from "@/components/UpcomingGames";
 
 export const metadata: Metadata = {
   title: "Comunidad",
@@ -14,7 +16,10 @@ export const metadata: Metadata = {
 };
 
 export default async function ComunidadPage() {
-  const achievements = await getCommunityAchievements();
+  const [achievements, upcoming] = await Promise.all([
+    getCommunityAchievements(),
+    getUpcomingGames(),
+  ]);
 
   return (
     <main className="mx-auto max-w-6xl px-4 pt-12 pb-12">
@@ -41,6 +46,22 @@ export default async function ComunidadPage() {
           </p>
         )}
       </div>
+
+      {/* Próximos juegos (suscripción por Discord) — movido aquí desde la home */}
+      {upcoming.length > 0 && (
+        <section className="mt-16 border-t border-white/8 pt-12">
+          <HudLabel>Próximos juegos</HudLabel>
+          <h2 className="mt-3 font-title text-2xl font-extrabold tracking-wide sm:text-3xl">
+            Lo que esperamos juntos
+          </h2>
+          <p className="mt-3 max-w-xl text-sm text-white/55">
+            Apúntate y te avisamos cuando empecemos. De paso ves cuánta gente lo espera.
+          </p>
+          <div className="mt-8">
+            <UpcomingGames games={upcoming} />
+          </div>
+        </section>
+      )}
     </main>
   );
 }
