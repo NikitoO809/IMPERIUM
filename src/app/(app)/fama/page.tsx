@@ -1,38 +1,26 @@
-// Salón de la FAMA — la élite de la comunidad sobre un fondo espacial
-// interactivo. Pulsa un nombre para ver su hazaña. Se gestiona desde
-// /admin/comunidad (sección "Mejores jugadores").
+// Salón de la Fama → SALÓN DE LOS TITANES: el club VIP/whales de la alianza,
+// con trono para el #1 y tiers (Diamante · Rubí · Oro) sobre fondo espacial.
+// Los datos viven en la tabla `titanes`; se administran (próximamente) desde el
+// panel. Dentro de (app): no añade fondo/cabecera/footer propios.
 import type { Metadata } from "next";
-import { getTopPlayers } from "@/lib/community";
-import { TopPlayers } from "@/components/TopPlayers";
-import { HudLabel } from "@/components/hud";
+import { getTitanes } from "@/lib/titanes";
+import TitanesHall from "@/components/TitanesHall";
+
+// Refresca el ranking cada 5 min (ISR).
+export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Salón de la Fama",
+  title: "Salón de los Titanes",
   description:
-    "La élite de la comunidad IMPERIUM. Los jugadores más destacados y sus hazañas.",
+    "Los Titanes de IMPERIUM: la élite que sostiene la alianza. Poder, VIP y héroes míticos de los mejores de la comunidad.",
   alternates: { canonical: "/fama" },
 };
 
 export default async function FamaPage() {
-  const players = await getTopPlayers();
-
-  if (players.length === 0) {
-    return (
-      <main className="mx-auto max-w-3xl px-4 pt-12 pb-12 text-center">
-        <HudLabel>Salón de la Fama</HudLabel>
-        <h1 className="mt-3 font-title text-3xl font-extrabold tracking-wide text-glow-brand sm:text-4xl">
-          Fama
-        </h1>
-        <p className="mt-4 text-sm text-white/45">
-          Todavía no hay jugadores destacados. Vuelve pronto.
-        </p>
-      </main>
-    );
-  }
-
+  const titanes = await getTitanes();
   return (
     <main>
-      <TopPlayers players={players} />
+      <TitanesHall titanes={titanes} />
     </main>
   );
 }
