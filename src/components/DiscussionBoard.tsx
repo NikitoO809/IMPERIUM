@@ -51,7 +51,7 @@ export async function DiscussionBoard({
               <span className="text-xs text-white/40">
                 Publicarás como {viewerRank ? RANK_LABEL[viewerRank] : ""}
               </span>
-              <button type="submit" className="btn-hud">Publicar</button>
+              <button type="submit" className="btn-hud bg-brand px-5 py-2 text-sm font-semibold text-white">Publicar</button>
             </div>
           </div>
         </form>
@@ -62,7 +62,7 @@ export async function DiscussionBoard({
             Para escribir necesitas ser <b className="text-amber-300">Veterano</b> o superior.
             Mirar es gratis; participar es de los nuestros.
           </p>
-          <Link href="/apoyar" className="btn-hud whitespace-nowrap">Apoyar</Link>
+          <Link href="/apoyar" className="btn-hud whitespace-nowrap bg-brand px-4 py-2 text-sm font-semibold text-white">Apoyar</Link>
         </div>
       )}
 

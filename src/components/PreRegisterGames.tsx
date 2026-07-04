@@ -133,8 +133,8 @@ function GameCard({
           )}
         </div>
 
-        {/* ── Ficha ── */}
-        <div className="flex flex-1 flex-col justify-center p-6 sm:p-7">
+        {/* ── Ficha ── (en móvil fluye de arriba abajo; solo se centra en desktop) */}
+        <div className="flex flex-1 flex-col p-6 sm:justify-center sm:p-7">
           <span className="text-[10px] uppercase tracking-[0.16em] text-zinc-500">
             {[game.genre, game.status].filter(Boolean).join(" · ")}
           </span>

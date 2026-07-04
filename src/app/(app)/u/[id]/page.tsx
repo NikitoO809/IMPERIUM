@@ -107,7 +107,7 @@ export default async function ProfilePage({
                   placeholder="Ej: Aquí destrozamos dragones."
                   className="flex-1 rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-white/30 focus:border-accent/50 focus:outline-none"
                 />
-                <button type="submit" className="btn-hud whitespace-nowrap">
+                <button type="submit" className="btn-hud whitespace-nowrap bg-brand px-4 py-2 text-sm font-semibold text-white">
                   Guardar
                 </button>
               </div>

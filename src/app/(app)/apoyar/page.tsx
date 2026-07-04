@@ -96,12 +96,12 @@ export default async function ApoyarPage() {
                   href={payHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-hud mt-6 w-full justify-center"
+                  className="btn-hud mt-6 flex w-full items-center justify-center bg-brand px-5 py-3 font-bold text-white"
                 >
                   Apoyar
                 </a>
               ) : (
-                <span className="btn-ghost mt-6 w-full cursor-not-allowed justify-center opacity-60">
+                <span className="btn-ghost mt-6 flex w-full cursor-not-allowed items-center justify-center border border-white/15 px-5 py-3 text-white/60 opacity-60">
                   Pronto
                 </span>
               )}

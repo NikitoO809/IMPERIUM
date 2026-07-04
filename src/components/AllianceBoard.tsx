@@ -51,7 +51,7 @@ export async function AllianceBoard({
               className="w-full resize-none rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-white/30 focus:border-accent/50 focus:outline-none"
             />
             <div className="flex justify-end">
-              <button type="submit" className="btn-hud">Crear alianza</button>
+              <button type="submit" className="btn-hud bg-brand px-5 py-2 text-sm font-semibold text-white">Crear alianza</button>
             </div>
           </div>
         </form>
@@ -62,7 +62,7 @@ export async function AllianceBoard({
             Crear alianzas es para <b className="text-amber-300">Veteranos</b> o superior.
             Unirte a las que ya existen es gratis.
           </p>
-          <Link href="/apoyar" className="btn-hud whitespace-nowrap">Apoyar</Link>
+          <Link href="/apoyar" className="btn-hud whitespace-nowrap bg-brand px-4 py-2 text-sm font-semibold text-white">Apoyar</Link>
         </div>
       )}
 
@@ -106,13 +106,13 @@ export async function AllianceBoard({
                           <form action={leaveAlliance}>
                             <input type="hidden" name="id" value={a.id} />
                             <input type="hidden" name="basePath" value={basePath} />
-                            <button type="submit" className="btn-ghost !py-1.5 !text-xs">Salir</button>
+                            <button type="submit" className="btn-ghost bg-white/8 px-3.5 !py-1.5 !text-xs text-white/70">Salir</button>
                           </form>
                         ) : (
                           <form action={joinAlliance}>
                             <input type="hidden" name="id" value={a.id} />
                             <input type="hidden" name="basePath" value={basePath} />
-                            <button type="submit" className="btn-hud !py-1.5 !text-xs">Unirme</button>
+                            <button type="submit" className="btn-hud bg-brand px-4 !py-1.5 !text-xs font-semibold text-white">Unirme</button>
                           </form>
                         )
                       ) : (

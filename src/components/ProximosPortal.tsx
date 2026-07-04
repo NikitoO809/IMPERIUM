@@ -92,7 +92,7 @@ export function ProximosPortal({ games }: { games: PreRegisterGame[] }) {
             {hero.platforms?.length ? <span>· {hero.platforms.join(" · ")}</span> : null}
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-4">
-            <Link href={`/proximos/${hero.key}`} className="btn-hud">Ver mundo</Link>
+            <Link href={`/proximos/${hero.key}`} className="btn-hud bg-brand px-6 py-3 font-bold text-white">Ver mundo</Link>
             {officialHref(hero) && (
               <a
                 href={officialHref(hero)}

@@ -114,7 +114,7 @@ export default async function ProximoWorld({
               href={officialHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-hud whitespace-nowrap"
+              className="btn-hud whitespace-nowrap bg-brand px-5 py-2.5 font-semibold text-white"
             >
               {officialLabel}
             </a>
