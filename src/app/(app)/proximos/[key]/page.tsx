@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPreRegisterGame } from "@/lib/preregister-games";
+import { getPreRegisterContent } from "@/lib/preregister-content";
 import { DiscussionBoard } from "@/components/DiscussionBoard";
 import { AllianceBoard } from "@/components/AllianceBoard";
 import { HudLabel } from "@/components/hud";
@@ -33,6 +34,13 @@ function Meta({ label, value }: { label: string; value: string }) {
   );
 }
 
+// Extrae el ID de un vídeo de YouTube ("watch?v=…", "youtu.be/…" o "embed/…").
+function youtubeId(url?: string): string | null {
+  if (!url) return null;
+  const m = url.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);
+  return m ? m[1] : null;
+}
+
 export default async function ProximoWorld({
   params,
 }: {
@@ -42,10 +50,24 @@ export default async function ProximoWorld({
   const game = await getPreRegisterGame(key);
   if (!game) notFound();
 
+  const content = getPreRegisterContent(key);
+
   const base = `/proximos/${key}`;
   const hasPre = !!game.preRegisterUrl?.trim();
   const officialHref = hasPre ? game.preRegisterUrl! : game.website?.trim() || game.infoUrl;
   const officialLabel = hasPre ? "Preregistrarse" : "Ver web oficial";
+
+  // Descripción: párrafos enriquecidos si existen; si no, el blurb.
+  const paragraphs =
+    content?.description?.length ? content.description : [game.blurb || "Pronto más información sobre este juego."];
+
+  // Ficha técnica combinada: el contenido curado tiene prioridad sobre la BD.
+  const platforms = content?.platforms?.length ? content.platforms : game.platforms;
+  const developer = content?.developer ?? game.developer;
+  const publisher = content?.publisher ?? game.publisher;
+  const releaseWindow = content?.releaseWindow ?? game.releaseWindow;
+
+  const trailerId = youtubeId(content?.trailerUrl);
 
   return (
     <main className="mx-auto max-w-3xl px-4 pt-12 pb-20">
@@ -98,18 +120,73 @@ export default async function ProximoWorld({
       {/* Info */}
       <section className="mt-8">
         <HudLabel>Info</HudLabel>
-        <p className="mt-3 text-sm leading-relaxed text-white/70">
-          {game.blurb || "Pronto más información sobre este juego."}
-        </p>
-        <dl className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-white/10 pt-5">
+        <div className="mt-3 space-y-3 text-sm leading-relaxed text-white/70">
+          {paragraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+
+        {/* Características / lo que ofrece */}
+        {content?.highlights?.length ? (
+          <div className="mt-6">
+            <p className="hud-label mb-3 text-white/50">Lo que ofrece</p>
+            <ul className="grid gap-2 sm:grid-cols-2">
+              {content.highlights.map((h, i) => (
+                <li
+                  key={i}
+                  className="flex gap-2.5 rounded-lg border border-white/8 bg-white/[0.02] p-3 text-sm text-white/75"
+                >
+                  <span className="mt-0.5 shrink-0 text-accent">▸</span>
+                  <span>{h}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+        {/* Ficha técnica */}
+        <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-white/10 pt-5 sm:grid-cols-3">
           {game.genre ? <Meta label="Género" value={game.genre} /> : null}
           {game.status ? <Meta label="Estado" value={game.status} /> : null}
-          {game.platforms?.length ? <Meta label="Plataformas" value={game.platforms.join(" · ")} /> : null}
-          {game.developer ? <Meta label="Estudio" value={game.developer} /> : null}
-          {game.publisher ? <Meta label="Editora" value={game.publisher} /> : null}
-          {game.releaseWindow ? <Meta label="Lanzamiento" value={game.releaseWindow} /> : null}
+          {releaseWindow ? <Meta label="Lanzamiento" value={releaseWindow} /> : null}
+          {platforms?.length ? <Meta label="Plataformas" value={platforms.join(" · ")} /> : null}
+          {developer ? <Meta label="Estudio" value={developer} /> : null}
+          {publisher ? <Meta label="Editora" value={publisher} /> : null}
+          {content?.engine ? <Meta label="Motor" value={content.engine} /> : null}
+          {content?.businessModel ? <Meta label="Modelo" value={content.businessModel} /> : null}
         </dl>
       </section>
+
+      {/* Tráiler */}
+      {trailerId && (
+        <section className="mt-10">
+          <HudLabel>Tráiler</HudLabel>
+          <a
+            href={content!.trailerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative mt-3 block overflow-hidden rounded-xl ring-1 ring-white/10 transition hover:ring-accent/40"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`https://i.ytimg.com/vi/${trailerId}/hqdefault.jpg`}
+              alt={`Tráiler de ${game.name}`}
+              className="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20" />
+            <span className="pointer-events-none absolute inset-0 grid place-items-center">
+              <span className="grid h-16 w-16 place-items-center rounded-full bg-black/50 ring-2 ring-white/70 backdrop-blur transition group-hover:bg-brand/70 group-hover:ring-white">
+                <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7 fill-white" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+            </span>
+            <span className="pointer-events-none absolute bottom-3 left-4 text-xs font-medium text-white/85">
+              Ver tráiler en YouTube
+            </span>
+          </a>
+        </section>
+      )}
 
       {/* Guías (en camino — opción C) */}
       <section className="mt-10">
