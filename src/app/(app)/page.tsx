@@ -2,7 +2,7 @@
 // Hero central (isla cliente), datos de Discord EN VIVO sin caja,
 // juegos esperados (suscripción) y MMORPG con preregistro.
 import Link from "next/link";
-import { HomeHero } from "@/components/HomeHero";
+import { HeroParticles } from "@/components/HeroParticles";
 import { GamesRunway } from "@/components/GamesRunway";
 import { UpcomingGames } from "@/components/UpcomingGames";
 import { PreRegisterGames } from "@/components/PreRegisterGames";
@@ -34,7 +34,7 @@ export default async function Inicio() {
     <main className="relative">
       <JsonLd schema={[organizationSchema(), websiteSchema()]} />
       {/* ───── Hero (isla cliente) ───── */}
-      <HomeHero
+      <HeroParticles
         members={discord ? nf.format(discord.memberCount) : "—"}
         online={discord ? nf.format(discord.onlineCount) : "—"}
       />

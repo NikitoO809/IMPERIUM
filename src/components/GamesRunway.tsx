@@ -72,19 +72,8 @@ export function GamesRunway() {
   const items = [...GAMES, ...GAMES];
 
   return (
-    <section className="relative pb-24 pt-4" aria-label="Los juegos que hicieron historia">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <span className="eyebrow">Salón de la fama</span>
-        <h2 className="font-display mt-4 text-3xl text-white sm:text-4xl">
-          Los juegos que hicieron historia
-        </h2>
-        <p className="mt-4 max-w-[60ch] text-base leading-relaxed text-zinc-400">
-          Dos décadas jugando. Estos son los títulos que nos marcaron. Pasa el ratón por
-          encima para detener el desfile.
-        </p>
-      </div>
-
-      <div className="rw-runway mt-10">
+    <section className="relative pb-24 pt-6" aria-label="Los juegos que hicieron historia">
+      <div className="rw-runway">
         <div className="rw-fade rw-fade-l" aria-hidden />
         <div className="rw-fade rw-fade-r" aria-hidden />
         <div className="rw-track">
