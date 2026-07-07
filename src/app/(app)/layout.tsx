@@ -2,6 +2,7 @@
 // Todas las secciones (Inicio, Juegos, Mi progreso, Comunidad) lo heredan.
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SearchPalette } from "@/components/SearchPalette";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       <SiteHeader />
       <div className="flex-1">{children}</div>
       <SiteFooter />
+      {/* Buscador global (Ctrl+K / lupa de la cabecera). Vive aquí para estar en todas las páginas. */}
+      <SearchPalette />
     </div>
   );
 }

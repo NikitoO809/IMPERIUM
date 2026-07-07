@@ -4,7 +4,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { DiscordIcon } from "@/components/icons";
+import { DiscordIcon, SearchIcon } from "@/components/icons";
+import { openSearch } from "@/components/SearchPalette";
 import { LoginButton } from "@/components/auth/LoginButton";
 import { useUser } from "@/lib/use-user";
 import { useIsAdmin } from "@/lib/use-is-admin";
@@ -72,6 +73,23 @@ export function SiteHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }) {
           </nav>
 
           <div className="flex items-center gap-3">
+            {/* Buscador: mini-barra en escritorio, lupa en móvil (abre el panel Ctrl+K) */}
+            <button
+              type="button"
+              onClick={openSearch}
+              aria-label="Buscar"
+              title="Buscar (Ctrl+K)"
+              className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] text-zinc-400 transition-colors hover:border-white/24 hover:text-white lg:pl-3 lg:pr-2"
+            >
+              <span className="grid h-9 w-9 place-items-center lg:h-auto lg:w-auto lg:py-1.5">
+                <SearchIcon className="h-4 w-4" />
+              </span>
+              <span className="hidden text-[13px] lg:inline">Buscar</span>
+              <kbd className="hidden rounded border border-white/12 bg-white/5 px-1.5 py-0.5 font-hud text-[10px] text-zinc-500 lg:inline">
+                Ctrl K
+              </kbd>
+            </button>
+
             {user ? (
               <div className="hidden items-center gap-2.5 sm:flex">
                 <Link
@@ -125,6 +143,17 @@ export function SiteHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }) {
         {open && (
           <div className="mt-2 rounded-2xl border border-white/8 bg-zinc-950/80 p-3 backdrop-blur-xl md:hidden">
             <div className="flex flex-col gap-1">
+              <button
+                type="button"
+                onClick={() => {
+                  setOpen(false);
+                  openSearch();
+                }}
+                className="flex items-center gap-2.5 rounded-lg px-3 py-3 text-left text-sm font-medium text-zinc-300 transition-colors hover:bg-white/5 hover:text-white"
+              >
+                <SearchIcon className="h-4 w-4" />
+                Buscar
+              </button>
               {items.map((i) => {
                 const active = isActive(pathname, i.href);
                 return (
