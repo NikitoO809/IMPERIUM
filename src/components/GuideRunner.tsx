@@ -254,6 +254,7 @@ export function GuideRunner({
                           alt=""
                           width={640}
                           height={420}
+                          unoptimized
                           sizes="(max-width: 640px) 100vw, 50vw"
                           className="max-h-80 w-auto object-contain"
                         />

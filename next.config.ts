@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "callofdragonsguides.com" },
       { protocol: "https", hostname: "albiononline.com" },
       { protocol: "https", hostname: "assets.albiononline.com" },
+      // Zenless Zone Zero: retratos de agentes enlazados desde el CDN de Prydwen.
+      { protocol: "https", hostname: "cdn.prydwen.gg" },
       // Imágenes subidas por el staff a Supabase Storage (bucket público).
       { protocol: "https", hostname: "fihjqermiqhuubwepfcc.supabase.co", pathname: "/storage/v1/object/public/**" },
     ],
