@@ -2,9 +2,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { getCatalog, UPCOMING_PLACEHOLDERS } from "@/lib/games";
+import { getCatalog } from "@/lib/games";
 import { Panel, HudLabel, XpBar } from "@/components/hud";
-import { LockIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Juegos",
@@ -81,36 +80,6 @@ export default async function JuegosPage() {
           </Link>
         ))}
 
-        {/* Cartas decorativas de "próximamente" */}
-        {UPCOMING_PLACEHOLDERS.map((g) => (
-          <div key={g.slug}>
-            <Panel className="sweep lift h-full opacity-55">
-              <div className="panel-inner p-5">
-                <div className="flex items-start justify-between">
-                  <span className="hud-label text-[10px] text-accent/70">{g.tag}</span>
-                  <span className="hex grid h-10 w-10 place-items-center bg-white/10 font-title text-sm font-extrabold text-white/40">
-                    {g.rank}
-                  </span>
-                </div>
-
-                <h3 className="mt-5 font-title text-lg font-bold tracking-tight">{g.name}</h3>
-                <p className="mt-1.5 text-sm text-white/50">Bloqueado · próximamente</p>
-
-                <div className="mt-5">
-                  <div className="mb-1.5 flex justify-between">
-                    <span className="hud-label text-[9px] text-white/40">Completado</span>
-                    <span className="hud-label text-[9px] text-accent/70">0%</span>
-                  </div>
-                  <XpBar value={0} />
-                </div>
-
-                <div className="mt-5 flex items-center gap-2 font-hud text-sm font-semibold tracking-wide text-white/35">
-                  <LockIcon className="h-4 w-4" /> Bloqueado
-                </div>
-              </div>
-            </Panel>
-          </div>
-        ))}
       </div>
     </main>
   );

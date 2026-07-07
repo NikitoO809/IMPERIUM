@@ -60,18 +60,13 @@ export type GameCard = GameMeta & {
   completionPct: number; // % global del juego para el usuario actual
 };
 
-// Cartas decorativas de "próximamente" para el catálogo (no son juegos reales).
-export type UpcomingCard = { slug: string; name: string; tag: string; rank: string };
-export const UPCOMING_PLACEHOLDERS: UpcomingCard[] = [
-  { slug: "ejemplo-1", name: "[EJEMPLO — reemplazar]", tag: "Próximamente", rank: "—" },
-  { slug: "ejemplo-2", name: "[EJEMPLO — reemplazar]", tag: "Próximamente", rank: "—" },
-];
-
 // Metadatos puramente visuales del HUD (no viven en la base de datos).
 const PRESENTATION: Record<string, { tag: string; rank: string }> = {
   "call-of-dragons": { tag: "Estrategia", rank: "S" },
   "sword-x-staff": { tag: "RPG / Gacha", rank: "S" },
   "albion-online": { tag: "MMORPG", rank: "S" },
+  "zenless-zone-zero": { tag: "RPG de acción / Gacha", rank: "S" },
+  "wuthering-waves": { tag: "RPG de acción / Mundo abierto", rank: "S" },
 };
 function present(slug: string) {
   return PRESENTATION[slug] ?? { tag: "Juego", rank: "S" };
