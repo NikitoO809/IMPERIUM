@@ -70,6 +70,21 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
     // 'guias' es ruta especial; su portada va aquí (imagen oficial de Albion).
     guias: "https://albiononline.com/assets/images/header/header-faye.jpg",
   },
+  "zenless-zone-zero": {
+    // 'guias' es ruta especial; su portada va aquí. La sección 'agentes' trae su
+    // cover_image desde la BD.
+    guias: "https://cdn.prydwen.gg/images/socials/social_zzz.jpg",
+  },
+  "wuthering-waves": {
+    // 'guias' es ruta especial; su portada va aquí. La sección 'personajes' trae
+    // su cover_image desde la BD.
+    guias: "https://cdn.prydwen.gg/images/wuthering-waves/categories/category_characters.webp",
+  },
+  "arknights-endfield": {
+    // 'guias' es ruta especial; su portada va aquí. La sección 'operadores' trae
+    // su cover_image desde la BD.
+    guias: "https://img.game8.co/4174951/db39cd9c943e563398521460c3d83003.png/original",
+  },
 };
 
 // Metadata SEO por juego (reutiliza getGameMeta; Next deduplica el fetch).

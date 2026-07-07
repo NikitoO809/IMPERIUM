@@ -67,6 +67,7 @@ const PRESENTATION: Record<string, { tag: string; rank: string }> = {
   "albion-online": { tag: "MMORPG", rank: "S" },
   "zenless-zone-zero": { tag: "RPG de acción / Gacha", rank: "S" },
   "wuthering-waves": { tag: "RPG de acción / Mundo abierto", rank: "S" },
+  "arknights-endfield": { tag: "RPG · Saga Arknights", rank: "S" },
 };
 function present(slug: string) {
   return PRESENTATION[slug] ?? { tag: "Juego", rank: "S" };
