@@ -5,8 +5,10 @@
 //   · Listas        → líneas que empiezan con "- ", "• " o "* ".
 //   · Listas num.   → líneas que empiezan con "1. ", "2) ", etc.
 //   · Párrafos      → el resto; cada salto de línea simple se respeta.
+//   · Fichas        → bloque con prefijo __SKILLS__ (icono + nombre + explicación).
 // Reutiliza el mismo look de tabla que SectionContent (HudTable).
 import type { ReactNode } from "react";
+import { IconList, SKILLS_PREFIX } from "@/components/IconList";
 
 const BULLET_RE = /^[-•*]\s+/;
 const NUM_RE = /^\d+[.)]\s+/;
@@ -125,9 +127,13 @@ export function RichText({ content, className = "" }: { content: string; classNa
   const blocks = content.split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
   return (
     <div className={`space-y-3 ${className}`}>
-      {blocks.map((b, i) => (
-        <Block key={i} text={b} />
-      ))}
+      {blocks.map((b, i) =>
+        b.startsWith(SKILLS_PREFIX) ? (
+          <IconList key={i} raw={b.slice(SKILLS_PREFIX.length)} />
+        ) : (
+          <Block key={i} text={b} />
+        )
+      )}
     </div>
   );
 }

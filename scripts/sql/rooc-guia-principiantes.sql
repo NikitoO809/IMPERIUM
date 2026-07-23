@@ -1,0 +1,94 @@
+do $IMPERIUM$
+declare
+  v_game uuid;
+  v_guide uuid;
+begin
+  select id into v_game from public.games where slug = 'ragnarok-origin-classic';
+  if v_game is null then
+    raise exception 'IMPERIUM: juego no encontrado: %', 'ragnarok-origin-classic';
+  end if;
+
+  -- Reemplazo idempotente. OJO: borra los pasos -> reinicia step_progress de esta guía.
+  delete from public.guide_steps where guide_id in (
+    select id from public.guides where game_id = v_game and slug = 'guia-principiantes');
+  delete from public.guides where game_id = v_game and slug = 'guia-principiantes';
+
+  insert into public.guides
+    (game_id, slug, title, description, order_index, is_published, intro_title, intro, intro_images)
+  values
+    (v_game, 'guia-principiantes', 'Guía para principiantes: de nivel 1 al Tyr Cup', 'Cómo arrancar con buen pie en Ragnarok Origin Classic: elegir servidor, tu primera clase, cómo repartir estadísticas, la economía, el equipo y la rutina diaria, hasta llegar con garantías a la Tyr Cup.', 1, false, 'Tu primer login, bien aprovechado', 'Ragnarok Origin Classic (ROOC) es el MMORPG para móvil que retoma las clases, las estadísticas, las cartas y las mascotas del Ragnarok Online clásico de PC, en un formato pensado para partidas desde el teléfono. Salió oficialmente el 26 de marzo de 2026 en Corea, Taiwán, Hong Kong, Macao y el sudeste asiático, y desde entonces ha seguido recibiendo contenido nuevo sin parar.
+
+Si te preocupa llegar tarde, hay buenas noticias: el 25 de junio de 2026 abrió Glast Heim Vigil, un servidor nuevo donde todo el mundo parte de nivel 1 por igual, y el 9 de julio llegó Shadows over Glast Heim, la expansión más grande hasta la fecha. Pocas veces fue tan buen momento para empezar de cero.
+
+Esta guía te acompaña desde el primer login hasta el punto en el que ya sabes montar tu personaje, tu economía y tu rutina diaria sin malgastar recursos, y termina justo donde se abre la puerta al contenido competitivo de verdad: Dimension Drill y la Tyr Cup. Para lo que viene después de eso, la web tiene una guía y una sección de eventos dedicadas aparte.', array['https://file.joymaker.com/game/rooc/web/1200X630en.jpg']::text[])
+  returning id into v_guide;
+
+  insert into public.guide_steps
+    (guide_id, order_index, title, content, source_url, is_verified, images)
+  values
+    (v_guide, 1, 'El servidor original ya lleva meses de ventaja', 'El servidor original de Ragnarok Origin Classic en Asia lleva activo desde el 26 de marzo de 2026. Son varios meses de diferencia, y en un MMORPG eso pesa: niveles más altos, equipo ya refinado, cartas conseguidas, gremios consolidados. Si entras ahí directamente ahora, vas a notar esa distancia desde el primer día.
+
+No es un problema imposible de remontar, pero si todavía no tienes ninguna atadura a ese servidor —amigos, gremio, progreso ya hecho—, vale la pena mirar primero la alternativa del siguiente punto.', 'https://www.globenewswire.com/news-release/2026/03/26/3262803/0/en/Ragnarok-Origin-Classic-Official-Launching-in-Korea-Taiwan-Hong-Kong-Macau-and-Southeast-Asia-on-March-26-2026.html', false, array[]::text[]),
+    (v_guide, 2, 'Glast Heim Vigil: tu mejor punto de entrada', 'El 25 de junio de 2026 abrió Glast Heim Vigil, un servidor nuevo donde todos los jugadores, sin excepción, parten de nivel 1 por igual. Ninguna cuenta lleva ventaja de fábrica ahí dentro.
+
+Si estás leyendo esta guía porque acabas de instalar el juego, este es probablemente tu servidor: vas a subir de nivel, montar gremio y competir por recursos codo a codo con el resto de recién llegados, en lugar de perseguir a jugadores que ya llevan meses jugando.', 'https://gamingph.com/2026/06/ragnarok-origin-classic-glast-heim-reward-storm-event/', false, array[]::text[]),
+    (v_guide, 3, 'La expansión Shadows over Glast Heim acaba de llegar', 'El 9 de julio de 2026 —apenas unos días antes de escribir esta guía— llegó Shadows over Glast Heim, una expansión grande que trae zona nueva, la mazmorra Draconic Cataclysm y una clase inédita: Gunslinger.
+
+Todavía no está confirmado si Gunslinger llega a tener 2ª transcendencia como el resto de clases del juego, así que trátala como contenido en evolución hasta que se confirme oficialmente.', 'https://www.ungeek.ph/2026/07/ragnarok-origin-classic-releases-its-update-today-glast-heim-and-new-job-gunslinger-arrive/', false, array[]::text[]),
+    (v_guide, 4, 'Creación de personaje y tu primer cambio de clase', 'Al crear tu personaje, elige el tipo que te muestre las 6 ramas iniciales disponibles: es la opción que te deja ver todo el abanico antes de decidir. Tu primer tramo de juego es el tutorial de Novice Academy, guiado por los NPCs Sprakki y Aninska.
+
+En Job Lv.10, la propia historia te manda a Prontera a hablar con el NPC Instructor Bled: ahí ocurre tu primer cambio de clase real. Poco después, en el nivel 15, crafteas tu primera arma de clase.', 'https://www.bluestacks.com/blog/game-guides/ragnarok-origin-classic/rgoc-beginners-guide-en.html', false, array[]::text[]),
+    (v_guide, 5, 'El árbol de clases: 6 ramas, 14 clases en total', 'Ragnarok Origin Classic no tiene terceras clases: todo el árbol termina en la 2ª transcendencia, con 14 clases en total repartidas en 6 ramas:
+
+• Swordsman → Knight / Crusader → Lord Knight / Paladin
+• Acolyte → Priest / Monk → High Priest / Champion
+• Mage → Wizard / Sage → High Wizard / Professor
+• Thief → Assassin / Rogue → Assassin Cross / Stalker
+• Merchant → Blacksmith / Alchemist → Mastersmith / Biochemist
+• Archer → Hunter / Bard / Dancer → Sniper / Minstrel / Gypsy
+
+El cambio de clase aquí es mucho más simple que en el Ragnarok Online clásico de PC: hay un ítem, el Job Change Writ, que resetea tus estadísticas y habilidades y te permite cambiar de clase directamente, sin vueltas. Y a partir del nivel 70, cambiar de clase queda completamente libre.', 'https://www.gravity.co.kr/en/game/ROOC', false, array[]::text[]),
+    (v_guide, 6, 'Guarda presets para cada build', 'El juego te deja guardar presets completos —estadísticas, habilidades, equipo, encantamientos, montura y mascota— y cambiar entre ellos cuando quieras. En la práctica esto significa que puedes tener, por ejemplo, un preset de farmeo y otro de PvP con la misma clase, sin rehacer todo el reparto cada vez que cambias de actividad. Configúralos en cuanto tengas margen: ahorra muchísimo tiempo más adelante.', 'https://roonby.com/2026/03/30/10-ragnarok-origin-classic-beginner-guide-early-game-tips/', false, array[]::text[]),
+    (v_guide, 7, 'Las 6 estadísticas y cómo repartirlas', 'Seis estadísticas mueven todo tu personaje, todas con tope de 99: STR (daño físico cuerpo a cuerpo y capacidad de carga), AGI (velocidad de ataque y evasión), VIT (HP máximo, regeneración y defensa física), INT (daño mágico, SP máximo y regeneración de SP), DEX (precisión, menos tiempo de conjuro y daño a distancia) y LUK (crítico y esquiva perfecta).
+
+La prioridad cambia según lo que juegues: cuerpo a cuerpo reparte primero en STR y VIT; a distancia prioriza DEX, luego AGI y luego LUK; mágico va primero a INT, luego DEX y luego VIT; soporte reparte primero en INT, luego VIT y luego DEX.
+
+No hace falta que hagas las cuentas a mano: los puntos se autorreparten al subir de nivel, y tienes un botón de Auto-Assign además de uno de Refresh para deshacer el reparto si cambias de idea, sin contar los presets del punto anterior.', 'https://roonby.com/2026/03/30/ragnarok-origin-classic-stat-guide-how-to-build-your-character-properly/', false, array[]::text[]),
+    (v_guide, 8, 'Prioriza la historia, no el farmeo a ciegas', 'La misión principal da la mayoría del EXP en las primeras horas y va desbloqueando sistemas del juego uno detrás de otro: avánzala antes que ponerte a farmear por tu cuenta. Cuando sí te toque elegir dónde farmear, mira antes el Handbook del juego, que te dice exactamente qué monstruo suelta qué material, así que no pierdes tiempo en el sitio equivocado.
+
+Dos cosas más que marcan mucho la diferencia al principio: evita retar en solitario a los monstruos Elite (los del icono de garra, con HP muy alto), y usa el arma o la habilidad del elemento correcto contra cada enemigo, porque la ventaja elemental puede casi duplicar tu daño. Y si puedes, sube en party: da más EXP que ir por libre.', 'https://www.bluestacks.com/blog/game-guides/ragnarok-origin-classic/rgoc-tips-tricks-en.html', false, array[]::text[]),
+    (v_guide, 9, 'Mapa de zonas de farmeo por nivel', 'Como orientación general de dónde farmear según tu nivel: del 1 al 20, la misión principal con Setas; del 20 al 30, la Alcantarilla o el Bosque de Goblins; del 30 al 40, el Barco Hundido con Hydra; del 41 al 60, el Cañón Larva con Argiope; del 61 al 80, la Mazmorra Geffen 2F con Nightmare; y del 80 al 100, Glastheim Patch con Dark Frame.
+
+Tómalo como punto de partida, no como verdad absoluta: conviene confirmarlo en el Handbook del propio juego, porque pudo cambiar con el parche del 9 de julio.', 'https://www.oslink.io/blog/guide/ragnarok-origin-classic-farming-guide.html', false, array[]::text[]),
+    (v_guide, 10, 'Tu rutina diaria', 'Cada día deberías: reclamar las recompensas de login, avanzar la historia hasta el muro de nivel del día, hacer las Daily Commissions (se desbloquean en nivel 16 y dan Zeny y materiales de forma constante), gastar tu cupo diario de combate, participar en los eventos rotativos y en las cacerías de Mini/MVP, y no dejar de lado las actividades de tu gremio.
+
+Sobre el cupo de combate: ronda los 7.200 monstruos al día, ampliable a 8.200 con ciertos ítems, y lo que no gastes se acumula hasta 7 días. Aunque ya hayas topado de nivel, sigue farmeando: el cupo sigue soltando materiales y cartas igual.
+
+Dos ajustes que te van a ahorrar más de un susto: configura la recuperación automática de pociones —que salte con HP por debajo del 50-60% y SP por debajo del 40%— y el auto-loot, priorizando siempre los objetos de valor.', 'https://roonby.com/2026/03/30/10-ragnarok-origin-classic-beginner-guide-early-game-tips/', false, array[]::text[]),
+    (v_guide, 11, 'Las 4 monedas del juego', 'Cuatro monedas mueven la economía del juego. Gold Coins: se ganan con la rutina diaria, comisiones, gremio y eventos —ronda los 1.000 al día solo con eso— y sirven para ítems de progresión y para pagar el Monthly Pass. Zeny: se gana vendiendo cartas y objetos en el mercado, y sirve para comerciar entre jugadores. Eden Coins: se ganan cazando monstruos, y se gastan en pociones y materiales de clase.
+
+Nyan Berries es la moneda premium de pago real, pero de uso exclusivamente cosmético: todos los trajes dan las mismas estadísticas, sin ninguna ventaja de poder. Esa es, precisamente, la base de por qué el juego se anuncia como justo, sin pagar por ganar.', 'https://roonby.com/2026/03/26/ragnarok-origin-classic-currency-explained-guide/', false, array[]::text[]),
+    (v_guide, 12, 'En qué gastar primero (y en qué no)', 'Con tantas monedas distintas, el orden de gasto importa. Primero, el Monthly Pass: se puede pagar con Gold ganado jugando, no hace falta meter dinero real. Después, en este orden: refinado, mascotas, Event Pass y paquetes de recursos.
+
+Cuatro cosas que conviene evitar: malgastar Gold en cosméticos de poco valor, refinar una sola pieza a fondo antes de completar el set entero, vender materiales que todavía vayas a necesitar, y contar con los cofres del mapa como ingreso recurrente, porque son de una sola vez.', 'https://www.oslink.io/blog/guide/ragnarok-origin-classic-beginner-guide.html', false, array[]::text[]),
+    (v_guide, 13, 'Refinado y Plumas (Feathers)', 'La ruta de refinado recomendada es Arma+6 → Accesorios+6 → set completo+6 → Arma+10 → Accesorios+10 → y, poco a poco, Arma+15. Ir en horizontal (subir todo el set parejo) antes que en vertical (una sola pieza muy alta) evita que te quedes con un personaje desequilibrado; ten en cuenta que el riesgo de romper el ítem aparece en los refinados altos.
+
+Además del equipo normal, puedes llevar hasta 5 Feathers puestas a la vez. El bono de set lo decide la pluma de MENOR rareza que tengas equipada, así que conviene llenar los 5 huecos antes de ponerte a subir la rareza de una sola.', 'https://www.bluestacks.com/blog/game-guides/ragnarok-origin-classic/rgoc-progression-guide-en.html', false, array[]::text[]),
+    (v_guide, 14, 'Cartas y Encantamiento', 'Las cartas se consiguen aniquilando monstruos o en la Card Shop, que refresca su stock 3 veces al día: 13:00, 17:00 y 21:00, hora de Filipinas. Para empezar, apunta a la Tanuki Card y a las Either Cards tempranas: súbelas a 3 estrellas para un +6% de daño de raza, y desmantélalas sin remordimiento en cuanto las reemplaces. Desde aproximadamente el nivel 62, empieza a mirar Skell Worker y Marduk.
+
+El Enchant es un sistema aparte del refinado: en vez de subir tus estadísticas base, te tira una estadística nueva al azar. Por eso conviene guardar los materiales de encantar para el equipo que ya sabes seguro que vas a conservar, y no gastarlos en piezas de paso.', 'https://roonby.com/2026/03/30/10-ragnarok-origin-classic-beginner-guide-early-game-tips/', false, array[]::text[]),
+    (v_guide, 15, 'Mascotas y montura', 'Las mascotas se desbloquean en Nivel Base 22, con un máximo de 4 activas a la vez, y desde el Nivel Base 55 se suma un hueco extra de Assist para mascotas que no despliegas pero que igual te dan sus estadísticas pasivas. Se consiguen cazando Mini/MVP: sueltan Poring Coins, que canjeas por fragmentos en la Pet Shop. Es mejor concentrar tu inversión en unas 4 mascotas principales que repartirla entre muchas.
+
+La montura funciona en tres capas: Mount Ability (estadísticas que escalan con el nivel de la montura), Mount Equipment (4 piezas de barda equipables) y Mount Traits (5 rasgos que mejoran con el uso). El nivel exacto de desbloqueo y la forma gratuita de conseguir tu primera montura todavía no están confirmados: revísalo directamente en el menú de montura dentro del juego.', 'https://roonby.com/2026/03/30/10-ragnarok-origin-classic-beginner-guide-early-game-tips/', false, array[]::text[]),
+    (v_guide, 16, 'Baphomet Jr., la mascota estrella para farmear', 'Si tuvieras que elegir solo una mascota para sesiones largas de farmeo, que sea Baphomet Jr. Su habilidad, Harvesting Scythe, cura un 3% del daño de cada golpe crítico como HP, tanto para ella como para su dueño, y ese porcentaje sube hasta el 9% en su mejora máxima. Es una mascota que se nota especialmente en sesiones de farmeo largas, donde cada golpe crítico te va devolviendo vida poco a poco.', 'https://roocdb.com/en/pets/1014', false, array[]::text[]),
+    (v_guide, 17, 'Únete a un gremio cuanto antes', 'Unirte a un gremio pronto es casi obligatorio si quieres progresar rápido. Un gremio activo te da acceso a las Guild Quests semanales, subastas de gremio, la Expedición de Gremio, la Anomalía Espacio-Temporal, bonos de Emperium, y una Piedra Memorial diaria que, con la ayuda de tus compañeros, puede llegar a darte hasta 500.000 Eden Coins.
+
+(El nivel mínimo exacto para poder unirte a un gremio en este juego no está confirmado: compruébalo tú mismo en el menú de gremio en cuanto puedas.)', 'https://roonby.com/2026/03/30/10-ragnarok-origin-classic-beginner-guide-early-game-tips/', false, array[]::text[]),
+    (v_guide, 18, 'Errores comunes que cometen los principiantes', 'Los tropiezos más repetidos, en corto: dejar que el juego reparta tus estadísticas sin saber que existen Auto-Assign, Refresh y los presets para corregirlo; parar de farmear en cuanto topas de nivel, cuando el cupo diario igual suelta materiales y cartas; refinar una sola pieza a fondo antes de completar el set entero a +6; subir la rareza de una sola Feather dejando huecos vacíos; ignorar la ventaja elemental; y retar en solitario a monstruos Elite en tus primeras horas de juego.
+
+Y en el terreno económico: gastar Gold en cosméticos en vez de guardarlo para el Monthly Pass; no unirte a un gremio desde el primer día; farmear a ciegas sin consultar el Handbook; y llegar tarde a los refrescos de la Card Shop y quedarte sin las cartas buenas.', 'https://roonby.com/2026/03/30/10-ragnarok-origin-classic-beginner-guide-early-game-tips/', false, array[]::text[]),
+    (v_guide, 19, 'La meta final: Dimension Drill y la Tyr Cup', 'Todo lo anterior apunta a un mismo hito: cuando llegues a Base Lv.70 con la 2ª transcendencia ya completada, cumples el requisito para entrar en el modo competitivo Dimension Drill y para inscribirte en la Tyr Cup, el torneo de un millón de dólares más grande en la historia de Ragnarok.
+
+Eso ya es harina de otro costal: en la web tienes una guía y una sección de eventos aparte dedicadas específicamente a ese contenido competitivo. Esta guía termina aquí, pero tu progreso, no.', 'https://www.bluestacks.com/blog/game-guides/ragnarok-origin-classic/rgoc-progression-guide-en.html', false, array[]::text[]);
+end
+$IMPERIUM$;

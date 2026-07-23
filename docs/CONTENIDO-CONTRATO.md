@@ -102,6 +102,25 @@ nuevo hay que registrarlo también en `GAME_SECTIONS` (`src/lib/demo-data.ts`),
     "hero_label": "…", "range": "…", "attributes": "…" } ]
 ```
 
+### `__SKILLS__{json}` — fichas con icono + nombre + explicación
+Lo renderiza `IconList` (`src/components/IconList.tsx`), detectado desde `RichText`,
+así que sirve tanto en `guide_steps.content` como en `section_blocks.content`.
+Pensado para árboles de habilidades, cartas y mascotas: cada icono queda pegado al
+texto que lo explica, en vez de amontonados al final del paso.
+
+```json
+[ { "name": "Sword Mastery", "img": "https://…", "tag": "Al máximo",
+    "desc": "+30 de PATK permanente. PATK es tu ataque físico: …" } ]
+```
+
+- `img` y `tag` son opcionales; si no puedes confirmar el icono real de esa entrada,
+  **omite `img`** antes que poner uno equivocado.
+- El JSON debe ir en **una sola línea** (`RichText` separa bloques por líneas en blanco).
+- Al convertir un paso a este formato, **vacía su `images`** si todos sus iconos
+  pasaron a las fichas (si no, saldrían duplicados abajo).
+- `desc` se escribe para gente nueva: mantén los números exactos de la fuente y
+  aclara en lenguaje llano cada término técnico la primera vez que aparece.
+
 ---
 
 ## Metadatos por bloque: `meta` (jsonb)
@@ -127,7 +146,15 @@ usa para el **tier de artefactos**:
 |---|---|---|
 | `artefactos` | `ArtifactosViewer` | 4 tabs; clasifica bloques por `order_index` (ver abajo); ancho `max-w-6xl` |
 | `behemoths` | `BehemothsViewer` | parsea `## / ###` en `content`; ancho `max-w-5xl` |
+| `render_type = 'classes'` | `ClasesViewer` | lista agrupada por rama con el icono de cada clase + panel de detalle; ancho `max-w-5xl` |
 | resto | `SectionContent` | genérico (intro + bloques, con prefijos mágicos) |
+
+### `ClasesViewer`: qué espera en `meta` (jsonb) de cada bloque
+Un bloque = una clase. `images[0]` es su icono. En `meta`:
+`branch` (rama por la que se agrupa la lista), `path` (recorrido de trabajos),
+`role`, `stats` y `guide` (slug de su guía de build → pinta el botón "Ver guía de
+build"). Sin `branch` la clase cae en un grupo "Otras"; el orden de las ramas es el
+de aparición de los bloques por `order_index`.
 
 ### Convención de `order_index` en `artefactos` (IMPORTANTE)
 `ArtifactosViewer` clasifica por posición; respétala al montar:

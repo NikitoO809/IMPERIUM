@@ -50,6 +50,8 @@ KNOWN_SECTION_SLUGS = {
     # Sword x Staff
     "tier-list", "builds", "roadmap", "habilidades",
     "fantomons", "companeros", "veredicto", "resumen",
+    # Ragnarok Origin Classic
+    "monturas",
 }
 
 # Prefijos mágicos cuyo resto del contenido debe ser JSON válido.

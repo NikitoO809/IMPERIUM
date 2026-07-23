@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "img.game8.co" },
       // Imágenes subidas por el staff a Supabase Storage (bucket público).
       { protocol: "https", hostname: "fihjqermiqhuubwepfcc.supabase.co", pathname: "/storage/v1/object/public/**" },
+      // Ragnarok Origin Classic: portada oficial (joymaker) e iconos de clase/carta (roochub, roocdb).
+      { protocol: "https", hostname: "file.joymaker.com" },
+      { protocol: "https", hostname: "www.roochub.com" },
+      { protocol: "https", hostname: "roocdb.com" },
     ],
   },
   // Permite que /sw.js (servido desde la raíz) controle el scope /admin.

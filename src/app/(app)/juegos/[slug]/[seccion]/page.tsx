@@ -19,6 +19,7 @@ import { TierListViewer } from "@/components/TierListViewer";
 import { RoadmapViewer } from "@/components/RoadmapViewer";
 import { BuildsViewer } from "@/components/BuildsViewer";
 import { ClassTierViewer } from "@/components/ClassTierViewer";
+import { ClasesViewer } from "@/components/ClasesViewer";
 import { EventosViewer } from "@/components/EventosViewer";
 import { SectionPlaceholder } from "@/components/SectionPlaceholder";
 
@@ -98,6 +99,7 @@ export default async function GameSectionPage({
       : "generic";
   const widthClass =
     rt === "artifact-table" || rt === "tier-list" ? "max-w-6xl"
+    : rt === "classes" ? "max-w-5xl"
     : rt === "class-tier" ? "max-w-5xl"
     : rt === "behemoth" ? "max-w-5xl"
     : rt === "builds" ? "max-w-4xl"
@@ -141,6 +143,8 @@ export default async function GameSectionPage({
         ? <BuildsViewer section={content} />
         : rt === "class-tier"
         ? <ClassTierViewer section={content} />
+        : rt === "classes"
+        ? <ClasesViewer section={content} gameSlug={game.slug} />
         : rt === "events"
         ? <EventosViewer section={content} />
         : <SectionContent section={content} />

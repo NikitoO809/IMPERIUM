@@ -73,10 +73,16 @@ type ArtifactRow = {
 };
 
 const TIER_BADGE: Record<string, string> = {
+  // Tiers de Call of Dragons (artefactos)
   Legendary: "border-amber-400/60 text-amber-300 bg-amber-400/10",
   Epic:      "border-violet-400/60 text-violet-300 bg-violet-400/10",
   Elite:     "border-sky-400/60 text-sky-300 bg-sky-400/10",
   Advanced:  "border-emerald-400/60 text-emerald-300 bg-emerald-400/10",
+  // Rarezas de Ragnarok Origin Classic (cartas, monturas)
+  Mythic:    "border-fuchsia-400/60 text-fuchsia-300 bg-fuchsia-400/10",
+  Rare:      "border-sky-400/60 text-sky-300 bg-sky-400/10",
+  Uncommon:  "border-teal-400/60 text-teal-300 bg-teal-400/10",
+  Common:    "border-slate-400/50 text-slate-300 bg-slate-400/10",
 };
 
 function ArtifactTable({ raw }: { raw: string }) {

@@ -1,0 +1,102 @@
+{
+  "game": "ragnarok-origin-classic",
+  "kind": "section",
+  "slug": "clases",
+  "title": "Clases",
+  "label": "Clases",
+  "description": "Las 14 clases finales de ROOC: rama, rol y habilidades clave de cada una.",
+  "icon": "users",
+  "cover_image": null,
+  "order_index": 1,
+  "intro_title": "El árbol de clases de ROOC",
+  "intro": "Al crear personaje eliges entre 6 ramas iniciales, y desde ahí arranca tu camino: el tutorial de Novice Academy, tu primer cambio de clase real en Job Lv.10 hablando con el Instructor Bled en Prontera, y tu primera arma de clase poco después, en el nivel 15. Quien gestiona los cambios de clase es un ítem, el Job Change Writ: resetea estadísticas y habilidades y te deja saltar de clase sin vueltas ni penalización — y desde el nivel 70, cambiar de clase queda completamente libre. ROOC no tiene terceras clases: todo el árbol termina en la 2ª transcendencia (Trans. 2nd).\n\nLas 6 ramas clásicas —Swordsman, Acolyte, Mage, Thief, Merchant y Archer— se reparten en 13 clases finales entre tanque, soporte, mago, crítico, híbrido de forja y arquero (Archer es la única con tres salidas: Sniper, Minstrel y Gypsy). A eso se suma una vía completamente aparte: Doram, la raza especial que culmina en Summoner, hasta las 14 clases en total. Aquí tienes la ficha de cada una: su rama completa, su rol, las estadísticas que más le convienen y las habilidades que de verdad definen cómo se juega.",
+  "intro_images": [],
+  "source_url": "https://www.roochub.com/classes",
+  "is_published": false,
+  "items": [
+    {
+      "title": "Lord Knight",
+      "content": "Swordsman → Knight → Lord Knight. Lord Knight es la salida cuerpo a cuerpo del árbol Swordsman, pasando por Knight antes de llegar a su 2ª transcendencia. Pega fuerte gracias a STR, golpea rápido gracias a AGI y aguanta en primera línea gracias a VIT — el arquetipo clásico de tanque que también hace daño de verdad, no solo absorbe golpes.\n\nSu pasiva Aura Blade suma daño extra que ignora parte de la defensa rival en cada golpe, más un 10% de daño físico adicional. Concentration le sube el acierto en 50 y el ataque del arma un 45%, a cambio de bajar su propia defensa física un 25% mientras dura. Clashing Spiral es su ejecutor: un golpe único que reparte 2000% de daño físico e inmoviliza al objetivo, ideal para rematar. Y cuando la pelea se pone fea, Berserk le devuelve HP hasta el 150%, dispara su ataque físico +100% y su velocidad de movimiento +25%, aunque le va drenando un 3% de su HP máxima cada segundo mientras dura — todo o nada. Parry completa el paquete con hasta un 35% de probabilidad de anular por completo un golpe físico.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_14.webp"],
+      "source_url": "https://www.roochub.com/classes/lord_knight"
+    },
+    {
+      "title": "Paladin",
+      "content": "Swordsman → Crusader → Paladin. Paladin comparte tronco con Lord Knight en Swordsman, pero se desvía en Crusader hacia un tanque todavía más resistente, pensado para plantarse en primera línea y no caer. Reparte igual que su hermano de rama —STR, AGI y VIT—, aunque su forma de aguantar viene más de la reducción de daño y la curación que de la esquiva pura.\n\nSu seña de identidad es Sacrifice, una habilidad de daño que calcula su potencia a partir de su propia vida máxima en vez del ataque puro — el motivo de que en la Season 1 del Tyr Cup, 4 de los 10 primeros puestos del ranking de bajas de la Gran Final fueran Paladins. Devotion le deja cubrir a un aliado recibiendo ella el 130% del daño que le tocaría a él, mientras Shield Reflect devuelve un 40% del daño cuerpo a cuerpo que recibe al propio atacante. Fortitude es su pasiva de fondo: +15% de HP máxima y -12% de daño físico y mágico recibido. Y Spear Quicken le da la ventana de ASPD, CRIT y FLEE que hace funcionar el resto del combo. Si quieres llevar el build hasta el detalle final —reparto de puntos, combo y equipo—, tenemos una guía específica de Paladin para PvP y GvG en la sección de guías.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_23.webp"],
+      "source_url": "https://www.roochub.com/classes/paladin"
+    },
+    {
+      "title": "High Priest",
+      "content": "Acolyte → Priest → High Priest. High Priest es la salida de soporte puro del árbol Acolyte, pasando por Priest antes de la 2ª transcendencia. Reparte en INT, VIT y DEX: INT para curar y hacer daño mágico Holy, VIT para aguantar de pie en primera línea de apoyo, y DEX para lanzar sin que le interrumpan.\n\nAssumptio dobla la defensa física y mágica de equipo de todo el grupo durante 300 segundos, y Basilica planta una barrera que reduce el daño recibido a la mitad mientras dura (13 segundos) y cura un 15% de HP a quien esté dentro al desaparecer. Lex Aeterna marca a un objetivo para que reciba el doble de daño final durante 3 segundos — la combinación perfecta con cualquier compañero de burst. Suffragium adelanta el próximo conjuro de un aliado acortando su tiempo de casteo un 45%, y en el peor de los casos, Epiclesis revive hasta 5 aliados cercanos de golpe, devolviéndoles un 40% de su HP y reduciendo el daño que reciben un 20% durante 5 segundos. Poca clase reparte tanta supervivencia de golpe como esta.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_17.webp"],
+      "source_url": "https://www.roochub.com/classes/high_priest"
+    },
+    {
+      "title": "Champion",
+      "content": "Acolyte → Monk → Champion. Champion nace del mismo tronco Acolyte que High Priest, pero tuerce hacia Monk: un peleador cuerpo a cuerpo que golpea con los puños en vez de curar con conjuros, aunque conserva algo del ADN de soporte de su rama de origen. Reparte en INT, VIT y DEX, buscando aguantar los combos cuerpo a cuerpo mientras mantiene su reserva de SP a flote.\n\nTodo gira en torno a las Spirit Spheres: Zen le deja invocar 5 de golpe, y habilidades como Chain Crush Combo (1500% de daño a un único objetivo) o Finger Offensive (lanza hasta 5 esferas, cada una con 900% de daño propio) las consumen para explotar en daño. Tiger Knuckle Fist encadena golpes de hasta 700% de daño con opción de inmovilizar al rival. Y cuando la pelea se complica, Tranquility le devuelve un 80% de su HP y el 100% de su SP en apenas 2 segundos — el recordatorio de que, pese a jugarse como un peleador puro, sigue viniendo de la rama que cura.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_21.webp"],
+      "source_url": "https://www.roochub.com/classes/champion"
+    },
+    {
+      "title": "High Wizard",
+      "content": "Mage → Wizard → High Wizard. High Wizard es el mago de daño puro del árbol Mage, tras pasar por Wizard antes de su 2ª transcendencia. INT para pegar fuerte con magia, DEX para acortar conjuros y no fallar el blanco, y algo de VIT para no caer de un solo golpe mientras lanza desde atrás.\n\nMystical Amplification es la pasiva que sostiene todo el build: sube permanentemente el daño mágico y el ataque mágico. Gravitation Field es su gran zona de control, repitiendo daño tipo ghost sobre el área durante toda su duración, y Stonehenge golpea hasta diez objetivos con daño de tierra e inmovilización. Frost Nova congela y daña a quien se acerque demasiado, y Soul Drain le devuelve SP cada vez que remata a un enemigo, para no quedarse nunca seco de maná en medio de una pelea larga.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_15.webp"],
+      "source_url": "https://www.roochub.com/classes/high_wizard"
+    },
+    {
+      "title": "Professor",
+      "content": "Mage → Sage → Professor. Professor sale de la misma rama Mage que High Wizard, pero por el lado de Sage: un mago más técnico, apoyado en pasivas y control de zona además del daño directo. También reparte en INT, DEX y VIT.\n\nAutocast es su seña de identidad: un 24% de probabilidad base de que sus ataques normales disparen solos un Elemental Arrow del nivel aprendido, efecto que dura 60 segundos — cada golpe básico se puede convertir en daño extra sin gastar SP. Land Protector planta un dominio de tierra que bloquea las habilidades de área rivales durante 40 segundos, mientras Dispel limpia con 100% de probabilidad todos los buffs de trabajo del enemigo de un plumazo. Psychic Wave castiga con daño continuo de área durante varios segundos, y Weaken Mind pega más cuanto menos SP porcentual le quede al objetivo — dos formas distintas de desgastar antes de rematar.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_31.webp"],
+      "source_url": "https://www.roochub.com/classes/professor"
+    },
+    {
+      "title": "Assassin Cross",
+      "content": "Thief → Assassin → Assassin Cross. Assassin Cross es la salida de daño crítico del árbol Thief, pasando por Assassin antes de la 2ª transcendencia. AGI y STR para golpear rápido y fuerte, LUK para que esos críticos caigan más a menudo — el arquetipo de asesino que necesita abrir el combate primero para no darle esa misma ventaja al rival.\n\nSoul Breaker es su golpe a distancia más pesado, capaz de superar el 1550% de daño físico. Deadly Poison le sube el ataque del arma un 30% durante 200 segundos mientras impregna sus golpes normales de veneno, y Envenomed Blade rentabiliza justo eso: pega el doble si el objetivo ya está envenenado. Meteor Assault golpea a todo lo que tenga alrededor con una alta probabilidad de aturdir, cegar o hacer sangrar, y Cross Parry le da una postura defensiva que quita efectos de control y otorga inmunidad durante un par de segundos.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_16.webp"],
+      "source_url": "https://www.roochub.com/classes/assassin_cross"
+    },
+    {
+      "title": "Stalker",
+      "content": "Thief → Rogue → Stalker. Stalker comparte tronco Thief con Assassin Cross, pero se desvía por Rogue: menos dependiente del golpe crítico puro y más de la versatilidad, con opción real de jugar cuerpo a cuerpo con daga o a distancia con ballesta. Reparte igual en AGI, STR y LUK.\n\nBackstab es su golpe de daga por excelencia (440% + 350 de daño físico), con bonus extra si golpea por la espalda, y Piercing Shot cubre la versión a distancia, con más de 1000% de daño y reducción de defensa incluida. Shadow Seeker le deja desaparecer sin ser detectado durante 17 segundos, y Graffiti marca el terreno para que quien lo pise reciba más daño elemental. Pero su rasgo más particular es Copy: puede robar habilidades directamente de los monstruos que enfrenta, incluidos algunos Mini y MVP, algo que ninguna otra clase del juego hace.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_33.webp"],
+      "source_url": "https://www.roochub.com/classes/stalker"
+    },
+    {
+      "title": "Mastersmith",
+      "content": "Merchant → Blacksmith → Mastersmith. Mastersmith es la salida de combate del árbol Merchant vía Blacksmith, pensada para golpear fuerte con hacha mientras aprovecha todo lo que la rama de comercio ya le da en fabricación y carga. STR, VIT y DEX reparten el peso entre pegar, aguantar y no fallar.\n\nPuede invocar hasta 3 torretas A.A.S. que atacan solas a los enemigos cercanos, alternando Overload Mode (más velocidad de ataque) o Strike Mode (daño de área) según lo necesite. Axe Boomerang golpea hasta diez objetivos de una tirada con más de 1000% de daño, y Maximum Over Thrust le sube el ataque de equipo un 40% quemando 800 Eden Coins durante 180 segundos. Melt Down sigue siendo su as bajo la manga de siempre: un 15% de probabilidad de romper el arma o la armadura del rival.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_19.webp"],
+      "source_url": "https://www.roochub.com/classes/mastersmith"
+    },
+    {
+      "title": "Biochemist",
+      "content": "Merchant → Alchemist → Biochemist. Biochemist nace del mismo Merchant que Mastersmith, pero por el lado de Alchemist: menos hacha y más química de combate, con pociones y bombas caseras como seña de identidad. También reparte en STR, VIT y DEX.\n\nAcid Demonstration es su nuke de toda la vida: el daño escala con su propia STR y, cuanto más VIT tenga el objetivo, más le duele — gracias a Corrosion Research, que suma hasta un 150% de daño extra según la VIT rival. Bio Cannibalize planta un Plant Totem que cura de golpe un 5% de HP máxima y luego 500 HP por segundo a quien esté cerca, y Hell's Plant hace algo parecido pero parasitando directamente a un aliado, devolviéndole un 40% de su ataque mágico convertido en HP cada segundo durante 15 segundos. Lab Accident es su forma de moverse rápido por el mapa: una explosión que la impulsa hacia el objetivo con daño de área incluido.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_25.webp"],
+      "source_url": "https://www.roochub.com/classes/biochemist"
+    },
+    {
+      "title": "Sniper",
+      "content": "Archer → Hunter → Sniper. Sniper es la salida de daño a distancia más directa del árbol Archer, tras pasar por Hunter. DEX manda para pegar fuerte y preciso desde lejos, AGI acompaña para disparar rápido, e INT queda de apoyo — el arquetipo de arquero que vive lejos del cuerpo a cuerpo y usa a su halcón para rematar.\n\nTrue Sight es su botón de pánico ofensivo: durante 120 segundos sube estadísticas base, ataque, crítico y daño físico todo a la vez. Su halcón hace buena parte del trabajo sucio con Burst Claw y Sonic Blast, dos ataques que se disparan solos tras varios golpes normales exitosos. Las trampas (Freezing, Claymore, Land Mine) convierten el terreno en un campo minado de ralentizaciones, quemaduras y explosiones, y Disengage le da una salida limpia —sigilo, inmunidad a control y más movilidad— cuando toca retirarse.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_18.webp"],
+      "source_url": "https://www.roochub.com/classes/sniper"
+    },
+    {
+      "title": "Minstrel",
+      "content": "Archer → Bard → Minstrel. Minstrel es la rama masculina del dúo Bard/Dancer dentro de Archer, pensada para repartir daño a distancia sin dejar de apoyar a su grupo con música. Reparte en DEX, AGI e INT, igual que el resto de arqueros.\n\nArrow Vulcan es su golpe estrella: un solo flechazo que supera el 1200% de daño físico a un único objetivo. Battle Theme sube el PATK y el MATK base de todo el grupo cercano en 100 puntos, más un 10% de defensa física y mágica de equipo. Loki's Lament calla en seco a los enemigos alrededor durante 5 segundos —seguirán pudiendo dar golpes básicos, pero nada más—, y Death Valley revive a un aliado caído devolviéndole un 20% de su HP máxima. Comparte casi todo este repertorio con Gypsy: Minstrel y Dancer llevan el mismo dúo de habilidades de conjunto desde el Ragnarok clásico, diferenciándose sobre todo en su pasiva de fondo (Music Mastery aquí, Dance Mastery en Gypsy).",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_27.webp"],
+      "source_url": "https://www.roochub.com/classes/minstrel"
+    },
+    {
+      "title": "Gypsy",
+      "content": "Archer → Dancer → Gypsy. Gypsy es la rama femenina del mismo dúo dentro de Archer, hermana directa de Minstrel: comparte prácticamente el mismo repertorio de habilidades de conjunto, con Dance Mastery en vez de Music Mastery como pasiva de fondo. También reparte en DEX, AGI e INT.\n\nIgual que su contraparte masculina, dispone de Arrow Vulcan (1200% + 300 de daño físico a un único objetivo) y de Death Valley para revivir a un aliado caído con un 20% de su HP máxima. Eternal Chaos reduce un 30% la defensa de todos los enemigos en su radio durante 20 segundos, dejando el terreno listo para que el resto del grupo remate, y Nibelungan's Ring suma un 20% de daño elemental a los aliados cercanos durante el mismo tiempo. Puppet Dance resume bien el espíritu de la clase: sacrifica un 20% de su propia HP para invocar un títere que pelea a su lado durante 15 segundos.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_29.webp"],
+      "source_url": "https://www.roochub.com/classes/gypsy"
+    },
+    {
+      "title": "Summoner",
+      "content": "Doram Novice → Apprentice → To-Be Summoner → Summoner. Summoner no sale de ninguna de las 6 ramas clásicas: es la clase final de Doram, una raza inicial completamente aparte con su propio recorrido. A diferencia del resto de casters, favorece STR, AGI y VIT, más cerca del perfil de un híbrido cuerpo a cuerpo con trucos mágicos que del típico mago de conjuros.\n\nSu repertorio tira mucho de temática gatuna: Spirit of Savage es un golpe de carga con daño alto contra el objetivo y quien tenga alrededor, y Lunatic Carrot Beat golpea varias veces en área con opción de aturdir. Catnip Meteorite llueve daño mágico sobre una zona, y Neko Power golpea físicamente en área con opción de asustar (fear) a los rivales. Tasty Shrimp Party es su lado de soporte: lanza de golpe tres habilidades de buff para el grupo y sube un 10% la recuperación de SP. Y Life-saving Dried Fish es su seguro de vida: una habilidad que evita la muerte durante un tiempo, poco común en el resto del roster.",
+      "images": ["https://www.roochub.com/icons/UI_Common_Profession_Icon_43.webp"],
+      "source_url": "https://www.roochub.com/classes/summoner"
+    }
+  ]
+}

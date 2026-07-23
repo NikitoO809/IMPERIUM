@@ -85,6 +85,11 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
     // su cover_image desde la BD.
     guias: "https://img.game8.co/4174951/db39cd9c943e563398521460c3d83003.png/original",
   },
+  "ragnarok-origin-classic": {
+    // 'guias' es ruta especial; su portada va aquí. 'eventos' trae su
+    // cover_image desde la BD (game_sections).
+    guias: "https://file.joymaker.com/game/rooc/web/1200X630en.jpg",
+  },
 };
 
 // Metadata SEO por juego (reutiliza getGameMeta; Next deduplica el fetch).
