@@ -123,9 +123,11 @@ export function ClasesViewer({ section, gameSlug }: { section: SectionData; game
         </aside>
 
         {/* ── Panel de detalle ── */}
+        {/* min-w-0: evita que un contenido ancho (tablas, listas) estire la columna
+            del grid y saque el texto fuera de la pantalla. */}
         {active && (
-          <Panel>
-            <div className="panel-inner p-5 sm:p-7">
+          <Panel className="min-w-0">
+            <div className="panel-inner min-w-0 p-5 sm:p-7">
               <div className="flex items-start gap-4">
                 {active.images[0] && (
                   <div className="bevel relative h-20 w-20 shrink-0 overflow-hidden border border-white/15 bg-black/40 sm:h-24 sm:w-24">

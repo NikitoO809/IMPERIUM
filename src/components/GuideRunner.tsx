@@ -193,7 +193,9 @@ export function GuideRunner({
         </aside>
 
         {/* ── Panel de contenido ── */}
-        <div>
+        {/* min-w-0: sin esto un contenido ancho (tablas) estira la columna del grid
+            y el texto se sale de la pantalla en vez de quedarse dentro del panel. */}
+        <div className="min-w-0">
           {activeStep && (
             <Panel className={done.has(activeStep.id) ? "panel-accent" : ""}>
               <div className="panel-inner p-5 sm:p-7">

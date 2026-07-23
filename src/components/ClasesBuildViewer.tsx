@@ -121,9 +121,11 @@ export function ClasesBuildViewer({ section }: { section: SectionData }) {
         </aside>
 
         {/* ── Cuadro de información con pestañas arriba ── */}
+        {/* min-w-0: sin esto la fila de pestañas (contenido ancho) estira la columna
+            del grid más allá del contenedor y el texto se sale de la pantalla. */}
         {group && (
-          <Panel>
-            <div className="panel-inner">
+          <Panel className="min-w-0">
+            <div className="panel-inner min-w-0">
               {/* Cabecera de la clase */}
               <div className="flex items-center gap-3 border-b border-white/10 p-4">
                 {group.icon && (
@@ -137,8 +139,9 @@ export function ClasesBuildViewer({ section }: { section: SectionData }) {
                 </div>
               </div>
 
-              {/* Pestañas */}
-              <div className="flex gap-1 overflow-x-auto border-b border-white/10 px-3 py-2">
+              {/* Pestañas: se reparten en varias filas para que siempre se vean todas
+                  (con scroll horizontal se quedaban escondidas fuera de la pantalla). */}
+              <div className="flex flex-wrap gap-1 border-b border-white/10 px-3 py-2">
                 {group.steps.map((s, i) => {
                   const isActive = i === activeTab;
                   return (
