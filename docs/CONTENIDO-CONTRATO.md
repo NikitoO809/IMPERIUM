@@ -147,7 +147,15 @@ usa para el **tier de artefactos**:
 | `artefactos` | `ArtifactosViewer` | 4 tabs; clasifica bloques por `order_index` (ver abajo); ancho `max-w-6xl` |
 | `behemoths` | `BehemothsViewer` | parsea `## / ###` en `content`; ancho `max-w-5xl` |
 | `render_type = 'classes'` | `ClasesViewer` | lista agrupada por rama con el icono de cada clase + panel de detalle; ancho `max-w-5xl` |
+| `render_type = 'class-builds'` | `ClasesBuildViewer` | columna de clases + cuadro con pestañas arriba (un bloque = un apartado de una clase); ancho `max-w-5xl` |
 | resto | `SectionContent` | genérico (intro + bloques, con prefijos mágicos) |
+
+### `ClasesBuildViewer`: qué espera en `meta` (jsonb) de cada bloque
+Un bloque = **un apartado de una clase** (no una clase entera): 14 clases × 10
+apartados = 140 bloques. En `meta`: `class` (nombre por el que se agrupa y que sale
+en la columna), `classIcon`, `classSlug`, `classOrder` y `stepOrder`. El orden de
+las clases y de sus pestañas es el de `order_index` de los bloques, así que al
+montar hay que insertarlos agrupados por clase y en orden.
 
 ### `ClasesViewer`: qué espera en `meta` (jsonb) de cada bloque
 Un bloque = una clase. `images[0]` es su icono. En `meta`:
