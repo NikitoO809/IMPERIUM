@@ -86,9 +86,13 @@ const SECTION_COVERS: Record<string, Record<string, string>> = {
     guias: "https://img.game8.co/4174951/db39cd9c943e563398521460c3d83003.png/original",
   },
   "ragnarok-origin-classic": {
-    // 'guias' es ruta especial; su portada va aquí. 'eventos' trae su
-    // cover_image desde la BD (game_sections).
-    guias: "https://file.joymaker.com/game/rooc/web/1200X630en.jpg",
+    // 'guias' es ruta especial; su portada va aquí. El resto de secciones traen
+    // su cover_image desde la BD (game_sections). Las portadas están en
+    // public/rooc/ a 1200x520 (el formato de la cabecera de la card): las de
+    // escena son arte oficial recortado para quitarle el texto promocional, y
+    // las de catálogo son mosaicos de iconos del juego a tamaño original — así
+    // no se amplía nada y se ven nítidas.
+    guias: "/rooc/guias.jpg",
   },
 };
 
