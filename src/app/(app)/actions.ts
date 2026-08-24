@@ -10,9 +10,11 @@
 // El webhook se configura en .env.local (DISCORD_WEBHOOK_URL). Si no está, los
 // avisos simplemente no se envían (la suscripción se guarda igual).
 import { revalidatePath } from "next/cache";
+import { headers } from "next/headers";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
 import { getUpcomingGameList } from "@/lib/upcoming";
+import { logDbError } from "@/lib/log";
 import {
   sendFeedEmbed,
   buildScoreboardContent,
@@ -123,4 +125,37 @@ async function refreshScoreboard(
   if (newId) {
     await supabase.rpc("set_scoreboard_message_id", { msg_id: newId });
   }
+}
+
+// ─────────────────────────────────────────────────────────────
+// Contador "yo también lo espero" del banner de reclutamiento.
+// Abierto a todo el mundo (sin login): el navegador manda un token anónimo y
+// la base de datos ignora el segundo intento con el mismo token.
+// ─────────────────────────────────────────────────────────────
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+export async function joinHype(
+  gameKey: string,
+  token: string
+): Promise<{ ok: boolean; total: number }> {
+  if (!gameKey || gameKey.length > 64 || !UUID_RE.test(token)) {
+    return { ok: false, total: 0 };
+  }
+
+  // La IP la pone el servidor (nunca el navegador): sirve de freno contra
+  // quien intente inflar el contador borrando datos del navegador.
+  const h = await headers();
+  const ip = (h.get("x-forwarded-for") ?? "").split(",")[0].trim() || null;
+
+  const supabase = await createClient();
+  const { data, error } = await supabase.rpc("hype_join", {
+    p_game_key: gameKey,
+    p_token: token,
+    p_ip: ip,
+  });
+  if (error) {
+    logDbError("joinHype.hype_join", error);
+    return { ok: false, total: 0 };
+  }
+  return { ok: true, total: Number(data ?? 0) };
 }

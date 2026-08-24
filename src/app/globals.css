@@ -704,3 +704,335 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hp-col, .hp-a1, .hp-a2 { animation: none; }
 }
+
+/* ─────────────────────────────────────────────
+   Banner de reclutamiento AION 2 (portada)
+   Banda a todo el ancho: arte de fondo + velos + motas de aether
+   + marco dorado. Todo el movimiento se apaga con reduced-motion.
+   ───────────────────────────────────────────── */
+.a2-band {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  min-height: clamp(560px, 74vh, 760px);
+  display: grid;
+  place-items: center;
+  border-block: 1px solid rgba(227, 179, 65, 0.22);
+  background: #050506;
+}
+
+/* arte de fondo con deriva lenta (ken burns) */
+.a2-art {
+  object-fit: cover;
+  object-position: center 42%;
+  z-index: 0;
+  filter: saturate(1.12) contrast(1.04);
+  transform-origin: center;
+  animation: a2-drift 28s ease-in-out infinite alternate;
+}
+@keyframes a2-drift {
+  from { transform: scale(1.12) translate3d(0, 0, 0); }
+  to   { transform: scale(1.22) translate3d(0, -1.5%, 0); }
+}
+
+/* velo general: oscurece arriba, abajo y los laterales */
+.a2-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(5, 5, 6, 0.84) 0%, rgba(5, 5, 6, 0.16) 22%, rgba(5, 5, 6, 0.30) 60%, rgba(5, 5, 6, 0.96) 100%),
+    linear-gradient(90deg, rgba(5, 5, 6, 0.74) 0%, transparent 22%, transparent 78%, rgba(5, 5, 6, 0.74) 100%);
+}
+
+/* núcleo oscuro central: hace legible el texto y tapa el logo del arte */
+.a2-core {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  /* solo el centro se difumina (mascara radial): las dos guerreras quedan nitidas */
+  backdrop-filter: blur(7px);
+  -webkit-mask-image: radial-gradient(ellipse 58% 74% at 50% 50%, #000 42%, transparent 80%);
+  mask-image: radial-gradient(ellipse 58% 74% at 50% 50%, #000 42%, transparent 80%);
+  background:
+    radial-gradient(ellipse 54% 68% at 50% 50%, rgba(4, 4, 5, 0.96) 0%, rgba(4, 4, 5, 0.88) 48%, transparent 80%),
+    radial-gradient(ellipse 60% 40% at 50% 50%, rgba(227, 179, 65, 0.10) 0%, transparent 70%);
+}
+
+/* motas de aether ascendentes */
+.a2-motes { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
+.a2-motes i {
+  position: absolute;
+  bottom: -12px;
+  display: block;
+  border-radius: 9999px;
+  background: rgba(240, 200, 96, 0.9);
+  box-shadow: 0 0 10px rgba(227, 179, 65, 0.85);
+  opacity: 0;
+  animation-name: a2-rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes a2-rise {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  12%  { opacity: 0.85; }
+  80%  { opacity: 0.5; }
+  100% { transform: translateY(-88vh) translateX(18px); opacity: 0; }
+}
+
+/* marco dorado con esquinas (corner brackets) */
+.a2-frame { position: absolute; inset: 18px; z-index: 4; pointer-events: none; border: 1px solid rgba(227, 179, 65, 0.16); }
+.a2-frame span { position: absolute; width: 26px; height: 26px; border: 2px solid var(--gold); opacity: 0.85; }
+.a2-frame span:nth-child(1) { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+.a2-frame span:nth-child(2) { top: -1px; right: -1px; border-left: 0; border-bottom: 0; }
+.a2-frame span:nth-child(3) { bottom: -1px; left: -1px; border-right: 0; border-top: 0; }
+.a2-frame span:nth-child(4) { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+
+/* contenido centrado */
+.a2-content {
+  position: relative;
+  z-index: 5;
+  width: min(100%, 46rem);
+  padding: 72px 24px;
+  text-align: center;
+}
+
+.a2-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(227, 179, 65, 0.45);
+  background: rgba(227, 179, 65, 0.10);
+  color: var(--brand-bright);
+  font-family: var(--font-mono-imperium), monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 0 rgba(227, 179, 65, 0.5);
+  animation: a2-chip-pulse 2.6s ease-out infinite;
+}
+@keyframes a2-chip-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(227, 179, 65, 0.42); }
+  70%  { box-shadow: 0 0 0 14px rgba(227, 179, 65, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(227, 179, 65, 0); }
+}
+
+.a2-kicker {
+  margin-top: 20px;
+  font-family: var(--font-mono-imperium), monospace;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.a2-title {
+  font-family: var(--font-sans-imperium), sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 0.9;
+  font-size: clamp(56px, 11vw, 132px);
+  margin: 6px 0 0;
+  background: linear-gradient(180deg, #fff 0%, #f6e3b4 48%, var(--gold) 110%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 8px 44px rgba(227, 179, 65, 0.38));
+}
+
+.a2-claim {
+  margin: 18px auto 0;
+  max-width: 44ch;
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(228, 228, 231, 0.86);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
+}
+
+/* cuenta atrás */
+.a2-count { margin-top: 30px; }
+.a2-count-label {
+  display: block;
+  font-family: var(--font-mono-imperium), monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.a2-cells { margin-top: 12px; display: flex; justify-content: center; gap: 10px; }
+.a2-cell {
+  min-width: 74px;
+  padding: 10px 8px 8px;
+  border: 1px solid rgba(227, 179, 65, 0.28);
+  border-radius: 12px;
+  background: rgba(10, 10, 11, 0.72);
+  backdrop-filter: blur(6px);
+}
+.a2-num {
+  display: block;
+  font-family: var(--font-mono-imperium), monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 22px rgba(227, 179, 65, 0.45);
+}
+.a2-cell-label {
+  margin-top: 6px;
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+.a2-count-note {
+  margin-top: 12px;
+  display: block;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* botones */
+.a2-cta { margin-top: 26px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.a2-cta-main {
+  padding: 14px 26px;
+  font-size: 15px;
+  box-shadow: 0 10px 40px rgba(227, 179, 65, 0.28);
+  animation: a2-cta-glow 3.2s ease-in-out infinite;
+}
+@keyframes a2-cta-glow {
+  0%, 100% { box-shadow: 0 10px 34px rgba(227, 179, 65, 0.24); }
+  50%      { box-shadow: 0 12px 52px rgba(227, 179, 65, 0.52); }
+}
+
+/* reclamos rápidos */
+.a2-tags {
+  margin: 26px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 10px;
+  list-style: none;
+  padding: 0;
+}
+.a2-tags li {
+  padding: 5px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 640px) {
+  .a2-band { min-height: 620px; }
+  .a2-frame { inset: 10px; }
+  .a2-content { padding: 56px 18px; }
+  .a2-cell { min-width: 62px; }
+  .a2-num { font-size: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a2-art, .a2-motes i, .a2-chip, .a2-cta-main { animation: none; }
+}
+
+/* barrido de luz dorada que cruza el banner cada pocos segundos */
+.a2-band::after {
+  content: "";
+  position: absolute;
+  inset: -20% -40%;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent 42%,
+    rgba(240, 200, 96, 0.10) 48%,
+    rgba(255, 236, 190, 0.16) 50%,
+    rgba(240, 200, 96, 0.10) 52%,
+    transparent 58%
+  );
+  transform: translateX(-60%);
+  animation: a2-sweep 9s ease-in-out infinite;
+}
+@keyframes a2-sweep {
+  0%, 62% { transform: translateX(-60%); }
+  100%    { transform: translateX(60%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .a2-band::after { animation: none; opacity: 0; }
+}
+
+/* botón contador "yo también lo espero" del banner AION 2 */
+.a2-hype {
+  margin: 22px auto 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px 10px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(227, 179, 65, 0.35);
+  background: rgba(10, 10, 11, 0.72);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.2s var(--ease-fluid), background 0.2s var(--ease-fluid), transform 0.2s var(--ease-fluid);
+}
+.a2-hype:hover:not(:disabled) {
+  border-color: var(--gold);
+  background: rgba(227, 179, 65, 0.12);
+  transform: translateY(-1px);
+}
+.a2-hype:disabled { cursor: default; }
+.a2-hype.is-joined { border-color: rgba(227, 179, 65, 0.5); background: rgba(227, 179, 65, 0.10); }
+
+.a2-hype-num {
+  font-family: var(--font-mono-imperium), monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--brand-bright);
+  text-shadow: 0 0 20px rgba(227, 179, 65, 0.45);
+  display: inline-block;
+}
+.a2-hype-num.is-pop { animation: a2-pop 0.6s var(--ease-fluid); }
+@keyframes a2-pop {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.45); }
+  100% { transform: scale(1); }
+}
+
+.a2-hype-text { display: flex; flex-direction: column; text-align: left; line-height: 1.25; }
+.a2-hype-text strong { font-size: 13px; font-weight: 600; color: #fff; }
+.a2-hype-text em {
+  font-style: normal;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* el "+1" que sale volando al sumarte */
+.a2-hype-plus {
+  position: absolute;
+  left: 26px;
+  top: 4px;
+  font-family: var(--font-mono-imperium), monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  pointer-events: none;
+  animation: a2-plus 1s var(--ease-fluid) forwards;
+}
+@keyframes a2-plus {
+  0%   { opacity: 0; transform: translateY(0); }
+  25%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-34px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a2-hype-num.is-pop, .a2-hype-plus { animation: none; }
+}

@@ -6,11 +6,13 @@ import { HeroParticles } from "@/components/HeroParticles";
 import { GamesRunway } from "@/components/GamesRunway";
 import { PreRegisterGames } from "@/components/PreRegisterGames";
 import { CommunityLive } from "@/components/CommunityLive";
+import { Aion2Recruit } from "@/components/Aion2Recruit";
 import { Reveal } from "@/components/ui/Reveal";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { DiscordIcon } from "@/components/icons";
 import { getDiscordStats, DISCORD_INVITE_URL } from "@/lib/discord";
 import { getPreRegisterGames } from "@/lib/preregister-games";
+import { getHypeCount } from "@/lib/hype";
 import { JsonLd } from "@/components/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
 
@@ -21,9 +23,10 @@ export const metadata = {
 };
 
 export default async function Inicio() {
-  const [discord, preregister] = await Promise.all([
+  const [discord, preregister, aion2Waiting] = await Promise.all([
     getDiscordStats(),
     getPreRegisterGames(),
+    getHypeCount("aion-2"),
   ]);
   const nf = new Intl.NumberFormat("es-ES");
 
@@ -39,8 +42,11 @@ export default async function Inicio() {
       {/* ───── Pasarela: los juegos que hicieron historia (banda a todo el ancho) ───── */}
       <GamesRunway />
 
+      {/* Banner de reclutamiento: AION 2 (banda a todo el ancho) */}
+      <Aion2Recruit discordUrl={DISCORD_INVITE_URL} initialWaiting={aion2Waiting} />
+
       {/* ───── Comunidad / Discord (datos en vivo, sin caja) ───── */}
-      <section className="mx-auto max-w-7xl px-4 pb-28 sm:px-6">
+      <section className="mx-auto max-w-7xl px-4 pt-16 pb-28 sm:px-6">
         <Reveal>
           <div className="flex flex-col gap-8 border-y border-white/8 py-8 sm:flex-row sm:items-center sm:gap-10">
             <div>
@@ -78,7 +84,7 @@ export default async function Inicio() {
         </Reveal>
       </section>
 
-      {/* ───── La comunidad en directo (presencia + actividad + Fundadores) ───── */}
+      {/* ───── La comunidad en directo (presencia + actividad) ───── */}
       <CommunityLive />
 
       {/* ───── MMORPG con preregistro (reemplaza la antigua bento) ───── */}

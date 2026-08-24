@@ -1,10 +1,8 @@
 // Sección de portada "La comunidad, en directo": presencia en vivo + métricas,
-// actividad reciente (mensajes y alianzas) y Muro de Fundadores. Server
-// component: trae los datos y embebe <LivePresence/> (cliente) para el contador.
+// actividad reciente (mensajes y alianzas). Server component: trae los datos y embebe <LivePresence/> (cliente) para el contador.
 import Link from "next/link";
-import { getFounders, getRecentActivity, getCommunityStats } from "@/lib/community-live";
+import { getRecentActivity, getCommunityStats } from "@/lib/community-live";
 import { LivePresence } from "@/components/LivePresence";
-import { RankBadge } from "@/components/RankBadge";
 
 function timeAgo(iso: string): string {
   const diff = Date.now() - new Date(iso).getTime();
@@ -17,8 +15,7 @@ function timeAgo(iso: string): string {
 }
 
 export async function CommunityLive() {
-  const [founders, activity, stats] = await Promise.all([
-    getFounders(),
+  const [activity, stats] = await Promise.all([
     getRecentActivity(),
     getCommunityStats(),
   ]);
@@ -81,53 +78,6 @@ export async function CommunityLive() {
               </div>
             ))
           )}
-        </div>
-      </div>
-
-      {/* muro de fundadores */}
-      <div className="mt-5 rounded-2xl border border-white/8 bg-[radial-gradient(100%_120%_at_50%_-20%,rgba(232,181,77,.1),transparent_55%)] p-8">
-        <div className="text-center">
-          <div className="text-3xl">👑</div>
-          <h3 className="font-display mt-2 text-2xl text-white">Muro de Fundadores</h3>
-          <p className="mx-auto mt-2 max-w-md text-sm text-zinc-400">
-            Quienes sostienen la web, las guías y el Asistente IA. Su sitio en la historia de IMPERIUM.
-          </p>
-        </div>
-
-        {founders.length > 0 ? (
-          <div className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
-            {founders.map((f) => (
-              <Link
-                key={f.id}
-                href={`/u/${f.id}`}
-                className="group flex flex-col items-center rounded-xl border border-white/8 bg-zinc-950/50 p-4 text-center transition hover:border-gold/30"
-              >
-                <span className="grid h-14 w-14 place-items-center overflow-hidden rounded-xl bg-black/40 ring-1 ring-white/15 group-hover:ring-gold/40">
-                  {f.avatar ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={f.avatar} alt="" className="h-full w-full object-cover" />
-                  ) : (
-                    <span className="text-sm font-bold text-white/60">{f.name.slice(0, 2).toUpperCase()}</span>
-                  )}
-                </span>
-                <span className="mt-2.5 max-w-full truncate text-sm font-semibold text-white">{f.name}</span>
-                <RankBadge rank={f.rank} className="mt-1.5 !px-2 !py-0.5 !text-[9px]" />
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <p className="mt-6 text-center text-sm text-zinc-500">
-            Aún no hay Fundadores. <span className="text-gold">¿Serás el primero?</span>
-          </p>
-        )}
-
-        <div className="mt-8 text-center">
-          <Link
-            href="/apoyar"
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-bold text-black transition hover:brightness-110"
-          >
-            👑 Únete a los Fundadores
-          </Link>
         </div>
       </div>
     </section>
