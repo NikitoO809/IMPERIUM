@@ -15,6 +15,7 @@ import {
   EPHEMERAL,
   getRoleMembers,
   editInteractionResponse,
+  EVERYONE,
   InteractionResponseType,
   InteractionType,
   isValidSignature,
@@ -181,7 +182,9 @@ export async function POST(req: Request) {
     // es la forma de que llegue hasta el momento de publicar, ya que cada
     // interacción es una petición independiente (no hay nada guardado).
     if (name === COMMAND_NEW) {
-      const roleId = interaction.data?.options?.find((o) => o.name === "rol")?.value ?? "";
+      const elegido = interaction.data?.options?.find((o) => o.name === "rol")?.value ?? "";
+      // Discord manda @everyone como un rol con el id del propio servidor.
+      const roleId = elegido && elegido === interaction.guild_id ? EVERYONE : elegido;
       return modal(`announce:new:${roleId}`, "Nuevo anuncio", EMPTY);
     }
 
@@ -189,6 +192,12 @@ export async function POST(req: Request) {
     if (name === COMMAND_DM) {
       const roleId = interaction.data?.options?.find((o) => o.name === "rol")?.value ?? "";
       if (!roleId) return ephemeral("Tienes que elegir un rol.");
+      if (roleId === interaction.guild_id) {
+        return ephemeral(
+          "Mandar un privado a **todo el servidor** es justo lo que Discord considera spam, y por eso deshabilitan bots. " +
+            "Para avisar a todos usa `/anuncio` eligiendo **@everyone**: la notificación les llega igual y es la vía oficial."
+        );
+      }
       return modal(`privado:${roleId}`, "Anuncio por privado", EMPTY);
     }
 

@@ -102,8 +102,16 @@ export type DiscordEmbed = {
 export type DiscordMessageBody = {
   content: string;
   embeds: DiscordEmbed[];
-  allowed_mentions: { parse: []; roles?: string[] };
+  // `parse: []` = no se menciona a nadie salvo lo que se liste en `roles`.
+  // `parse: ["everyone"]` es la ÚNICA forma de avisar a todo el servidor, y
+  // solo se pone cuando el admin elige @everyone a mano en el desplegable.
+  allowed_mentions: { parse: [] | ["everyone"]; roles?: string[] };
 };
+
+// Marca que el aviso va a todo el servidor. En Discord, @everyone es en
+// realidad un rol cuyo id es el del propio servidor; aquí se traduce a esta
+// palabra para no confundirlo con un rol normal.
+export const EVERYONE = "everyone";
 
 // Violeta de IMPERIUM, por si no escriben color.
 const DEFAULT_COLOR = 0x7c5cff;
@@ -136,10 +144,13 @@ export function buildMessage(
   const image = cleanUrl(fields.imageUrl);
   const link = cleanUrl(fields.linkUrl);
 
-  const ping = roleId ? `<@&${roleId}>` : "";
-  const mentions: DiscordMessageBody["allowed_mentions"] = roleId
-    ? { parse: [], roles: [roleId] }
-    : { parse: [] };
+  const aTodos = roleId === EVERYONE;
+  const ping = aTodos ? "@everyone" : roleId ? `<@&${roleId}>` : "";
+  const mentions: DiscordMessageBody["allowed_mentions"] = aTodos
+    ? { parse: ["everyone"] }
+    : roleId
+      ? { parse: [], roles: [roleId] }
+      : { parse: [] };
 
   if (!title) {
     const content = ping ? (body ? ping + "\n" + body : ping) : body;
@@ -154,8 +165,9 @@ export function buildMessage(
   return { content: ping, embeds: [embed], allowed_mentions: mentions };
 }
 
-// Saca el id del rol mencionado en un texto (o null si no hay ninguno).
+// Saca a quién se avisó en un texto: un rol, todo el servidor, o nadie.
 export function roleIdFromContent(content: string): string | null {
+  if (content.includes("@everyone")) return EVERYONE;
   const m = content.match(/<@&(\d+)>/);
   return m ? m[1] : null;
 }
@@ -170,7 +182,7 @@ export function messageToFields(message: {
   const content = message.content ?? "";
   const roleId = roleIdFromContent(content);
   // El texto sin la mención (que se vuelve a añadir sola al reconstruirlo).
-  const textoLimpio = content.replace(/<@&\d+>/g, "").trim();
+  const textoLimpio = content.replace(/<@&\d+>/g, "").replace(/@everyone/g, "").trim();
 
   const embed = message.embeds?.[0];
   if (!embed) {
