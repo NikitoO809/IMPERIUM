@@ -27,8 +27,9 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 // Nombres de los comandos, tal como se registran en Discord.
-export const COMMAND_NEW = "anuncio";
-export const COMMAND_EDIT = "Editar anuncio";
+// (no se exportan: Next solo admite exports concretos en un route handler)
+const COMMAND_NEW = "anuncio";
+const COMMAND_EDIT = "Editar anuncio";
 
 // ── Utilidades de respuesta ──────────────────────────────────────
 
