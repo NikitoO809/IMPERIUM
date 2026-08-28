@@ -11,9 +11,12 @@ import { createPublicKey, verify as verifySignature } from "node:crypto";
 const API = "https://discord.com/api/v10";
 
 // ── Configuración (Portal de Desarrolladores de Discord) ─────────
-export const DISCORD_APP_ID = process.env.DISCORD_APP_ID ?? "";
-export const DISCORD_PUBLIC_KEY = process.env.DISCORD_PUBLIC_KEY ?? "";
-export const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN ?? "";
+// .trim() a propósito: al pegar estas claves (en un .env, en el panel de Vercel
+// o desde una terminal) es facilísimo colar un espacio o un salto de línea
+// invisible al final. Un solo carácter de más y la firma nunca cuadra.
+export const DISCORD_APP_ID = (process.env.DISCORD_APP_ID ?? "").trim();
+export const DISCORD_PUBLIC_KEY = (process.env.DISCORD_PUBLIC_KEY ?? "").trim();
+export const DISCORD_BOT_TOKEN = (process.env.DISCORD_BOT_TOKEN ?? "").trim();
 
 // ¿Está el bot configurado? Si falta algo, el endpoint responde 503 con un
 // mensaje claro en vez de fallar de forma rara.
