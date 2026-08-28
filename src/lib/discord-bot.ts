@@ -28,6 +28,7 @@ export const BOT_CONFIGURED = Boolean(
 export const InteractionType = {
   PING: 1,
   APPLICATION_COMMAND: 2,
+  MESSAGE_COMPONENT: 3, // alguien pulsó un botón
   MODAL_SUBMIT: 5,
 } as const;
 
@@ -106,7 +107,37 @@ export type DiscordMessageBody = {
   // `parse: ["everyone"]` es la ÚNICA forma de avisar a todo el servidor, y
   // solo se pone cuando el admin elige @everyone a mano en el desplegable.
   allowed_mentions: { parse: [] | ["everyone"]; roles?: string[] };
+  components?: DiscordActionRow[];
 };
+
+// Una fila de botones debajo del mensaje.
+export type DiscordActionRow = {
+  type: 1;
+  components: {
+    type: 2; // botón
+    style: 1; // azul
+    label: string;
+    custom_id: string;
+    emoji?: { name: string };
+  }[];
+};
+
+// Botón "Me apunto": al pulsarlo, quien lo haga recibe el rol indicado.
+// El rol viaja en el custom_id, que es lo que Discord nos devuelve al pulsar.
+export function botonApuntarse(roleId: string): DiscordActionRow {
+  return {
+    type: 1,
+    components: [
+      {
+        type: 2,
+        style: 1,
+        label: "Me apunto",
+        custom_id: `apuntarse:${roleId}`,
+        emoji: { name: "✅" },
+      },
+    ],
+  };
+}
 
 // Marca que el aviso va a todo el servidor. En Discord, @everyone es en
 // realidad un rol cuyo id es el del propio servidor; aquí se traduce a esta
@@ -326,4 +357,32 @@ export async function editInteractionResponse(
   } catch {
     // Si falla el informe no pasa nada: los privados ya salieron.
   }
+}
+
+// ── Repartir roles con el botón ──────────────────────────────────
+// Necesita que el bot tenga "Gestionar roles" y que su propio rol esté POR
+// ENCIMA del que reparte: Discord no deja tocar roles superiores al tuyo.
+
+export async function addRoleToMember(
+  guildId: string,
+  userId: string,
+  roleId: string
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const res = await fetch(`${API}/guilds/${guildId}/members/${userId}/roles/${roleId}`, {
+    method: "PUT",
+    headers: { Authorization: `Bot ${DISCORD_BOT_TOKEN}` },
+  });
+  return res.ok ? { ok: true } : { ok: false, error: `${res.status} ${await res.text()}` };
+}
+
+export async function removeRoleFromMember(
+  guildId: string,
+  userId: string,
+  roleId: string
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const res = await fetch(`${API}/guilds/${guildId}/members/${userId}/roles/${roleId}`, {
+    method: "DELETE",
+    headers: { Authorization: `Bot ${DISCORD_BOT_TOKEN}` },
+  });
+  return res.ok ? { ok: true } : { ok: false, error: `${res.status} ${await res.text()}` };
 }

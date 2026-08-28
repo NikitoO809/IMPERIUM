@@ -55,6 +55,12 @@ const COMMANDS = [
         description: "Rol al que avisar (opcional). Si no eliges ninguno, no se menciona a nadie.",
         required: false,
       },
+      {
+        type: 8,
+        name: "boton",
+        description: "Rol que recibe quien pulse el boton 'Me apunto' (opcional)",
+        required: false,
+      },
     ],
   },
   {

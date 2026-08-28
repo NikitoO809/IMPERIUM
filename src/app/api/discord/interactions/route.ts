@@ -16,6 +16,9 @@ import {
   getRoleMembers,
   editInteractionResponse,
   EVERYONE,
+  botonApuntarse,
+  addRoleToMember,
+  removeRoleFromMember,
   InteractionResponseType,
   InteractionType,
   isValidSignature,
@@ -126,6 +129,8 @@ type Interaction = {
   guild_id?: string;
   // Token de la interacción: sirve 15 minutos para cambiar la respuesta.
   token?: string;
+  // Quién lanzó la interacción y qué roles tiene ya (para el botón).
+  member?: { user?: { id?: string }; roles?: string[] };
   data?: {
     name?: string;
     custom_id?: string;
@@ -185,7 +190,12 @@ export async function POST(req: Request) {
       const elegido = interaction.data?.options?.find((o) => o.name === "rol")?.value ?? "";
       // Discord manda @everyone como un rol con el id del propio servidor.
       const roleId = elegido && elegido === interaction.guild_id ? EVERYONE : elegido;
-      return modal(`announce:new:${roleId}`, "Nuevo anuncio", EMPTY);
+      // Rol que se reparte con el botón "Me apunto" (opcional).
+      const botonRol = interaction.data?.options?.find((o) => o.name === "boton")?.value ?? "";
+      if (botonRol && botonRol === interaction.guild_id) {
+        return ephemeral("El botón no puede repartir @everyone: elige un rol normal.");
+      }
+      return modal(`announce:new:${roleId}:${botonRol}`, "Nuevo anuncio", EMPTY);
     }
 
     // /privado → mismo formulario, pero el envío será por mensaje privado.
@@ -225,13 +235,64 @@ export async function POST(req: Request) {
     return ephemeral("Ese comando todavía no hace nada.");
   }
 
-  // 4) Se envió el formulario: hay que publicar o editar.
+  // 4) Alguien pulsó el botón "Me apunto".
+  if (interaction.type === InteractionType.MESSAGE_COMPONENT) {
+    const customId = interaction.data?.custom_id ?? "";
+    if (!customId.startsWith("apuntarse:")) return ephemeral("Ese botón ya no hace nada.");
+
+    const roleId = customId.split(":")[1] ?? "";
+    const guildId = interaction.guild_id;
+    const userId = interaction.member?.user?.id;
+    if (!roleId || !guildId || !userId) return ephemeral("No he podido identificarte.");
+
+    // Si ya lo tenía, el botón sirve para darse de baja.
+    const yaLoTiene = interaction.member?.roles?.includes(roleId) ?? false;
+    const resultado = yaLoTiene
+      ? await removeRoleFromMember(guildId, userId, roleId)
+      : await addRoleToMember(guildId, userId, roleId);
+
+    if (!resultado.ok) {
+      console.error("[discord] repartir rol:", resultado.error);
+      // Los dos fallos posibles piden arreglos distintos, así que se distinguen.
+      const yaNoExiste = resultado.error.startsWith("404");
+      return ephemeral(
+        yaNoExiste
+          ? "Ese rol ya no existe en el servidor. Avisa a un administrador."
+          : "No he podido darte el rol: mi rol tiene que estar por encima del suyo en la lista del servidor y necesito el permiso de gestionar roles. Avisa a un administrador."
+      );
+    }
+
+    return ephemeral(
+      yaLoTiene
+        ? `Te he quitado <@&${roleId}>. Ya no te avisaremos de eso.`
+        : `Listo, ya tienes <@&${roleId}>. Te avisaremos por ahí.`
+    );
+  }
+
+  // 5) Se envió el formulario: hay que publicar o editar.
   if (interaction.type === InteractionType.MODAL_SUBMIT) {
     const customId = interaction.data?.custom_id ?? "";
     const fields = readFields(interaction.data?.components);
-    // El rol viene siempre en la última parte del custom_id (vacío = sin aviso).
-    const roleId = customId.split(":").pop() || null;
+
+    // Formas del custom_id:
+    //   privado:<rol>
+    //   announce:new:<rol a avisar>:<rol del botón>
+    //   announce:edit:<canal>:<mensaje>:<rol a avisar>
+    const partes = customId.split(":");
+    let roleId: string | null = null; // a quién avisar
+    let botonRol = ""; // rol que reparte el botón "Me apunto"
+
+    if (customId.startsWith("privado:")) {
+      roleId = partes[1] || null;
+    } else if (customId.startsWith("announce:edit:")) {
+      roleId = partes[4] || null;
+    } else {
+      roleId = partes[2] || null;
+      botonRol = partes[3] || "";
+    }
+
     const message = buildMessage(fields, roleId);
+    if (botonRol) message.components = [botonApuntarse(botonRol)];
 
     if (!message.content && message.embeds.length === 0) {
       return ephemeral("El mensaje estaba vacío, no he publicado nada.");
