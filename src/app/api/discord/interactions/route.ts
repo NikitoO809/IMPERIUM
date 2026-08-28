@@ -14,7 +14,6 @@ import {
   InteractionResponseType,
   InteractionType,
   isValidSignature,
-  DISCORD_PUBLIC_KEY,
   buildMessage,
   messageToFields,
   postMessage,
@@ -130,16 +129,6 @@ type Interaction = {
 };
 
 // ── Endpoint ─────────────────────────────────────────────────────
-
-// Comprobación temporal: dice si el servidor tiene bien puestas las claves,
-// sin enseñar ninguna. Se quita en cuanto el bot funcione.
-export async function GET() {
-  return Response.json({
-    publicKeyLength: DISCORD_PUBLIC_KEY.length,
-    appIdLength: DISCORD_APP_ID.length,
-    hasToken: BOT_CONFIGURED,
-  });
-}
 
 export async function POST(req: Request) {
   // El cuerpo se lee en crudo: la firma se calcula sobre el texto exacto.
