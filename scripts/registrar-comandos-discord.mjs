@@ -44,9 +44,18 @@ const COMMANDS = [
   {
     name: "anuncio",
     type: 1, // comando de barra: se escribe /anuncio
-    description: "Escribe un anuncio y publícalo en este canal",
+    description: "Escribe un anuncio y publicalo en este canal",
     default_member_permissions: "0",
     contexts: [0], // solo dentro de un servidor (no en mensajes directos)
+    options: [
+      {
+        // type 8 = ROLE: Discord enseña el selector de roles del servidor.
+        type: 8,
+        name: "rol",
+        description: "Rol al que avisar (opcional). Si no eliges ninguno, no se menciona a nadie.",
+        required: false,
+      },
+    ],
   },
   {
     name: "Editar anuncio",

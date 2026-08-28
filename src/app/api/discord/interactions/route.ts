@@ -111,6 +111,8 @@ function readFields(components: ModalRow[] | undefined): AnnouncementFields {
   return values;
 }
 
+type CommandOption = { name?: string; value?: string };
+
 type Interaction = {
   type: number;
   channel_id?: string;
@@ -118,6 +120,7 @@ type Interaction = {
     name?: string;
     custom_id?: string;
     target_id?: string;
+    options?: CommandOption[];
     components?: ModalRow[];
     resolved?: {
       messages?: Record<
@@ -164,8 +167,13 @@ export async function POST(req: Request) {
     const name = interaction.data?.name;
 
     // /anuncio → formulario vacío.
+    //
+    // El rol elegido en el comando viaja dentro del custom_id del formulario:
+    // es la forma de que llegue hasta el momento de publicar, ya que cada
+    // interacción es una petición independiente (no hay nada guardado).
     if (name === COMMAND_NEW) {
-      return modal("announce:new", "Nuevo anuncio", EMPTY);
+      const roleId = interaction.data?.options?.find((o) => o.name === "rol")?.value ?? "";
+      return modal(`announce:new:${roleId}`, "Nuevo anuncio", EMPTY);
     }
 
     // Clic derecho en un mensaje → Apps → Editar anuncio.
@@ -179,10 +187,13 @@ export async function POST(req: Request) {
         return ephemeral("Solo puedo editar los anuncios que he publicado yo.");
       }
 
+      // Al editar se conserva la mención original: Discord no vuelve a avisar
+      // en una edición, así que nadie recibe un segundo aviso.
+      const { fields, roleId } = messageToFields(target);
       return modal(
-        `announce:edit:${interaction.channel_id}:${targetId}`,
+        `announce:edit:${interaction.channel_id}:${targetId}:${roleId ?? ""}`,
         "Editar anuncio",
-        messageToFields(target)
+        fields
       );
     }
 
@@ -193,7 +204,9 @@ export async function POST(req: Request) {
   if (interaction.type === InteractionType.MODAL_SUBMIT) {
     const customId = interaction.data?.custom_id ?? "";
     const fields = readFields(interaction.data?.components);
-    const message = buildMessage(fields);
+    // El rol viene siempre en la última parte del custom_id (vacío = sin aviso).
+    const roleId = customId.split(":").pop() || null;
+    const message = buildMessage(fields, roleId);
 
     if (!message.content && message.embeds.length === 0) {
       return ephemeral("El mensaje estaba vacío, no he publicado nada.");
@@ -202,6 +215,7 @@ export async function POST(req: Request) {
     // Editar uno ya publicado.
     if (customId.startsWith("announce:edit:")) {
       const [, , channelId, messageId] = customId.split(":");
+      // announce:edit:<canal>:<mensaje>:<rol>
       const result = await editMessage(channelId, messageId, message);
       return ephemeral(
         result.ok

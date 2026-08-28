@@ -90,13 +90,16 @@ export type DiscordEmbed = {
   image?: { url: string };
 };
 
-// Cuerpo de un mensaje de Discord. `allowed_mentions` con `parse: []` (tupla
-// vacía) es la red de seguridad: NADIE puede hacer un @everyone a través del
-// bot, ni escribiéndolo dentro del texto.
+// Cuerpo de un mensaje de Discord.
+//
+// `parse: []` (tupla vacía en el tipo, no un array de textos) es la red de
+// seguridad: el bot NO puede mencionar a @everyone ni a @here, ni aunque
+// alguien lo escriba dentro del texto. La única mención posible es la del rol
+// que el admin eligió a mano en el comando, listado uno a uno en `roles`.
 export type DiscordMessageBody = {
   content: string;
   embeds: DiscordEmbed[];
-  allowed_mentions: { parse: [] };
+  allowed_mentions: { parse: []; roles?: string[] };
 };
 
 // Violeta de IMPERIUM, por si no escriben color.
@@ -118,14 +121,26 @@ function cleanUrl(raw: string): string {
 // Dos formas, según lo que rellene el admin:
 //   · Sin título → mensaje de texto normal, como si escribiera una persona.
 //   · Con título → tarjeta (embed) con barra de color, imagen y enlace.
-export function buildMessage(fields: AnnouncementFields): DiscordMessageBody {
+//
+// `roleId` es el rol elegido en el comando. La mención va SIEMPRE fuera del
+// embed: dentro de un embed las menciones se ven, pero no avisan a nadie.
+export function buildMessage(
+  fields: AnnouncementFields,
+  roleId?: string | null
+): DiscordMessageBody {
   const title = fields.title.trim();
   const body = fields.body.trim();
   const image = cleanUrl(fields.imageUrl);
   const link = cleanUrl(fields.linkUrl);
 
+  const ping = roleId ? `<@&${roleId}>` : "";
+  const mentions: DiscordMessageBody["allowed_mentions"] = roleId
+    ? { parse: [], roles: [roleId] }
+    : { parse: [] };
+
   if (!title) {
-    return { content: body, embeds: [], allowed_mentions: { parse: [] } };
+    const content = ping ? (body ? ping + "\n" + body : ping) : body;
+    return { content, embeds: [], allowed_mentions: mentions };
   }
 
   const embed: DiscordEmbed = { title, color: parseColor(fields.color) };
@@ -133,25 +148,43 @@ export function buildMessage(fields: AnnouncementFields): DiscordMessageBody {
   if (link) embed.url = link;
   if (image) embed.image = { url: image };
 
-  return { content: "", embeds: [embed], allowed_mentions: { parse: [] } };
+  return { content: ping, embeds: [embed], allowed_mentions: mentions };
+}
+
+// Saca el id del rol mencionado en un texto (o null si no hay ninguno).
+export function roleIdFromContent(content: string): string | null {
+  const m = content.match(/<@&(\d+)>/);
+  return m ? m[1] : null;
 }
 
 // Camino inverso: de un mensaje ya publicado a los campos del formulario, para
-// poder abrirlo relleno cuando se va a editar.
+// poder abrirlo relleno cuando se va a editar. Devuelve también el rol al que
+// se avisó, para no perder la mención al guardar los cambios.
 export function messageToFields(message: {
   content?: string;
   embeds?: DiscordEmbed[];
-}): AnnouncementFields {
+}): { fields: AnnouncementFields; roleId: string | null } {
+  const content = message.content ?? "";
+  const roleId = roleIdFromContent(content);
+  // El texto sin la mención (que se vuelve a añadir sola al reconstruirlo).
+  const textoLimpio = content.replace(/<@&\d+>/g, "").trim();
+
   const embed = message.embeds?.[0];
   if (!embed) {
-    return { title: "", body: message.content ?? "", imageUrl: "", linkUrl: "", color: "" };
+    return {
+      fields: { title: "", body: textoLimpio, imageUrl: "", linkUrl: "", color: "" },
+      roleId,
+    };
   }
   return {
-    title: embed.title ?? "",
-    body: embed.description ?? "",
-    imageUrl: embed.image?.url ?? "",
-    linkUrl: embed.url ?? "",
-    color: typeof embed.color === "number" ? "#" + embed.color.toString(16).padStart(6, "0") : "",
+    fields: {
+      title: embed.title ?? "",
+      body: embed.description ?? "",
+      imageUrl: embed.image?.url ?? "",
+      linkUrl: embed.url ?? "",
+      color: typeof embed.color === "number" ? "#" + embed.color.toString(16).padStart(6, "0") : "",
+    },
+    roleId,
   };
 }
 
