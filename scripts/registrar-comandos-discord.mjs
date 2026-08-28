@@ -58,6 +58,21 @@ const COMMANDS = [
     ],
   },
   {
+    name: "privado",
+    type: 1,
+    description: "Manda el anuncio por mensaje privado a quienes tengan un rol",
+    default_member_permissions: "0",
+    contexts: [0],
+    options: [
+      {
+        type: 8,
+        name: "rol",
+        description: "Rol cuyos miembros recibiran el privado",
+        required: true,
+      },
+    ],
+  },
+  {
     name: "Editar anuncio",
     type: 3, // aparece con clic derecho sobre un mensaje → Apps
     default_member_permissions: "0",

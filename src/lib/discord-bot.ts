@@ -34,6 +34,9 @@ export const InteractionType = {
 export const InteractionResponseType = {
   PONG: 1,
   CHANNEL_MESSAGE_WITH_SOURCE: 4,
+  // "Pensando...": se usa cuando la tarea tarda más de los 3 segundos que
+  // Discord da de plazo. Luego se sustituye por el resultado real.
+  DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE: 5,
   MODAL: 9,
 } as const;
 
@@ -221,4 +224,94 @@ export async function editMessage(
   const res = await discordFetch(`/channels/${channelId}/messages/${messageId}`, "PATCH", message);
   if (!res.ok) return { ok: false, error: `${res.status} ${await res.text()}` };
   return { ok: true };
+}
+
+// ── Mensajes privados a los miembros de un rol ───────────────────
+//
+// AVISO: mandar privados en masa es lo que Discord considera spam, y es el
+// motivo más común por el que deshabilitan un bot. Por eso hay un tope duro de
+// destinatarios, una pausa entre envíos y un informe de lo que pasó.
+// Para avisos generales es más seguro mencionar al rol en un canal.
+
+// Nunca se pasa de aquí, aunque el rol tenga más gente.
+export const MAX_PRIVADOS = 200;
+
+// Pausa entre privados, para no disparar los límites de Discord.
+export const PAUSA_ENTRE_PRIVADOS_MS = 250;
+
+export function esperar(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+// Ids de los miembros que tienen un rol. Necesita el permiso especial
+// "Server Members Intent" activado en el portal de Discord.
+export async function getRoleMembers(
+  guildId: string,
+  roleId: string
+): Promise<{ ok: true; ids: string[]; total: number } | { ok: false; error: string }> {
+  const ids: string[] = [];
+  let after = "0";
+
+  // La API devuelve como mucho 1000 por página; se pide de mil en mil.
+  for (let pagina = 0; pagina < 10; pagina++) {
+    const res = await fetch(
+      `${API}/guilds/${guildId}/members?limit=1000&after=${after}`,
+      { headers: { Authorization: `Bot ${DISCORD_BOT_TOKEN}` } }
+    );
+    if (!res.ok) return { ok: false, error: `${res.status} ${await res.text()}` };
+
+    const pagina_datos = (await res.json()) as {
+      user?: { id?: string; bot?: boolean };
+      roles?: string[];
+    }[];
+    if (pagina_datos.length === 0) break;
+
+    for (const m of pagina_datos) {
+      // Los bots no reciben privados.
+      if (m.user?.id && !m.user.bot && m.roles?.includes(roleId)) ids.push(m.user.id);
+    }
+    after = pagina_datos[pagina_datos.length - 1].user?.id ?? after;
+    if (pagina_datos.length < 1000) break;
+  }
+
+  return { ok: true, ids: ids.slice(0, MAX_PRIVADOS), total: ids.length };
+}
+
+// Manda un privado a una persona. Devuelve false si tiene los privados
+// cerrados (lo más común) o si Discord lo rechaza por cualquier motivo.
+export async function sendDirectMessage(
+  userId: string,
+  message: DiscordMessageBody
+): Promise<boolean> {
+  try {
+    // 1) Abrir (o recuperar) la conversación privada con esa persona.
+    const canal = await discordFetch("/users/@me/channels", "POST", { recipient_id: userId });
+    if (!canal.ok) return false;
+    const { id } = (await canal.json()) as { id?: string };
+    if (!id) return false;
+
+    // 2) Escribir en ella. En un privado no hay roles que mencionar.
+    const sinPing: DiscordMessageBody = { ...message, allowed_mentions: { parse: [] } };
+    const res = await discordFetch(`/channels/${id}/messages`, "POST", sinPing);
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+// Cambia el aviso "Enviando..." que solo ve quien lanzó el comando, para
+// dejar ahí el informe final. El token de la interacción vale 15 minutos.
+export async function editInteractionResponse(
+  interactionToken: string,
+  content: string
+): Promise<void> {
+  try {
+    await fetch(`${API}/webhooks/${DISCORD_APP_ID}/${interactionToken}/messages/@original`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ content }),
+    });
+  } catch {
+    // Si falla el informe no pasa nada: los privados ya salieron.
+  }
 }

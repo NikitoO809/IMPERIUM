@@ -7,10 +7,14 @@
 // Esta ruta NO comparte nada con el resto de la web: ni sesión, ni base de
 // datos. La seguridad es la firma de Discord (cada petición viene firmada) y
 // los permisos del propio servidor de Discord (quién puede usar el comando).
+import { after } from "next/server";
 import {
   BOT_CONFIGURED,
   DISCORD_APP_ID,
+  DISCORD_BOT_TOKEN,
   EPHEMERAL,
+  getRoleMembers,
+  editInteractionResponse,
   InteractionResponseType,
   InteractionType,
   isValidSignature,
@@ -24,11 +28,13 @@ import {
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+export const maxDuration = 60;
 
 // Nombres de los comandos, tal como se registran en Discord.
 // (no se exportan: Next solo admite exports concretos en un route handler)
 const COMMAND_NEW = "anuncio";
 const COMMAND_EDIT = "Editar anuncio";
+const COMMAND_DM = "privado";
 
 // ── Utilidades de respuesta ──────────────────────────────────────
 
@@ -116,6 +122,9 @@ type CommandOption = { name?: string; value?: string };
 type Interaction = {
   type: number;
   channel_id?: string;
+  guild_id?: string;
+  // Token de la interacción: sirve 15 minutos para cambiar la respuesta.
+  token?: string;
   data?: {
     name?: string;
     custom_id?: string;
@@ -176,6 +185,13 @@ export async function POST(req: Request) {
       return modal(`announce:new:${roleId}`, "Nuevo anuncio", EMPTY);
     }
 
+    // /privado → mismo formulario, pero el envío será por mensaje privado.
+    if (name === COMMAND_DM) {
+      const roleId = interaction.data?.options?.find((o) => o.name === "rol")?.value ?? "";
+      if (!roleId) return ephemeral("Tienes que elegir un rol.");
+      return modal(`privado:${roleId}`, "Anuncio por privado", EMPTY);
+    }
+
     // Clic derecho en un mensaje → Apps → Editar anuncio.
     if (name === COMMAND_EDIT) {
       const targetId = interaction.data?.target_id ?? "";
@@ -210,6 +226,57 @@ export async function POST(req: Request) {
 
     if (!message.content && message.embeds.length === 0) {
       return ephemeral("El mensaje estaba vacío, no he publicado nada.");
+    }
+
+    // Reparto por privado a los miembros de un rol.
+    if (customId.startsWith("privado:")) {
+      const guildId = interaction.guild_id;
+      const token = interaction.token;
+      if (!guildId || !token) return ephemeral("No he podido identificar el servidor.");
+      if (!roleId) return ephemeral("No he podido identificar el rol.");
+
+      // Buscar a la gente y repartir lleva minutos: se contesta "pensando..."
+      // y el trabajo sigue por detrás, avisando en ese mismo mensaje.
+      after(async () => {
+        const miembros = await getRoleMembers(guildId, roleId);
+        if (!miembros.ok) {
+          await editInteractionResponse(
+            token,
+            miembros.error.includes("Missing Access") || miembros.error.startsWith("403")
+              ? "No puedo ver quién tiene ese rol. Activa **Server Members Intent** en el portal de Discord (tu aplicación → Bot → Privileged Gateway Intents) y vuelve a intentarlo."
+              : `No he podido leer los miembros del rol: ${miembros.error.slice(0, 200)}`
+          );
+          return;
+        }
+        if (miembros.ids.length === 0) {
+          await editInteractionResponse(token, "Ese rol no lo tiene nadie (o solo bots). No he enviado nada.");
+          return;
+        }
+
+        await editInteractionResponse(
+          token,
+          `Enviando privados a **${miembros.ids.length}** ${miembros.ids.length === 1 ? "persona" : "personas"}…`
+        );
+
+        await fetch(`${new URL(req.url).origin}/api/discord/enviar-privados`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-imp-secreto": DISCORD_BOT_TOKEN },
+          body: JSON.stringify({
+            fields,
+            pendientes: miembros.ids,
+            enviados: 0,
+            fallidos: 0,
+            total: miembros.total,
+            rolNombre: `<@&${roleId}>`,
+            interactionToken: token,
+          }),
+        });
+      });
+
+      return reply({
+        type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE,
+        data: { flags: EPHEMERAL },
+      });
     }
 
     // Editar uno ya publicado.
