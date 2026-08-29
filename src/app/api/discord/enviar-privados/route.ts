@@ -13,6 +13,7 @@ import {
   botonApuntarse,
   sendDirectMessage,
   editInteractionResponse,
+  sendPlainDirectMessage,
   esperar,
   PAUSA_ENTRE_PRIVADOS_MS,
   type AnnouncementFields,
@@ -24,16 +25,19 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 // Margen para cerrar la tanda y encadenar la siguiente antes del corte.
-const LIMITE_TANDA_MS = 40_000;
+const LIMITE_TANDA_MS = 50_000;
 
 export type TrabajoPrivados = {
   fields: AnnouncementFields;
   // Rol que reparte el botón "Me apunto" dentro del privado (opcional).
   botonRol?: string;
   guildId?: string;
+  // Quién lanzó el reparto: recibe el informe por privado al terminar.
+  autorId?: string;
   pendientes: string[];
   enviados: number;
   fallidos: number;
+  errores: number;
   total: number; // cuántos tiene el rol en realidad
   rolNombre: string;
   interactionToken: string;
@@ -42,6 +46,7 @@ export type TrabajoPrivados = {
 function informe(t: {
   enviados: number;
   fallidos: number;
+  errores: number;
   total: number;
   rolNombre: string;
   pendientes: number;
@@ -55,10 +60,13 @@ function informe(t: {
       `No le llegó a **${t.fallidos}**: tienen los mensajes privados cerrados. Eso no se puede forzar desde el bot.`
     );
   }
+  if (t.errores > 0) {
+    lineas.push(`Fallaron **${t.errores}** por otros motivos (quedan en los registros del servidor).`);
+  }
   if (t.pendientes > 0) {
     lineas.push(`Quedaron **${t.pendientes}** sin enviar porque se agotó el tiempo.`);
   }
-  const alcanzados = t.enviados + t.fallidos;
+  const alcanzados = t.enviados + t.fallidos + t.errores;
   if (t.total > alcanzados) {
     lineas.push(
       `Aviso: el rol tiene **${t.total}** personas y el tope de seguridad es de ${alcanzados}. El resto no recibió nada.`
@@ -93,13 +101,15 @@ export async function POST(req: Request) {
     const pendientes = [...trabajo.pendientes];
     let enviados = trabajo.enviados;
     let fallidos = trabajo.fallidos;
+    let errores = trabajo.errores ?? 0;
 
     while (pendientes.length > 0 && Date.now() - arranque < LIMITE_TANDA_MS) {
       const userId = pendientes.shift();
       if (!userId) break;
-      const ok = await sendDirectMessage(userId, mensaje);
-      if (ok) enviados++;
-      else fallidos++;
+      const resultado = await sendDirectMessage(userId, mensaje);
+      if (resultado === "entregado") enviados++;
+      else if (resultado === "cerrado") fallidos++;
+      else errores++;
       await esperar(PAUSA_ENTRE_PRIVADOS_MS);
     }
 
@@ -112,21 +122,26 @@ export async function POST(req: Request) {
       await fetch(`${origin}/api/discord/enviar-privados`, {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-imp-secreto": DISCORD_BOT_TOKEN },
-        body: JSON.stringify({ ...trabajo, pendientes, enviados, fallidos }),
+        body: JSON.stringify({ ...trabajo, pendientes, enviados, fallidos, errores }),
       });
       return;
     }
 
-    await editInteractionResponse(
-      trabajo.interactionToken,
-      informe({
-        enviados,
-        fallidos,
-        total: trabajo.total,
-        rolNombre: trabajo.rolNombre,
-        pendientes: 0,
-      })
-    );
+    const texto = informe({
+      enviados,
+      fallidos,
+      errores,
+      total: trabajo.total,
+      rolNombre: trabajo.rolNombre,
+      pendientes: 0,
+    });
+
+    await editInteractionResponse(trabajo.interactionToken, texto);
+
+    // Un reparto grande puede durar más de los 15 minutos que vive el aviso
+    // original. Por eso el informe se manda también por privado a quien lo
+    // lanzó: así no se pierde aunque el aviso ya no se pueda tocar.
+    if (trabajo.autorId) await sendPlainDirectMessage(trabajo.autorId, texto);
   });
 
   return new Response(JSON.stringify({ aceptado: true }), {

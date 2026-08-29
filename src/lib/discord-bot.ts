@@ -280,7 +280,7 @@ export async function editMessage(
 // Para avisos generales es más seguro mencionar al rol en un canal.
 
 // Nunca se pasa de aquí, aunque el rol tenga más gente.
-export const MAX_PRIVADOS = 200;
+export const MAX_PRIVADOS = 1500;
 
 // Pausa entre privados, para no disparar los límites de Discord.
 export const PAUSA_ENTRE_PRIVADOS_MS = 250;
@@ -323,25 +323,67 @@ export async function getRoleMembers(
   return { ok: true, ids: ids.slice(0, MAX_PRIVADOS), total: ids.length };
 }
 
-// Manda un privado a una persona. Devuelve false si tiene los privados
-// cerrados (lo más común) o si Discord lo rechaza por cualquier motivo.
+// Cómo acabó el intento de mandar un privado. Se distinguen porque no son lo
+// mismo: "cerrado" es normal y no tiene arreglo; "error" apunta a un problema.
+export type ResultadoPrivado = "entregado" | "cerrado" | "error";
+
+// Si Discord dice "vas muy rápido" (429), espera lo que pida y reintenta.
+// Sin esto, en un reparto grande los frenazos se contarían como fallos y el
+// informe mentiría: diría "tiene los privados cerrados" cuando no es verdad.
+async function conReintento(
+  hacer: () => Promise<Response>,
+  intentos = 3
+): Promise<Response> {
+  let res = await hacer();
+  for (let i = 1; i < intentos && res.status === 429; i++) {
+    const datos = (await res.clone().json().catch(() => ({}))) as { retry_after?: number };
+    await esperar(Math.min((datos.retry_after ?? 1) * 1000 + 250, 10_000));
+    res = await hacer();
+  }
+  return res;
+}
+
+// Manda un privado a una persona.
 export async function sendDirectMessage(
   userId: string,
   message: DiscordMessageBody
-): Promise<boolean> {
+): Promise<ResultadoPrivado> {
   try {
     // 1) Abrir (o recuperar) la conversación privada con esa persona.
-    const canal = await discordFetch("/users/@me/channels", "POST", { recipient_id: userId });
-    if (!canal.ok) return false;
+    const canal = await conReintento(() =>
+      discordFetch("/users/@me/channels", "POST", { recipient_id: userId })
+    );
+    // 403 = esa persona no acepta privados de este servidor. Es lo más común.
+    if (canal.status === 403) return "cerrado";
+    if (!canal.ok) return "error";
     const { id } = (await canal.json()) as { id?: string };
-    if (!id) return false;
+    if (!id) return "error";
 
     // 2) Escribir en ella. En un privado no hay roles que mencionar.
     const sinPing: DiscordMessageBody = { ...message, allowed_mentions: { parse: [] } };
-    const res = await discordFetch(`/channels/${id}/messages`, "POST", sinPing);
-    return res.ok;
+    const res = await conReintento(() => discordFetch(`/channels/${id}/messages`, "POST", sinPing));
+    if (res.ok) return "entregado";
+    return res.status === 403 ? "cerrado" : "error";
   } catch {
-    return false;
+    return "error";
+  }
+}
+
+// Manda un privado sencillo (solo texto) a una persona. Se usa para hacerle
+// llegar el informe a quien lanzó el reparto, por si tardó tanto que Discord
+// ya no deja tocar el mensaje original.
+export async function sendPlainDirectMessage(userId: string, content: string): Promise<void> {
+  try {
+    const canal = await discordFetch("/users/@me/channels", "POST", { recipient_id: userId });
+    if (!canal.ok) return;
+    const { id } = (await canal.json()) as { id?: string };
+    if (!id) return;
+    await discordFetch(`/channels/${id}/messages`, "POST", {
+      content,
+      allowed_mentions: { parse: [] },
+    });
+  } catch {
+    // El informe es un extra: si falla, no pasa nada.
   }
 }
 
