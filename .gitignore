@@ -44,3 +44,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Registros de reparto de privados: llevan ids de miembros
+scripts/data/privados-*.json
