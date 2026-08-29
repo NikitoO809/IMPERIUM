@@ -9,6 +9,7 @@
 import { after } from "next/server";
 import {
   DISCORD_BOT_TOKEN,
+  postMessage,
   buildMessage,
   botonApuntarse,
   sendDirectMessage,
@@ -60,6 +61,10 @@ export type TrabajoPrivados = {
   guildId?: string;
   // Quién lanzó el reparto: recibe el informe por privado al terminar.
   autorId?: string;
+  // DIAGNÓSTICO (temporal): canal donde ir dejando el rastro de cada tanda.
+  // Sin esto no hay forma de ver por qué se corta un reparto largo: los
+  // registros de Vercel no se dejan leer desde aquí.
+  logChannelId?: string;
   pendientes: string[];
   enviados: number;
   fallidos: number;
@@ -143,10 +148,18 @@ export async function POST(req: Request) {
       await esperar(PAUSA_ENTRE_PRIVADOS_MS);
     }
 
-    console.log(
-      `[privados] tanda cerrada: ${enviados} entregados, ${fallidos} cerrados, ` +
-        `${errores} errores, ${pendientes.length} pendientes`
-    );
+    const resumen =
+      `tanda cerrada en ${Math.round((Date.now() - arranque) / 1000)}s · ` +
+      `${enviados} entregados · ${fallidos} cerrados · ${errores} errores · ` +
+      `${pendientes.length} pendientes`;
+    console.log("[privados] " + resumen);
+    if (trabajo.logChannelId) {
+      await postMessage(trabajo.logChannelId, {
+        content: "`[reparto]` " + resumen,
+        embeds: [],
+        allowed_mentions: { parse: [] },
+      });
+    }
 
     // ¿Queda gente? Se encadena otra tanda con lo que falta.
     if (pendientes.length > 0) {
@@ -154,6 +167,14 @@ export async function POST(req: Request) {
         trabajo.interactionToken,
         `Enviando privados… **${enviados}** entregados, quedan **${pendientes.length}**.`
       );
+
+      if (trabajo.logChannelId) {
+        await postMessage(trabajo.logChannelId, {
+          content: "`[reparto]` pasando el relevo…",
+          embeds: [],
+          allowed_mentions: { parse: [] },
+        });
+      }
 
       const relevo = await pasarRelevo(origin, {
         ...trabajo,
