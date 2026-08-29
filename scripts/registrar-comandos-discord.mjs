@@ -76,6 +76,12 @@ const COMMANDS = [
         description: "Rol cuyos miembros recibiran el privado",
         required: true,
       },
+      {
+        type: 8,
+        name: "boton",
+        description: "Rol que recibe quien pulse 'Me apunto' dentro del privado (opcional)",
+        required: false,
+      },
     ],
   },
   {

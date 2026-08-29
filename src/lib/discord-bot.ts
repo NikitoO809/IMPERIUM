@@ -123,8 +123,11 @@ export type DiscordActionRow = {
 };
 
 // Botón "Me apunto": al pulsarlo, quien lo haga recibe el rol indicado.
-// El rol viaja en el custom_id, que es lo que Discord nos devuelve al pulsar.
-export function botonApuntarse(roleId: string): DiscordActionRow {
+//
+// El rol Y EL SERVIDOR viajan dentro del custom_id, que es lo único que
+// Discord nos devuelve al pulsar. Lo del servidor es imprescindible cuando el
+// botón va dentro de un mensaje privado: ahí no hay servidor del que tirar.
+export function botonApuntarse(roleId: string, guildId: string): DiscordActionRow {
   return {
     type: 1,
     components: [
@@ -132,7 +135,7 @@ export function botonApuntarse(roleId: string): DiscordActionRow {
         type: 2,
         style: 1,
         label: "Me apunto",
-        custom_id: `apuntarse:${roleId}`,
+        custom_id: `apuntarse:${roleId}:${guildId}`,
         emoji: { name: "✅" },
       },
     ],
@@ -385,4 +388,25 @@ export async function removeRoleFromMember(
     headers: { Authorization: `Bot ${DISCORD_BOT_TOKEN}` },
   });
   return res.ok ? { ok: true } : { ok: false, error: `${res.status} ${await res.text()}` };
+}
+
+// ¿Esta persona ya tiene el rol? En un canal la respuesta viene dentro de la
+// propia interacción; en un mensaje privado no, y hay que preguntárselo a
+// Discord. Si falla, se asume que no lo tiene (el peor caso es dárselo dos
+// veces, que es inofensivo).
+export async function memberHasRole(
+  guildId: string,
+  userId: string,
+  roleId: string
+): Promise<boolean> {
+  try {
+    const res = await fetch(`${API}/guilds/${guildId}/members/${userId}`, {
+      headers: { Authorization: `Bot ${DISCORD_BOT_TOKEN}` },
+    });
+    if (!res.ok) return false;
+    const m = (await res.json()) as { roles?: string[] };
+    return m.roles?.includes(roleId) ?? false;
+  } catch {
+    return false;
+  }
 }

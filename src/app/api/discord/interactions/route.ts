@@ -19,6 +19,7 @@ import {
   botonApuntarse,
   addRoleToMember,
   removeRoleFromMember,
+  memberHasRole,
   InteractionResponseType,
   InteractionType,
   isValidSignature,
@@ -131,6 +132,8 @@ type Interaction = {
   token?: string;
   // Quién lanzó la interacción y qué roles tiene ya (para el botón).
   member?: { user?: { id?: string }; roles?: string[] };
+  // En un mensaje privado no hay `member` (no hay servidor): viene `user`.
+  user?: { id?: string };
   data?: {
     name?: string;
     custom_id?: string;
@@ -208,7 +211,11 @@ export async function POST(req: Request) {
             "Para avisar a todos usa `/anuncio` eligiendo **@everyone**: la notificación les llega igual y es la vía oficial."
         );
       }
-      return modal(`privado:${roleId}`, "Anuncio por privado", EMPTY);
+      const botonRol = interaction.data?.options?.find((o) => o.name === "boton")?.value ?? "";
+      if (botonRol && botonRol === interaction.guild_id) {
+        return ephemeral("El botón no puede repartir @everyone: elige un rol normal.");
+      }
+      return modal(`privado:${roleId}:${botonRol}`, "Anuncio por privado", EMPTY);
     }
 
     // Clic derecho en un mensaje → Apps → Editar anuncio.
@@ -240,13 +247,18 @@ export async function POST(req: Request) {
     const customId = interaction.data?.custom_id ?? "";
     if (!customId.startsWith("apuntarse:")) return ephemeral("Ese botón ya no hace nada.");
 
-    const roleId = customId.split(":")[1] ?? "";
-    const guildId = interaction.guild_id;
-    const userId = interaction.member?.user?.id;
+    const [, roleId, guildDelBoton] = customId.split(":");
+    // En un canal, el servidor viene en la interacción; en un privado, no:
+    // ahí se saca del propio botón.
+    const guildId = interaction.guild_id ?? guildDelBoton;
+    const userId = interaction.member?.user?.id ?? interaction.user?.id;
     if (!roleId || !guildId || !userId) return ephemeral("No he podido identificarte.");
 
-    // Si ya lo tenía, el botón sirve para darse de baja.
-    const yaLoTiene = interaction.member?.roles?.includes(roleId) ?? false;
+    // Si ya lo tenía, el botón sirve para darse de baja. En un canal los roles
+    // llegan en la interacción; en un privado hay que preguntar a Discord.
+    const yaLoTiene = interaction.member?.roles
+      ? interaction.member.roles.includes(roleId)
+      : await memberHasRole(guildId, userId, roleId);
     const resultado = yaLoTiene
       ? await removeRoleFromMember(guildId, userId, roleId)
       : await addRoleToMember(guildId, userId, roleId);
@@ -284,6 +296,7 @@ export async function POST(req: Request) {
 
     if (customId.startsWith("privado:")) {
       roleId = partes[1] || null;
+      botonRol = partes[2] || "";
     } else if (customId.startsWith("announce:edit:")) {
       roleId = partes[4] || null;
     } else {
@@ -292,7 +305,9 @@ export async function POST(req: Request) {
     }
 
     const message = buildMessage(fields, roleId);
-    if (botonRol) message.components = [botonApuntarse(botonRol)];
+    if (botonRol && interaction.guild_id) {
+      message.components = [botonApuntarse(botonRol, interaction.guild_id)];
+    }
 
     if (!message.content && message.embeds.length === 0) {
       return ephemeral("El mensaje estaba vacío, no he publicado nada.");
@@ -333,6 +348,8 @@ export async function POST(req: Request) {
           headers: { "Content-Type": "application/json", "x-imp-secreto": DISCORD_BOT_TOKEN },
           body: JSON.stringify({
             fields,
+            botonRol,
+            guildId,
             pendientes: miembros.ids,
             enviados: 0,
             fallidos: 0,

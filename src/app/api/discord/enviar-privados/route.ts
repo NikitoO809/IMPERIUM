@@ -10,6 +10,7 @@ import { after } from "next/server";
 import {
   DISCORD_BOT_TOKEN,
   buildMessage,
+  botonApuntarse,
   sendDirectMessage,
   editInteractionResponse,
   esperar,
@@ -27,6 +28,9 @@ const LIMITE_TANDA_MS = 40_000;
 
 export type TrabajoPrivados = {
   fields: AnnouncementFields;
+  // Rol que reparte el botón "Me apunto" dentro del privado (opcional).
+  botonRol?: string;
+  guildId?: string;
   pendientes: string[];
   enviados: number;
   fallidos: number;
@@ -82,6 +86,10 @@ export async function POST(req: Request) {
   after(async () => {
     const arranque = Date.now();
     const mensaje = buildMessage(trabajo.fields); // en privado no se menciona a nadie
+    // El botón sí viaja: sirve para que quien lo lea se apunte desde ahí mismo.
+    if (trabajo.botonRol && trabajo.guildId) {
+      mensaje.components = [botonApuntarse(trabajo.botonRol, trabajo.guildId)];
+    }
     const pendientes = [...trabajo.pendientes];
     let enviados = trabajo.enviados;
     let fallidos = trabajo.fallidos;
