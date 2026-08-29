@@ -24,8 +24,34 @@ export const dynamic = "force-dynamic";
 // Vercel corta las funciones al minuto: por eso el trabajo va por tandas.
 export const maxDuration = 60;
 
-// Margen para cerrar la tanda y encadenar la siguiente antes del corte.
-const LIMITE_TANDA_MS = 50_000;
+// Vercel mata la funcion al minuto. La tanda se corta MUY antes para que
+// siempre queden segundos de sobra con los que encadenar la siguiente: con
+// tandas de 50s el reparto moria justo al ir a pasar el relevo.
+const LIMITE_TANDA_MS = 25_000;
+
+// Cuanto puede tardar un envio en el peor caso (con reintento por frenazo).
+// Si no cabe otro dentro de la tanda, se cierra y se pasa el relevo ya.
+const MARGEN_POR_ENVIO_MS = 3_000;
+
+// Pasa el relevo a la siguiente tanda. Se reintenta: si esta llamada se pierde,
+// el reparto se queda a medias y no hay quien lo retome.
+async function pasarRelevo(origin: string, cuerpo: unknown): Promise<boolean> {
+  for (let intento = 1; intento <= 3; intento++) {
+    try {
+      const res = await fetch(`${origin}/api/discord/enviar-privados`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-imp-secreto": DISCORD_BOT_TOKEN },
+        body: JSON.stringify(cuerpo),
+      });
+      if (res.ok) return true;
+      console.error(`[privados] relevo rechazado (${res.status}), intento ${intento}`);
+    } catch (err) {
+      console.error(`[privados] relevo fallido, intento ${intento}:`, err);
+    }
+    await esperar(500 * intento);
+  }
+  return false;
+}
 
 export type TrabajoPrivados = {
   fields: AnnouncementFields;
@@ -103,7 +129,11 @@ export async function POST(req: Request) {
     let fallidos = trabajo.fallidos;
     let errores = trabajo.errores ?? 0;
 
-    while (pendientes.length > 0 && Date.now() - arranque < LIMITE_TANDA_MS) {
+    // Se para cuando ya no cabe otro envio entero dentro de la tanda.
+    while (
+      pendientes.length > 0 &&
+      Date.now() - arranque < LIMITE_TANDA_MS - MARGEN_POR_ENVIO_MS
+    ) {
       const userId = pendientes.shift();
       if (!userId) break;
       const resultado = await sendDirectMessage(userId, mensaje);
@@ -113,17 +143,34 @@ export async function POST(req: Request) {
       await esperar(PAUSA_ENTRE_PRIVADOS_MS);
     }
 
+    console.log(
+      `[privados] tanda cerrada: ${enviados} entregados, ${fallidos} cerrados, ` +
+        `${errores} errores, ${pendientes.length} pendientes`
+    );
+
     // ¿Queda gente? Se encadena otra tanda con lo que falta.
     if (pendientes.length > 0) {
       await editInteractionResponse(
         trabajo.interactionToken,
         `Enviando privados… **${enviados}** entregados, quedan **${pendientes.length}**.`
       );
-      await fetch(`${origin}/api/discord/enviar-privados`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-imp-secreto": DISCORD_BOT_TOKEN },
-        body: JSON.stringify({ ...trabajo, pendientes, enviados, fallidos, errores }),
+
+      const relevo = await pasarRelevo(origin, {
+        ...trabajo,
+        pendientes,
+        enviados,
+        fallidos,
+        errores,
       });
+      if (relevo) return;
+
+      // Nadie recogio el relevo: mejor decirlo que dejar el aviso congelado.
+      const aviso =
+        `**Reparto interrumpido** · rol ${trabajo.rolNombre}\n` +
+        `Llegó a **${enviados}** ${enviados === 1 ? "persona" : "personas"} y se cortó ` +
+        `con **${pendientes.length}** por enviar. Vuelve a lanzarlo para los que faltan.`;
+      await editInteractionResponse(trabajo.interactionToken, aviso);
+      if (trabajo.autorId) await sendPlainDirectMessage(trabajo.autorId, aviso);
       return;
     }
 
