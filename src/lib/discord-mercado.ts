@@ -15,6 +15,7 @@ import { after } from "next/server";
 import {
   discordFetch,
   editInteractionResponse,
+  esStaff,
   postMessage,
   sendDirectMessage,
   EPHEMERAL,
@@ -331,22 +332,6 @@ function llevaPocoTiempo(joinedAt: string | undefined): boolean {
   if (!joinedAt) return false; // si no lo sabemos, no se bloquea a nadie
   const dias = (Date.now() - new Date(joinedAt).getTime()) / 86_400_000;
   return Number.isFinite(dias) && dias < DIAS_ANTIGUEDAD;
-}
-
-// Los permisos de Discord vienen en un número enorme, uno por bit. Se escriben
-// con BigInt() y no con 1n porque el proyecto compila a una versión anterior.
-const NADA = BigInt(0);
-const ADMINISTRADOR = BigInt(1) << BigInt(3);
-const GESTIONAR_MENSAJES = BigInt(1) << BigInt(13);
-
-function esStaff(permisos: string | undefined): boolean {
-  if (!permisos) return false;
-  try {
-    const bits = BigInt(permisos);
-    return (bits & ADMINISTRADOR) !== NADA || (bits & GESTIONAR_MENSAJES) !== NADA;
-  } catch {
-    return false;
-  }
 }
 
 // ── La puerta: qué hacer con cada interacción del mercado ────────

@@ -31,6 +31,7 @@ import {
   type DiscordEmbed,
 } from "@/lib/discord-bot";
 import { comandoMercado, componenteMercado } from "@/lib/discord-mercado";
+import { componenteNoticia } from "@/lib/discord-noticias";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -258,6 +259,10 @@ export async function POST(req: Request) {
     // Los botones de una ficha del mercado (contactar, cerrar, reportar).
     const mercado = await componenteMercado(customId, interaction);
     if (mercado) return mercado;
+
+    // Los de un borrador de noticia (publicar, descartar).
+    const noticia = await componenteNoticia(customId, interaction);
+    if (noticia) return noticia;
 
     if (!customId.startsWith("apuntarse:")) return ephemeral("Ese botón ya no hace nada.");
 

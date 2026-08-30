@@ -44,6 +44,23 @@ export const InteractionResponseType = {
 // Marca un mensaje como "solo lo ve quien lanzó el comando".
 export const EPHEMERAL = 64;
 
+// ── ¿Quien pulsa es un oficial? ──────────────────────────────────
+// Los permisos de Discord vienen en un número enorme, uno por bit. Se escriben
+// con BigInt() y no con 1n porque el proyecto compila a una versión anterior.
+const NADA = BigInt(0);
+const ADMINISTRADOR = BigInt(1) << BigInt(3);
+const GESTIONAR_MENSAJES = BigInt(1) << BigInt(13);
+
+export function esStaff(permisos: string | undefined): boolean {
+  if (!permisos) return false;
+  try {
+    const bits = BigInt(permisos);
+    return (bits & ADMINISTRADOR) !== NADA || (bits & GESTIONAR_MENSAJES) !== NADA;
+  } catch {
+    return false;
+  }
+}
+
 // ── Verificación de la firma ─────────────────────────────────────
 // Discord firma cada petición. Si no comprobamos la firma, cualquiera podría
 // mandar peticiones falsas a nuestro endpoint haciéndose pasar por Discord.
