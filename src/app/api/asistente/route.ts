@@ -4,7 +4,7 @@
 //  2) hay que estar logueado.
 //  3) hay que tener rango Tester o superior.
 //  4) hay un límite diario de preguntas por usuario.
-import Anthropic from "@anthropic-ai/sdk";
+import { clienteAnthropic } from "@/lib/anthropic";
 import { createClient } from "@/lib/supabase/server";
 import { canUseAssistant, assistantDailyLimit, type Rank } from "@/lib/ranks";
 import {
@@ -125,7 +125,7 @@ export async function POST(req: Request) {
 
   // Llamada a Claude con caché de prompt (el contenido del juego se cachea →
   // las siguientes preguntas cuestan una fracción).
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const client = clienteAnthropic();
   const aiStream = client.messages.stream({
     model: ASSISTANT_MODEL,
     max_tokens: 1024,

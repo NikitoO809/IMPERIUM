@@ -14,6 +14,7 @@
 // original y el enlace: quien revisa decide qué hacer con él.
 import { after } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import { clienteAnthropic } from "@/lib/anthropic";
 import {
   discordFetch,
   esStaff,
@@ -108,7 +109,7 @@ Responde SOLO con un objeto JSON, sin texto alrededor ni bloques de código:
 async function traducir(noticia: NoticiaSteam): Promise<Traducida | null> {
   if (!process.env.ANTHROPIC_API_KEY) return null;
   try {
-    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    const client = clienteAnthropic();
     const res = await client.messages.create({
       model: "claude-opus-5",
       max_tokens: 16000,
