@@ -92,6 +92,9 @@ export type DiscordEmbed = {
   description?: string;
   color?: number;
   image?: { url: string };
+  // Los usa el mercado: filas de datos y una nota al pie con las reglas.
+  fields?: { name: string; value: string; inline?: boolean }[];
+  footer?: { text: string };
 };
 
 // Cuerpo de un mensaje de Discord.
@@ -115,7 +118,7 @@ export type DiscordActionRow = {
   type: 1;
   components: {
     type: 2; // botón
-    style: 1; // azul
+    style: 1 | 2 | 3 | 4; // azul · gris · verde · rojo
     label: string;
     custom_id: string;
     emoji?: { name: string };
@@ -239,14 +242,19 @@ export function messageToFields(message: {
 
 // ── Llamadas a la API de Discord ─────────────────────────────────
 
-async function discordFetch(path: string, method: string, body: unknown): Promise<Response> {
+export async function discordFetch(
+  path: string,
+  method: string,
+  body: unknown
+): Promise<Response> {
   return fetch(`${API}${path}`, {
     method,
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bot ${DISCORD_BOT_TOKEN}`,
     },
-    body: JSON.stringify(body),
+    // En un GET no hay cuerpo que mandar.
+    body: body === undefined ? undefined : JSON.stringify(body),
   });
 }
 

@@ -90,6 +90,54 @@ const COMMANDS = [
     default_member_permissions: "0",
     contexts: [0],
   },
+  // ── El mercado de Aion 2 ───────────────────────────────────────
+  // Estos dos son para los jugadores, no para los admins. Siguen saliendo con
+  // permisos "0" para que no aparezcan de golpe a los 1.200 miembros: se le
+  // dan al rol AION 2 en Ajustes → Integraciones → IMPERIUM → Comandos.
+  {
+    name: "vendo",
+    type: 1,
+    description: "Publica en el mercado algo que vendes (solo dentro del juego)",
+    default_member_permissions: "0",
+    contexts: [0],
+    options: [
+      {
+        type: 3, // texto con opciones cerradas
+        name: "categoria",
+        description: "De que es la oferta",
+        required: true,
+        choices: [
+          { name: "Equipo", value: "equipo" },
+          { name: "Materiales", value: "materiales" },
+          { name: "Consumibles", value: "consumibles" },
+          { name: "Servicios (carry, crafteo...)", value: "servicios" },
+          { name: "Otros", value: "otros" },
+        ],
+      },
+    ],
+  },
+  {
+    name: "compro",
+    type: 1,
+    description: "Publica en el mercado algo que buscas (solo dentro del juego)",
+    default_member_permissions: "0",
+    contexts: [0],
+    options: [
+      {
+        type: 3,
+        name: "categoria",
+        description: "De que es la busqueda",
+        required: true,
+        choices: [
+          { name: "Equipo", value: "equipo" },
+          { name: "Materiales", value: "materiales" },
+          { name: "Consumibles", value: "consumibles" },
+          { name: "Servicios (carry, crafteo...)", value: "servicios" },
+          { name: "Otros", value: "otros" },
+        ],
+      },
+    ],
+  },
 ];
 
 // Registrar en UN servidor es inmediato. Registrarlos globalmente puede tardar

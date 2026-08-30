@@ -30,6 +30,7 @@ import {
   type AnnouncementFields,
   type DiscordEmbed,
 } from "@/lib/discord-bot";
+import { comandoMercado, componenteMercado } from "@/lib/discord-mercado";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -131,9 +132,13 @@ type Interaction = {
   // Token de la interacción: sirve 15 minutos para cambiar la respuesta.
   token?: string;
   // Quién lanzó la interacción y qué roles tiene ya (para el botón).
-  member?: { user?: { id?: string }; roles?: string[] };
+  // `joined_at` y `permissions` los usa el mercado: antigüedad para publicar
+  // y si es un oficial para cerrar la oferta de otro.
+  member?: { user?: { id?: string }; roles?: string[]; joined_at?: string; permissions?: string };
   // En un mensaje privado no hay `member` (no hay servidor): viene `user`.
   user?: { id?: string };
+  // El mensaje en el que se pulsó el botón (una ficha del mercado).
+  message?: { id?: string; embeds?: DiscordEmbed[] };
   data?: {
     name?: string;
     custom_id?: string;
@@ -239,12 +244,21 @@ export async function POST(req: Request) {
       );
     }
 
+    // /vendo y /compro → el mercado se ocupa (abre su propio formulario).
+    const mercado = await comandoMercado(name ?? "", interaction);
+    if (mercado) return mercado;
+
     return ephemeral("Ese comando todavía no hace nada.");
   }
 
-  // 4) Alguien pulsó el botón "Me apunto".
+  // 4) Alguien pulsó un botón.
   if (interaction.type === InteractionType.MESSAGE_COMPONENT) {
     const customId = interaction.data?.custom_id ?? "";
+
+    // Los botones de una ficha del mercado (contactar, cerrar, reportar).
+    const mercado = await componenteMercado(customId, interaction);
+    if (mercado) return mercado;
+
     if (!customId.startsWith("apuntarse:")) return ephemeral("Ese botón ya no hace nada.");
 
     const [, roleId, guildDelBoton] = customId.split(":");
@@ -284,6 +298,12 @@ export async function POST(req: Request) {
   // 5) Se envió el formulario: hay que publicar o editar.
   if (interaction.type === InteractionType.MODAL_SUBMIT) {
     const customId = interaction.data?.custom_id ?? "";
+
+    // Los formularios del mercado (nueva oferta, reporte) van por su cuenta:
+    // no son anuncios y no comparten campos con ellos.
+    const mercado = await componenteMercado(customId, interaction);
+    if (mercado) return mercado;
+
     const fields = readFields(interaction.data?.components);
 
     // Formas del custom_id:
