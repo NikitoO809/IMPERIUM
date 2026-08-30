@@ -2,7 +2,7 @@
 
 Un foro donde la gente publica lo que vende o lo que busca **dentro del juego**,
 con `/vendo` y `/compro`. Las fichas las escribe el bot: así todas tienen la
-misma forma, se filtran por etiqueta y se cierran solas a los 7 días.
+misma forma, se filtran por etiqueta y se cierran solas a las 24 horas.
 
 Nada de dinero real: ni oro, ni cuentas, ni objetos por euros. Lo dice la guía
 del canal y el pie de cada oferta.
@@ -62,9 +62,14 @@ tienen que coincidir letra por letra.
 
 ## Lo que todavía no hace
 
+- **La caducidad depende de que el foro tenga movimiento.** La pasada diaria
+  (`vercel.json`) es el suelo; lo que de verdad mantiene el foro al día es el
+  barrido que va detrás de cada oferta nueva, con un tope de 10 por vez. Si el
+  plan de Vercel admite crons más frecuentes, subir la frecuencia en
+  `vercel.json` lo hace innecesario.
 - **No hay límite de ofertas por persona.** Sin base de datos no se puede saber
   cuántas tiene abiertas alguien: los temas los publica el bot, así que Discord
-  no lo distingue. Con la caducidad de 7 días se aguanta; si alguien empieza a
+  no lo distingue. Con la caducidad de 24 horas se aguanta; si alguien empieza a
   inundar el foro, hace falta la fase 2.
 - **No hay reputación ni lista negra.** Es la fase 2, y sí necesita Supabase:
   guardar los tratos cerrados y quién quedó bien con quién.

@@ -34,8 +34,9 @@ export const GUILD_ID = (process.env.DISCORD_GUILD_ID ?? "").trim();
 
 export const MERCADO_CONFIGURADO = Boolean(FORO);
 
-// Días que aguanta una oferta antes de cerrarse sola.
-export const DIAS_VIGENCIA = 7;
+// Horas que aguanta una oferta antes de cerrarse sola. Un mercado se mueve
+// rápido: lo que sigue publicado mañana casi nunca sigue en pie de verdad.
+export const HORAS_VIGENCIA = 24;
 // Días que hay que llevar en el servidor para poder publicar. Es la barrera
 // contra la cuenta recién creada que entra solo a estafar.
 const DIAS_ANTIGUEDAD = 7;
@@ -165,7 +166,7 @@ export function embedOferta(
       { name: vende ? "Vende" : "Busca", value: `<@${autorId}>`, inline: true },
     ],
     footer: {
-      text: `Se cierra sola en ${DIAS_VIGENCIA} días · Solo trato dentro del juego: nada de dinero real`,
+      text: `Se cierra sola en ${HORAS_VIGENCIA} horas · Solo trato dentro del juego: nada de dinero real`,
     },
   };
   const notas = limpio(fields.notas, 900);
@@ -215,7 +216,7 @@ export function embedCerrado(embed: DiscordEmbed, motivo: string): DiscordEmbed 
     color: COLOR_CERRADA,
     footer: {
       text: caducada
-        ? `Caducada: pasaron ${DIAS_VIGENCIA} días y nadie la cerró.`
+        ? `Caducada: pasaron ${HORAS_VIGENCIA} horas y nadie la cerró.`
         : "Cerrada por quien la publicó.",
     },
   };
@@ -261,7 +262,7 @@ export async function publicarOferta(
   const titulo = `[${tipo === "vendo" ? "Vendo" : "Compro"}] ${limpio(fields.item, 80)}`;
   const res = await discordFetch(`/channels/${FORO}/threads`, "POST", {
     name: titulo,
-    auto_archive_duration: 10080, // una semana sin actividad y Discord lo archiva
+    auto_archive_duration: 1440, // un dia sin actividad y Discord lo archiva
     applied_tags: etiquetas,
     message: {
       embeds: [embedOferta(tipo, categoria, fields, autorId)],
@@ -481,8 +482,16 @@ export async function componenteMercado(
       await avisar(
         `Publicada: <#${res.id}>\n` +
           "Cuando cierres el trato, pulsa **✅ Ya está cerrada** en tu propia ficha. " +
-          `Si no, se cierra sola en ${DIAS_VIGENCIA} días.`
+          `Si no, se cierra sola en ${HORAS_VIGENCIA} horas.`
       );
+
+      // Y de paso, barrer las que ya se han pasado de hora. La pasada diaria
+      // sola no da para 24 horas de vigencia: si el foro tiene movimiento, es
+      // esto lo que mantiene el mercado al día. Con tope, para no eternizarse.
+      const limpieza = await caducarOfertas(TOPE_POR_PUBLICACION);
+      if (limpieza.cerradas > 0) {
+        console.log(`[mercado] barrido al publicar: ${limpieza.cerradas} cerradas`);
+      }
     });
   }
 
@@ -618,10 +627,15 @@ function leerReporte(filas: Fila[] | undefined): string {
   return "";
 }
 
-// ── La limpieza diaria ───────────────────────────────────────────
+// ── La limpieza ──────────────────────────────────────────────────
 
-// Cierra las ofertas que ya han pasado de tiempo. La llama la tarea diaria.
-export async function caducarOfertas(): Promise<{
+// Cuántas cierra como mucho el barrido que va detrás de cada oferta nueva.
+// La pasada diaria no tiene tope: ahí no hay nadie esperando.
+const TOPE_POR_PUBLICACION = 10;
+
+// Cierra las ofertas que ya han pasado de tiempo. La llaman la tarea diaria y
+// cada publicación nueva.
+export async function caducarOfertas(tope = Infinity): Promise<{
   revisadas: number;
   cerradas: number;
   error?: string;
@@ -667,7 +681,8 @@ export async function caducarOfertas(): Promise<{
   for (const hilo of candidatos) {
     if ((hilo.applied_tags ?? []).some((t) => cerradasYa.has(t))) continue;
     revisadas++;
-    if (edadEnDias(hilo.id) < DIAS_VIGENCIA) continue;
+    if (edadEnHoras(hilo.id) < HORAS_VIGENCIA) continue;
+    if (cerradas >= tope) break;
     const r = await cerrarOferta(hilo.id, undefined, TAG_CADUCADA);
     if (r.ok) cerradas++;
     else console.error("[mercado] caducar", hilo.id, r.error);
@@ -678,10 +693,10 @@ export async function caducarOfertas(): Promise<{
 
 // La fecha de creación va dentro del propio id de Discord (un "snowflake"):
 // los bits de arriba son los milisegundos desde 2015.
-function edadEnDias(id: string): number {
+function edadEnHoras(id: string): number {
   try {
     const ms = Number((BigInt(id) >> BigInt(22)) + BigInt(1420070400000));
-    return (Date.now() - ms) / 86_400_000;
+    return (Date.now() - ms) / 3_600_000;
   } catch {
     return 0;
   }

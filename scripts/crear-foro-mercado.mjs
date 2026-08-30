@@ -38,7 +38,7 @@ const GUIA = `Aquí se compra y se vende **dentro del juego**. Las ofertas las p
 **Cómo funciona**
 · \`/vendo\` para lo que sueltas, \`/compro\` para lo que buscas. Elige la categoría y rellena precio y nick.
 · En cada oferta hay tres botones: **💬 Contactar** avisa por privado al que la puso, **✅ Ya está cerrada** la cierra (solo el que la publicó) y **⚠️ Reportar** avisa a los oficiales.
-· Las ofertas se cierran solas a los **7 días**. Si vendiste antes, ciérrala tú.
+· Las ofertas se cierran solas a las **24 horas**. Si vendiste antes, ciérrala tú.
 · Para publicar hay que llevar **7 días** en el servidor.
 
 **Lo que no se admite aquí**
