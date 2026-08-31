@@ -106,6 +106,39 @@ Supabase is connected via the **hosted MCP server** (`.mcp.json`, OAuth — no s
 
 `ClassTierViewer` (`src/components/ClassTierViewer.tsx`) is a client component for the SxS Tier List. It reads blocks with magic prefixes: `__CTIER__{json}` (one per CLASS region T1–T5: `{tier,tierKey,region,subtitle,notes[],classes[]}` where each class has `grades` keyed by mode `PvE`/`Dragon & Chaos`/`PvP`/`4v4`, each `{grade,desc}`) and `__FTIER__{json}` (the FANTOMON view: `{context,intro,groups[],breakpoints[],plans[]}`). Renders CLASS/FANTOMON tabs, region sub-tabs, a class×mode matrix with color-coded grades, and a per-class detail panel. Pipeline: `scripts/scrapers/eog_sxs_tierlist.py` (Playwright extract, the page is a JS SPA) → `parse_sxs_tierlist.py` → translate → `scripts/gen_sxs_tierlist.py` → canonical JSON → `build_sql.py`.
 
+## Discord bot & server (IMPBOT)
+
+This repo also runs **IMPBOT**, the community Discord bot, plus the scripts that shape the server itself. **No database and no Discord library**: state lives in the messages, requests are verified with `node:crypto`. Full write-up of the marketplace in `docs/MERCADO-AION.md`.
+
+| Piece | Where |
+|---|---|
+| Shared helpers (fetch, embeds, DMs, roles, `esStaff`) | `src/lib/discord-bot.ts` |
+| Interaction gateway — every command, button and modal | `src/app/api/discord/interactions/route.ts` |
+| Aion 2 marketplace (`/vendo`, `/compro`) | `src/lib/discord-mercado.ts` |
+| Steam news → Spanish drafts with approve/discard buttons | `src/lib/discord-noticias.ts` |
+| Claude client, shared with the web assistant | `src/lib/anthropic.ts` |
+| Daily jobs | `src/app/api/discord/{mercado-caducar,noticias-aion}/route.ts` + `vercel.json` |
+| Command registration | `scripts/registrar-comandos-discord.mjs` (`npm run discord:comandos`) — rerun whenever commands change |
+
+**Env vars** (Vercel *and* `.env.local`): `DISCORD_APP_ID`, `DISCORD_PUBLIC_KEY`, `DISCORD_BOT_TOKEN`, `DISCORD_GUILD_ID`, `DISCORD_FORO_MERCADO`, `DISCORD_CANAL_REPORTES`, `DISCORD_CANAL_NOTICIAS_AION`, `DISCORD_CANAL_BORRADORES`, `DISCORD_ROL_AION2`, `CRON_SECRET`, `ANTHROPIC_API_KEY` (plus `ANTHROPIC_WORKSPACE_ID` only if the key is identity-linked and the API asks for it).
+
+### `scripts/*.mjs` act on the LIVE server — read before running
+They touch the real Discord of 1,200 people. **They simulate by default; `--aplicar` is what actually does it.** Show Miguel the simulation and wait for an answer before applying. Several carry the only available undo — `estilo-categorias.mjs`, `renombrar-canal.mjs`, `elige-clase-lista.mjs`, `canal-solo-lectura.mjs` all have `--revertir`, backed by the JSON snapshots in `scripts/data/` — never delete those, they are the undo.
+
+### Discord traps already paid for
+- **Category permission overwrites do NOT cascade.** Each channel is computed from its own overwrites; hiding a category hides nothing inside it.
+- **An empty category is invisible** in the client until it holds at least one channel.
+- **Renaming one channel: twice per 10 minutes.** The third try returns 429, so get the name right.
+- Category names use **small-caps unicode** (`ᴀɪᴏɴ 2`) and the frame line is `▁` (U+2581) — `─` and `━` show visible gaps on Miguel's screen. All 13 are 26 characters wide.
+- `『』` are full-width CJK brackets: that is why channel names look padded.
+- Admins and the `EL JEFE` / `Oficial IMP` / `Developer IMP` / `IMPBOT` roles **bypass every channel restriction**. To verify a permission, ask Miguel to check with his second, non-admin account.
+
+### Vercel is on the hobby plan
+Only **daily** crons. A sub-daily schedule in `vercel.json` makes Vercel **reject the deployment without ever creating it** — it appears nowhere as an error, and production silently stays on the previous commit.
+
+### Aion 2 launches 5 October 2026
+The marketplace is built, deployed and tested, but **nobody uses it yet** and the forum is empty on purpose. Until launch the work here is server setup, not moderation.
+
 ## Product rules (from `IMPERIUM-claude-code.md`)
 - Login is **Discord OAuth only** — no email/password.
 - Don't publish unverified content; respect `is_verified` and per-user `progress_visible` (privacy).
