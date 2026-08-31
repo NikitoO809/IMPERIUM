@@ -1,0 +1,31 @@
+{
+ "titulo": "💚 Cleric · guía completa",
+ "etiquetas": [
+  "Cleric",
+  "Build",
+  "PvE"
+ ],
+ "apertura": "Guía de Cleric sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí.\n\n**La clase, en corto**\n· **Arma:** maza. Es el sanador principal del juego.\n· **Y no solo cura:** reparte dos marcas que debilitan al enemigo para todo el grupo, y lleva un aura que pega sola durante cinco minutos. Un Cleric que solo cura está haciendo la mitad de su trabajo.",
+ "secciones": [
+  {
+   "archivo": "c1-curas.png",
+   "texto": "**1 · Las cuatro curas**\n\nNo es «pulsar curar». Cada una resuelve una situación:\n\n· `Healing Light` (6 s) — cura **al que peor esté** del grupo. Tu parche de urgencia.\n· `Radiant Recovery` (12 s) — cura **a todos** y quita un estado malo.\n· `Light of Regeneration` (30 s) — **goteo cada 2 segundos durante 30**, a todo el grupo. La más rentable con diferencia.\n· `Benevolence` (90 s) — goteo cada 2 segundos durante 20 s. Es Stigma.\n\n**La clave está en `Light of Regeneration`:** se lanza *antes* de que empiece el daño, no después. Son 30 segundos de goteo para todos.\n\n✅ **Todas llegan a 40 metros**, que es bastante margen. Aun así, si el grupo se desparrama más allá, tus curas de área dejan de llegar y no te enteras hasta que cae alguien."
+  },
+  {
+   "archivo": "c2-marcas.png",
+   "texto": "**2 · Lo que nadie espera de un sanador**\n\nEl Cleric reparte dos marcas que valen para **todo el grupo**:\n\n· **`Debilitating Mark`** (10 s) — le baja al enemigo el daño que **hace**, y le mete daño continuo.\n· **`Chain of Torment`** (20 s) — le baja el **aguante**: todo el grupo le hace más daño.\n\nMantener esas dos puestas rinde más que una cura extra, y casi nadie las usa.\n\n**Y hay una mejora que las hace gratis:** `Debilitating Mark` a **nivel 8** deja de costar maná y encima te devuelve 150. La marca pasa a sostenerte el maná en vez de gastarlo."
+  },
+  {
+   "archivo": "c3-aura.png",
+   "texto": "**3 · El aura que no caduca**\n\n`Noble Aura` invoca un aura que te sigue y ataca a tu objetivo por su cuenta **cada 2 segundos**.\n\nDura **300 segundos** y su recarga son **60**. O sea que, bien mantenida, **la tienes puesta siempre**.\n\nRelanzarla en cuanto se acabe es daño gratis durante toda la sesión. Un Cleric que la olvida está renunciando a una parte enorme de lo que aporta sin darse cuenta.\n\n**Su mejor mejora:** a **nivel 20** le quitas 1 segundo entre ataque y ataque. Pasa de pegar cada 2 s a cada 1 s — le estás doblando el daño. Es Stigma, así que solo hace falta subirla hasta ahí."
+  },
+  {
+   "archivo": "c4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nAntes de repartir, ojo con la diferencia: `Healing Light`, `Radiant Recovery`, `Light of Regeneration`, `Debilitating Mark` y `Chain of Torment` son **Mastery** — mejoras a 8, 12 y 16, y **solo caben tres**. `Benevolence` y `Noble Aura` son **Stigma** — mejoras a 5/10/15/20/25 y **te quedas con todas** las que desbloquees.\n\nDos caminos:\n\n**Curar mejor** — `Healing Light` **nv. 16** baja la recarga de 6 a 4 segundos; `Radiant Recovery` **nv. 8** limpia 2 estados en vez de 1; `Benevolence` **nv. 20** limpia estados cada 5 segundos automáticamente.\n\n**Debilitar al enemigo** — `Debilitating Mark` **nv. 8** (deja de costar maná y te devuelve 150), `Chain of Torment` **nv. 12** (le baja el doble el aguante), `Noble Aura` **nv. 20** (ataca el doble de rápido).\n\nSi juegas con gente que pega fuerte, el segundo camino aporta más al conjunto que curar un poco más.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "c9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Estas 4 valen siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Debilitating Mark` **nv. 12** — +10% PvE Damage Boost reduction and +5% PvP Damage…\n· `Chain of Torment` **nv. 12** — +10% PvE Damage Tolerance reduction and +5% PvP…\n· `Light of Regeneration` **nv. 16** — +5% PvE Damage Tolerance and +2.5% PvP Damage…\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y estas 3 son las de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **ignora bloqueo y evasión** — `Debilitating Mark` nv. 16 · `Earth's Retribution` nv. 16 · `Chain of Torment` nv. 16\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Assault Mark` — 🔴 nv. 20\n· `Prayer of Amplification` — 🟢 nv. 25\n· `Root` — 🔴 nv. 15 · 🔵 nv. 25\n· `Yustiel's Power` — 🟢 nv. 20\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

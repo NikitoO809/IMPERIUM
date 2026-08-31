@@ -1,0 +1,10 @@
+[
+ {
+  "archivo": "cap-niveles-anotada.png",
+  "texto": "**4 · Cómo se ve en el juego (personaje nuevo)**\n\nAquí está todo lo anterior en pantalla, con un Ranger recién empezado. El juego lo dice él solo:\n\n> *«Specialty Skill effect unlocked upon reaching **Arrow Scattershot Lv. 8**»*\n\nFíjate en la columna de números a la izquierda de cada mejora: **8, 8, 8, 12, 16**. Ese número es **el nivel que tiene que alcanzar esa habilidad**, no lo que cuesta.\n\n**Y las tres ranuras también van por nivel de habilidad:**\n· la primera se abre al **nivel 8**\n· la segunda al **nivel 12**\n· la tercera al **nivel 20**\n\nAsí que las cinco mejoras se desbloquean cada una a su nivel, pero **solo puedes poner tres**.\n\nLos candados rojos del panel de la derecha (Lv. 11, 13, 15, 17, 21…) son otra cosa: esas son **habilidades que aún no tienes por tu nivel de personaje**.\n\n*Capturas de la versión de Taiwán, cedidas por NikitoO.*"
+ },
+ {
+  "archivo": "cap-skill-anotada.png",
+  "texto": "**5 · Y así se ve con la habilidad ya subida**\n\nEl mismo panel en un Gladiator con `Rending Blow` avanzado. Aquí ya hay **dos ranuras abiertas y la tercera esperando** a que la habilidad llegue a 20.\n\nLo que enseña esta pantalla y no se ve en la de antes:\n\n· **Azul = mejora puesta · gris = disponible pero sin poner.** Aquí están activas «Changes to mobile skill» y «Restores 50 MP on landing a Critical Hit».\n· **La mejora cambia la ficha de la habilidad.** Arriba pone `Nontarget | Mobile`, y ese *Mobile* aparece **porque** está puesta esa mejora.\n· **Abajo a la derecha, tus puntos y el botón de reinicio.** Resetear no cuesta nada: prueba repartos sin miedo.\n· **Mastery y Stigma son dos pestañas distintas.** Todo esto es Mastery.\n\n*Capturas de la versión de Taiwán, cedidas por NikitoO.*"
+ }
+]

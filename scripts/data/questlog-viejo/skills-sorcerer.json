@@ -1,0 +1,1004 @@
+[
+ {
+  "id": "15410000",
+  "nombre": "Hibernation",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Grants Hibernation to the caster for 5s. The caster is immune to damage and status effects when granted Hibernation. Using \\[Remove Hibernation\\] while Hibernation is active will immediately remove the effect, restore 20% Max HP, and move the caster backward. Cannot block certain powerful attacks and is unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+100% Incoming Heal"
+   },
+   {
+    "coste": 10,
+    "efecto": "Restores 5% Max HP every 1s for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "Triggers when afflicted with Impact-type status"
+   },
+   {
+    "coste": 25,
+    "efecto": "Has a 75% chance to inflict Frost on up to 4 enemies within 4m of the caster for 3s when using \\[Remove Hibernation\\]"
+   }
+  ],
+  "cooldown": "180s",
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15410000"
+ },
+ {
+  "id": "15010000",
+  "nombre": "Flame Scattershot",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 480-480 Fire damage to a target afflicted with Stagger within 20m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15010000"
+ },
+ {
+  "id": "15040000",
+  "nombre": "Firestorm",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 570-570 Fire damage to a target within 20m. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "-50% Incoming Heal for 5s on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-2s \\[Hellfire\\] cooldown per fireball"
+   },
+   {
+    "coste": 16,
+    "efecto": "+15% damage per fireball, up to +75%"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15040000"
+ },
+ {
+  "id": "15050000",
+  "nombre": "Blaze",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 172-172 Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP. 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Delayed Damage after 3s"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-3s \\[Wish of Concentration\\] cooldown on hit"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15050000"
+ },
+ {
+  "id": "15060000",
+  "nombre": "Hellfire",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1137-6824 Fire damage to up to 4 enemies within 4m of the target. Max 3 Charge Levels 20-35 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Fire Damage over Time for 10s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-15s cooldown"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15060000"
+ },
+ {
+  "id": "15090000",
+  "nombre": "Ice Chain",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 79-79 Water damage to up to 4 enemies within 4m of the target and inflict Slow, reducing Move Speed by 40% for 5s. 2 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP Cost"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Winter's Shackles\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "5% chance to inflict Frost for 2s on landing \\[Cold Wave\\]"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15090000"
+ },
+ {
+  "id": "15110000",
+  "nombre": "Winter's Shackles",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 275-275 Water damage to up to 4 enemies within 4m and inflict Slow for 3s.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "30% chance to inflict Frost for 3s on landing \\[Winter's Shackles\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing \\[Winter's Shackles\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Winter's Illusion\\] Chain Skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "-15s \\[Winter's Shackles\\] cooldown"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15110000"
+ },
+ {
+  "id": "15130000",
+  "nombre": "Soul Freeze",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1037-1037 Water damage to a target within 20m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "50% chance to inflict Root for 5s"
+   },
+   {
+    "coste": 10,
+    "efecto": "-1,000 Stamina"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s Seal duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Seal Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15130000"
+ },
+ {
+  "id": "15120000",
+  "nombre": "Glacial Smite",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1477-1477 Water damage to up to 4 enemies within 4m of the target. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 15,
+    "efecto": "50% chance to inflict Frost for 3s"
+   },
+   {
+    "coste": 20,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "coste": 25,
+    "efecto": "+25% Frost Chance"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15120000"
+ },
+ {
+  "id": "15140000",
+  "nombre": "Curse: Tree",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Polymorphs a target within 20m into a tree for 10s, reducing Fire Tolerance by 20% and the caster moves back. Polymorph is canceled when attacked. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Increases number of hits required to remove Polymorph"
+   },
+   {
+    "coste": 10,
+    "efecto": "-200 Block, Evasion for 10s when Polymorph ends"
+   },
+   {
+    "coste": 15,
+    "efecto": "-20% Impact-type Resist for 10s when Polymorph ends"
+   },
+   {
+    "coste": 20,
+    "efecto": "Inflicts debuff even if Polymorph is removed through attacks"
+   },
+   {
+    "coste": 25,
+    "efecto": "+50% Polymorph Chance"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15140000"
+ },
+ {
+  "id": "15150000",
+  "nombre": "Frost",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 178-178 Water damage to up to 4 enemies within 4m of the target and has a 50% chance to inflict Frost on the target for 3s. 100% chance to inflict Frost on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Restores 200 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "coste": 8,
+    "efecto": "Reset \\[Frost Burst\\] cooldown on landing Frost"
+   },
+   {
+    "coste": 12,
+    "efecto": "+25% PC target Frost Chance"
+   },
+   {
+    "coste": 16,
+    "efecto": "+1s Frost duration"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15150000"
+ },
+ {
+  "id": "15160000",
+  "nombre": "Steel Barrier",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Forms a Protective Shield that blocks 2424 damage for 60s. Increases PvE Damage Tolerance by 10% and PvP Damage Tolerance by 5% for the shield's duration. Restores 300 Stamina when effect ends.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Move Speed"
+   },
+   {
+    "coste": 10,
+    "efecto": "HP Regen at fixed intervals"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% PVP Damage Tolerance increase and +5% PvP Damage Tolerance reduction"
+   },
+   {
+    "coste": 20,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "No Back damage occurs"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15160000"
+ },
+ {
+  "id": "15200000",
+  "nombre": "Cold Storm",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 945-945 Water damage and inflict Slow on up to 4 enemies within 5m. Summons a Cold Storm that lasts for 7s on the target's location and inflicts Frostbite. Frostbite: Deals 47-47 Water Damage over Time every 1s for 10s. Damage over Time amount increases when targets move. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Enhanced Frostbite - Grants extra damage when landing an attack"
+   },
+   {
+    "coste": 10,
+    "efecto": "30% chance to inflict Root for 2s"
+   },
+   {
+    "coste": 15,
+    "efecto": "+3s \\[Cold Storm\\] summoning duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10s Frostbite duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "Has a 2% chance to inflict Frost for 3s on attacking target with Frostbite"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15200000"
+ },
+ {
+  "id": "15210000",
+  "nombre": "Flame Arrow",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 62-62 Fire damage to a target within 20m and restores 100 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Inflicts Fire Mark for 5s on landing \\[Pyroclasm\\]"
+   },
+   {
+    "coste": 16,
+    "efecto": "Reset \\[Blaze\\] cooldown on landing \\[Pyroclasm\\]"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15210000"
+ },
+ {
+  "id": "15220000",
+  "nombre": "Frost Burst",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target afflicted with Frost within 20m and deal 395-395 Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity. 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "75% chance to Knock Back 2m"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "50% chance to reset cooldown"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15220000"
+ },
+ {
+  "id": "15230000",
+  "nombre": "Arctic Armor",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and has a 5% chance to inflict Frost for 3s on enemies attacking the caster from within 7m for 10s. Grants Magic Displacement when MP is 50% or more for the duration. Magic Displacement: Damage taken by the caster is divided between 50% to HP and 10% to MP. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Impact-type Resist"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Absorb Essence\\] effect"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Robe of Cold\\] effect"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% additional PVP Damage Tolerance and +10% additional PvP Damage Tolerance increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "Changes Magic Displacement effect to -40% HP and -8% MP"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15230000"
+ },
+ {
+  "id": "15240000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15240000"
+ },
+ {
+  "id": "15280000",
+  "nombre": "Bittercold Wind",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and summon a Bittercold Wind lasting for 2s at their location. Deals 1666-1666 Water damage to up to 4 enemies within 4m of the Bittercold Wind with a 60% chance to inflict Root for 3s. 100% chance to inflict Root on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+1s \\[Bittercold Wind\\] summon duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Pull effect"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s \\[Frost\\] cooldown on hit"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15280000"
+ },
+ {
+  "id": "15300000",
+  "nombre": "Lumiel's Space",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 998-998 damage to up to 4 enemies within 4m of the target with a 75% chance to inflict Airborne for 3s. 100% chance to inflict Airborne on NPC targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Adds \\[The Depths\\] Chain Skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1s \\[The Depths\\] Knockdown duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s \\[Lumiel's Space\\] cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "x2 Airborne Chance on Slow or Root targets"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15300000"
+ },
+ {
+  "id": "15310000",
+  "nombre": "Wish of Concentration",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Attack by 10% and Accuracy by 100 for 10s.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Reduces MP Cost by 10%"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10% additional Attack"
+   },
+   {
+    "coste": 8,
+    "efecto": "+500 Max MP"
+   },
+   {
+    "coste": 12,
+    "efecto": "+10% Combat Speed"
+   },
+   {
+    "coste": 16,
+    "efecto": "-10s all skill cooldowns"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15310000"
+ },
+ {
+  "id": "15320000",
+  "nombre": "Delayed Explosion",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1116-1116 Fire damage to a target within 20m after 4s. Increases damage taken from the caster by 15% during the delay.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Restores 200 MP"
+   },
+   {
+    "coste": 10,
+    "efecto": "-10s \\[Delayed Explosion\\] cooldown"
+   },
+   {
+    "coste": 15,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 20,
+    "efecto": "+5% additional Damage Taken"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion and lands as a Critical Hit"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15320000"
+ },
+ {
+  "id": "15360000",
+  "nombre": "Divine Burst",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1140-1140 Fire damage to a target within 20m. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 10,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 15,
+    "efecto": "75% chance to inflict Knock Back"
+   },
+   {
+    "coste": 20,
+    "efecto": "Inflict Stun for 3s after Knock Back"
+   },
+   {
+    "coste": 25,
+    "efecto": "+100% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15360000"
+ },
+ {
+  "id": "15390000",
+  "nombre": "Fire Wall",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Summon a Fire Wall that lasts for 3s at the location of a target within 20m. Deals 6500-6500 Fire damage and inflicts Embers on up to 4 enemies within the Fire Wall area (1x10m) for 10s. Embers: Deals 65-65 Fire Damage over Time every 1s for 10s. Damage over Time amount increases when targets move.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Enhanced Embers - Grants extra damage when landing an attack"
+   },
+   {
+    "coste": 10,
+    "efecto": "+2m wall width"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s \\[Fire Wall\\] summoning duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10s Embers duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% extra damage on attacking targets inflicted with Embers"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15390000"
+ },
+ {
+  "id": "15400000",
+  "nombre": "Element Enhancement",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Fire Attack by 10% and Water Attack by 10% for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+200 Accuracy"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Robe of Earth\\] Max MP and MP Regen effects"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Grace of Enhancement\\] effect"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% additional Fire and Water Attack"
+   },
+   {
+    "coste": 25,
+    "efecto": "+7% Smite"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15400000"
+ },
+ {
+  "id": "15700000",
+  "nombre": "Assault Bombardment",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 886-886 damage to up to 4 enemies within 4m with a 30% chance to inflict Frost for 3s. 100% chance to land Frost on NPC targets. Increases Defense by max 20% proportional to hit targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Frost Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15700000"
+ },
+ {
+  "id": "15740000",
+  "nombre": "Robe of Flame",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15740000"
+ },
+ {
+  "id": "15710000",
+  "nombre": "Fire Mark",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Has a 20% chance to inflict Fire Mark for 5s on landing a Fire attack. Fire Mark: Has a 20% chance to take 32-32 extra damage when taking Fire damage while afflicted with Fire Mark. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15710000"
+ },
+ {
+  "id": "15720000",
+  "nombre": "Robe of Earth",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases Max MP by 7% and Natural MP Regen by 5. Increases Critical Hit by 105 when MP is 50% or more.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15720000"
+ },
+ {
+  "id": "15730000",
+  "nombre": "Cold Snap",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 43-43 extra damage when landing an attack on a target afflicted with Slow. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15730000"
+ },
+ {
+  "id": "15750000",
+  "nombre": "Robe of Cold",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Defense by 1% and Critical Hit Resist by 55 and inflicts Slow when struck by an enemy, which reduces the target's Move Speed by 25% for 2s. Cooldown: 10s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15750000"
+ },
+ {
+  "id": "15760000",
+  "nombre": "Absorb Essence",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases Ailment-type and Mental-type Chance by 12% and restores 11 MP on landing an attack. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15760000"
+ },
+ {
+  "id": "15770000",
+  "nombre": "Grace of Resistance",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Mental-type Resist and Impact-type Resist by 11.5%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15770000"
+ },
+ {
+  "id": "15780000",
+  "nombre": "Grace of Enhancement",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more and has a 50% chance to deal 106-106 damage on landing an attack. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15780000"
+ },
+ {
+  "id": "15790000",
+  "nombre": "Revitalization Contract",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15790000"
+ },
+ {
+  "id": "15800000",
+  "nombre": "Vitality Evaporation",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Deals 261-261 damage on hit if the target's HP is more than 70% .",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Spellbook",
+  "url": "https://questlog.gg/aion-2/en/db/skill/15800000"
+ }
+]

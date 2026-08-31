@@ -1,0 +1,1241 @@
+{
+ "templar": [
+  {
+   "id": "12010000",
+   "nombre": "Vicious Strike",
+   "icono": "ICON_TE_SKILL_001"
+  },
+  {
+   "id": "12040000",
+   "nombre": "Pummel",
+   "icono": "ICON_TE_SKILL_006"
+  },
+  {
+   "id": "12070000",
+   "nombre": "Doom Shield",
+   "icono": "ICON_TE_SKILL_007"
+  },
+  {
+   "id": "12090000",
+   "nombre": "Punishment",
+   "icono": "ICON_TE_SKILL_009"
+  },
+  {
+   "id": "12100000",
+   "nombre": "Shield Smite",
+   "icono": "ICON_TE_SKILL_010"
+  },
+  {
+   "id": "12450000",
+   "nombre": "Battlefield Banner",
+   "icono": "ICON_TE_SKILL_045"
+  },
+  {
+   "id": "12110000",
+   "nombre": "Shield of Protection",
+   "icono": "ICON_TE_SKILL_011"
+  },
+  {
+   "id": "12120000",
+   "nombre": "Taunt",
+   "icono": "ICON_TE_SKILL_012"
+  },
+  {
+   "id": "12130000",
+   "nombre": "Poach",
+   "icono": "ICON_TE_SKILL_013"
+  },
+  {
+   "id": "12190000",
+   "nombre": "Second Skin",
+   "icono": "ICON_TE_SKILL_018"
+  },
+  {
+   "id": "12200000",
+   "nombre": "Armor of Balance",
+   "icono": "ICON_GL_SKILL_013"
+  },
+  {
+   "id": "12220000",
+   "nombre": "Grapple",
+   "icono": "ICON_TE_SKILL_021"
+  },
+  {
+   "id": "12230000",
+   "nombre": "Noble Armor",
+   "icono": "ICON_TE_SKILL_022"
+  },
+  {
+   "id": "12240000",
+   "nombre": "Judgment",
+   "icono": "ICON_TE_SKILL_004"
+  },
+  {
+   "id": "12250000",
+   "nombre": "Comrade in Arms",
+   "icono": "ICON_TE_SKILL_024"
+  },
+  {
+   "id": "12260000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "12270000",
+   "nombre": "Debilitating Smash",
+   "icono": "ICON_TE_SKILL_025"
+  },
+  {
+   "id": "12300000",
+   "nombre": "Annihilate",
+   "icono": "ICON_TE_SKILL_028"
+  },
+  {
+   "id": "12310000",
+   "nombre": "Empyrean Lord's Punishment",
+   "icono": "ICON_TE_SKILL_029"
+  },
+  {
+   "id": "12320000",
+   "nombre": "Nezekan's Shield",
+   "icono": "ICON_TE_SKILL_030"
+  },
+  {
+   "id": "12340000",
+   "nombre": "Flash Rampage",
+   "icono": "ICON_GL_SKILL_027"
+  },
+  {
+   "id": "12350000",
+   "nombre": "Warding Strike",
+   "icono": "ICON_TE_SKILL_035"
+  },
+  {
+   "id": "12410000",
+   "nombre": "Executing Blade",
+   "icono": "ICON_TE_SKILL_041"
+  },
+  {
+   "id": "12430000",
+   "nombre": "Shield Rush",
+   "icono": "ICON_TE_SKILL_015"
+  },
+  {
+   "id": "12740000",
+   "nombre": "Ironclad Defense",
+   "icono": "ICON_TE_SKILL_Passive_004"
+  },
+  {
+   "id": "12700000",
+   "nombre": "Assault Fury",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "12710000",
+   "nombre": "Enhance Health",
+   "icono": "ICON_TE_SKILL_Passive_001"
+  },
+  {
+   "id": "12720000",
+   "nombre": "Warding Shield",
+   "icono": "ICON_TE_SKILL_Passive_002"
+  },
+  {
+   "id": "12730000",
+   "nombre": "Punishing Benediction",
+   "icono": "ICON_TE_SKILL_Passive_003"
+  },
+  {
+   "id": "12750000",
+   "nombre": "Guarding Seal",
+   "icono": "ICON_TE_SKILL_Passive_005"
+  },
+  {
+   "id": "12760000",
+   "nombre": "Impact Hit",
+   "icono": "ICON_GL_SKILL_Passive_006"
+  },
+  {
+   "id": "12770000",
+   "nombre": "Insulting Roar",
+   "icono": "ICON_TE_SKILL_Passive_007"
+  },
+  {
+   "id": "12780000",
+   "nombre": "Fury",
+   "icono": "ICON_TE_SKILL_Passive_008"
+  },
+  {
+   "id": "12790000",
+   "nombre": "Survival Willpower",
+   "icono": "ICON_GL_SKILL_Passive_009"
+  },
+  {
+   "id": "12800000",
+   "nombre": "Block Pain",
+   "icono": "ICON_TE_SKILL_Passive_010"
+  }
+ ],
+ "assassin": [
+  {
+   "id": "13140000",
+   "nombre": "Shadowstep",
+   "icono": "ICON_AS_SKILL_014"
+  },
+  {
+   "id": "13010000",
+   "nombre": "Quick Slice",
+   "icono": "ICON_AS_SKILL_001"
+  },
+  {
+   "id": "13020000",
+   "nombre": "Throw Shadowblade",
+   "icono": "ICON_AS_SKILL_031"
+  },
+  {
+   "id": "13050000",
+   "nombre": "Flash Slice",
+   "icono": "ICON_AS_SKILL_005"
+  },
+  {
+   "id": "13060000",
+   "nombre": "Ambush",
+   "icono": "ICON_AS_SKILL_006"
+  },
+  {
+   "id": "13180000",
+   "nombre": "Shadow Walk",
+   "icono": "ICON_AS_SKILL_016"
+  },
+  {
+   "id": "13070000",
+   "nombre": "Shadowstrike",
+   "icono": "ICON_AS_SKILL_007"
+  },
+  {
+   "id": "13080000",
+   "nombre": "Evasion Stance",
+   "icono": "ICON_AS_SKILL_024"
+  },
+  {
+   "id": "13100000",
+   "nombre": "Savage Roar",
+   "icono": "ICON_AS_SKILL_009"
+  },
+  {
+   "id": "13130000",
+   "nombre": "Insignia Explosion",
+   "icono": "ICON_AS_SKILL_013"
+  },
+  {
+   "id": "13210000",
+   "nombre": "Whirlwind Slice",
+   "icono": "ICON_AS_SKILL_019"
+  },
+  {
+   "id": "13220000",
+   "nombre": "Shadow Fall",
+   "icono": "ICON_AS_SKILL_020"
+  },
+  {
+   "id": "13250000",
+   "nombre": "Smoke Bomb",
+   "icono": "ICON_AS_SKILL_023"
+  },
+  {
+   "id": "13230000",
+   "nombre": "Aerial Bind",
+   "icono": "ICON_AS_SKILL_026"
+  },
+  {
+   "id": "13260000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "13270000",
+   "nombre": "Savage Fang",
+   "icono": "ICON_AS_SKILL_025"
+  },
+  {
+   "id": "13280000",
+   "nombre": "Spiral Slice",
+   "icono": "ICON_AS_SKILL_022"
+  },
+  {
+   "id": "13300000",
+   "nombre": "Triniel's Dagger",
+   "icono": "ICON_AS_SKILL_028"
+  },
+  {
+   "id": "13310000",
+   "nombre": "Illusive Clone",
+   "icono": "ICON_AS_SKILL_029"
+  },
+  {
+   "id": "13340000",
+   "nombre": "Storm Rampage",
+   "icono": "ICON_AS_SKILL_034"
+  },
+  {
+   "id": "13350000",
+   "nombre": "Heart Gore",
+   "icono": "ICON_AS_SKILL_035"
+  },
+  {
+   "id": "13360000",
+   "nombre": "Infiltrate",
+   "icono": "ICON_AS_SKILL_036"
+  },
+  {
+   "id": "13370000",
+   "nombre": "Evasion Contract",
+   "icono": "ICON_AS_SKILL_039"
+  },
+  {
+   "id": "13390000",
+   "nombre": "Swift Contract",
+   "icono": "ICON_AS_SKILL_037"
+  },
+  {
+   "id": "13700000",
+   "nombre": "Assault Ambush",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "13710000",
+   "nombre": "Heightened Sixth Sense",
+   "icono": "ICON_AS_SKILL_Passive_001"
+  },
+  {
+   "id": "13720000",
+   "nombre": "Exploit Weakness",
+   "icono": "ICON_AS_SKILL_Passive_002"
+  },
+  {
+   "id": "13730000",
+   "nombre": "Apply Poison",
+   "icono": "ICON_AS_SKILL_Passive_003"
+  },
+  {
+   "id": "13740000",
+   "nombre": "Rear Smite",
+   "icono": "ICON_AS_SKILL_Passive_004"
+  },
+  {
+   "id": "13750000",
+   "nombre": "Assault Stance",
+   "icono": "ICON_AS_SKILL_Passive_006"
+  },
+  {
+   "id": "13760000",
+   "nombre": "Impact Hit",
+   "icono": "ICON_AS_SKILL_Passive_011"
+  },
+  {
+   "id": "13770000",
+   "nombre": "Ambush Stance",
+   "icono": "ICON_AS_SKILL_Passive_007"
+  },
+  {
+   "id": "13780000",
+   "nombre": "Defense Break",
+   "icono": "ICON_AS_SKILL_Passive_008"
+  },
+  {
+   "id": "13790000",
+   "nombre": "Revitalization Contract",
+   "icono": "ICON_AS_SKILL_Passive_009"
+  },
+  {
+   "id": "13800000",
+   "nombre": "Determination",
+   "icono": "ICON_AS_SKILL_Passive_010"
+  }
+ ],
+ "ranger": [
+  {
+   "id": "14380000",
+   "nombre": "Supporting Fire",
+   "icono": "ICON_RA_SKILL_038"
+  },
+  {
+   "id": "14010000",
+   "nombre": "Deadshot",
+   "icono": "ICON_RA_SKILL_002"
+  },
+  {
+   "id": "14020000",
+   "nombre": "Snipe",
+   "icono": "ICON_RA_SKILL_001"
+  },
+  {
+   "id": "14050000",
+   "nombre": "Drill Dart",
+   "icono": "ICON_RA_SKILL_005"
+  },
+  {
+   "id": "14060000",
+   "nombre": "Griffon Arrow",
+   "icono": "ICON_RA_SKILL_006"
+  },
+  {
+   "id": "14070000",
+   "nombre": "Suppressing Arrow",
+   "icono": "ICON_RA_SKILL_007"
+  },
+  {
+   "id": "14080000",
+   "nombre": "Burst Arrow",
+   "icono": "ICON_RA_SKILL_008"
+  },
+  {
+   "id": "14090000",
+   "nombre": "Marking Shot",
+   "icono": "ICON_RA_SKILL_031"
+  },
+  {
+   "id": "14110000",
+   "nombre": "Gale Arrow",
+   "icono": "ICON_RA_SKILL_011"
+  },
+  {
+   "id": "14120000",
+   "nombre": "Ambush Kick",
+   "icono": "ICON_RA_SKILL_012"
+  },
+  {
+   "id": "14130000",
+   "nombre": "Snare Shot",
+   "icono": "ICON_RA_SKILL_013"
+  },
+  {
+   "id": "14150000",
+   "nombre": "Illusory Arrow",
+   "icono": "ICON_RA_SKILL_015"
+  },
+  {
+   "id": "14160000",
+   "nombre": "Sealing Arrow",
+   "icono": "ICON_RA_SKILL_016"
+  },
+  {
+   "id": "14170000",
+   "nombre": "Explosion Trap",
+   "icono": "ICON_RA_SKILL_017"
+  },
+  {
+   "id": "14180000",
+   "nombre": "Ensnaring Trap",
+   "icono": "ICON_RA_SKILL_018"
+  },
+  {
+   "id": "14190000",
+   "nombre": "Stealth",
+   "icono": "ICON_RA_SKILL_019"
+  },
+  {
+   "id": "14220000",
+   "nombre": "Bow of Blessing",
+   "icono": "ICON_RA_SKILL_030"
+  },
+  {
+   "id": "14260000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "14270000",
+   "nombre": "Arrow Storm",
+   "icono": "ICON_RA_SKILL_026"
+  },
+  {
+   "id": "14310000",
+   "nombre": "Vaizel's Authority",
+   "icono": "ICON_RA_SKILL_022"
+  },
+  {
+   "id": "14330000",
+   "nombre": "Arrow Scattershot",
+   "icono": "ICON_RA_SKILL_033"
+  },
+  {
+   "id": "14340000",
+   "nombre": "Tempest Shot",
+   "icono": "ICON_RA_SKILL_034"
+  },
+  {
+   "id": "14350000",
+   "nombre": "Mother Nature's Breath",
+   "icono": "ICON_RA_SKILL_035"
+  },
+  {
+   "id": "14360000",
+   "nombre": "Explosive Arrow",
+   "icono": "ICON_RA_SKILL_023"
+  },
+  {
+   "id": "14700000",
+   "nombre": "Assault Smite",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "14710000",
+   "nombre": "Vigilant Eye",
+   "icono": "ICON_RA_SKILL_Passive_004"
+  },
+  {
+   "id": "14720000",
+   "nombre": "Concentrated Fire",
+   "icono": "ICON_RA_SKILL_Passive_003"
+  },
+  {
+   "id": "14730000",
+   "nombre": "Wind Vigor",
+   "icono": "ICON_RA_SKILL_Passive_006"
+  },
+  {
+   "id": "14740000",
+   "nombre": "Focused Eye",
+   "icono": "ICON_RA_SKILL_Passive_001"
+  },
+  {
+   "id": "14750000",
+   "nombre": "Hunter's Resolve",
+   "icono": "ICON_RA_SKILL_Passive_011"
+  },
+  {
+   "id": "14760000",
+   "nombre": "Unyielding Resolve",
+   "icono": "ICON_RA_SKILL_Passive_012"
+  },
+  {
+   "id": "14770000",
+   "nombre": "Rooting Eye",
+   "icono": "ICON_RA_SKILL_Passive_008"
+  },
+  {
+   "id": "14780000",
+   "nombre": "Melee Fire",
+   "icono": "ICON_RA_SKILL_Passive_013"
+  },
+  {
+   "id": "14790000",
+   "nombre": "Revitalization Contract",
+   "icono": "ICON_AS_SKILL_Passive_009"
+  },
+  {
+   "id": "14800000",
+   "nombre": "Hunter's Soul",
+   "icono": "ICON_RA_SKILL_Passive_007"
+  }
+ ],
+ "sorcerer": [
+  {
+   "id": "15410000",
+   "nombre": "Hibernation",
+   "icono": "ICON_SO_SKILL_041"
+  },
+  {
+   "id": "15010000",
+   "nombre": "Flame Scattershot",
+   "icono": "ICON_SO_SKILL_001"
+  },
+  {
+   "id": "15040000",
+   "nombre": "Firestorm",
+   "icono": "ICON_SO_SKILL_004"
+  },
+  {
+   "id": "15050000",
+   "nombre": "Blaze",
+   "icono": "ICON_SO_SKILL_005"
+  },
+  {
+   "id": "15060000",
+   "nombre": "Hellfire",
+   "icono": "ICON_SO_SKILL_006"
+  },
+  {
+   "id": "15090000",
+   "nombre": "Ice Chain",
+   "icono": "ICON_SO_SKILL_009"
+  },
+  {
+   "id": "15110000",
+   "nombre": "Winter's Shackles",
+   "icono": "ICON_SO_SKILL_011"
+  },
+  {
+   "id": "15130000",
+   "nombre": "Soul Freeze",
+   "icono": "ICON_SO_SKILL_013"
+  },
+  {
+   "id": "15120000",
+   "nombre": "Glacial Smite",
+   "icono": "ICON_SO_SKILL_012"
+  },
+  {
+   "id": "15140000",
+   "nombre": "Curse: Tree",
+   "icono": "ICON_SO_SKILL_014"
+  },
+  {
+   "id": "15150000",
+   "nombre": "Frost",
+   "icono": "ICON_SO_SKILL_015"
+  },
+  {
+   "id": "15160000",
+   "nombre": "Steel Barrier",
+   "icono": "ICON_SO_SKILL_016"
+  },
+  {
+   "id": "15200000",
+   "nombre": "Cold Storm",
+   "icono": "ICON_SO_SKILL_019"
+  },
+  {
+   "id": "15210000",
+   "nombre": "Flame Arrow",
+   "icono": "ICON_SO_SKILL_020"
+  },
+  {
+   "id": "15220000",
+   "nombre": "Frost Burst",
+   "icono": "ICON_SO_SKILL_022"
+  },
+  {
+   "id": "15230000",
+   "nombre": "Arctic Armor",
+   "icono": "ICON_SO_SKILL_021"
+  },
+  {
+   "id": "15240000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "15280000",
+   "nombre": "Bittercold Wind",
+   "icono": "ICON_SO_SKILL_025"
+  },
+  {
+   "id": "15300000",
+   "nombre": "Lumiel's Space",
+   "icono": "ICON_SO_SKILL_027"
+  },
+  {
+   "id": "15310000",
+   "nombre": "Wish of Concentration",
+   "icono": "ICON_SO_SKILL_028"
+  },
+  {
+   "id": "15320000",
+   "nombre": "Delayed Explosion",
+   "icono": "ICON_SO_SKILL_032"
+  },
+  {
+   "id": "15360000",
+   "nombre": "Divine Burst",
+   "icono": "ICON_SO_SKILL_036"
+  },
+  {
+   "id": "15390000",
+   "nombre": "Fire Wall",
+   "icono": "ICON_SO_SKILL_039"
+  },
+  {
+   "id": "15400000",
+   "nombre": "Element Enhancement",
+   "icono": "ICON_SO_SKILL_040"
+  },
+  {
+   "id": "15700000",
+   "nombre": "Assault Bombardment",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "15740000",
+   "nombre": "Robe of Flame",
+   "icono": "ICON_SO_SKILL_Passive_004"
+  },
+  {
+   "id": "15710000",
+   "nombre": "Fire Mark",
+   "icono": "ICON_SO_SKILL_Passive_002"
+  },
+  {
+   "id": "15720000",
+   "nombre": "Robe of Earth",
+   "icono": "ICON_SO_SKILL_Passive_006"
+  },
+  {
+   "id": "15730000",
+   "nombre": "Cold Snap",
+   "icono": "ICON_SO_SKILL_Passive_003"
+  },
+  {
+   "id": "15750000",
+   "nombre": "Robe of Cold",
+   "icono": "ICON_SO_SKILL_Passive_005"
+  },
+  {
+   "id": "15760000",
+   "nombre": "Absorb Essence",
+   "icono": "ICON_SO_SKILL_Passive_001"
+  },
+  {
+   "id": "15770000",
+   "nombre": "Grace of Resistance",
+   "icono": "ICON_SO_SKILL_038"
+  },
+  {
+   "id": "15780000",
+   "nombre": "Grace of Enhancement",
+   "icono": "ICON_SO_SKILL_Passive_007"
+  },
+  {
+   "id": "15790000",
+   "nombre": "Revitalization Contract",
+   "icono": "ICON_AS_SKILL_Passive_009"
+  },
+  {
+   "id": "15800000",
+   "nombre": "Vitality Evaporation",
+   "icono": "ICON_SO_SKILL_Passive_008"
+  }
+ ],
+ "elementalist": [
+  {
+   "id": "16170000",
+   "nombre": "Command: Proxy",
+   "icono": "ICON_EL_SKILL_017"
+  },
+  {
+   "id": "16010000",
+   "nombre": "Cold Shock",
+   "icono": "ICON_EL_SKILL_001"
+  },
+  {
+   "id": "16040000",
+   "nombre": "Combustion",
+   "icono": "ICON_EL_SKILL_004"
+  },
+  {
+   "id": "16060000",
+   "nombre": "Siphon",
+   "icono": "ICON_EL_SKILL_006"
+  },
+  {
+   "id": "16070000",
+   "nombre": "Soul's Cry",
+   "icono": "ICON_EL_SKILL_007"
+  },
+  {
+   "id": "16080000",
+   "nombre": "Cry of Terror",
+   "icono": "ICON_EL_SKILL_008"
+  },
+  {
+   "id": "16100000",
+   "nombre": "Summon: Fire Spirit",
+   "icono": "ICON_EL_SKILL_010"
+  },
+  {
+   "id": "16110000",
+   "nombre": "Summon: Water Spirit",
+   "icono": "ICON_EL_SKILL_011"
+  },
+  {
+   "id": "16120000",
+   "nombre": "Summon: Wind Spirit",
+   "icono": "ICON_EL_SKILL_012"
+  },
+  {
+   "id": "16130000",
+   "nombre": "Summon: Earth Spirit",
+   "icono": "ICON_EL_SKILL_013"
+  },
+  {
+   "id": "16140000",
+   "nombre": "Jointstrike: Curse",
+   "icono": "ICON_EL_SKILL_014"
+  },
+  {
+   "id": "16150000",
+   "nombre": "Jointstrike: Corrode",
+   "icono": "ICON_EL_SKILL_015"
+  },
+  {
+   "id": "16190000",
+   "nombre": "Enhance: Spirit's Benediction",
+   "icono": "ICON_EL_SKILL_019"
+  },
+  {
+   "id": "16200000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "16220000",
+   "nombre": "Cursed Cloud",
+   "icono": "ICON_EL_SKILL_022"
+  },
+  {
+   "id": "16230000",
+   "nombre": "Seize Magic",
+   "icono": "ICON_EL_SKILL_023"
+  },
+  {
+   "id": "16240000",
+   "nombre": "Jointstrike: Destructive Attack",
+   "icono": "ICON_EL_SKILL_024"
+  },
+  {
+   "id": "16250000",
+   "nombre": "Summon: Ancient Spirit",
+   "icono": "ICON_EL_SKILL_025"
+  },
+  {
+   "id": "16260000",
+   "nombre": "Magic Block",
+   "icono": "ICON_EL_SKILL_026"
+  },
+  {
+   "id": "16340000",
+   "nombre": "Rapid Scattershot",
+   "icono": "ICON_EL_SKILL_034"
+  },
+  {
+   "id": "16300000",
+   "nombre": "Elemental Fusion",
+   "icono": "ICON_EL_SKILL_030"
+  },
+  {
+   "id": "16330000",
+   "nombre": "Dimensional Control",
+   "icono": "ICON_EL_SKILL_033"
+  },
+  {
+   "id": "16360000",
+   "nombre": "Kaisinel's Power",
+   "icono": "ICON_EL_SKILL_036"
+  },
+  {
+   "id": "16370000",
+   "nombre": "Flame Blessing",
+   "icono": "ICON_EL_SKILL_037"
+  },
+  {
+   "id": "16700000",
+   "nombre": "Assault Terror",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "16710000",
+   "nombre": "Spirit Strike",
+   "icono": "ICON_EL_SKILL_Passive_004"
+  },
+  {
+   "id": "16720000",
+   "nombre": "Spirit Protection",
+   "icono": "ICON_EL_SKILL_Passive_002"
+  },
+  {
+   "id": "16730000",
+   "nombre": "Spirit's Descent",
+   "icono": "ICON_EL_SKILL_Passive_003"
+  },
+  {
+   "id": "16740000",
+   "nombre": "Corrode",
+   "icono": "ICON_EL_SKILL_Passive_012"
+  },
+  {
+   "id": "16750000",
+   "nombre": "Spirit Revitalization",
+   "icono": "ICON_EL_SKILL_Passive_011"
+  },
+  {
+   "id": "16760000",
+   "nombre": "Mental Focus",
+   "icono": "ICON_EL_SKILL_Passive_006"
+  },
+  {
+   "id": "16770000",
+   "nombre": "Spirit Communion",
+   "icono": "ICON_EL_SKILL_Passive_007"
+  },
+  {
+   "id": "16780000",
+   "nombre": "Element Unification",
+   "icono": "ICON_EL_SKILL_Passive_008"
+  },
+  {
+   "id": "16790000",
+   "nombre": "Revitalization Contract",
+   "icono": "ICON_AS_SKILL_Passive_009"
+  },
+  {
+   "id": "16800000",
+   "nombre": "Consecutive Countercurrent",
+   "icono": "ICON_EL_SKILL_Passive_013"
+  }
+ ],
+ "cleric": [
+  {
+   "id": "17440000",
+   "nombre": "Noble Aura",
+   "icono": "ICON_CL_SKILL_046"
+  },
+  {
+   "id": "17010000",
+   "nombre": "Earth's Retribution",
+   "icono": "ICON_CL_SKILL_001"
+  },
+  {
+   "id": "17040000",
+   "nombre": "Judgment Thunder",
+   "icono": "ICON_CL_SKILL_004"
+  },
+  {
+   "id": "17060000",
+   "nombre": "Bolt",
+   "icono": "ICON_CL_SKILL_006"
+  },
+  {
+   "id": "17070000",
+   "nombre": "Chain of Torment",
+   "icono": "ICON_CL_SKILL_007"
+  },
+  {
+   "id": "17080000",
+   "nombre": "Debilitating Mark",
+   "icono": "ICON_CL_SKILL_008"
+  },
+  {
+   "id": "17090000",
+   "nombre": "Light of Regeneration",
+   "icono": "ICON_CL_SKILL_009"
+  },
+  {
+   "id": "17100000",
+   "nombre": "Healing Light",
+   "icono": "ICON_CL_SKILL_010"
+  },
+  {
+   "id": "17120000",
+   "nombre": "Radiant Recovery",
+   "icono": "ICON_CL_SKILL_012"
+  },
+  {
+   "id": "17150000",
+   "nombre": "Divine Aura",
+   "icono": "ICON_CL_SKILL_015"
+  },
+  {
+   "id": "17160000",
+   "nombre": "Benevolence",
+   "icono": "ICON_CL_SKILL_047"
+  },
+  {
+   "id": "17190000",
+   "nombre": "Root",
+   "icono": "ICON_CL_SKILL_019"
+  },
+  {
+   "id": "17240000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "17270000",
+   "nombre": "Salvation",
+   "icono": "ICON_CL_SKILL_026"
+  },
+  {
+   "id": "17280000",
+   "nombre": "Power Burst",
+   "icono": "ICON_CL_SKILL_027"
+  },
+  {
+   "id": "17290000",
+   "nombre": "Absolution",
+   "icono": "ICON_CL_SKILL_028"
+  },
+  {
+   "id": "17300000",
+   "nombre": "Voice of Doom",
+   "icono": "ICON_CL_SKILL_029"
+  },
+  {
+   "id": "17350000",
+   "nombre": "Condemnation",
+   "icono": "ICON_CL_SKILL_035"
+  },
+  {
+   "id": "17370000",
+   "nombre": "Lightning Strike Scattershot",
+   "icono": "ICON_CL_SKILL_037"
+  },
+  {
+   "id": "17390000",
+   "nombre": "Summon Resurrection",
+   "icono": "ICON_CL_SKILL_039"
+  },
+  {
+   "id": "17400000",
+   "nombre": "Earth Punishment",
+   "icono": "ICON_CL_SKILL_040"
+  },
+  {
+   "id": "17410000",
+   "nombre": "Light of Protection",
+   "icono": "ICON_CL_SKILL_041"
+  },
+  {
+   "id": "17420000",
+   "nombre": "Yustiel's Power",
+   "icono": "ICON_CL_SKILL_042"
+  },
+  {
+   "id": "17430000",
+   "nombre": "Prayer of Amplification",
+   "icono": "ICON_CL_SKILL_044"
+  },
+  {
+   "id": "17700000",
+   "nombre": "Assault Mark",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "17710000",
+   "nombre": "Warm Benediction",
+   "icono": "ICON_CL_SKILL_Passive_001"
+  },
+  {
+   "id": "17720000",
+   "nombre": "Empyrean Lords' Benediction",
+   "icono": "ICON_CL_SKILL_Passive_002"
+  },
+  {
+   "id": "17730000",
+   "nombre": "Empyrean Lord's Grace",
+   "icono": "ICON_CL_SKILL_Passive_012"
+  },
+  {
+   "id": "17740000",
+   "nombre": "Healing Enhancement",
+   "icono": "ICON_CL_SKILL_Passive_003"
+  },
+  {
+   "id": "17750000",
+   "nombre": "Immortal Veil",
+   "icono": "ICON_CL_SKILL_Passive_011"
+  },
+  {
+   "id": "17760000",
+   "nombre": "Heal Block",
+   "icono": "ICON_CL_SKILL_Passive_005"
+  },
+  {
+   "id": "17770000",
+   "nombre": "Prayer of Concentration",
+   "icono": "ICON_CL_SKILL_Passive_006"
+  },
+  {
+   "id": "17780000",
+   "nombre": "Earth's Grace",
+   "icono": "ICON_CL_SKILL_Passive_008"
+  },
+  {
+   "id": "17790000",
+   "nombre": "Survival Willpower",
+   "icono": "ICON_GL_SKILL_Passive_009"
+  },
+  {
+   "id": "17800000",
+   "nombre": "Radiant Benediction",
+   "icono": "ICON_CL_SKILL_Passive_007"
+  }
+ ],
+ "chanter": [
+  {
+   "id": "18440000",
+   "nombre": "Barrier Spell",
+   "icono": "ICON_CH_SKILL_044"
+  },
+  {
+   "id": "18010000",
+   "nombre": "Onslaught",
+   "icono": "ICON_CH_SKILL_001"
+  },
+  {
+   "id": "18040000",
+   "nombre": "Incandescent Blow",
+   "icono": "ICON_CH_SKILL_004"
+  },
+  {
+   "id": "18060000",
+   "nombre": "Impactful Crush",
+   "icono": "ICON_CH_SKILL_006"
+  },
+  {
+   "id": "18080000",
+   "nombre": "Wave Blow",
+   "icono": "ICON_CH_SKILL_008"
+  },
+  {
+   "id": "18090000",
+   "nombre": "Rushing Smash",
+   "icono": "ICON_CH_SKILL_009"
+  },
+  {
+   "id": "18100000",
+   "nombre": "Dark Crush",
+   "icono": "ICON_CH_SKILL_010"
+  },
+  {
+   "id": "18120000",
+   "nombre": "Recuperation",
+   "icono": "ICON_CH_SKILL_013"
+  },
+  {
+   "id": "18130000",
+   "nombre": "Fracturing Blow",
+   "icono": "ICON_CH_SKILL_043"
+  },
+  {
+   "id": "18140000",
+   "nombre": "Focused Defense",
+   "icono": "ICON_CH_SKILL_014"
+  },
+  {
+   "id": "18150000",
+   "nombre": "Heat Wave Blow",
+   "icono": "ICON_CH_SKILL_015"
+  },
+  {
+   "id": "18160000",
+   "nombre": "Sprint Mantra",
+   "icono": "ICON_CH_SKILL_016"
+  },
+  {
+   "id": "18170000",
+   "nombre": "Healing Touch",
+   "icono": "ICON_CH_SKILL_017"
+  },
+  {
+   "id": "18190000",
+   "nombre": "Undefeated Mantra",
+   "icono": "ICON_CH_SKILL_019"
+  },
+  {
+   "id": "18200000",
+   "nombre": "Defiance",
+   "icono": "ICON_CO_SKILL_002"
+  },
+  {
+   "id": "18210000",
+   "nombre": "Tremor Crush",
+   "icono": "ICON_CH_SKILL_021"
+  },
+  {
+   "id": "18220000",
+   "nombre": "Obliterate",
+   "icono": "ICON_CH_SKILL_022"
+  },
+  {
+   "id": "18230000",
+   "nombre": "Ensnaring Mark",
+   "icono": "ICON_CH_SKILL_023"
+  },
+  {
+   "id": "18240000",
+   "nombre": "Impeding Authority",
+   "icono": "ICON_CH_SKILL_024"
+  },
+  {
+   "id": "18250000",
+   "nombre": "Power of the Storm",
+   "icono": "ICON_CH_SKILL_025"
+  },
+  {
+   "id": "18290000",
+   "nombre": "Spinning Strike",
+   "icono": "ICON_CH_SKILL_029"
+  },
+  {
+   "id": "18300000",
+   "nombre": "Gust Rampage",
+   "icono": "ICON_CH_SKILL_030"
+  },
+  {
+   "id": "18330000",
+   "nombre": "Marchutan's Wrath",
+   "icono": "ICON_CH_SKILL_033"
+  },
+  {
+   "id": "18420000",
+   "nombre": "Guardian Blessing",
+   "icono": "ICON_CH_SKILL_042"
+  },
+  {
+   "id": "18700000",
+   "nombre": "Assault Shock",
+   "icono": "ICON_CO_SKILL_003"
+  },
+  {
+   "id": "18710000",
+   "nombre": "Blessing of Life",
+   "icono": "ICON_CH_SKILL_Passive_012"
+  },
+  {
+   "id": "18720000",
+   "nombre": "Crossguard",
+   "icono": "ICON_CH_SKILL_Passive_002"
+  },
+  {
+   "id": "18730000",
+   "nombre": "Protection Circle",
+   "icono": "ICON_CH_SKILL_Passive_001"
+  },
+  {
+   "id": "18740000",
+   "nombre": "Inspiring Spell",
+   "icono": "ICON_CH_SKILL_Passive_011"
+  },
+  {
+   "id": "18750000",
+   "nombre": "Attack Preparation",
+   "icono": "ICON_GL_SKILL_Passive_005"
+  },
+  {
+   "id": "18760000",
+   "nombre": "Impact Hit",
+   "icono": "ICON_GL_SKILL_Passive_006"
+  },
+  {
+   "id": "18770000",
+   "nombre": "Raging Spell",
+   "icono": "ICON_CH_SKILL_Passive_007"
+  },
+  {
+   "id": "18780000",
+   "nombre": "Earth's Promise",
+   "icono": "ICON_CH_SKILL_Passive_010"
+  },
+  {
+   "id": "18790000",
+   "nombre": "Survival Willpower",
+   "icono": "ICON_GL_SKILL_Passive_009"
+  },
+  {
+   "id": "18800000",
+   "nombre": "Wind's Promise",
+   "icono": "ICON_CH_SKILL_Passive_008"
+  }
+ ]
+}

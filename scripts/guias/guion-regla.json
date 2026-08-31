@@ -1,0 +1,13 @@
+{
+ "titulo": "📖 Cómo funciona el combate en Aion 2 (vale para las 8 clases)",
+ "etiquetas": [
+  "Para empezar"
+ ],
+ "apertura": "Antes de leer la guía de tu clase, lee esto. **El combate de Aion 2 funciona igual con las ocho**, y quien entiende esto juega mejor desde el minuto uno.\n\nNo lo he sacado de ninguna guía: sale de comparar las **280 habilidades** de las ocho clases en la base de datos del juego. El patrón aparece en todas.",
+ "secciones": [
+  {
+   "archivo": "00-regla-comun.png",
+   "texto": "**Las tres piezas que tiene toda clase**\n\n**1 · Un ataque básico sin recarga que te devuelve maná.** Unos 100 en todas (Ranger 120, Cleric 110). Es el que se usa de relleno mientras lo demás se recarga.\n\n**2 · Una habilidad que deja al enemigo en un estado**: derribado, aturdido, congelado, ralentizado…\n\n**3 · Un castigo que SOLO se puede lanzar si el enemigo está en ese estado**, y con recarga cortísima (5, 10 o 20 segundos). Es el golpe que se repite.\n\n**Lo importante:** no se juega apretando botones por orden de daño. Se juega dejando al enemigo en un estado y machacándolo mientras dure. Si te saltas el paso 2, el paso 3 **ni siquiera te deja pulsarlo**.\n\nY hay una cuarta pieza en las ocho: un remate que exige **Stagger**, la barra de aturdimiento que se llena a golpes.\n\n**Las dos excepciones:** Cleric y Spiritmaster no tienen castigo ligado a un estado propio. Aplican Enraizado y Miedo, pero su remate depende solo del Stagger. Se juegan más por control y sostén.\n\n—\nDatos de la base de datos del juego (questlog.gg), **versión coreana**, anterior al lanzamiento global del 5 de octubre."
+  }
+ ]
+}

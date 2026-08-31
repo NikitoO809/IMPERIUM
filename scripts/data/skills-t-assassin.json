@@ -1,0 +1,1477 @@
+[
+ {
+  "id": "13000100",
+  "nombre": "Dodge",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "Guides, discussions and news live on our subreddit — come join r/Aion2t.",
+  "dano": null,
+  "cooldown": "0.5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13000100"
+ },
+ {
+  "id": "13710000",
+  "nombre": "Heightened Sixth Sense",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion. Cooldown: 3s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13710000"
+ },
+ {
+  "id": "13010000",
+  "nombre": "Quick Slice",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 58-58 damage to up to 4 enemies within 4m and restores 100 MP.",
+  "dano": "58",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 0.7% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-1s [Insignia Explosion] cooldown on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13010000"
+ },
+ {
+  "id": "13100000",
+  "nombre": "Savage Roar",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 68-68 damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s. 2 Stagger Gauge Damage",
+  "dano": "68",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-1s [Shadowstrike] cooldown on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Pulls nearby targets on using [Savage Smash]"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13100000"
+ },
+ {
+  "id": "13070000",
+  "nombre": "Shadowstrike",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Moves behind a target within 20m and deals 52-52 damage, rotates, and inflicts Stun for 3s. 10 Stagger Gauge Damage",
+  "dano": "52",
+  "cooldown": "20s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% caster Critical Damage Boost for 5s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "50% chance to inflict Seal for 5s on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "50% chance to inflict Root for 5s on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Changes to AoE Skill"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13070000"
+ },
+ {
+  "id": "13060000",
+  "nombre": "Ambush",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 3,
+  "maxNivel": 40,
+  "descripcion": "Deals 126-126 damage to a target within 4m. Increases damage by 30% on landing as a Back attack. 7 Stagger Gauge Damage",
+  "dano": "126",
+  "cooldown": "10s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Engraves 2 Insignias for 10s on landing as a Back attack"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 3% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Breaks Protective Shields on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "50% chance to trigger [Whirlwind Slice] on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+2 consecutive uses"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13060000"
+ },
+ {
+  "id": "13350007",
+  "nombre": "Heart Gore",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 1,
+  "descripcion": "Triggers on landing a Critical Hit, dealing 111-111 damage to up to 4 enemies within 4m and restores 100 MP. 5 Stagger Gauge Damage",
+  "dano": "111",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13350007"
+ },
+ {
+  "id": "13350000",
+  "nombre": "Heart Gore",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 40,
+  "descripcion": "Triggers on landing a Critical Hit, dealing 111-111 damage to up to 4 enemies within 4m and restores 100 MP. 5 Stagger Gauge Damage",
+  "dano": "111",
+  "cooldown": "5s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 0.7% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Engraves 1 Insignia for 10s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +20% Critical Hit when less targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Resets [Heart Gore] cooldown on landing a Critical Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13350000"
+ },
+ {
+  "id": "13340000",
+  "nombre": "Storm Rampage",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 5,
+  "maxNivel": 40,
+  "descripcion": "Deals 107-107 damage to a target afflicted with Stagger within 4m.",
+  "dano": "107",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 5% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 120 MP on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13340000"
+ },
+ {
+  "id": "13720000",
+  "nombre": "Exploit Weakness",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 6,
+  "maxNivel": 40,
+  "descripcion": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks). Clone cooldown: 1s Attack increase cooldown: 1s",
+  "dano": "17",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13720000"
+ },
+ {
+  "id": "13210000",
+  "nombre": "Whirlwind Slice",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 7,
+  "maxNivel": 40,
+  "descripcion": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion. 100% to inflict Stun on NPC targets. 7 Stagger Gauge Damage",
+  "dano": "300",
+  "cooldown": "10s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to AoE damage"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+16m Range"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "nivel": 16,
+    "efecto": "25% chance to reset [Whirlwind Slice] cooldown on Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13210000"
+ },
+ {
+  "id": "13050000",
+  "nombre": "Flash Slice",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 8,
+  "maxNivel": 40,
+  "descripcion": "Moves to the opposite side of a target within 4m and deals 181-181 damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s. 100% chance to inflict Blind on NPC targets. 7 Stagger Gauge Damage",
+  "dano": "181",
+  "cooldown": "10s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+2s Blind duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+6m Range"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "nivel": 16,
+    "efecto": "50% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13050000"
+ },
+ {
+  "id": "13730000",
+  "nombre": "Apply Poison",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 9,
+  "maxNivel": 40,
+  "descripcion": "Has a 15% chance to reduce the target's Incoming Heal by 12% and inflict Poison for 10s on landing an attack. Poison deals 233~233 Damage over Time every 1s. Cooldown: 1s",
+  "dano": "233",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13730000"
+ },
+ {
+  "id": "13360000",
+  "nombre": "Infiltrate",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 10,
+  "maxNivel": 40,
+  "descripcion": "Moves behind a target within 10m and deals 239-239 damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying. 100% chance to inflict Blind on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "239",
+  "cooldown": "20s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Restores 300 Stamina on landing [Infiltrate]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10m [Infiltrate] range"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Breaks Protective Shields on landing [Infiltrate]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Adds [Dark Strike] Chain Skill"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+20% [Infiltrate] Blind Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13360000"
+ },
+ {
+  "id": "13740000",
+  "nombre": "Rear Smite",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 11,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Back Attack Damage Boost by 3%, PvE Damage Boost by 3%, and PvP Damage Boost by 1.5%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13740000"
+ },
+ {
+  "id": "13220037",
+  "nombre": "Shadow Fall",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 12,
+  "maxNivel": 1,
+  "descripcion": "Moves to a target afflicted with Stun within 10m, deals 465-465 damage, and inflicts Knockdown for 3s. Has a 5% chance to trigger on attacking a target with Incapacitated Immunity. 10 Stagger Gauge Damage",
+  "dano": "465",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13220037"
+ },
+ {
+  "id": "13220000",
+  "nombre": "Shadow Fall",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 12,
+  "maxNivel": 40,
+  "descripcion": "Moves to a target afflicted with Stun within 10m, deals 465-465 damage, and inflicts Knockdown for 3s. Has a 5% chance to trigger on attacking a target with Incapacitated Immunity. 10 Stagger Gauge Damage",
+  "dano": "465",
+  "cooldown": "20s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 10% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Engraves 3 Insignias for 10s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+1s Knockdown duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Can be used on targets afflicted with Blind"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13220000"
+ },
+ {
+  "id": "13750000",
+  "nombre": "Assault Stance",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 13,
+  "maxNivel": 40,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13750000"
+ },
+ {
+  "id": "13130000",
+  "nombre": "Insignia Explosion",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 14,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 604-604 damage to up to 4 enemies within 4m, inflicting Stun for 3s. Stun chance is doubled on NPC targets. Damage and Stun chance increase based on Insignia stacks. 1 stack: 677-677 damage, 10% Stun chance 2 stacks: 749-749 damage, 20% Stun chance 3 stacks: 822-822 damage, 30% Stun chance 4 stacks: 894-894 damage, 40% Stun chance 5 stacks: 967-967 damage, 50% Stun chance 7 Stagger Gauge Damage",
+  "dano": "604",
+  "cooldown": "10s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Adds rotate effect"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Keep 2 stacks of Insignias after [Insignia Explosion]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-3s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13130000"
+ },
+ {
+  "id": "13760000",
+  "nombre": "Impact Hit",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 15,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13760000"
+ },
+ {
+  "id": "13260000",
+  "nombre": "Defiance",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 16,
+  "maxNivel": 40,
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity Not affected by cooldown reduction effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Adds [Storm Slice] Chain Skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 1000 Stamina on using [Defiance]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 20% HP on using [Defiance]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13260000"
+ },
+ {
+  "id": "13770000",
+  "nombre": "Ambush Stance",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 17,
+  "maxNivel": 40,
+  "descripcion": "Grants Ambush Stance for 10s when using skills that rush or involve movement. Ambush Stance: Has a 50% chance to deal 152-152 damage on landing an attack. Cooldown: 1s",
+  "dano": "152",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13770000"
+ },
+ {
+  "id": "13780000",
+  "nombre": "Defense Break",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 21,
+  "maxNivel": 40,
+  "descripcion": "Reduces the target's Defense by 12% and Status Effect Resist by 11% for 10s when landing an attack on a target afflicted with Stagger or an Impact-type status. Cooldown: 20s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13780000"
+ },
+ {
+  "id": "13230000",
+  "nombre": "Aerial Bind",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 837-837 damage to a target within 4m, with a 50% chance to inflict Airborne for 3s. Has a 100% chance to inflict Airborne for 3s on targets with 5 stacks of Insignia. 100% chance to inflict Airborne on NPC targets. 20 Stagger Gauge Damage",
+  "dano": "837",
+  "cooldown": "120s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+16m [Aerial Bind] Range"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Adds [Aerial Slaughter] Chain Skill"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Ambush Stance] effect for 10s on first strike of [Aerial Bind]"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13230000"
+ },
+ {
+  "id": "13700000",
+  "nombre": "Assault Ambush",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 977-977 damage to up to 4 enemies within 4m, with a 30% chance to inflict Blind for 5s. 100% chance to inflict Blind on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+  "dano": "977",
+  "cooldown": "120s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Blind Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13700000"
+ },
+ {
+  "id": "13370000",
+  "nombre": "Evasion Contract",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Removes Slow and Root from the caster and increases the caster's Evasion by 200 for 10s. Grants Slow and Root Immunity. Unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "25% chance of Projectile Immunity for the duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+30% Move Speed for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "50% chance to reduce all skill cooldowns by 1s on Evasion for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+100 Evasion increase"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Removes and grants immunity to Damage over Time effects"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13370000"
+ },
+ {
+  "id": "13080000",
+  "nombre": "Evasion Stance",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Grants guaranteed evasion of all damage for a brief duration. Restores 110 MP and Stamina once on Evasion.",
+  "dano": null,
+  "cooldown": "20s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+20% Move Speed for 3s on Evasion"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restore 10% HP once after successfully evading"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+1s duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13080000"
+ },
+ {
+  "id": "13310000",
+  "nombre": "Illusive Clone",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Removes [Heart Gore] cooldown and deals 20% of damage dealt as extra damage for 10s.",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% Status Effect Chance for the duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+20% Critical Damage Boost for duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Exploit Weakness] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-1s [Illusive Clone] cooldown on Back Critical for the duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13310000"
+ },
+ {
+  "id": "13270000",
+  "nombre": "Savage Fang",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1074-1074 damage to up to 4 enemies within 4m and engraves 5 Insignias for 10s. 50 Stagger Gauge Damage",
+  "dano": "1074",
+  "cooldown": "60s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+50 Stagger Gauge Damage"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13270000"
+ },
+ {
+  "id": "13180000",
+  "nombre": "Shadow Walk",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Grants Stealth for 20s. Cannot be used in combat and the effect is removed upon entering combat.",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Critical Hit on attack during Stealth"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+20% Move Speed for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Available in combat"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Resets cooldown on player kill assists"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Stun for 3s on Back Attack while in Stealth"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13180000"
+ },
+ {
+  "id": "13140000",
+  "nombre": "Shadowstep",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 832-832 damage to a target within 4m. The caster moves back and gains Stealth for 3s.",
+  "dano": "832",
+  "cooldown": "45s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "40% chance to rotate and inflict Stun for 3s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Engraves 5 Insignias for 10s on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+200 Evasion for 10s on use"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+2s Stealth duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13140000"
+ },
+ {
+  "id": "13250000",
+  "nombre": "Smoke Bomb",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 966-966 to a target within 10m and inflicts Blind for 5s. 15 Stagger Gauge Damage",
+  "dano": "966",
+  "cooldown": "30s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Inflicts Slow for 5s on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Inflict Exposed for 5s on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13250000"
+ },
+ {
+  "id": "13280000",
+  "nombre": "Spiral Slice",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Rushes to a target within 20m and deals 1074-1074 damage, removing 1 buff. Deals 386-386 extra damage based on the number of buffs removed. 20 Stagger Gauge Damage",
+  "dano": "1074",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Removes up to 2 buffs"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Rotates and inflicts Stun for 3s when removing 2 or more buffs"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Removes up to 3 buffs"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13280000"
+ },
+ {
+  "id": "13390000",
+  "nombre": "Swift Contract",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "-20% MP Cost for the duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Rear Smite] effect for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Assault Stance] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10% additional Combat Speed"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% Attack for the duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13390000"
+ },
+ {
+  "id": "13020000",
+  "nombre": "Throw Shadowblade",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 778-778 damage to a target within 20m and inflicts Slow, which reduces Move Speed by 40% for 5s. 15 Stagger Gauge Damage",
+  "dano": "778",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Adds [Shadowblade Pursuit] Chain Skill"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+30% Skill Speed"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13020000"
+ },
+ {
+  "id": "13300000",
+  "nombre": "Triniel's Dagger",
+  "clase": "Assassin",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1374-1374 damage to a target within 4m and increases all of the target's skill cooldowns by 5% of their duration. Increases damage by 30% if attacking from behind the target. 20 Stagger Gauge Damage",
+  "dano": "1374",
+  "cooldown": "45s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-10% all skill cooldowns on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Resets cooldown on defeating an enemy with [Triniel's Dagger]"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+3% all skill cooldowns"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% Back Attack Damage Boost for 5s on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13300000"
+ },
+ {
+  "id": "13790000",
+  "nombre": "Revitalization Contract",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 23,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13790000"
+ },
+ {
+  "id": "13800000",
+  "nombre": "Determination",
+  "clase": "Assassin",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 25,
+  "maxNivel": 40,
+  "descripcion": "Deals 228-228 damage when landing an attack on a target with 30% HP or less. Cooldown: 1s",
+  "dano": "228",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13800000"
+ },
+ {
+  "id": "13240000",
+  "nombre": "Aerial Slaughter",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Deals 1256-1256 damage to a target within 4m, making them fall and inflicting Knockdown for 3s.",
+  "dano": "1256",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13240000"
+ },
+ {
+  "id": "13160000",
+  "nombre": "Apply Poison",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Has a 20% chance to inflict Poison on the target on hit, taking Damage over Time of 233-233 every 1s for 6s.",
+  "dano": "233",
+  "cooldown": "30s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13160000"
+ },
+ {
+  "id": "13030000",
+  "nombre": "Breaking Slice",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 62-62 damage to up to 4 enemies within 4m and restores 105 MP.",
+  "dano": "62",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13030000"
+ },
+ {
+  "id": "13380000",
+  "nombre": "Dark Strike",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 311-311 damage to a target within 4m and push them for 10m.",
+  "dano": "311",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13380000"
+ },
+ {
+  "id": "13150000",
+  "nombre": "Frenzied Accord",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% for the caster and nearby party members within 40m for 10s.",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13150000"
+ },
+ {
+  "id": "13290000",
+  "nombre": "Prepare to Assassinate",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Grants Stealth for 20s. Cannot be used in combat and the effect is removed upon entering combat.",
+  "dano": null,
+  "cooldown": "300s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13290000"
+ },
+ {
+  "id": "13110000",
+  "nombre": "Savage Back Kick",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 73-73 damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s. 2 Stagger Gauge Damage",
+  "dano": "73",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13110000"
+ },
+ {
+  "id": "13120000",
+  "nombre": "Savage Smash",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 78-78 damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s. 2 Stagger Gauge Damage",
+  "dano": "78",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13120000"
+ },
+ {
+  "id": "13090000",
+  "nombre": "Shadowblade Pursuit",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Moves to a target within 20m and deals 856-856 damage. 15 Stagger Gauge Damage",
+  "dano": "856",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13090000"
+ },
+ {
+  "id": "13330000",
+  "nombre": "Storm Slice",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 518-518 damage to up to 4 targets within 4m and rotates and inflicts Stun for 3s.",
+  "dano": "518",
+  "cooldown": "120s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13330000"
+ },
+ {
+  "id": "13170000",
+  "nombre": "Surging Bloodlust",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Increases damage of 1 skill by 120% and restores 300 MP for 10s.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13170000"
+ },
+ {
+  "id": "13040000",
+  "nombre": "Swift Slice",
+  "clase": "Assassin",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 69-69 damage to up to 4 enemies within 4m and restores 120 MP.",
+  "dano": "69",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/13040000"
+ }
+]

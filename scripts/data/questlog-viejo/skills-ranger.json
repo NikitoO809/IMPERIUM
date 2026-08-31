@@ -1,0 +1,1038 @@
+[
+ {
+  "id": "14380000",
+  "nombre": "Supporting Fire",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Summons an orb that provides supporting fire for 15s near the caster. The orb has a 25% chance to fire a shot dealing 243-243 damage and absorbing 0% HP. Firing Cooldown: 0.5s",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+25% activation chance"
+   },
+   {
+    "coste": 10,
+    "efecto": "+15s duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 20,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 25,
+    "efecto": "10% chance to shoot extra projectile"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14380000"
+ },
+ {
+  "id": "14010000",
+  "nombre": "Deadshot",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 560-1681 damage to a target within 20m. Increases damage by 35% if the caster has Precision. Max 3 Charge Levels 10-16 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Removes MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on hit"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14010000"
+ },
+ {
+  "id": "14020000",
+  "nombre": "Snipe",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 47-47 damage to a target within 20m and restores 120 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Deadshot\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Adds \\[Tempest Arrow\\] Chain Skill"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14020000"
+ },
+ {
+  "id": "14050000",
+  "nombre": "Drill Dart",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 112-112 damage to up to 4 enemies within 4m of the target and restore 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing 7-7 damage every 1s for 6s and reducing Incoming Heal by 50%. Incoming Heal reduction from \\[Drill Dart\\], \\[Debilitating Smash\\], and \\[Firestorm\\] does not stack. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+2s Bleed duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Activates \\[Drill Dart\\] 1 extra time"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14050000"
+ },
+ {
+  "id": "14060000",
+  "nombre": "Griffon Arrow",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 964-964 damage to up to 4 enemies within 4m and inflicts Crimson Flames for 10s. Crimson Flames: Takes 48-48 Fire Damage over Time every 1s. Damage over Time amount increases when targets move. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 10,
+    "efecto": "+5s Damage over Time duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "Enhanced Crimson Flames - Extra damage when hit while afflicted with Crimson Flames"
+   },
+   {
+    "coste": 20,
+    "efecto": "-50% Damage over Time intervals"
+   },
+   {
+    "coste": 25,
+    "efecto": "+20% extra damage to targets afflicted with Crimson Flames"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14060000"
+ },
+ {
+  "id": "14070000",
+  "nombre": "Suppressing Arrow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 362-362 damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 12,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on hit"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14070000"
+ },
+ {
+  "id": "14080000",
+  "nombre": "Burst Arrow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target afflicted with Slow or Root within 20m and deal 544-544 damage to up to 4 enemies within 4m of the target. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on hit"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14080000"
+ },
+ {
+  "id": "14090000",
+  "nombre": "Marking Shot",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 142-142 damage to a target within 20m. Moves the caster in the input direction and grants Precision for 7s. Precision: Increases Critical Hit by 300 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+5% Perfect Chance for the duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "30% chance to inflict Knock Back on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+3s duration"
+   },
+   {
+    "coste": 12,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   },
+   {
+    "coste": 50,
+    "efecto": "* * *"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14090000"
+ },
+ {
+  "id": "14110000",
+  "nombre": "Gale Arrow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 365-365 damage to up to 4 enemies within 4m of the target and grant Gale to the caster for 10s. Gale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5% 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+5s duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "50% chance to inflict Knock Back on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-10s cooldown"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14110000"
+ },
+ {
+  "id": "14120000",
+  "nombre": "Ambush Kick",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Moves behind a target within 5m and deals 857-857 damage and inflicts Knock Back. The caster moves back.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+5m Range"
+   },
+   {
+    "coste": 10,
+    "efecto": "10% of Max HP as Protective Shield for 5s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "50% chance to inflict Stun for 3s on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+50% Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Enter Stealth for 2s upon use"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "5m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14120000"
+ },
+ {
+  "id": "14130000",
+  "nombre": "Snare Shot",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 60-60 damage to up to 4 enemies within 4m of the target and inflict Slow, reducing Move Speed by 40% for 5s. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% Move Speed reduction"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Shackling Arrow\\] Chain Skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "+2s Slow and Root duration"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14130000"
+ },
+ {
+  "id": "14150000",
+  "nombre": "Illusory Arrow",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1099-1099 to a target within 20m and inflicts Blind for 3s. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+1s Blind duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "Inflicts Slow for 5s on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 25,
+    "efecto": "Inflict Exposed for 5s on hit"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14150000"
+ },
+ {
+  "id": "14160000",
+  "nombre": "Sealing Arrow",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1043-1043 damage to a target within 20m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "50% chance to inflict Root for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "-1000 Max Stamina for 5s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s Seal duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Seal chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14160000"
+ },
+ {
+  "id": "14170000",
+  "nombre": "Explosion Trap",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Sets an explosive trap at the caster's location. The trap lasts for 10 seconds and deals 344-344 damage with a 40% chance to inflict Stun for 3s on up to 4 enemies within 5m when stepped on. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Pulls enemies on explosion"
+   },
+   {
+    "coste": 8,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Extra damage after 3s on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "coste": 16,
+    "efecto": "+1 Consecutive Cast(s)"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14170000"
+ },
+ {
+  "id": "14180000",
+  "nombre": "Ensnaring Trap",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Sets an explosive trap at the caster's location. The trap lasts for 30 seconds and deals 1218-1218 damage and inflicts Airborne for 3s on up to 4 enemies within 5m. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Adds \\[Guerilla Strike\\] Chain Skill"
+   },
+   {
+    "coste": 10,
+    "efecto": "Removes up to 3 buffs"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1s Airborne duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14180000"
+ },
+ {
+  "id": "14190000",
+  "nombre": "Stealth",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Enter Stealth for 10s. Cannot be used in combat and the Stealth effect is removed upon entering combat.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Critical Hit on attack during Stealth"
+   },
+   {
+    "coste": 10,
+    "efecto": "+20% Move Speed for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "Available in combat"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10s Stealth duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "Grants \\[On the Hunt\\] which increases Critical Hit by 1000 for 5s when attacking during Stealth"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14190000"
+ },
+ {
+  "id": "14220000",
+  "nombre": "Bow of Blessing",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Hit by 200 for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+50% Multi-Hit Chance for duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+100 Accuracy for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "+20 Critical Damage Boost for duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+7% Double Chance for the duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "+5s duration"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14220000"
+ },
+ {
+  "id": "14260000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14260000"
+ },
+ {
+  "id": "14270000",
+  "nombre": "Arrow Storm",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1184-1184 damage to up to 4 enemies within 4m of the target with a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% max damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Slow for 10s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Up to -30s cooldown for \\[Arrow Storm\\] based on the number of targets hit"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14270000"
+ },
+ {
+  "id": "14310000",
+  "nombre": "Vaizel's Authority",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Perfect Chance for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Concentrated Fire\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Hunter's Soul\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% Weapon Damage Boost for the duration"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14310000"
+ },
+ {
+  "id": "14330000",
+  "nombre": "Arrow Scattershot",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 384-384 damage to a target afflicted with Stagger within 20m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14330000"
+ },
+ {
+  "id": "14340000",
+  "nombre": "Tempest Shot",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 112-112 damage to up to 4 enemies within 4m of the target. 1 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10% skill Critical Hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "5% chance to inflict Knock Back on Critical Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% Skill Speed"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14340000"
+ },
+ {
+  "id": "14350000",
+  "nombre": "Mother Nature's Breath",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 10s. Grants Mother Nature's Embrace for the duration. Mother Nature's Embrace: The caster has a 25% chance to absorb 25% of damage taken as HP. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+200 Critical Hit Resist for durtation"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Vigilant Eye\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "Removes and grants immunity to Damage over Time effects"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "+15% activation chance for Mother Nature's Embrace"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14350000"
+ },
+ {
+  "id": "14360000",
+  "nombre": "Explosive Arrow",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1240-1240 damage to up to 4 enemies within 4m. Increases damage by 20% to targets afflicted with Slow or Root. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "+10% additional damage to targets afflicted with Slow or Root"
+   },
+   {
+    "coste": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% additional damage to targets afflicted with Slow or Root"
+   },
+   {
+    "coste": 25,
+    "efecto": "-50% cooldown for \\[Explosive Arrow\\] when hitting targets afflicted with Slow or Root"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14360000"
+ },
+ {
+  "id": "14700000",
+  "nombre": "Assault Smite",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 902-902 damage with a 30% chance to inflict Stun for 3s to up to 4 enemies within 4m of the target. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to targets hit.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14700000"
+ },
+ {
+  "id": "14710000",
+  "nombre": "Vigilant Eye",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Evasion by 200, Max HP by 6%, and restores 85-102 HP on Evasion. Cooldown: 3s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14710000"
+ },
+ {
+  "id": "14720000",
+  "nombre": "Concentrated Fire",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 56-56 damage to a target taking Damage over Time. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14720000"
+ },
+ {
+  "id": "14730000",
+  "nombre": "Wind Vigor",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases Max Stamina by 15. Increases Move Speed by 10% for 1s when attacked. Cooldown: 5s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14730000"
+ },
+ {
+  "id": "14740000",
+  "nombre": "Focused Eye",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14740000"
+ },
+ {
+  "id": "14750000",
+  "nombre": "Hunter's Resolve",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Damage Boost by 6%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14750000"
+ },
+ {
+  "id": "14760000",
+  "nombre": "Unyielding Resolve",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Ailment-type Resist and Impact-type Resist by 11.5%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14760000"
+ },
+ {
+  "id": "14770000",
+  "nombre": "Rooting Eye",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 143-143 damage when landing an attack on a target afflicted with Slow or Root. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14770000"
+ },
+ {
+  "id": "14780000",
+  "nombre": "Melee Fire",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m. Has a 25% chance to deal 135-135 extra damage when landing an attack on a target beyond 5m. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14780000"
+ },
+ {
+  "id": "14790000",
+  "nombre": "Revitalization Contract",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14790000"
+ },
+ {
+  "id": "14800000",
+  "nombre": "Hunter's Soul",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 344-344 damage on a Critical Hit. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Bow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/14800000"
+ }
+]

@@ -1,0 +1,31 @@
+{
+ "titulo": "🗡️ Assassin · guía completa",
+ "etiquetas": [
+  "Assassin",
+  "Build",
+  "PvP"
+ ],
+ "apertura": "Guía de Assassin sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí.\n\n**La clase, en corto**\n· **Arma:** dagas dobles. Daño explosivo sobre un objetivo.\n· **Es la clase con más piezas que encajar del juego:** marcas, sigilo, ataques por la espalda y cadenas de aturdimiento, todo a la vez. Pega como nadie y se muere de dos golpes.",
+ "secciones": [
+  {
+   "archivo": "a1-insignias.png",
+   "texto": "**1 · Las Insignias, tu mecánica propia**\n\nNinguna otra clase tiene esto. El Assassin **graba marcas** en el enemigo, que duran **10 segundos**, y luego las detona.\n\n`Insignia Explosion` (10 s) hace más daño y aturde más cuanto más marcas lleve el rival encima. Y `Aerial Bind`, que normalmente manda por el aire al 50%, **con 5 marcas sube al 100%**.\n\nDe dónde salen —y ojo, que **solo `Savage Roar` las graba de serie**; las otras tres necesitan su mejora de nivel 8 o 10:\n\n· `Savage Roar` — 1, sin mejoras\n· `Ambush` **nv. 8** — 2, y solo si entra por la espalda\n· `Shadow Fall` **nv. 8** — 3\n· `Shadowstep` **nv. 10** — **5 de golpe**\n\n⚠️ Caducan a los 10 segundos. Acumular sin detonar no sirve de nada."
+  },
+  {
+   "archivo": "a2-espalda.png",
+   "texto": "**2 · Por la espalda y desde la sombra**\n\nEl Assassin no pega de frente, se coloca. `Shadowstrike` **salta detrás** del rival y lo aturde. `Flash Slice` cruza al otro lado y ciega. `Ambush` hace **+30% de daño si entra por la espalda**, y la pasiva `Rear Smite` premia además cada golpe a la espalda.\n\nY luego está el sigilo: `Shadow Walk` da 20 segundos de invisibilidad, aunque **solo fuera de combate**… hasta que le pones su mejora de nivel 15, que lo habilita en plena pelea.\n\nColocarse no es estética en esta clase: es daño."
+  },
+  {
+   "archivo": "a3-supervivencia.png",
+   "texto": "**3 · Cómo no morirte**\n\nEres de cristal. Estas son tus cuatro salidas:\n\n· `Evasion Stance` (20 s) — esquiva **todo** un instante, y te devuelve 110 de maná y aguante **una vez** al esquivar con él. No es solo defensa: también te sostiene los recursos.\n· `Smoke Bomb` (30 s) — lo ciega 5 segundos\n· `Shadowstep` (45 s) — pegas, retrocedes y desapareces 3 segundos\n· `Defiance` (60 s) — te libera si te tienen preso\n\n⚠️ Ceguera **no** es aturdimiento: el cegado se sigue moviendo y puede pegarte de chiripa. `Smoke Bomb` te da tiempo, no impunidad."
+  },
+  {
+   "archivo": "a4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nDos caminos claros, y conviene elegir uno:\n\n**Alimentar las marcas** — `Shadowstep` **nv. 10** graba 5 de golpe, `Insignia Explosion` **nv. 8** conserva 2 tras detonar (así nunca empiezas de cero), `Insignia Explosion` **nv. 16** le quita 3 s de recarga.\n\n**Encadenar aturdimientos** — `Flash Slice` **nv. 16** aturde al 50% a quien esté cegado, `Whirlwind Slice` **nv. 16** tiene un 25% de resetearse al esquivar, `Shadow Fall` **nv. 16** sirve también sobre cegados (y no solo sobre aturdidos).\n\nEse último abre mucho la clase: te deja usar el castigo tras un `Smoke Bomb`, no solo tras un aturdimiento.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "a9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Esta no hace NADA en PvE**, porque contra un PNJ el estado ya entra al 100% y subir su probabilidad es pasar de 100% a 100%. En PvP, de las mejores:\n\n· `Whirlwind Slice` **nv. 12** — +20% Stun Chance\n\n**Esta vale siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y estas 3 son las de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **ignora bloqueo y evasión** — `Quick Slice` nv. 16\n· **rompe escudos** — `Ambush` nv. 8 · `Infiltrate` nv. 8\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Aerial Bind` — 🔵 nv. 25\n· `Illusive Clone` — 🔴 nv. 5\n· `Savage Fang` — 🟢 nv. 15\n· `Spiral Slice` — 🔵 nv. 25\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

@@ -1,0 +1,1496 @@
+[
+ {
+  "id": "15000100",
+  "nombre": "Dodge",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "0.5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15000100"
+ },
+ {
+  "id": "15710000",
+  "nombre": "Fire Mark",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Has a 20% chance to inflict Fire Mark for 5s on landing a Fire attack. Fire Mark: Has a 20% chance to take 32-32 extra damage when taking Fire damage while afflicted with Fire Mark. Cooldown: 1s",
+  "dano": "32",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15710000"
+ },
+ {
+  "id": "15040000",
+  "nombre": "Firestorm",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 114-114 Fire damage to a target within 20m. 5 Stagger Gauge Damage",
+  "dano": "114",
+  "cooldown": "5s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "-60% Incoming Heal for 5s on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-2s [Hellfire] cooldown per fireball"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+15% damage per fireball, up to +75%"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15040000"
+ },
+ {
+  "id": "15210000",
+  "nombre": "Flame Arrow",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 62-62 Fire damage to a target within 20m and restores 100 MP.",
+  "dano": "62",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 1% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Inflicts Fire Mark for 5s on landing [Pyroclasm]"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Reset [Blaze] cooldown on landing [Pyroclasm]"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15210000"
+ },
+ {
+  "id": "15090000",
+  "nombre": "Ice Chain",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 79-79 Water damage to up to 4 enemies within 4m of the target and inflicts Slow, reducing Move Speed by 40% for 5s. 2 Stagger Gauge Damage",
+  "dano": "79",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-20% MP Cost"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-1s [Winter's Shackles] cooldown on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "5% chance to inflict Frost for 2s on landing [Cold Wave]"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15090000"
+ },
+ {
+  "id": "15000000",
+  "nombre": "Sorcerer Weapon Equip",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "Allows equipping Sorcerer weapons. [Applicable weapons] Spellbook, Jewel",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15000000"
+ },
+ {
+  "id": "15280000",
+  "nombre": "Bittercold Wind",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 3,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals 238-238 Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s. 100% chance to inflict Root on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "238",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+1s [Bittercold Wind] summon duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Pull effect"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-1s [Frost] cooldown on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15280000"
+ },
+ {
+  "id": "15050000",
+  "nombre": "Blaze",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 40,
+  "descripcion": "Deals 198-198 Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP. 7 Stagger Gauge Damage",
+  "dano": "198",
+  "cooldown": "5s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 3% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% MP restored"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Delayed Damage after 3s"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-3s [Wish of Concentration] cooldown on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15050000"
+ },
+ {
+  "id": "15010000",
+  "nombre": "Flame Scattershot",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 5,
+  "maxNivel": 40,
+  "descripcion": "Deals 120-120 Fire damage to a target afflicted with Stagger within 20m.",
+  "dano": "120",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 5% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15010000"
+ },
+ {
+  "id": "15720000",
+  "nombre": "Robe of Earth",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 6,
+  "maxNivel": 40,
+  "descripcion": "Increases Max MP by 7% and Natural MP Regen by 5. Increases Critical Hit by 105 when MP is 50% or more.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15720000"
+ },
+ {
+  "id": "15150000",
+  "nombre": "Frost",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 7,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 178-178 Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s. 100% chance to inflict Frost on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "178",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Restores 200 MP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Reset [Frost Burst] cooldown on landing Frost"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+25% PC target Frost Chance"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+1s Frost duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15150000"
+ },
+ {
+  "id": "15110000",
+  "nombre": "Winter's Shackles",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 8,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 275-275 Water damage to up to 4 enemies within 4m, inflicting Slow for 3s.",
+  "dano": "275",
+  "cooldown": "45s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "30% chance to inflict Frost for 3s on landing [Winter's Shackles]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Adds [Winter's Illusion] Chain Skill"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-15s [Winter's Shackles] cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15110000"
+ },
+ {
+  "id": "15730000",
+  "nombre": "Cold Snap",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 9,
+  "maxNivel": 40,
+  "descripcion": "Has a 50% chance to deal 43-43 extra damage when landing an attack on a target afflicted with Slow. Cooldown: 1s",
+  "dano": "43",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15730000"
+ },
+ {
+  "id": "15220000",
+  "nombre": "Frost Burst",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 10,
+  "maxNivel": 40,
+  "descripcion": "Selects a target afflicted with Frost within 20m and deals 395-395 Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity. 7 Stagger Gauge Damage",
+  "dano": "395",
+  "cooldown": "10s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 7% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "75% chance to Knock Back 2m"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "50% chance to reset cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15220000"
+ },
+ {
+  "id": "15220037",
+  "nombre": "Frost Burst",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 10,
+  "maxNivel": 1,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15220037"
+ },
+ {
+  "id": "15740000",
+  "nombre": "Robe of Flame",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 11,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15740000"
+ },
+ {
+  "id": "15310000",
+  "nombre": "Wish of Concentration",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 12,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Attack by 10% and Accuracy by 100 for 10s.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Reduces MP Cost by 10%"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10% additional Attack"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+500 Max MP"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+10% Combat Speed"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-10s all skill cooldowns"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15310000"
+ },
+ {
+  "id": "15760000",
+  "nombre": "Absorb Essence",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 13,
+  "maxNivel": 40,
+  "descripcion": "Increases Ailment-type and Mental-type Chance by 10.7% and restores 25 MP on landing an attack. Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15760000"
+ },
+ {
+  "id": "15060000",
+  "nombre": "Hellfire",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 14,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 1137-3412 Fire damage to up to 4 enemies within 4m of the target. Max 3 Charge Levels 20-35 Stagger Gauge Damage",
+  "dano": "1137",
+  "cooldown": "45s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Fire Damage over Time for 10s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-15s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15060000"
+ },
+ {
+  "id": "15770000",
+  "nombre": "Grace of Resistance",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 15,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Mental-type Resist and Impact-type Resist by 11.2%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15770000"
+ },
+ {
+  "id": "15240000",
+  "nombre": "Defiance",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 16,
+  "maxNivel": 40,
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity Not affected by cooldown reduction effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Adds [Curse: Old Tree] Chain Skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 1000 Stamina on using [Defiance]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 20% HP on using [Defiance]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15240000"
+ },
+ {
+  "id": "15750000",
+  "nombre": "Robe of Cold",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 17,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Defense by 1% and Critical Hit Resist by 55 and inflicts Slow on an enemy when struck by them, reducing the enemy's Move Speed by 25% for 2s. Cooldown: 10s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15750000"
+ },
+ {
+  "id": "15780000",
+  "nombre": "Grace of Enhancement",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 21,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal 106-106 damage on landing an attack. Cooldown: 1s",
+  "dano": "106",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15780000"
+ },
+ {
+  "id": "15230000",
+  "nombre": "Arctic Armor",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases the caster's PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and grants a 5% chance to inflict Frost for 3s on enemies that attack the caster from within 7m for 10s. Grants Magic Displacement while MP is 50% or more for the duration. Magic Displacement: Damage taken by the caster is divided, directing 50% to HP and 10% to MP. Unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Impact-type Resist"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Absorb Essence] effect"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Robe of Cold] effect"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% additional PvE Damage Tolerance and +10% additional PvP Damage Tolerance increase"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Changes Magic Displacement effect to -40% HP and -8% MP"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15230000"
+ },
+ {
+  "id": "15700000",
+  "nombre": "Assault Bombardment",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 886-886 damage to up to 4 enemies within 4m, with a 30% chance to inflict Frost for 3s. 100% chance to land Frost on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+  "dano": "886",
+  "cooldown": "120s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Frost Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15700000"
+ },
+ {
+  "id": "15200000",
+  "nombre": "Cold Storm",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 945-945 Water damage, inflicting Slow on up to 4 enemies within 5m. Summons a Cold Storm at the target's location for 7s, inflicting Frostbite. Frostbite: Deals 472-472 Water Damage over Time every 1s for 10s. The Damage over Time amount increases when targets move. 20 Stagger Gauge Damage",
+  "dano": "945",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Enhanced Frostbite - Grants extra damage when landing an attack"
+   },
+   {
+    "nivel": 10,
+    "efecto": "30% chance to inflict Root for 2s"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+3s [Cold Storm] summoning duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10s Frostbite duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Has a 5% chance to inflict Frost for 3s on attacking target with Frostbite"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15200000"
+ },
+ {
+  "id": "15140000",
+  "nombre": "Curse: Tree",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Polymorphs a target within 20m into a tree for 10s, reducing their Fire Tolerance by 20%, while the caster moves back. Polymorph is canceled if the target is attacked. 20 Stagger Gauge Damage",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Increases number of hits required to remove Polymorph"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-200 Block, Evasion for 10s when Polymorph ends"
+   },
+   {
+    "nivel": 15,
+    "efecto": "-20% Impact-type Resist for 10s when Polymorph ends"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Inflicts debuff even if Polymorph is removed through attacks"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+50% Polymorph Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15140000"
+ },
+ {
+  "id": "15320000",
+  "nombre": "Delayed Explosion",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1116-1116 Fire damage to a target within 20m after 4s. Increases damage taken from the caster by 15% during the delay.",
+  "dano": "1116",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Restores 200 MP"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-10s [Delayed Explosion] cooldown"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10% additional Damage Taken"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion and lands as a Critical Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15320000"
+ },
+ {
+  "id": "15360000",
+  "nombre": "Divine Burst",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1140-1140 Fire damage to a target within 20m. 50 Stagger Gauge Damage",
+  "dano": "1140",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Absorbs 10% HP"
+   },
+   {
+    "nivel": 15,
+    "efecto": "75% chance to inflict Knock Back"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Inflict Stun for 3s after Knock Back"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+100% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15360000"
+ },
+ {
+  "id": "15400000",
+  "nombre": "Element Enhancement",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases the caster's Fire Attack by 20% and Water Attack by 20% for 10s.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+200 Accuracy"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Robe of Flame] effect"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Grace of Enhancement] effect"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10% additional Fire and Water Attack"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+7% Double chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15400000"
+ },
+ {
+  "id": "15390000",
+  "nombre": "Fire Wall",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Summon a Fire Wall that lasts for 3s at the location of a target within 20m. Deals 1300-1300 Fire damage and inflicts Embers on up to 4 enemies within the Fire Wall area (1x10m) for 10s. Embers: Deals 650-650 Fire Damage over Time every 1s for 10s. Damage over Time amount increases when targets move.",
+  "dano": "1300",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Enhanced Embers - Grants extra damage when landing an attack"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+2m wall width"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+2s [Fire Wall] summoning duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10s Embers duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% extra damage on attacking targets inflicted with Embers"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15390000"
+ },
+ {
+  "id": "15120000",
+  "nombre": "Glacial Smite",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 1477-1477 Water damage to up to 4 enemies within 4m of the target. 20 Stagger Gauge Damage",
+  "dano": "1477",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 15,
+    "efecto": "50% chance to inflict Frost for 3s"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+25% Frost Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15120000"
+ },
+ {
+  "id": "15410000",
+  "nombre": "Hibernation",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Grants Hibernation to the caster for 5s. The caster becomes immune to damage and status effects while Hibernation is active. Using [Remove Hibernation] while Hibernation is active immediately removes the effect, restores 20% Max HP, and moves the caster backward. Cannot block certain powerful attacks and is unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "180s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+100% Incoming Heal"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Restores 5% Max HP every 1s for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+2s duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Triggers when afflicted with Impact-type status"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Has a 75% chance to inflict Frost on up to 4 enemies within 4m of the caster for 3s when using [Remove Hibernation]"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15410000"
+ },
+ {
+  "id": "15300000",
+  "nombre": "Lumiel's Space",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 998-998 damage to up to 4 enemies within 4m of the target, with a 75% chance to inflict Airborne for 3s. 100% chance to inflict Airborne on NPC targets.",
+  "dano": "998",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Adds [The Depths] Chain Skill"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+1s [The Depths] Knockdown duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30s [Lumiel's Space] cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "x2 Airborne Chance on Slow or Root targets"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15300000"
+ },
+ {
+  "id": "15410057",
+  "nombre": "Remove Hibernation",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 22,
+  "maxNivel": 1,
+  "descripcion": "Immediately removes the caster's Hibernation status and the caster moves back.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15410057"
+ },
+ {
+  "id": "15130000",
+  "nombre": "Soul Freeze",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1037-1037 Water damage to a target within 20m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+  "dano": "1037",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "50% chance to inflict Root for 5s"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-1,000 Stamina"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+2s Seal duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% Seal chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15130000"
+ },
+ {
+  "id": "15160000",
+  "nombre": "Steel Barrier",
+  "clase": "Sorcerer",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Grants a 16% Max HP Protective Shield for 60s. Increases PvE Damage Tolerance by 10% and PvP Damage Tolerance by 5% for the shield's duration, and restores 300 Stamina when the effect ends.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% Move Speed"
+   },
+   {
+    "nivel": 10,
+    "efecto": "HP Regen at fixed intervals"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10% additional PvE Damage Tolerance and +5% additional PvP Damage Tolerance increase"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "No Back damage occurs"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15160000"
+ },
+ {
+  "id": "15790000",
+  "nombre": "Revitalization Contract",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 23,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15790000"
+ },
+ {
+  "id": "15800000",
+  "nombre": "Vitality Evaporation",
+  "clase": "Sorcerer",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 25,
+  "maxNivel": 40,
+  "descripcion": "Deals 261-261 damage on hit if the target's HP is above 70%. Cooldown: 1s",
+  "dano": "261",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15800000"
+ },
+ {
+  "id": "15030000",
+  "nombre": "Burst",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 66-66 Fire damage to a target within 20m and restores 100 MP.",
+  "dano": "66",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15030000"
+ },
+ {
+  "id": "15080000",
+  "nombre": "Cold Snap",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "A “?” is a value the client points at through a reference missing from its own data (2% of them) — everything else on this page is exact.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15080000"
+ },
+ {
+  "id": "15100000",
+  "nombre": "Cold Wave",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 86-86 Water damage to up to 4 enemies within 4m of the target. 2 Stagger Gauge Damage",
+  "dano": "86",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15100000"
+ },
+ {
+  "id": "15340000",
+  "nombre": "Curse: Old Tree",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Polymorphs a target within 20m into a tree for 7s, reducing their Fire Tolerance by 20%, while the caster moves back. Polymorph is canceled if the target is attacked.",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15340000"
+ },
+ {
+  "id": "15020000",
+  "nombre": "Firebomb",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Throws a firebomb to deal damage. Target takes ?-? Damage over Time every 1s for ?. The caster moves 6m in the entered direction.",
+  "dano": null,
+  "cooldown": "12s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15020000"
+ },
+ {
+  "id": "15290000",
+  "nombre": "Illusion",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Covers the caster with Illusion Aura to resist one Skill Attack for ?.",
+  "dano": null,
+  "cooldown": "20s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15290000"
+ },
+ {
+  "id": "15380000",
+  "nombre": "Lumiel's Authority",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Removes 1 Status Effect from the caster and nearby party members within 40m and grants Status Effect Immunity for 3s",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15380000"
+ },
+ {
+  "id": "15350000",
+  "nombre": "Magic Energy Blast",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "Launches explosive magic at a Staggered target, dealing damage.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15350000"
+ },
+ {
+  "id": "15250000",
+  "nombre": "Pyroclasm",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 73-73 Fire damage to a target within 20m and restores 120 MP.",
+  "dano": "73",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15250000"
+ },
+ {
+  "id": "15270000",
+  "nombre": "Summon Flame",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "A “?” is a value the client points at through a reference missing from its own data (2% of them) — everything else on this page is exact.",
+  "dano": null,
+  "cooldown": "1s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15270000"
+ },
+ {
+  "id": "15180000",
+  "nombre": "Vaizel's Wisdom",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 1,
+  "descripcion": "With Vaizel's Grace, gains wisdom to increase Spell Action Speed by ?% and all Elemental Boosts by ?%.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15180000"
+ },
+ {
+  "id": "15330000",
+  "nombre": "Winter's Illusion",
+  "clase": "Sorcerer",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 357-357 Water damage to up to 4 enemies within 4m of the target.",
+  "dano": "357",
+  "cooldown": "0.5s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/15330000"
+ }
+]

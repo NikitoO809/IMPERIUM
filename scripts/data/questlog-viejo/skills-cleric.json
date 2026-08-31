@@ -1,0 +1,1008 @@
+[
+ {
+  "id": "17440000",
+  "nombre": "Noble Aura",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Summons a Noble Aura near the caster that lasts for 300s. The Aura follows the caster and attacks their target together. Deals 429-429 damage to a target within 20m. Aura Attack Cooldown: 2s",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+200 Aura Critical Hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "+20 damage to targets afflicted with Debilitating Mark"
+   },
+   {
+    "coste": 15,
+    "efecto": "+30% damage to targets with Incapacitated Immunity"
+   },
+   {
+    "coste": 20,
+    "efecto": "-1s Aura attack cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "+30% additional damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17440000"
+ },
+ {
+  "id": "17010000",
+  "nombre": "Earth's Retribution",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 49-49 Earth damage to a target within 20m and restores 110 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% \\[Discharge\\] Chain Skill trigger chance"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-7s \\[Bolt\\] cooldown on landing \\[Discharge\\]"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17010000"
+ },
+ {
+  "id": "17040000",
+  "nombre": "Judgment Thunder",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 74-74 Wind damage to up to 4 enemies within 4m of the target. 2 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "-10% enemy Combat Speed for 5s on landing \\[Divine Punishment\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "10% chance to inflict Root for 2s on landing \\[Divine Punishment\\]"
+   },
+   {
+    "coste": 16,
+    "efecto": "Activates \\[Divine Punishment\\] 1 extra time"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17040000"
+ },
+ {
+  "id": "17060000",
+  "nombre": "Bolt",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 783-2351 Wind damage to up to 4 enemies within 4m of the target. Max 3 Charge Levels 20-35 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "30% chance to inflict Stun for 3s when fully charged"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "coste": 12,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Reset cooldown on defeating an enemy with \\[Bolt\\]"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17060000"
+ },
+ {
+  "id": "17070000",
+  "nombre": "Chain of Torment",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 138-138 Earth damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Tolerance by 5%, PvP Damage Tolerance by 2.5%, and deals 17 Damage over Time every 1s for 10s. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Slows target for 5s"
+   },
+   {
+    "coste": 8,
+    "efecto": "+3s Damage over Time"
+   },
+   {
+    "coste": 8,
+    "efecto": "Has a 20% chance to inflict Knockdown on the target for 3s"
+   },
+   {
+    "coste": 12,
+    "efecto": "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17070000"
+ },
+ {
+  "id": "17080000",
+  "nombre": "Debilitating Mark",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 59-59 Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals 7 Damage over Time every 1s for 10s. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Removes MP Consumed and restores 150 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "-15% target Defense for duration of Damage over Time"
+   },
+   {
+    "coste": 8,
+    "efecto": "Has a 20% chance to inflict Stun on the target for 3s"
+   },
+   {
+    "coste": 12,
+    "efecto": "+5% PvE Damage Boost reduction and +2.5% PvP Damage Boost reduction"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17080000"
+ },
+ {
+  "id": "17090000",
+  "nombre": "Light of Regeneration",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Restores 666-0 HP every 2s for 30s to the caster and party members within 25m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+5% Defense while healing"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% amount healed when HP is 50% or less"
+   },
+   {
+    "coste": 8,
+    "efecto": "+5% Incoming Heal during healing"
+   },
+   {
+    "coste": 12,
+    "efecto": "+5% Move Speed during healing"
+   },
+   {
+    "coste": 16,
+    "efecto": "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17090000"
+ },
+ {
+  "id": "17100000",
+  "nombre": "Healing Light",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Restores 240-264 HP to the caster and the party member with the lowest HP within 25m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+2 consecutive uses"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% amount healed when HP is 50% or less"
+   },
+   {
+    "coste": 8,
+    "efecto": "50% chance to remove 1 debuff"
+   },
+   {
+    "coste": 12,
+    "efecto": "+4% HP restored"
+   },
+   {
+    "coste": 16,
+    "efecto": "-2s cooldown"
+   },
+   {
+    "coste": 50,
+    "efecto": "* * *"
+   }
+  ],
+  "cooldown": "6s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17100000"
+ },
+ {
+  "id": "17120000",
+  "nombre": "Radiant Recovery",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Restores 473-521 HP and removes 1 debuff for the caster and party members within 25m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Removes up to 2 debuffs"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "-3s cooldown"
+   },
+   {
+    "coste": 12,
+    "efecto": "+10% Incoming Heal for 10s"
+   },
+   {
+    "coste": 16,
+    "efecto": "Restores extra 10% HP"
+   }
+  ],
+  "cooldown": "12s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17120000"
+ },
+ {
+  "id": "17150000",
+  "nombre": "Divine Aura",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Summons a Divine Aura near the caster that lasts for 5s. The Aura is stationary and periodically deals 357 Earth damage to a selected target within 20m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% \\[Divine Aura\\] attacking speed"
+   },
+   {
+    "coste": 12,
+    "efecto": "+3s \\[Divine Aura\\] duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "-10s cooldown"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17150000"
+ },
+ {
+  "id": "17160000",
+  "nombre": "Benevolence",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Grants Benevolence to the caster for 20s. Restores 113-125 HP every 2s to the caster and party members within 25m for the duration.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10s duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "Restores 200 Stamina every 5s for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "Restores 4% HP every 5s for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "Cleansing effect every 5s for the duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1s Stamina, HP restoration, and Cleansing effect interval"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17160000"
+ },
+ {
+  "id": "17190000",
+  "nombre": "Root",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 939-939 Earth damage to up to 4 enemies within 4m of the target with a 75% chance to inflict Root for 10s. 100% chance to inflict Root on NPC targets. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 10,
+    "efecto": "+2s Root duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "+25% Root chance"
+   },
+   {
+    "coste": 20,
+    "efecto": "x2 Damage over Time on Root targets"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17190000"
+ },
+ {
+  "id": "17240000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17240000"
+ },
+ {
+  "id": "17270000",
+  "nombre": "Salvation",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "The caster is immune to damage and status effects for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell effects, and Unstoppable effect cannot be applied for 30s if Invincibility stacking is blocked.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+100% Incoming Heal"
+   },
+   {
+    "coste": 10,
+    "efecto": "Restores 20% of Max HP at the end of \\[Salvation\\]"
+   },
+   {
+    "coste": 15,
+    "efecto": "Grants \\[Salvation\\] base effect to the party member with the lowest HP"
+   },
+   {
+    "coste": 20,
+    "efecto": "Triggers \\[Salvation\\] when afflicted with Impact-type status"
+   },
+   {
+    "coste": 25,
+    "efecto": "Grants Salvation's base effect to all party members"
+   }
+  ],
+  "cooldown": "150s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17270000"
+ },
+ {
+  "id": "17280000",
+  "nombre": "Power Burst",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1154-1154 Earth damage to a target within 20m. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 10,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "75% chance to inflict Knock Back"
+   },
+   {
+    "coste": 20,
+    "efecto": "75% chance to inflict Stun for 3s"
+   },
+   {
+    "coste": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17280000"
+ },
+ {
+  "id": "17290000",
+  "nombre": "Absolution",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Removes up to 2 debuffs and restores 2003-2203 HP to the caster and party members within 25m.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "Removes all debuffs"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% HP restored"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 3% HP every 2s for 10s"
+   },
+   {
+    "coste": 25,
+    "efecto": "Immediately restores 10% HP and +3% additional Heal over Time"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17290000"
+ },
+ {
+  "id": "17300000",
+  "nombre": "Voice of Doom",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1100-1100 Earth damage to up to 4 enemies within 4m of the target. Deals 143 damage every 1s and reduces enemy Incoming Heal and HP Potion Recovery by 60% for 20s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Removes Protective Shields on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "-200 Critical Hit Resist for duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "-50% Damage over Time intervals"
+   },
+   {
+    "coste": 25,
+    "efecto": "-20% target's Status Effect Resist for the duration"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17300000"
+ },
+ {
+  "id": "17350000",
+  "nombre": "Condemnation",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m afflicted with Chain of Torment and deal 317-317 Earth damage to up to 4 enemies within 4m of the target. 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Restores 100 MP on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "20% chance to inflict Root for 3s"
+   },
+   {
+    "coste": 12,
+    "efecto": "75% chance to reset cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Multi-Hit on hit"
+   }
+  ],
+  "cooldown": "3s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17350000"
+ },
+ {
+  "id": "17370000",
+  "nombre": "Lightning Strike Scattershot",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 588-588 damage to a target afflicted with Stagger within 20m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17370000"
+ },
+ {
+  "id": "17390000",
+  "nombre": "Summon Resurrection",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Resurrects a fallen party member within 40m near the caster.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-1s casting time"
+   },
+   {
+    "coste": 10,
+    "efecto": "Invincible for 3s after resurrection"
+   },
+   {
+    "coste": 15,
+    "efecto": "Restores 20% of Max HP"
+   },
+   {
+    "coste": 20,
+    "efecto": "Invincible for 5s after resurrection"
+   },
+   {
+    "coste": 25,
+    "efecto": "Grants Resurrection in place effect to the caster for 60s"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17390000"
+ },
+ {
+  "id": "17400000",
+  "nombre": "Earth Punishment",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1186-1186 Earth damage to a target within 20m and 118 damage every 1s for 10s. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "[Condemnation\\] lands as Critical Hit on targets afflicted with \\[Earth Punishment\\]"
+   },
+   {
+    "coste": 10,
+    "efecto": "+7% \\[Earth's Blessing\\] Double Chance to caster and party members"
+   },
+   {
+    "coste": 15,
+    "efecto": "+7% \\[Earth's Blessing\\] Attack and Defense to caster and party members"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10s \\[Earth Punishment\\] and \\[Earth's Blessing\\] duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "[Earth's Blessing\\] grants extra damage on landing attack"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17400000"
+ },
+ {
+  "id": "17410000",
+  "nombre": "Light of Protection",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with the Damage Boost effect from the Chanter skill \\[Undefeated Mantra\\] and only the highest skill level effect applies. If both skills are the same level, Undefeated Mantra will be applied.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "coste": 10,
+    "efecto": "+100 Accuracy"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% Max HP"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% Perfect Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "+5% Double Chance"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17410000"
+ },
+ {
+  "id": "17420000",
+  "nombre": "Yustiel's Power",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 10s for the caster and party members within 40m. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "10% Max HP Protective Shield"
+   },
+   {
+    "coste": 10,
+    "efecto": "+100 Block, Evasion"
+   },
+   {
+    "coste": 15,
+    "efecto": "+20% Status Effect Resist"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "Additional 20% Max HP Protective Shield"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17420000"
+ },
+ {
+  "id": "17430000",
+  "nombre": "Prayer of Amplification",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "x1.5 \\[Empyrean Lord's Grace\\] effect for the duration",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Empyrean Lord's Grace\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Earth's Grace\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+5% additional Attack effect"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% PvE Damage Boost, +5% PvP Damage Boost"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17430000"
+ },
+ {
+  "id": "17700000",
+  "nombre": "Assault Mark",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 891-891 damage to up to 4 enemies within 4m with a 30% chance to inflict Root. 100% chance to land Root on NPC targets. Increases Defense by max 20% proportional to hit targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Root Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17700000"
+ },
+ {
+  "id": "17710000",
+  "nombre": "Warm Benediction",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Max HP by 6% and Max MP by 7.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17710000"
+ },
+ {
+  "id": "17720000",
+  "nombre": "Empyrean Lords' Benediction",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Block by 200 and restores 53-64 HP on Block. Cooldown: 3s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17720000"
+ },
+ {
+  "id": "17730000",
+  "nombre": "Empyrean Lord's Grace",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Hit by 100, Double Chance by 0.2% and deals 71-71 extra damage on landing an attack on a target. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17730000"
+ },
+ {
+  "id": "17740000",
+  "nombre": "Healing Enhancement",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Heal Boost by 10% plus extra proportional to Attack.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17740000"
+ },
+ {
+  "id": "17750000",
+  "nombre": "Immortal Veil",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Defense by 2% and Critical Hit Resist by 100.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17750000"
+ },
+ {
+  "id": "17760000",
+  "nombre": "Heal Block",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Has a 7% chance to reduce the target's Incoming Heal by 32% for 5s on landing an attack. Cooldown: 5s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17760000"
+ },
+ {
+  "id": "17770000",
+  "nombre": "Prayer of Concentration",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Forms a Protective Shield which blocks 424 damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less. Cooldown: 60s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17770000"
+ },
+ {
+  "id": "17780000",
+  "nombre": "Earth's Grace",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Damage Boost by 3% and Accuracy by 100.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17780000"
+ },
+ {
+  "id": "17790000",
+  "nombre": "Survival Willpower",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Damage Tolerance Increase Cooldown: 60s Status Effect Resist Increase Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17790000"
+ },
+ {
+  "id": "17800000",
+  "nombre": "Radiant Benediction",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Restores 480-576 HP to the caster and party members within 40m on landing an attack. Cooldown: 5s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Mace",
+  "url": "https://questlog.gg/aion-2/en/db/skill/17800000"
+ }
+]

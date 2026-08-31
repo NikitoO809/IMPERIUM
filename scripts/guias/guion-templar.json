@@ -1,0 +1,31 @@
+{
+ "titulo": "🛡️ Templar · guía completa",
+ "etiquetas": [
+  "Templar",
+  "Build",
+  "PvE"
+ ],
+ "apertura": "Guía de Templar sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí: esta guía da por sabido el esquema de estado → castigo.\n\n**La clase, en corto**\n· **Arma:** espada y escudo. Es el tanque dedicado del juego.\n· **Su trabajo no es aguantar y ya:** es aturdir, arrastrar enemigos donde quiere y comerse el daño de sus compañeros.",
+ "secciones": [
+  {
+   "archivo": "t1-cadena.png",
+   "texto": "**1 · La ventana de Judgment**\n\nEsto cambió y conviene saberlo: **`Judgment` ya no pide que el enemigo esté aturdido**. Lo que pasa es que **no siempre está disponible**: se enciende unos segundos después de que uses otra cosa.\n\nLo abren cuatro:\n· `Shield Smite` → 2 s · `Warding Strike` → 2 s\n· `Shield Rush` → 2 s · `Doom Shield` → **3 s**\n\nAsí que `Judgment` no se aprieta cuando te apetece: se aprieta **dentro de la ventana que acabas de abrir**. Tiene 5 s de recarga y, con su mejora de nivel 16, **se queda sin recarga ninguna**.\n\nEl que sí exige estado es **`Annihilate`**: dice literalmente *«a target afflicted with Stun or Knockdown»*, o sea que **sobre un enemigo de pie no se puede lanzar**.\n\nPara eso abres dejándolo quieto: `Shield Smite` aturde al 60% y `Doom Shield` derriba al 75% —contra un PNJ, las dos al 100%—. Y `Doom Shield` te deja además un escudo que aguanta el **5% de tu vida máxima** durante 5 s."
+  },
+  {
+   "archivo": "t2-tanque.png",
+   "texto": "**2 · El trabajo de tanque**\n\nLa parte que más se descuida. `Taunt` no es solo daño: mete **+20.000 de amenaza** y encoge al enemigo (−200 de precisión y −10% de ataque).\n\nPero lo que de verdad separa a un buen Templar es **arrastrar**:\n\n· `Poach` (15 s) — tira de un enemigo hasta ti y lo enraíza\n· `Grapple` (90 s) — tira de **hasta 4 enemigos** en 7 metros y los enraíza\n\nEso no es daño, es colocación: saca al enemigo de encima de tu sanador y lo pone donde el grupo ya está pegando. Bien usado vale más que cualquier golpe."
+  },
+  {
+   "archivo": "t3-grupo.png",
+   "texto": "**3 · Lo que aportas al grupo**\n\n`Comrade in Arms` (120 s) es la habilidad que convierte al Templar en el pilar de una party: durante **6 segundos**, **cada golpe que reciba un compañero a menos de 40 m se parte en dos, y la mitad te la comes tú**.\n\nSon 6 segundos, no diez: es una ventana corta y hay que elegirla bien. Se guarda para el momento en que el grupo va a comer daño sí o sí — la explosión del jefe, la entrada a una pelea grande.\n\n⚠️ **Avisa a tu sanador antes de usarlo.** Vas a absorber daño de todos a la vez; si no lo sabe, el que se muere eres tú."
+  },
+  {
+   "archivo": "t4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nEn el Templar las mejoras que más cambian la clase hacen dos cosas: **quitarle la recarga al castigo** y **convertir la defensa en ataque**.\n\n· `Judgment` **nv. 16** → sin recarga ninguna\n· `Doom Shield` **nv. 5** → resetea la recarga de `Annihilate`\n· `Battlefield Banner` **nv. 15** → +20% al ataque que sale de tu defensa\n\nEsa última es la clave del Templar ofensivo: `Battlefield Banner` te sube el ataque **en proporción a tu defensa**, así que el equipo defensivo también te pega más fuerte.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "t9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Estas 2 no hacen NADA en PvE**, porque contra un PNJ el estado ya entra al 100% y subir su probabilidad es pasar de 100% a 100%. En PvP, de las mejores:\n\n· `Shield Rush` **nv. 16** — +25% Stun Chance\n· `Annihilate` **nv. 8** — +20% Knockdown Chance\n\n**Estas 3 valen siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Warding Strike` **nv. 12** — Adds PvE Damage Tolerance and PvP Damage Tolerance…\n· `Warding Strike` **nv. 16** — +10% PvE Damage Tolerance and +5% PvP Damage…\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y estas 3 son las de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **le baja la curación al rival** — `Debilitating Smash` nv. 8\n· **ignora bloqueo y evasión** — `Debilitating Smash` nv. 12 · `Punishment` nv. 16\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Assault Fury` — 🔴 nv. 20\n· `Doom Shield` — 🔴 nv. 20 · 🔵 nv. 25\n· `Empyrean Lord's Punishment` — 🟢 nv. 15 · 🔴 nv. 20\n· `Grapple` — 🟢 nv. 20\n· `Nezekan's Shield` — 🟢 nv. 15\n· `Noble Armor` — 🟢 nv. 25\n· `Second Skin` — 🟢 nv. 20\n· `Taunt` — 🟢 nv. 5\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

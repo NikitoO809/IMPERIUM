@@ -1,0 +1,1031 @@
+[
+ {
+  "id": "11360000",
+  "nombre": "Rush Strike",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Move to a target within 10m and deal 660-660 damage with a 50% chance to inflict Knockdown for 3s after using \\[Dodge\\] or while flying. 100% chance to inflict Knockdown on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Restores 300 Stamina on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to Charge Skill, AoE damage"
+   },
+   {
+    "coste": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "coste": 16,
+    "efecto": "+25% Knockdown Chance"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "10m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11360000"
+ },
+ {
+  "id": "11080000",
+  "nombre": "Blade Toss",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 534-534 damage to a target within 20m and reduces Defense and Incoming Heal by 30% for 10s. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% \\[Blade Toss\\] Defense and Incoming Heal reduction"
+   },
+   {
+    "coste": 10,
+    "efecto": "[Blade Toss\\] inflicts Slow for 5s"
+   },
+   {
+    "coste": 15,
+    "efecto": "[Blade Toss\\] breaks Protective Shields"
+   },
+   {
+    "coste": 20,
+    "efecto": "[Blade Dance\\] has 30% chance to inflict Knockdown for 3s"
+   },
+   {
+    "coste": 25,
+    "efecto": "Max 2 Chain Attacks"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11080000"
+ },
+ {
+  "id": "11010000",
+  "nombre": "Rending Blow",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11010000",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 150-150 damage to up to 4 enemies within 4m and increases Enmity. 2 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "+200 Block while using skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Restores 50 MP on landing a Critical Hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "mp": "120"
+ },
+ {
+  "id": "11020000",
+  "nombre": "Keen Strike",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 46-46 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Ruinous Blow\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Adds \\[Reckless Strike\\] Chain Skill"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11020000"
+ },
+ {
+  "id": "11050000",
+  "nombre": "Crushing Wave",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 412-412 damage to up to 4 enemies within 5m of the caster. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 50 MP on landing a Critical Hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Resets cooldown on landing a Critical Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "50% chance to pull"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11050000"
+ },
+ {
+  "id": "11240000",
+  "nombre": "Wrath Wave",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1068-1068 damage to up to 4 enemies within 5m of the caster and has a 50% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC targets. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Reduces Attack by 20% for 5s"
+   },
+   {
+    "coste": 15,
+    "efecto": "Deals damage 1 additional time"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Knockdown Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Changes to ranged skill"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11240000"
+ },
+ {
+  "id": "11170000",
+  "nombre": "Overhead Slam",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 208-208 damage to a target afflicted with Knockdown within 4m and increases Enmity. Has a 7% chance to trigger when attacking a target with Incapacitated Immunity. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Adds \\[Upward Strike\\] Chain Skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Guaranteed Crit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Remove cooldown"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11170000"
+ },
+ {
+  "id": "11190000",
+  "nombre": "Leaping Slam",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Leaps to a target within 20m and deals 140-140 damage. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Prepare for Battle effect on the caster for 3s"
+   },
+   {
+    "coste": 8,
+    "efecto": "50% chance to trigger \\[Ankle Slice\\] on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "coste": 12,
+    "efecto": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance for 3s"
+   },
+   {
+    "coste": 16,
+    "efecto": "Changes to AoE skill and pulls in enemies"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11190000"
+ },
+ {
+  "id": "11200000",
+  "nombre": "Ankle Slice",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 4m and deal 588-588 damage to up to 4 enemies within 4m with a 50% chance to inflict Root for 3s on Block. 100% chance to inflict Root on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "30% chance to inflict Knockdown for 3s on landing \\[Ankle Slice\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Adds \\[Ankle Smash\\] Chain Skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "+16m \\[Ankle Slice\\] range"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset \\[Ankle Slice\\] cooldown on Block"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11200000"
+ },
+ {
+  "id": "11100000",
+  "nombre": "Ruinous Blow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes to a target within 7.5m to deal 2170-2170 damage and grants Prepare for Battle status for 5s. Deals damage to up to 4 enemies when fully charged. Prepare for Battle: Increases PvE Damage Boost by 20%, PvP Damage Boost by 10%, Critical Hit by 100, and Status Effect Chance by 15% Max 1 Charge Level 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "+12.5m Range"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "+5s Prepare for Battle duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "7.5m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11100000"
+ },
+ {
+  "id": "11390000",
+  "nombre": "Rage Burst",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 6635-6635 damage to a target within 4m. Inflicts Wounded for 10s on hit, reducing enemy Attack by 10%, and increases the caster's PvE Damage Boost by 10% and PvP Damage Boost by 5% for 10s. Triggers \\[Overhead Slam\\] on the target for 10s on hit. Wounded does not stack with the Shrink effect from the Templar skill \\[Taunt\\]. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-15s \\[Rage Burst\\] cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "+10% Attack reduction"
+   },
+   {
+    "coste": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% PvE Damage Boost increase and +5% PvP Damage Boost increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11390000"
+ },
+ {
+  "id": "11400000",
+  "nombre": "Lunge Stance",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+5% Double Chance for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "Increases Move Speed by 20% for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Identify Weakness\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "50% chance to deal extra damage on Critical Hit for the duration"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11400000"
+ },
+ {
+  "id": "11340000",
+  "nombre": "Lifestealing Blade",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 6088-6088 damage to up to 4 enemies within 4m and absorbs 0% HP. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Predation effect on party members for 20s"
+   },
+   {
+    "coste": 15,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 20,
+    "efecto": "+3% HP absorbed"
+   },
+   {
+    "coste": 25,
+    "efecto": "Predation extra damage lands as Critical Hit"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11340000"
+ },
+ {
+  "id": "11290000",
+  "nombre": "Mocking Blade",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 621-621 damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP, absorbs 0% HP of target with Incapacitated Immunity"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE damage on down strike"
+   },
+   {
+    "coste": 8,
+    "efecto": "Adds 2 additional strikes"
+   },
+   {
+    "coste": 12,
+    "efecto": "+1s Knockdown duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11290000"
+ },
+ {
+  "id": "11300000",
+  "nombre": "Aerial Snare",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 479-479 damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s. 100% chance to inflict Airborne on NPC targets. Has a 5% chance to trigger on attacking a target with Incapacitated Immunity. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+25% \\[Aerial Snare\\] Airborne Chance"
+   },
+   {
+    "coste": 8,
+    "efecto": "+100% damage to targets with Incapacitated Immunity"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Forced Fall\\] Chain Skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "-50% \\[Aerial Snare\\] cooldown"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11300000"
+ },
+ {
+  "id": "11250000",
+  "nombre": "Zikel's Blessing",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases Attack by 20% for the caster and nearby party members within 40m for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+50% Stagger Gauge Damage"
+   },
+   {
+    "coste": 10,
+    "efecto": "+100 Accuracy"
+   },
+   {
+    "coste": 15,
+    "efecto": "+50% Multi-Hit chance"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Status Effect Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% PvE Damage Boost, +5% PvP Damage Boost"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "40m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11250000"
+ },
+ {
+  "id": "11280000",
+  "nombre": "Sword Aura Rampage",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 496-496 damage to a target afflicted with Stagger within 4m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11280000"
+ },
+ {
+  "id": "11450000",
+  "nombre": "Fracturing Rush",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes forward 10m to deal 974-974 damage to up to 4 enemies on the path with a 60% chance to inflict Root for 3s. 100% chance to inflict Root on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+2 max targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Adds \\[Destructive Rush\\] Chain Skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "+20% Root Chance"
+   },
+   {
+    "coste": 20,
+    "efecto": "50% chance to inflict Airborne for 3s"
+   },
+   {
+    "coste": 25,
+    "efecto": "Adds \\[Unsheathing Rush\\] Chain Skill"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11450000"
+ },
+ {
+  "id": "11700000",
+  "nombre": "Assault Strike",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 998-998 damage up to 4 enemies within 4m of the target with a 30% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC targets. Increases Defense by up to 20% proportional to targets hit.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Knockdown Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11700000"
+ },
+ {
+  "id": "11260000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11260000"
+ },
+ {
+  "id": "11110000",
+  "nombre": "Focused Block",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Temporarily increases Block Damage Reduction by 100% and guarantees Parry. Restores 110 MP and Stamina once on Block.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "coste": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 10% HP once on Parry"
+   },
+   {
+    "coste": 25,
+    "efecto": "+1s Block duration"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11110000"
+ },
+ {
+  "id": "11130000",
+  "nombre": "Armor of Balance",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "x1.5 \\[Experienced Counterstrike\\] effect for the duration",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Ailment-type and Mental-type Resist"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Protection Armor\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Experienced Counterstrike\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+50% Impact-type Resist"
+   },
+   {
+    "coste": 25,
+    "efecto": "+30% Status Effect Resist"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11130000"
+ },
+ {
+  "id": "11410000",
+  "nombre": "Wave Armor",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 207-207 Damage over Time to up to 4 enemies within 3m of the caster for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Blood Absorption\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Murderous Burst\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "Reflects 10% of damage taken"
+   },
+   {
+    "coste": 25,
+    "efecto": "25% chance to pull"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11410000"
+ },
+ {
+  "id": "11380000",
+  "nombre": "Tenaciousness",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "The caster is immune to damage and status effects for 3s. Increases PvE Damage Tolerance by 50% and PvP Damage Tolerance by 25% for 3s when the effect ends. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, and Barrier Spell effects cannot be applied for 30s if Invincibility stacking is blocked.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+100% Incoming Heal"
+   },
+   {
+    "coste": 10,
+    "efecto": "Restores 20% Max HP when the effect ends"
+   },
+   {
+    "coste": 15,
+    "efecto": "+20% Attack"
+   },
+   {
+    "coste": 20,
+    "efecto": "Trigger \\[Tenaciousness\\] when afflicted with Impact-type status"
+   },
+   {
+    "coste": 25,
+    "efecto": "+2s duration"
+   }
+  ],
+  "cooldown": "150s",
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11380000"
+ },
+ {
+  "id": "11430000",
+  "nombre": "Forced Restraint",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1059-1059 damage to a target within 4m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "50% chance to inflict Root for 5s"
+   },
+   {
+    "coste": 10,
+    "efecto": "-1,000 Stamina"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s Seal duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Seal Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "4m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11430000"
+ },
+ {
+  "id": "11710000",
+  "nombre": "Survival Stance",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's HP by 200. Increases Max HP by an additional 7%, Natural HP Regen by 20, PvE Damage Tolerance by 5.5%, and PvP Damage Tolerance by 2.75%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11710000"
+ },
+ {
+  "id": "11720000",
+  "nombre": "Protection Armor",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Block by 200 and restores 53-64 HP on Block. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11720000"
+ },
+ {
+  "id": "11730000",
+  "nombre": "Blood Absorption",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11730000",
+  "tipo": [
+   "Passive",
+   "Magic",
+   "Rare"
+  ],
+  "descripcion": "The caster has a 50% chance to restore 20-24 HP and 1.6% Max HP on landing an attack. Immediately restores 26% Max HP when HP is 50% or less. Cooldown: 1s Instant Healing Cooldown: 60s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword"
+ },
+ {
+  "id": "11740000",
+  "nombre": "Identify Weakness",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Hit by 100 and Perfect Chance by 0.5%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11740000"
+ },
+ {
+  "id": "11750000",
+  "nombre": "Attack Preparation",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Boost by 5.5%, PvP Damage Boost by 2.75%, Defense by 2%, and Accuracy by 100.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11750000"
+ },
+ {
+  "id": "11760000",
+  "nombre": "Impact Hit",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11760000"
+ },
+ {
+  "id": "11770000",
+  "nombre": "Destructive Impulse",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 146-146 extra damage to targets afflicted with Stagger or an Impact-type status.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11770000"
+ },
+ {
+  "id": "11780000",
+  "nombre": "Experienced Counterstrike",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases Frontal Attack Damage Boost by 0.5%. Increases PvE Damage Boost by 10.7%, PvP Damage Boost by 5.35% for 20s for the caster and party members on Block. PvE Damage Boost and PvP Damage Boost does not stack with Templar's \\[Fury\\] effect.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11780000"
+ },
+ {
+  "id": "11790000",
+  "nombre": "Survival Willpower",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Damage Tolerance Increase Cooldown: 60s Status Effect Resist Increase Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11790000"
+ },
+ {
+  "id": "11800000",
+  "nombre": "Murderous Burst",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Grants a stack of Menace for 3s when landing an attack. Removes Menace at 5 stacks and deals 539-539 damage to up to 4 enemies within 5m of the caster and reduces enemy Critical Damage Tolerance by 5.5% for 3s. If the PvE and PvP Damage Tolerance reduction effects from the Templar skill \\[Taunt: Shrink\\] are active, the Critical Damage Tolerance reduction effect of \\[Murderous Burst\\] will not be applied.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Greatsword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/11800000"
+ }
+]

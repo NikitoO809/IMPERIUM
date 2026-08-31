@@ -1,0 +1,1020 @@
+[
+ {
+  "id": "12010000",
+  "nombre": "Vicious Strike",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 51-51 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Warding Strike\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Adds \\[Threatening Blow\\] Chain Skill"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12010000"
+ },
+ {
+  "id": "12040000",
+  "nombre": "Pummel",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 258-258 damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "[Punishing Strike\\] absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-2s \\[Punishment\\] cooldown on landing \\[Punishing Strike\\]"
+   },
+   {
+    "coste": 16,
+    "efecto": "Triggers \\[Punishing Strike\\] 1 additional time"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12040000"
+ },
+ {
+  "id": "12070000",
+  "nombre": "Doom Shield",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes to a target within 20m and deals 1254-1254 damage with a 75% chance to inflict Knockdown for 3s. Grants a Protective Shield that blocks 1027 for 5s and triggers \\[Judgment\\] against the target for 7s on hit. 100% chance to inflict Knockdown on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Resets \\[Annihilate\\] cooldown on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "+200 Block for 5s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Knockdown Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12070000"
+ },
+ {
+  "id": "12090000",
+  "nombre": "Punishment",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 913-2741 damage to up to 4 enemies within 5m of the caster and grants the Executor effect to the caster for 10s. Executor: Increases Accuracy by 200, PvE Damage Boost by 10%, and PvP Damage Boost by 5% Max 3 Charge Levels 20-35 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Inflicts Damage over Time to target on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "coste": 12,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as a Critical Hit"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "5m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12090000"
+ },
+ {
+  "id": "12100000",
+  "nombre": "Shield Smite",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 145-145 damage to up to 4 enemies within 4m. Has a 60% chance to inflict Stun on the target for 3s. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Removes MP Cost and restores 200 MP on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "50% chance to trigger \\[Debilitating Smash\\] on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-2s cooldown"
+   },
+   {
+    "coste": 16,
+    "efecto": "AoE Stun"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12100000"
+ },
+ {
+  "id": "12450000",
+  "nombre": "Battlefield Banner",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases Attack proportional to Defense for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Multi-Hit Chance for duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+150 Critical Hit for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "+20% Attack increase proportional to Defense"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% Combat Speed for the duration"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12450000"
+ },
+ {
+  "id": "12110000",
+  "nombre": "Shield of Protection",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Temporarily increases Block Damage Reduction by 100% and guarantees Shield Block. Restores 110 MP and Stamina once on Block.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 10% HP 1 time on Shield Block"
+   },
+   {
+    "coste": 25,
+    "efecto": "+1s Block duration"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12110000"
+ },
+ {
+  "id": "12120000",
+  "nombre": "Taunt",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 888-888 damage to a target within 20m and increases Enmity by 20000. Inflict Shrink for 15s on NPC targets. Has a 50% chance to inflict Taunt for 3s if the target is a player. Shrink: Reduces Accuracy by 200 and Attack by 10% 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Adds 25% PvE Damage Tolerance reduction and 12.5% PvP Damage Tolerance reduction effect to Shrink"
+   },
+   {
+    "coste": 10,
+    "efecto": "+10% Shrink Attack reduction"
+   },
+   {
+    "coste": 15,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "coste": 20,
+    "efecto": "+2s Taunt duration, +5s Shrink duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "Inflicts Shrink to players"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12120000"
+ },
+ {
+  "id": "12130000",
+  "nombre": "Poach",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 49-49 damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s. 100% chance to inflict Root on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Moves to the target if target has Incapacitated Immunity"
+   },
+   {
+    "coste": 8,
+    "efecto": "-20% Status Effect Resist for 5s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "coste": 12,
+    "efecto": "10% of Max HP as Protective Shield"
+   },
+   {
+    "coste": 16,
+    "efecto": "50% chance to Stun for 3s"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12130000"
+ },
+ {
+  "id": "12190000",
+  "nombre": "Second Skin",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases PvE Damage Tolerance by 30% and PvP Damage Tolerance by 15% for 10s. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% All Element Tolerance for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "Reflect 10% of damage taken within 5m for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Ironclad Defense\\] Defense increase effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "Removes Reflection Range Condition"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12190000"
+ },
+ {
+  "id": "12200000",
+  "nombre": "Armor of Balance",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "+{abe:1220000022:value02:divide100}% Ailment-type, Mental-type Resist for the duration",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+{abe:1220000022:value02:divide100}% Ailment-type, Mental-type Resist for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+20% Move Speed for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Warding Shield\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+50% Impact-type Resist increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% Status Effect Resist for the duration"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12200000"
+ },
+ {
+  "id": "12220000",
+  "nombre": "Grapple",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1045-1045 damage to up to 4 enemies within 7m of the target and pull them in front of the caster. Inflicts Root for 3s. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "50% chance to inflict Stun for 3s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "20% of Max HP as Protective Shield for 10s on use"
+   },
+   {
+    "coste": 15,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 20,
+    "efecto": "Up to +20% PvE Damage Tolerance and +{abe:1222004921:value02:divide100}% PvP Damage Tolerance when more targets hit"
+   },
+   {
+    "coste": 25,
+    "efecto": "+2 Hit Target Count"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12220000"
+ },
+ {
+  "id": "12230000",
+  "nombre": "Noble Armor",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for the duration",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+5% Defense for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+5% Block for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Insulting Roar\\] damage for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% Incoming Heal for the duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for the duration"
+   }
+  ],
+  "cooldown": "300s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12230000"
+ },
+ {
+  "id": "12240000",
+  "nombre": "Judgment",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 207-207 damage to a target afflicted with Stun or Knockdown within 4m and increases Enmity. Has a 7% chance to trigger skill when attacking a target with Incapacitated Immunity. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Extra damage on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Remove cooldown"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12240000"
+ },
+ {
+  "id": "12250000",
+  "nombre": "Comrade in Arms",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% and redirects damage taken by a party member within 40m each time they are attacked, sharing 50% to the caster and 50% to the attacked party member for 10s. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Restores {se:1225001111:effect\\_value02:divide100}% of Max HP once if hit during Comrade in Arms while HP is 25% or less"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Guarding Seal\\] Protective Shield effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Block Pain\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 50% of caster's Max HP when the effect ends."
+   },
+   {
+    "coste": 25,
+    "efecto": "+20% Status Effect Resist for the duration"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12250000"
+ },
+ {
+  "id": "12260000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12260000"
+ },
+ {
+  "id": "12270000",
+  "nombre": "Debilitating Smash",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 336-336 damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block. Debilitate: Reduces Defense by 25% 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "30% chance to inflict Stun for 3s"
+   },
+   {
+    "coste": 8,
+    "efecto": "+3s Debilitate duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "-50% restoration during Debilitate"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on Block"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12270000"
+ },
+ {
+  "id": "12300000",
+  "nombre": "Annihilate",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 553-553 damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC targets. Has a 5% chance to trigger when attacking a target with Incapacitated Immunity. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Knockdown Chance"
+   },
+   {
+    "coste": 8,
+    "efecto": "+100% damage to targets with Incapacitated Immunity"
+   },
+   {
+    "coste": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "coste": 16,
+    "efecto": "Changes to AoE Skill"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12300000"
+ },
+ {
+  "id": "12310000",
+  "nombre": "Empyrean Lord's Punishment",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 2817-2817 damage to up to 4 enemies within 4m of the target with a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "+50 Stagger Gauge Damage"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12310000"
+ },
+ {
+  "id": "12320000",
+  "nombre": "Nezekan's Shield",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Grants a Protective Shield that blocks 3781 damage for 5s to the caster and nearby party members within 40m.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% all Element Tolerance for Protective Shield duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+2s Protective Shield duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance for Protective Shield duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 20% of Max HP when Protective Shield is removed"
+   },
+   {
+    "coste": 25,
+    "efecto": "+100% Protective Shield"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12320000"
+ },
+ {
+  "id": "12340000",
+  "nombre": "Flash Rampage",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 608-608 damage to a target afflicted with Stagger within 4m and increases Enmity.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12340000"
+ },
+ {
+  "id": "12350000",
+  "nombre": "Warding Strike",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 321-321 damage to up to 4 enemies within 5m of the caster. Immediately restores 180-198 HP and grants Warding to the caster for 10s. Warding: Increases PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10%",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+5s duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "+100 Block during Warding"
+   },
+   {
+    "coste": 8,
+    "efecto": "Heal over Time during Warding"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds PvE Damage Tolerance and PvP Damage Tolerance increase effect when more targets hit to Warding"
+   },
+   {
+    "coste": 16,
+    "efecto": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance to party members on skill use"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "4.5m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12350000"
+ },
+ {
+  "id": "12410000",
+  "nombre": "Executing Blade",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1335-1335 damage to up to 4 enemies within 4m and reduce 30% Defense for 5s. Deals 20% more damage on attacking a target inflicted with Impact-type status 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "Inflict Exposed for 5s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+30% damage on attacking a target inflicted with Impact-type status"
+   },
+   {
+    "coste": 25,
+    "efecto": "+3% all skill cooldowns of the target on hit"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "4m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12410000"
+ },
+ {
+  "id": "12430000",
+  "nombre": "Shield Rush",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes to a target within 10m to deal 258-258 damage after using \\[Dodge\\] or while flying. Has a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Restores 300 Stamina on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to Charge Skill and deals AoE damage"
+   },
+   {
+    "coste": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "coste": 16,
+    "efecto": "+25% Stun Chance"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "10m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12430000"
+ },
+ {
+  "id": "12740000",
+  "nombre": "Ironclad Defense",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Defense by 7% and Endurance by 1%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12740000"
+ },
+ {
+  "id": "12700000",
+  "nombre": "Assault Fury",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 951-951 damage with a 30% chance to inflict Stun for 3s to up to 4 enemies within 4m. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to targets hit.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12700000"
+ },
+ {
+  "id": "12710000",
+  "nombre": "Enhance Health",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's HP by 250. Increases Max HP by an additional 7.5% and Incoming Heal by 6%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12710000"
+ },
+ {
+  "id": "12720000",
+  "nombre": "Warding Shield",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Block by 200 and restores 53-64 HP on Block. Cooldown: 3s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12720000"
+ },
+ {
+  "id": "12730000",
+  "nombre": "Punishing Benediction",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12730000"
+ },
+ {
+  "id": "12750000",
+  "nombre": "Guarding Seal",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Grants a Guarding Seal that blocks 847 damage for 30s when HP is 50% or less. Cooldown: 60s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12750000"
+ },
+ {
+  "id": "12760000",
+  "nombre": "Impact Hit",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12760000"
+ },
+ {
+  "id": "12770000",
+  "nombre": "Insulting Roar",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Enmity Boost by 100%. Deals 166-166 damage to the target and increases Enmity by a large amount on Block. Cooldown: 5s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12770000"
+ },
+ {
+  "id": "12780000",
+  "nombre": "Fury",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases Frontal Attack Damage Boost by 0.2% for the caster, and increases PvE Damage Boost by 11.3% and PvP Damage Boost by 5.65% for 20s for the caster and party members on Block. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12780000"
+ },
+ {
+  "id": "12790000",
+  "nombre": "Survival Willpower",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Damage Tolerance Increase Cooldown: 60s Status Effect Resist Increase Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12790000"
+ },
+ {
+  "id": "12800000",
+  "nombre": "Block Pain",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Grants Block Pain for 10s when struck by an enemy. Block Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5% Cooldown: 20s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Sword",
+  "url": "https://questlog.gg/aion-2/en/db/skill/12800000"
+ }
+]

@@ -1,0 +1,31 @@
+{
+ "titulo": "✨ Sorcerer · guía completa",
+ "etiquetas": [
+  "Sorcerer",
+  "Build",
+  "PvE"
+ ],
+ "apertura": "Guía de Sorcerer sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí.\n\n**La clase, en corto**\n· **Arma:** libro de hechizos. Daño mágico a 20 metros.\n· **Maneja dos elementos con dos cadenas distintas:** el fuego es daño puro, el agua es control. Y tiene el mayor arsenal de quitarle el turno a alguien de todo el juego.",
+ "secciones": [
+  {
+   "archivo": "s1-hielo.png",
+   "texto": "**1 · La cadena de hielo**\n\n`Frost Burst` dice *«a target afflicted with Frost»*: **si el enemigo no está congelado, no puedes lanzarlo**.\n\nCongelas con `Frost` (30 s, 50% — 100% en PNJ) y entonces machacas con `Frost Burst`, que solo tiene **10 s de recarga**… y con su mejora de nivel 16 tiene además un **50% de resetearse solo**.\n\n**Y tienes una segunda cadena igual con fuego:** `Flame Arrow` deja Marca de Fuego, y `Blaze` (5 s) solo funciona sobre esa marca. Dos cadenas, dos ritmos."
+  },
+  {
+   "archivo": "s2-nuke.png",
+   "texto": "**2 · El orden del golpe gordo**\n\nUn Sorcerer que suelta `Hellfire` sin preparar está tirando media pelea.\n\n**`Delayed Explosion` no es un golpe: es un preparador.** Explota a los 4 segundos, y durante esa espera el enemigo recibe **un 15% más de daño tuyo**. Se lanza antes que todo lo demás.\n\nDetrás van los gordos: `Fire Wall` (un muro que dura 3 s y deja brasas), `Hellfire` (**hasta 3 niveles de carga**, y a tope triplica su daño) y `Divine Burst`.\n\nY antes de todo, si te da tiempo: `Element Enhancement` y `Wish of Concentration`."
+  },
+  {
+   "archivo": "s3-control.png",
+   "texto": "**3 · El arsenal de control**\n\nNinguna clase tiene tantas formas de quitarle el turno a alguien: convertirlo en árbol 10 segundos (`Curse: Tree`, que además le baja un 20% la resistencia al fuego), sellarle las habilidades (`Soul Freeze`, 75%), mandarlo por los aires (`Lumiel's Space`, 75%) o enraizarlo (`Bittercold Wind`, con solo 15 s de recarga).\n\n**Una combinación que conviene saber:** `Lumiel's Space` con su mejora de nivel 25 **duplica** la probabilidad de lanzar por los aires si el objetivo ya está ralentizado o enraizado. Frenar primero no es opcional.\n\nY para sobrevivir: `Hibernation` (180 s) te hace **inmune a daño y a estados durante 5 segundos**."
+  },
+  {
+   "archivo": "s4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nEl Sorcerer tiene **la mejora más bestia que he encontrado en las ocho clases**: `Wish of Concentration` a **nivel 16** le quita **10 segundos a TODAS tus recargas**. No a una: a todas.\n\nDetrás van `Frost Burst` **nv. 16** (50% de resetearse), `Hellfire` **nv. 16** (−15 s) y `Lumiel's Space` **nv. 20** (−30 s).\n\nY si buscas techo de daño en vez de ritmo: `Delayed Explosion` **nv. 20** sube el daño que le haces otro **10%** —que se suma al 15% de base, o sea un 25% mientras carga—, y `Fire Wall` **nv. 25** te da +10% al pegar a quien tenga brasas encima.\n\nOjo con la mezcla: `Wish of Concentration`, `Frost Burst` y `Hellfire` son **Mastery** (mejoras a 8/12/16, y solo caben tres). `Delayed Explosion`, `Fire Wall` y `Lumiel's Space` son **Stigma**: ahí te quedas con todas las que subas.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "s9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Estas 2 valen siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Winter's Shackles` **nv. 8** — +20% PvE Damage Boost and +10% PvP Damage Boost for…\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y estas 5 son las de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **le baja la curación al rival** — `Firestorm` nv. 8\n· **ignora bloqueo y evasión** — `Bittercold Wind` nv. 12 · `Frost Burst` nv. 12 · `Hellfire` nv. 12\n· **solo afecta a jugadores** — `Frost` nv. 12\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Arctic Armor` — 🟢 nv. 20\n· `Assault Bombardment` — 🔴 nv. 20\n· `Curse: Tree` — 🔴 nv. 25\n· `Delayed Explosion` — 🔵 nv. 25\n· `Glacial Smite` — 🔵 nv. 20 · 🔴 nv. 25\n· `Soul Freeze` — 🔴 nv. 20 · 🔵 nv. 25\n· `Steel Barrier` — 🟢 nv. 15\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

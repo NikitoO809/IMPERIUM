@@ -1,0 +1,8 @@
+Datos de questlog.gg, la fuente que se usó hasta el 2026-08-30.
+
+Se quedaron en la versión coreana anterior al lanzamiento: ponían mejoras en
+niveles que no son (Defiance nv. 8 cuando el juego pide 16), se dejaban
+habilidades enteras y traían valores sin resolver (Absorbs 0% HP).
+
+Se guardan solo para poder comparar qué cambió. Lo que vale está en
+scripts/data/skills-t-<clase>.json, bajado de aion2t.com.

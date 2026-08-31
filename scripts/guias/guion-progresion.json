@@ -1,0 +1,35 @@
+{
+ "titulo": "📈 Cómo subir tus habilidades (y por qué PvE y PvP no se suben igual)",
+ "etiquetas": [
+  "Para empezar",
+  "PvE",
+  "PvP"
+ ],
+ "apertura": "Lee esto antes de gastar un solo punto. Aquí está **cómo funciona la subida de habilidades** y, sobre todo, **por qué repartir para PvE y para PvP no es lo mismo**.\n\nY el motivo no es una opinión: sale de la letra pequeña de las propias habilidades.",
+ "secciones": [
+  {
+   "archivo": "p1-sistemas.png",
+   "texto": "**1 · Las habilidades suben por tres sitios distintos**\n\n· **Puntos de habilidad** — los ganas al subir de nivel y llevan una habilidad **hasta el nivel 10**. No dan para subirlas todas: hay que elegir. **Y resetearlos no cuesta nada**, así que prueba repartos sin miedo.\n· **Daevanion** — tablero de nodos que se abre al **nivel 12**. Es lo que sube las habilidades **por encima de 10**. Sus puntos salen de logros y misiones, no de subir nivel.\n· **Equipo** — las piezas suman niveles extra por su cuenta.\n\n**Y aquí está la gracia:** cada habilidad tiene cinco mejoras que se desbloquean a distintos niveles **de esa habilidad** (5, 8, 12, 16, 20, 25…). Por eso hay mejoras que **solo alcanzas con Daevanion y equipo**: con puntos nunca pasas de 10.\n\n**Cinco mejoras, tres ranuras.** Las cinco se desbloquean al nivel de habilidad que marca cada una, pero **solo puedes poner tres**. Y las ranuras también van por nivel de esa habilidad:\n· la primera ranura al **nivel 8**\n· la segunda al **nivel 12**\n· la tercera al **nivel 20**\n\nAsí que subir una habilidad no solo la hace pegar más: te abre dónde colocar sus mejoras.\n\nY que no te líe el nombre: los **Stigma** son otra cosa — habilidades aparte, se desbloquean sobre el nivel 23 y equipas **4 de 12**."
+  },
+  {
+   "archivo": "p4-ocho-tableros.png",
+   "texto": "**2 · Los ocho tableros Daevanion**\n\n**Son ocho, no seis.** Las guías que circulan se dejan Marchutan y Yustiel. Cada uno se abre a un nivel y sube cosas distintas:\n\n· **Nezekan** (nv. 12) — velocidad de combate y **recargas más cortas** · 55 puntos\n· **Zikel** (nv. 20) — daño, aguante, precisión y evasión · 56 puntos\n· **Vaizel** (nv. 30) — daño crítico y su resistencia · 59 puntos\n· **Triniel** (nv. 40) — golpe múltiple y su resistencia · 175 puntos\n· **Ariel** (nv. 45) — **daño y aguante en PvE** · 171 puntos\n· **Azphel** (nv. 45) — **daño y aguante en PvP** · 152 puntos\n· **Marchutan** (nv. 45) — daño de arma y su resistencia · 232 puntos\n· **Yustiel** (nv. 45) — ataque y defensa · 232 puntos\n\n**Las bolsas de puntos están separadas.** Los cuatro primeros comparten una; Ariel, Azphel, Marchutan y Yustiel tienen cada uno la suya. Se ve al cambiar de pestaña: el contador de arriba cambia contigo.\n\n**Y ahí eliges a qué juegas:** como Ariel y Azphel gastan puntos distintos, no compiten entre sí. Puedes hacer los dos, pero uno irá primero.\n\n**Coste de cada nodo:** gris (estadísticas) 1 · verde (pasivas) 2 · azul (activas) 3 · naranja (únicas) 4."
+  },
+  {
+   "archivo": "p3-regla-oro.png",
+   "texto": "**3 · La regla de oro: hay 33 mejoras que en PvE no hacen nada**\n\nEsto es lo más útil de toda la guía, y no lo he visto escrito en ningún sitio.\n\n**36 de las 45 habilidades con probabilidad dicen «100% chance to inflict … on NPC targets».** Contra un PNJ, el aturdimiento o el derribo **entran siempre**.\n\nAsí que una mejora de «+25% de probabilidad de derribo» contra un PNJ sube de **100% a 100%**. Es un punto tirado.\n\nCon `Rush Strike` del Gladiator se ve claro:\n· Contra PNJ derriba al 100% → la mejora nv. 16 (+25%) **no sirve de nada**\n· Contra jugador derriba al 50% → esa misma mejora lo sube a **75%**: es de las mejores\n\n**En PvE prioriza:** recargas más cortas, daño, maná y aguante.\n**En PvP prioriza:** probabilidad y duración de los estados, «ignora bloqueo y evasión», romper escudos y bajarle la curación al rival.\n**Y siempre:** las que dicen «+X% PvE Damage Boost **y** +Y% PvP Damage Boost» suben las dos.\n\n—\nDatos de la base de datos del juego (questlog.gg) y de la wiki coreana, **versión coreana**, anterior al lanzamiento global del 5 de octubre."
+  },
+  {
+   "archivo": "cap-niveles-anotada.png",
+   "texto": "**4 · Cómo se ve en el juego (personaje nuevo)**\n\nAquí está todo lo anterior en pantalla, con un Ranger recién empezado. El juego lo dice él solo:\n\n> *«Specialty Skill effect unlocked upon reaching **Arrow Scattershot Lv. 8**»*\n\nFíjate en la columna de números a la izquierda de cada mejora: **8, 8, 8, 12, 16**. Ese número es **el nivel que tiene que alcanzar esa habilidad**, no lo que cuesta.\n\n**Y las tres ranuras también van por nivel de habilidad:**\n· la primera se abre al **nivel 8**\n· la segunda al **nivel 12**\n· la tercera al **nivel 20**\n\nAsí que las cinco mejoras se desbloquean cada una a su nivel, pero **solo puedes poner tres**.\n\nLos candados rojos del panel de la derecha (Lv. 11, 13, 15, 17, 21…) son otra cosa: esas son **habilidades que aún no tienes por tu nivel de personaje**.\n\n*Capturas de la versión de Taiwán, cedidas por NikitoO.*"
+  },
+  {
+   "archivo": "cap-skill-anotada.png",
+   "texto": "**5 · Y así se ve con la habilidad ya subida**\n\nEl mismo panel en un Gladiator con `Rending Blow` avanzado. Aquí ya hay **dos ranuras abiertas y la tercera esperando** a que la habilidad llegue a 20.\n\nLo que enseña esta pantalla y no se ve en la de antes:\n\n· **Azul = mejora puesta · gris = disponible pero sin poner.** Aquí están activas «Changes to mobile skill» y «Restores 50 MP on landing a Critical Hit».\n· **La mejora cambia la ficha de la habilidad.** Arriba pone `Nontarget | Mobile`, y ese *Mobile* aparece **porque** está puesta esa mejora.\n· **Abajo a la derecha, tus puntos y el botón de reinicio.** Resetear no cuesta nada: prueba repartos sin miedo.\n· **Mastery y Stigma son dos pestañas distintas.** Todo esto es Mastery.\n\n*Capturas de la versión de Taiwán, cedidas por NikitoO.*"
+  },
+  {
+   "archivo": "cap-daevanion-anotada.png",
+   "texto": "**6 · El tablero Daevanion por dentro**\n\nAquí está el de **Nezekan**, el primero que se abre (nivel 12), con las ocho pestañas arriba.\n\nLo que hay que entender:\n\n· **Todo sale del nodo del centro.** Solo puedes activar lo que toque algo que ya tengas, expandiendo en las cuatro direcciones. Por eso **vas a gastar puntos en nodos que no querías, solo para llegar al que sí**: planifica la ruta antes de empezar.\n· **Los que brillan en azul son los que ya tienes.** Se ve el camino abierto desde el centro.\n· **A la derecha pone lo que da ese tablero** y, abajo, el nivel que pide y **cuántos puntos cuesta completarlo entero**.\n· **El contador de arriba cambia al cambiar de pestaña**, porque las bolsas son distintas.\n\n*Captura de la versión de Taiwán, cedida por NikitoO.*"
+  }
+ ]
+}

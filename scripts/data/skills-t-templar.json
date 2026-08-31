@@ -1,0 +1,1382 @@
+[
+ {
+  "id": "12000100",
+  "nombre": "Dodge",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "0.5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12000100"
+ },
+ {
+  "id": "12710000",
+  "nombre": "Enhance Health",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's HP by 250. Increases Max HP by an additional 7.5% and Incoming Heal by 6%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12710000"
+ },
+ {
+  "id": "12130000",
+  "nombre": "Poach",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 49-49 damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s. 100% chance to inflict Root on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "49",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Moves to the target if target has Incapacitated Immunity"
+   },
+   {
+    "nivel": 8,
+    "efecto": "-20% Status Effect Resist for 5s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "nivel": 12,
+    "efecto": "10% of Max HP as Protective Shield"
+   },
+   {
+    "nivel": 16,
+    "efecto": "50% chance to Stun for 3s"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12130000"
+ },
+ {
+  "id": "12040000",
+  "nombre": "Pummel",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 104-104 damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
+  "dano": "104",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "[Punishing Strike] absorbs 3% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-1s [Warding Strike] cooldown on landing [Punishing Strike]"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Activates [Punishing Strike] 1 extra time"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12040000"
+ },
+ {
+  "id": "9868",
+  "nombre": "Pummel",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "Deals 104-104 damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
+  "dano": "104",
+  "cooldown": "1s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/9868"
+ },
+ {
+  "id": "9871",
+  "nombre": "Punishing Benediction",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack. Cooldown: 1s",
+  "dano": "69",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/9871"
+ },
+ {
+  "id": "9865",
+  "nombre": "Vicious Strike",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "Deals 59-59 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+  "dano": "59",
+  "cooldown": "1s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/9865"
+ },
+ {
+  "id": "12010000",
+  "nombre": "Vicious Strike",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 59-59 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+  "dano": "59",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 1% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-1s [Punishment] cooldown on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Adds [Threatening Blow] Chain Skill"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12010000"
+ },
+ {
+  "id": "12100000",
+  "nombre": "Shield Smite",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 3,
+  "maxNivel": 40,
+  "descripcion": "Deals 145-145 damage to up to 4 enemies within 4m. Has a 60% chance to inflict Stun on the target for 3s. Triggers [Judgment] against the target for 2s. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "145",
+  "cooldown": "10s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Removes MP Cost and restores 200 MP on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "50% chance to trigger [Debilitating Smash] on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-2s cooldown"
+   },
+   {
+    "nivel": 16,
+    "efecto": "AoE Stun"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12100000"
+ },
+ {
+  "id": "12240000",
+  "nombre": "Judgment",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 40,
+  "descripcion": "Deals 198-198 damage to a target within 4m and increases Enmity. 5 Stagger Gauge Damage",
+  "dano": "198",
+  "cooldown": "5s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 1% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Deals extra damage on attacking a target afflicted with Impact-type status"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Extra damage on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Remove cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12240000"
+ },
+ {
+  "id": "12340000",
+  "nombre": "Flash Rampage",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 5,
+  "maxNivel": 40,
+  "descripcion": "Deals 152-152 damage to a target afflicted with Stagger within 4m and increases Enmity.",
+  "dano": "152",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 5% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 120 MP on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-1s all cooldowns on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12340000"
+ },
+ {
+  "id": "12720000",
+  "nombre": "Warding Shield",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 6,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Block by 200 and restores 53-64 HP on Block. Cooldown: 3s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12720000"
+ },
+ {
+  "id": "12270000",
+  "nombre": "Debilitating Smash",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 7,
+  "maxNivel": 40,
+  "descripcion": "Deals 336-336 damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block. Debilitate: Reduces Defense by 25% 10 Stagger Gauge Damage",
+  "dano": "336",
+  "cooldown": "10s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "30% chance to inflict Stun for 3s"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+3s Debilitate duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "-60% Incoming Heal during Debilitate"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "25% chance to reset cooldown on Block"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12270000"
+ },
+ {
+  "id": "12350000",
+  "nombre": "Warding Strike",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 8,
+  "maxNivel": 40,
+  "descripcion": "Deals 353-353 damage to up to 4 enemies within 5m of the caster. Immediately restores 180-198 HP and grants Warding to the caster for 10s. Triggers [Judgment] against the target for 2s.Warding: Increases PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% 5 Stagger Gauge",
+  "dano": "353",
+  "cooldown": "25s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+100 Block during Warding"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Heal over Time during Warding"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Adds PvE Damage Tolerance and PvP Damage Tolerance increase effect when more targets hit to Warding"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance to party members on skill use"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12350000"
+ },
+ {
+  "id": "12730000",
+  "nombre": "Punishing Benediction",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 9,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack. Cooldown: 1s",
+  "dano": "69",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12730000"
+ },
+ {
+  "id": "12430000",
+  "nombre": "Shield Rush",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 10,
+  "maxNivel": 40,
+  "descripcion": "Rushes to a target within 10m to deal 258-258 damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] against the target for 2s. 100% chance to inflict Stun on NPC targets. 20 Stagger Gauge Damage",
+  "dano": "258",
+  "cooldown": "20s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Restores 300 Stamina on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to Charge Skill and deals AoE damage"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+25% Stun Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12430000"
+ },
+ {
+  "id": "12740000",
+  "nombre": "Ironclad Defense",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 11,
+  "maxNivel": 40,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12740000"
+ },
+ {
+  "id": "12300000",
+  "nombre": "Annihilate",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 12,
+  "maxNivel": 40,
+  "descripcion": "Deals 719-719 damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC targets. Has a 5% chance to trigger when attacking a target with Incapacitated Immunity. 10 Stagger Gauge Damage",
+  "dano": "719",
+  "cooldown": "20s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Knockdown Chance"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+100% damage to targets with Incapacitated Immunity"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Changes to AoE Skill"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12300000"
+ },
+ {
+  "id": "12750000",
+  "nombre": "Guarding Seal",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 13,
+  "maxNivel": 40,
+  "descripcion": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less. Cooldown: 60s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12750000"
+ },
+ {
+  "id": "12090000",
+  "nombre": "Punishment",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 14,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 1174-3523 damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 10s. Executor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10% Max 3 Charge Levels 20-35 Stagger Gauge Damage",
+  "dano": "1174",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 10% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Inflicts Damage over Time to target on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Ignores Block and Evasion and lands as a Critical Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12090000"
+ },
+ {
+  "id": "12760000",
+  "nombre": "Impact Hit",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 15,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12760000"
+ },
+ {
+  "id": "12260000",
+  "nombre": "Defiance",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 16,
+  "maxNivel": 40,
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity Not affected by cooldown reduction effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Adds [Capture] Chain Skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 1000 Stamina on using [Defiance]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 20% HP on using [Defiance]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12260000"
+ },
+ {
+  "id": "12770000",
+  "nombre": "Insulting Roar",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 17,
+  "maxNivel": 40,
+  "descripcion": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack. Cooldown: 5s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12770000"
+ },
+ {
+  "id": "12780000",
+  "nombre": "Fury",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 21,
+  "maxNivel": 40,
+  "descripcion": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on Block. Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12780000"
+ },
+ {
+  "id": "12200000",
+  "nombre": "Armor of Balance",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Ailment-type, Mental-type Resist for the duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+20% Move Speed for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Warding Shield] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+50% Impact-type Resist increase"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+30% Status Effect Resist for the duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12200000"
+ },
+ {
+  "id": "12700000",
+  "nombre": "Assault Fury",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 951-951 damage with a 30% chance to inflict Stun for 3s to up to 4 enemies within 4m. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to targets hit.",
+  "dano": "951",
+  "cooldown": "120s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12700000"
+ },
+ {
+  "id": "12450000",
+  "nombre": "Battlefield Banner",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% Multi-Hit Chance for duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+10% Weapon Damage Boost for duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+20% Attack increase proportional to Defense"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+15% Combat Speed for the duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12450000"
+ },
+ {
+  "id": "12250000",
+  "nombre": "Comrade in Arms",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases the caster's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% and redirects damage taken by a party member within 40m each time they are attacked, sharing 50% to the caster and 50% to the attacked party member for 6s. Unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Restores 25% of Max HP once if hit during Comrade in Arms while HP is 25% or less"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Guarding Seal] Protective Shield effect for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Block Pain] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restores 50% of caster's Max HP when the effect ends"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+20% Status Effect Resist for the duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12250000"
+ },
+ {
+  "id": "12070000",
+  "nombre": "Doom Shield",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Rushes to a target within 20m and deals 1254-1254 damage with a 75% chance to inflict Knockdown for 3s. Grants a Protective Shield that blocks damage equaling 5% of the caster's Max HP for 5s on hit. Triggers [Judgment] against the target for 3s. 100% chance to inflict Knockdown on NPC targets. 20 Stagger Gauge Damage",
+  "dano": "1254",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Resets [Annihilate] cooldown on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+200 Block for 5s on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% Knockdown Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12070000"
+ },
+ {
+  "id": "12310000",
+  "nombre": "Empyrean Lord's Punishment",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 939-939 damage to up to 4 enemies within 4m of the target with a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 50 Stagger Gauge Damage",
+  "dano": "939",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+50 Stagger Gauge Damage"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% Stun Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12310000"
+ },
+ {
+  "id": "12410000",
+  "nombre": "Executing Blade",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1335-1335 damage to up to 4 enemies within 4m and reduces Defense by 30% for 5s. Deals 20% more damage on attacking a target inflicted with Impact-type status. 20 Stagger Gauge Damage",
+  "dano": "1335",
+  "cooldown": "45s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Inflict Exposed for 5s on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+30% damage on attacking a target inflicted with Impact-type status"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+3% all skill cooldowns of the target on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12410000"
+ },
+ {
+  "id": "12220000",
+  "nombre": "Grapple",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 1045-1045 damage to up to 4 enemies within 7m of the target and pull them in front of the caster. Inflicts Root for 3s. 20 Stagger Gauge Damage",
+  "dano": "1045",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "50% chance to inflict Stun for 3s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "20% of Max HP as Protective Shield for 10s on use"
+   },
+   {
+    "nivel": 15,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Up to +20% PvE Damage Tolerance and +10% PvP Damage Tolerance when more targets hit"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+2 Hit Target Count"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12220000"
+ },
+ {
+  "id": "12320000",
+  "nombre": "Nezekan's Shield",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Grants a Protective Shield that blocks damage equaling 41% of Max HP for 3s to the caster and nearby party members within 40m.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% all Element Tolerance for Protective Shield duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+2s Protective Shield duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+20% PvE Damage Tolerance and +10% PvP Damage Tolerance for Protective Shield duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restores 20% of Max HP when Protective Shield is removed"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% Protective Shield"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12320000"
+ },
+ {
+  "id": "12230000",
+  "nombre": "Noble Armor",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases Max HP by 5.4% for 300s and immediately restores HP by 5.4% of Max HP. Not affected by buff dispel effects.",
+  "dano": null,
+  "cooldown": "300s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+5% Defense for the duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Insulting Roar] effect for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Fury] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10% Incoming Heal for the duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for the duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12230000"
+ },
+ {
+  "id": "12190000",
+  "nombre": "Second Skin",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases PvE Damage Tolerance by 30% and PvP Damage Tolerance by 15% for 10s. Unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% all Element Tolerance for the duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+20% Block for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Ironclad Defense] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-30s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12190000"
+ },
+ {
+  "id": "12110000",
+  "nombre": "Shield of Protection",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
+  "dano": null,
+  "cooldown": "20s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+20% Move Speed for 3s on Block"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restores 10% HP once on Block"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+1 consecutive use"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12110000"
+ },
+ {
+  "id": "12120000",
+  "nombre": "Taunt",
+  "clase": "Templar",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 888-888 damage to a target within 20m and increases Enmity by 20000. Inflict Shrink for 15s on hit and has a 50% chance to inflict Taunt for 3s if the target is a player. Shrink: Reduces Accuracy by 200 and Attack by 10% 20 Stagger Gauge Damage",
+  "dano": "888",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Adds 10% PvE Damage Tolerance reduction and 5% PvP Damage Tolerance reduction effect to Shrink"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+10% Shrink Attack reduction"
+   },
+   {
+    "nivel": 15,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+2s Taunt duration, +5s Shrink duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Adds 5% Critical Damage Tolerance reduction effect to Shrink"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12120000"
+ },
+ {
+  "id": "12790000",
+  "nombre": "Survival Willpower",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 23,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Damage Tolerance Increase Cooldown: 60s Status Effect Resist Increase Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12790000"
+ },
+ {
+  "id": "12800000",
+  "nombre": "Block Pain",
+  "clase": "Templar",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 25,
+  "maxNivel": 40,
+  "descripcion": "Grants Block Pain for 10s when struck by an enemy. Block Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5% Cooldown: 20s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12800000"
+ },
+ {
+  "id": "12420000",
+  "nombre": "Blade Storm",
+  "clase": "Templar",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 10m and deals 1174-1174 damage to up to 4 enemies on the route with a 50% chance to inflict Stun for 2s. 20 Stagger Gauge Damage",
+  "dano": "1174",
+  "cooldown": "90s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12420000"
+ },
+ {
+  "id": "12330000",
+  "nombre": "Capture",
+  "clase": "Templar",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 506-506 damage to an enemy within 20m. Pulls the target to inflict Root for 3s with a 75% chance to inflict Stun for 3s. 100% chance to land Stun on NPC targets.",
+  "dano": "506",
+  "cooldown": "120s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12330000"
+ },
+ {
+  "id": "12020000",
+  "nombre": "Decisive Strike",
+  "clase": "Templar",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 65-65 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+  "dano": "65",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12020000"
+ },
+ {
+  "id": "12030000",
+  "nombre": "Desperate Strike",
+  "clase": "Templar",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 73-73 damage to up to 4 enemies within 4m and increases Enmity. Restores 120 MP.",
+  "dano": "73",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12030000"
+ },
+ {
+  "id": "12060000",
+  "nombre": "Punishing Strike",
+  "clase": "Templar",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 128-128 damage to up to 4 enemies within 4m and increases Enmity. 5 Stagger Gauge Damage",
+  "dano": "128",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12060000"
+ },
+ {
+  "id": "12440000",
+  "nombre": "Threatening Blow",
+  "clase": "Templar",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 122-122 damage to up to 4 enemies within 4m and increases Enmity. Restores 150 MP.",
+  "dano": "122",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/12440000"
+ }
+]

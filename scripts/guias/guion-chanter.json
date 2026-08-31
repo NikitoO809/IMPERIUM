@@ -1,0 +1,31 @@
+{
+ "titulo": "🎵 Chanter · guía completa",
+ "etiquetas": [
+  "Chanter",
+  "Build",
+  "PvE"
+ ],
+ "apertura": "Guía de Chanter sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí.\n\n**La clase, en corto**\n· **Arma:** bastón. Soporte híbrido: pega de cerca y sostiene al grupo.\n· **Ninguna clase aporta tanto a los demás.** Tras comparar las ocho, el Chanter es el que más buffs de grupo tiene con diferencia. Su valor no está en su daño.",
+ "secciones": [
+  {
+   "archivo": "h1-mantras.png",
+   "texto": "**1 · Lo que le das al grupo**\n\n**Los mantras** son auras que llevas puestas siempre (5 s de recarga):\n\n· `Undefeated Mantra` — **+10,5% de daño y de aguante en PvE**, y +5,25% en PvP, a todo el grupo\n· `Sprint Mantra` — +10,5% de velocidad y un 15% de curarte al golpear\n\n⚠️ **No se acumulan: solo puedes llevar uno.** Decide según la pelea.\n\n**Y los botones gordos:**\n\n· `Power of the Storm` (120 s) — 10 s de **+20% de velocidad de combate**, para ti y para el grupo a 40 m. Las recargas te las baja **un 20% a ti y un 10% a ellos**.\n· `Impeding Authority` (90 s) — escudo del **16% de la vida máxima** de cada uno, 20 s. Al ir por porcentaje, cuanto mejor equipado esté el grupo, más tapa.\n· `Healing Touch` (30 s) — cura a todos los que estén a 40 m."
+  },
+  {
+   "archivo": "h2-barrera.png",
+   "texto": "**2 · El botón que salva una pelea**\n\n`Barrier Spell` (180 s): durante **3 segundos, ni tú ni ningún compañero a 40 metros puede bajar del 10% de vida**.\n\nEs la habilidad que más pide anticipar de todo el juego: son 3 segundos. Si lo tiras pronto se desperdicia; si lo tiras tarde, ya hay muertos. Va justo antes del golpe que se lleva al grupo por delante.\n\n**Su mejor mejora:** a **nivel 25**, al acabarse **quita todos los estados negativos del grupo**. Deja de ser solo un salvavidas y pasa a ser también una limpieza general.\n\n⚠️ No para ciertos ataques muy fuertes."
+  },
+  {
+   "archivo": "h3-cadena.png",
+   "texto": "**3 · Aturdir y rematar**\n\nAdemás de sostener, tienes tu cadena. `Impactful Crush` (**10 s**) aturde al 60% —100% en PNJ— y **abre `Dark Crush` durante 2 segundos**.\n\nEse es el cambio que hay que tener en la cabeza: **`Dark Crush` ya no pide que el enemigo esté aturdido**. Lo que pasa es que solo está disponible dentro de esa ventana de 2 s. Tiene 5 s de recarga y con su mejora de nivel 16 **se queda sin recarga ninguna**.\n\nEl que sí exige estado es **`Wave Blow`** (20 s): solo entra sobre un enemigo **aturdido**, y lo derriba.\n\nY detrás, `Fracturing Blow`: le baja un 30% la defensa 5 s y pega un **20% más fuerte a quien ya esté incapacitado**."
+  },
+  {
+   "archivo": "h4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nOjo antes de nada: **`Barrier Spell` y `Power of the Storm` son Stigma** (mejoras a 5/10/15/20/25, y te quedas con todas las que desbloquees), mientras que `Dark Crush`, `Impactful Crush`, `Recuperation` y `Heat Wave Blow` son **Mastery** (8/12/16, y solo caben tres).\n\nDos caminos, y mezclarlos a medias no funciona:\n\n**Sostener al grupo** — `Barrier Spell` **nv. 25** (al acabarse, limpia TODOS los estados del grupo) y **nv. 20** (+1 s, de 3 a 4); `Recuperation` **nv. 16** (−3 s de recarga).\n\n**Encadenar aturdimientos** — `Dark Crush` **nv. 16** le quita la recarga entera, `Impactful Crush` **nv. 16** sube un 20% su probabilidad de aturdir, `Heat Wave Blow` **nv. 16** tiene un 25% de resetearse al bloquear.\n\nSi vas a jugar contenido de grupo, el primero. Si vas a hacer PvP suelto, el segundo — y recuerda que ese +20% de probabilidad **en PvE no hace nada**.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "h9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Esta no hace NADA en PvE**, porque contra un PNJ el estado ya entra al 100% y subir su probabilidad es pasar de 100% a 100%. En PvP, de las mejores:\n\n· `Heat Wave Blow` **nv. 8** — +20% Seal Chance\n\n**Estas 2 valen siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Wave Blow` **nv. 12** — -15% target's PvE Damage Boost and -7.5% PvP Damage…\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y estas 4 son las de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **ignora bloqueo y evasión** — `Incandescent Blow` nv. 16 · `Rushing Smash` nv. 16 · `Heat Wave Blow` nv. 12 · `Spinning Strike` nv. 16\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Assault Shock` — 🔴 nv. 20\n· `Barrier Spell` — 🟢 nv. 10\n· `Ensnaring Mark` — 🔵 nv. 25\n· `Guardian Blessing` — 🟢 nv. 25\n· `Impeding Authority` — 🟢 nv. 15 · 🟢 nv. 25\n· `Marchutan's Wrath` — 🔵 nv. 15 · 🔵 nv. 25\n· `Obliterate` — 🔴 nv. 20\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

@@ -1,0 +1,1008 @@
+[
+ {
+  "id": "16170000",
+  "nombre": "Command: Proxy",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the Spirit's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 5s and redirects damage taken each time the Spiritmaster is attacked, sharing 50% to the Spiritmaster and 50% to the Spirit. This effect is applied to the summoned Spirit with the highest HP. If HP is equal, it will be applied to the closer target. Damage is only shared if the Spirit is within 25m. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+5s Command: Proxy duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+10% PVP Damage Tolerance increase and +5% PvP Damage Tolerance increase to Spirit"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Spirit Protection\\] effect during Command: Proxy"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 3% of Spirit's HP every 1s for Command: Proxy duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "Grants Immortality to Spirit when its HP is 50% or less for Command: Proxy duration"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "40m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16170000"
+ },
+ {
+  "id": "16010000",
+  "nombre": "Cold Shock",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 54-54 Water damage to a target within 20m and restores 100 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2% Attack on landing \\[Earth Tremor\\] (Up to 5 stacks)"
+   },
+   {
+    "coste": 16,
+    "efecto": "10% chance to remove 1 buff on landing \\[Earth Tremor\\]"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16010000"
+ },
+ {
+  "id": "16040000",
+  "nombre": "Combustion",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 63-63 Fire damage to up to 4 enemies within 4m of the target. 3 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 16,
+    "efecto": "Adds \\[Ashy Call\\] Chain Skill"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16040000"
+ },
+ {
+  "id": "16060000",
+  "nombre": "Siphon",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1180-1180 damage and 300 MP damage to a target within 20m. Absorbs 0% HP and restores 300 MP.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 10,
+    "efecto": "+5% HP absorbed"
+   },
+   {
+    "coste": 15,
+    "efecto": "30% of Max HP as Protective Shield for 30s on use"
+   },
+   {
+    "coste": 20,
+    "efecto": "Stun for 3s on hit"
+   },
+   {
+    "coste": 25,
+    "efecto": "+30% Protective Shield effect increase"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16060000"
+ },
+ {
+  "id": "16070000",
+  "nombre": "Soul's Cry",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 246-246 damage to a target within 20m with a 70% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Inflicts Root for 5s"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "coste": 16,
+    "efecto": "+2s Fear duration"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16070000"
+ },
+ {
+  "id": "16080000",
+  "nombre": "Cry of Terror",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 859-859 damage to up to 4 enemies within 4m of the target with a 50% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Root for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s Fear duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Fear Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-30s cooldown"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16080000"
+ },
+ {
+  "id": "16100000",
+  "nombre": "Summon: Fire Spirit",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Summons a Fire Spirit. The Fire Spirit rushes towards a target within 20m and uses a skill which deals 68-68 damage to up to 4 enemies within 5m. Continues fighting using basic attacks with a 15% chance to use its skill each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Fire Spirit's Attack and Defense by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Fire Spirit Critical Hit damage"
+   },
+   {
+    "coste": 8,
+    "efecto": "10% chance to activate skill when Fire Spirit lands attack"
+   },
+   {
+    "coste": 12,
+    "efecto": "5% chance to inflict Knockdown for 3s on landing Fire Spirit attack"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% Fire Spirit Stats"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16100000"
+ },
+ {
+  "id": "16110000",
+  "nombre": "Summon: Water Spirit",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Summons a Water Spirit. The Water Spirit uses a skill which deals 143-143 Water damage to a target within 20m. Continues fighting using basic attacks with a 15% chance to use its skill and restores 20 of the Spiritmaster's MP each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Water Spirit's Attack and Critical Hit by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10% Water Spirit Attack"
+   },
+   {
+    "coste": 8,
+    "efecto": "10% chance to activate skill when Water Spirit lands attack"
+   },
+   {
+    "coste": 12,
+    "efecto": "5% chance to inflict Root for 2s on landing Water Spirit attack"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% Water Spirit Stats"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16110000"
+ },
+ {
+  "id": "16120000",
+  "nombre": "Summon: Wind Spirit",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Summons a Wind Spirit. The Wind Spirit selects a target within 20m and uses a skill that deals 1092-1092 Wind damage to up to 4 enemies within 5m of the target and restores 134-147 HP to the Spiritmaster. Continues fighting using basic attacks with a 10% chance to use its skill and restores 1.5% of the Spiritmaster's HP each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Wind Spirit's Accuracy and Critical Hit by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Wind Spirit Critical Hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "10% chance to activate skill when Wind Spirit lands attack"
+   },
+   {
+    "coste": 12,
+    "efecto": "5% chance to reduce enemy Attack Speed by 30% for 10s on landing Wind Spirit attack"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% Wind Spirit Stats"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16120000"
+ },
+ {
+  "id": "16130000",
+  "nombre": "Summon: Earth Spirit",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Summons an Earth Spirit. The Earth Spirit uses a skill which deals 247-247 Earth damage to a target within 20m and increases Enmity by 3750. Has a 30% chance to inflict Taunt for 2s if the target is a player. Continues fighting using basic attacks with a 10% chance to use its skill and increases Enmity each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Earth Spirit's Defense and HP by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance to Earth Spirit"
+   },
+   {
+    "coste": 8,
+    "efecto": "10% chance to activate skill when Earth Spirit lands attack"
+   },
+   {
+    "coste": 12,
+    "efecto": "5% chance to restore 5% of Spirit HP when landing Earth Spirit attack"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% Earth Spirit Stats"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16130000"
+ },
+ {
+  "id": "16140000",
+  "nombre": "Jointstrike: Curse",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 74-74 damage to up to 4 enemies within 4m of the target and inflict Curse. Curse: Deals 29-29 Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s The Spirit joins for a coordinated assault. Fire: 99-99 AoE damage Water: 595-595 damage Earth: 184-184 damage and reduces Status Effect Resist by 10% Wind: 145-145 AoE damage and 59-59 Damage over Time Ancient: 170-170 AoE damage 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+2s Curse duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "-2s cooldown"
+   },
+   {
+    "coste": 16,
+    "efecto": "[Jointstrike: Curse\\] ignores Block and Evasion and lands as a Critical Hit"
+   },
+   {
+    "coste": 80,
+    "efecto": "* * *"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16140000"
+ },
+ {
+  "id": "16150000",
+  "nombre": "Jointstrike: Corrode",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 429-429 damage to up to 4 enemies within 4m of the target and inflict Corrode for 20s. Corrode: Increases damage taken from the Spirit by 10% and deals 42-42 Damage over Time every 1s The Spirit joins for a coordinated assault. Fire: 544-544 AoE damage and Knockdown Water: 653-653 damage and Slow Earth: 590-590 damage and Seal Wind: 489-489 AoE damage and Stun Ancient: 1850-1850 AoE damage and Knockdown 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% extra damage taken from Spirit during Corrode"
+   },
+   {
+    "coste": 10,
+    "efecto": "-20% Combat Speed on hit for 10s"
+   },
+   {
+    "coste": 15,
+    "efecto": "-40% Incoming Heal during Corrode"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10s Corrode effect duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "+20% extra damage taken from Spiritmaster during Corrode"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16150000"
+ },
+ {
+  "id": "16190000",
+  "nombre": "Enhance: Spirit's Benediction",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases PvE Damage Boost by 20%, PvP Damage Boost by 10%, PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and restores 1000-0 HP every 1s for 10s for the caster and Spirit. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Restores 10% of Max HP on cast"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Spirit Strike\\] Damage Boost effect"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 activation chance and amount healed from \\[Spirit Communion\\]"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% PvE Damage Boost and Damage Tolerance, +12.5% PvP Damage Boost and Damage Tolerance for caster and Spirit"
+   },
+   {
+    "coste": 25,
+    "efecto": "Restores 20% Max HP on cast"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16190000"
+ },
+ {
+  "id": "16200000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16200000"
+ },
+ {
+  "id": "16220000",
+  "nombre": "Cursed Cloud",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 601-601 damage to up to 4 enemies within 4m and deal 120-120 Damage over Time every 1s for 10s. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-1000 enemy Max Stamina during Damage over Time"
+   },
+   {
+    "coste": 10,
+    "efecto": "-20% Max HP of PC targets during Damage over Time"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10s Damage over Time duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30% Status Effect Resist during Damage over Time"
+   },
+   {
+    "coste": 25,
+    "efecto": "-50% Damage over Time intervals"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16220000"
+ },
+ {
+  "id": "16230000",
+  "nombre": "Seize Magic",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1031-1031 damage to up to 4 enemies within 4m of the target and remove up to 2 buffs. Deals 371-495 extra damage according to the number of removed buffs. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Removes up to 3 buffs"
+   },
+   {
+    "coste": 10,
+    "efecto": "Inflicts Seal for 5s when removing 3 or more buffs"
+   },
+   {
+    "coste": 15,
+    "efecto": "Removes up to 5 buffs"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16230000"
+ },
+ {
+  "id": "16240000",
+  "nombre": "Jointstrike: Destructive Attack",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 2865-2865 damage to a target within 20m. The Spirit joins you in a coordinated assault. Fire: 1328-1328 AoE damage Water: 1594-1594 damage Earth: 731-731 damage Wind: 2990-2990 AoE damage Ancient: 5315-5315 AoE damage 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Changes to Charge Skill, up to +200% \\[Jointstrike: Destructive Attack\\] damage"
+   },
+   {
+    "coste": 10,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "coste": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "Reset \\[Jointstrike: Curse\\] and \\[Jointstrike: Corrode\\] cooldown on landing \\[Jointstrike: Destructive Attack\\] first hit"
+   },
+   {
+    "coste": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16240000"
+ },
+ {
+  "id": "16250000",
+  "nombre": "Summon: Ancient Spirit",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Summons an Ancient Spirit for 30s and grants Four Elements status each time the Ancient Spirit uses its skill. The Ancient Spirit uses a skill on a target within 20m which deals 4328-4328 damage to up to 4 enemies within 4m. Continues fighting using basic attacks and reuses its skill after 7 basic attacks. It is dismissed upon selecting the summon icon. Each skill level increases the Ancient Spirit's Attack, Defense, Accuracy, and Critical Hit by 2%. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Ancient Spirit Attack"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Spirit's Descent\\] activation chance and damage for 30s"
+   },
+   {
+    "coste": 15,
+    "efecto": "Ancient Spirit uses skill after 5 basic attacks"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Ancient Spirit Stats"
+   },
+   {
+    "coste": 25,
+    "efecto": "Uses skill after Ancient Spirit uses Normal Attack 3 times"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16250000"
+ },
+ {
+  "id": "16260000",
+  "nombre": "Magic Block",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Deals 1071-1071 damage to a target within 20m with a 75% chance to inflict Seal for 5s. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "50% chance to inflict Root for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "-1000 enemy Max Stamina for 5s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+2s Seal duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Seal chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16260000"
+ },
+ {
+  "id": "16340000",
+  "nombre": "Rapid Scattershot",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Deals 464-464 damage to a target afflicted with Stagger within 20m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16340000"
+ },
+ {
+  "id": "16300000",
+  "nombre": "Elemental Fusion",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "The Spiritmaster receives an element each time a Spirit uses its skill. Grants Four Elements status and the ability to use the \\[Elemental Fusion\\] skill upon reaching 4 stacks. \\[Elemental Fusion\\] can only be used when granted Four Elements, and using \\[Elemental Fusion\\] will immediately remove Four Elements. Cannot receive additional elements while in Four Elements status. Deals 895-895 damage to a target within 20m. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Extra damage after 3s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+7 all Element Boost on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Changes to Charge Skill, up to +200% damage"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to regain Four Elements"
+   }
+  ],
+  "cooldown": "3s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16300000"
+ },
+ {
+  "id": "16330000",
+  "nombre": "Dimensional Control",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "A skill that is triggered for a short while each time a Spirit uses its skill. Select a target within 20m and deal 157-157 damage to up to 4 enemies within 4m of the target and inflict Slow, reducing Move Speed by 40% for 3s. Restores 100 MP. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% Slow effect"
+   },
+   {
+    "coste": 8,
+    "efecto": "Extra damage after 3s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit chance on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Pull in nearby targets"
+   },
+   {
+    "coste": 16,
+    "efecto": "50% chance to inflict Root for 3s on hit"
+   }
+  ],
+  "cooldown": "1s",
+  "alcance": "20m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16330000"
+ },
+ {
+  "id": "16360000",
+  "nombre": "Kaisinel's Power",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases Status Effect Chance by 20% and Status Effect Resist by 20% for the caster for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+150 Block and Evasion"
+   },
+   {
+    "coste": 10,
+    "efecto": "+15% Status Effect Resist"
+   },
+   {
+    "coste": 15,
+    "efecto": "+150 Accuracy"
+   },
+   {
+    "coste": 20,
+    "efecto": "+15% Status Effect Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "+30% duration"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16360000"
+ },
+ {
+  "id": "16370000",
+  "nombre": "Flame Blessing",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 234-234 extra damage to enemies on landing an attack for 10s. Cooldown: 1s",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+100 Accuracy"
+   },
+   {
+    "coste": 10,
+    "efecto": "+100 Critical Hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% Critical Damage Boost"
+   },
+   {
+    "coste": 20,
+    "efecto": "-50% extra damage cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "+50% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16370000"
+ },
+ {
+  "id": "16700000",
+  "nombre": "Assault Terror",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 939-939 damage to up to 4 enemies within 4m of the target with a 30% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets. Increases Defense by max 20% proportional to hit targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% caster's Attack for 5s"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Fear Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-50% cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "30m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16700000"
+ },
+ {
+  "id": "16710000",
+  "nombre": "Spirit Strike",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance by 0.4%. Increases the Spirit's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance 0.4%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16710000"
+ },
+ {
+  "id": "16720000",
+  "nombre": "Spirit Protection",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Defense by 2% and Spirit's Defense by 2%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16720000"
+ },
+ {
+  "id": "16730000",
+  "nombre": "Spirit's Descent",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 47-47 extra damage whenever the Spiritmaster's attacks land within 10 seconds after a Spirit is summoned. Duration is increased to 30s when summoning an Ancient Spirit. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16730000"
+ },
+ {
+  "id": "16740000",
+  "nombre": "Corrode",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Hit by 100 and has a 50% chance to deal 124-124 damage on landing a Critical Hit. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16740000"
+ },
+ {
+  "id": "16750000",
+  "nombre": "Spirit Revitalization",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Has a 11% chance to reduce the cooldown of Spirit summon skills by 1s on hit. Immediately heals the Spirit for 12% of its Max HP when its HP is 50% or less. Cooldown: 1s Spirit Healing Cooldown: 30s",
+  "stigmas": [],
+  "cooldown": "30s",
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16750000"
+ },
+ {
+  "id": "16760000",
+  "nombre": "Mental Focus",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Mental-type Chance(s) by 11% and Double Chance by 0.3%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16760000"
+ },
+ {
+  "id": "16770000",
+  "nombre": "Spirit Communion",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster and Spirit's HP by 182-200 when landing an attack. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16770000"
+ },
+ {
+  "id": "16780000",
+  "nombre": "Element Unification",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases Critical Damage Boost by 1.1% for the caster and Spirit for 10s on landing a Spirit skill attack. Stacks up to 5 times. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16780000"
+ },
+ {
+  "id": "16790000",
+  "nombre": "Revitalization Contract",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16790000"
+ },
+ {
+  "id": "16800000",
+  "nombre": "Consecutive Countercurrent",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 97-97 extra damage on landing an attack on a target taking Damage over Time. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Orb",
+  "url": "https://questlog.gg/aion-2/en/db/skill/16800000"
+ }
+]

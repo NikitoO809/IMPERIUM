@@ -1,0 +1,31 @@
+{
+ "titulo": "🏹 Ranger · guía completa",
+ "etiquetas": [
+  "Ranger",
+  "Build",
+  "PvP"
+ ],
+ "apertura": "Guía de Ranger sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí.\n\n**La clase, en corto**\n· **Arma:** arco largo. Daño físico a 20 metros.\n· **Es la única con dos mecánicas a la vez:** una ventana de precisión que multiplica su daño, y una cadena de freno que desbloquea su remate. Hay que llevar las dos en la cabeza.",
+ "secciones": [
+  {
+   "archivo": "r1-precision.png",
+   "texto": "**1 · La ventana de Precisión**\n\nEl Ranger no dispara siempre igual. `Marking Shot` (10 s) le da **Precisión durante 10 segundos: +300 de crítico**, y de paso te desplaza en la dirección que marques.\n\nDentro de esa ventana cambian dos cosas:\n\n· `Deadshot` hace **+35% de daño**\n· `Suppressing Arrow` **solo aturde mientras Precisión esté activa** — fuera de la ventana es un flechazo más\n\nEse segundo punto es el que más gente falla: disparas el aturdimiento sin la ventana abierta y no aturde."
+  },
+  {
+   "archivo": "r2-cadena.png",
+   "texto": "**2 · Frenar y reventar**\n\nTu segunda cadena. `Burst Arrow` dice *«a target afflicted with Slow or Root»*: **si el enemigo no está frenado, no puedes lanzarlo**.\n\nAsí que `Snare Shot` (15 s, ralentiza un 40%) o `Sealing Arrow` (60 s) van siempre por delante.\n\nDos mejoras que lo redondean: `Snare Shot` **nv. 16** alarga el freno 2 segundos más, y `Burst Arrow` **nv. 16** tiene un 25% de resetearse solo al golpear."
+  },
+  {
+   "archivo": "r3-veneno.png",
+   "texto": "**3 · El daño que no se ve**\n\nMientras tú recargas, el enemigo se sigue desangrando.\n\n**La joya escondida es `Drill Dart`**: 5 segundos de recarga, aplica sangrado… y **le baja al enemigo la curación recibida un 60%**. En PvP contra un grupo con sanador eso decide la pelea más que tu daño.\n\n⚠️ Pero **no se acumula** con el `Debilitating Smash` del Templar ni con el `Firestorm` del Sorcerer: si en tu grupo ya lo lleva alguien, el segundo no suma nada. Habladlo antes.\n\n`Griffon Arrow` tiene un detalle bonito: sus llamas **hacen más daño cuanto más se mueva el objetivo**. Contra alguien que huye es cuando más pega, justo cuando las demás clases pierden daño.\n\nY `Supporting Fire` deja un orbe disparando solo durante 15 segundos, con un 25% de soltar tiro cada medio segundo."
+  },
+  {
+   "archivo": "r4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nEl Ranger vive de repetir disparos, y **dos de sus habilidades comparten la misma mejora de nivel 16: 25% de resetear su propia recarga al golpear** — `Burst Arrow` y `Suppressing Arrow`. Con las dos puestas, la clase cambia de ritmo: pasas de esperar recargas a encadenar disparos.\n\nOjo, que `Deadshot` **no** lleva ese reset: su nivel 16 le añade daño extra al golpear. Es igual de buena, pero no acelera nada.\n\nEl otro camino es alargar la ventana: `Marking Shot` **nv. 8** le suma 5 segundos a Precisión, que pasa de 10 a **15**. Media pelea corta con el crítico subido.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "r9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Estas 2 no hacen NADA en PvE**, porque contra un PNJ el estado ya entra al 100% y subir su probabilidad es pasar de 100% a 100%. En PvP, de las mejores:\n\n· `Explosion Trap` **nv. 12** — +20% Stun Chance\n· `Suppressing Arrow` **nv. 12** — +20% Stun Chance\n\n**Estas 2 valen siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Gale Arrow` **nv. 12** — Increases Combat Speed, PvE Damage Boost, and PvP…\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y estas 2 son las de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **ignora bloqueo y evasión** — `Marking Shot` nv. 16 · `Deadshot` nv. 12\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Ambush Kick` — 🔴 nv. 20\n· `Arrow Storm` — 🔴 nv. 20\n· `Assault Smite` — 🔴 nv. 20\n· `Ensnaring Trap` — 🔵 nv. 25\n· `Mother Nature's Breath` — 🟢 nv. 20\n· `Sealing Arrow` — 🔴 nv. 20 · 🔵 nv. 25\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

@@ -1,0 +1,1667 @@
+[
+ {
+  "id": "16010000",
+  "nombre": "Cold Shock",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 54-54 Water damage to a target within 20m and restores 100 MP.",
+  "dano": "54",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 1% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+2% Attack on landing [Earth Tremor] (Up to 5 stacks)"
+   },
+   {
+    "nivel": 16,
+    "efecto": "10% chance to remove 1 buff on landing [Earth Tremor]"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16010000"
+ },
+ {
+  "id": "16040000",
+  "nombre": "Combustion",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 63-63 Fire damage to up to 4 enemies within 4m of the target. 3 Stagger Gauge Damage",
+  "dano": "63",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+100 Skill Accuracy"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Adds [Ashy Call] Chain Skill"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16040000"
+ },
+ {
+  "id": "16290004",
+  "nombre": "Dismiss: Ancient Spirit",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 25,
+  "descripcion": "Returns the Ancient Spirit to the Spirit Realm. The Ancient Spirit uses a skill on a target within 20m which deals 1082-1082 damage to up to 4 enemies. After using the skill, it continues fighting using basic attacks and reuses its skill after 7 basic attacks. It is dismissed upon selecting the summon icon. Each skill level increases the Spirit's Attack, Defense, Accuracy, and Critical Hit by 2%. 20 Stagger Gauge Damage",
+  "dano": "1082",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16290004"
+ },
+ {
+  "id": "16290002",
+  "nombre": "Dismiss: Earth Spirit",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Returns the Earth Spirit to the Spirit Realm. The Earth Spirit uses a skill which deals 247-247 Earth damage to a target within 20m and increases Enmity by 3750. Has a 30% chance to inflict Taunt for 2s if the target is a player. Continues fighting using basic attacks with a 10% chance to use its skill and increases Enmity each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Earth Spirit's Defense and HP by 2%. 7 Stagger Gauge Damage",
+  "dano": "247",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16290002"
+ },
+ {
+  "id": "16290000",
+  "nombre": "Dismiss: Fire Spirit",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Returns the Fire Spirit to the Spirit Realm. The Fire Spirit rushes towards a target within 20m and uses a skill which deals 68-68 damage to up to 4 enemies within 5m. Continues fighting using basic attacks with a 15% chance to use its skill each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Fire Spirit's Attack and Defense by 2%. 7 Stagger Gauge Damage",
+  "dano": "68",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16290000"
+ },
+ {
+  "id": "16290001",
+  "nombre": "Dismiss: Water Spirit",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Returns the Water Spirit to the Spirit Realm. The Water Spirit uses a skill which deals 143-143 Water damage to a target within 20m. Continues fighting using basic attacks with a 15% chance to use its skill and restores 20 of the Spiritmaster's MP each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Water Spirit's Attack and Critical Hit by 2%. 7 Stagger Gauge Damage",
+  "dano": "143",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16290001"
+ },
+ {
+  "id": "16290003",
+  "nombre": "Dismiss: Wind Spirit",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Returns the Wind Spirit to the Spirit Realm. The Wind Spirit selects a target within 20m and uses a skill that deals 273-273 Wind damage to up to 4 enemies within 5m of the target and restores 134-147 HP to the Spiritmaster. Continues fighting using basic attacks with a 10% chance to use its skill and restores 1.5% of the Spiritmaster's HP each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Wind Spirit's Accuracy and Critical Hit by 2%. 7 Stagger Gauge Damage",
+  "dano": "273",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16290003"
+ },
+ {
+  "id": "16000100",
+  "nombre": "Dodge",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "0.5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16000100"
+ },
+ {
+  "id": "16009999",
+  "nombre": "Return: All Spirits",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Returns all summoned Spirits to the Spirit Realm. Click the Returm icon to return the Spirits.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16009999"
+ },
+ {
+  "id": "16710000",
+  "nombre": "Spirit Strike",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance by 0.4%. Increases the Spirit's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance 0.4%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16710000"
+ },
+ {
+  "id": "16000000",
+  "nombre": "Spiritmaster Weapon Equip",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "Allows equipping Spiritmaster weapons. [Applicable weapons] Orb, Spellbook",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16000000"
+ },
+ {
+  "id": "16100000",
+  "nombre": "Summon: Fire Spirit",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Summons a Fire Spirit. The Fire Spirit rushes towards a target within 20m and uses a skill that deals 68-68 damage to up to 4 enemies within 5m. The Fire Spirit fights alongside the caster using basic attacks, with a 15% chance to use its skill each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Fire Spirit's Attack and Defense by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "dano": "68",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Fire Spirit Critical Hit damage"
+   },
+   {
+    "nivel": 8,
+    "efecto": "10% chance to activate skill when Fire Spirit lands attack"
+   },
+   {
+    "nivel": 12,
+    "efecto": "5% chance to inflict Knockdown for 3s on landing Fire Spirit attack"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+20% Fire Spirit Stats"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16100000"
+ },
+ {
+  "id": "16110000",
+  "nombre": "Summon: Water Spirit",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 3,
+  "maxNivel": 40,
+  "descripcion": "Summons a Water Spirit. The Water Spirit uses a skill that deals 143-143 Water damage to a target within 20m. The Water Spirit fights alongside the caster using basic attacks, with a 15% chance to use its skill and restoring 20 of the Spiritmaster's MP each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Water Spirit's Attack and Critical Hit by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "dano": "143",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10% Water Spirit Attack"
+   },
+   {
+    "nivel": 8,
+    "efecto": "10% chance to activate skill when Water Spirit lands attack"
+   },
+   {
+    "nivel": 12,
+    "efecto": "5% chance to inflict Root for 2s on landing Water Spirit attack"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+20% Water Spirit Stats"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16110000"
+ },
+ {
+  "id": "16140000",
+  "nombre": "Jointstrike: Curse",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 74-74 damage to up to 4 enemies within 4m of the target, and inflicts Curse. Curse: Deals 148-148 Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s. The Spirit joins for a coordinated assault. Fire: 99-99 AoE damage Water: 119-119 damage Earth: 92-92 damage and reduces Status Effect Resist by 10% Wind: 29-29 AoE damage and 59-59 Damage over Time Ancient: 170-170 AoE damage 10 Stagger Gauge Damage",
+  "dano": "74",
+  "cooldown": "10s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+2s Curse duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-2s cooldown"
+   },
+   {
+    "nivel": 16,
+    "efecto": "[Jointstrike: Curse] ignores Block and Evasion and lands as a Critical Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16140000"
+ },
+ {
+  "id": "16340000",
+  "nombre": "Rapid Scattershot",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 5,
+  "maxNivel": 40,
+  "descripcion": "Deals 116-116 damage to a target afflicted with Stagger within 20m.",
+  "dano": "116",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 5% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16340000"
+ },
+ {
+  "id": "16720000",
+  "nombre": "Spirit Protection",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 6,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Defense by 2% and Spirit's Defense by 2%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16720000"
+ },
+ {
+  "id": "16130000",
+  "nombre": "Summon: Earth Spirit",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 7,
+  "maxNivel": 40,
+  "descripcion": "Summons an Earth Spirit. The Earth Spirit uses a skill that deals 247-247 Earth damage to a target within 20m and increases Enmity by 3750. Has a 30% chance to inflict Taunt for 2s if the target is a player. The Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Earth Spirit's Defense and HP by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "dano": "247",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance to Earth Spirit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "10% chance to activate skill when Earth Spirit lands attack"
+   },
+   {
+    "nivel": 12,
+    "efecto": "5% chance to restore 5% of Spirit HP when landing Earth Spirit attack"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+20% Earth Spirit Stats"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16130000"
+ },
+ {
+  "id": "16330000",
+  "nombre": "Dimensional Control",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 8,
+  "maxNivel": 40,
+  "descripcion": "A skill that is triggered briefly each time a Spirit uses its skill. Selects a target within 20m and deals 157-157 damage to up to 4 enemies within 4m of the target and inflicts Slow, reducing Move Speed by 40% for 3s on hit. Restores 100 MP. 5 Stagger Gauge Damage",
+  "dano": "157",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+20% Slow effect"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Extra damage after 3s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit chance on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Pull in nearby targets"
+   },
+   {
+    "nivel": 16,
+    "efecto": "30% chance to inflict Root for 3s on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16330000"
+ },
+ {
+  "id": "16730000",
+  "nombre": "Spirit's Descent",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 9,
+  "maxNivel": 40,
+  "descripcion": "Has a 50% chance to deal 47-47 extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned. Cooldown: 1s",
+  "dano": "47",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16730000"
+ },
+ {
+  "id": "16120000",
+  "nombre": "Summon: Wind Spirit",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 10,
+  "maxNivel": 40,
+  "descripcion": "Summons a Wind Spirit. The Wind Spirit selects a target within 20m and uses a skill that deals 273-273 Wind damage to up to 4 enemies within 5m of the target and restores 134-147 HP to the Spiritmaster. The Wind Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and restores 1.5% of the Spiritmaster's HP each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Wind Spirit's Accuracy and Critical Hit by 2%. 7 Stagger Gauge Damage Spirit Skill Cooldown: 3s",
+  "dano": "273",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-50% MP Cost"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Wind Spirit Critical Hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "10% chance to activate skill when Wind Spirit lands attack"
+   },
+   {
+    "nivel": 12,
+    "efecto": "5% chance to reduce enemy Attack Speed by 30% for 10s on landing Wind Spirit attack"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+20% Wind Spirit Stats"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16120000"
+ },
+ {
+  "id": "16740000",
+  "nombre": "Corrode",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 11,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Critical Hit by 100, with a 50% chance to deal 124-124 damage on landing a Critical Hit. Cooldown: 1s",
+  "dano": "124",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16740000"
+ },
+ {
+  "id": "16070000",
+  "nombre": "Soul's Cry",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 12,
+  "maxNivel": 40,
+  "descripcion": "Deals 246-246 damage to a target within 20m, with a 70% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets. 15 Stagger Gauge Damage",
+  "dano": "246",
+  "cooldown": "45s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Inflicts Root for 5s"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-10s cooldown"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+2s Fear duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16070000"
+ },
+ {
+  "id": "16750000",
+  "nombre": "Spirit Revitalization",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 13,
+  "maxNivel": 40,
+  "descripcion": "Has a 11% chance to reduce the cooldown of Spirit summon skills by 1s on hit. Immediately heals the Spirit for 12% of its Max HP when its HP is 50% or less. Cooldown: 1s Spirit Healing Cooldown: 30s",
+  "dano": null,
+  "cooldown": "30s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16750000"
+ },
+ {
+  "id": "16300000",
+  "nombre": "Elemental Fusion",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 14,
+  "maxNivel": 40,
+  "descripcion": "The Spiritmaster receives an element each time a Spirit uses its skill. Grants Four Elements status and the ability to use the [Elemental Fusion] skill upon reaching 4 stacks. [Elemental Fusion] can only be used when granted Four Elements, and using [Elemental Fusion] will immediately remove Four Elements. Cannot receive additional elements while in Four Elements status. Deals 895-895 damage to a target within 20m. 10 Stagger Gauge Damage",
+  "dano": "895",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Extra damage after 3s on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10 all Element Boost on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Changes to Charge Skill, up to +200% damage"
+   },
+   {
+    "nivel": 16,
+    "efecto": "25% chance to regain Four Elements"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16300000"
+ },
+ {
+  "id": "16300001",
+  "nombre": "Elemental Fusion",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 14,
+  "maxNivel": 1,
+  "descripcion": "The Spiritmaster receives an element each time a Spirit uses its skill. Grants Four Elements status and the ability to use the [Elemental Fusion] skill upon reaching 4 stacks. [Elemental Fusion] can only be used when granted Four Elements, and using [Elemental Fusion] will immediately remove Four Elements. Cannot receive additional elements while in Four Elements status. Deals 895-895 damage to a target within 20m. 10 Stagger Gauge Damage",
+  "dano": "895",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16300001"
+ },
+ {
+  "id": "16760000",
+  "nombre": "Mental Focus",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 15,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Mental-type Chance(s) by 11% and Double Chance by 0.3%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16760000"
+ },
+ {
+  "id": "16200000",
+  "nombre": "Defiance",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 16,
+  "maxNivel": 40,
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity Not affected by cooldown reduction effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Adds [Curse of Despair] Chain Skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 1000 Stamina on using [Defiance]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 20% HP on using [Defiance]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16200000"
+ },
+ {
+  "id": "16800000",
+  "nombre": "Consecutive Countercurrent",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 17,
+  "maxNivel": 40,
+  "descripcion": "Has a 50% chance to deal 97-97 extra damage on landing an attack on a target that is taking Damage over Time. Cooldown: 1s",
+  "dano": "97",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16800000"
+ },
+ {
+  "id": "16770000",
+  "nombre": "Spirit Communion",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 21,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by 182-200 when landing an attack. Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16770000"
+ },
+ {
+  "id": "16700000",
+  "nombre": "Assault Terror",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 939-939 damage to up to 4 enemies within 4m of the target, with a 30% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+  "dano": "939",
+  "cooldown": "120s",
+  "alcance": "30 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% caster's Attack for 5s"
+   },
+   {
+    "nivel": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Fear Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-50% cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16700000"
+ },
+ {
+  "id": "16170000",
+  "nombre": "Command: Proxy",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases the Spirit's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 4s, and redirects damage taken each time the Spiritmaster is attacked, sharing 50% to the Spiritmaster and 50% to the Spirit. This effect is applied to the summoned Spirit with the highest HP. If HP is equal, it will be applied to the closer target. Damage is only shared if the Spirit is within 25m. Unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": "40 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+2s Command: Proxy duration"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+10% PVP Damage Tolerance increase and +5% PvP Damage Tolerance increase to Spirit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Spirit Protection] effect during Command: Proxy"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restores 3% of Spirit's HP every 1s for Command: Proxy duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Grants Immortality to Spirit when its HP is 50% or less for Command: Proxy duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16170000"
+ },
+ {
+  "id": "16080000",
+  "nombre": "Cry of Terror",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 859-859 damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets.",
+  "dano": "859",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Root for 5s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+2s Fear duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Fear Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-30s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16080000"
+ },
+ {
+  "id": "16220000",
+  "nombre": "Cursed Cloud",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 601-601 damage to up to 4 enemies within 4m, and deals 1203-1203 Damage over Time every 1s for 10s. 20 Stagger Gauge Damage",
+  "dano": "601",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "-1000 enemy Max Stamina during Damage over Time"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-20% Max HP of PC targets during Damage over Time"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10s Damage over Time duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30% Status Effect Resist during Damage over Time"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-50% Damage over Time intervals"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16220000"
+ },
+ {
+  "id": "16190000",
+  "nombre": "Enhance: Spirit's Benediction",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases PvE Damage Boost by 20%, PvP Damage Boost by 10%, PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and restores 1850-2035 HP every 1s for 10s to the caster and Spirit. Unaffected by cooldown increase effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Restores 10% of Max HP on cast"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Spirit Strike] Damage Boost effect"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 activation chance and amount healed from [Spirit Communion]"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% PvE Damage Boost and Damage Tolerance, +12.5% PvP Damage Boost and Damage Tolerance for caster and Spirit"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+3s [Enhance: Spirit's Benediction] duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16190000"
+ },
+ {
+  "id": "16370000",
+  "nombre": "Flame Blessing",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Has a 50% chance to deal 234-234 extra damage to enemies on landing an attack for 10s. Cooldown: 1s",
+  "dano": "234",
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+100 Accuracy"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+100 Critical Hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10% Critical Damage Boost"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-50% extra damage cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+50% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16370000"
+ },
+ {
+  "id": "16150000",
+  "nombre": "Jointstrike: Corrode",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 429-429 damage to up to 4 enemies within 4m of the target, inflicting Corrode for 20s. Corrode: Increases damage taken from the Spirit by 10% and deals 859-859 Damage over Time every 1s The Spirit joins for a coordinated assault. Fire: 544-544 AoE damage and Knockdown Water: 653-653 damage and Slow Earth: 590-590 damage and Seal Wind: 489-489 AoE damage and Stun Ancient: 925-925 AoE damage and Knockdown 10 Stagger Gauge Damage",
+  "dano": "429",
+  "cooldown": "45s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% extra damage taken from Spirit during Corrode"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-20% Combat Speed on hit for 10s"
+   },
+   {
+    "nivel": 15,
+    "efecto": "-70% Incoming Heal during Corrode"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10s Corrode effect duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+25% extra damage taken from Spiritmaster during Corrode"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16150000"
+ },
+ {
+  "id": "16240000",
+  "nombre": "Jointstrike: Destructive Attack",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Jointstrike: Destructive Attack ===============================",
+  "dano": "573",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Changes to Charge Skill, up to +200% [Jointstrike: Destructive Attack] damage"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Reset [Jointstrike: Curse] and [Jointstrike: Corrode] cooldown on landing [Jointstrike: Destructive Attack] first hit"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16240000"
+ },
+ {
+  "id": "16360000",
+  "nombre": "Kaisinel's Power",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases Status Effect Chance by 20% and Status Effect Resist by 20% for the caster for 10s.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+150 Block and Evasion"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+15% Status Effect Resist"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+150 Accuracy"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+15% Status Effect Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+30% duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16360000"
+ },
+ {
+  "id": "16260000",
+  "nombre": "Magic Block",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1071-1071 damage to a target within 20m, with a 75% chance to inflict Seal for 5s. 20 Stagger Gauge Damage",
+  "dano": "1071",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "50% chance to inflict Root for 5s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "-1000 enemy Max Stamina for 5s on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+2s Seal duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% Seal chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16260000"
+ },
+ {
+  "id": "16230000",
+  "nombre": "Seize Magic",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 1031-1031 damage to up to 4 enemies within 4m of the target, removing up to 2 buffs. Deals 371-495 extra damage based on the number of buffs removed. 20 Stagger Gauge Damage",
+  "dano": "1031",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Removes up to 3 buffs"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Inflicts Seal for 5s when removing 3 or more buffs"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Removes up to 5 buffs"
+   },
+   {
+    "nivel": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16230000"
+ },
+ {
+  "id": "16060000",
+  "nombre": "Siphon",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1180-1180 damage and 300 MP damage to a target within 20m. Absorbs 10% HP and restores 300 MP.",
+  "dano": "1180",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+5% HP absorbed"
+   },
+   {
+    "nivel": 15,
+    "efecto": "30% of Max HP as Protective Shield for 30s on use"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Stun for 3s on hit"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+30% Protective Shield effect increase"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16060000"
+ },
+ {
+  "id": "16250000",
+  "nombre": "Summon: Ancient Spirit",
+  "clase": "Elementalist",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Summons an Ancient Spirit for 30s and grants Four Elements status each time the Ancient Spirit uses its skill. The Ancient Spirit uses a skill on a target within 20m, dealing 1082-1082 damage to up to 4 enemies within 4m. The Ancient Spirit fights alongside the caster using basic attacks and reuses its skill after 7 basic attacks. It is dismissed upon selecting the summon icon. Each skill level increases the Ancient Spirit's Attack, Defense, Accuracy, and Critical Hit by 2%. 20 Stagger Gauge Damage",
+  "dano": "1082",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% Ancient Spirit Attack"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Spirit's Descent] activation chance and damage for 30s"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Ancient Spirit uses skill after 5 basic attacks"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Ancient Spirit Stats"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Uses skill after Ancient Spirit uses Normal Attack 3 times"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16250000"
+ },
+ {
+  "id": "16790000",
+  "nombre": "Revitalization Contract",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 23,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16790000"
+ },
+ {
+  "id": "16780000",
+  "nombre": "Element Unification",
+  "clase": "Elementalist",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 25,
+  "maxNivel": 40,
+  "descripcion": "Increases Critical Damage Boost by 1.1% for the caster and Spirit for 10s upon landing a Spirit skill attack. Stacks up to 5 times. Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16780000"
+ },
+ {
+  "id": "16155100",
+  "nombre": "Ancient Spirit: Break",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 925-925 damage to up to 4 enemies within 5m of the target, inflicting Knockdown.",
+  "dano": "925",
+  "cooldown": "2s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16155100"
+ },
+ {
+  "id": "16050000",
+  "nombre": "Ashy Call",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 20m and deals 84-84 Fire damage to up to 4 enemies within 4m of the target.",
+  "dano": "84",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16050000"
+ },
+ {
+  "id": "16280000",
+  "nombre": "Continuous Impact",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 20,
+  "descripcion": "",
+  "dano": "79",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16280000"
+ },
+ {
+  "id": "16210000",
+  "nombre": "Curse of Despair",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 521-521 damage to a target within 20m with a 75% chance to inflict Fear and Root for 5s. 100% chance to inflict Fear and Root on NPC targets.",
+  "dano": "521",
+  "cooldown": "120s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16210000"
+ },
+ {
+  "id": "16153100",
+  "nombre": "Earth Spirit: Taunt",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Taunts a target within 4m for 0.59s, and increases Enmity dealt by the Earth Spirit by 50% for 10s.",
+  "dano": null,
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16153100"
+ },
+ {
+  "id": "16153300",
+  "nombre": "Earth Spirit: Taunt",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Taunts a target within 4m for 0.59s, and increases Enmity dealt by the Earth Spirit by 50% for 10s.",
+  "dano": null,
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16153300"
+ },
+ {
+  "id": "16153400",
+  "nombre": "Earth Spirit: Taunt",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Taunts a target within 4m for 0.59s, and increases Enmity dealt by the Earth Spirit by 50% for 10s.",
+  "dano": null,
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16153400"
+ },
+ {
+  "id": "16153200",
+  "nombre": "Earth Spirit: Taunt",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Taunts a target within 4m for 0.59s, and increases Enmity dealt by the Earth Spirit by 50% for 10s.",
+  "dano": null,
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16153200"
+ },
+ {
+  "id": "16030000",
+  "nombre": "Earth Tremor",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 63-63 Earth damage to a target within 20m and restores 150 MP.",
+  "dano": "63",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16030000"
+ },
+ {
+  "id": "16270000",
+  "nombre": "Elemental Replenishment",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 20,
+  "descripcion": "Consumes own HP to restore 111-129 HP to the summoned spirit.",
+  "dano": null,
+  "cooldown": "30s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16270000"
+ },
+ {
+  "id": "16310000",
+  "nombre": "Extract Vitality",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 20,
+  "descripcion": "Deals 81-81 damage to the target and restores summoned Spirit's HP by 111-129.",
+  "dano": "81",
+  "cooldown": "20s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16310000"
+ },
+ {
+  "id": "16151400",
+  "nombre": "Fire Spirit: Rage Burst",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 4m and deals 544-544 damage to up to 4 enemies within 5m of the target, inflicting Knockdown.",
+  "dano": "544",
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16151400"
+ },
+ {
+  "id": "16151200",
+  "nombre": "Fire Spirit: Rage Burst",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 4m and deals 544-544 damage to up to 4 enemies within 5m of the target, inflicting Knockdown.",
+  "dano": "544",
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16151200"
+ },
+ {
+  "id": "16151100",
+  "nombre": "Fire Spirit: Rage Burst",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 4m and deals 544-544 damage to up to 4 enemies within 5m of the target, inflicting Knockdown.",
+  "dano": "544",
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16151100"
+ },
+ {
+  "id": "16151300",
+  "nombre": "Fire Spirit: Rage Burst",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 4m and deals 544-544 damage to up to 4 enemies within 5m of the target, inflicting Knockdown.",
+  "dano": "544",
+  "cooldown": "2s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16151300"
+ },
+ {
+  "id": "16090000",
+  "nombre": "Magic Backflow",
+  "clase": "Elementalist",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 20,
+  "descripcion": "Selects a target within 20m and deals 618-618 damage every 1s for 10s, removing up to 3 buffs. Deals extra damage based on the number of buffs removed. 1 Removed: 412-412 Damage 2 Removed: 495-495 Damage 3 Removed: 618-618 Damage",
+  "dano": "618",
+  "cooldown": "90s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/16090000"
+ }
+]

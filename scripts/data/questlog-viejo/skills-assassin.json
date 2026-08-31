@@ -1,0 +1,1038 @@
+[
+ {
+  "id": "13140000",
+  "nombre": "Shadowstep",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 832-832 damage to a target within 4m. The caster moves back and grants Stealth to the caster for 3s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "40% chance to rotate and inflict Stun for 3s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "Engraves 5 Insignias for 10s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+200 Evasion for 10s on use"
+   },
+   {
+    "coste": 20,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "+2s Stealth duration"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13140000"
+ },
+ {
+  "id": "13010000",
+  "nombre": "Quick Slice",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 104-104 damage to up to 4 enemies within 4m and restores 100 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Insignia Explosion\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13010000"
+ },
+ {
+  "id": "13020000",
+  "nombre": "Throw Shadowblade",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 778-778 damage to a target within 20m and inflicts Slow, which reduces Move Speed by 40% for 5s. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Adds \\[Shadowblade Pursuit\\] Chain Skill"
+   },
+   {
+    "coste": 10,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "coste": 15,
+    "efecto": "Guaranteed Crit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 25,
+    "efecto": "+30% Skill Speed"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13020000"
+ },
+ {
+  "id": "13050000",
+  "nombre": "Flash Slice",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Moves to the opposite side of a target within 4m and deals 181-181 damage to up to 4 enemies with a 40% chance to inflict Blind for 3s. 100% chance to inflict Blind on NPC targets. 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+2s Blind duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "+6m Range"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 16,
+    "efecto": "50% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind"
+   },
+   {
+    "coste": 50,
+    "efecto": "* * *"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13050000"
+ },
+ {
+  "id": "13060000",
+  "nombre": "Ambush",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 126-126 damage to a target within 4m. Increases damage by 30% on landing as a Back attack. 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Engraves 2 Insignias for 10s on landing as a Back attack"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Breaks Protective Shields on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "50% chance to trigger \\[Whirlwind Slice\\] on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "+2 Consecutive Cast(s)"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13060000"
+ },
+ {
+  "id": "13180000",
+  "nombre": "Shadow Walk",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Grants Stealth for 20s. Cannot be used in combat and the effect is removed upon entering combat.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Critical Hit on attack during Stealth"
+   },
+   {
+    "coste": 10,
+    "efecto": "+20% Move Speed for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "Available in combat"
+   },
+   {
+    "coste": 20,
+    "efecto": "Resets cooldown on player kill assists"
+   },
+   {
+    "coste": 25,
+    "efecto": "Stun for 3s on Back Attack while in Stealth"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13180000"
+ },
+ {
+  "id": "13070000",
+  "nombre": "Shadowstrike",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Moves behind a target within 20m and deals 52-52 damage and rotates and inflicts Stun for 3s. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% caster Critical Damage Boost for 5s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "50% chance to inflict Seal for 5s on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "50% chance to inflict Root for 5s on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Changes to AoE Skill"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "20m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13070000"
+ },
+ {
+  "id": "13080000",
+  "nombre": "Evasion Stance",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Guaranteed to evade all damage temporarily. Restores 110 MP and Stamina once on a successful Evasion.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restore 10% HP once after successfully evading"
+   },
+   {
+    "coste": 25,
+    "efecto": "+1s duration"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13080000"
+ },
+ {
+  "id": "13100000",
+  "nombre": "Savage Roar",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 64-64 damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s. 2 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Shadowstrike\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Pulls nearby targets on using \\[Savage Smash\\]"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13100000"
+ },
+ {
+  "id": "13130000",
+  "nombre": "Insignia Explosion",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m to deal 548-548 damage to up to 4 enemies within 4m and inflict Stun for 3s. Stun chance is doubled on NPC targets. Damage and Stun chance increases based on Insignia stacks. 1 stack: 614-614 damage, 10% Stun chance 2 stacks: 680-680 damage, 20% Stun chance 3 stacks: 746-746 damage, 30% Stun chance 4 stacks: 812-812 damage, 40% Stun chance 5 stacks: 877-877 damage, 50% Stun chance 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Adds rotate effect"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Keep 2 stacks of Insignias after \\[Insignia Explosion\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+1s Stun duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "-3s cooldown"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "20m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13130000"
+ },
+ {
+  "id": "13210000",
+  "nombre": "Whirlwind Slice",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion. 100% to inflict Stun on NPC targets. 7 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE damage"
+   },
+   {
+    "coste": 8,
+    "efecto": "+16m Range"
+   },
+   {
+    "coste": 12,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset \\[Whirlwind Slice\\] cooldown on Evasion"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13210000"
+ },
+ {
+  "id": "13220000",
+  "nombre": "Shadow Fall",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Moves to a target afflicted with Stun within 10m and deals 465-465 damage and inflicts Knockdown for 3s. Has a 5% chance to trigger on attacking a target with Incapacitated Immunity. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Engraves 3 Insignias for 10s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "coste": 12,
+    "efecto": "+1s Knockdown duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "Can be used on targets afflicted with Blind"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "10m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13220000"
+ },
+ {
+  "id": "13250000",
+  "nombre": "Smoke Bomb",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 966-966 to a target within 10m and inflicts Blind for 5s. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 10,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "Inflicts Slow for 5s on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+1 Consecutive Cast(s)"
+   },
+   {
+    "coste": 25,
+    "efecto": "Inflict Exposed for 5s on hit"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "10m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13250000"
+ },
+ {
+  "id": "13230000",
+  "nombre": "Aerial Bind",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 2511-2511 damage to a target within 4m with a 50% chance to inflict Airborne for 3s. Has a 100% chance to inflict Airborne for 3s on targets with 5 stacks of Insignia. 100% chance to inflict Airborne on NPC targets. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+16m \\[Aerial Bind\\] Range"
+   },
+   {
+    "coste": 10,
+    "efecto": "Adds \\[Aerial Slaughter\\] Chain Skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Ambush Stance\\] effect for 10s on first strike of \\[Aerial Bind\\]"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13230000"
+ },
+ {
+  "id": "13260000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on casting \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on casting \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13260000"
+ },
+ {
+  "id": "13270000",
+  "nombre": "Savage Fang",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 3222-3222 damage to up to 4 enemies within 4m and engraves 5 Insignias for 10s. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "+50 Stagger Gauge Damage"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13270000"
+ },
+ {
+  "id": "13280000",
+  "nombre": "Spiral Slice",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes to a target within 20m and deals 1074-1074 damage and removes up to 2 buffs. Deals 386-515 extra damage according to number of removed buffs. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Removes up to 3 buffs"
+   },
+   {
+    "coste": 10,
+    "efecto": "Rotates and inflicts Stun for 3s when removing 3 or more buffs"
+   },
+   {
+    "coste": 15,
+    "efecto": "Removes up to 5 buffs"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "20m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13280000"
+ },
+ {
+  "id": "13300000",
+  "nombre": "Triniel's Dagger",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1374-1374 damage to a target within 4m and increases all skill cooldowns by 5% of their duration. If attacking from behind, damage is increased by 30%. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 10,
+    "efecto": "-10% all skill cooldowns on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "Resets cooldown on defeating an enemy with \\[Triniel's Dagger\\]"
+   },
+   {
+    "coste": 20,
+    "efecto": "+3% all skill cooldowns"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% Back Attack Damage Boost for 5s on hit"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13300000"
+ },
+ {
+  "id": "13310000",
+  "nombre": "Illusive Clone",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Removes \\[Heart Gore\\] cooldown and deals 20% of damage dealt as extra damage for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Status Effect Chance for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+20 Critical Damage Boost for duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Exploit Weakness\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "coste": 25,
+    "efecto": "+20% Status Effect Chance"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13310000"
+ },
+ {
+  "id": "13340000",
+  "nombre": "Storm Rampage",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 428-428 damage to a target afflicted with Stagger within 4m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13340000"
+ },
+ {
+  "id": "13350000",
+  "nombre": "Heart Gore",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Triggers on landing a Critical Hit, dealing 111-111 damage to up to 4 enemies within 4m and restores 100 MP. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Engraves 1 Insignia for 10s on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +20% Critical Hit when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Resets \\[Heart Gore\\] cooldown on landing a Critical Hit"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "4m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13350000"
+ },
+ {
+  "id": "13360000",
+  "nombre": "Infiltrate",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Moves behind a target within 10m and deals 478-478 damage with a 50% chance to inflict Blind for 3s after using \\[Dodge\\] or while flying. 100% chance to inflict Blind on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Restores 300 Stamina on landing \\[Infiltrate\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10m \\[Infiltrate\\] range"
+   },
+   {
+    "coste": 8,
+    "efecto": "Breaks Protective Shields on landing \\[Infiltrate\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Dark Strike\\] Chain Skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% \\[Infiltrate\\] Blind Chance"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "10m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13360000"
+ },
+ {
+  "id": "13370000",
+  "nombre": "Evasion Contract",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Removes Slow and Root from the caster and increases the caster's Evasion by 200 for 10s. Grants Slow and Root Immunity. Unaffected by cooldown increase effects.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "25% chance of Projectile Immunity for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "+30% Move Speed for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "50% chance to reduce all skill cooldowns by 1s on Evasion for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+100 Evasion increase"
+   },
+   {
+    "coste": 25,
+    "efecto": "Removes and grants immunity to Damage over Time effects"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13370000"
+ },
+ {
+  "id": "13390000",
+  "nombre": "Swift Contract",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Combat Speed by 20% for 10s.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-20% MP Cost for the duration"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Rear Smite\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "x1.5 \\[Assault Stance\\] effect for the duration"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% additional Combat Speed"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% Attack for the duration"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13390000"
+ },
+ {
+  "id": "13700000",
+  "nombre": "Assault Ambush",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 977-977 damage to up to 4 enemies within 4m of the target with a 30% chance to inflict Blind for 5s. 100% chance to inflict Blind on NPC targets. Increases Defense by up to 20% proportional to hit targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Blind Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13700000"
+ },
+ {
+  "id": "13710000",
+  "nombre": "Heightened Sixth Sense",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion. Cooldown: 3s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13710000"
+ },
+ {
+  "id": "13720000",
+  "nombre": "Exploit Weakness",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases caster's Critical Hit by 100. Has a 25% chance to increase attack by 5.5% for 10s and has a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks). Clone cooldown: 1s Attack increase cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13720000"
+ },
+ {
+  "id": "13730000",
+  "nombre": "Apply Poison",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Has a 15% chance to reduce the target's Incoming Heal by 12% and inflict Poison for 10s on landing an attack. Poison deals 23~23 Damage over Time every 1s. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13730000"
+ },
+ {
+  "id": "13740000",
+  "nombre": "Rear Smite",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases caster's Back Attack Damage Boost by 3%, PvE Damage Boost by 3%, PvP Damage Boost by 1.5%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13740000"
+ },
+ {
+  "id": "13750000",
+  "nombre": "Assault Stance",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases caster's Critical Damage Boost by 6%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13750000"
+ },
+ {
+  "id": "13760000",
+  "nombre": "Impact Hit",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13760000"
+ },
+ {
+  "id": "13770000",
+  "nombre": "Ambush Stance",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Grants Ambush Stance for 10s when using skills that rush or involve movement. Ambush Stance: Has a 50% chance to deal 152-152 damage on landing an attack. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13770000"
+ },
+ {
+  "id": "13780000",
+  "nombre": "Defense Break",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Reduces the target's Defense by 12% and Status Effect Resist by 11% for 10s when landing an attack on a target afflicted with Stagger or an Impact-type status. Cooldown: 20s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13780000"
+ },
+ {
+  "id": "13790000",
+  "nombre": "Revitalization Contract",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Immediately restores 35% Max HP when HP is 10% or less. Healing Cooldown: 60s Status Effect Resist Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13790000"
+ },
+ {
+  "id": "13800000",
+  "nombre": "Determination",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 228-228 damage when landing an attack on a target with 30% HP or less. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Dagger",
+  "url": "https://questlog.gg/aion-2/en/db/skill/13800000"
+ }
+]

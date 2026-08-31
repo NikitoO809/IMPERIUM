@@ -1,0 +1,1021 @@
+[
+ {
+  "id": "18440000",
+  "nombre": "Barrier Spell",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Prevents HP of caster and party members within 40m from falling below 10% for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell effects, and Unstoppable effect cannot be applied for 30s if Invincibility stacking is blocked.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Restores 10% HP when effect expires naturally"
+   },
+   {
+    "coste": 10,
+    "efecto": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for 10s when effect expires naturally"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% HP limit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+2s effect duration"
+   },
+   {
+    "coste": 25,
+    "efecto": "Removes all debuffs when effect expires naturally"
+   }
+  ],
+  "cooldown": "180s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18440000"
+ },
+ {
+  "id": "18010000",
+  "nombre": "Onslaught",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 118-118 damage to up to 4 enemies within 4m and restores 100 MP.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-1s \\[Spinning Strike\\] cooldown on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "Adds \\[Storm Chain\\] Chain Skill"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18010000"
+ },
+ {
+  "id": "18040000",
+  "nombre": "Incandescent Blow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 172-172 damage to up to 4 enemies within 4m. 2 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "coste": 8,
+    "efecto": "+200 Block while using skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "-200 enemy Accuracy for 3s on landing Bursting Blow"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18040000"
+ },
+ {
+  "id": "18060000",
+  "nombre": "Impactful Crush",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 172-172 damage to a target within 20m with a 60% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE damage"
+   },
+   {
+    "coste": 8,
+    "efecto": "+1s \\[Impactful Crush\\] Stun duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Crushing Blow\\] Chain Skill, \\[Crushing Blow\\] lands as Multi-Hit on targets afflicted with Stun"
+   },
+   {
+    "coste": 16,
+    "efecto": "+20% \\[Impactful Crush\\] Stun Chance"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18060000"
+ },
+ {
+  "id": "18080000",
+  "nombre": "Wave Blow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 1076-1076 damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity and changes skill motion. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+6m Range"
+   },
+   {
+    "coste": 8,
+    "efecto": "+1s Knockdown duration"
+   },
+   {
+    "coste": 12,
+    "efecto": "-20% target's PvE Damage Boost and -10% PvP Damage Boost for 10s"
+   },
+   {
+    "coste": 16,
+    "efecto": "-5s cooldown"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18080000"
+ },
+ {
+  "id": "18090000",
+  "nombre": "Rushing Smash",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes at a target within 20m to deal 112-112 damage to up to 4 enemies and restores 100 MP. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-20% target's Impact-type Resist for 5s"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to Charge Skill, up to +200% damage"
+   },
+   {
+    "coste": 8,
+    "efecto": "50% chance to trigger \\[Heat Wave Blow\\] on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18090000"
+ },
+ {
+  "id": "18100000",
+  "nombre": "Dark Crush",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 161-161 damage to a target afflicted with Stun, Knockdown, or Airborne within 20m. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity. 5 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to AoE Skill"
+   },
+   {
+    "coste": 8,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Piercing Strike\\] Chain Skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "Removes \\[Dark Crush\\] cooldown"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18100000"
+ },
+ {
+  "id": "18120000",
+  "nombre": "Recuperation",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Restores 193-212 HP and removes 0 debuff(s) for the caster and party members within 25m. Restores 2500 HP every 2s for 8s.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+1 consecutive use and Heal over Time can stack up to 2 times"
+   },
+   {
+    "coste": 8,
+    "efecto": "Removes up to 0 debuffs"
+   },
+   {
+    "coste": 8,
+    "efecto": "+4s healing duration"
+   },
+   {
+    "coste": 12,
+    "efecto": "Restores extra 10% HP"
+   },
+   {
+    "coste": 16,
+    "efecto": "-3s cooldown"
+   }
+  ],
+  "cooldown": "15s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18120000"
+ },
+ {
+  "id": "18130000",
+  "nombre": "Fracturing Blow",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Rushes to a target within 20m and deals 1288-1288 damage and reduces their Defense by 30% for 5s. Increases damage by 20% to targets afflicted with an Impact-type status. 20 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "Inflict Exposed for 5s on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+30% additional Impact-type Status target damage"
+   },
+   {
+    "coste": 25,
+    "efecto": "+3% target skill cooldown"
+   }
+  ],
+  "cooldown": "45s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18130000"
+ },
+ {
+  "id": "18140000",
+  "nombre": "Focused Defense",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Temporarily increases Block Damage Reduction by 100% and guarantees Parry. Restores 110 MP and Stamina once on Block.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "coste": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 15,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 10% HP once on Parry"
+   },
+   {
+    "coste": 25,
+    "efecto": "+1s Parry duration"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18140000"
+ },
+ {
+  "id": "18150000",
+  "nombre": "Heat Wave Blow",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 4m and deal 345-345 damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block. 100% chance to inflict Seal on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "40% chance to inflict Stun for 3s"
+   },
+   {
+    "coste": 8,
+    "efecto": "+20% Seal Chance"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset \\[Heat Wave Blow\\] cooldown on Block"
+   }
+  ],
+  "cooldown": "10s",
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18150000"
+ },
+ {
+  "id": "18160000",
+  "nombre": "Sprint Mantra",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases Move Speed by 10.5% and grants a 15% chance to restore 134-147 HP on landing an attack to the caster and nearby party members. Healing Cooldown: 1s",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "coste": 10,
+    "efecto": "+30% Natural Stamina Regen"
+   },
+   {
+    "coste": 15,
+    "efecto": "+100% amount healed when HP is 50% or less"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% Restoration"
+   },
+   {
+    "coste": 25,
+    "efecto": "+5% Endurance"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18160000"
+ },
+ {
+  "id": "18170000",
+  "nombre": "Healing Touch",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Restores 1171-1289 HP to the caster and party members within 25m.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+50% amount healed when HP is 50% or less"
+   },
+   {
+    "coste": 10,
+    "efecto": "Restores 1000 Stamina"
+   },
+   {
+    "coste": 15,
+    "efecto": "Removes 0 debuff(s)"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% HP restored"
+   },
+   {
+    "coste": 25,
+    "efecto": "-5s cooldown"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18170000"
+ },
+ {
+  "id": "18190000",
+  "nombre": "Undefeated Mantra",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with the Damage Boost effect from the Cleric skill \\[Light of Protection\\] and only the highest skill level effect applies. If both skills are the same level, Undefeated Mantra will be applied.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+100 Critical Hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "+100 Accuracy"
+   },
+   {
+    "coste": 15,
+    "efecto": "+5% Critical Damage Boost"
+   },
+   {
+    "coste": 20,
+    "efecto": "+5% Double Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% Perfect Chance"
+   }
+  ],
+  "cooldown": "5s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18190000"
+ },
+ {
+  "id": "18200000",
+  "nombre": "Defiance",
+  "tipo": [
+   "Active",
+   "Rare"
+  ],
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 1000 Stamina on using \\[Defiance\\]"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 20% HP on using \\[Defiance\\]"
+   },
+   {
+    "coste": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "coste": 16,
+    "efecto": "25% chance to reset cooldown on using \\[Defiance\\]"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18200000"
+ },
+ {
+  "id": "18210000",
+  "nombre": "Tremor Crush",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Move to a target within 10m and deal 260-260 damage with a 50% chance to inflict Stun for 3s after using \\[Dodge\\] or while flying. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Restores 300 Stamina on hit"
+   },
+   {
+    "coste": 8,
+    "efecto": "+10m \\[Tremor Crush\\] range"
+   },
+   {
+    "coste": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "Adds \\[Surging Strike\\] Chain Skill"
+   },
+   {
+    "coste": 16,
+    "efecto": "+25% \\[Tremor Crush\\] Stun Chance"
+   }
+  ],
+  "cooldown": "20s",
+  "alcance": "10m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18210000"
+ },
+ {
+  "id": "18220000",
+  "nombre": "Obliterate",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 3234-3234 damage to up to 4 enemies within 4m of the target with a 50% chance to inflict Knockdown. 100% chance to land Knockdown on NPC targets. 50 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "coste": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Knockdown Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18220000"
+ },
+ {
+  "id": "18230000",
+  "nombre": "Ensnaring Mark",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1034-1034 damage to up to 4 enemies within 4m with a 50% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "50% chance to inflict Root"
+   },
+   {
+    "coste": 10,
+    "efecto": "50% chance to inflict -1000 enemy Max Stamina"
+   },
+   {
+    "coste": 15,
+    "efecto": "+3s Seal, Root, Max Stamina reduction effect"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% Seal, Root, Max Stamina reduction chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "60s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18230000"
+ },
+ {
+  "id": "18240000",
+  "nombre": "Impeding Authority",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Grants a Protective Shield that blocks 3944 damage for 20s to the caster and nearby party members within 40m.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+15% Defense"
+   },
+   {
+    "coste": 10,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% PvE Damage Tolerance, +5% PvP Damage Tolerance"
+   },
+   {
+    "coste": 20,
+    "efecto": "Restores 15% of Max HP when Protective Shield ends or is broken"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% additional PvE Damage Tolerance, +5% additional PvP Damage Tolerance"
+   }
+  ],
+  "cooldown": "90s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18240000"
+ },
+ {
+  "id": "18250000",
+  "nombre": "Power of the Storm",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases Combat Speed by 20% for the caster and party members within 40m for 10s. Reduces skill cooldowns by 20% for the caster and 10% for the party members. Does not stack with the Cleric skill \\[Earth's Blessing\\] effect and only the \\[Power of the Storm\\] effect applies.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "-30s \\[Power of the Storm\\] cooldown"
+   },
+   {
+    "coste": 10,
+    "efecto": "+200 Accuracy"
+   },
+   {
+    "coste": 15,
+    "efecto": "+200 Critical Hit"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Attack"
+   },
+   {
+    "coste": 25,
+    "efecto": "+5% Weapon Damage Boost"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18250000"
+ },
+ {
+  "id": "18290000",
+  "nombre": "Spinning Strike",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 4740-4740 damage to up to 4 enemies within a 4m radius, centered 2m in front of the caster. Increases the caster's Critical Damage Boost by 5% and Heal Boost by 5% for 30s on hit. Stacks up to 3 times. 15 Stagger Gauge Damage",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "coste": 8,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "coste": 8,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "coste": 12,
+    "efecto": "40% chance to inflict Seal for 3s"
+   },
+   {
+    "coste": 16,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18290000"
+ },
+ {
+  "id": "18300000",
+  "nombre": "Gust Rampage",
+  "tipo": [
+   "Active",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 480-480 damage to a target afflicted with Stagger within 4m.",
+  "stigmas": [
+   {
+    "coste": 8,
+    "efecto": "Absorbs 0% HP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "coste": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "coste": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "coste": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "cooldown": null,
+  "alcance": "4m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18300000"
+ },
+ {
+  "id": "18330000",
+  "nombre": "Marchutan's Wrath",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 1258-1258 damage to up to 4 enemies within 4m of the target. Triggers \\[Dark Crush\\] on the target for 7s on hit.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "50% chance to inflict Stun for 3s"
+   },
+   {
+    "coste": 15,
+    "efecto": "-50% Incoming Heal and Potion Recovery"
+   },
+   {
+    "coste": 20,
+    "efecto": "+25% additional Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "cooldown": "30s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18330000"
+ },
+ {
+  "id": "18420000",
+  "nombre": "Guardian Blessing",
+  "tipo": [
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Max HP by 1840 for 300s and instantly restores 1840 HP.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+5% Defense"
+   },
+   {
+    "coste": 10,
+    "efecto": "x1.5 \\[Crossguard\\] effect for the duration"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10% Status Effect Resist"
+   },
+   {
+    "coste": 20,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "coste": 25,
+    "efecto": "+10% PvE Damage Tolerance, +5 PvP Damage Tolerance"
+   }
+  ],
+  "cooldown": "300s",
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18420000"
+ },
+ {
+  "id": "18700000",
+  "nombre": "Assault Shock",
+  "tipo": [
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Select a target within 20m and deal 986-986 damage with a 30% chance to inflict Stun for 3s to up to 4 enemies within 4m. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to targets hit.",
+  "stigmas": [
+   {
+    "coste": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "coste": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "coste": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "coste": 20,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "coste": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "cooldown": "120s",
+  "alcance": "20m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18700000"
+ },
+ {
+  "id": "18710000",
+  "nombre": "Blessing of Life",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's HP by 150. Increases Max HP by an additional 6.5% and Heal Boost by 5%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18710000"
+ },
+ {
+  "id": "18720000",
+  "nombre": "Crossguard",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Block by 200 and restores 53-58 HP on Block. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18720000"
+ },
+ {
+  "id": "18730000",
+  "nombre": "Protection Circle",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Grants a Protection Circle that lasts for 5s on landing an attack. Removes the Protection Circle at 10 stacks and grants Divine Barrier to the caster and party members , which blocks 262 damage for 10s. The Divine Barrier refreshes upon reaching 10 stacks of Protection Circle while Divine Barrier is active. Grants a Noble Protective Shield for 5s that absorbs up to 2620 damage when the caster's HP drops below 50%. Protection Circle Cooldown: 0.5s Noble Protective Shield Cooldown: 60s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18730000"
+ },
+ {
+  "id": "18740000",
+  "nombre": "Inspiring Spell",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Critical Hit by 100 and Perfect Chance by 0.5%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18740000"
+ },
+ {
+  "id": "18750000",
+  "nombre": "Attack Preparation",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's PvE Damage Boost by 5.5%, PvP Damage Boost by 2.75%, Defense by 2%, and Accuracy by 100.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18750000"
+ },
+ {
+  "id": "18760000",
+  "nombre": "Impact Hit",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18760000"
+ },
+ {
+  "id": "18770000",
+  "nombre": "Raging Spell",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Deals 146-146 extra damage to targets afflicted with Stagger or an Impact-type status. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18770000"
+ },
+ {
+  "id": "18780000",
+  "nombre": "Earth's Promise",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Reduces the target's PvE Damage Tolerance by 10.5% and PvP Damage Tolerance by 5.25% for 5s each time an attack lands. \\[Earth's Promise\\]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill \\[Chain of Torment\\]. Cooldown: 10s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18780000"
+ },
+ {
+  "id": "18790000",
+  "nombre": "Survival Willpower",
+  "tipo": [
+   "Passive",
+   "Rare"
+  ],
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Damage Tolerance Increase Cooldown: 60s Status Effect Resist Increase Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18790000"
+ },
+ {
+  "id": "18800000",
+  "nombre": "Wind's Promise",
+  "tipo": [
+   "Passive",
+   "Physical",
+   "Rare"
+  ],
+  "descripcion": "Has a 50% chance to deal 458-458 extra damage to the target on landing a Critical Hit. Cooldown: 1s",
+  "stigmas": [],
+  "cooldown": null,
+  "alcance": "0m",
+  "arma": "Staff",
+  "url": "https://questlog.gg/aion-2/en/db/skill/18800000"
+ }
+]

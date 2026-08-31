@@ -1,0 +1,31 @@
+{
+ "titulo": "🔮 Spiritmaster · guía completa",
+ "etiquetas": [
+  "Spiritmaster",
+  "Build",
+  "PvE"
+ ],
+ "apertura": "Guía de Spiritmaster sacada de **la base de datos del juego**, no de las webs que salen en Google.\n\nSi no has leído **«Cómo funciona el combate en Aion 2»**, empieza por ahí.\n\n**Antes de nada, el lío de los nombres.** En el juego, la base de datos la llama **Elementalist**; las guías en inglés, **Spiritmaster**; y el rol de este servidor pone *Summoner*. **Son la misma clase.** Aquí uso Spiritmaster, que es el nombre occidental.\n\n**La clase, en corto**\n· **Arma:** orbe. Daño mágico y control a 20 metros.\n· **Es la clase de gestión del juego:** no peleas tú solo, peleas con un espíritu, y elegir cuál llevar cambia por completo lo que puedes hacer.",
+ "secciones": [
+  {
+   "archivo": "e1-espiritus.png",
+   "texto": "**1 · Los cuatro espíritus**\n\nNo hay uno mejor. Cada uno resuelve un problema distinto, y **elegir bien es la clase**:\n\n· **Fuego** — daño. Se lanza al enemigo y pega en área. Sube su **ataque y defensa**.\n· **Agua** — maná. Te devuelve **20 de maná cada vez que golpea**. Para peleas largas. Sube su **ataque y crítico**.\n· **Viento** — vida. Te cura **un 1,5% de tu vida por cada golpe suyo**, y bastante más cuando suelta su habilidad. Sube su **precisión y crítico**.\n· **Tierra** — tanque. Mete **+3.750 de amenaza**, y a un jugador le puede meter provocación. Sube su **defensa y vida**.\n\nLos cuatro cuestan 15 s de recarga, así que cambiar de espíritu a mitad de pelea es viable. Y cada nivel del espíritu le sube un 2% ese par de estadísticas suyo.\n\n⚠️ Pelean solos a base de ataques normales, y de vez en cuando sueltan su habilidad: **Fuego y Agua un 15% de las veces, Viento y Tierra un 10%**. Si muere el espíritu, **pierdes la mitad de tu clase**."
+  },
+  {
+   "archivo": "e2-conjunto.png",
+   "texto": "**2 · Los ataques conjuntos**\n\nLas dos `Jointstrike` son ataques en los que **el espíritu se suma a ti**, y dejan al enemigo marcado:\n\n· **`Jointstrike: Corrode`** (45 s) — Corrosión **20 segundos**: el enemigo recibe un **10% más de daño del espíritu** y sangra. Con su mejora de nivel 25, además **un 25% más del tuyo**.\n· **`Jointstrike: Curse`** (10 s) — Maldición: daño continuo cada segundo **y le baja un 10% lo que te pega a ti**. Ataque y defensa en el mismo botón.\n\nCurse tiene solo 10 s de recarga: es la que se mantiene siempre puesta. Y el golpe conjunto **cambia según el espíritu que lleves** — el de Tierra, además, le baja un 10% la resistencia a estados."
+  },
+  {
+   "archivo": "e3-proxy.png",
+   "texto": "**3 · El espíritu como escudo**\n\n`Command: Proxy` (60 s) es lo que separa a un Spiritmaster que sobrevive de uno que no: durante **4 segundos**, **cada golpe que recibas se parte en dos y la mitad la aguanta el espíritu**.\n\n⚠️ **Solo reparte si el espíritu está a menos de 25 m.** Si lo tienes lejos peleando, el botón no hace nada.\n\nY merece la pena mejorarla: con su mejora de **nivel 20** el espíritu se cura un 3% de vida por segundo mientras dura, y con la de **nivel 25** se vuelve **inmortal** si baja del 50%. Deja de ser un sacrificio y pasa a ser un muro.\n\nY para peleas grandes: `Enhance: Spirit's Benediction` os sube **a los dos** un 20% el daño y el aguante, y os cura cada segundo durante 10 s."
+  },
+  {
+   "archivo": "e4-stigmas.png",
+   "texto": "**4 · Las mejoras de habilidad, que es donde está tu build**\n\nAquí no van de recargas como en las demás clases: van de que **el espíritu pegue más y aguante más**.\n\nLos cuatro espíritus son **Mastery** y comparten la misma mejora de **nivel 16: +20% a todas sus estadísticas**. Esa es la primera que hay que coger del que uses.\n\nDetrás, y estas son **Stigma** (te quedas con todas las que subas): `Command: Proxy` **nv. 20** y **nv. 25** —cura y luego inmortalidad del espíritu—, y `Jointstrike: Corrode` **nv. 25**, que hace que la marca también aumente un 25% el daño que le haces tú.\n\nY una que se pasa por alto: `Jointstrike: Corrode` **nv. 15** le baja al enemigo **un 70% la curación recibida** mientras dure la corrosión. En PvP eso vale más que subir daño: setenta por ciento es prácticamente dejarle sin sanador.\n\n—\nDatos del **volcado del cliente del juego** (aion2t.com), comprobados contra capturas de la versión de Taiwán."
+  },
+  {
+   "archivo": "e9-reparto.png",
+   "texto": "**Reparto para PvE y para PvP**\n\nAntes de gastar nada, lee **«Cómo subir tus habilidades»**: ahí está la regla que separa los dos modos.\n\n__**Mastery — aquí eliges**__\nCinco mejoras por habilidad y solo caben **tres** (las ranuras se abren a nivel 8, 12 y 20). Aquí sí decides qué dejar fuera.\n\n**Estas 2 valen siempre**, juegues a lo que juegues: daño o aguante en los dos modos a la vez.\n\n· `Summon: Earth Spirit` **nv. 8** — +20% PvE Damage Tolerance and +10 PvP Damage…\n· `Defiance` **nv. 16** — +50% PvE Damage Tolerance and +25% PvP Damage…\n\n**Y esta es la de PvP**: no suben probabilidad, pasan por encima del bloqueo y la evasión, rompen el escudo o le bajan la curación.\n\n· **ignora bloqueo y evasión** — `Jointstrike: Curse` nv. 16\n\n__**Stigma — aquí no eliges**__\nUna Stigma se queda con **todas** las mejoras que desbloquee (nivel 5, 10, 15, 20 y 25) y sube hasta 25. Así que no eliges mejora: eliges **qué Stigma equipas y hasta dónde la subes**. 🟢 vale siempre · 🔴 en PvE no hace nada · 🔵 PvP:\n\n· `Assault Terror` — 🔴 nv. 20\n· `Cry of Terror` — 🔴 nv. 20\n· `Cursed Cloud` — 🔵 nv. 10\n· `Enhance: Spirit's Benediction` — 🟢 nv. 20\n· `Jointstrike: Corrode` — 🔵 nv. 15\n· `Kaisinel's Power` — 🔴 nv. 20\n· `Magic Block` — 🔴 nv. 20 · 🔵 nv. 25\n· `Seize Magic` — 🔵 nv. 25\n\n⚠️ Resetear es gratis, así que prueba repartos sin miedo.\n\n—\nDatos del volcado del cliente (aion2t.com), comprobados contra capturas del juego. Que las de bloqueo, escudo y curación pesen más en PvP es criterio propio."
+  }
+ ]
+}

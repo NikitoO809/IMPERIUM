@@ -1,0 +1,1382 @@
+[
+ {
+  "id": "18710000",
+  "nombre": "Blessing of Life",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's HP by 15300. Increases Max HP by an additional 1.5% and Heal Boost by 15300% of Attack.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18710000"
+ },
+ {
+  "id": "18000100",
+  "nombre": "Dodge",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 1,
+  "descripcion": "",
+  "dano": null,
+  "cooldown": "0.5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18000100"
+ },
+ {
+  "id": "18040000",
+  "nombre": "Incandescent Blow",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 115-115 damage to up to 4 enemies within 4m. 2 Stagger Gauge Damage",
+  "dano": "115",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-20% MP consumed"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+200 Block while using skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +12% damage when less targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-200 enemy Accuracy for 3s on landing Bursting Blow"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18040000"
+ },
+ {
+  "id": "18010000",
+  "nombre": "Onslaught",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Deals 74-74 damage to up to 4 enemies within 4m and restores 100 MP.",
+  "dano": "74",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+20% MP restored"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 0.7% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-1s [Spinning Strike] cooldown on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Adds [Storm Chain] Chain Skill"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18010000"
+ },
+ {
+  "id": "18090000",
+  "nombre": "Rushing Smash",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 1,
+  "maxNivel": 40,
+  "descripcion": "Rushes at a target within 20m to deal 112-112 damage to up to 4 enemies and restores 100 MP. 10 Stagger Gauge Damage",
+  "dano": "112",
+  "cooldown": "15s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-20% target's Impact-type Resist for 5s"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to Charge Skill, up to +200% damage"
+   },
+   {
+    "nivel": 8,
+    "efecto": "50% chance to trigger [Heat Wave Blow] on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Resets cooldown on defeating an enemy"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18090000"
+ },
+ {
+  "id": "18060000",
+  "nombre": "Impactful Crush",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 3,
+  "maxNivel": 40,
+  "descripcion": "Deals 224-224 damage to a target within 20m with a 60% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. [Dark Crush] becomes available for 2s on skill use. 10 Stagger Gauge Damage",
+  "dano": "224",
+  "cooldown": "10s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Changes to AoE damage"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+1s [Impactful Crush] Stun duration"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+30% Skill Speed"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+20% [Impactful Crush] Stun Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18060000"
+ },
+ {
+  "id": "18100000",
+  "nombre": "Dark Crush",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 40,
+  "descripcion": "Deals 215-215 damage to a target within 20m. 5 Stagger Gauge Damage",
+  "dano": "215",
+  "cooldown": "5s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 0.7% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Deals extra damage on attacking a target afflicted with Impact-type status"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Adds [Piercing Strike] Chain Skill"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Removes [Dark Crush] cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18100000"
+ },
+ {
+  "id": "18080037",
+  "nombre": "Wave Blow",
+  "clase": "",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 4,
+  "maxNivel": 1,
+  "descripcion": "Deals 538-538 damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity and changes skill motion. 10 Stagger Gauge Damage",
+  "dano": "538",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18080037"
+ },
+ {
+  "id": "18300000",
+  "nombre": "Gust Rampage",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 5,
+  "maxNivel": 40,
+  "descripcion": "Deals 120-120 damage to a target afflicted with Stagger within 4m.",
+  "dano": "120",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Absorbs 5% HP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 120 MP"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-1s all skill cooldowns on hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18300000"
+ },
+ {
+  "id": "18720000",
+  "nombre": "Crossguard",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 6,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Block by 200 and restores 53-58 HP on Block. Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18720000"
+ },
+ {
+  "id": "18150000",
+  "nombre": "Heat Wave Blow",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 7,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 4m and deals 345-345 damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block. 100% chance to inflict Seal on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "345",
+  "cooldown": "10s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "40% chance to inflict Stun for 3s"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+20% Seal Chance"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Ignores Block and Evasion and lands as Multi-Hit"
+   },
+   {
+    "nivel": 16,
+    "efecto": "25% chance to reset [Heat Wave Blow] cooldown on Block"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18150000"
+ },
+ {
+  "id": "18120000",
+  "nombre": "Recuperation",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 8,
+  "maxNivel": 40,
+  "descripcion": "Restores 183-201 HP and removes 1 debuff(s) for the caster and party members within 40m. Restores 183 HP every 2s for 8s.",
+  "dano": null,
+  "cooldown": "15s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "+1 consecutive use and Heal over Time can stack up to 2 times"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Removes up to 2 debuffs"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+4s healing duration"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+5% HP restored"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-3s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18120000"
+ },
+ {
+  "id": "18730000",
+  "nombre": "Protection Circle",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 9,
+  "maxNivel": 40,
+  "descripcion": "Grants a Protection Circle that lasts for 5s on landing an attack. Removes the Protection Circle at 10 stacks and grants Divine Barrier to the caster and party members, which blocks damage equaling 3.1% of Max HP for 10s. The Divine Barrier refreshes upon reaching 10 stacks of Protection Circle while Divine Barrier is active. Grants a Noble Protective Shield for 5s that blocks 21% damage when the caster's HP drops below 50%. Protection Circle Cooldown: 0.5s Noble Protective Shield Cooldown: 60s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18730000"
+ },
+ {
+  "id": "18210000",
+  "nombre": "Tremor Crush",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 10,
+  "maxNivel": 40,
+  "descripcion": "Move to a target within 10m and deal 260-260 damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying. 100% chance to inflict Stun on NPC targets. 10 Stagger Gauge Damage",
+  "dano": "260",
+  "cooldown": "20s",
+  "alcance": "10 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Restores 300 Stamina on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10m [Tremor Crush] range"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+50% Multi-Hit on hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "Adds [Surging Strike] Chain Skill"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+25% [Tremor Crush] Stun Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18210000"
+ },
+ {
+  "id": "18740000",
+  "nombre": "Inspiring Spell",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 11,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Critical Hit by 100 and Perfect Chance by 0.5%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18740000"
+ },
+ {
+  "id": "18080000",
+  "nombre": "Wave Blow",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 12,
+  "maxNivel": 40,
+  "descripcion": "Deals 538-538 damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity and changes skill motion. 10 Stagger Gauge Damage",
+  "dano": "538",
+  "cooldown": "20s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Multi-Hit on hit"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+6m Range"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+1s Knockdown duration"
+   },
+   {
+    "nivel": 12,
+    "efecto": "-15% target's PvE Damage Boost and -7.5% PvP Damage Boost for 10s"
+   },
+   {
+    "nivel": 16,
+    "efecto": "-5s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18080000"
+ },
+ {
+  "id": "18750000",
+  "nombre": "Attack Preparation",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 13,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's PvE Damage Boost by 5.5%, PvP Damage Boost by 2.75%, Defense by 2%, and Accuracy by 100.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18750000"
+ },
+ {
+  "id": "18290000",
+  "nombre": "Spinning Strike",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 14,
+  "maxNivel": 40,
+  "descripcion": "Deals 1564-1564 damage to up to 4 enemies within a 4m radius, centered 2m in front of the caster. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times. 10 Stagger Gauge Damage",
+  "dano": "1564",
+  "cooldown": "15s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "-5s cooldown"
+   },
+   {
+    "nivel": 8,
+    "efecto": "+10% Heal Boost (up to 20%)"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "nivel": 12,
+    "efecto": "40% chance to inflict Seal for 3s"
+   },
+   {
+    "nivel": 16,
+    "efecto": "Ignores Block and Evasion and lands as Critical Hit"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18290000"
+ },
+ {
+  "id": "18760000",
+  "nombre": "Impact Hit",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 15,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18760000"
+ },
+ {
+  "id": "18200000",
+  "nombre": "Defiance",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": 16,
+  "maxNivel": 40,
+  "descripcion": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s. Tenacity: Status Effect Immunity Not affected by cooldown reduction effects.",
+  "dano": null,
+  "cooldown": "60s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 8,
+    "efecto": "Adds [Crushing Strike] Chain Skill"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 1000 Stamina on using [Defiance]"
+   },
+   {
+    "nivel": 8,
+    "efecto": "Restores 10% HP on using [Defiance]"
+   },
+   {
+    "nivel": 12,
+    "efecto": "+2s Tenacity duration"
+   },
+   {
+    "nivel": 16,
+    "efecto": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18200000"
+ },
+ {
+  "id": "18770000",
+  "nombre": "Raging Spell",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 17,
+  "maxNivel": 40,
+  "descripcion": "Deals 146-146 extra damage to targets afflicted with Stagger or an Impact-type status. Cooldown: 1s",
+  "dano": "146",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18770000"
+ },
+ {
+  "id": "18780000",
+  "nombre": "Earth's Promise",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 21,
+  "maxNivel": 40,
+  "descripcion": "Reduces the target's PvE Damage Tolerance by 5.4% and PvP Damage Tolerance by 2.7% for 5s each time an attack lands. [Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment] . Cooldown: 10s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18780000"
+ },
+ {
+  "id": "18700000",
+  "nombre": "Assault Shock",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 986-986 damage to up to 4 enemies within 4m with a 30% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to targets hit.",
+  "dano": "986",
+  "cooldown": "120s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% Attack for 5s on hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "500 MP damage on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10m Range"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Stun Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-1min cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18700000"
+ },
+ {
+  "id": "18440000",
+  "nombre": "Barrier Spell",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Prevents HP of caster and party members within 40m from falling below 10% for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell effects, and Unstoppable effect cannot be applied for 30s if Invincibility stacking is blocked.",
+  "dano": null,
+  "cooldown": "180s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Restores 10% HP when effect expires naturally"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for 10s when effect expires naturally"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10% HP limit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+1s effect duration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Removes all debuffs when effect expires naturally"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18440000"
+ },
+ {
+  "id": "18230000",
+  "nombre": "Ensnaring Mark",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 1034-1034 damage to up to 4 enemies within 4m, with a 50% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. [Dark Crush] becomes available for 3s on skill use.",
+  "dano": "1034",
+  "cooldown": "60s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "50% chance to inflict Root"
+   },
+   {
+    "nivel": 10,
+    "efecto": "50% chance to inflict -1000 enemy Max Stamina"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+3s Seal, Root, Max Stamina reduction effect"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% Seal, Root, Max Stamina reduction chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18230000"
+ },
+ {
+  "id": "18140000",
+  "nombre": "Focused Defense",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
+  "dano": null,
+  "cooldown": "20s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+1 consecutive use"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Changes to mobile skill"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+20% Move Speed for 3s on Block"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restores 5% HP once on Parry"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+1s Parry duration"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18140000"
+ },
+ {
+  "id": "18130000",
+  "nombre": "Fracturing Blow",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Rushes to a target within 20m and deals 1288-1288 damage and reduces their Defense by 30% for 5s. Increases damage by 20% to targets afflicted with an Impact-type status. 20 Stagger Gauge Damage",
+  "dano": "1288",
+  "cooldown": "45s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "-15s cooldown"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Inflict Exposed for 5s on hit"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+30% additional Impact-type Status target damage"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+3% target skill cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18130000"
+ },
+ {
+  "id": "18420000",
+  "nombre": "Guardian Blessing",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases the caster's Max HP by 5.4% for 300s and immediately restores 5.4% HP. Not affected by buff dispel effects.",
+  "dano": null,
+  "cooldown": "300s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% Status Effect Resist"
+   },
+   {
+    "nivel": 10,
+    "efecto": "x1.5 [Crossguard] effect for the duration"
+   },
+   {
+    "nivel": 15,
+    "efecto": "x1.5 [Wind's Promise] effect for the duration"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% PvE Damage Tolerance, +5% PvP Damage Tolerance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18420000"
+ },
+ {
+  "id": "18170000",
+  "nombre": "Healing Touch",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Restores 927-1020 HP to the caster and party members within 40m.",
+  "dano": null,
+  "cooldown": "30s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+20% amount healed when HP is 50% or less"
+   },
+   {
+    "nivel": 10,
+    "efecto": "Restores 1000 Stamina"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Removes 5 debuff(s)"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+5% HP restored"
+   },
+   {
+    "nivel": 25,
+    "efecto": "-5s cooldown"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18170000"
+ },
+ {
+  "id": "18240000",
+  "nombre": "Impeding Authority",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Grants a Protective Shield that blocks damage equaling 16% of Max HP for 20s to the caster and nearby party members within 40m.",
+  "dano": null,
+  "cooldown": "90s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+15% Defense"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+10% PvE Damage Tolerance, +5% PvP Damage Tolerance"
+   },
+   {
+    "nivel": 20,
+    "efecto": "Restores 7% of Max HP when Protective Shield ends or is broken"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% additional PvE Damage Tolerance, +5% additional PvP Damage Tolerance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18240000"
+ },
+ {
+  "id": "18330000",
+  "nombre": "Marchutan's Wrath",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Selects a target within 20m and deals 1384-1384 damage to up to 4 enemies within 4m. [Dark Crush] becomes available for 2s on skill use.",
+  "dano": "1384",
+  "cooldown": "30s",
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Up to +20% damage when less targets hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "50% chance to inflict Stun for 3s"
+   },
+   {
+    "nivel": 15,
+    "efecto": "-70% Incoming Heal and Potion Recovery"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% additional Stun Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "Ignores Block and Evasion"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18330000"
+ },
+ {
+  "id": "18220000",
+  "nombre": "Obliterate",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Deals 1078-1078 damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Knockdown. 100% chance to land Knockdown on NPC targets. 50 Stagger Gauge Damage",
+  "dano": "1078",
+  "cooldown": "60s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "Up to +20% damage when more targets hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+20% Skill Speed"
+   },
+   {
+    "nivel": 15,
+    "efecto": "Critical Hit on hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+25% Knockdown Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+200% damage to targets with Incapacitated Immunity"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18220000"
+ },
+ {
+  "id": "18250000",
+  "nombre": "Power of the Storm",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases Combat Speed by 20% and reduces skill cooldowns by 20% for 10s. Increases Combat Speed by 20% and reduces skill cooldowns by 10% for party members within 40m. Cannot receive effect of [Power of the Storm] if Cleric skill [Earth's Blessing] effect is active.",
+  "dano": null,
+  "cooldown": "120s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "-30s cooldown"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+200 Accuracy"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+200 Critical Hit"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+20% Caster Attack and +10% party member Attack"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+5% Weapon Damage Boost"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18250000"
+ },
+ {
+  "id": "18160000",
+  "nombre": "Sprint Mantra",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases Move Speed by 10.5% and grants a 15% chance to restore 127-140 HP on landing an attack to the caster and nearby party members. Healing Cooldown: 1s",
+  "dano": null,
+  "cooldown": "5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+10% Incoming Heal"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+30% Natural Stamina Regen"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+50% amount restored when HP is 50% or less"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+10% Restoration"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+5% Endurance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18160000"
+ },
+ {
+  "id": "18190000",
+  "nombre": "Undefeated Mantra",
+  "clase": "Chanter",
+  "arbol": "Stigma",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": 1,
+  "nivelRequerido": 22,
+  "maxNivel": 25,
+  "descripcion": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with the Damage Boost effect from the Cleric skill [Light of Protection] ; only the higher-level skill effect applies. If both skills are the same level, Undefeated Mantra takes precedence.",
+  "dano": null,
+  "cooldown": "5s",
+  "alcance": null,
+  "arma": null,
+  "specialty": [
+   {
+    "nivel": 5,
+    "efecto": "+100 Critical Hit"
+   },
+   {
+    "nivel": 10,
+    "efecto": "+100 Accuracy"
+   },
+   {
+    "nivel": 15,
+    "efecto": "+5% Critical Damage Boost"
+   },
+   {
+    "nivel": 20,
+    "efecto": "+5% Double Chance"
+   },
+   {
+    "nivel": 25,
+    "efecto": "+10% Perfect Chance"
+   }
+  ],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18190000"
+ },
+ {
+  "id": "18790000",
+  "nombre": "Survival Willpower",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 23,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks). Damage Tolerance Increase Cooldown: 60s Status Effect Resist Increase Cooldown: 1s",
+  "dano": null,
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18790000"
+ },
+ {
+  "id": "18800000",
+  "nombre": "Wind's Promise",
+  "clase": "Chanter",
+  "arbol": "Mastery",
+  "eligeTres": true,
+  "tipo": "Passive",
+  "puntosStigma": null,
+  "nivelRequerido": 25,
+  "maxNivel": 40,
+  "descripcion": "Increases the caster's Critical Damage Boost by 5.7% and has a 50% chance to deal 554-554 extra damage to the target on landing a Critical Hit. Extra Damage Cooldown: 1s",
+  "dano": "554",
+  "cooldown": null,
+  "alcance": null,
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18800000"
+ },
+ {
+  "id": "18030000",
+  "nombre": "Bolt Crush",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 104-104 damage to up to 4 enemies within 4m and restores 120 MP.",
+  "dano": "104",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18030000"
+ },
+ {
+  "id": "18050000",
+  "nombre": "Bursting Blow",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 125-125 damage to up to 4 enemies within 4m. 2 Stagger Gauge Damage",
+  "dano": "125",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18050000"
+ },
+ {
+  "id": "18070000",
+  "nombre": "Crushing Blow",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 258-258 damage to a target within 20m. Lands as Multi-Hit on targets afflicted with Stun.",
+  "dano": "258",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18070000"
+ },
+ {
+  "id": "18410000",
+  "nombre": "Crushing Strike",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Selects a target within 4m and deals 538-538 damage to up to 4 enemies, inflicting Stun for 3s.",
+  "dano": "538",
+  "cooldown": "120s",
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18410000"
+ },
+ {
+  "id": "18400000",
+  "nombre": "Piercing Strike",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 321-321 damage to a target within 20m. 5 Stagger Gauge Damage",
+  "dano": "321",
+  "cooldown": null,
+  "alcance": "20 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18400000"
+ },
+ {
+  "id": "18020000",
+  "nombre": "Resonance Crush",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 83-83 damage to up to 4 enemies within 4m and restores 100 MP.",
+  "dano": "83",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18020000"
+ },
+ {
+  "id": "18370000",
+  "nombre": "Storm Chain",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 199-199 damage to up to 4 enemies within 4m and restores 180 MP.",
+  "dano": "199",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18370000"
+ },
+ {
+  "id": "18390000",
+  "nombre": "Surging Strike",
+  "clase": "Chanter",
+  "arbol": "",
+  "eligeTres": false,
+  "tipo": "Active",
+  "puntosStigma": null,
+  "nivelRequerido": null,
+  "maxNivel": 40,
+  "descripcion": "Deals 338-338 damage to a target within 4m with a 30% chance to inflict Airborne for 3s to targets afflicted with Stun.",
+  "dano": "338",
+  "cooldown": null,
+  "alcance": "4 m",
+  "arma": null,
+  "specialty": [],
+  "volcado": "26.08.2026",
+  "url": "https://aion2t.com/db/skills/18390000"
+ }
+]
