@@ -1,0 +1,940 @@
+[
+ {
+  "id": "297845330081218561",
+  "name": "📰l-ɴᴏᴛɪᴄɪᴀꜱ-ɪᴍᴘ",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 7
+ },
+ {
+  "id": "304183778472099841",
+  "name": "📜l-ʀᴇɢʟᴀꜱ-ɪᴍᴘ",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 2
+ },
+ {
+  "id": "491545617097687041",
+  "name": "Member Count: 1199",
+  "type": 2,
+  "parent_id": "491545618859425794",
+  "position": 2
+ },
+ {
+  "id": "491545617848467456",
+  "name": "User Count: 1188",
+  "type": 2,
+  "parent_id": "491545618859425794",
+  "position": 3
+ },
+ {
+  "id": "491545618213371905",
+  "name": "Bot Count: 11",
+  "type": 2,
+  "parent_id": "491545618859425794",
+  "position": 4
+ },
+ {
+  "id": "491545618859425794",
+  "name": "📊 IMPERIUM Server Stats 📊",
+  "type": 4,
+  "parent_id": null,
+  "position": 0
+ },
+ {
+  "id": "491546715774648321",
+  "name": "Imperium 👑",
+  "type": 4,
+  "parent_id": null,
+  "position": 1
+ },
+ {
+  "id": "576253630382866453",
+  "name": "Role Count: 65",
+  "type": 2,
+  "parent_id": "491545618859425794",
+  "position": 1
+ },
+ {
+  "id": "576253631196823562",
+  "name": "Channel Count: 111",
+  "type": 2,
+  "parent_id": "491545618859425794",
+  "position": 5
+ },
+ {
+  "id": "663655464722104321",
+  "name": "🆗l-ɢᴇɴᴇʀᴀʟ-ʟᴏʙʙʏ",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 9
+ },
+ {
+  "id": "692614750709874698",
+  "name": "⏳-anuncios-imp",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 5
+ },
+ {
+  "id": "767481043820478495",
+  "name": "🖐l-welcome-ɪᴍᴘ",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 1
+ },
+ {
+  "id": "767823791224782889",
+  "name": "mimir",
+  "type": 4,
+  "parent_id": null,
+  "position": 15
+ },
+ {
+  "id": "767823844982784021",
+  "name": "logs",
+  "type": 0,
+  "parent_id": "767823791224782889",
+  "position": 98
+ },
+ {
+  "id": "775807960114528277",
+  "name": "Witches A3 Still 🔱",
+  "type": 4,
+  "parent_id": null,
+  "position": 14
+ },
+ {
+  "id": "775808021036793876",
+  "name": "announcements-a3-🔔",
+  "type": 0,
+  "parent_id": "775807960114528277",
+  "position": 96
+ },
+ {
+  "id": "775808099876339784",
+  "name": "geɴᴇʀᴀʟ-ᴀ3-español",
+  "type": 0,
+  "parent_id": "775807960114528277",
+  "position": 94
+ },
+ {
+  "id": "836381160111472690",
+  "name": "lista-de-la-verguenza-a3",
+  "type": 0,
+  "parent_id": "775807960114528277",
+  "position": 97
+ },
+ {
+  "id": "878706691850506390",
+  "name": "general-a3-english",
+  "type": 0,
+  "parent_id": "775807960114528277",
+  "position": 93
+ },
+ {
+  "id": "878850404023140372",
+  "name": "round-table-imp",
+  "type": 0,
+  "parent_id": "775807960114528277",
+  "position": 95
+ },
+ {
+  "id": "906346284955361290",
+  "name": "MIMIR",
+  "type": 2,
+  "parent_id": "767823791224782889",
+  "position": 18
+ },
+ {
+  "id": "1042605931470532709",
+  "name": "TRYHARD 1M 😂",
+  "type": 2,
+  "parent_id": "491546715774648321",
+  "position": 7
+ },
+ {
+  "id": "1042660691796054106",
+  "name": "Traha Global",
+  "type": 4,
+  "parent_id": null,
+  "position": 13
+ },
+ {
+  "id": "1042660899963543572",
+  "name": "💬general-chat-traha",
+  "type": 0,
+  "parent_id": "1042660691796054106",
+  "position": 91
+ },
+ {
+  "id": "1042660967131131924",
+  "name": "📢anuncios-traha-imp",
+  "type": 0,
+  "parent_id": "1042660691796054106",
+  "position": 92
+ },
+ {
+  "id": "1048716828240793650",
+  "name": "🔥round-table-imp-traha",
+  "type": 0,
+  "parent_id": "1042660691796054106",
+  "position": 89
+ },
+ {
+  "id": "1052442987466063873",
+  "name": "✅asistencia-pvp-traha",
+  "type": 0,
+  "parent_id": "1042660691796054106",
+  "position": 90
+ },
+ {
+  "id": "1059645310013538397",
+  "name": "🔔f𝗢𝗥𝗨𝗠-𝗜𝗠𝗣-𝗧𝗥𝗔𝗛𝗔",
+  "type": 15,
+  "parent_id": "1042660691796054106",
+  "position": 87
+ },
+ {
+  "id": "1061311895409270804",
+  "name": "✅n𝗢𝗥𝗠𝗔𝗦-𝗜𝗠𝗣𝗘𝗥𝗜𝗨𝗠",
+  "type": 0,
+  "parent_id": "1042660691796054106",
+  "position": 88
+ },
+ {
+  "id": "1064977688445599814",
+  "name": "🎬musica",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 14
+ },
+ {
+  "id": "1122588361631203349",
+  "name": "Scar of Honor",
+  "type": 4,
+  "parent_id": null,
+  "position": 8
+ },
+ {
+  "id": "1122588451880054905",
+  "name": "💬l-general-tarisland",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 63
+ },
+ {
+  "id": "1122588507077091490",
+  "name": "📜l-anuncios-tarisland",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 61
+ },
+ {
+  "id": "1122588634701377647",
+  "name": "GENERAL",
+  "type": 2,
+  "parent_id": "1122588361631203349",
+  "position": 22
+ },
+ {
+  "id": "1174900771809132675",
+  "name": "🚨l-guia-tarisland",
+  "type": 15,
+  "parent_id": "1496035418322370610",
+  "position": 65
+ },
+ {
+  "id": "1184755573439348786",
+  "name": "REVELATION M",
+  "type": 4,
+  "parent_id": null,
+  "position": 12
+ },
+ {
+  "id": "1184755669971255346",
+  "name": "general-chat-ro",
+  "type": 0,
+  "parent_id": "1184755573439348786",
+  "position": 82
+ },
+ {
+  "id": "1184755710400139347",
+  "name": "anuncios-revelation-m",
+  "type": 0,
+  "parent_id": "1184755573439348786",
+  "position": 83
+ },
+ {
+  "id": "1184968143572058165",
+  "name": "cofres-loc",
+  "type": 0,
+  "parent_id": "1184755573439348786",
+  "position": 84
+ },
+ {
+  "id": "1186050514773876817",
+  "name": "forum-revelation-m",
+  "type": 15,
+  "parent_id": "1184755573439348786",
+  "position": 81
+ },
+ {
+  "id": "1187451074915876915",
+  "name": "comunicados-imp",
+  "type": 0,
+  "parent_id": "1184755573439348786",
+  "position": 85
+ },
+ {
+  "id": "1189929396803489792",
+  "name": "round-table-ro",
+  "type": 0,
+  "parent_id": "1184755573439348786",
+  "position": 86
+ },
+ {
+  "id": "1213617950465200178",
+  "name": "📺l-streams-videos",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 6
+ },
+ {
+  "id": "1249623638253109338",
+  "name": "📋-normas-imp",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 62
+ },
+ {
+  "id": "1249887253317292093",
+  "name": "🎁-sorteos",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 8
+ },
+ {
+  "id": "1251196850422419528",
+  "name": "Guild Meeting 📝",
+  "type": 13,
+  "parent_id": null,
+  "position": 0
+ },
+ {
+  "id": "1252857596763836526",
+  "name": "『📌』elige-tu-clase",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 51
+ },
+ {
+  "id": "1252859887650603068",
+  "name": "test",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 15
+ },
+ {
+  "id": "1253026127207862272",
+  "name": "🏹-raid-bot",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 60
+ },
+ {
+  "id": "1260341497463705722",
+  "name": "memes",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 13
+ },
+ {
+  "id": "1263418796840845434",
+  "name": "👀l-tinder",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 12
+ },
+ {
+  "id": "1277459783284297883",
+  "name": "🎈-eventos",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 58
+ },
+ {
+  "id": "1277481727287230474",
+  "name": "🏆-evento-pvp",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 64
+ },
+ {
+  "id": "1282449755745685565",
+  "name": "👑-silverlit-cup-s0",
+  "type": 0,
+  "parent_id": "1496035418322370610",
+  "position": 59
+ },
+ {
+  "id": "1298085838353072138",
+  "name": "Age Of Empire Mobile",
+  "type": 4,
+  "parent_id": null,
+  "position": 10
+ },
+ {
+  "id": "1298085960638009407",
+  "name": "noticias",
+  "type": 0,
+  "parent_id": "1298085838353072138",
+  "position": 66
+ },
+ {
+  "id": "1298085994989355171",
+  "name": "general-chat-aoe",
+  "type": 0,
+  "parent_id": "1298085838353072138",
+  "position": 68
+ },
+ {
+  "id": "1298086065281957928",
+  "name": "SALA 1",
+  "type": 2,
+  "parent_id": "1298085838353072138",
+  "position": 24
+ },
+ {
+  "id": "1298086095275298912",
+  "name": "GENERAL",
+  "type": 2,
+  "parent_id": "1298085838353072138",
+  "position": 25
+ },
+ {
+  "id": "1298086192423636993",
+  "name": "anuncios-imp",
+  "type": 0,
+  "parent_id": "1298085838353072138",
+  "position": 67
+ },
+ {
+  "id": "1300791906208317463",
+  "name": "round-table-imp-aoe",
+  "type": 0,
+  "parent_id": "1298085838353072138",
+  "position": 69
+ },
+ {
+  "id": "1302343334177669200",
+  "name": "guias-aoe",
+  "type": 0,
+  "parent_id": "1298085838353072138",
+  "position": 70
+ },
+ {
+  "id": "1342229161363640370",
+  "name": "7DS: origin",
+  "type": 4,
+  "parent_id": null,
+  "position": 7
+ },
+ {
+  "id": "1343639619698298931",
+  "name": "Radio",
+  "type": 2,
+  "parent_id": "491546715774648321",
+  "position": 9
+ },
+ {
+  "id": "1345464849920036994",
+  "name": "『📯』announcement",
+  "type": 5,
+  "parent_id": "1342229161363640370",
+  "position": 43
+ },
+ {
+  "id": "1347775810076938272",
+  "name": "English",
+  "type": 2,
+  "parent_id": "491546715774648321",
+  "position": 10
+ },
+ {
+  "id": "1350045252425351168",
+  "name": "『🆕』7ds-news",
+  "type": 0,
+  "parent_id": "1342229161363640370",
+  "position": 44
+ },
+ {
+  "id": "1350244093518811199",
+  "name": "『🎮』7DS: Origin",
+  "type": 2,
+  "parent_id": "1342229161363640370",
+  "position": 17
+ },
+ {
+  "id": "1372677658856390728",
+  "name": "Crystal of Atlan",
+  "type": 4,
+  "parent_id": null,
+  "position": 6
+ },
+ {
+  "id": "1372681872890663043",
+  "name": "『💬』general-coa",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 37
+ },
+ {
+  "id": "1372681991706902619",
+  "name": "『🆕』coa-noticias",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 38
+ },
+ {
+  "id": "1372689677051629588",
+  "name": "General CoA",
+  "type": 2,
+  "parent_id": "1372677658856390728",
+  "position": 19
+ },
+ {
+  "id": "1377025755862532210",
+  "name": "『👾』rolles-coa",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 36
+ },
+ {
+  "id": "1377047938798190723",
+  "name": "『📌』anuncios-coa",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 35
+ },
+ {
+  "id": "1377455447421882393",
+  "name": "『📌』general-imp-coa",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 40
+ },
+ {
+  "id": "1377476575137759313",
+  "name": "『🚀』codigos-coa",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 41
+ },
+ {
+  "id": "1378197312089751582",
+  "name": "『📥』clan-contribucion-imp",
+  "type": 0,
+  "parent_id": "1372677658856390728",
+  "position": 42
+ },
+ {
+  "id": "1384419000611770420",
+  "name": "guias",
+  "type": 15,
+  "parent_id": "1372677658856390728",
+  "position": 39
+ },
+ {
+  "id": "1421648222228582450",
+  "name": "TEMPVOICE CATEGORY",
+  "type": 4,
+  "parent_id": null,
+  "position": 16
+ },
+ {
+  "id": "1421648225210863668",
+  "name": "✨・interface",
+  "type": 0,
+  "parent_id": "1421648222228582450",
+  "position": 99
+ },
+ {
+  "id": "1425043787759095838",
+  "name": "Blue Protocol SR",
+  "type": 4,
+  "parent_id": null,
+  "position": 5
+ },
+ {
+  "id": "1425231466631270492",
+  "name": "『📌』contribucion-clan-bpsr",
+  "type": 0,
+  "parent_id": "1425043787759095838",
+  "position": 31
+ },
+ {
+  "id": "1425231568670167101",
+  "name": "『💬』general-bpsr",
+  "type": 0,
+  "parent_id": "1425043787759095838",
+  "position": 33
+ },
+ {
+  "id": "1425231682448920596",
+  "name": "『🆕』bpsr-noticias",
+  "type": 0,
+  "parent_id": "1425043787759095838",
+  "position": 30
+ },
+ {
+  "id": "1425239623830863923",
+  "name": "General BPSR",
+  "type": 2,
+  "parent_id": "1425043787759095838",
+  "position": 18
+ },
+ {
+  "id": "1425301529421676705",
+  "name": "『👾』roles-bpsr",
+  "type": 0,
+  "parent_id": "1425043787759095838",
+  "position": 32
+ },
+ {
+  "id": "1428226848717934652",
+  "name": "『✅』anuncios-bp-imp",
+  "type": 0,
+  "parent_id": "1425043787759095838",
+  "position": 29
+ },
+ {
+  "id": "1429519519516332183",
+  "name": "『🚀』codigos-bp-sr",
+  "type": 0,
+  "parent_id": "1425043787759095838",
+  "position": 34
+ },
+ {
+  "id": "1477517633824886847",
+  "name": "『💬』7ds-general",
+  "type": 0,
+  "parent_id": "1342229161363640370",
+  "position": 45
+ },
+ {
+  "id": "1477517683066015975",
+  "name": "『📺』guides",
+  "type": 15,
+  "parent_id": "1342229161363640370",
+  "position": 46
+ },
+ {
+  "id": "1477517998305837156",
+  "name": "『📸』foto",
+  "type": 0,
+  "parent_id": "1342229161363640370",
+  "position": 47
+ },
+ {
+  "id": "1477518017494651063",
+  "name": "『📌』codes",
+  "type": 0,
+  "parent_id": "1342229161363640370",
+  "position": 48
+ },
+ {
+  "id": "1496029243056980089",
+  "name": "『📢』anuncios",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 50
+ },
+ {
+  "id": "1496029418504720585",
+  "name": "『📋』normas-imp",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 49
+ },
+ {
+  "id": "1496029707315974305",
+  "name": "『❎』ayuda-dungeon",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 55
+ },
+ {
+  "id": "1496030044756246598",
+  "name": "『🎈』eventos",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 56
+ },
+ {
+  "id": "1496030367117869086",
+  "name": "『🏆』evento-pvp",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 57
+ },
+ {
+  "id": "1496031522010956006",
+  "name": "『🏹』raid-bot",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 52
+ },
+ {
+  "id": "1496031926811754597",
+  "name": "『🚨』guia-scar-of-honor",
+  "type": 15,
+  "parent_id": "1122588361631203349",
+  "position": 54
+ },
+ {
+  "id": "1496034584125505656",
+  "name": "『💬』general-soh",
+  "type": 0,
+  "parent_id": "1122588361631203349",
+  "position": 53
+ },
+ {
+  "id": "1496035418322370610",
+  "name": "Tarisland (old)",
+  "type": 4,
+  "parent_id": null,
+  "position": 9
+ },
+ {
+  "id": "1498485563357925429",
+  "name": "『➕ 』Creator Channel",
+  "type": 2,
+  "parent_id": "1122588361631203349",
+  "position": 23
+ },
+ {
+  "id": "1511911372441653320",
+  "name": "SwordXStaff",
+  "type": 4,
+  "parent_id": null,
+  "position": 4
+ },
+ {
+  "id": "1515417285047619584",
+  "name": "Call of Dragons 👺",
+  "type": 4,
+  "parent_id": null,
+  "position": 3
+ },
+ {
+  "id": "1515417356648841306",
+  "name": "『💬』general-esp",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 21
+ },
+ {
+  "id": "1515417398990209076",
+  "name": "『📌』guide-link",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 20
+ },
+ {
+  "id": "1515417430321791146",
+  "name": "『📯』cod-patch-notes",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 25
+ },
+ {
+  "id": "1515417489893232740",
+  "name": "『📢』alliance-announcements-es-eng",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 19
+ },
+ {
+  "id": "1515947358272360588",
+  "name": "『💬』general-eng",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 22
+ },
+ {
+  "id": "1515949454975434836",
+  "name": "『💬』general",
+  "type": 0,
+  "parent_id": "1511911372441653320",
+  "position": 28
+ },
+ {
+  "id": "1515957388770017362",
+  "name": "『👑』officers-imp",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 24
+ },
+ {
+  "id": "1517204166814990356",
+  "name": "『✉️』event-announcements",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 18
+ },
+ {
+  "id": "1525262346530848838",
+  "name": "『💬』general-🇷🇺",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 23
+ },
+ {
+  "id": "1528531997054734456",
+  "name": "kvk",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 26
+ },
+ {
+  "id": "1528536021174583316",
+  "name": "RU VOICE",
+  "type": 2,
+  "parent_id": "1515417285047619584",
+  "position": 15
+ },
+ {
+  "id": "1528536090326077470",
+  "name": "ENG VOICE",
+  "type": 2,
+  "parent_id": "1515417285047619584",
+  "position": 16
+ },
+ {
+  "id": "1528843257390301417",
+  "name": "polls",
+  "type": 0,
+  "parent_id": "1515417285047619584",
+  "position": 27
+ },
+ {
+  "id": "1530022393752453150",
+  "name": "AION 2",
+  "type": 2,
+  "parent_id": "491546715774648321",
+  "position": 8
+ },
+ {
+  "id": "1531473630251192401",
+  "name": "GENERAL 2",
+  "type": 2,
+  "parent_id": "491546715774648321",
+  "position": 11
+ },
+ {
+  "id": "1539349541092991046",
+  "name": "┌───────ᴀɪᴏɴ 2 ɪᴍᴘ───────┐",
+  "type": 4,
+  "parent_id": null,
+  "position": 2
+ },
+ {
+  "id": "1539349645539672154",
+  "name": "general",
+  "type": 0,
+  "parent_id": "1539349541092991046",
+  "position": 16
+ },
+ {
+  "id": "1539349701432836126",
+  "name": "General",
+  "type": 2,
+  "parent_id": "1539349541092991046",
+  "position": 12
+ },
+ {
+  "id": "1539349748060790905",
+  "name": "General 2",
+  "type": 2,
+  "parent_id": "1539349541092991046",
+  "position": 13
+ },
+ {
+  "id": "1539349827844833421",
+  "name": "noticias",
+  "type": 0,
+  "parent_id": "1539349541092991046",
+  "position": 17
+ },
+ {
+  "id": "1539352335053099048",
+  "name": "📜l-aplicar-guild-aion2",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 3
+ },
+ {
+  "id": "1539353867538661496",
+  "name": "aplicaciones-aion2",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 4
+ },
+ {
+  "id": "1539992783937601587",
+  "name": "DÍA DE TFT 👲",
+  "type": 2,
+  "parent_id": "491546715774648321",
+  "position": 6
+ },
+ {
+  "id": "1541669793197727835",
+  "name": "elige-tu-clasee",
+  "type": 0,
+  "parent_id": "1539349541092991046",
+  "position": 100
+ },
+ {
+  "id": "1542258926001856553",
+  "name": "round-table-imp",
+  "type": 0,
+  "parent_id": "1539349541092991046",
+  "position": 102
+ },
+ {
+  "id": "1542368804624007261",
+  "name": "➕ Crea tu canal",
+  "type": 2,
+  "parent_id": "1539349541092991046",
+  "position": 26
+ },
+ {
+  "id": "1542632433499901992",
+  "name": "foro-imp",
+  "type": 15,
+  "parent_id": "1539349541092991046",
+  "position": 88
+ },
+ {
+  "id": "1542718170496897095",
+  "name": "imp-bot",
+  "type": 0,
+  "parent_id": "491546715774648321",
+  "position": 103
+ },
+ {
+  "id": "1543363793780736150",
+  "name": "Terra's Channel",
+  "type": 2,
+  "parent_id": "1539349541092991046",
+  "position": 28
+ },
+ {
+  "id": "1543402914117058650",
+  "name": "╰┈➤clases",
+  "type": 0,
+  "parent_id": "1539349541092991046",
+  "position": 104
+ }
+]

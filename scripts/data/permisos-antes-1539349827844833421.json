@@ -1,0 +1,11 @@
+{
+ "name": "『🆕』noticias",
+ "permission_overwrites": [
+  {
+   "id": "767847162649772072",
+   "type": 0,
+   "allow": "0",
+   "deny": "2048"
+  }
+ ]
+}

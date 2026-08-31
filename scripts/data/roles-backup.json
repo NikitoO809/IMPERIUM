@@ -1,0 +1,327 @@
+[
+ {
+  "id": "273521525955624961",
+  "name": "@everyone",
+  "position": 0
+ },
+ {
+  "id": "273598918942523393",
+  "name": "IMPERIUM",
+  "position": 54
+ },
+ {
+  "id": "298188045897957376",
+  "name": "EL JEFE",
+  "position": 56
+ },
+ {
+  "id": "432014179948429313",
+  "name": "Imperium Silkroad",
+  "position": 37
+ },
+ {
+  "id": "435712969863856128",
+  "name": "Bot's",
+  "position": 6
+ },
+ {
+  "id": "491545240772018176",
+  "name": "Member Count",
+  "position": 33
+ },
+ {
+  "id": "644794330317455360",
+  "name": "Vexera",
+  "position": 32
+ },
+ {
+  "id": "741707800282923079",
+  "name": "reminder-bot",
+  "position": 31
+ },
+ {
+  "id": "767514722093236225",
+  "name": "Dyno",
+  "position": 30
+ },
+ {
+  "id": "767519076934615041",
+  "name": "YAGPDB.xyz",
+  "position": 58
+ },
+ {
+  "id": "767847162649772072",
+  "name": "Muted",
+  "position": 26
+ },
+ {
+  "id": "767853131672322058",
+  "name": "Verificado",
+  "position": 29
+ },
+ {
+  "id": "775809286751780875",
+  "name": "A3 WITCHES",
+  "position": 40
+ },
+ {
+  "id": "787768972648251484",
+  "name": "Server Booster",
+  "position": 51
+ },
+ {
+  "id": "794692258272247819",
+  "name": "Oficial IMP",
+  "position": 52
+ },
+ {
+  "id": "826549298711363595",
+  "name": "IMP MÓVIL",
+  "position": 39
+ },
+ {
+  "id": "864270334612865024",
+  "name": "IMPERIUM Mir4",
+  "position": 34
+ },
+ {
+  "id": "904055644011782205",
+  "name": "Hydra",
+  "position": 64
+ },
+ {
+  "id": "906232464081551391",
+  "name": "Content Creator",
+  "position": 48
+ },
+ {
+  "id": "907342586904182796",
+  "name": "ProBot ✨",
+  "position": 60
+ },
+ {
+  "id": "907695298074255461",
+  "name": "Ticket King",
+  "position": 61
+ },
+ {
+  "id": "1042661089164398642",
+  "name": "Traha Global IMP",
+  "position": 42
+ },
+ {
+  "id": "1063867110155096174",
+  "name": "THRONE AND LIBERTY",
+  "position": 45
+ },
+ {
+  "id": "1070499496708014131",
+  "name": "FredBoat♪♪",
+  "position": 25
+ },
+ {
+  "id": "1122589705356202064",
+  "name": "Scar of Honor",
+  "position": 44
+ },
+ {
+  "id": "1175587576233607320",
+  "name": "carl-bot",
+  "position": 63
+ },
+ {
+  "id": "1185854418684485643",
+  "name": "Revelation M",
+  "position": 43
+ },
+ {
+  "id": "1187447083263869011",
+  "name": "Raid-Helper",
+  "position": 23
+ },
+ {
+  "id": "1205942538339491970",
+  "name": "TLON",
+  "position": 41
+ },
+ {
+  "id": "1249611736198418466",
+  "name": "VoiceMaster",
+  "position": 47
+ },
+ {
+  "id": "1249621898892021812",
+  "name": "Astro",
+  "position": 22
+ },
+ {
+  "id": "1251325298952245288",
+  "name": "Raid Organizer",
+  "position": 59
+ },
+ {
+  "id": "1252863030056845407",
+  "name": "Discobot",
+  "position": 20
+ },
+ {
+  "id": "1259036279148908579",
+  "name": "Ticket Tool",
+  "position": 50
+ },
+ {
+  "id": "1259051664887775312",
+  "name": "MEE6",
+  "position": 21
+ },
+ {
+  "id": "1279966748463988739",
+  "name": "Appy",
+  "position": 62
+ },
+ {
+  "id": "1298086983704248320",
+  "name": "AOE IMPERIUM",
+  "position": 9
+ },
+ {
+  "id": "1342228767069966396",
+  "name": "7DS: Origin",
+  "position": 38
+ },
+ {
+  "id": "1342660604946812931",
+  "name": "Jockie Music (1)",
+  "position": 24
+ },
+ {
+  "id": "1348233394915377244",
+  "name": "Lingual Link",
+  "position": 27
+ },
+ {
+  "id": "1372677280832426075",
+  "name": "Crystal of Atlan",
+  "position": 28
+ },
+ {
+  "id": "1377022495970037853",
+  "name": "TempVoice",
+  "position": 19
+ },
+ {
+  "id": "1377452165932646511",
+  "name": "CoA-IMP",
+  "position": 8
+ },
+ {
+  "id": "1387278984336900188",
+  "name": "Caller",
+  "position": 7
+ },
+ {
+  "id": "1425237299142332626",
+  "name": "Blue Protocol",
+  "position": 35
+ },
+ {
+  "id": "1425677460703412264",
+  "name": "Sub IMP BP:SR",
+  "position": 5
+ },
+ {
+  "id": "1425843894427320361",
+  "name": "blue protocol imp",
+  "position": 4
+ },
+ {
+  "id": "1515568156310241411",
+  "name": "Call of Dragon",
+  "position": 36
+ },
+ {
+  "id": "1517662815161155605",
+  "name": "RF ONLINE NEXT",
+  "position": 3
+ },
+ {
+  "id": "1527388096318935142",
+  "name": "Jockie Music (2)",
+  "position": 2
+ },
+ {
+  "id": "1528840011842064589",
+  "name": "Polls",
+  "position": 1
+ },
+ {
+  "id": "1539348497776779385",
+  "name": "AION 2",
+  "position": 46
+ },
+ {
+  "id": "1541651913714569246",
+  "name": "Templar",
+  "position": 18
+ },
+ {
+  "id": "1541652150722232421",
+  "name": "Ranger",
+  "position": 13
+ },
+ {
+  "id": "1541652212122390568",
+  "name": "Assassin",
+  "position": 12
+ },
+ {
+  "id": "1541667952464633936",
+  "name": "Chanter",
+  "position": 17
+ },
+ {
+  "id": "1541668075450142771",
+  "name": "Cleric",
+  "position": 16
+ },
+ {
+  "id": "1541668219121836183",
+  "name": "Gladiator",
+  "position": 15
+ },
+ {
+  "id": "1541668617177931876",
+  "name": "Sorcerer",
+  "position": 11
+ },
+ {
+  "id": "1541668714594836540",
+  "name": "Summoner",
+  "position": 10
+ },
+ {
+  "id": "1541676310777044994",
+  "name": "Zira",
+  "position": 57
+ },
+ {
+  "id": "1542627999151562833",
+  "name": "MAGNATE $$",
+  "position": 49
+ },
+ {
+  "id": "1542708892683730974",
+  "name": "TLONs",
+  "position": 14
+ },
+ {
+  "id": "1542727824324952077",
+  "name": "IMPBOT",
+  "position": 53
+ },
+ {
+  "id": "1543407237895164014",
+  "name": "Developer IMP",
+  "position": 55
+ }
+]

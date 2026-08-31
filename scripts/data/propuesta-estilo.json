@@ -1,0 +1,857 @@
+[
+ {
+  "tipo": "categoria",
+  "id": "491545618859425794",
+  "antes": "📊 IMPERIUM Server Stats 📊",
+  "despues": null,
+  "motivo": "los cuenta-cifras los reescribe un bot cada pocos minutos",
+  "canales": [
+   {
+    "id": "576253630382866453",
+    "antes": "Role Count: 65",
+    "despues": null,
+    "motivo": "los cuenta-cifras los reescribe un bot cada pocos minutos",
+    "tipo": 2
+   },
+   {
+    "id": "491545617097687041",
+    "antes": "Member Count: 1199",
+    "despues": null,
+    "motivo": "los cuenta-cifras los reescribe un bot cada pocos minutos",
+    "tipo": 2
+   },
+   {
+    "id": "491545617848467456",
+    "antes": "User Count: 1188",
+    "despues": null,
+    "motivo": "los cuenta-cifras los reescribe un bot cada pocos minutos",
+    "tipo": 2
+   },
+   {
+    "id": "491545618213371905",
+    "antes": "Bot Count: 11",
+    "despues": null,
+    "motivo": "los cuenta-cifras los reescribe un bot cada pocos minutos",
+    "tipo": 2
+   },
+   {
+    "id": "576253631196823562",
+    "antes": "Channel Count: 111",
+    "despues": null,
+    "motivo": "los cuenta-cifras los reescribe un bot cada pocos minutos",
+    "tipo": 2
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "491546715774648321",
+  "antes": "Imperium 👑",
+  "despues": "╭─═👑═─ ɪᴍᴘᴇʀɪᴜᴍ ─═👑═─╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "767481043820478495",
+    "antes": "🖐l-welcome-ɪᴍᴘ",
+    "despues": "『🖐』welcome-imp",
+    "tipo": 0
+   },
+   {
+    "id": "304183778472099841",
+    "antes": "📜l-ʀᴇɢʟᴀꜱ-ɪᴍᴘ",
+    "despues": "『📜』reglas-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1539352335053099048",
+    "antes": "📜l-aplicar-guild-aion2",
+    "despues": "『📜』aplicar-guild-aion2",
+    "tipo": 0
+   },
+   {
+    "id": "1539353867538661496",
+    "antes": "aplicaciones-aion2",
+    "despues": "『📝』aplicaciones-aion2",
+    "tipo": 0
+   },
+   {
+    "id": "692614750709874698",
+    "antes": "⏳-anuncios-imp",
+    "despues": "『📢』anuncios-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1213617950465200178",
+    "antes": "📺l-streams-videos",
+    "despues": "『📺』streams-videos",
+    "tipo": 0
+   },
+   {
+    "id": "1539992783937601587",
+    "antes": "DÍA DE TFT 👲",
+    "despues": "『👲』DÍA DE TFT",
+    "tipo": 2
+   },
+   {
+    "id": "297845330081218561",
+    "antes": "📰l-ɴᴏᴛɪᴄɪᴀꜱ-ɪᴍᴘ",
+    "despues": "『🆕』noticias-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1042605931470532709",
+    "antes": "TRYHARD 1M 😂",
+    "despues": "『😂』TRYHARD 1M",
+    "tipo": 2
+   },
+   {
+    "id": "1249887253317292093",
+    "antes": "🎁-sorteos",
+    "despues": "『🎁』sorteos",
+    "tipo": 0
+   },
+   {
+    "id": "1530022393752453150",
+    "antes": "AION 2",
+    "despues": "『🎧』AION 2",
+    "tipo": 2
+   },
+   {
+    "id": "663655464722104321",
+    "antes": "🆗l-ɢᴇɴᴇʀᴀʟ-ʟᴏʙʙʏ",
+    "despues": "『🆗』general-lobby",
+    "tipo": 0
+   },
+   {
+    "id": "1343639619698298931",
+    "antes": "Radio",
+    "despues": "『🎧』Radio",
+    "tipo": 2
+   },
+   {
+    "id": "1347775810076938272",
+    "antes": "English",
+    "despues": "『🎧』English",
+    "tipo": 2
+   },
+   {
+    "id": "1531473630251192401",
+    "antes": "GENERAL 2",
+    "despues": "『🎧』GENERAL 2",
+    "tipo": 2
+   },
+   {
+    "id": "1263418796840845434",
+    "antes": "👀l-tinder",
+    "despues": "『👀』tinder",
+    "tipo": 0
+   },
+   {
+    "id": "1260341497463705722",
+    "antes": "memes",
+    "despues": "『😂』memes",
+    "tipo": 0
+   },
+   {
+    "id": "1064977688445599814",
+    "antes": "🎬musica",
+    "despues": "『🎬』musica",
+    "tipo": 0
+   },
+   {
+    "id": "1252859887650603068",
+    "antes": "test",
+    "despues": "『🧪』test",
+    "tipo": 0
+   },
+   {
+    "id": "1542718170496897095",
+    "antes": "imp-bot",
+    "despues": "『🤖』imp-bot",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1539349541092991046",
+  "antes": "╭─═⚔️═─ ᴀɪᴏɴ 2 ɪᴍᴘ ─═⚔️═─╮",
+  "despues": "╭─═⚔️═─ ᴀɪᴏɴ 2 ɪᴍᴘ ─═⚔️═─╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1539349701432836126",
+    "antes": "〔🎧〕General",
+    "despues": "『🎧』General",
+    "tipo": 2
+   },
+   {
+    "id": "1539349748060790905",
+    "antes": "〔🎧〕General 2",
+    "despues": "『🎧』General 2",
+    "tipo": 2
+   },
+   {
+    "id": "1539349645539672154",
+    "antes": "〔💬〕general",
+    "despues": "『💬』general",
+    "tipo": 0
+   },
+   {
+    "id": "1539349827844833421",
+    "antes": "〔📢〕noticias",
+    "despues": "『🆕』noticias",
+    "tipo": 0
+   },
+   {
+    "id": "1542368804624007261",
+    "antes": "〔➕〕Crea tu canal",
+    "despues": "『➕』Crea tu canal",
+    "tipo": 2
+   },
+   {
+    "id": "1543363793780736150",
+    "antes": "Terra's Channel",
+    "despues": null,
+    "motivo": "canal temporal o de sistema",
+    "tipo": 2
+   },
+   {
+    "id": "1542632433499901992",
+    "antes": "〔🗣️〕foro-imp",
+    "despues": "『📌』foro-imp",
+    "tipo": 15
+   },
+   {
+    "id": "1541669793197727835",
+    "antes": "〔🎯〕elige-tu-clase",
+    "despues": "『🎯』elige-tu-clase",
+    "tipo": 0
+   },
+   {
+    "id": "1542258926001856553",
+    "antes": "〔🔒〕round-table-imp",
+    "despues": "『👑』round-table-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1543402914117058650",
+    "antes": "〔⚔️〕clases",
+    "despues": "『⚔』clases",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1515417285047619584",
+  "antes": "Call of Dragons 👺",
+  "despues": "╭═👺═ ᴄᴀʟʟ ᴏꜰ ᴅʀᴀɢᴏɴꜱ ═👺═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1528536021174583316",
+    "antes": "RU VOICE",
+    "despues": "『🎧』RU VOICE",
+    "tipo": 2
+   },
+   {
+    "id": "1528536090326077470",
+    "antes": "ENG VOICE",
+    "despues": "『🎧』ENG VOICE",
+    "tipo": 2
+   },
+   {
+    "id": "1517204166814990356",
+    "antes": "『✉️』event-announcements",
+    "despues": "『📢』event-announcements",
+    "tipo": 0
+   },
+   {
+    "id": "1515417489893232740",
+    "antes": "『📢』alliance-announcements-es-eng",
+    "despues": "『📢』alliance-announcements-es-eng",
+    "tipo": 0
+   },
+   {
+    "id": "1515417398990209076",
+    "antes": "『📌』guide-link",
+    "despues": "『📌』guide-link",
+    "tipo": 0
+   },
+   {
+    "id": "1515417356648841306",
+    "antes": "『💬』general-esp",
+    "despues": "『💬』general-esp",
+    "tipo": 0
+   },
+   {
+    "id": "1515947358272360588",
+    "antes": "『💬』general-eng",
+    "despues": "『💬』general-eng",
+    "tipo": 0
+   },
+   {
+    "id": "1525262346530848838",
+    "antes": "『💬』general-🇷🇺",
+    "despues": "『💬』general-ru",
+    "tipo": 0
+   },
+   {
+    "id": "1515957388770017362",
+    "antes": "『👑』officers-imp",
+    "despues": "『👑』officers-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1515417430321791146",
+    "antes": "『📯』cod-patch-notes",
+    "despues": "『📢』cod-patch-notes",
+    "tipo": 0
+   },
+   {
+    "id": "1528531997054734456",
+    "antes": "kvk",
+    "despues": "『⚔️』kvk",
+    "tipo": 0
+   },
+   {
+    "id": "1528843257390301417",
+    "antes": "polls",
+    "despues": "『📊』polls",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1511911372441653320",
+  "antes": "SwordXStaff",
+  "despues": "╭═🗡️═ ꜱᴡᴏʀᴅxꜱᴛᴀꜰꜰ ═🗡️═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1515949454975434836",
+    "antes": "『💬』general",
+    "despues": "『💬』general",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1425043787759095838",
+  "antes": "Blue Protocol SR",
+  "despues": "╭═🔵═ ʙʟᴜᴇ ᴘʀᴏᴛᴏᴄᴏʟ ═🔵═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1425239623830863923",
+    "antes": "General BPSR",
+    "despues": "『🎧』General BPSR",
+    "tipo": 2
+   },
+   {
+    "id": "1428226848717934652",
+    "antes": "『✅』anuncios-bp-imp",
+    "despues": "『📢』anuncios-bp-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1425231682448920596",
+    "antes": "『🆕』bpsr-noticias",
+    "despues": "『🆕』bpsr-noticias",
+    "tipo": 0
+   },
+   {
+    "id": "1425231466631270492",
+    "antes": "『📌』contribucion-clan-bpsr",
+    "despues": "『📥』contribucion-clan-bpsr",
+    "tipo": 0
+   },
+   {
+    "id": "1425301529421676705",
+    "antes": "『👾』roles-bpsr",
+    "despues": "『👾』roles-bpsr",
+    "tipo": 0
+   },
+   {
+    "id": "1425231568670167101",
+    "antes": "『💬』general-bpsr",
+    "despues": "『💬』general-bpsr",
+    "tipo": 0
+   },
+   {
+    "id": "1429519519516332183",
+    "antes": "『🚀』codigos-bp-sr",
+    "despues": "『🚀』codigos-bp-sr",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1372677658856390728",
+  "antes": "Crystal of Atlan",
+  "despues": "╭─ ᴄʀʏꜱᴛᴀʟ ᴏꜰ ᴀᴛʟᴀɴ ─╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1372689677051629588",
+    "antes": "General CoA",
+    "despues": "『🎧』General CoA",
+    "tipo": 2
+   },
+   {
+    "id": "1377047938798190723",
+    "antes": "『📌』anuncios-coa",
+    "despues": "『📢』anuncios-coa",
+    "tipo": 0
+   },
+   {
+    "id": "1377025755862532210",
+    "antes": "『👾』rolles-coa",
+    "despues": "『👾』rolles-coa",
+    "tipo": 0
+   },
+   {
+    "id": "1372681872890663043",
+    "antes": "『💬』general-coa",
+    "despues": "『💬』general-coa",
+    "tipo": 0
+   },
+   {
+    "id": "1372681991706902619",
+    "antes": "『🆕』coa-noticias",
+    "despues": "『🆕』coa-noticias",
+    "tipo": 0
+   },
+   {
+    "id": "1384419000611770420",
+    "antes": "guias",
+    "despues": "『📌』guias",
+    "tipo": 15
+   },
+   {
+    "id": "1377455447421882393",
+    "antes": "『📌』general-imp-coa",
+    "despues": "『📌』general-imp-coa",
+    "tipo": 0
+   },
+   {
+    "id": "1377476575137759313",
+    "antes": "『🚀』codigos-coa",
+    "despues": "『🚀』codigos-coa",
+    "tipo": 0
+   },
+   {
+    "id": "1378197312089751582",
+    "antes": "『📥』clan-contribucion-imp",
+    "despues": "『📥』clan-contribucion-imp",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1342229161363640370",
+  "antes": "7DS: origin",
+  "despues": "╭─═🐗═─ 7ᴅꜱ ᴏʀɪɢɪɴ ─═🐗═─╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1350244093518811199",
+    "antes": "『🎮』7DS: Origin",
+    "despues": "『🎮』7DS: Origin",
+    "tipo": 2
+   },
+   {
+    "id": "1345464849920036994",
+    "antes": "『📯』announcement",
+    "despues": "『📢』announcement",
+    "tipo": 5
+   },
+   {
+    "id": "1350045252425351168",
+    "antes": "『🆕』7ds-news",
+    "despues": "『🆕』7ds-news",
+    "tipo": 0
+   },
+   {
+    "id": "1477517633824886847",
+    "antes": "『💬』7ds-general",
+    "despues": "『💬』7ds-general",
+    "tipo": 0
+   },
+   {
+    "id": "1477517683066015975",
+    "antes": "『📺』guides",
+    "despues": "『📌』guides",
+    "tipo": 15
+   },
+   {
+    "id": "1477517998305837156",
+    "antes": "『📸』foto",
+    "despues": "『📸』foto",
+    "tipo": 0
+   },
+   {
+    "id": "1477518017494651063",
+    "antes": "『📌』codes",
+    "despues": "『🚀』codes",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1122588361631203349",
+  "antes": "Scar of Honor",
+  "despues": "╭═🛡️═ ꜱᴄᴀʀ ᴏꜰ ʜᴏɴᴏʀ ═🛡️═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1122588634701377647",
+    "antes": "GENERAL",
+    "despues": "『🎧』GENERAL",
+    "tipo": 2
+   },
+   {
+    "id": "1498485563357925429",
+    "antes": "『➕ 』Creator Channel",
+    "despues": "『➕』Creator Channel",
+    "tipo": 2
+   },
+   {
+    "id": "1496029418504720585",
+    "antes": "『📋』normas-imp",
+    "despues": "『📜』normas-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1496029243056980089",
+    "antes": "『📢』anuncios",
+    "despues": "『📢』anuncios",
+    "tipo": 0
+   },
+   {
+    "id": "1252857596763836526",
+    "antes": "『📌』elige-tu-clase",
+    "despues": "『🎯』elige-tu-clase",
+    "tipo": 0
+   },
+   {
+    "id": "1496031522010956006",
+    "antes": "『🏹』raid-bot",
+    "despues": "『🏹』raid-bot",
+    "tipo": 0
+   },
+   {
+    "id": "1496034584125505656",
+    "antes": "『💬』general-soh",
+    "despues": "『💬』general-soh",
+    "tipo": 0
+   },
+   {
+    "id": "1496031926811754597",
+    "antes": "『🚨』guia-scar-of-honor",
+    "despues": "『📌』guia-scar-of-honor",
+    "tipo": 15
+   },
+   {
+    "id": "1496029707315974305",
+    "antes": "『❎』ayuda-dungeon",
+    "despues": "『❎』ayuda-dungeon",
+    "tipo": 0
+   },
+   {
+    "id": "1496030044756246598",
+    "antes": "『🎈』eventos",
+    "despues": "『🎈』eventos",
+    "tipo": 0
+   },
+   {
+    "id": "1496030367117869086",
+    "antes": "『🏆』evento-pvp",
+    "despues": "『🏆』evento-pvp",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1496035418322370610",
+  "antes": "Tarisland (old)",
+  "despues": "╭─═🏝️═─ ᴛᴀʀɪꜱʟᴀɴᴅ ─═🏝️═─╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1277459783284297883",
+    "antes": "🎈-eventos",
+    "despues": "『🎈』eventos",
+    "tipo": 0
+   },
+   {
+    "id": "1282449755745685565",
+    "antes": "👑-silverlit-cup-s0",
+    "despues": "『👑』silverlit-cup-s0",
+    "tipo": 0
+   },
+   {
+    "id": "1253026127207862272",
+    "antes": "🏹-raid-bot",
+    "despues": "『🏹』raid-bot",
+    "tipo": 0
+   },
+   {
+    "id": "1122588507077091490",
+    "antes": "📜l-anuncios-tarisland",
+    "despues": "『📢』anuncios-tarisland",
+    "tipo": 0
+   },
+   {
+    "id": "1249623638253109338",
+    "antes": "📋-normas-imp",
+    "despues": "『📜』normas-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1122588451880054905",
+    "antes": "💬l-general-tarisland",
+    "despues": "『💬』general-tarisland",
+    "tipo": 0
+   },
+   {
+    "id": "1277481727287230474",
+    "antes": "🏆-evento-pvp",
+    "despues": "『🏆』evento-pvp",
+    "tipo": 0
+   },
+   {
+    "id": "1174900771809132675",
+    "antes": "🚨l-guia-tarisland",
+    "despues": "『📌』guia-tarisland",
+    "tipo": 15
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1298085838353072138",
+  "antes": "Age Of Empire Mobile",
+  "despues": "╭═🏰═ ᴀɢᴇ ᴏꜰ ᴇᴍᴘɪʀᴇꜱ ═🏰═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1298086065281957928",
+    "antes": "SALA 1",
+    "despues": "『🎧』SALA 1",
+    "tipo": 2
+   },
+   {
+    "id": "1298086095275298912",
+    "antes": "GENERAL",
+    "despues": "『🎧』GENERAL",
+    "tipo": 2
+   },
+   {
+    "id": "1298085960638009407",
+    "antes": "noticias",
+    "despues": "『🆕』noticias",
+    "tipo": 0
+   },
+   {
+    "id": "1298086192423636993",
+    "antes": "anuncios-imp",
+    "despues": "『📢』anuncios-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1298085994989355171",
+    "antes": "general-chat-aoe",
+    "despues": "『💬』general-chat-aoe",
+    "tipo": 0
+   },
+   {
+    "id": "1300791906208317463",
+    "antes": "round-table-imp-aoe",
+    "despues": "『👑』round-table-imp-aoe",
+    "tipo": 0
+   },
+   {
+    "id": "1302343334177669200",
+    "antes": "guias-aoe",
+    "despues": "『📌』guias-aoe",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1184755573439348786",
+  "antes": "REVELATION M",
+  "despues": "╭═🐉═ ʀᴇᴠᴇʟᴀᴛɪᴏɴ ᴍ ═🐉═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1186050514773876817",
+    "antes": "forum-revelation-m",
+    "despues": "『📌』forum-revelation-m",
+    "tipo": 15
+   },
+   {
+    "id": "1184755669971255346",
+    "antes": "general-chat-ro",
+    "despues": "『💬』general-chat-ro",
+    "tipo": 0
+   },
+   {
+    "id": "1184755710400139347",
+    "antes": "anuncios-revelation-m",
+    "despues": "『📢』anuncios-revelation-m",
+    "tipo": 0
+   },
+   {
+    "id": "1184968143572058165",
+    "antes": "cofres-loc",
+    "despues": "『🎁』cofres-loc",
+    "tipo": 0
+   },
+   {
+    "id": "1187451074915876915",
+    "antes": "comunicados-imp",
+    "despues": "『📢』comunicados-imp",
+    "tipo": 0
+   },
+   {
+    "id": "1189929396803489792",
+    "antes": "round-table-ro",
+    "despues": "『👑』round-table-ro",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1042660691796054106",
+  "antes": "Traha Global",
+  "despues": "╭═🌍═ ᴛʀᴀʜᴀ ɢʟᴏʙᴀʟ ═🌍═╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "1059645310013538397",
+    "antes": "🔔f𝗢𝗥𝗨𝗠-𝗜𝗠𝗣-𝗧𝗥𝗔𝗛𝗔",
+    "despues": "『📌』forum-imp-traha",
+    "tipo": 15
+   },
+   {
+    "id": "1061311895409270804",
+    "antes": "✅n𝗢𝗥𝗠𝗔𝗦-𝗜𝗠𝗣𝗘𝗥𝗜𝗨𝗠",
+    "despues": "『📜』normas-imperium",
+    "tipo": 0
+   },
+   {
+    "id": "1048716828240793650",
+    "antes": "🔥round-table-imp-traha",
+    "despues": "『👑』round-table-imp-traha",
+    "tipo": 0
+   },
+   {
+    "id": "1052442987466063873",
+    "antes": "✅asistencia-pvp-traha",
+    "despues": "『🏆』asistencia-pvp-traha",
+    "tipo": 0
+   },
+   {
+    "id": "1042660899963543572",
+    "antes": "💬general-chat-traha",
+    "despues": "『💬』general-chat-traha",
+    "tipo": 0
+   },
+   {
+    "id": "1042660967131131924",
+    "antes": "📢anuncios-traha-imp",
+    "despues": "『📢』anuncios-traha-imp",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "775807960114528277",
+  "antes": "Witches A3 Still 🔱",
+  "despues": "╭─═🔱═─ ᴡɪᴛᴄʜᴇꜱ ᴀ3 ─═🔱═─╮",
+  "motivo": null,
+  "canales": [
+   {
+    "id": "878706691850506390",
+    "antes": "general-a3-english",
+    "despues": "『💬』general-a3-english",
+    "tipo": 0
+   },
+   {
+    "id": "775808099876339784",
+    "antes": "geɴᴇʀᴀʟ-ᴀ3-español",
+    "despues": "『💬』general-a3-español",
+    "tipo": 0
+   },
+   {
+    "id": "878850404023140372",
+    "antes": "round-table-imp",
+    "despues": "『👑』round-table-imp",
+    "tipo": 0
+   },
+   {
+    "id": "775808021036793876",
+    "antes": "announcements-a3-🔔",
+    "despues": "『📢』announcements-a3",
+    "tipo": 0
+   },
+   {
+    "id": "836381160111472690",
+    "antes": "lista-de-la-verguenza-a3",
+    "despues": "『💀』lista-de-la-verguenza-a3",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "767823791224782889",
+  "antes": "mimir",
+  "despues": null,
+  "motivo": "categoria de logs del staff",
+  "canales": [
+   {
+    "id": "906346284955361290",
+    "antes": "MIMIR",
+    "despues": null,
+    "motivo": "categoria de logs del staff",
+    "tipo": 2
+   },
+   {
+    "id": "767823844982784021",
+    "antes": "logs",
+    "despues": null,
+    "motivo": "categoria de logs del staff",
+    "tipo": 0
+   }
+  ]
+ },
+ {
+  "tipo": "categoria",
+  "id": "1421648222228582450",
+  "antes": "TEMPVOICE CATEGORY",
+  "despues": null,
+  "motivo": "categoria de sistema de TempVoice",
+  "canales": [
+   {
+    "id": "1421648225210863668",
+    "antes": "✨・interface",
+    "despues": null,
+    "motivo": "categoria de sistema de TempVoice",
+    "tipo": 0
+   }
+  ]
+ }
+]
