@@ -1,0 +1,123 @@
+{
+  "games": [
+    {
+      "name": "Chrono Odyssey",
+      "genre": "MMO de acción",
+      "status": "En desarrollo",
+      "hype": 9.5,
+      "developer": "Kakao Games",
+      "platforms": ["PC", "Consolas", "Móvil"],
+      "blurb": "MMO de acción de mundo abierto con manipulación del tiempo. El más esperado según MMORPG.com.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1729_32.png?cb=DFC1F202AF68D2BDE5FD8780F3349200",
+      "infoUrl": "https://www.mmorpg.com/chrono-odyssey",
+      "website": "https://chronoodyssey.kakaogames.com/"
+    },
+    {
+      "name": "Path of Exile 2",
+      "genre": "ARPG",
+      "status": "En desarrollo",
+      "hype": 9.0,
+      "developer": "Grinding Gear Games",
+      "blurb": "ARPG de acción muy esperado por la comunidad.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1737_32.png?cb=8A49B519D5661DCDFE48688DD653859A",
+      "infoUrl": "https://www.mmorpg.com/path-of-exile-2",
+      "website": "https://pathofexile2.com/"
+    },
+    {
+      "name": "Blue Protocol",
+      "genre": "MMORPG",
+      "status": "En desarrollo",
+      "hype": 8.8,
+      "developer": "Bandai Namco",
+      "blurb": "MMORPG de estética anime entre los más esperados del momento.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1630_32.png?cb=085EEBA2173A4143E3AE66F819395499",
+      "infoUrl": "https://www.mmorpg.com/blue-protocol"
+    },
+    {
+      "name": "Fractured Veil",
+      "genre": "MMO de acción",
+      "status": "En desarrollo",
+      "hype": 8.65,
+      "developer": "Paddle Creek Games",
+      "blurb": "MMO de acción y supervivencia en desarrollo.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1829_32.png?cb=044605B4C5C382FB447D4BAC9FED7F37",
+      "infoUrl": "https://www.mmorpg.com/fractured-veil"
+    },
+    {
+      "name": "Palia",
+      "genre": "MMO",
+      "status": "Beta",
+      "hype": 8.3,
+      "developer": "Singularity 6",
+      "platforms": ["PC", "Switch"],
+      "blurb": "MMO acogedor de vida y comunidad, en fase beta.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1769_32.png?cb=86598693DBD7EB68624A340C819042B9",
+      "infoUrl": "https://www.mmorpg.com/palia",
+      "website": "https://palia.com/"
+    },
+    {
+      "name": "Steel Hunters",
+      "genre": "MMO de acción",
+      "status": "Acceso anticipado",
+      "hype": 8.0,
+      "blurb": "Shooter MMO de acción con mechas, en acceso anticipado.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1912_32.png?cb=C2F6EBD923995BF2167B8B7FA6FC7A75",
+      "infoUrl": "https://www.mmorpg.com/steel-hunters"
+    },
+    {
+      "name": "Valhalla",
+      "genre": "MMO",
+      "status": "Acceso anticipado",
+      "hype": 8.0,
+      "blurb": "MMO en acceso anticipado entre los más vigilados de la comunidad.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1911_32.png?cb=2D43D6AB7B95A3E5E8185B9A88D57F41",
+      "infoUrl": "https://www.mmorpg.com/valhalla"
+    },
+    {
+      "name": "The Hidden Ones",
+      "genre": "ARPG",
+      "status": "En desarrollo",
+      "hype": 8.0,
+      "developer": "Morefun Studios",
+      "publisher": "Tencent",
+      "blurb": "ARPG en desarrollo entre los más vigilados de la comunidad.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1907_32.png?cb=C465E230447ADF05797E3877778C9895",
+      "infoUrl": "https://www.mmorpg.com/the-hidden-ones",
+      "website": "https://morefunstudios.com/"
+    },
+    {
+      "name": "ArcheAge Chronicles",
+      "genre": "MMO de acción",
+      "status": "En desarrollo",
+      "hype": 8.0,
+      "developer": "XLGAMES",
+      "publisher": "Kakao Games",
+      "platforms": ["PC", "Xbox Series", "PS5"],
+      "blurb": "Nueva entrega de la saga ArcheAge, en desarrollo.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1832_32.png?cb=CB21BBE62F47AA20D773667B53F9719B",
+      "infoUrl": "https://www.mmorpg.com/archeage-chronicles",
+      "website": "https://archeagechronicles.kakaogames.com/"
+    },
+    {
+      "name": "Iron and Magic",
+      "genre": "MMORPG",
+      "status": "En desarrollo",
+      "hype": 8.0,
+      "developer": "DeHorizon",
+      "blurb": "MMORPG en desarrollo. Sigue sus novedades en la ficha.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1822_32.png?cb=1808639C1F97DA464B5D0D66B4BA0AF2",
+      "infoUrl": "https://www.mmorpg.com/iron-and-magic"
+    },
+    {
+      "name": "Legacy: Steel & Sorcery",
+      "genre": "ARPG",
+      "status": "En desarrollo",
+      "hype": 8.0,
+      "developer": "Notorious Studios",
+      "blurb": "Acción PvPvE de extracción y fantasía, en desarrollo.",
+      "image": "https://images.mmorpg.com/images/games/logos/32/1814_32.png?cb=AEEB711BBE0CA79558CC676F788F134D",
+      "infoUrl": "https://www.mmorpg.com/legacy-steel-and-sorcery",
+      "website": "https://www.playlegacy.gg/"
+    }
+  ]
+}

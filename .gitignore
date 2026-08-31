@@ -56,3 +56,6 @@ scripts/data/privados-*.json
 
 # Registros de compilacion del SQL de contenido (se rehacen solos)
 scripts/sql/*.build.log
+
+# Maquetas de revision que generan las skills (se rehacen)
+scripts/data/preview-*.html
