@@ -53,6 +53,13 @@ const TAG_COMPRO = "Compro";
 export const TAG_CERRADA = "Cerrada";
 export const TAG_CADUCADA = "Caducada";
 
+// Los ids de las etiquetas, fijados a mano. Buscarlas por su nombre funciona,
+// pero se rompe en silencio: basta con que alguien le quite un acento a una
+// etiqueta desde Discord para que el mercado empiece a publicar sin etiquetar,
+// sin dar ningún error. Con los ids puestos aquí eso ya no puede pasar.
+// Formato: "Vendo=123,Compro=456,Cerrada=789". Los saca `npm run discord:tags`.
+const TAGS_FIJADAS = (process.env.DISCORD_MERCADO_TAGS ?? "").trim();
+
 export type TipoOferta = "vendo" | "compro";
 
 // Categorías que se eligen en el propio comando (Discord las enseña como
@@ -207,6 +214,72 @@ export function botonesOferta(autorId: string): DiscordActionRow {
   };
 }
 
+// El único botón que le queda a una oferta cerrada. Sirve para no tener que
+// rellenar el formulario entero otra vez cuando lo que vendes sigue en pie:
+// los datos se sacan de la propia ficha y el formulario se abre relleno.
+export function botonRepublicar(autorId: string): DiscordActionRow {
+  return {
+    type: 1,
+    components: [
+      {
+        type: 2,
+        style: 1,
+        label: "Publicar de nuevo",
+        custom_id: `mercado:republicar:${autorId}`,
+        emoji: { name: "🔄" },
+      },
+    ],
+  };
+}
+
+// Quién publicó una oferta, leyendo su propia ficha. El id viaja dentro del
+// campo "Vende"/"Busca" como mención, que es lo que se pinta al publicarla.
+function autorDelEmbed(embed: DiscordEmbed | undefined): string {
+  const campo = embed?.fields?.find((f) => f.name === "Vende" || f.name === "Busca");
+  return campo?.value?.match(/<@!?(\d+)>/)?.[1] ?? "";
+}
+
+// Reconstruye lo que se escribió en el formulario a partir de la ficha
+// publicada. Sin base de datos, la ficha ES el registro de la oferta.
+export function ofertaDelEmbed(
+  embed: DiscordEmbed | undefined
+): { tipo: TipoOferta; categoria: string; fields: OfertaFields } | null {
+  if (!embed) return null;
+  const campo = (nombre: string) => embed.fields?.find((f) => f.name === nombre)?.value ?? "";
+
+  // El tipo se deduce del nombre del campo del dinero: al publicar, una oferta
+  // de venta pone "Precio" y una de compra pone "Paga".
+  const precio = campo("Precio");
+  const paga = campo("Paga");
+  if (!precio && !paga) return null;
+  const tipo: TipoOferta = precio ? "vendo" : "compro";
+
+  // De vuelta al valor interno: en la ficha está el nombre bonito.
+  const nombreCat = campo("Categoría");
+  const categoria =
+    Object.keys(NOMBRE_CATEGORIA).find((k) => NOMBRE_CATEGORIA[k] === nombreCat) ?? "otros";
+
+  // Al cerrarla, el título se quedó como "✅ Espada de fuego — CERRADA". Se
+  // quita solo el emoji de estado, no todo lo que no sea letra: en Aion los
+  // objetos se llaman "+5 Espada" y ese "+" es parte del nombre.
+  const item = (embed.title ?? "")
+    .replace(/^(?:💰|🔎|✅|🕓)\s*/u, "")
+    .replace(/\s+—\s+(CERRADA|CADUCADA)\s*$/, "")
+    .trim();
+
+  return {
+    tipo,
+    categoria,
+    fields: {
+      item,
+      cantidad: campo("Cantidad") === "1" ? "" : campo("Cantidad"),
+      precio: precio || paga,
+      nick: campo("Nick en el juego").replace(/^—$/, ""),
+      notas: embed.description ?? "",
+    },
+  };
+}
+
 // Deja el embed en gris y con el motivo escrito, para el que llegue tarde.
 export function embedCerrado(embed: DiscordEmbed, motivo: string): DiscordEmbed {
   const caducada = motivo === TAG_CADUCADA;
@@ -227,21 +300,44 @@ export function embedCerrado(embed: DiscordEmbed, motivo: string): DiscordEmbed 
 
 let cacheTags: { at: number; tags: Record<string, string> } | null = null;
 
+// Lo que diga DISCORD_MERCADO_TAGS. Se lee cada vez: son cuatro pares y así
+// no hay que reiniciar nada al cambiarlo.
+function tagsFijadas(): Record<string, string> {
+  const tags: Record<string, string> = {};
+  for (const par of TAGS_FIJADAS.split(",")) {
+    const [nombre, id] = par.split("=").map((t) => t.trim());
+    if (nombre && id && /^\d+$/.test(id)) tags[nombre.toLowerCase()] = id;
+  }
+  return tags;
+}
+
 // Los ids de las etiquetas hay que preguntárselos al foro. Se guardan diez
-// minutos para no preguntar en cada oferta.
+// minutos para no preguntar en cada oferta. Las fijadas a mano pisan a las que
+// vengan del foro: son las que no se rompen si alguien renombra una.
 async function tagsDelForo(): Promise<Record<string, string>> {
   if (cacheTags && Date.now() - cacheTags.at < 10 * 60_000) return cacheTags.tags;
+  const fijadas = tagsFijadas();
   const res = await discordFetch(`/channels/${FORO}`, "GET", undefined);
-  if (!res.ok) return {};
+  // Si Discord no contesta, al menos quedan las fijadas.
+  if (!res.ok) return fijadas;
   const canal = (await res.json()) as { available_tags?: { id: string; name: string }[] };
   const tags: Record<string, string> = {};
   for (const t of canal.available_tags ?? []) tags[t.name.toLowerCase()] = t.id;
-  cacheTags = { at: Date.now(), tags };
-  return tags;
+  const todas = { ...tags, ...fijadas };
+  cacheTags = { at: Date.now(), tags: todas };
+  return todas;
 }
 
 async function idsDeTags(nombres: string[]): Promise<string[]> {
   const tags = await tagsDelForo();
+  const faltan = nombres.filter((n) => !tags[n.toLowerCase()]);
+  if (faltan.length) {
+    // Antes esto pasaba desapercibido y la oferta salía sin etiquetar.
+    console.error(
+      `[mercado] etiquetas que no existen en el foro: ${faltan.join(", ")}. ` +
+        "Alguien las ha renombrado o borrado; ponlas en DISCORD_MERCADO_TAGS."
+    );
+  }
   return nombres.map((n) => tags[n.toLowerCase()]).filter(Boolean);
 }
 
@@ -299,9 +395,13 @@ export async function cerrarOferta(
   }
 
   if (cabecera) {
+    // Se van los botones de la oferta viva y queda solo el de republicar, para
+    // quien siga vendiendo lo mismo al día siguiente. Si no se sabe quién la
+    // publicó, mejor ninguno que uno que no va a funcionar.
+    const autor = autorDelEmbed(cabecera);
     await discordFetch(`/channels/${threadId}/messages/${threadId}`, "PATCH", {
       embeds: [embedCerrado(cabecera, motivo)],
-      components: [],
+      components: autor ? [botonRepublicar(autor)] : [],
     });
   }
 
@@ -369,27 +469,37 @@ function leerFormulario(filas: Fila[] | undefined): OfertaFields {
   return values;
 }
 
-// El formulario que se abre dentro de Discord.
-function formulario(tipo: TipoOferta, categoria: string) {
+// El formulario que se abre dentro de Discord. Con `previos` sale relleno:
+// es lo que hace que republicar una oferta sea un clic y no volver a
+// escribirlo todo.
+function formulario(tipo: TipoOferta, categoria: string, previos?: OfertaFields) {
   return json({
     type: InteractionResponseType.MODAL,
     data: {
       custom_id: `mercado:nueva:${tipo}:${categoria}`,
-      title: tipo === "vendo" ? "Publicar lo que vendes" : "Publicar lo que buscas",
-      components: campos(tipo).map((campo) => ({
-        type: 1,
-        components: [
-          {
-            type: 4,
-            custom_id: campo.id,
-            label: campo.label,
-            style: campo.long ? 2 : 1,
-            required: Boolean(campo.required),
-            max_length: campo.maxLength,
-            placeholder: campo.placeholder,
-          },
-        ],
-      })),
+      title: previos
+        ? "Publicar de nuevo"
+        : tipo === "vendo"
+          ? "Publicar lo que vendes"
+          : "Publicar lo que buscas",
+      components: campos(tipo).map((campo) => {
+        const valor = previos?.[campo.id]?.slice(0, campo.maxLength) ?? "";
+        return {
+          type: 1,
+          components: [
+            {
+              type: 4,
+              custom_id: campo.id,
+              label: campo.label,
+              style: campo.long ? 2 : 1,
+              required: Boolean(campo.required),
+              max_length: campo.maxLength,
+              placeholder: campo.placeholder,
+              ...(valor ? { value: valor } : {}),
+            },
+          ],
+        };
+      }),
     },
   });
 }
@@ -397,6 +507,11 @@ function formulario(tipo: TipoOferta, categoria: string) {
 const SIN_FORO =
   "El mercado todavía no está montado: falta crear el foro y poner su id en " +
   "`DISCORD_FORO_MERCADO`. Avisa a Miguel.";
+
+const AVISO_ANTIGUEDAD =
+  `Para publicar en el mercado hay que llevar al menos **${DIAS_ANTIGUEDAD} días** en el servidor. ` +
+  "No es nada personal: es lo que frena a las cuentas nuevas que entran solo a estafar. " +
+  "Mientras tanto puedes escribir en los temas que ya hay.";
 
 // Discord corta a los 3 segundos. Publicar o cerrar una oferta son varias
 // llamadas seguidas, así que se contesta "un momento..." y el trabajo sigue
@@ -419,21 +534,52 @@ function unMomento(token: string | undefined, trabajo: (avisar: (texto: string) 
   });
 }
 
-// Los comandos /vendo y /compro.
+// Los comandos /vendo, /compro y /mercado.
 export async function comandoMercado(
   nombre: string,
   i: MercadoInteraction
 ): Promise<Response | null> {
-  if (nombre !== "vendo" && nombre !== "compro") return null;
+  if (nombre !== "vendo" && nombre !== "compro" && nombre !== "mercado") return null;
   if (!MERCADO_CONFIGURADO) return aviso(SIN_FORO);
 
-  if (llevaPocoTiempo(i.member?.joined_at)) {
-    return aviso(
-      `Para publicar en el mercado hay que llevar al menos **${DIAS_ANTIGUEDAD} días** en el servidor. ` +
-        "No es nada personal: es lo que frena a las cuentas nuevas que entran solo a estafar. " +
-        "Mientras tanto puedes escribir en los temas que ya hay."
-    );
+  // ── /mercado: buscar entre las ofertas abiertas.
+  if (nombre === "mercado") {
+    const texto = (i.data?.options?.find((o) => o.name === "busco")?.value ?? "").trim();
+    const tipo = i.data?.options?.find((o) => o.name === "tipo")?.value as
+      | TipoOferta
+      | undefined;
+    if (!texto) return aviso("Dime qué buscas: `/mercado busco: manastones`");
+
+    return unMomento(i.token, async (avisar) => {
+      const res = await buscarOfertas(texto, tipo);
+      if (!res.ok) {
+        console.error("[mercado] buscar:", res.error);
+        await avisar("No he podido mirar el mercado. Prueba en un minuto.");
+        return;
+      }
+      if (res.hallazgos.length === 0) {
+        await avisar(
+          `No hay nada abierto que encaje con **${limpio(texto, 80)}**` +
+            (res.abiertas > 0
+              ? `. Hay ${res.abiertas} ofertas abiertas: prueba con una palabra más corta, o publica tú un \`/compro\`.`
+              : ". El mercado está vacío ahora mismo: publica tú el primero.")
+        );
+        return;
+      }
+      const lista = res.hallazgos
+        .slice(0, 10)
+        .map((h) => `${h.tipo === "vendo" ? "💰" : "🔎"} <#${h.id}>`)
+        .join("\n");
+      const sobran = res.hallazgos.length - 10;
+      await avisar(
+        `**${res.hallazgos.length}** ofertas abiertas con **${limpio(texto, 80)}**:\n\n` +
+          lista +
+          (sobran > 0 ? `\n\n…y ${sobran} más. Afina la búsqueda para verlas.` : "")
+      );
+    });
   }
+
+  if (llevaPocoTiempo(i.member?.joined_at)) return aviso(AVISO_ANTIGUEDAD);
 
   const categoria = i.data?.options?.find((o) => o.name === "categoria")?.value ?? "otros";
   return formulario(nombre as TipoOferta, categoria);
@@ -481,6 +627,19 @@ export async function componenteMercado(
   }
 
   const autorId = dato;
+
+  // ── "Publicar de nuevo": reabrir el formulario con lo que ya había.
+  if (accion === "republicar") {
+    if (yo !== autorId) return aviso("Solo puede republicarla quien la publicó.");
+    if (llevaPocoTiempo(i.member?.joined_at)) return aviso(AVISO_ANTIGUEDAD);
+    // La ficha viene dentro de la propia interacción, así que no hay que
+    // preguntarle nada a Discord: da tiempo a contestar con el formulario.
+    const oferta = ofertaDelEmbed(i.message?.embeds?.[0]);
+    if (!oferta) {
+      return aviso("No he podido leer la oferta. Publícala con `/vendo` o `/compro`.");
+    }
+    return formulario(oferta.tipo, oferta.categoria, oferta.fields);
+  }
 
   // ── "Contactar": avisar por privado a quien publicó.
   if (accion === "contactar") {
@@ -618,6 +777,89 @@ function leerReporte(filas: Fila[] | undefined): string {
 // La pasada diaria no tiene tope: ahí no hay nadie esperando.
 const TOPE_POR_PUBLICACION = 10;
 
+type Hilo = { id: string; name?: string; parent_id?: string; applied_tags?: string[] };
+
+// Todos los temas del foro del mercado: los abiertos y los que Discord archivó
+// él solo por llevar una semana sin respuestas. Los segundos no salen en la
+// lista de abiertos, y sin ellos ni se caducan ni se encuentran al buscar.
+async function temasDelMercado(): Promise<
+  { ok: true; temas: Hilo[] } | { ok: false; error: string }
+> {
+  const activos = await discordFetch(`/guilds/${GUILD_ID}/threads/active`, "GET", undefined);
+  if (!activos.ok) return { ok: false, error: `${activos.status} ${await activos.text()}` };
+
+  const { threads = [] } = (await activos.json()) as { threads?: Hilo[] };
+  const temas: Hilo[] = threads.filter((t) => t.parent_id === FORO);
+
+  const guardados = await discordFetch(
+    `/channels/${FORO}/threads/archived/public?limit=100`,
+    "GET",
+    undefined
+  );
+  if (guardados.ok) {
+    const archivados = (await guardados.json()) as { threads?: Hilo[] };
+    const vistos = new Set(temas.map((t) => t.id));
+    for (const hilo of archivados.threads ?? []) {
+      if (!vistos.has(hilo.id)) temas.push(hilo);
+    }
+  }
+  return { ok: true, temas };
+}
+
+// ── Buscar ───────────────────────────────────────────────────────
+
+// Sin acentos y en minúsculas: quien busca "manastone" tiene que encontrar
+// "Manastones", y quien busca "espada" tiene que encontrar "Espada".
+function normaliza(texto: string): string {
+  return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
+}
+
+export type Hallazgo = { id: string; titulo: string; tipo: TipoOferta };
+
+// Busca por el título del tema, que es donde va el objeto: al publicar se
+// nombra "[Vendo] Espada de fuego". No mira dentro de la ficha porque eso
+// serían tantas llamadas a Discord como ofertas haya.
+export async function buscarOfertas(
+  texto: string,
+  soloTipo?: TipoOferta
+): Promise<{ ok: true; hallazgos: Hallazgo[]; abiertas: number } | { ok: false; error: string }> {
+  const lista = await temasDelMercado();
+  if (!lista.ok) return { ok: false, error: lista.error };
+
+  const tags = await tagsDelForo();
+  const cerradasYa = new Set(
+    [tags[TAG_CERRADA.toLowerCase()], tags[TAG_CADUCADA.toLowerCase()]].filter(Boolean)
+  );
+
+  // Todas las palabras tienen que aparecer, en cualquier orden.
+  const palabras = normaliza(texto).split(/\s+/).filter(Boolean);
+  const hallazgos: Hallazgo[] = [];
+  let abiertas = 0;
+
+  for (const hilo of lista.temas) {
+    if ((hilo.applied_tags ?? []).some((t) => cerradasYa.has(t))) continue;
+    // Una oferta pasada de hora está muerta aunque nadie la haya marcado aún.
+    if (edadEnHoras(hilo.id) >= HORAS_VIGENCIA) continue;
+
+    const titulo = hilo.name ?? "";
+    const tipo: TipoOferta = /^\[compro\]/i.test(titulo) ? "compro" : "vendo";
+    abiertas++;
+    if (soloTipo && tipo !== soloTipo) continue;
+
+    const plano = normaliza(titulo);
+    if (palabras.every((p) => plano.includes(p))) {
+      hallazgos.push({ id: hilo.id, titulo, tipo });
+    }
+  }
+
+  // Las más nuevas primero: el id de Discord ya va en orden de creación.
+  hallazgos.sort((a, b) => (a.id < b.id ? 1 : -1));
+  return { ok: true, hallazgos, abiertas };
+}
+
 // Cierra las ofertas que ya han pasado de tiempo. La llaman la tarea diaria y
 // cada publicación nueva.
 export async function caducarOfertas(tope = Infinity): Promise<{
@@ -630,30 +872,9 @@ export async function caducarOfertas(tope = Infinity): Promise<{
   }
   if (!GUILD_ID) return { revisadas: 0, cerradas: 0, error: "Falta DISCORD_GUILD_ID." };
 
-  type Hilo = { id: string; parent_id?: string; applied_tags?: string[] };
-
-  // Los temas abiertos del servidor, quedándonos con los del mercado.
-  const activos = await discordFetch(`/guilds/${GUILD_ID}/threads/active`, "GET", undefined);
-  if (!activos.ok) {
-    return { revisadas: 0, cerradas: 0, error: `${activos.status} ${await activos.text()}` };
-  }
-  const { threads = [] } = (await activos.json()) as { threads?: Hilo[] };
-  const candidatos: Hilo[] = threads.filter((t) => t.parent_id === FORO);
-
-  // Y los que Discord archivó él solo por llevar una semana sin respuestas:
-  // esos no salen en la lista de arriba y se quedarían sin marcar.
-  const guardados = await discordFetch(
-    `/channels/${FORO}/threads/archived/public?limit=100`,
-    "GET",
-    undefined
-  );
-  if (guardados.ok) {
-    const archivados = (await guardados.json()) as { threads?: Hilo[] };
-    const vistos = new Set(candidatos.map((t) => t.id));
-    for (const hilo of archivados.threads ?? []) {
-      if (!vistos.has(hilo.id)) candidatos.push(hilo);
-    }
-  }
+  const lista = await temasDelMercado();
+  if (!lista.ok) return { revisadas: 0, cerradas: 0, error: lista.error };
+  const candidatos = lista.temas;
 
   // Las que ya están cerradas o caducadas no se vuelven a tocar.
   const tags = await tagsDelForo();

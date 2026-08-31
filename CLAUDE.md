@@ -120,7 +120,7 @@ This repo also runs **IMPBOT**, the community Discord bot, plus the scripts that
 | Daily jobs | `src/app/api/discord/{mercado-caducar,noticias-aion}/route.ts` + `vercel.json` |
 | Command registration | `scripts/registrar-comandos-discord.mjs` (`npm run discord:comandos`) — rerun whenever commands change |
 
-**Env vars** (Vercel *and* `.env.local`): `DISCORD_APP_ID`, `DISCORD_PUBLIC_KEY`, `DISCORD_BOT_TOKEN`, `DISCORD_GUILD_ID`, `DISCORD_FORO_MERCADO`, `DISCORD_CANAL_REPORTES`, `DISCORD_CANAL_NOTICIAS_AION`, `DISCORD_CANAL_BORRADORES`, `DISCORD_ROL_AION2`, `CRON_SECRET`, `ANTHROPIC_API_KEY` (plus `ANTHROPIC_WORKSPACE_ID` only if the key is identity-linked and the API asks for it).
+**Env vars** (Vercel *and* `.env.local`): `DISCORD_APP_ID`, `DISCORD_PUBLIC_KEY`, `DISCORD_BOT_TOKEN`, `DISCORD_GUILD_ID`, `DISCORD_FORO_MERCADO`, `DISCORD_CANAL_REPORTES`, `DISCORD_CANAL_NOTICIAS_AION`, `DISCORD_CANAL_BORRADORES`, `DISCORD_ROL_AION2`, `DISCORD_MERCADO_TAGS` (ids de las etiquetas del foro — `npm run discord:tags` la genera; sin ella se buscan por nombre y se rompen en silencio si alguien renombra una), `CRON_SECRET`, `ANTHROPIC_API_KEY` (plus `ANTHROPIC_WORKSPACE_ID` only if the key is identity-linked and the API asks for it).
 
 ### `scripts/*.mjs` act on the LIVE server — read before running
 They touch the real Discord of 1,200 people. **They simulate by default; `--aplicar` is what actually does it.** Show Miguel the simulation and wait for an answer before applying. Several carry the only available undo — `estilo-categorias.mjs`, `renombrar-canal.mjs`, `elige-clase-lista.mjs`, `canal-solo-lectura.mjs` all have `--revertir`, backed by the JSON snapshots in `scripts/data/` — never delete those, they are the undo.

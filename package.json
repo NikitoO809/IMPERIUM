@@ -9,7 +9,8 @@
     "lint": "eslint",
     "discord:comandos": "node scripts/registrar-comandos-discord.mjs",
     "discord:privados": "node scripts/enviar-privados.mjs",
-    "discord:mercado": "node scripts/crear-foro-mercado.mjs"
+    "discord:mercado": "node scripts/crear-foro-mercado.mjs",
+    "discord:tags": "node scripts/tags-mercado.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.2",

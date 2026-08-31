@@ -138,6 +138,34 @@ const COMMANDS = [
       },
     ],
   },
+  // Buscar entre lo que hay publicado. Sin esto, con el foro lleno hay que ir
+  // mirando tema por tema, que es la forma mas rapida de que nadie lo use.
+  {
+    name: "mercado",
+    type: 1,
+    description: "Busca algo entre las ofertas abiertas del mercado",
+    default_member_permissions: "0",
+    contexts: [0],
+    options: [
+      {
+        type: 3,
+        name: "busco",
+        description: "Que estas buscando (por ejemplo: manastones)",
+        required: true,
+        max_length: 80,
+      },
+      {
+        type: 3,
+        name: "tipo",
+        description: "Solo quien vende, o solo quien compra",
+        required: false,
+        choices: [
+          { name: "Solo lo que se vende", value: "vendo" },
+          { name: "Solo lo que se busca", value: "compro" },
+        ],
+      },
+    ],
+  },
 ];
 
 // Registrar en UN servidor es inmediato. Registrarlos globalmente puede tardar

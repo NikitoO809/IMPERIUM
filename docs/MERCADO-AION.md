@@ -60,6 +60,46 @@ Las etiquetas se buscan **por nombre**: si renombras una en Discord, deja de
 aplicarse. Los nombres están en `discord-mercado.ts` y en el script del canal, y
 tienen que coincidir letra por letra.
 
+## Buscar: `/mercado`
+
+`/mercado busco: manastones` devuelve las ofertas abiertas cuyo título encaje,
+con enlace a cada tema. Se puede acotar con `tipo:` a solo lo que se vende o
+solo lo que se busca.
+
+Busca **por el título del tema**, que es donde va el objeto (al publicar se
+nombra `[Vendo] Espada de fuego`). No mira dentro de la ficha: eso serían
+tantas llamadas a Discord como ofertas haya. Ignora acentos y mayúsculas, y
+pide que aparezcan todas las palabras, en cualquier orden — así `espada fuego`
+encuentra «Espada de fuego», y `pocion` encuentra «Poción».
+
+No salen las cerradas, ni las caducadas, ni las que ya pasaron de las 24 horas
+aunque nadie las haya marcado todavía.
+
+## Republicar: el botón 🔄
+
+Al cerrarse una oferta (a mano o por caducidad) la ficha se queda en gris con un
+único botón, **Publicar de nuevo**, que solo funciona para quien la publicó.
+Abre el formulario **relleno con lo que había**, así que republicar lo mismo al
+día siguiente es un clic en vez de escribirlo todo otra vez.
+
+Los datos salen del propio embed de la ficha: sin base de datos, la ficha *es*
+el registro de la oferta. El tipo se deduce del campo del dinero (`Precio` es
+venta, `Paga` es compra) y la categoría, del nombre que aparece en la ficha.
+El tema viejo no se toca: se crea uno nuevo.
+
+## Las etiquetas van por id
+
+`DISCORD_MERCADO_TAGS` fija los ids de las nueve etiquetas que usa el código:
+
+```
+DISCORD_MERCADO_TAGS=Vendo=123,Compro=456,Cerrada=789,...
+```
+
+La saca `npm run discord:tags`, que solo lee. Sin ella, las etiquetas se buscan
+por su nombre y **basta con que alguien renombre una en Discord para que el
+mercado empiece a publicar sin etiquetar, sin dar ningún error**. Con los ids
+puestos eso ya no pasa; y si alguna falta, ahora queda escrito en el registro.
+
 ## Lo que todavía no hace
 
 - **La caducidad depende de que el foro tenga movimiento.** La pasada diaria
