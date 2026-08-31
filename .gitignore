@@ -47,3 +47,12 @@ next-env.d.ts
 
 # Registros de reparto de privados: llevan ids de miembros
 scripts/data/privados-*.json
+
+# capturas del juego para las guias del foro (no van a la web)
+/capturas-aion2/
+
+# imagenes generadas de las guias (se rehacen con los scripts de scripts/guias)
+/scripts/guias/imagenes/
+
+# Registros de compilacion del SQL de contenido (se rehacen solos)
+scripts/sql/*.build.log
