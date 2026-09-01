@@ -32,6 +32,7 @@ import {
 } from "@/lib/discord-bot";
 import { comandoMercado, componenteMercado } from "@/lib/discord-mercado";
 import { componenteNoticia } from "@/lib/discord-noticias";
+import { componenteClase } from "@/lib/discord-clases";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -143,6 +144,9 @@ type Interaction = {
   data?: {
     name?: string;
     custom_id?: string;
+    // Lo elegido en un desplegable (el de clases). Discord manda siempre una
+    // lista, aunque solo se pueda elegir una cosa.
+    values?: string[];
     target_id?: string;
     options?: CommandOption[];
     components?: ModalRow[];
@@ -263,6 +267,10 @@ export async function POST(req: Request) {
     // Los de un borrador de noticia (publicar, descartar).
     const noticia = await componenteNoticia(customId, interaction);
     if (noticia) return noticia;
+
+    // El desplegable de clases de Aion 2, tanto en el canal como en privado.
+    const clase = await componenteClase(customId, interaction);
+    if (clase) return clase;
 
     if (!customId.startsWith("apuntarse:")) return ephemeral("Ese botón ya no hace nada.");
 

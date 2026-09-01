@@ -130,16 +130,38 @@ export type DiscordMessageBody = {
   components?: DiscordActionRow[];
 };
 
-// Una fila de botones debajo del mensaje.
+// Un botón suelto. El emoji puede ser uno del sistema (solo `name`) o uno
+// subido al servidor, y entonces hace falta además su `id`.
+export type DiscordButton = {
+  type: 2;
+  style: 1 | 2 | 3 | 4; // azul · gris · verde · rojo
+  label: string;
+  custom_id: string;
+  emoji?: { name: string; id?: string };
+};
+
+// Un desplegable de una sola respuesta. Ocupa él solo su fila: por eso el tipo
+// de abajo lo pide en una tupla de uno. Discord rechaza la fila si se mezcla
+// un desplegable con botones.
+export type DiscordSelect = {
+  type: 3;
+  custom_id: string;
+  placeholder?: string;
+  min_values?: number;
+  max_values?: number;
+  options: {
+    label: string;
+    value: string;
+    description?: string;
+    emoji?: { name: string; id?: string };
+    default?: boolean;
+  }[];
+};
+
+// Una fila de botones —o un desplegable— debajo del mensaje.
 export type DiscordActionRow = {
   type: 1;
-  components: {
-    type: 2; // botón
-    style: 1 | 2 | 3 | 4; // azul · gris · verde · rojo
-    label: string;
-    custom_id: string;
-    emoji?: { name: string };
-  }[];
+  components: DiscordButton[] | [DiscordSelect];
 };
 
 // Botón "Me apunto": al pulsarlo, quien lo haga recibe el rol indicado.
