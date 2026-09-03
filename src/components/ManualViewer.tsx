@@ -378,6 +378,10 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
   const t = (par: Par) => par[lang];
   const colorModo = modo === "pvp" ? acento : "#ffcf5a";
 
+  // El juego no está en español: leyendo en castellano hay que ver también
+  // cómo se llama la habilidad en pantalla, que es lo que vas a buscar.
+  const enElJuego = (nombre: Par, ko: string) => (lang === "es" ? `${nombre.en} · ${ko}` : ko);
+
   switch (b.t) {
     case "parrafo":
       return <p className="max-w-[80ch] text-[17px] leading-relaxed text-white/70">{ricos(t(b.texto))}</p>;
@@ -508,7 +512,7 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                 )}
                 <div className="min-w-0">
                   <div className="font-title text-lg font-bold">{t(s.nombre)}</div>
-                  <div className="mt-0.5 font-mono text-xs text-white/30">{s.ko}</div>
+                  <div className="mt-0.5 font-mono text-xs text-white/35">{enElJuego(s.nombre, s.ko)}</div>
                 </div>
               </div>
               <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-[15px] text-white/70 marker:text-white/25">
@@ -545,7 +549,7 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                   )}
                   <div className="min-w-0">
                     <div className="font-title text-[17px] font-bold">{t(sk.nombre)}</div>
-                    <div className="font-mono text-xs text-white/30">{sk.ko}</div>
+                    <div className="font-mono text-xs text-white/35">{enElJuego(sk.nombre, sk.ko)}</div>
                   </div>
                   {sk.anillo !== undefined && (
                     <div className="ml-auto shrink-0 text-right">

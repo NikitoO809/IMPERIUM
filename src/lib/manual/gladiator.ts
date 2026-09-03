@@ -238,11 +238,11 @@ export const gladiator: Guia = {
             ],
             [
               { es: "**Pergamino** (양피지)", en: "**Parchment** (양피지)" },
-              { es: "Machaque descendente · Embate de perdición · Golpe afilado · Machaque en salto · Corte de tobillo · Atadura aérea", en: "Downward Smash · Doom Strike · Keen Strike · Leaping Smash · Ankle Cut · Aerial Bind" },
+              { es: "Machaque descendente · Embate de perdición · Golpe afilado · Machaque en salto · Corte de tobillo · Atadura aérea", en: "Overhead Slam · Ruinous Blow · Keen Strike · Leaping Slam · Ankle Slice · Aerial Snare" },
             ],
             [
               { es: "**Brújula** (나침반)", en: "**Compass** (나침반)" },
-              { es: "Onda trituradora · Danza de filos · Embate cortante · Espada arrasadora · Embestida · Liberación de impacto", en: "Crushing Wave · Blade Dance · Severing Strike · Ravaging Sword · Charging Strike · Impact Release" },
+              { es: "Onda trituradora · Danza de filos · Embate cortante · Espada arrasadora · Embestida · Liberación de impacto", en: "Crushing Wave · Sword Aura Rampage · Rending Blow · Mocking Blade · Rush Strike · Defiance" },
             ],
             [
               { es: "**Campana y espejo** (종 · 거울)", en: "**Bell and mirror** (종 · 거울)" },
@@ -291,7 +291,7 @@ export const gladiator: Guia = {
             items: [
               {
                 orden: { es: "1.ª", en: "1st" },
-                nombre: { es: "Danza de filos", en: "Blade Dance" },
+                nombre: { es: "Danza de filos", en: "Sword Aura Rampage" },
                 ko: "검기난무",
                 icono: "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp",
                 puntos: [
@@ -302,7 +302,7 @@ export const gladiator: Guia = {
               },
               {
                 orden: { es: "2.ª", en: "2nd" },
-                nombre: { es: "Machaque descendente", en: "Downward Smash" },
+                nombre: { es: "Machaque descendente", en: "Overhead Slam" },
                 ko: "내려찍기",
                 icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp",
                 puntos: [
@@ -313,7 +313,7 @@ export const gladiator: Guia = {
               },
               {
                 orden: { es: "3.ª", en: "3rd" },
-                nombre: { es: "Embate de perdición", en: "Doom Strike" },
+                nombre: { es: "Embate de perdición", en: "Ruinous Blow" },
                 ko: "파멸의 맹타",
                 icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp",
                 puntos: [
@@ -345,8 +345,8 @@ export const gladiator: Guia = {
                 sub: { es: "2 a 3 niveles por skill", en: "2 to 3 levels per skill" },
                 ordenada: true,
                 puntos: [
-                  { es: "**Machaque descendente + Embate de perdición** + Golpe afilado", en: "**Downward Smash + Doom Strike** + Keen Strike" },
-                  { es: "Machaque descendente + Embate de perdición", en: "Downward Smash + Doom Strike" },
+                  { es: "**Machaque descendente + Embate de perdición** + Golpe afilado", en: "**Overhead Slam + Ruinous Blow** + Keen Strike" },
+                  { es: "Machaque descendente + Embate de perdición", en: "Overhead Slam + Ruinous Blow" },
                 ],
                 nota: { es: "Cuando tengas las dos primeras a 2-3 niveles, bloquea la carta y no la toques más.", en: "Once the first two sit at 2-3 levels, lock the card and leave it alone." },
               },
@@ -355,8 +355,8 @@ export const gladiator: Guia = {
                 sub: { es: "2 a 3 niveles por skill", en: "2 to 3 levels per skill" },
                 ordenada: true,
                 puntos: [
-                  { es: "**Onda trituradora + Danza de filos** + Embate cortante", en: "**Crushing Wave + Blade Dance** + Severing Strike" },
-                  { es: "Onda trituradora + Danza de filos", en: "Crushing Wave + Blade Dance" },
+                  { es: "**Onda trituradora + Danza de filos** + Embate cortante", en: "**Crushing Wave + Sword Aura Rampage** + Rending Blow" },
+                  { es: "Onda trituradora + Danza de filos", en: "Crushing Wave + Sword Aura Rampage" },
                 ],
                 nota: { es: "Mismo criterio: en cuanto las dos estén, cierra y a otra cosa.", en: "Same rule: once both are in, close it and move on." },
               },
@@ -365,8 +365,8 @@ export const gladiator: Guia = {
                 sub: { es: "La pieza cara", en: "The expensive one" },
                 ordenada: true,
                 puntos: [
-                  { es: "**Danza de filos + Machaque descendente** + Embate de perdición + Onda trituradora", en: "**Blade Dance + Downward Smash** + Doom Strike + Crushing Wave" },
-                  { es: "Danza de filos + Machaque descendente + Embate de perdición", en: "Blade Dance + Downward Smash + Doom Strike" },
+                  { es: "**Danza de filos + Machaque descendente** + Embate de perdición + Onda trituradora", en: "**Sword Aura Rampage + Overhead Slam** + Ruinous Blow + Crushing Wave" },
+                  { es: "Danza de filos + Machaque descendente + Embate de perdición", en: "Sword Aura Rampage + Overhead Slam + Ruinous Blow" },
                 ],
                 nota: { es: "Junta 15 cristales místicos y mete la que te falte.", en: "Save 15 mystic crystals and slot whichever one you are missing." },
               },
@@ -379,7 +379,7 @@ export const gladiator: Guia = {
             items: [
               {
                 orden: { es: "Prioridad 0", en: "Priority 0" },
-                nombre: { es: "Embate de perdición", en: "Doom Strike" },
+                nombre: { es: "Embate de perdición", en: "Ruinous Blow" },
                 ko: "파멸의 맹타",
                 icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp",
                 puntos: [
@@ -401,7 +401,7 @@ export const gladiator: Guia = {
               },
               {
                 orden: { es: "3.ª", en: "3rd" },
-                nombre: { es: "Machaque descendente", en: "Downward Smash" },
+                nombre: { es: "Machaque descendente", en: "Overhead Slam" },
                 ko: "내려찍기",
                 icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp",
                 puntos: [
@@ -412,7 +412,7 @@ export const gladiator: Guia = {
               },
               {
                 orden: { es: "Última", en: "Last" },
-                nombre: { es: "Espada arrasadora", en: "Ravaging Sword" },
+                nombre: { es: "Espada arrasadora", en: "Mocking Blade" },
                 ko: "유린의 검",
                 icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp",
                 puntos: [
@@ -433,8 +433,8 @@ export const gladiator: Guia = {
                 sub: { es: "2 a 3 niveles por skill", en: "2 to 3 levels per skill" },
                 ordenada: true,
                 puntos: [
-                  { es: "**Machaque descendente + Embate de perdición** + Machaque en salto", en: "**Downward Smash + Doom Strike** + Leaping Smash" },
-                  { es: "Machaque descendente + Embate de perdición", en: "Downward Smash + Doom Strike" },
+                  { es: "**Machaque descendente + Embate de perdición** + Machaque en salto", en: "**Overhead Slam + Ruinous Blow** + Leaping Slam" },
+                  { es: "Machaque descendente + Embate de perdición", en: "Overhead Slam + Ruinous Blow" },
                 ],
                 nota: { es: "Igual que en PvE, salvo la tercera: aquí entra el salto en lugar del golpe afilado.", en: "Same as PvE except the third: the leap replaces the keen strike here." },
               },
@@ -443,18 +443,18 @@ export const gladiator: Guia = {
                 sub: { es: "2 a 3 niveles por skill", en: "2 to 3 levels per skill" },
                 ordenada: true,
                 puntos: [
-                  { es: "**Onda trituradora + Espada arrasadora** + cualquiera menos Danza de filos", en: "**Crushing Wave + Ravaging Sword** + anything but Blade Dance" },
-                  { es: "Onda trituradora + Espada arrasadora", en: "Crushing Wave + Ravaging Sword" },
+                  { es: "**Onda trituradora + Espada arrasadora** + cualquiera menos Danza de filos", en: "**Crushing Wave + Mocking Blade** + anything but Sword Aura Rampage" },
+                  { es: "Onda trituradora + Espada arrasadora", en: "Crushing Wave + Mocking Blade" },
                 ],
-                nota: { es: "La Danza de filos manda en PvE y sobra aquí: contra jugadores no encadenas tanto.", en: "Blade Dance rules PvE and is surplus here: against players you do not chain as much." },
+                nota: { es: "La Danza de filos manda en PvE y sobra aquí: contra jugadores no encadenas tanto.", en: "Sword Aura Rampage rules PvE and is surplus here: against players you do not chain as much." },
               },
               {
                 titulo: { es: "Cáliz", en: "Chalice" },
                 sub: { es: "La pieza cara", en: "The expensive one" },
                 ordenada: true,
                 puntos: [
-                  { es: "**Onda trituradora + Embate de perdición** + Machaque descendente + Espada arrasadora", en: "**Crushing Wave + Doom Strike** + Downward Smash + Ravaging Sword" },
-                  { es: "Onda trituradora + Embate de perdición + Machaque descendente", en: "Crushing Wave + Doom Strike + Downward Smash" },
+                  { es: "**Onda trituradora + Embate de perdición** + Machaque descendente + Espada arrasadora", en: "**Crushing Wave + Ruinous Blow** + Overhead Slam + Mocking Blade" },
+                  { es: "Onda trituradora + Embate de perdición + Machaque descendente", en: "Crushing Wave + Ruinous Blow + Overhead Slam" },
                 ],
                 nota: { es: "Fíjate en el orden: en PvP manda la que atrae, no la que encadena.", en: "Note the order: in PvP the puller leads, not the chainer." },
               },
@@ -480,18 +480,18 @@ export const gladiator: Guia = {
           primeraNum: true,
           cabeceras: [{ es: "Puesto", en: "Rank" }, { es: "Para llegar a 16", en: "To reach 16" }, { es: "Para llegar a 20", en: "To reach 20" }],
           filas: [
-            [{ es: "1", en: "1" }, { es: "**Machaque descendente**", en: "**Downward Smash**" }, { es: "**Machaque descendente**", en: "**Downward Smash**" }],
-            [{ es: "2", en: "2" }, { es: "Onda trituradora", en: "Crushing Wave" }, { es: "Embate de perdición", en: "Doom Strike" }],
-            [{ es: "3", en: "3" }, { es: "Embate cortante", en: "Severing Strike" }, { es: "Embate cortante", en: "Severing Strike" }],
-            [{ es: "4", en: "4" }, { es: "Embate de perdición", en: "Doom Strike" }, { es: "Onda trituradora", en: "Crushing Wave" }],
-            [{ es: "5", en: "5" }, { es: "Golpe afilado o Danza de filos", en: "Keen Strike or Blade Dance" }, { es: "El resto de principales", en: "The rest of the mains" }],
+            [{ es: "1", en: "1" }, { es: "**Machaque descendente**", en: "**Overhead Slam**" }, { es: "**Machaque descendente**", en: "**Overhead Slam**" }],
+            [{ es: "2", en: "2" }, { es: "Onda trituradora", en: "Crushing Wave" }, { es: "Embate de perdición", en: "Ruinous Blow" }],
+            [{ es: "3", en: "3" }, { es: "Embate cortante", en: "Rending Blow" }, { es: "Embate cortante", en: "Rending Blow" }],
+            [{ es: "4", en: "4" }, { es: "Embate de perdición", en: "Ruinous Blow" }, { es: "Onda trituradora", en: "Crushing Wave" }],
+            [{ es: "5", en: "5" }, { es: "Golpe afilado o Danza de filos", en: "Keen Strike or Sword Aura Rampage" }, { es: "El resto de principales", en: "The rest of the mains" }],
           ],
         },
         {
           t: "parrafo",
           texto: {
             es: "**El Machaque descendente va primero siempre.** Es el centro de todo lo demás: cuando se activa, se usa antes que cualquier otra cosa. Si te lo pierdes por estar encadenando otra skill, has perdido la rotación.",
-            en: "**Downward Smash always comes first.** It is the centre of everything else: when it lights up, it goes before anything else. Miss it because you were mid-chain and you have lost the rotation.",
+            en: "**Overhead Slam always comes first.** It is the centre of everything else: when it lights up, it goes before anything else. Miss it because you were mid-chain and you have lost the rotation.",
           },
         },
         {
@@ -670,7 +670,7 @@ export const gladiator: Guia = {
           items: [
             {
               orden: { es: "62,5%", en: "62.5%" },
-              nombre: { es: "Contraataque veterano", en: "Veteran Counter" },
+              nombre: { es: "Contraataque veterano", en: "Experienced Counterstrike" },
               ko: "노련한 반격",
               icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_008.webp",
               puntos: [
@@ -683,7 +683,7 @@ export const gladiator: Guia = {
             },
             {
               orden: { es: "55,6%", en: "55.6%" },
-              nombre: { es: "Preparación de ataque", en: "Attack Readiness" },
+              nombre: { es: "Preparación de ataque", en: "Attack Preparation" },
               ko: "공격 준비",
               icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_005.webp",
               puntos: [
@@ -694,7 +694,7 @@ export const gladiator: Guia = {
             },
             {
               orden: { es: "54,6%", en: "54.6%" },
-              nombre: { es: "Estallido de sed de sangre", en: "Bloodlust Burst" },
+              nombre: { es: "Estallido de sed de sangre", en: "Murderous Burst" },
               ko: "살기 파열",
               icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_010.webp",
               puntos: [
@@ -717,7 +717,7 @@ export const gladiator: Guia = {
             },
             {
               orden: { es: "20,2%", en: "20.2%" },
-              nombre: { es: "Detectar debilidad", en: "Weak Point Detection" },
+              nombre: { es: "Detectar debilidad", en: "Identify Weakness" },
               ko: "약점 파악",
               icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_004.webp",
               puntos: [
@@ -765,7 +765,7 @@ export const gladiator: Guia = {
           t: "parrafo",
           texto: {
             es: "**Detectar debilidad es la excepción que explica la tabla.** En collar y pendiente la lleva la mitad de la élite; en pantalón y capa, dos de cada cien. La lectura es simple: en los accesorios caben las cinco, y en la armadura hay que elegir — y ahí gana siempre el daño de las cuatro primeras.",
-            en: "**Weak Point Detection is the exception that explains the table.** Half of the top players run it on necklace and earring; on pants and cape, two in a hundred. The reading is simple: accessories fit all five, armour makes you choose — and the damage of the first four always wins there.",
+            en: "**Identify Weakness is the exception that explains the table.** Half of the top players run it on necklace and earring; on pants and cape, two in a hundred. The reading is simple: accessories fit all five, armour makes you choose — and the damage of the first four always wins there.",
           },
         },
         {
@@ -783,30 +783,30 @@ export const gladiator: Guia = {
               titulo: { es: "Jefe normal", en: "Standard boss" },
               sub: { es: "El montaje de todos los días", en: "The everyday setup" },
               puntos: [
-                { es: "**Postura de carga**", en: "**Charge Stance**" },
-                { es: "**Bendición de Zikel**", en: "**Zikel's Blessing**" },
-                { es: "Bloqueo concentrado", en: "Focused Block" },
-                { es: "Aguante o Armadura de ondas", en: "Grit or Wave Armour" },
+                { es: "**Postura de carga** · Lunge Stance", en: "**Lunge Stance**" },
+                { es: "**Bendición de Zikel** · Zikel's Blessing", en: "**Zikel's Blessing**" },
+                { es: "Bloqueo concentrado · Focused Block", en: "Focused Block" },
+                { es: "Aguante o Armadura de ondas · Tenaciousness / Wave Armor", en: "Tenaciousness or Wave Armor" },
               ],
             },
             {
               titulo: { es: "Mazmorra con groggy", en: "Dungeon with groggy" },
               sub: { es: "Cuando el jefe se queda aturdido", en: "When the boss gets stunned" },
               puntos: [
-                { es: "**Postura de carga**", en: "**Charge Stance**" },
-                { es: "**Bendición de Zikel**", en: "**Zikel's Blessing**" },
+                { es: "**Postura de carga** · Lunge Stance", en: "**Lunge Stance**" },
+                { es: "**Bendición de Zikel** · Zikel's Blessing", en: "**Zikel's Blessing**" },
                 { es: "Un estigma ofensivo de groggy", en: "An offensive groggy stigma" },
-                { es: "Bloqueo concentrado o Aguante", en: "Focused Block or Grit" },
+                { es: "Bloqueo concentrado o Aguante · Focused Block / Tenaciousness", en: "Focused Block or Tenaciousness" },
               ],
             },
             {
               titulo: { es: "Mazmorra dura", en: "Hard dungeon" },
               sub: { es: "Cuando el problema es sobrevivir", en: "When surviving is the problem" },
               puntos: [
-                { es: "**Postura de carga**", en: "**Charge Stance**" },
-                { es: "Bloqueo concentrado", en: "Focused Block" },
-                { es: "Aguante", en: "Grit" },
-                { es: "Armadura de ondas", en: "Wave Armour" },
+                { es: "**Postura de carga** · Lunge Stance", en: "**Lunge Stance**" },
+                { es: "Bloqueo concentrado · Focused Block", en: "Focused Block" },
+                { es: "Aguante · Tenaciousness", en: "Tenaciousness" },
+                { es: "Armadura de ondas · Wave Armor", en: "Wave Armor" },
               ],
             },
           ],
@@ -816,7 +816,7 @@ export const gladiator: Guia = {
           parrafos: [
             {
               es: "**Postura de carga es el estigma que va en los tres.** Mejora la rotación y la resistencia en combate: si vas a mejorar uno, ese.",
-              en: "**Charge Stance is the stigma that appears in all three.** It improves rotation and staying power: if you are only going to upgrade one, upgrade that.",
+              en: "**Lunge Stance is the stigma that appears in all three.** It improves rotation and staying power: if you are only going to upgrade one, upgrade that.",
             },
             {
               es: "**Bendición de Zikel no se pulsa en cuanto está lista.** Se guarda para justo antes de que el jefe entre en groggy o para cuando el grupo va a concentrar daño. Soltarla a destiempo es tirar la mitad de su valor.",
@@ -967,7 +967,7 @@ export const gladiator: Guia = {
       intro: [
         {
           es: "No es una secuencia fija que se repite: es **una lista de prioridades** en la que vas encajando lo que tengas disponible. Y por encima de todo manda una regla — si el Machaque descendente se activa, va antes que nada.",
-          en: "It is not a fixed loop you repeat: it is **a priority list** you slot available skills into. And one rule rules them all — if Downward Smash lights up, it goes before anything else.",
+          en: "It is not a fixed loop you repeat: it is **a priority list** you slot available skills into. And one rule rules them all — if Overhead Slam lights up, it goes before anything else.",
         },
       ],
       bloques: [
@@ -976,11 +976,11 @@ export const gladiator: Guia = {
           titulo: { es: "Apertura contra un jefe", en: "Boss opener" },
           cuando: { es: "Desde que entras hasta que la rotación se estabiliza", en: "From the pull until the rotation settles" },
           pasos: [
-            { texto: { es: "Embate de perdición", en: "Doom Strike" }, nota: { es: "para entrar", en: "to close in" }, ko: "파멸의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp" },
+            { texto: { es: "Embate de perdición", en: "Ruinous Blow" }, nota: { es: "para entrar", en: "to close in" }, ko: "파멸의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp" },
             { texto: { es: "Bendición de Zikel", en: "Zikel's Blessing" }, ko: "지켈의 축복", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_024.webp" },
             { texto: { es: "Onda trituradora", en: "Crushing Wave" }, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
-            { texto: { es: "Machaque descendente", en: "Downward Smash" }, nota: { es: "en cuanto se active", en: "the moment it lights up" }, clave: true, ko: "내려찍기", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp" },
-            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Machaque descendente", en: "Overhead Slam" }, nota: { es: "en cuanto se active", en: "the moment it lights up" }, clave: true, ko: "내려찍기", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp" },
+            { texto: { es: "Embate cortante", en: "Rending Blow" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
             { texto: { es: "Golpe afilado", en: "Keen Strike" }, nota: { es: "recupera espíritu", en: "recovers spirit" }, ko: "예리한 일격", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp" },
           ],
         },
@@ -992,10 +992,10 @@ export const gladiator: Guia = {
             { texto: { es: "Comprueba tu buff activo", en: "Check your active buff" } },
             { texto: { es: "Bendición de Zikel", en: "Zikel's Blessing" }, ko: "지켈의 축복", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_024.webp" },
             { texto: { es: "Estigma de groggy", en: "Groggy stigma" } },
-            { texto: { es: "Machaque descendente", en: "Downward Smash" }, clave: true, ko: "내려찍기", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp" },
+            { texto: { es: "Machaque descendente", en: "Overhead Slam" }, clave: true, ko: "내려찍기", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp" },
             { texto: { es: "Onda trituradora", en: "Crushing Wave" }, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
-            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
-            { texto: { es: "Danza de filos", en: "Blade Dance" }, ko: "검기난무", icono: "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp" },
+            { texto: { es: "Embate cortante", en: "Rending Blow" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Danza de filos", en: "Sword Aura Rampage" }, ko: "검기난무", icono: "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp" },
           ],
         },
         {
@@ -1006,8 +1006,8 @@ export const gladiator: Guia = {
             { texto: { es: "Onda trituradora", en: "Crushing Wave" }, clave: true, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
             { texto: { es: "Golpe afilado", en: "Keen Strike" }, ko: "예리한 일격", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp" },
             { texto: { es: "¿Se reinició la Onda?", en: "Did the Wave reset?" }, nota: { es: "al crítico vuelve", en: "it returns on crit" } },
-            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
-            { texto: { es: "Espada arrasadora", en: "Ravaging Sword" }, nota: { es: "para rematar", en: "to finish" }, ko: "유린의 검", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp" },
+            { texto: { es: "Embate cortante", en: "Rending Blow" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Espada arrasadora", en: "Mocking Blade" }, nota: { es: "para rematar", en: "to finish" }, ko: "유린의 검", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp" },
           ],
         },
         {
@@ -1015,7 +1015,7 @@ export const gladiator: Guia = {
           parrafos: [
             {
               es: "**Si solo repites la Onda trituradora te quedas sin espíritu.** Por eso van el Golpe afilado y el Embate cortante intercalados: no son relleno, son los que te sostienen el recurso.",
-              en: "**Spamming Crushing Wave alone drains your spirit.** That is why Keen Strike and Severing Strike sit in between: they are not filler, they are what keeps the resource up.",
+              en: "**Spamming Crushing Wave alone drains your spirit.** That is why Keen Strike and Rending Blow sit in between: they are not filler, they are what keeps the resource up.",
             },
           ],
         },
@@ -1035,7 +1035,7 @@ export const gladiator: Guia = {
             { texto: { es: "Ataque básico", en: "Basic attack" }, nota: { es: "espera al impacto", en: "wait for the hit" } },
             { texto: { es: "Golpe afilado", en: "Keen Strike" }, ko: "예리한 일격", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp" },
             { texto: { es: "Ataque básico", en: "Basic attack" } },
-            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Embate cortante", en: "Rending Blow" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
             { texto: { es: "Ataque básico", en: "Basic attack" } },
             { texto: { es: "Onda trituradora", en: "Crushing Wave" }, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
           ],
@@ -1044,7 +1044,7 @@ export const gladiator: Guia = {
           t: "parrafo",
           texto: {
             es: "Cuando cambies de equipo y te suba la velocidad de combate, **el ritmo cambia y hay que volver a cogerlo**. Y si estás empezando: aprende primero a esquivar los patrones del jefe y a no perderte el Machaque descendente. Esto viene después.",
-            en: "When you swap gear and combat speed goes up, **the rhythm changes and you have to relearn it**. And if you are starting out: learn to dodge boss patterns and never miss Downward Smash first. This comes later.",
+            en: "When you swap gear and combat speed goes up, **the rhythm changes and you have to relearn it**. And if you are starting out: learn to dodge boss patterns and never miss Overhead Slam first. This comes later.",
           },
         },
       ],
@@ -1060,13 +1060,13 @@ export const gladiator: Guia = {
           t: "tabla",
           cabeceras: [{ es: "El error", en: "The mistake" }, { es: "La solución", en: "The fix" }],
           filas: [
-            [{ es: "Perderse la activación del Machaque descendente", en: "Missing the Downward Smash proc" }, { es: "En cuanto salte el aviso, va antes que cualquier otra skill", en: "The moment it lights up, it goes before any other skill" }],
-            [{ es: "Pisar el buff del Embate de perdición con el Machaque en salto", en: "Overwriting the Doom Strike buff with Leaping Smash" }, { es: "Mira lo que queda del buff antes de usar el salto", en: "Check the remaining buff time before using the leap" }],
-            [{ es: "Repetir solo la Onda trituradora hasta quedarse sin espíritu", en: "Spamming Crushing Wave until spirit runs dry" }, { es: "Intercala Golpe afilado y Embate cortante", en: "Weave in Keen Strike and Severing Strike" }],
+            [{ es: "Perderse la activación del Machaque descendente", en: "Missing the Overhead Slam proc" }, { es: "En cuanto salte el aviso, va antes que cualquier otra skill", en: "The moment it lights up, it goes before any other skill" }],
+            [{ es: "Pisar el buff del Embate de perdición con el Machaque en salto", en: "Overwriting the Ruinous Blow buff with Leaping Slam" }, { es: "Mira lo que queda del buff antes de usar el salto", en: "Check the remaining buff time before using the leap" }],
+            [{ es: "Repetir solo la Onda trituradora hasta quedarse sin espíritu", en: "Spamming Crushing Wave until spirit runs dry" }, { es: "Intercala Golpe afilado y Embate cortante", en: "Weave in Keen Strike and Rending Blow" }],
             [{ es: "Subir solo opciones de ataque y quedarse corto de puntería", en: "Stacking only attack options and falling short on hit" }, { es: "Cubre primero la puntería que pide el contenido", en: "Cover the hit rating the content demands first" }],
             [{ es: "Intentar bloquear todos los ataques", en: "Trying to block every attack" }, { es: "Bloquea los golpes grandes, los de animación clara", en: "Block the big hits, the ones with clear animations" }],
             [{ es: "Aporrear la tecla creyendo que eso es cancelar el básico", en: "Mashing the key thinking that is auto-cancelling" }, { es: "Una pulsación por impacto, al ritmo del ataque", en: "One press per landed hit, on the attack's rhythm" }],
-            [{ es: "Invertir de más en Danza de filos y otras de apoyo", en: "Over-investing in Blade Dance and other support skills" }, { es: "Primero las cuatro principales a 20", en: "Get the four mains to 20 first" }],
+            [{ es: "Invertir de más en Danza de filos y otras de apoyo", en: "Over-investing in Sword Aura Rampage and other support skills" }, { es: "Primero las cuatro principales a 20", en: "Get the four mains to 20 first" }],
           ],
         },
       ],
