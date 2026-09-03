@@ -174,48 +174,88 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
             infinito. En pantalla estrecha se convierte en una tira de pestañas. */}
         <div className="mx-auto flex w-full max-w-[1680px] flex-1 gap-10 px-8 pb-12">
           <nav
-            className="sticky top-4 hidden w-56 shrink-0 self-start lg:block"
+            className="sticky top-4 hidden w-60 shrink-0 self-start lg:block"
             aria-label={lang === "es" ? "Secciones de la guía" : "Guide sections"}
           >
             <div className="font-hud text-[10px] tracking-[0.24em] text-white/30">
               {lang === "es" ? "SECCIONES" : "SECTIONS"}
             </div>
-            <ul className="mt-3 flex flex-col">
-              {guia.secciones.map((s2, i) => (
-                <li key={i}>
-                  <button
-                    type="button"
-                    onClick={() => irA(i)}
-                    aria-current={i === activa ? "true" : undefined}
-                    className={`block w-full border-l-2 py-2 pl-3 text-left text-[14px] leading-snug transition-colors ${
-                      i === activa
-                        ? "border-[var(--acento)] bg-white/[0.04] text-white"
-                        : "border-white/10 text-white/50 hover:border-white/30 hover:text-white/90"
-                    }`}
-                  >
-                    {t(s2.titulo)}
-                  </button>
-                </li>
-              ))}
+            <ul className="mt-3 flex flex-col gap-1.5">
+              {guia.secciones.map((s2, i) => {
+                const aqui = i === activa;
+                return (
+                  <li key={i}>
+                    <button
+                      type="button"
+                      onClick={() => irA(i)}
+                      aria-current={aqui ? "true" : undefined}
+                      className={`group relative block w-full py-2.5 pl-4 pr-3 text-left text-[14px] leading-snug transition-transform duration-200 ${
+                        aqui ? "text-white" : "text-white/65 hover:translate-x-1 hover:text-white"
+                      }`}
+                      style={{
+                        clipPath: "polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px))",
+                        background: aqui
+                          ? `linear-gradient(90deg, ${acento}33, ${acento}0d 55%, transparent)`
+                          : "linear-gradient(90deg, rgba(255,255,255,0.05), rgba(255,255,255,0.012))",
+                      }}
+                    >
+                      {/* la barra de la izquierda: encendida en la que estás */}
+                      <span
+                        className="absolute inset-y-0 left-0 w-[3px] transition-all duration-200"
+                        style={{
+                          background: aqui ? acento : "rgba(255,255,255,0.14)",
+                          boxShadow: aqui ? `0 0 10px ${acento}` : "none",
+                        }}
+                      />
+                      {/* un roce de color al pasar por encima */}
+                      {!aqui && (
+                        <span
+                          className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                          style={{ background: `linear-gradient(90deg, ${acento}26, transparent 75%)` }}
+                        />
+                      )}
+                      <span className="relative flex items-baseline gap-2.5">
+                        <span
+                          className="font-mono text-[11px] tabular-nums transition-colors"
+                          style={{ color: aqui ? acento : "rgba(255,255,255,0.38)" }}
+                        >
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span>{t(s2.titulo)}</span>
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
 
           <div className="flex min-w-0 flex-1 flex-col">
             {/* El mismo índice, en horizontal, cuando no cabe la columna */}
             <div className="-mx-8 mb-4 flex gap-1 overflow-x-auto px-8 lg:hidden">
-              {guia.secciones.map((s2, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => irA(i)}
-                  aria-current={i === activa ? "true" : undefined}
-                  className={`shrink-0 border px-3 py-1.5 text-[13px] transition-colors ${
-                    i === activa ? "border-[var(--acento)] text-white" : "border-white/10 text-white/50"
-                  }`}
-                >
-                  {t(s2.titulo)}
-                </button>
-              ))}
+              {guia.secciones.map((s2, i) => {
+                const aqui = i === activa;
+                return (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => irA(i)}
+                    aria-current={aqui ? "true" : undefined}
+                    className={`btn-hud shrink-0 px-4 py-2 text-[13px] ${aqui ? "text-white" : "text-white/50"}`}
+                    style={{
+                      background: aqui
+                        ? `linear-gradient(180deg, ${acento}59, ${acento}26)`
+                        : "rgba(255,255,255,0.05)",
+                      boxShadow: aqui ? `inset 0 0 0 1px ${acento}` : "inset 0 0 0 1px rgba(255,255,255,0.09)",
+                    }}
+                  >
+                    <span className="mr-1.5 font-mono text-[11px] tabular-nums opacity-50">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    {t(s2.titulo)}
+                  </button>
+                );
+              })}
             </div>
 
             <SeccionView
@@ -233,7 +273,8 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
                 type="button"
                 onClick={() => irA(activa - 1)}
                 disabled={activa === 0}
-                className="font-hud text-[11px] tracking-[0.16em] text-white/50 transition-colors hover:text-white disabled:invisible"
+                className="btn-hud px-4 py-2 font-hud text-[11px] tracking-[0.16em] text-white/60 transition-colors hover:bg-white/10 hover:text-white disabled:invisible"
+                style={{ background: "rgba(255,255,255,0.05)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.09)" }}
               >
                 ← {t(guia.secciones[Math.max(0, activa - 1)].titulo)}
               </button>
@@ -244,7 +285,8 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
                 type="button"
                 onClick={() => irA(activa + 1)}
                 disabled={activa === guia.secciones.length - 1}
-                className="text-right font-hud text-[11px] tracking-[0.16em] text-white/50 transition-colors hover:text-white disabled:invisible"
+                className="btn-hud px-4 py-2 text-right font-hud text-[11px] tracking-[0.16em] transition-colors hover:brightness-110 disabled:invisible"
+                style={{ background: `linear-gradient(180deg, ${acento}4d, ${acento}1a)`, boxShadow: `inset 0 0 0 1px ${acento}80`, color: "#fff" }}
               >
                 {t(guia.secciones[Math.min(guia.secciones.length - 1, activa + 1)].titulo)} →
               </button>
