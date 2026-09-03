@@ -22,6 +22,7 @@ export const oficios: Guia = {
       es: "Cómo se sube de verdad un oficio: los dos rangos, la misión que te resetea la cuenta a cero, y **cuántos crafteos exactos** te separan de donde quieres llegar.",
       en: "How a profession actually levels: the two tiers, the quest that resets your counter to zero, and **exactly how many crafts** stand between you and where you want to be.",
     },
+    arte: "/manual/aion2-oficios.webp",
   },
 
   secciones: [

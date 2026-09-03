@@ -1,0 +1,267 @@
+{
+  "냉기 충격": {
+    "id": "16010000",
+    "en": "Cold Shock",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_001.webp"
+  },
+  "화염 전소": {
+    "id": "16040000",
+    "en": "Combustion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_004.webp"
+  },
+  "해제 : 고대의 정령": {
+    "id": "16290004",
+    "en": "Dismiss: Ancient Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_029.webp"
+  },
+  "해제 : 땅의 정령": {
+    "id": "16290002",
+    "en": "Dismiss: Earth Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_029.webp"
+  },
+  "해제 : 불의 정령": {
+    "id": "16290000",
+    "en": "Dismiss: Fire Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_029.webp"
+  },
+  "해제 : 물의 정령": {
+    "id": "16290001",
+    "en": "Dismiss: Water Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_029.webp"
+  },
+  "해제 : 바람의 정령": {
+    "id": "16290003",
+    "en": "Dismiss: Wind Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_029.webp"
+  },
+  "긴급 회피": {
+    "id": "16000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "해제 : 모든 정령": {
+    "id": "16009999",
+    "en": "Return: All Spirits",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_029.webp"
+  },
+  "정령 타격": {
+    "id": "16710000",
+    "en": "Spirit Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_004.webp"
+  },
+  "정령성 무기 장착": {
+    "id": "16000000",
+    "en": "Spiritmaster Weapon Equip",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_TEMP_020_Effect_001.webp"
+  },
+  "소환: 불의 정령": {
+    "id": "16100000",
+    "en": "Summon: Fire Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_010.webp"
+  },
+  "소환: 물의 정령": {
+    "id": "16110000",
+    "en": "Summon: Water Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_011.webp"
+  },
+  "협공: 저주": {
+    "id": "16140000",
+    "en": "Jointstrike: Curse",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_014.webp"
+  },
+  "연속 난사": {
+    "id": "16340000",
+    "en": "Rapid Scattershot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_034.webp"
+  },
+  "정령 보호": {
+    "id": "16720000",
+    "en": "Spirit Protection",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_002.webp"
+  },
+  "소환: 땅의 정령": {
+    "id": "16130000",
+    "en": "Summon: Earth Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_013.webp"
+  },
+  "공간 지배": {
+    "id": "16330000",
+    "en": "Dimensional Control",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_033.webp"
+  },
+  "정령 강림": {
+    "id": "16730000",
+    "en": "Spirit's Descent",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_003.webp"
+  },
+  "소환: 바람의 정령": {
+    "id": "16120000",
+    "en": "Summon: Wind Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_012.webp"
+  },
+  "침식": {
+    "id": "16740000",
+    "en": "Corrode",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_012.webp"
+  },
+  "영혼의 절규": {
+    "id": "16070000",
+    "en": "Soul's Cry",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_007.webp"
+  },
+  "정령 회생": {
+    "id": "16750000",
+    "en": "Spirit Revitalization",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_011.webp"
+  },
+  "원소 융합": {
+    "id": "16300001",
+    "en": "Elemental Fusion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_030.webp"
+  },
+  "정신 집중": {
+    "id": "16760000",
+    "en": "Mental Focus",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_006.webp"
+  },
+  "충격 해제": {
+    "id": "16200000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "연속 역류": {
+    "id": "16800000",
+    "en": "Consecutive Countercurrent",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_013.webp"
+  },
+  "정령 교감": {
+    "id": "16770000",
+    "en": "Spirit Communion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_007.webp"
+  },
+  "강습 공포": {
+    "id": "16700000",
+    "en": "Assault Terror",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "명령: 대역": {
+    "id": "16170000",
+    "en": "Command: Proxy",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_017.webp"
+  },
+  "공포의 절규": {
+    "id": "16080000",
+    "en": "Cry of Terror",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_008.webp"
+  },
+  "저주의 구름": {
+    "id": "16220000",
+    "en": "Cursed Cloud",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_022.webp"
+  },
+  "강화: 정령의 가호": {
+    "id": "16190000",
+    "en": "Enhance: Spirit's Benediction",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_019.webp"
+  },
+  "불길의 축복": {
+    "id": "16370000",
+    "en": "Flame Blessing",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_037.webp"
+  },
+  "협공: 부식": {
+    "id": "16150000",
+    "en": "Jointstrike: Corrode",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_015.webp"
+  },
+  "협공: 파멸의 공세": {
+    "id": "16240000",
+    "en": "Jointstrike: Destructive Attack",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_024.webp"
+  },
+  "카이시넬의 권능": {
+    "id": "16360000",
+    "en": "Kaisinel's Power",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_036.webp"
+  },
+  "마법 차단": {
+    "id": "16260000",
+    "en": "Magic Block",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_026.webp"
+  },
+  "마법 강탈": {
+    "id": "16230000",
+    "en": "Seize Magic",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_023.webp"
+  },
+  "흡인": {
+    "id": "16060000",
+    "en": "Siphon",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_006.webp"
+  },
+  "소환: 고대의 정령": {
+    "id": "16250000",
+    "en": "Summon: Ancient Spirit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_025.webp"
+  },
+  "회생의 계약": {
+    "id": "16790000",
+    "en": "Revitalization Contract",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_009.webp"
+  },
+  "원소 결집": {
+    "id": "16780000",
+    "en": "Element Unification",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_Passive_008.webp"
+  },
+  "고대의 정령: 부수기": {
+    "id": "16155100",
+    "en": "Ancient Spirit: Break",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_015.webp"
+  },
+  "재의 부름": {
+    "id": "16050000",
+    "en": "Ashy Call",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_005.webp"
+  },
+  "연속 충격": {
+    "id": "16280000",
+    "en": "Continuous Impact",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_030.webp"
+  },
+  "절망의 저주": {
+    "id": "16210000",
+    "en": "Curse of Despair",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_021.webp"
+  },
+  "땅의 정령: 도발": {
+    "id": "16153200",
+    "en": "Earth Spirit: Taunt",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_015.webp"
+  },
+  "대지 진동": {
+    "id": "16030000",
+    "en": "Earth Tremor",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_003.webp"
+  },
+  "원소 보충": {
+    "id": "16270000",
+    "en": "Elemental Replenishment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_003.webp"
+  },
+  "생기 추출": {
+    "id": "16310000",
+    "en": "Extract Vitality",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_003.webp"
+  },
+  "불의 정령: 격노 폭발": {
+    "id": "16151300",
+    "en": "Fire Spirit: Rage Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_015.webp"
+  },
+  "마법 역류": {
+    "id": "16090000",
+    "en": "Magic Backflow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_EL_SKILL_009.webp"
+  }
+}

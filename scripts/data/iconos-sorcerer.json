@@ -1,0 +1,247 @@
+{
+  "긴급 회피": {
+    "id": "15000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "불의 표식": {
+    "id": "15710000",
+    "en": "Fire Mark",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_002.webp"
+  },
+  "불꽃 작살": {
+    "id": "15040000",
+    "en": "Firestorm",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_004.webp"
+  },
+  "불꽃 화살": {
+    "id": "15210000",
+    "en": "Flame Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_020.webp"
+  },
+  "얼음 사슬": {
+    "id": "15090000",
+    "en": "Ice Chain",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_009.webp"
+  },
+  "마도성 무기 장착": {
+    "id": "15000000",
+    "en": "Sorcerer Weapon Equip",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_012.webp"
+  },
+  "혹한의 바람": {
+    "id": "15280000",
+    "en": "Bittercold Wind",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_025.webp"
+  },
+  "불꽃 폭발": {
+    "id": "15050000",
+    "en": "Blaze",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_005.webp"
+  },
+  "화염 난사": {
+    "id": "15010000",
+    "en": "Flame Scattershot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_001.webp"
+  },
+  "대지의 로브": {
+    "id": "15720000",
+    "en": "Robe of Earth",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_006.webp"
+  },
+  "빙결": {
+    "id": "15150000",
+    "en": "Frost",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_015.webp"
+  },
+  "겨울의 속박": {
+    "id": "15110000",
+    "en": "Winter's Shackles",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_011.webp"
+  },
+  "냉기 소환": {
+    "id": "15080000",
+    "en": "Cold Snap",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_008.webp"
+  },
+  "빙결 폭발": {
+    "id": "15220037",
+    "en": "Frost Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_022.webp"
+  },
+  "불꽃의 로브": {
+    "id": "15740000",
+    "en": "Robe of Flame",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_004.webp"
+  },
+  "집중의 기원": {
+    "id": "15310000",
+    "en": "Wish of Concentration",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_028.webp"
+  },
+  "정기 흡수": {
+    "id": "15760000",
+    "en": "Absorb Essence",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_001.webp"
+  },
+  "지옥의 화염": {
+    "id": "15060000",
+    "en": "Hellfire",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_006.webp"
+  },
+  "저항의 은혜": {
+    "id": "15770000",
+    "en": "Grace of Resistance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_038.webp"
+  },
+  "충격 해제": {
+    "id": "15240000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "냉기의 로브": {
+    "id": "15750000",
+    "en": "Robe of Cold",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_005.webp"
+  },
+  "강화의 은혜": {
+    "id": "15780000",
+    "en": "Grace of Enhancement",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_007.webp"
+  },
+  "빙설의 갑주": {
+    "id": "15230000",
+    "en": "Arctic Armor",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_021.webp"
+  },
+  "강습 폭격": {
+    "id": "15700000",
+    "en": "Assault Bombardment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "냉기 폭풍": {
+    "id": "15200000",
+    "en": "Cold Storm",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_019.webp"
+  },
+  "저주: 나무": {
+    "id": "15140000",
+    "en": "Curse: Tree",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_014.webp"
+  },
+  "지연 폭발": {
+    "id": "15320000",
+    "en": "Delayed Explosion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_032.webp"
+  },
+  "신성 폭발": {
+    "id": "15360000",
+    "en": "Divine Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_036.webp"
+  },
+  "원소 강화": {
+    "id": "15400000",
+    "en": "Element Enhancement",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_040.webp"
+  },
+  "불의 장벽": {
+    "id": "15390000",
+    "en": "Fire Wall",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_039.webp"
+  },
+  "빙하 강타": {
+    "id": "15120000",
+    "en": "Glacial Smite",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_012.webp"
+  },
+  "동면": {
+    "id": "15410000",
+    "en": "Hibernation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_041.webp"
+  },
+  "루미엘의 공간": {
+    "id": "15300000",
+    "en": "Lumiel's Space",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_027.webp"
+  },
+  "동면 해제": {
+    "id": "15410057",
+    "en": "Remove Hibernation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_041_A.webp"
+  },
+  "영혼 동결": {
+    "id": "15130000",
+    "en": "Soul Freeze",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_013.webp"
+  },
+  "강철 보호막": {
+    "id": "15160000",
+    "en": "Steel Barrier",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_016.webp"
+  },
+  "회생의 계약": {
+    "id": "15790000",
+    "en": "Revitalization Contract",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_009.webp"
+  },
+  "생기 증발": {
+    "id": "15800000",
+    "en": "Vitality Evaporation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_Passive_008.webp"
+  },
+  "작렬": {
+    "id": "15030000",
+    "en": "Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_003.webp"
+  },
+  "냉기 파동": {
+    "id": "15100000",
+    "en": "Cold Wave",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_010.webp"
+  },
+  "저주: 고목": {
+    "id": "15340000",
+    "en": "Curse: Old Tree",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_014.webp"
+  },
+  "화염탄": {
+    "id": "15020000",
+    "en": "Firebomb",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_002.webp"
+  },
+  "환영": {
+    "id": "15290000",
+    "en": "Illusion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_026.webp"
+  },
+  "루미엘의 권능": {
+    "id": "15380000",
+    "en": "Lumiel's Authority",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_038.webp"
+  },
+  "마력 폭쇄": {
+    "id": "15350000",
+    "en": "Magic Energy Blast",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_024.webp"
+  },
+  "열화": {
+    "id": "15250000",
+    "en": "Pyroclasm",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_023.webp"
+  },
+  "불꽃 소환": {
+    "id": "15270000",
+    "en": "Summon Flame",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_024.webp"
+  },
+  "바이젤의 지혜": {
+    "id": "15180000",
+    "en": "Vaizel's Wisdom",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_018.webp"
+  },
+  "겨울의 환영": {
+    "id": "15330000",
+    "en": "Winter's Illusion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_SO_SKILL_033.webp"
+  }
+}

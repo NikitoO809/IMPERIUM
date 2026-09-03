@@ -1,0 +1,202 @@
+{
+  "약화의 낙인": {
+    "id": "17080000",
+    "en": "Debilitating Mark",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_008.webp"
+  },
+  "긴급 회피": {
+    "id": "17000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "대지의 응보": {
+    "id": "17010000",
+    "en": "Earth's Retribution",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_001.webp"
+  },
+  "심판의 번개": {
+    "id": "17040000",
+    "en": "Judgment Thunder",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_004.webp"
+  },
+  "따뜻한 가호": {
+    "id": "17710000",
+    "en": "Warm Benediction",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_001.webp"
+  },
+  "신성한 기운": {
+    "id": "17150000",
+    "en": "Divine Aura",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_015.webp"
+  },
+  "고통의 연쇄": {
+    "id": "17070000",
+    "en": "Chain of Torment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_007.webp"
+  },
+  "벼락 난사": {
+    "id": "17370000",
+    "en": "Lightning Strike Scattershot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_037.webp"
+  },
+  "주신의 가호": {
+    "id": "17720000",
+    "en": "Empyrean Lords' Benediction",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_002.webp"
+  },
+  "재생의 빛": {
+    "id": "17090000",
+    "en": "Light of Regeneration",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_009.webp"
+  },
+  "단죄": {
+    "id": "17350000",
+    "en": "Condemnation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_035.webp"
+  },
+  "주신의 은총": {
+    "id": "17730000",
+    "en": "Empyrean Lord's Grace",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_012.webp"
+  },
+  "치유의 빛": {
+    "id": "17100000",
+    "en": "Healing Light",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_010.webp"
+  },
+  "치유력 강화": {
+    "id": "17740000",
+    "en": "Healing Enhancement",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_004.webp"
+  },
+  "쾌유의 광휘": {
+    "id": "17120000",
+    "en": "Radiant Recovery",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_012.webp"
+  },
+  "불사의 장막": {
+    "id": "17750000",
+    "en": "Immortal Veil",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_005.webp"
+  },
+  "벽력": {
+    "id": "17060000",
+    "en": "Bolt",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_006.webp"
+  },
+  "회복 차단": {
+    "id": "17760000",
+    "en": "Heal Block",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_006.webp"
+  },
+  "충격 해제": {
+    "id": "17240000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "집중의 기도": {
+    "id": "17770000",
+    "en": "Prayer of Concentration",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_007.webp"
+  },
+  "대지의 은총": {
+    "id": "17780000",
+    "en": "Earth's Grace",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_008.webp"
+  },
+  "면죄": {
+    "id": "17290000",
+    "en": "Absolution",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_029.webp"
+  },
+  "강습 낙인": {
+    "id": "17700000",
+    "en": "Assault Mark",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "생명의 권능": {
+    "id": "17160000",
+    "en": "Benevolence",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_047.webp"
+  },
+  "대지의 징벌": {
+    "id": "17400000",
+    "en": "Earth Punishment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_040.webp"
+  },
+  "보호의 빛": {
+    "id": "17410000",
+    "en": "Light of Protection",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_041.webp"
+  },
+  "고결한 기운": {
+    "id": "17440000",
+    "en": "Noble Aura",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_046.webp"
+  },
+  "권능 폭발": {
+    "id": "17280000",
+    "en": "Power Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_028.webp"
+  },
+  "증폭의 기도": {
+    "id": "17430000",
+    "en": "Prayer of Amplification",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_043.webp"
+  },
+  "속박": {
+    "id": "17190000",
+    "en": "Root",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_019.webp"
+  },
+  "구원": {
+    "id": "17270000",
+    "en": "Salvation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_027.webp"
+  },
+  "소환 부활": {
+    "id": "17390000",
+    "en": "Summon Resurrection",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_039.webp"
+  },
+  "파멸의 목소리": {
+    "id": "17300000",
+    "en": "Voice of Doom",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_030.webp"
+  },
+  "유스티엘의 권능": {
+    "id": "17420000",
+    "en": "Yustiel's Power",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_042.webp"
+  },
+  "생존 의지": {
+    "id": "17790000",
+    "en": "Survival Willpower",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_009.webp"
+  },
+  "찬란한 가호": {
+    "id": "17800000",
+    "en": "Radiant Benediction",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_Passive_010.webp"
+  },
+  "재생의 축복": {
+    "id": "17320000",
+    "en": "Blessing of Regeneration",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_032.webp"
+  },
+  "방전": {
+    "id": "17030000",
+    "en": "Discharge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_003.webp"
+  },
+  "천벌": {
+    "id": "17050000",
+    "en": "Divine Punishment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_005.webp"
+  },
+  "뇌전": {
+    "id": "17020000",
+    "en": "Thunder and Lightning",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CL_SKILL_002.webp"
+  }
+}

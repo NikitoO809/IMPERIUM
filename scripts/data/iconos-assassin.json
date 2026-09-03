@@ -1,0 +1,237 @@
+{
+  "긴급 회피": {
+    "id": "13000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "육감 극대화": {
+    "id": "13710000",
+    "en": "Heightened Sixth Sense",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_001.webp"
+  },
+  "빠른 베기": {
+    "id": "13010000",
+    "en": "Quick Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_001.webp"
+  },
+  "맹수의 포효": {
+    "id": "13100000",
+    "en": "Savage Roar",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_009.webp"
+  },
+  "암습": {
+    "id": "13070000",
+    "en": "Shadowstrike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_007.webp"
+  },
+  "기습": {
+    "id": "13060000",
+    "en": "Ambush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_006.webp"
+  },
+  "심장 찌르기": {
+    "id": "13350000",
+    "en": "Heart Gore",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_035.webp"
+  },
+  "폭풍 난무": {
+    "id": "13340000",
+    "en": "Storm Rampage",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_034.webp"
+  },
+  "빈틈 노리기": {
+    "id": "13720000",
+    "en": "Exploit Weakness",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_002.webp"
+  },
+  "회오리 베기": {
+    "id": "13210000",
+    "en": "Whirlwind Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_019.webp"
+  },
+  "섬광 베기": {
+    "id": "13050000",
+    "en": "Flash Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_005.webp"
+  },
+  "독 바르기": {
+    "id": "13160000",
+    "en": "Apply Poison",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_014.webp"
+  },
+  "침투": {
+    "id": "13360000",
+    "en": "Infiltrate",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_036.webp"
+  },
+  "배후 강타": {
+    "id": "13740000",
+    "en": "Rear Smite",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_004.webp"
+  },
+  "그림자 낙하": {
+    "id": "13220000",
+    "en": "Shadow Fall",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_020.webp"
+  },
+  "강습 자세": {
+    "id": "13750000",
+    "en": "Assault Stance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_006.webp"
+  },
+  "문양 폭발": {
+    "id": "13130000",
+    "en": "Insignia Explosion",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_013.webp"
+  },
+  "충격 적중": {
+    "id": "13760000",
+    "en": "Impact Hit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_011.webp"
+  },
+  "충격 해제": {
+    "id": "13260000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "기습 자세": {
+    "id": "13770000",
+    "en": "Ambush Stance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_007.webp"
+  },
+  "방어 균열": {
+    "id": "13780000",
+    "en": "Defense Break",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_008.webp"
+  },
+  "공중 포박": {
+    "id": "13230000",
+    "en": "Aerial Bind",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_026.webp"
+  },
+  "강습 습격": {
+    "id": "13700000",
+    "en": "Assault Ambush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "회피의 계약": {
+    "id": "13370000",
+    "en": "Evasion Contract",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_039.webp"
+  },
+  "회피 자세": {
+    "id": "13080000",
+    "en": "Evasion Stance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_024.webp"
+  },
+  "환영 분신": {
+    "id": "13310000",
+    "en": "Illusive Clone",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_029.webp"
+  },
+  "맹수의 송곳니": {
+    "id": "13270000",
+    "en": "Savage Fang",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_025.webp"
+  },
+  "그림자 보행": {
+    "id": "13180000",
+    "en": "Shadow Walk",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_016.webp"
+  },
+  "암영보": {
+    "id": "13140000",
+    "en": "Shadowstep",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_014.webp"
+  },
+  "연막탄": {
+    "id": "13250000",
+    "en": "Smoke Bomb",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_023.webp"
+  },
+  "나선 베기": {
+    "id": "13280000",
+    "en": "Spiral Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_022.webp"
+  },
+  "신속의 계약": {
+    "id": "13390000",
+    "en": "Swift Contract",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_037.webp"
+  },
+  "암검 투척": {
+    "id": "13020000",
+    "en": "Throw Shadowblade",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_031.webp"
+  },
+  "트리니엘의 비수": {
+    "id": "13300000",
+    "en": "Triniel's Dagger",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_028.webp"
+  },
+  "회생의 계약": {
+    "id": "13790000",
+    "en": "Revitalization Contract",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_009.webp"
+  },
+  "각오": {
+    "id": "13800000",
+    "en": "Determination",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_Passive_010.webp"
+  },
+  "공중 살법": {
+    "id": "13240000",
+    "en": "Aerial Slaughter",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_021.webp"
+  },
+  "절혼 베기": {
+    "id": "13030000",
+    "en": "Breaking Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_003.webp"
+  },
+  "암격": {
+    "id": "13380000",
+    "en": "Dark Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_038.webp"
+  },
+  "광란의 협약": {
+    "id": "13150000",
+    "en": "Frenzied Accord",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_015.webp"
+  },
+  "암살 준비": {
+    "id": "13290000",
+    "en": "Prepare to Assassinate",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_027.webp"
+  },
+  "맹수의 뒷발차기": {
+    "id": "13110000",
+    "en": "Savage Back Kick",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_010.webp"
+  },
+  "맹수의 후려치기": {
+    "id": "13120000",
+    "en": "Savage Smash",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_011.webp"
+  },
+  "암검 추적": {
+    "id": "13090000",
+    "en": "Shadowblade Pursuit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_017.webp"
+  },
+  "폭풍 베기": {
+    "id": "13330000",
+    "en": "Storm Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_033.webp"
+  },
+  "살의 극대화": {
+    "id": "13170000",
+    "en": "Surging Bloodlust",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_015.webp"
+  },
+  "쾌속 베기": {
+    "id": "13040000",
+    "en": "Swift Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_AS_SKILL_004.webp"
+  }
+}

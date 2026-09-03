@@ -22,6 +22,10 @@ export type FilaStat = {
 export type Paso = {
   texto: Par;
   nota?: Par;
+  /** Nombre coreano, cuando el paso es una habilidad: de ahí cuelga su icono. */
+  ko?: string;
+  /** Icono del juego, si lo tenemos. */
+  icono?: string;
   /** El paso que manda sobre los demás. */
   clave?: boolean;
 };

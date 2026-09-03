@@ -1,0 +1,242 @@
+{
+  "긴급 회피": {
+    "id": "14000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "올가미 화살": {
+    "id": "14130000",
+    "en": "Snare Shot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_013.webp"
+  },
+  "저격": {
+    "id": "14020000",
+    "en": "Snipe",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_001.webp"
+  },
+  "속사": {
+    "id": "14340000",
+    "en": "Tempest Shot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_034.webp"
+  },
+  "경계의 눈": {
+    "id": "14710000",
+    "en": "Vigilant Eye",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_004.webp"
+  },
+  "표적 화살": {
+    "id": "14090000",
+    "en": "Marking Shot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_031.webp"
+  },
+  "송곳 화살": {
+    "id": "14050007",
+    "en": "Drill Dart",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_005.webp"
+  },
+  "화살 난사": {
+    "id": "14330000",
+    "en": "Arrow Scattershot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_033.webp"
+  },
+  "집중 포화": {
+    "id": "14720000",
+    "en": "Concentrated Fire",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_003.webp"
+  },
+  "광풍 화살": {
+    "id": "14110000",
+    "en": "Gale Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_011.webp"
+  },
+  "폭발의 덫": {
+    "id": "14170000",
+    "en": "Explosion Trap",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_017.webp"
+  },
+  "바람의 활력": {
+    "id": "14730000",
+    "en": "Wind Vigor",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_006.webp"
+  },
+  "파열 화살": {
+    "id": "14080000",
+    "en": "Burst Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_008.webp"
+  },
+  "집중의 눈": {
+    "id": "14740000",
+    "en": "Focused Eye",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_001.webp"
+  },
+  "제압 화살": {
+    "id": "14070000",
+    "en": "Suppressing Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_007.webp"
+  },
+  "사냥꾼의 결의": {
+    "id": "14750000",
+    "en": "Hunter's Resolve",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_011.webp"
+  },
+  "조준 화살": {
+    "id": "14010000",
+    "en": "Deadshot",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_002.webp"
+  },
+  "저항의 결의": {
+    "id": "14760000",
+    "en": "Unyielding Resolve",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_012.webp"
+  },
+  "충격 해제": {
+    "id": "14260000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "속박의 눈": {
+    "id": "14770000",
+    "en": "Rooting Eye",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_008.webp"
+  },
+  "근접 사격": {
+    "id": "14780000",
+    "en": "Melee Fire",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_013.webp"
+  },
+  "기습 차기": {
+    "id": "14120000",
+    "en": "Ambush Kick",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_012.webp"
+  },
+  "화살 폭풍": {
+    "id": "14270000",
+    "en": "Arrow Storm",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_026.webp"
+  },
+  "강습 강타": {
+    "id": "14700000",
+    "en": "Assault Smite",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "축복의 활": {
+    "id": "14220000",
+    "en": "Bow of Blessing",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_030.webp"
+  },
+  "결박의 덫": {
+    "id": "14180000",
+    "en": "Ensnaring Trap",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_018.webp"
+  },
+  "폭발 화살": {
+    "id": "14230000",
+    "en": "Explosive Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_023.webp"
+  },
+  "그리폰 화살": {
+    "id": "14060000",
+    "en": "Griffon Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_006.webp"
+  },
+  "환영 화살": {
+    "id": "14150000",
+    "en": "Illusory Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_015.webp"
+  },
+  "대자연의 숨결": {
+    "id": "14350000",
+    "en": "Mother Nature's Breath",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_035.webp"
+  },
+  "봉인 화살": {
+    "id": "14160000",
+    "en": "Sealing Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_016.webp"
+  },
+  "은신": {
+    "id": "14190000",
+    "en": "Stealth",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_019.webp"
+  },
+  "지원 사격": {
+    "id": "14380000",
+    "en": "Supporting Fire",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_038.webp"
+  },
+  "바이젤의 권능": {
+    "id": "14310000",
+    "en": "Vaizel's Authority",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_022.webp"
+  },
+  "회생의 계약": {
+    "id": "14790000",
+    "en": "Revitalization Contract",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_009.webp"
+  },
+  "사냥꾼의 혼": {
+    "id": "14800000",
+    "en": "Hunter's Soul",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_Passive_007.webp"
+  },
+  "잔영": {
+    "id": "14240000",
+    "en": "Afterimage",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_024.webp"
+  },
+  "시공의 화살": {
+    "id": "14290000",
+    "en": "Arrow of Space-time",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_028.webp"
+  },
+  "흙먼지 화살": {
+    "id": "14300000",
+    "en": "Dust Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_029.webp"
+  },
+  "속사의 눈": {
+    "id": "14210000",
+    "en": "Eye of Rapid Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_021.webp"
+  },
+  "퇴보 베기": {
+    "id": "14200000",
+    "en": "Guerilla Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_020.webp"
+  },
+  "사냥꾼의 결의_액티브": {
+    "id": "14250000",
+    "en": "Hunters Resolve\\_active",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_025.webp"
+  },
+  "충격 차기": {
+    "id": "14320000",
+    "en": "Impact Kick",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_032.webp"
+  },
+  "번개 화살": {
+    "id": "14370000",
+    "en": "Lightning Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_037.webp"
+  },
+  "연사": {
+    "id": "14030000",
+    "en": "Rapid Fire",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_003.webp"
+  },
+  "족쇄 화살": {
+    "id": "14140000",
+    "en": "Shackling Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_014.webp"
+  },
+  "나선 화살": {
+    "id": "14040000",
+    "en": "Spiral Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_004.webp"
+  },
+  "질풍 화살": {
+    "id": "14100000",
+    "en": "Tempest Arrow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_RA_SKILL_010.webp"
+  }
+}

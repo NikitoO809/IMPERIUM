@@ -1,0 +1,222 @@
+{
+  "생명의 축복": {
+    "id": "18710000",
+    "en": "Blessing of Life",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_001.webp"
+  },
+  "긴급 회피": {
+    "id": "18000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "백열격": {
+    "id": "18040000",
+    "en": "Incandescent Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_004.webp"
+  },
+  "격파쇄": {
+    "id": "18010000",
+    "en": "Onslaught",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_001.webp"
+  },
+  "돌진 격파": {
+    "id": "18090000",
+    "en": "Rushing Smash",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_009.webp"
+  },
+  "타격쇄": {
+    "id": "18060000",
+    "en": "Impactful Crush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_006.webp"
+  },
+  "암격쇄": {
+    "id": "18100000",
+    "en": "Dark Crush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_010.webp"
+  },
+  "파동격": {
+    "id": "18080000",
+    "en": "Wave Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_008.webp"
+  },
+  "질풍 난무": {
+    "id": "18300000",
+    "en": "Gust Rampage",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_030.webp"
+  },
+  "십자 방어": {
+    "id": "18720000",
+    "en": "Crossguard",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_002.webp"
+  },
+  "열파격": {
+    "id": "18150000",
+    "en": "Heat Wave Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_015.webp"
+  },
+  "쾌유의 주문": {
+    "id": "18120000",
+    "en": "Recuperation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_012.webp"
+  },
+  "보호진": {
+    "id": "18730000",
+    "en": "Protection Circle",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_003.webp"
+  },
+  "진동쇄": {
+    "id": "18210000",
+    "en": "Tremor Crush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_021.webp"
+  },
+  "고취의 주문": {
+    "id": "18740000",
+    "en": "Inspiring Spell",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_011.webp"
+  },
+  "공격 준비": {
+    "id": "18750000",
+    "en": "Attack Preparation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_005.webp"
+  },
+  "회전격": {
+    "id": "18290000",
+    "en": "Spinning Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_029.webp"
+  },
+  "충격 적중": {
+    "id": "18760000",
+    "en": "Impact Hit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_006.webp"
+  },
+  "충격 해제": {
+    "id": "18200000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "격노의 주문": {
+    "id": "18770000",
+    "en": "Raging Spell",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_007.webp"
+  },
+  "대지의 약속": {
+    "id": "18780000",
+    "en": "Earth's Promise",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_008.webp"
+  },
+  "강습 충격": {
+    "id": "18700000",
+    "en": "Assault Shock",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "결계의 주문": {
+    "id": "18440000",
+    "en": "Barrier Spell",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_044.webp"
+  },
+  "결박의 낙인": {
+    "id": "18230000",
+    "en": "Ensnaring Mark",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_023.webp"
+  },
+  "집중 방어": {
+    "id": "18140000",
+    "en": "Focused Defense",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_014.webp"
+  },
+  "분쇄격": {
+    "id": "18130000",
+    "en": "Fracturing Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_043.webp"
+  },
+  "수호의 축복": {
+    "id": "18420000",
+    "en": "Guardian Blessing",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_042.webp"
+  },
+  "쾌유의 손길": {
+    "id": "18170000",
+    "en": "Healing Touch",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_017.webp"
+  },
+  "차단의 권능": {
+    "id": "18240000",
+    "en": "Impeding Authority",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_024.webp"
+  },
+  "마르쿠탄의 분노": {
+    "id": "18330000",
+    "en": "Marchutan's Wrath",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_033.webp"
+  },
+  "멸화": {
+    "id": "18220000",
+    "en": "Obliterate",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_022.webp"
+  },
+  "질풍의 권능": {
+    "id": "18250000",
+    "en": "Power of the Storm",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_025.webp"
+  },
+  "질주의 진언": {
+    "id": "18160000",
+    "en": "Sprint Mantra",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_016.webp"
+  },
+  "불패의 진언": {
+    "id": "18190000",
+    "en": "Undefeated Mantra",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_019.webp"
+  },
+  "생존 의지": {
+    "id": "18790000",
+    "en": "Survival Willpower",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_009.webp"
+  },
+  "바람의 약속": {
+    "id": "18800000",
+    "en": "Wind's Promise",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_Passive_010.webp"
+  },
+  "벽력쇄": {
+    "id": "18030000",
+    "en": "Bolt Crush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_003.webp"
+  },
+  "파열격": {
+    "id": "18050000",
+    "en": "Bursting Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_005.webp"
+  },
+  "파산격": {
+    "id": "18070000",
+    "en": "Crushing Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_007.webp"
+  },
+  "강격쇄": {
+    "id": "18410000",
+    "en": "Crushing Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_041.webp"
+  },
+  "관통쇄": {
+    "id": "18400000",
+    "en": "Piercing Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_040.webp"
+  },
+  "공명쇄": {
+    "id": "18020000",
+    "en": "Resonance Crush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_002.webp"
+  },
+  "폭풍쇄": {
+    "id": "18370000",
+    "en": "Storm Chain",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_037.webp"
+  },
+  "격동쇄": {
+    "id": "18390000",
+    "en": "Surging Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CH_SKILL_039.webp"
+  }
+}

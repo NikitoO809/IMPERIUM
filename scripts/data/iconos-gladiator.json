@@ -1,0 +1,267 @@
+{
+  "긴급 회피": {
+    "id": "11000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "검성 무기 장착": {
+    "id": "11000000",
+    "en": "Equip Gladiator Weapon",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_001.webp"
+  },
+  "예리한 일격": {
+    "id": "11020000",
+    "en": "Keen Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp"
+  },
+  "도약 찍기": {
+    "id": "11190000",
+    "en": "Leaping Slam",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_019.webp"
+  },
+  "절단의 맹타": {
+    "id": "11010000",
+    "en": "Rending Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp"
+  },
+  "생존 자세": {
+    "id": "11270000",
+    "en": "Survival Stance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_026.webp"
+  },
+  "유린의 검": {
+    "id": "11290000",
+    "en": "Mocking Blade",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp"
+  },
+  "내려 찍기": {
+    "id": "11170037",
+    "en": "Overhead Slam",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp"
+  },
+  "내려찍기": {
+    "id": "11170000",
+    "en": "Overhead Slam",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp"
+  },
+  "검기 난무": {
+    "id": "11280000",
+    "en": "Sword Aura Rampage",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp"
+  },
+  "보호의 갑옷": {
+    "id": "11720000",
+    "en": "Protection Armor",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_002.webp"
+  },
+  "발목 베기": {
+    "id": "11200000",
+    "en": "Ankle Slice",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_020.webp"
+  },
+  "분쇄 파동": {
+    "id": "11050000",
+    "en": "Crushing Wave",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp"
+  },
+  "피의 흡수": {
+    "id": "11120000",
+    "en": "Blood Absorption",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_012.webp"
+  },
+  "돌진 일격": {
+    "id": "11360000",
+    "en": "Rush Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_036.webp"
+  },
+  "약점 파악": {
+    "id": "11740000",
+    "en": "Identify Weakness",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_004.webp"
+  },
+  "공중 결박": {
+    "id": "11300000",
+    "en": "Aerial Snare",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_015.webp"
+  },
+  "강제 낙하": {
+    "id": "11370000",
+    "en": "Forced Fall",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_016.webp"
+  },
+  "공격 준비": {
+    "id": "11750000",
+    "en": "Attack Preparation",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_005.webp"
+  },
+  "파멸의 맹타": {
+    "id": "11100000",
+    "en": "Ruinous Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp"
+  },
+  "충격 적중": {
+    "id": "11760000",
+    "en": "Impact Hit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_006.webp"
+  },
+  "충격 해제": {
+    "id": "11260000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "파괴 충동": {
+    "id": "11770000",
+    "en": "Destructive Impulse",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_007.webp"
+  },
+  "노련한 반격": {
+    "id": "11780000",
+    "en": "Experienced Counterstrike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_008.webp"
+  },
+  "균형의 갑옷": {
+    "id": "11130000",
+    "en": "Armor of Balance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_013.webp"
+  },
+  "강습 일격": {
+    "id": "11700000",
+    "en": "Assault Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "칼날 날리기": {
+    "id": "11080000",
+    "en": "Blade Toss",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_008.webp"
+  },
+  "집중 막기": {
+    "id": "11110000",
+    "en": "Focused Block",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_011.webp"
+  },
+  "강제 결박": {
+    "id": "11430000",
+    "en": "Forced Restraint",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_043.webp"
+  },
+  "분쇄 돌진": {
+    "id": "11450000",
+    "en": "Fracturing Rush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_045.webp"
+  },
+  "흡혈의 검": {
+    "id": "11340000",
+    "en": "Lifestealing Blade",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_034.webp"
+  },
+  "돌격 자세": {
+    "id": "11400000",
+    "en": "Lunge Stance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_040.webp"
+  },
+  "격노 폭발": {
+    "id": "11390000",
+    "en": "Rage Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_039.webp"
+  },
+  "근성": {
+    "id": "11380000",
+    "en": "Tenaciousness",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_038.webp"
+  },
+  "파동의 갑주": {
+    "id": "11410000",
+    "en": "Wave Armor",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_041.webp"
+  },
+  "분노의 파동": {
+    "id": "11240000",
+    "en": "Wrath Wave",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_007.webp"
+  },
+  "지켈의 축복": {
+    "id": "11250000",
+    "en": "Zikel's Blessing",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_024.webp"
+  },
+  "생존 의지": {
+    "id": "11790000",
+    "en": "Survival Willpower",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_009.webp"
+  },
+  "살기 파열": {
+    "id": "11800000",
+    "en": "Murderous Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_010.webp"
+  },
+  "발목 격파": {
+    "id": "11210000",
+    "en": "Ankle Smash",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_021.webp"
+  },
+  "칼날 화무": {
+    "id": "11090000",
+    "en": "Blade Dance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_009.webp"
+  },
+  "파괴 돌진": {
+    "id": "11460000",
+    "en": "Destructive Rush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_046.webp"
+  },
+  "파멸의 강림": {
+    "id": "11310000",
+    "en": "Doom Advent",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_030.webp"
+  },
+  "광폭 파동": {
+    "id": "11060000",
+    "en": "Frenzied Wave",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_006.webp"
+  },
+  "광기의 맹타": {
+    "id": "11330000",
+    "en": "Madness Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_015.webp"
+  },
+  "무모한 일격": {
+    "id": "11180000",
+    "en": "Reckless Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_018.webp"
+  },
+  "파열의 일격": {
+    "id": "11030000",
+    "en": "Rupture Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_003.webp"
+  },
+  "돌진": {
+    "id": "11230000",
+    "en": "Rush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_015.webp"
+  },
+  "격파의 맹타": {
+    "id": "11420000",
+    "en": "Smashing Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_042.webp"
+  },
+  "거합 돌진": {
+    "id": "11470000",
+    "en": "Unsheathing Rush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_047.webp"
+  },
+  "올려치기": {
+    "id": "11440000",
+    "en": "Upward Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_044.webp"
+  },
+  "분노 폭발": {
+    "id": "11320000",
+    "en": "Wrath Burst",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_032.webp"
+  },
+  "분노의 일격": {
+    "id": "11350000",
+    "en": "Wrathful Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_022.webp"
+  }
+}

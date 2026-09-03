@@ -1,0 +1,212 @@
+{
+  "긴급 회피": {
+    "id": "12000100",
+    "en": "Dodge",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_001.webp"
+  },
+  "체력 강화": {
+    "id": "12710000",
+    "en": "Enhance Health",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_001.webp"
+  },
+  "포획": {
+    "id": "12130000",
+    "en": "Poach",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_013.webp"
+  },
+  "연속 난타": {
+    "id": "9868",
+    "en": "Pummel",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_006.webp"
+  },
+  "단죄의 가호": {
+    "id": "12730000",
+    "en": "Punishing Benediction",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_003.webp"
+  },
+  "맹렬한 일격": {
+    "id": "12010000",
+    "en": "Vicious Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_001.webp"
+  },
+  "방패 강타": {
+    "id": "12100000",
+    "en": "Shield Smite",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_010.webp"
+  },
+  "심판": {
+    "id": "12240000",
+    "en": "Judgment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_004.webp"
+  },
+  "섬광 난무": {
+    "id": "12340000",
+    "en": "Flash Rampage",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_027.webp"
+  },
+  "비호의 방패": {
+    "id": "12720000",
+    "en": "Warding Shield",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_002.webp"
+  },
+  "쇠약의 맹타": {
+    "id": "12270000",
+    "en": "Debilitating Smash",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_025.webp"
+  },
+  "비호의 일격": {
+    "id": "12350000",
+    "en": "Warding Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_035.webp"
+  },
+  "방패 돌격": {
+    "id": "12430000",
+    "en": "Shield Rush",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_015.webp"
+  },
+  "철벽 방어": {
+    "id": "12740000",
+    "en": "Ironclad Defense",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_004.webp"
+  },
+  "섬멸": {
+    "id": "12300000",
+    "en": "Annihilate",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_028.webp"
+  },
+  "수호의 인장": {
+    "id": "12750000",
+    "en": "Guarding Seal",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_005.webp"
+  },
+  "징벌": {
+    "id": "12090000",
+    "en": "Punishment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_009.webp"
+  },
+  "충격 적중": {
+    "id": "12760000",
+    "en": "Impact Hit",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_006.webp"
+  },
+  "충격 해제": {
+    "id": "12260000",
+    "en": "Defiance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_002.webp"
+  },
+  "모욕의 포효": {
+    "id": "12770000",
+    "en": "Insulting Roar",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_007.webp"
+  },
+  "격앙": {
+    "id": "12780000",
+    "en": "Fury",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_008.webp"
+  },
+  "균형의 갑옷": {
+    "id": "12200000",
+    "en": "Armor of Balance",
+    "icono": "https://aion2t.com/db-item-icons/ICON_GL_SKILL_013.webp"
+  },
+  "강습 맹격": {
+    "id": "12700000",
+    "en": "Assault Fury",
+    "icono": "https://aion2t.com/db-item-icons/ICON_CO_SKILL_003.webp"
+  },
+  "전장의 깃발": {
+    "id": "12450000",
+    "en": "Battlefield Banner",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_045.webp"
+  },
+  "전우 보호": {
+    "id": "12250000",
+    "en": "Comrade in Arms",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_024.webp"
+  },
+  "파멸의 방패": {
+    "id": "12070000",
+    "en": "Doom Shield",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_007.webp"
+  },
+  "주신의 징벌": {
+    "id": "12310000",
+    "en": "Empyrean Lord's Punishment",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_029.webp"
+  },
+  "처형의 검": {
+    "id": "12410000",
+    "en": "Executing Blade",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_041.webp"
+  },
+  "나포": {
+    "id": "12220000",
+    "en": "Grapple",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_021.webp"
+  },
+  "네자칸의 방패": {
+    "id": "12320000",
+    "en": "Nezekan's Shield",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_030.webp"
+  },
+  "고결의 갑주": {
+    "id": "12230000",
+    "en": "Noble Armor",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_022.webp"
+  },
+  "이중 갑옷": {
+    "id": "12190000",
+    "en": "Second Skin",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_018.webp"
+  },
+  "보호의 방패": {
+    "id": "12110000",
+    "en": "Shield of Protection",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_011.webp"
+  },
+  "도발": {
+    "id": "12120000",
+    "en": "Taunt",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_012.webp"
+  },
+  "생존 의지": {
+    "id": "12790000",
+    "en": "Survival Willpower",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_009.webp"
+  },
+  "고통 차단": {
+    "id": "12800000",
+    "en": "Block Pain",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_Passive_010.webp"
+  },
+  "검풍": {
+    "id": "12420000",
+    "en": "Blade Storm",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_023.webp"
+  },
+  "생포": {
+    "id": "12330000",
+    "en": "Capture",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_033.webp"
+  },
+  "회심의 일격": {
+    "id": "12020000",
+    "en": "Decisive Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_002.webp"
+  },
+  "필사의 일격": {
+    "id": "12030000",
+    "en": "Desperate Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_003.webp"
+  },
+  "응징의 일격": {
+    "id": "12060000",
+    "en": "Punishing Strike",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_014.webp"
+  },
+  "위협의 맹타": {
+    "id": "12440000",
+    "en": "Threatening Blow",
+    "icono": "https://aion2t.com/db-item-icons/ICON_TE_SKILL_044.webp"
+  }
+}

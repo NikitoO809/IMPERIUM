@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "img.game8.co" },
       // Imágenes subidas por el staff a Supabase Storage (bucket público).
       { protocol: "https", hostname: "fihjqermiqhuubwepfcc.supabase.co", pathname: "/storage/v1/object/public/**" },
+      // Aion 2: iconos de habilidad del volcado del cliente (Manual de Atreia).
+      { protocol: "https", hostname: "aion2t.com" },
       // Ragnarok Origin Classic: portada oficial (joymaker) e iconos de clase/carta (roochub, roocdb).
       { protocol: "https", hostname: "file.joymaker.com" },
       { protocol: "https", hostname: "www.roochub.com" },

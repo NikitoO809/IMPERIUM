@@ -29,6 +29,7 @@ export const gladiator: Guia = {
       { valor: "127.421", etiqueta: { es: "DPS mediano de la clase", en: "Class median DPS" } },
       { valor: "2 sept", etiqueta: { es: "Última actualización", en: "Last updated" } },
     ],
+    arte: "/manual/aion2-gladiator.webp",
   },
 
   secciones: [
@@ -292,6 +293,7 @@ export const gladiator: Guia = {
                 orden: { es: "1.ª", en: "1st" },
                 nombre: { es: "Danza de filos", en: "Blade Dance" },
                 ko: "검기난무",
+                icono: "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp",
                 puntos: [
                   { es: "**Roba el 10%** del daño hecho", en: "**Drains 10%** of damage dealt" },
                   { es: "Al acertar, **baja 1 segundo** el tiempo de recarga de todas tus skills", en: "On hit, **cuts 1 second** off every skill cooldown" },
@@ -302,6 +304,7 @@ export const gladiator: Guia = {
                 orden: { es: "2.ª", en: "2nd" },
                 nombre: { es: "Machaque descendente", en: "Downward Smash" },
                 ko: "내려찍기",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp",
                 puntos: [
                   { es: "**Borra el tiempo de recarga**", en: "**Wipes the cooldown**" },
                   { es: "Roba el **20%** del daño", en: "Drains **20%** of damage" },
@@ -312,6 +315,7 @@ export const gladiator: Guia = {
                 orden: { es: "3.ª", en: "3rd" },
                 nombre: { es: "Embate de perdición", en: "Doom Strike" },
                 ko: "파멸의 맹타",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp",
                 puntos: [
                   { es: "**+20% de velocidad** de skill", en: "**+20% skill speed**" },
                   { es: "**+12,5 m** de alcance", en: "**+12.5 m** range" },
@@ -322,6 +326,7 @@ export const gladiator: Guia = {
                 orden: { es: "4.ª", en: "4th" },
                 nombre: { es: "Onda trituradora", en: "Crushing Wave" },
                 ko: "분쇄 파동",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp",
                 puntos: [
                   { es: "Roba el **15%** del daño", en: "Drains **15%** of damage" },
                   { es: "Al crítico, **reinicia su propia recarga**", en: "On crit, **resets its own cooldown**" },
@@ -376,6 +381,7 @@ export const gladiator: Guia = {
                 orden: { es: "Prioridad 0", en: "Priority 0" },
                 nombre: { es: "Embate de perdición", en: "Doom Strike" },
                 ko: "파멸의 맹타",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp",
                 puntos: [
                   { es: "**+20% de velocidad** de skill", en: "**+20% skill speed**" },
                   { es: "**+12,5 m** de alcance — en PvP eso es alcanzar al que huye", en: "**+12.5 m** range — in PvP that means catching the runner" },
@@ -386,6 +392,7 @@ export const gladiator: Guia = {
                 orden: { es: "Prioridad 0", en: "Priority 0" },
                 nombre: { es: "Onda trituradora", en: "Crushing Wave" },
                 ko: "분쇄 파동",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp",
                 puntos: [
                   { es: "**Atrae** al enemigo hacia ti", en: "**Pulls** the enemy toward you" },
                   { es: "Al crítico, **reinicia su recarga** — puedes encadenar otro tirón", en: "On crit, **resets its cooldown** — you can chain another pull" },
@@ -396,6 +403,7 @@ export const gladiator: Guia = {
                 orden: { es: "3.ª", en: "3rd" },
                 nombre: { es: "Machaque descendente", en: "Downward Smash" },
                 ko: "내려찍기",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp",
                 puntos: [
                   { es: "**Se convierte en área** — aquí está la diferencia con PvE", en: "**Becomes an area attack** — this is what differs from PvE" },
                   { es: "Reinicia el tiempo de recarga", en: "Resets the cooldown" },
@@ -406,6 +414,7 @@ export const gladiator: Guia = {
                 orden: { es: "Última", en: "Last" },
                 nombre: { es: "Espada arrasadora", en: "Ravaging Sword" },
                 ko: "유린의 검",
+                icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp",
                 puntos: [
                   { es: "**Dos ataques extra**", en: "**Two extra attacks**" },
                   { es: "Ignora bloqueo y evasión", en: "Ignores block and evasion" },
@@ -593,12 +602,12 @@ export const gladiator: Guia = {
           titulo: { es: "Apertura contra un jefe", en: "Boss opener" },
           cuando: { es: "Desde que entras hasta que la rotación se estabiliza", en: "From the pull until the rotation settles" },
           pasos: [
-            { texto: { es: "Embate de perdición", en: "Doom Strike" }, nota: { es: "para entrar", en: "to close in" } },
-            { texto: { es: "Bendición de Zikel", en: "Zikel's Blessing" } },
-            { texto: { es: "Onda trituradora", en: "Crushing Wave" } },
-            { texto: { es: "Machaque descendente", en: "Downward Smash" }, nota: { es: "en cuanto se active", en: "the moment it lights up" }, clave: true },
-            { texto: { es: "Embate cortante", en: "Severing Strike" } },
-            { texto: { es: "Golpe afilado", en: "Keen Strike" }, nota: { es: "recupera espíritu", en: "recovers spirit" } },
+            { texto: { es: "Embate de perdición", en: "Doom Strike" }, nota: { es: "para entrar", en: "to close in" }, ko: "파멸의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp" },
+            { texto: { es: "Bendición de Zikel", en: "Zikel's Blessing" }, ko: "지켈의 축복", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_024.webp" },
+            { texto: { es: "Onda trituradora", en: "Crushing Wave" }, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
+            { texto: { es: "Machaque descendente", en: "Downward Smash" }, nota: { es: "en cuanto se active", en: "the moment it lights up" }, clave: true, ko: "내려찍기", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp" },
+            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Golpe afilado", en: "Keen Strike" }, nota: { es: "recupera espíritu", en: "recovers spirit" }, ko: "예리한 일격", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp" },
           ],
         },
         {
@@ -607,12 +616,12 @@ export const gladiator: Guia = {
           cuando: { es: "Aquí es donde se gana o se pierde la mazmorra", en: "This is where the dungeon is won or lost" },
           pasos: [
             { texto: { es: "Comprueba tu buff activo", en: "Check your active buff" } },
-            { texto: { es: "Bendición de Zikel", en: "Zikel's Blessing" } },
+            { texto: { es: "Bendición de Zikel", en: "Zikel's Blessing" }, ko: "지켈의 축복", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_024.webp" },
             { texto: { es: "Estigma de groggy", en: "Groggy stigma" } },
-            { texto: { es: "Machaque descendente", en: "Downward Smash" }, clave: true },
-            { texto: { es: "Onda trituradora", en: "Crushing Wave" } },
-            { texto: { es: "Embate cortante", en: "Severing Strike" } },
-            { texto: { es: "Danza de filos", en: "Blade Dance" } },
+            { texto: { es: "Machaque descendente", en: "Downward Smash" }, clave: true, ko: "내려찍기", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp" },
+            { texto: { es: "Onda trituradora", en: "Crushing Wave" }, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
+            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Danza de filos", en: "Blade Dance" }, ko: "검기난무", icono: "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp" },
           ],
         },
         {
@@ -620,11 +629,11 @@ export const gladiator: Guia = {
           titulo: { es: "Farmeo de grupos en campo", en: "Open-world grinding" },
           cuando: { es: "Varios enemigos a la vez", en: "Several enemies at once" },
           pasos: [
-            { texto: { es: "Onda trituradora", en: "Crushing Wave" }, clave: true },
-            { texto: { es: "Golpe afilado", en: "Keen Strike" } },
+            { texto: { es: "Onda trituradora", en: "Crushing Wave" }, clave: true, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
+            { texto: { es: "Golpe afilado", en: "Keen Strike" }, ko: "예리한 일격", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp" },
             { texto: { es: "¿Se reinició la Onda?", en: "Did the Wave reset?" }, nota: { es: "al crítico vuelve", en: "it returns on crit" } },
-            { texto: { es: "Embate cortante", en: "Severing Strike" } },
-            { texto: { es: "Espada arrasadora", en: "Ravaging Sword" }, nota: { es: "para rematar", en: "to finish" } },
+            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
+            { texto: { es: "Espada arrasadora", en: "Ravaging Sword" }, nota: { es: "para rematar", en: "to finish" }, ko: "유린의 검", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp" },
           ],
         },
         {
@@ -650,11 +659,11 @@ export const gladiator: Guia = {
           cuando: { es: "En un muñeco de entrenamiento, sin prisa", en: "On a training dummy, no rush" },
           pasos: [
             { texto: { es: "Ataque básico", en: "Basic attack" }, nota: { es: "espera al impacto", en: "wait for the hit" } },
-            { texto: { es: "Golpe afilado", en: "Keen Strike" } },
+            { texto: { es: "Golpe afilado", en: "Keen Strike" }, ko: "예리한 일격", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp" },
             { texto: { es: "Ataque básico", en: "Basic attack" } },
-            { texto: { es: "Embate cortante", en: "Severing Strike" } },
+            { texto: { es: "Embate cortante", en: "Severing Strike" }, ko: "절단의 맹타", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp" },
             { texto: { es: "Ataque básico", en: "Basic attack" } },
-            { texto: { es: "Onda trituradora", en: "Crushing Wave" } },
+            { texto: { es: "Onda trituradora", en: "Crushing Wave" }, ko: "분쇄 파동", icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp" },
           ],
         },
         {

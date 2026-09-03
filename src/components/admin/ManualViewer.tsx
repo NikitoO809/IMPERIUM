@@ -7,6 +7,7 @@
 // próxima vez entras directamente en el que dejaste.
 //
 // Todo el contenido vive en src/lib/manual/<clase>.ts — aquí solo hay pintura.
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useSyncExternalStore } from "react";
 import type { Bloque, Guia, Par, Seccion } from "@/lib/manual/tipos";
@@ -100,10 +101,27 @@ export function ManualViewer({ guia }: { guia: Guia }) {
       <div className="flex-1 overflow-auto">
         {/* Portada */}
         <div
-          className="border-b border-white/10 px-8 py-10"
+          className="relative overflow-hidden border-b border-white/10"
           style={{ background: `radial-gradient(700px 260px at 8% -30%, ${acento}22, transparent 70%)` }}
         >
-          <div className="mx-auto max-w-4xl">
+          {/* El arte acompaña, no compite: se funde por la izquierda para que el texto siga leyéndose. */}
+          {guia.portada.arte && (
+            <>
+              <Image
+                src={guia.portada.arte}
+                alt=""
+                fill
+                sizes="100vw"
+                unoptimized
+                priority
+                className="pointer-events-none select-none object-cover object-[70%_22%] opacity-50"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0d0d14] via-[#0d0d14]/90 to-[#0d0d14]/20" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0d0d14] to-transparent" />
+              <div className="scanlines pointer-events-none absolute inset-0 opacity-20" />
+            </>
+          )}
+          <div className="relative mx-auto max-w-4xl px-8 py-10">
             <div className="font-hud text-[10px] tracking-[0.24em]" style={{ color: acento }}>
               {t(guia.portada.eyebrow).toUpperCase()}
             </div>
@@ -324,8 +342,22 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
               <span className="inline-block bg-white/[0.06] px-2 py-0.5 font-mono text-[11px]" style={{ color: colorModo }}>
                 {t(s.orden)}
               </span>
-              <div className="mt-2.5 font-title text-lg font-bold">{t(s.nombre)}</div>
-              <div className="mt-0.5 font-mono text-xs text-white/30">{s.ko}</div>
+              <div className="mt-2.5 flex items-center gap-3">
+                {s.icono && (
+                  <Image
+                    src={s.icono}
+                    alt=""
+                    width={44}
+                    height={44}
+                    unoptimized
+                    className="h-11 w-11 shrink-0 border border-white/10 bg-black/40 object-contain"
+                  />
+                )}
+                <div className="min-w-0">
+                  <div className="font-title text-lg font-bold">{t(s.nombre)}</div>
+                  <div className="mt-0.5 font-mono text-xs text-white/30">{s.ko}</div>
+                </div>
+              </div>
               <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-sm text-white/55 marker:text-white/25">
                 {s.puntos.map((p, j) => (
                   <li key={j}>{ricos(t(p))}</li>
@@ -353,6 +385,16 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                   }}
                 >
                   <span className="font-mono text-[11px] text-white/30">{i + 1}</span>
+                  {p.icono && (
+                    <Image
+                      src={p.icono}
+                      alt=""
+                      width={28}
+                      height={28}
+                      unoptimized
+                      className="h-7 w-7 shrink-0 border border-white/10 bg-black/40 object-contain"
+                    />
+                  )}
                   <span className="text-[15px]">
                     {t(p.texto)}
                     {p.nota && <em className="mt-0.5 block text-[11px] not-italic text-white/35">{t(p.nota)}</em>}
