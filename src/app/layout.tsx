@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, JetBrains_Mono } from "next/font/google";
+import { Outfit, JetBrains_Mono, Cinzel } from "next/font/google";
 import { siteUrl } from "@/lib/seo";
 import "./globals.css";
 
@@ -16,6 +16,13 @@ const title = sans;
 const mono = JetBrains_Mono({
   variable: "--font-mono-imperium",
   subsets: ["latin"],
+});
+
+// Rótulo épico (solo el nombre en el hero): inscripción romana.
+const epic = Cinzel({
+  variable: "--font-epic-imperium",
+  subsets: ["latin"],
+  weight: ["700", "900"],
 });
 
 const SHARE_TITLE = "IMPERIUM — Tu comunidad de juego";
@@ -49,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${title.variable} ${mono.variable} ${sans.variable} h-full antialiased`}
+      className={`${title.variable} ${mono.variable} ${sans.variable} ${epic.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
