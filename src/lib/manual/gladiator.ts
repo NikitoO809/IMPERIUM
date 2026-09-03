@@ -1144,9 +1144,128 @@ export const gladiator: Guia = {
         {
           t: "parrafo",
           texto: {
-            es: "**El brazalete va aparte:** lleva grabados de los dioses, y hay cuatro que lleva prácticamente todo el mundo — Tiempo (velocidad de combate), Destrucción (ataque), Ilusión (menos recarga y penetración) y Sabiduría (menos consumo de espíritu). Justicia y Libertad son opcionales.",
-            en: "**The bracelet is its own thing:** it carries the gods' engravings, and four of them are near-universal — Time (combat speed), Destruction (attack), Illusion (less cooldown and penetration) and Wisdom (less spirit drain). Justice and Freedom are optional.",
+            es: "**El brazalete va aparte:** lleva grabados de los dioses, y hay cuatro que lleva prácticamente todo el mundo — Tiempo, Destrucción, Ilusión y Sabiduría. El quinto cambia con el modo: Justicia en PvE, Libertad en PvP. **Qué sube exactamente cada uno está en la sección siguiente.**",
+            en: "**The bracelet is its own thing:** it carries the gods' engravings, and four of them are near-universal — Time, Destruction, Illusion and Wisdom. The fifth swaps with the mode: Justice in PvE, Freedom in PvP. **Exactly what each one raises is in the next section.**",
           },
+        },
+      ],
+    },
+
+    // ── 13. El diccionario de atributos ─────────────────────────
+    {
+      eyebrow: { es: "El diccionario", en: "The glossary" },
+      titulo: { es: "Qué hace cada atributo", en: "What each attribute does" },
+      intro: [
+        {
+          es: "Toda la guía está llena de nombres —perfección, golpe fuerte, golpes múltiples, Zikel, Kaisinel— que el juego enseña sin explicar en ninguna parte. Aquí está qué hace cada uno **y cuánto vale de verdad cada punto**, medido por la comunidad.",
+          en: "The whole guide is full of names —perfection, heavy strike, multi-hit, Zikel, Kaisinel— that the game shows without explaining anywhere. Here is what each one does **and what a point of it is actually worth**, as measured by the community.",
+        },
+      ],
+      bloques: [
+        { t: "subtitulo", texto: { es: "Los diez atributos de dios", en: "The ten god attributes" } },
+        {
+          t: "parrafo",
+          texto: {
+            es: "Son los que llevan un nombre de dios entre corchetes: **Destrucción [Zikel]**, **Tiempo [Siel]**, **Ilusión [Kaisinel]**… Vienen del Panteón —las estatuas que colocas ahí suben estos valores— y también salen como grabados en el brazalete y en las cartas de arcana. Cada uno sube **dos cosas**, y la segunda es la que casi nadie conoce:",
+            en: "These are the ones with a god's name in brackets: **Destruction [Zikel]**, **Time [Siel]**, **Illusion [Kaisinel]**… They come from the Pantheon —the statues you place there raise these values— and they also roll as engravings on the bracelet and on arcana cards. Each one raises **two things**, and the second is the one almost nobody knows:",
+          },
+        },
+        {
+          t: "tabla",
+          cabeceras: [
+            { es: "Atributo", en: "Attribute" },
+            { es: "Qué sube", en: "What it raises" },
+            { es: "Brazalete · PvE", en: "Bracelet · PvE" },
+            { es: "PvP", en: "PvP" },
+          ],
+          filas: [
+            [{ es: "**Tiempo [Siel]** · 시간[시엘]", en: "**Time [Siel]** · 시간[시엘]" }, { es: "**Velocidad de combate** · resistencia al golpe fuerte", en: "**Combat speed** · heavy strike resist" }, { es: "**100%**", en: "**100%**" }, { es: "**100%**", en: "**100%**" }],
+            [{ es: "**Destrucción [Zikel]** · 파괴[지켈]", en: "**Destruction [Zikel]** · 파괴[지켈]" }, { es: "**Ataque** · resistencia a la perfección", en: "**Attack** · perfection resist" }, { es: "**100%**", en: "**100%**" }, { es: "99,6%", en: "99.6%" }],
+            [{ es: "**Ilusión [Kaisinel]** · 환상[카이시넬]", en: "**Illusion [Kaisinel]** · 환상[카이시넬]" }, { es: "**Reducción del tiempo de recarga** · penetración", en: "**Cooldown reduction** · penetration" }, { es: "98,9%", en: "98.9%" }, { es: "98,5%", en: "98.5%" }],
+            [{ es: "**Sabiduría [Lumiel]** · 지혜[루미엘]", en: "**Wisdom [Lumiel]** · 지혜[루미엘]" }, { es: "Menos espíritu consumido · **probabilidad de golpe fuerte**", en: "Less MP consumed · **heavy strike chance**" }, { es: "98,6%", en: "98.6%" }, { es: "91,3%", en: "91.3%" }],
+            [{ es: "**Justicia [Nezekan]** · 정의[네자칸]", en: "**Justice [Nezekan]** · 정의[네자칸]" }, { es: "Defensa · probabilidad de perfección", en: "Defence · perfection chance" }, { es: "85,2%", en: "85.2%" }, { es: "66,0%", en: "66.0%" }],
+            [{ es: "**Libertad [Vaizel]** · 자유[바이젤]", en: "**Freedom [Vaizel]** · 자유[바이젤]" }, { es: "Puntería · evasión", en: "Hit · evasion" }, { es: "68,9%", en: "68.9%" }, { es: "**89,7%**", en: "**89.7%**" }],
+            [{ es: "Muerte [Triniel] · 죽음[트리니엘]", en: "Death [Triniel] · 죽음[트리니엘]" }, { es: "Crítico · penetración de regeneración", en: "Critical · regeneration penetration" }, { es: "45,4%", en: "45.4%" }, { es: "34,4%", en: "34.4%" }],
+            [{ es: "Espacio [Israphel] · 공간[이스라펠]", en: "Space [Israphel] · 공간[이스라펠]" }, { es: "Velocidad de movimiento · probabilidad de bloqueo", en: "Movement speed · block chance" }, { es: "15,9%", en: "15.9%" }, { es: "—", en: "—" }],
+            [{ es: "Vida [Yustiel] · 생명[유스티엘]", en: "Life [Yustiel] · 생명[유스티엘]" }, { es: "Vida · probabilidad de regeneración", en: "HP · regeneration chance" }, { es: "—", en: "—" }, { es: "24,1%", en: "24.1%" }],
+            [{ es: "Destino [Marchutan] · 운명[마르쿠탄]", en: "Destiny [Marchutan] · 운명[마르쿠탄]" }, { es: "Espíritu · probabilidad de muro de hierro", en: "MP · iron wall chance" }, { es: "—", en: "—" }, { es: "—", en: "—" }],
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**Los ideales para el Gladiator son cuatro: Tiempo, Destrucción, Ilusión y Sabiduría.** Todos pasan del 98% y no se discuten. **Y ojo con Sabiduría, que casi todo el mundo lee como «la del espíritu»:** su segundo efecto es probabilidad de golpe fuerte, y el golpe fuerte es el stat más eficiente del juego. Por eso está al 98,6% y no al 40%.",
+              en: "**There are four ideal ones for the Gladiator: Time, Destruction, Illusion and Wisdom.** All clear 98% and are not up for debate. **And watch Wisdom, which nearly everyone reads as «the MP one»:** its second effect is heavy strike chance, and heavy strike is the most efficient stat in the game. That is why it sits at 98.6% and not at 40%.",
+            },
+            {
+              es: "**El quinto es el que cambia con el modo.** En PvE va Justicia (85,2%), que da defensa y probabilidad de perfección; en PvP se cae al 66% y lo adelanta Libertad (89,7%), que da puntería y evasión — exactamente lo que decide una pelea contra otro jugador. Espacio y Destino no los toca casi ningún Gladiator: bloqueo, espíritu y muro de hierro son cosas de tanque.",
+              en: "**The fifth is the one that swaps with the mode.** In PvE it is Justice (85.2%), which gives defence and perfection chance; in PvP it drops to 66% and Freedom overtakes it (89.7%), giving hit and evasion — exactly what decides a fight against another player. Space and Destiny are barely touched by any Gladiator: block, MP and iron wall are tank things.",
+            },
+          ],
+        },
+        { t: "subtitulo", texto: { es: "Y qué hace cada stat de daño", en: "And what each damage stat does" } },
+        {
+          t: "parrafo",
+          texto: {
+            es: "Esto el juego no lo explica en ninguna parte. Sale de una tanda de experimentos de la comunidad —jugadores taiwaneses y coreanos golpeando muñecos y comparando registros de combate reales— y es lo que de verdad decide dónde metes cada punto:",
+            en: "The game explains none of this anywhere. It comes from a run of community experiments —Taiwanese and Korean players hitting dummies and comparing real combat logs— and it is what actually decides where each point goes:",
+          },
+        },
+        {
+          t: "tabla",
+          cabeceras: [{ es: "Stat", en: "Stat" }, { es: "Qué hace de verdad", en: "What it actually does" }],
+          filas: [
+            [
+              { es: "**Ataque** · 공격력", en: "**Attack** · 공격력" },
+              { es: "El daño de una skill es **ataque × su coeficiente + un valor fijo**. Sube el ataque y sube todo, en línea recta. Es la base sobre la que multiplica el resto", en: "A skill's damage is **attack × its coefficient + a flat value**. Raise attack and everything rises, in a straight line. It is the base everything else multiplies" },
+            ],
+            [
+              { es: "**Golpe fuerte** · 강타", en: "**Heavy strike** · 강타" },
+              { es: "Al activarse sale **DOUBLE** en pantalla y el daño **se duplica**. Es el stat más eficiente que hay: **1% de golpe fuerte = 1% de DPS**", en: "When it procs, **DOUBLE** flashes on screen and the damage **doubles**. It is the most efficient stat there is: **1% heavy strike = 1% DPS**" },
+            ],
+            [
+              { es: "**Amplificación de daño** · 피해 증폭", en: "**Damage amplification** · 피해 증폭" },
+              { es: "La general, la de PvE, la de jefes y la de raza **se suman entre sí**. Como se suman, da igual a cuál le metas el punto — por eso gana la de aplicación más ancha: general antes que PvE, y PvE antes que jefes", en: "The general one, the PvE one, the boss one and the race one **add together**. Since they add, it does not matter which you feed — so the widest-applying one wins: general before PvE, and PvE before boss" },
+            ],
+            [
+              { es: "**Amplificación de daño posicional** · 전방 · 후방", en: "**Positional damage amplification** · 전방 · 후방" },
+              { es: "Esta va **aparte y multiplicando**. Midiendo la de espalda, un 3,1% dio exactamente un 3,1% más de daño encima de todo lo demás", en: "This one goes **separately and multiplies**. Measuring the rear one, 3.1% gave exactly 3.1% more damage on top of everything else" },
+            ],
+            [
+              { es: "**Crítico** · 치명타", en: "**Critical** · 치명타" },
+              { es: "Un crítico hace el **150%** del daño, y la **amplificación de daño crítico se suma a ese 150%** (con un 10% pasa a 160%). El juego dice que la probabilidad tiene tope del 50%, pero en el muñeco con 1.048 · 1.220 · 1.326 de crítico salieron **56% · 80% · 90%**. Contra un jefe baja por su resistencia crítica, y en PvP mucho más", en: "A crit deals **150%** damage, and **critical damage amplification adds onto that 150%** (with 10% it becomes 160%). The game says the chance caps at 50%, but on the dummy with 1,048 · 1,220 · 1,326 crit the results were **56% · 80% · 90%**. Against a boss it drops from its crit resistance, and in PvP far more" },
+            ],
+            [
+              { es: "**Perfección** · 완벽", en: "**Perfection** · 완벽" },
+              { es: "El arma tiene un ataque mínimo y uno máximo y cada golpe coge uno al azar; la perfección **fuerza el máximo**. Suena bien y rinde poco: con un arma de 586-714 son **+0,099% de DPS por cada 1%**, y con 1.500-1.700 de ataque total baja a **0,063%**. Cuanto mejor vas, menos vale", en: "The weapon has a minimum and a maximum attack and each hit rolls between them; perfection **forces the maximum**. It sounds great and pays little: on a 586-714 weapon that is **+0.099% DPS per 1%**, and at 1,500-1,700 total attack it drops to **0.063%**. The better you get, the less it is worth" },
+            ],
+            [
+              { es: "**Golpes múltiples** · 다단 히트", en: "**Multi-hit** · 다단 히트" },
+              { es: "Al activarse salen **hasta cuatro golpes extra**. El daño que añaden no es fijo: en el muñeco midieron un **2%** y contra un jefe real un **14-16%** — o sea que **el muñeco no sirve para medirlo**. Contando un 15%, cada 1% de acierto son unos +0,15% de DPS", en: "When it procs you get **up to four extra hits**. The damage they add is not fixed: on the dummy it measured **2%** and against a real boss **14-16%** — which means **the dummy cannot measure it**. Assuming 15%, each 1% of accuracy is about +0.15% DPS" },
+            ],
+            [
+              { es: "**Penetración** · 관통", en: "**Penetration** · 관통" },
+              { es: "No depende del ataque. Añade daño fijo igual a **la penetración entre diez**, y a eso sí se le aplican el crítico y las amplificaciones. **Solo se activa una vez por skill** aunque la skill pegue muchas veces — así que rinde más cuantas más skills de recarga corta uses", en: "It does not scale with attack. It adds flat damage equal to **penetration divided by ten**, and crit and amplifications do apply to that. **It procs only once per skill** even if the skill hits many times — so it pays more the more short-cooldown skills you use" },
+            ],
+            [
+              { es: "**Daño en el tiempo** · 지속 피해", en: "**Damage over time** · 지속 피해" },
+              { es: "**Ignora la defensa**, pero no recibe nada de lo de arriba: ni crítico, ni perfección, ni golpe fuerte, ni golpes múltiples, ni daño posicional", en: "**It ignores defence**, but it receives none of the above: no crit, no perfection, no heavy strike, no multi-hit, no positional damage" },
+            ],
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**La trampa del golpe fuerte.** Sobre el papel es el stat más eficiente, pero **los jefes tienen resistencia al golpe fuerte**, y contra uno que la tenga alta no rinde poco: rinde cero. En enero se midió un 30-33% en el jefe final de una expedición nueva y la comunidad se pasó en bloque a la amplificación de daño. Rehacer un montaje de golpe fuerte cuesta una fortuna, así que si ya lo tienes, úsalo — pero al elegir entre dos opciones nuevas, la amplificación siempre suma y el golpe fuerte a veces no.",
+              en: "**The heavy strike trap.** On paper it is the most efficient stat, but **bosses have heavy strike resistance**, and against one with a lot of it the stat does not pay little: it pays zero. In January a new expedition's final boss measured 30-33% and the community moved to damage amplification en masse. Rebuilding a heavy strike setup costs a fortune, so if you already have one, run it — but when choosing between two new options, amplification always adds and heavy strike sometimes does not.",
+            },
+            {
+              es: "**Y para quien quiera la fórmula entera:** daño = { (ataque × coeficiente de la skill + valor fijo) − (defensa × su modificador − penetración) ÷ 10 } × las amplificaciones que multiplican. Todo lo de la tabla de arriba sale de ahí.",
+              en: "**And for anyone who wants the whole formula:** damage = { (attack × the skill's coefficient + flat value) − (defence × its modifier − penetration) ÷ 10 } × the amplifications that multiply. Everything in the table above comes from that.",
+            },
+          ],
         },
       ],
     },
@@ -1164,6 +1283,10 @@ export const gladiator: Guia = {
     {
       es: "**La macro y los golpes por minuto** salen del tablón coreano de la clase: la guía de configuración del 30 de agosto —la que tiene 346 respuestas—, su versión para la macro del propio juego, y la prueba de otro jugador que contó los golpes de un minuto a diez velocidades de combate distintas, tres pasadas por cada una. Son jugadores, no un laboratorio: los números son suyos y en su ordenador. La macro de ratón es software de terceros y no una función del juego; queda dicho donde aparece.",
       en: "**The macro and the hits per minute** come from the class's Korean board: the setup guide from 30 August —the one with 346 replies—, its in-game macro counterpart, and another player's test counting a minute of hits at ten different combat speeds, three runs each. These are players, not a lab: the numbers are theirs, on their machine. The mouse macro is third-party software and not a game feature; that is stated where it appears.",
+    },
+    {
+      es: "**El diccionario de atributos** sale de dos artículos de la comunidad coreana: el del Panteón, que enumera los diez atributos de dios y sus dos efectos leyéndolos uno a uno en la ventana de personaje (20 de noviembre), y el de mecánicas de daño (24 de diciembre), que recoge y verifica los experimentos de varios jugadores taiwaneses y coreanos sobre crítico, perfección, golpe fuerte, golpes múltiples, penetración y amplificaciones. Lo de la resistencia al golpe fuerte de los jefes es de un tercer artículo, de enero. Son medidas de jugadores, no del desarrollador: la propia fuente avisa de que el tope del 50% de crítico puede seguir existiendo fuera del muñeco.",
+      en: "**The attribute glossary** comes from two Korean community articles: the Pantheon one, which lists the ten god attributes and their two effects by reading each one in the character window (20 November), and the damage mechanics one (24 December), which collects and verifies experiments by several Taiwanese and Korean players on crit, perfection, heavy strike, multi-hit, penetration and amplifications. The boss heavy-strike resistance figure is from a third article, in January. These are player measurements, not the developer's: the source itself warns the 50% crit cap may still apply outside the dummy.",
     },
     {
       es: "**Lo que hay que tener en cuenta.** Es el servidor coreano, con un parche por delante del que llegará al global el 5 de octubre. Las mecánicas serán las mismas; los números y el meta pueden moverse. Y en PvP, más: el propio autor de la guía avisa de que el meta cambia constantemente, así que trátalo como punto de partida y no como ley.",
