@@ -79,8 +79,8 @@ export default async function ManualIndexPage({ params }: { params: Promise<{ cl
               SIN MONTAR
             </div>
             <div className="p-5">
-              <div className="font-title text-xl font-extrabold tracking-wide">Templar</div>
-              <p className="mt-2 text-[15px] leading-relaxed">La siguiente clase. Pendiente de montar.</p>
+              <div className="font-title text-xl font-extrabold tracking-wide">La siguiente clase</div>
+              <p className="mt-2 text-[15px] leading-relaxed">Quedan seis. Aún sin decidir cuál va antes.</p>
             </div>
           </div>
         </div>
