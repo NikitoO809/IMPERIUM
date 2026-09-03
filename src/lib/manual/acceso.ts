@@ -7,15 +7,16 @@
 // cualquiera la leería. Vive en la variable de entorno MANUAL_CLAVE, en
 // .env.local y en Vercel. Si falta, no se abre nada — mejor un manual
 // inaccesible que uno abierto de par en par.
+//
+// Miguel la eligió corta ("privado") a sabiendas: nadie llega por un buscador,
+// pero quien mire la URL puede acertarla. Cambiarla es editar la variable en
+// Vercel y volver a desplegar; el enlace viejo deja de funcionar en el acto.
 import { timingSafeEqual } from "node:crypto";
-
-/** Longitud mínima para que la clave no se pueda adivinar a fuerza bruta. */
-const MINIMO = 16;
 
 /** ¿Es esta la clave del enlace? */
 export function claveValida(clave: string): boolean {
   const buena = process.env.MANUAL_CLAVE;
-  if (!buena || buena.length < MINIMO) return false;
+  if (!buena) return false;
 
   // Se comparan los dos textos en tiempo constante, para que el servidor no
   // tarde más cuanto más se acerque alguien a acertarla.
