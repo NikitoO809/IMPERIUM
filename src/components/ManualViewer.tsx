@@ -12,7 +12,7 @@
 // permisos, solo recibe a dónde vuelve el enlace del índice.
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useSyncExternalStore } from "react";
+import { useRef, useState, useSyncExternalStore } from "react";
 import type { Bloque, Guia, Par, Seccion } from "@/lib/manual/tipos";
 
 type Lang = "es" | "en";
@@ -67,9 +67,21 @@ function ricos(texto: string): React.ReactNode[] {
 export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string }) {
   const lang = useSyncExternalStore(idiomaStore.subscribe, idiomaStore.leer, () => "es" as Lang);
   const [modo, setModo] = useState<Modo>("pve");
+  // Se lee una sección cada vez. Antes iban todas seguidas y la guía del
+  // Gladiator eran once pantallas de rueda de ratón para llegar al final.
+  const [activa, setActiva] = useState(0);
+  const panel = useRef<HTMLDivElement>(null);
 
   const t = (par: Par) => par[lang];
   const acento = guia.acento;
+  const sec = guia.secciones[activa];
+  const esPortada = activa === 0;
+
+  // Al cambiar de sección se vuelve arriba: si no, entras a media página.
+  const irA = (i: number) => {
+    setActiva(i);
+    panel.current?.scrollTo({ top: 0 });
+  };
 
   return (
     <div className="flex h-full flex-col" style={{ ["--acento" as string]: acento }}>
@@ -101,8 +113,9 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
         </div>
       </header>
 
-      <div className="flex-1 overflow-auto">
-        {/* Portada */}
+      <div ref={panel} className="flex flex-1 flex-col scroll-smooth overflow-auto">
+        {/* Portada. Entera solo al entrar; luego se encoge a una banda, que el
+            arte no puede comerse la pantalla en cada sección. */}
         <div
           className="relative overflow-hidden border-b border-white/10"
           style={{ background: `radial-gradient(700px 260px at 8% -30%, ${acento}22, transparent 70%)` }}
@@ -124,42 +137,129 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
               <div className="scanlines pointer-events-none absolute inset-0 opacity-20" />
             </>
           )}
-          <div className="relative mx-auto max-w-4xl px-8 py-10">
+          <div className={`relative mx-auto w-full max-w-[1680px] px-8 ${esPortada ? "py-8" : "py-4"}`}>
             <div className="font-hud text-[10px] tracking-[0.24em]" style={{ color: acento }}>
-              {t(guia.portada.eyebrow).toUpperCase()}
+              {t(esPortada ? guia.portada.eyebrow : sec.eyebrow).toUpperCase()}
             </div>
-            <h2 className="mt-3 font-title text-5xl font-extrabold tracking-tight">{guia.portada.titulo}</h2>
-            <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-white/55">{ricos(t(guia.portada.lede))}</p>
 
-            {guia.portada.cifras && (
-              <div className="mt-8 flex flex-wrap gap-8 border-t border-white/10 pt-6">
-                {guia.portada.cifras.map((c) => (
-                  <div key={c.valor}>
-                    <div className="font-title text-2xl font-extrabold" style={{ color: acento }}>
-                      {c.valor}
-                    </div>
-                    <div className="font-hud text-[9px] tracking-[0.16em] text-white/35">
-                      {t(c.etiqueta).toUpperCase()}
-                    </div>
+            {esPortada ? (
+              <>
+                <h2 className="mt-2 font-title text-5xl font-extrabold tracking-tight">{guia.portada.titulo}</h2>
+                <p className="mt-3 max-w-[70ch] text-[18px] leading-relaxed text-white/70">
+                  {ricos(t(guia.portada.lede))}
+                </p>
+
+                {guia.portada.cifras && (
+                  <div className="mt-6 flex flex-wrap gap-8 border-t border-white/10 pt-5">
+                    {guia.portada.cifras.map((c) => (
+                      <div key={c.valor}>
+                        <div className="font-title text-2xl font-extrabold" style={{ color: acento }}>
+                          {c.valor}
+                        </div>
+                        <div className="font-hud text-[9px] tracking-[0.16em] text-white/35">
+                          {t(c.etiqueta).toUpperCase()}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                )}
+              </>
+            ) : (
+              <h2 className="mt-1 font-title text-3xl font-extrabold tracking-tight">{t(sec.titulo)}</h2>
             )}
           </div>
         </div>
 
-        {/* Secciones */}
-        <div className="mx-auto max-w-4xl px-8 pb-24">
-          {guia.secciones.map((sec, i) => (
-            <SeccionView key={i} sec={sec} lang={lang} modo={modo} setModo={setModo} acento={acento} />
-          ))}
+        {/* Cuerpo: el índice manda a la sección, no salta dentro de un rollo
+            infinito. En pantalla estrecha se convierte en una tira de pestañas. */}
+        <div className="mx-auto flex w-full max-w-[1680px] flex-1 gap-10 px-8 pb-12">
+          <nav
+            className="sticky top-4 hidden w-56 shrink-0 self-start lg:block"
+            aria-label={lang === "es" ? "Secciones de la guía" : "Guide sections"}
+          >
+            <div className="font-hud text-[10px] tracking-[0.24em] text-white/30">
+              {lang === "es" ? "SECCIONES" : "SECTIONS"}
+            </div>
+            <ul className="mt-3 flex flex-col">
+              {guia.secciones.map((s2, i) => (
+                <li key={i}>
+                  <button
+                    type="button"
+                    onClick={() => irA(i)}
+                    aria-current={i === activa ? "true" : undefined}
+                    className={`block w-full border-l-2 py-2 pl-3 text-left text-[14px] leading-snug transition-colors ${
+                      i === activa
+                        ? "border-[var(--acento)] bg-white/[0.04] text-white"
+                        : "border-white/10 text-white/50 hover:border-white/30 hover:text-white/90"
+                    }`}
+                  >
+                    {t(s2.titulo)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-          <div className="mt-12 border-l-2 py-4 pl-5" style={{ borderColor: acento }}>
-            {guia.fuentes.map((f, i) => (
-              <p key={i} className={`text-sm leading-relaxed text-white/50 ${i > 0 ? "mt-3" : ""}`}>
-                {ricos(t(f))}
-              </p>
-            ))}
+          <div className="flex min-w-0 flex-1 flex-col">
+            {/* El mismo índice, en horizontal, cuando no cabe la columna */}
+            <div className="-mx-8 mb-4 flex gap-1 overflow-x-auto px-8 lg:hidden">
+              {guia.secciones.map((s2, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => irA(i)}
+                  aria-current={i === activa ? "true" : undefined}
+                  className={`shrink-0 border px-3 py-1.5 text-[13px] transition-colors ${
+                    i === activa ? "border-[var(--acento)] text-white" : "border-white/10 text-white/50"
+                  }`}
+                >
+                  {t(s2.titulo)}
+                </button>
+              ))}
+            </div>
+
+            <SeccionView
+              sec={sec}
+              conTitulo={esPortada}
+              lang={lang}
+              modo={modo}
+              setModo={setModo}
+              acento={acento}
+            />
+
+            {/* Pasar página */}
+            <div className="mt-auto flex items-center justify-between gap-4 border-t border-white/10 pt-5">
+              <button
+                type="button"
+                onClick={() => irA(activa - 1)}
+                disabled={activa === 0}
+                className="font-hud text-[11px] tracking-[0.16em] text-white/50 transition-colors hover:text-white disabled:invisible"
+              >
+                ← {t(guia.secciones[Math.max(0, activa - 1)].titulo)}
+              </button>
+              <span className="font-mono text-[12px] text-white/25">
+                {activa + 1} / {guia.secciones.length}
+              </span>
+              <button
+                type="button"
+                onClick={() => irA(activa + 1)}
+                disabled={activa === guia.secciones.length - 1}
+                className="text-right font-hud text-[11px] tracking-[0.16em] text-white/50 transition-colors hover:text-white disabled:invisible"
+              >
+                {t(guia.secciones[Math.min(guia.secciones.length - 1, activa + 1)].titulo)} →
+              </button>
+            </div>
+
+            {/* Las fuentes, al final del recorrido */}
+            {activa === guia.secciones.length - 1 && (
+              <div className="mt-8 border-l-2 py-4 pl-5" style={{ borderColor: acento }}>
+                {guia.fuentes.map((f, i) => (
+                  <p key={i} className={`max-w-[80ch] text-[15px] leading-relaxed text-white/60 ${i > 0 ? "mt-3" : ""}`}>
+                    {ricos(t(f))}
+                  </p>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -167,14 +267,47 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
   );
 }
 
+// Los bloques que llevan dentro su propia parrilla (habilidades, tarjetas,
+// rotaciones…) piden la anchura entera; el texto corrido, las tablas y los
+// avisos caben a media.
+function ocupaTodo(b: Bloque): boolean {
+  switch (b.t) {
+    case "skills":
+    case "rotacion":
+    case "pestanas":
+    case "calculadora":
+    case "fuentes":
+      return true;
+    case "tarjetas":
+      return b.columnas !== 2;
+    default:
+      return false;
+  }
+}
+
+/** Los bloques estrechos seguidos van juntos, para repartirlos en columnas. */
+function enTramos(bloques: Bloque[]): { ancho: boolean; items: Bloque[] }[] {
+  const tramos: { ancho: boolean; items: Bloque[] }[] = [];
+  for (const b of bloques) {
+    const ancho = ocupaTodo(b);
+    const ultimo = tramos[tramos.length - 1];
+    if (ultimo && ultimo.ancho === ancho && !ancho) ultimo.items.push(b);
+    else tramos.push({ ancho, items: [b] });
+  }
+  return tramos;
+}
+
 function SeccionView({
   sec,
+  conTitulo,
   lang,
   modo,
   setModo,
   acento,
 }: {
   sec: Seccion;
+  /** La banda de arriba ya lo enseña, salvo en la primera sección. */
+  conTitulo: boolean;
   lang: Lang;
   modo: Modo;
   setModo: (m: Modo) => void;
@@ -184,14 +317,18 @@ function SeccionView({
   const bloques = sec.porModo ? [...sec.bloques, ...sec.porModo[modo]] : sec.bloques;
 
   return (
-    <section className="border-b border-white/[0.06] py-12">
-      <div className="font-hud text-[10px] tracking-[0.24em]" style={{ color: acento }}>
-        {t(sec.eyebrow).toUpperCase()}
-      </div>
-      <h3 className="mt-2 font-title text-2xl font-extrabold tracking-wide">{t(sec.titulo)}</h3>
+    <section className="pb-8 pt-5">
+      {conTitulo && (
+        <>
+          <div className="font-hud text-[10px] tracking-[0.24em]" style={{ color: acento }}>
+            {t(sec.eyebrow).toUpperCase()}
+          </div>
+          <h3 className="mb-3 mt-1.5 font-title text-[26px] font-extrabold tracking-wide">{t(sec.titulo)}</h3>
+        </>
+      )}
 
       {sec.intro?.map((p, i) => (
-        <p key={i} className="mt-4 max-w-2xl leading-relaxed text-white/55">
+        <p key={i} className={`max-w-[80ch] text-[17px] leading-relaxed text-white/70 ${i > 0 ? "mt-3" : ""}`}>
           {ricos(t(p))}
         </p>
       ))}
@@ -215,10 +352,22 @@ function SeccionView({
         </div>
       )}
 
-      <div className="mt-6 flex flex-col gap-5">
-        {bloques.map((b, i) => (
-          <BloqueView key={i} b={b} lang={lang} acento={acento} modo={modo} />
-        ))}
+      <div className="mt-5 flex flex-col gap-5">
+        {enTramos(bloques).map((tramo, i) =>
+          tramo.ancho ? (
+            <BloqueView key={i} b={tramo.items[0]} lang={lang} acento={acento} modo={modo} />
+          ) : (
+            // Dos columnas que se llenan por altura: sin huecos muertos al lado
+            // de una tabla larga.
+            <div key={i} className="xl:columns-2 xl:gap-5">
+              {tramo.items.map((b, j) => (
+                <div key={j} className="mb-5 break-inside-avoid last:mb-0 xl:mb-5">
+                  <BloqueView b={b} lang={lang} acento={acento} modo={modo} />
+                </div>
+              ))}
+            </div>
+          )
+        )}
       </div>
     </section>
   );
@@ -230,10 +379,10 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
 
   switch (b.t) {
     case "parrafo":
-      return <p className="max-w-2xl leading-relaxed text-white/55">{ricos(t(b.texto))}</p>;
+      return <p className="max-w-[80ch] text-[17px] leading-relaxed text-white/70">{ricos(t(b.texto))}</p>;
 
     case "subtitulo":
-      return <h4 className="mt-4 font-title text-xl font-bold tracking-wide">{t(b.texto)}</h4>;
+      return <h4 className="font-title text-[22px] font-bold tracking-wide">{t(b.texto)}</h4>;
 
     case "stats":
       return (
@@ -241,13 +390,13 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
           {b.filas.map((f, i) => (
             <div key={i} className="grid grid-cols-[1fr_110px_64px] items-center gap-4 border-b border-white/[0.06] py-3">
               <div>
-                <div className="text-[15px]">{t(f.nombre)}</div>
-                <div className="mt-0.5 text-xs text-white/35">{t(f.nota)}</div>
+                <div className="text-[16px]">{t(f.nombre)}</div>
+                <div className="mt-0.5 text-[13px] text-white/45">{t(f.nota)}</div>
               </div>
               <div className="h-1.5 bg-white/10">
                 <div className="h-full" style={{ width: `${f.pct}%`, background: f.top ? acento : "#7fa8c9" }} />
               </div>
-              <div className="text-right font-mono text-sm tabular-nums" style={{ color: f.top ? acento : undefined }}>
+              <div className="text-right font-mono text-[15px] tabular-nums" style={{ color: f.top ? acento : undefined }}>
                 {lang === "es" ? f.pct.toString().replace(".", ",") : f.pct}%
               </div>
             </div>
@@ -258,13 +407,13 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
     case "tabla":
       return (
         <div className="overflow-x-auto border border-white/10 bg-black/20">
-          <table className="w-full min-w-[520px] text-sm">
+          <table className="w-full min-w-[420px] text-[15px]">
             <thead>
               <tr className="bg-white/[0.04]">
                 {b.cabeceras.map((c, i) => (
                   <th
                     key={i}
-                    className={`px-4 py-2.5 font-hud text-[10px] tracking-[0.12em] text-white/40 ${
+                    className={`px-4 py-2.5 font-hud text-[11px] tracking-[0.12em] text-white/50 ${
                       i === 0 && b.primeraNum ? "w-16 text-right" : "text-left"
                     }`}
                   >
@@ -279,7 +428,7 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                   {fila.map((celda, j) => (
                     <td
                       key={j}
-                      className={`px-4 py-2.5 align-top text-white/70 ${
+                      className={`px-4 py-2.5 align-top text-white/80 ${
                         j === 0 && b.primeraNum ? "text-right font-mono tabular-nums text-white/40" : ""
                       }`}
                     >
@@ -301,8 +450,8 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
               <div className="font-mono text-2xl" style={{ color: "#7fa8c9" }}>
                 {f.valor}
               </div>
-              <div className="mt-2 font-title text-base font-bold">{t(f.titulo)}</div>
-              <p className="mt-1.5 text-sm leading-relaxed text-white/45">{ricos(t(f.texto))}</p>
+              <div className="mt-2 font-title text-[17px] font-bold">{t(f.titulo)}</div>
+              <p className="mt-1.5 text-[15px] leading-relaxed text-white/60">{ricos(t(f.texto))}</p>
             </div>
           ))}
         </div>
@@ -314,15 +463,15 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
           {b.items.map((c, i) => (
             <div key={i} className="border border-white/10 bg-[#12121a] p-5">
               <div className="font-title text-lg font-bold">{t(c.titulo)}</div>
-              {c.sub && <div className="mt-0.5 text-xs text-white/35">{t(c.sub)}</div>}
+              {c.sub && <div className="mt-0.5 text-[13px] text-white/45">{t(c.sub)}</div>}
               {c.ordenada ? (
-                <ol className="mt-4 flex list-decimal flex-col gap-2 pl-5 text-sm text-white/70 marker:text-white/30">
+                <ol className="mt-3 flex list-decimal flex-col gap-2 pl-5 text-[15px] text-white/75 marker:text-white/30">
                   {c.puntos.map((p, j) => (
                     <li key={j}>{ricos(t(p))}</li>
                   ))}
                 </ol>
               ) : (
-                <ul className="mt-4 flex flex-col gap-2 text-sm text-white/70">
+                <ul className="mt-3 flex flex-col gap-2 text-[15px] text-white/75">
                   {c.puntos.map((p, j) => (
                     <li key={j} className="relative pl-4">
                       <span className="absolute left-0 top-[7px] h-1.5 w-1.5 rotate-45" style={{ background: acento }} />
@@ -331,7 +480,7 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                   ))}
                 </ul>
               )}
-              {c.nota && <p className="mt-4 border-t border-white/[0.06] pt-3 text-xs text-white/40">{t(c.nota)}</p>}
+              {c.nota && <p className="mt-3 border-t border-white/[0.06] pt-3 text-[13px] text-white/50">{t(c.nota)}</p>}
             </div>
           ))}
         </div>
@@ -339,9 +488,9 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
 
     case "skills":
       return (
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {b.items.map((s, i) => (
-            <div key={i} className="border-l-2 bg-[#12121a] p-5" style={{ borderColor: colorModo }}>
+            <div key={i} className="border-l-2 bg-[#12121a] p-4" style={{ borderColor: colorModo }}>
               <span className="inline-block bg-white/[0.06] px-2 py-0.5 font-mono text-[11px]" style={{ color: colorModo }}>
                 {t(s.orden)}
               </span>
@@ -361,7 +510,7 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                   <div className="mt-0.5 font-mono text-xs text-white/30">{s.ko}</div>
                 </div>
               </div>
-              <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-sm text-white/55 marker:text-white/25">
+              <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-[15px] text-white/70 marker:text-white/25">
                 {s.puntos.map((p, j) => (
                   <li key={j}>{ricos(t(p))}</li>
                 ))}
@@ -375,8 +524,8 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
       return (
         <div className="border border-white/10 bg-[#12121a] p-6">
           <div className="font-title text-lg font-bold">{t(b.titulo)}</div>
-          <div className="mt-0.5 text-xs text-white/35">{t(b.cuando)}</div>
-          <div className="mt-5 flex flex-wrap items-stretch gap-2">
+          <div className="mt-0.5 text-[14px] text-white/45">{t(b.cuando)}</div>
+          <div className="mt-4 flex flex-wrap items-stretch gap-2">
             {b.pasos.map((p, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div
@@ -398,9 +547,9 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
                       className="h-7 w-7 shrink-0 border border-white/10 bg-black/40 object-contain"
                     />
                   )}
-                  <span className="text-[15px]">
+                  <span className="text-[16px]">
                     {t(p.texto)}
-                    {p.nota && <em className="mt-0.5 block text-[11px] not-italic text-white/35">{t(p.nota)}</em>}
+                    {p.nota && <em className="mt-0.5 block text-[12px] not-italic text-white/45">{t(p.nota)}</em>}
                   </span>
                 </div>
                 {i < b.pasos.length - 1 && <span className="text-white/25">→</span>}
@@ -414,7 +563,7 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
       return (
         <div className="border-l-2 py-4 pl-5" style={{ borderColor: acento, background: `${acento}0d` }}>
           {b.parrafos.map((p, i) => (
-            <p key={i} className={`max-w-2xl text-sm leading-relaxed text-white/55 ${i > 0 ? "mt-2.5" : ""}`}>
+            <p key={i} className={`max-w-[80ch] text-[16px] leading-relaxed text-white/75 ${i > 0 ? "mt-2.5" : ""}`}>
               {ricos(t(p))}
             </p>
           ))}
@@ -452,7 +601,7 @@ function Pestanas({
             onClick={() => setActiva(i)}
             aria-selected={activa === i}
             role="tab"
-            className={`-mb-px border-b-2 px-4 py-2.5 text-sm transition-colors ${
+            className={`-mb-px border-b-2 px-4 py-2.5 text-[15px] transition-colors ${
               activa === i ? "text-white" : "border-transparent text-white/40 hover:text-white/80"
             }`}
             style={activa === i ? { borderColor: acento } : undefined}
@@ -461,10 +610,20 @@ function Pestanas({
           </button>
         ))}
       </div>
-      <div className="mt-6 flex flex-col gap-5">
-        {items[activa].bloques.map((b, i) => (
-          <BloqueView key={i} b={b} lang={lang} acento={acento} modo={modo} />
-        ))}
+      <div className="mt-5 flex flex-col gap-5">
+        {enTramos(items[activa].bloques).map((tramo, i) =>
+          tramo.ancho ? (
+            <BloqueView key={i} b={tramo.items[0]} lang={lang} acento={acento} modo={modo} />
+          ) : (
+            <div key={i} className="xl:columns-2 xl:gap-5">
+              {tramo.items.map((b, j) => (
+                <div key={j} className="mb-5 break-inside-avoid last:mb-0 xl:mb-5">
+                  <BloqueView b={b} lang={lang} acento={acento} modo={modo} />
+                </div>
+              ))}
+            </div>
+          )
+        )}
       </div>
     </div>
   );

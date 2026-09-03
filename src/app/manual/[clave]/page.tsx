@@ -35,8 +35,8 @@ export default async function ManualIndexPage({ params }: { params: Promise<{ cl
         </div>
       </header>
 
-      <div className="flex-1 overflow-auto px-8 py-6">
-        <p className="mb-6 max-w-2xl text-sm text-white/40">
+      <div className="mx-auto w-full max-w-[1680px] flex-1 overflow-auto px-8 py-6">
+        <p className="mb-6 max-w-[80ch] text-[15px] leading-relaxed text-white/55">
           Guías de Aion 2 con datos del servidor coreano. No están enlazadas desde ningún sitio ni
           salen en buscadores: se entra solo con este enlace, así que cuida a quién se lo pasas.
         </p>
@@ -50,7 +50,7 @@ export default async function ManualIndexPage({ params }: { params: Promise<{ cl
               style={{ borderLeftWidth: 3, borderLeftColor: g.acento }}
             >
               {g.portada.arte && (
-                <div className="relative h-32 overflow-hidden">
+                <div className="relative h-44 overflow-hidden">
                   <Image
                     src={g.portada.arte}
                     alt=""
@@ -64,8 +64,8 @@ export default async function ManualIndexPage({ params }: { params: Promise<{ cl
                 </div>
               )}
               <div className="p-5">
-                <div className="font-title text-lg font-extrabold tracking-wide">{g.nombre}</div>
-                <p className="mt-2 text-sm leading-relaxed text-white/45">{g.resumen.es}</p>
+                <div className="font-title text-xl font-extrabold tracking-wide">{g.nombre}</div>
+                <p className="mt-2 text-[15px] leading-relaxed text-white/55">{g.resumen.es}</p>
                 <div className="mt-4 font-hud text-[10px] tracking-[0.18em] text-white/30 group-hover:text-white/60">
                   ABRIR →
                 </div>
@@ -75,12 +75,12 @@ export default async function ManualIndexPage({ params }: { params: Promise<{ cl
 
           {/* Hueco de lo que viene */}
           <div className="border border-dashed border-white/10 text-white/25">
-            <div className="flex h-32 items-center justify-center border-b border-dashed border-white/10 font-hud text-[10px] tracking-[0.2em]">
+            <div className="flex h-44 items-center justify-center border-b border-dashed border-white/10 font-hud text-[10px] tracking-[0.2em]">
               SIN MONTAR
             </div>
             <div className="p-5">
-              <div className="font-title text-lg font-extrabold tracking-wide">Templar</div>
-              <p className="mt-2 text-sm leading-relaxed">La siguiente clase. Pendiente de montar.</p>
+              <div className="font-title text-xl font-extrabold tracking-wide">Templar</div>
+              <p className="mt-2 text-[15px] leading-relaxed">La siguiente clase. Pendiente de montar.</p>
             </div>
           </div>
         </div>
