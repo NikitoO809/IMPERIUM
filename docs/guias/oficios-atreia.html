@@ -1,0 +1,586 @@
+<title>Oficios de Atreia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+  :root{
+    /* Atreia de noche: es el tema por defecto, el juego se juega a oscuras */
+    --ground:#0b1020;
+    --surface:#141b2f;
+    --surface-2:#1b2440;
+    --line:#28324f;
+    --line-soft:#1f293f;
+    --ink:#eaf0fb;
+    --ink-dim:#8d99b8;
+    --ether:#7ad7f0;      /* el éter: el recurso que cruza los cinco oficios */
+    --forge:#e8b04b;      /* el oricalco, el metal */
+    --bad:#e8736b;
+    --good:#6fd39b;
+    --shadow:0 18px 48px -24px rgba(0,0,0,.85);
+    --maxw:1080px;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --ground:#f4f6fb;
+      --surface:#ffffff;
+      --surface-2:#eef2f9;
+      --line:#d2dae8;
+      --line-soft:#e3e9f3;
+      --ink:#141b2f;
+      --ink-dim:#5b6784;
+      --ether:#1e7fa0;
+      --forge:#9a6b12;
+      --bad:#b23a30;
+      --good:#1d7a4e;
+      --shadow:0 18px 40px -28px rgba(20,27,47,.45);
+    }
+  }
+  :root[data-theme="light"]{
+    --ground:#f4f6fb; --surface:#ffffff; --surface-2:#eef2f9;
+    --line:#d2dae8; --line-soft:#e3e9f3;
+    --ink:#141b2f; --ink-dim:#5b6784;
+    --ether:#1e7fa0; --forge:#9a6b12;
+    --bad:#b23a30; --good:#1d7a4e;
+    --shadow:0 18px 40px -28px rgba(20,27,47,.45);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--ground);color:var(--ink);
+    font-family:'Karla',system-ui,-apple-system,sans-serif;
+    font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:'Marcellus',Georgia,serif;font-weight:400;text-wrap:balance;margin:0}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .eyebrow{
+    font-size:12px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--ether);font-weight:700;
+  }
+
+  /* ── Cabecera ───────────────────────────────────────── */
+  header{
+    border-bottom:1px solid var(--line);
+    background:
+      radial-gradient(900px 320px at 12% -30%, color-mix(in srgb, var(--ether) 16%, transparent), transparent 70%),
+      radial-gradient(700px 280px at 92% -10%, color-mix(in srgb, var(--forge) 12%, transparent), transparent 70%);
+    padding:56px 0 0;
+  }
+  header h1{font-size:clamp(38px,6vw,60px);line-height:1.05;margin:14px 0 0}
+  header p.lede{font-size:19px;color:var(--ink-dim);max-width:62ch;margin:16px 0 0}
+  header p.lede b{color:var(--ink);font-weight:500}
+
+  /* Raíl de progresión: la espina dorsal del sistema */
+  .rail{display:flex;align-items:stretch;gap:0;margin:40px 0 0;flex-wrap:wrap}
+  .rail-step{
+    flex:1 1 190px;padding:18px 20px 20px;
+    border-top:2px solid var(--line);position:relative;
+  }
+  .rail-step.ini{border-top-color:var(--ether)}
+  .rail-step.asc{border-top-color:var(--forge)}
+  .rail-step.pro{border-top-color:var(--ether)}
+  .rail-step .n{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim)}
+  .rail-step .v{font-family:'JetBrains Mono',monospace;font-size:26px;margin-top:6px;display:block}
+  .rail-step.ini .v,.rail-step.pro .v{color:var(--ether)}
+  .rail-step.asc .v{color:var(--forge);font-size:19px;line-height:1.35}
+  .rail-step small{display:block;color:var(--ink-dim);font-size:14px;margin-top:6px;line-height:1.4}
+
+  /* ── Secciones ──────────────────────────────────────── */
+  section{padding:64px 0;border-bottom:1px solid var(--line-soft)}
+  section > .wrap > .eyebrow{display:block;margin-bottom:10px}
+  section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:8px}
+  section .intro{color:var(--ink-dim);max-width:64ch;margin:0 0 32px}
+
+  /* ── Oficios ────────────────────────────────────────── */
+  .tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:0;border-bottom:1px solid var(--line)}
+  .tab{
+    appearance:none;background:none;border:0;border-bottom:2px solid transparent;
+    color:var(--ink-dim);font-family:'Karla',sans-serif;font-size:15px;font-weight:500;
+    padding:11px 16px;cursor:pointer;margin-bottom:-1px;
+  }
+  .tab:hover{color:var(--ink)}
+  .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--forge)}
+  .tab:focus-visible{outline:2px solid var(--ether);outline-offset:-2px;border-radius:3px}
+  .panel{padding:28px 0 0;display:grid;grid-template-columns:1.15fr .85fr;gap:36px}
+  .panel[hidden]{display:none}
+  .panel h3{font-size:23px;margin-bottom:6px}
+  .panel .role{font-size:14px;color:var(--forge);letter-spacing:.05em;margin-bottom:14px}
+  .panel p{margin:0 0 14px;color:var(--ink-dim)}
+  .panel p b{color:var(--ink);font-weight:500}
+  .facts{border-top:1px solid var(--line);margin-top:4px}
+  .fact{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--line-soft);font-size:15px}
+  .fact dt{color:var(--ink-dim)}
+  .fact dd{margin:0;text-align:right;font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}
+
+  /* ── Calculadora ────────────────────────────────────── */
+  .calc{
+    background:var(--surface);border:1px solid var(--line);
+    box-shadow:var(--shadow);padding:32px;
+    display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;
+  }
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:7px}
+  .row{display:flex;gap:10px}
+  select,input[type="number"]{
+    width:100%;background:var(--surface-2);color:var(--ink);
+    border:1px solid var(--line);padding:10px 12px;font-size:16px;
+    font-family:'Karla',sans-serif;border-radius:2px;
+  }
+  input[type="number"]{font-family:'JetBrains Mono',monospace}
+  select:focus,input:focus{outline:2px solid var(--ether);outline-offset:1px}
+  input[type="range"]{width:100%;accent-color:var(--ether)}
+  .hint{font-size:13px;color:var(--ink-dim);margin-top:7px;line-height:1.45}
+
+  .result{background:var(--surface-2);border-left:3px solid var(--forge);padding:26px 28px}
+  .result .big{
+    font-family:'JetBrains Mono',monospace;font-size:56px;line-height:1;
+    color:var(--forge);font-variant-numeric:tabular-nums;
+  }
+  .result .big.warn{color:var(--bad)}
+  .result .big-label{font-size:15px;color:var(--ink-dim);margin-top:8px}
+  .result dl{margin:24px 0 0;border-top:1px solid var(--line)}
+  .bar{height:7px;background:var(--line);margin-top:22px;overflow:hidden}
+  .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--ether),var(--forge));width:0;transition:width .35s ease}
+  @media (prefers-reduced-motion:reduce){.bar span{transition:none}}
+
+  /* ── Reglas de experiencia ──────────────────────────── */
+  .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .rule{background:var(--surface);padding:26px 24px}
+  .rule .pct{font-family:'JetBrains Mono',monospace;font-size:38px;line-height:1;margin-bottom:12px}
+  .rule.up .pct{color:var(--good)}
+  .rule.keep .pct{color:var(--ether)}
+  .rule.down .pct{color:var(--bad)}
+  .rule h3{font-size:18px;margin-bottom:8px}
+  .rule p{margin:0;font-size:15px;color:var(--ink-dim)}
+
+  /* ── Comparador lote ────────────────────────────────── */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+  .cmp{background:var(--surface);border:1px solid var(--line);padding:24px}
+  .cmp .way{font-size:15px;color:var(--ink-dim);margin-bottom:16px}
+  .cmp .val{font-family:'JetBrains Mono',monospace;font-size:34px;line-height:1}
+  .cmp.good .val{color:var(--good)}
+  .cmp.bad .val{color:var(--bad)}
+  .cmp .of{font-size:14px;color:var(--ink-dim);margin-top:6px}
+  .cmp .track{height:10px;background:var(--line);margin-top:18px}
+  .cmp .track span{display:block;height:100%}
+  .cmp.good .track span{background:var(--good)}
+  .cmp.bad .track span{background:var(--bad)}
+
+  /* ── Tabla ──────────────────────────────────────────── */
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:460px;font-size:15px}
+  th,td{padding:11px 18px;text-align:right;border-bottom:1px solid var(--line-soft)}
+  th:first-child,td:first-child{text-align:left}
+  thead th{
+    font-family:'Karla',sans-serif;font-weight:700;font-size:12px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);
+    background:var(--surface-2);position:sticky;top:0;
+  }
+  tbody td{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr.milestone td{color:var(--forge)}
+
+  /* ── Aviso y pie ────────────────────────────────────── */
+  .notice{
+    border-left:3px solid var(--ether);background:color-mix(in srgb, var(--ether) 8%, transparent);
+    padding:20px 24px;margin-top:8px;
+  }
+  .notice p{margin:0;color:var(--ink-dim);font-size:15px}
+  .notice p + p{margin-top:10px}
+  .notice b{color:var(--ink);font-weight:500}
+  footer{padding:44px 0 64px;color:var(--ink-dim);font-size:14px}
+  footer .brand{font-family:'Marcellus',serif;font-size:17px;color:var(--ink);letter-spacing:.16em}
+
+  @media (max-width:860px){
+    .panel,.calc,.compare{grid-template-columns:1fr}
+    .rules{grid-template-columns:1fr}
+    .result .big{font-size:46px}
+  }
+</style>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Aion 2 · Maestría</span>
+    <h1>Oficios de Atreia</h1>
+    <p class="lede">Cómo se sube de verdad un oficio: los dos rangos, la misión que te resetea la cuenta a cero, y <b>cuántos crafteos exactos</b> te separan de donde quieres llegar.</p>
+
+    <div class="rail">
+      <div class="rail-step ini">
+        <span class="n">Primer rango</span>
+        <span class="v">Iniciación 1 → 50</span>
+        <small>El aprendizaje. Barato, rápido y con recetas de andar por casa.</small>
+      </div>
+      <div class="rail-step asc">
+        <span class="n">Entre medias</span>
+        <span class="v">Misión de ascenso</span>
+        <small>Aparece sola al tocar el 50. Al superarla, el contador vuelve a 1.</small>
+      </div>
+      <div class="rail-step pro">
+        <span class="n">Segundo rango</span>
+        <span class="v">Profesional 1 → 70</span>
+        <small>Aquí está todo lo que importa. El tope subió de 50 a 70 en un parche.</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Los seis caminos</span>
+    <h2>Qué oficios hay</h2>
+    <p class="intro">Cinco de fabricación y uno de recolección, con <b>820 recetas</b> repartidas entre ellos. Un mismo personaje puede subirlos todos: no hay que elegir uno y renunciar al resto.</p>
+
+    <div class="notice" style="margin:-8px 0 30px">
+      <p><b>La maestría no es del oficio: es de cada tipo de pieza.</b> Dentro de Herrería llevas por separado la maestría de espadón, la de espada larga, la de arco… Subir una no sube las otras, y cada receta te pide la suya. Es la trampa que hace pensar que vas más adelantado de lo que estás.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-panel="p-ext">Extracción de esencia</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="p-her">Herrería</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="p-arm">Armaduras</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="p-joy">Joyería</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="p-alq">Alquimia</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="p-coc">Cocina</button>
+    </div>
+
+    <div class="panel" id="p-ext" role="tabpanel">
+      <div>
+        <h3>Extracción de esencia</h3>
+        <p class="role">El oficio que alimenta a los otros cinco</p>
+        <p>Se abre con <b>Alt + F</b>. Lo que casi nadie aprovecha: da experiencia de personaje <b>y</b> de oficio al mismo tiempo, así que recoger lo que pillas de camino durante la campaña no te roba ni un minuto de progresión.</p>
+        <p>Cada nivel te entrega <b>puntos de habilidad</b> para repartir entre los seis recursos.</p>
+        <p><b>El ascenso:</b> al llegar a Iniciación 50 aparece sola una misión secundaria azul. Pide un <b>rubí brillante</b>, que no se recoge directamente: sale de recolectar rubíes normales, más o menos <b>uno cada 15 a 25</b>. Los rubíes crecen en lo alto de los acantilados, así que el vuelo te ahorra media tarde. Se entrega a <b>Korius</b> si eres Elyos, a <b>Aljir</b> si eres Asmodian.</p>
+      </div>
+      <div>
+        <dl class="facts">
+          <div class="fact"><dt>Atajo</dt><dd>Alt + F</dd></div>
+          <div class="fact"><dt>Llegar a Iniciación 50</dt><dd>1 – 2 h</dd></div>
+          <div class="fact"><dt>Rubíes por uno brillante</dt><dd>15 – 25</dd></div>
+          <div class="fact"><dt>Recursos que se recogen</dt><dd>6</dd></div>
+        </dl>
+        <p style="margin-top:20px;font-size:15px"><b>Orden para gastar los puntos:</b><br>
+        Éter → Mineral → Hierbas → Madera → Gemas.<br>
+        Y dentro de cada uno: acierto, luego velocidad, luego material superior.</p>
+        <p style="font-size:15px">El éter va primero porque <b>entra en las recetas de los cinco oficios</b>. Resetear el reparto es barato desde un parche reciente: no te agobies por equivocarte.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p-her" role="tabpanel" hidden>
+      <div>
+        <h3>Herrería</h3>
+        <p class="role">188 recetas · armas</p>
+        <p>Una maestría distinta por cada tipo de arma. Un espadón y una espada larga arrancan los dos con las mismas tres cosas —<b>3 lingotes de oricalco, 5 piedras de fundición y 2 de éter</b>— pero cuentan en contadores separados.</p>
+        <p>Le interesa a <b>Gladiator, Templar, Ranger y Assassin</b>, que tiran de mineral y éter.</p>
+        <p><b>La escalera de un arma</b>, con la maestría que pide cada escalón:</p>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.9;color:var(--ink)">
+          3 → de oricalco<br>
+          15 → de artesano<br>
+          30 → de maestro<br>
+          55 → Rey Dragón · 22 cuernos<br>
+          70 → Rey Dragón Blanco · 29 cuernos<br>
+          85 → 41 cuernos<br>
+          115 → 74 cuernos
+        </p>
+        <p>Del escalón 55 en adelante ya no partes de materia prima: <b>metes el arma anterior dentro de la nueva</b>. Cada salto se come el arma que tenías.</p>
+      </div>
+      <div>
+        <p style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:2px">Experiencia por pieza</p>
+        <dl class="facts">
+          <div class="fact"><dt>Lingote de oricalco</dt><dd>20 exp</dd></div>
+          <div class="fact"><dt>Guarda de oricalco</dt><dd>84 exp</dd></div>
+          <div class="fact"><dt>Guarda de artesano</dt><dd>240 exp</dd></div>
+          <div class="fact"><dt>Guarda de maestro</dt><dd>600 exp</dd></div>
+          <div class="fact"><dt>Cuerno refinado sólido</dt><dd>383 exp</dd></div>
+          <div class="fact"><dt>Cuerno refinado afilado</dt><dd>439 exp</dd></div>
+          <div class="fact"><dt>Cuerno refinado robusto</dt><dd>618 exp</dd></div>
+          <div class="fact"><dt>Cuerno refinado preciso</dt><dd>868 exp</dd></div>
+        </dl>
+        <p style="margin-top:18px;font-size:15px">Los cuernos de dragón son el material que marca el ritmo arriba: un arma de maestría 115 pide <b>74</b>, y el escalón siguiente sube de veinte en veinte.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p-arm" role="tabpanel" hidden>
+      <div>
+        <h3>Armaduras</h3>
+        <p class="role">220 recetas · el oficio más grande de los cinco</p>
+        <p>Tiene <b>más recetas que ninguno</b>, y el motivo es simple: cada juego de armadura son seis piezas, y cada pieza lleva su propia maestría. Donde un herrero fabrica un arma, tú fabricas seis cosas.</p>
+        <p>Eso lo convierte en el oficio más lento de completar, pero también en el que más veces te deja aprovechar la misma tanda de materiales.</p>
+        <p>Tira de <b>mineral y éter</b>, igual que las armas, así que subir los dos a la vez aprovecha una sola ruta de recolección.</p>
+      </div>
+      <div>
+        <dl class="facts">
+          <div class="fact"><dt>Recetas</dt><dd>220</dd></div>
+          <div class="fact"><dt>Piezas de armadura</dt><dd>196</dd></div>
+          <div class="fact"><dt>Recursos base</dt><dd>Mineral + Éter</dd></div>
+        </dl>
+        <p style="margin-top:20px;font-size:15px">La curva de experiencia es <b>la misma para los cinco oficios</b>. Lo único que cambia es cuánta da cada receta, así que la calculadora de abajo sirve igual aquí: mete la experiencia de la pieza que estés fabricando.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p-joy" role="tabpanel" hidden>
+      <div>
+        <h3>Joyería</h3>
+        <p class="role">184 recetas · accesorios y bastones</p>
+        <p>El oficio de los lanzadores. <b>Sorcerer, Spiritmaster y Chanter</b> lo quieren por sus bastones, y todo el mundo acaba queriéndolo por los accesorios: solo hay <b>92 accesorios</b> en todo el juego y salen de aquí.</p>
+        <p>Tira de <b>madera y éter</b>. Si tu grupo se reparte los oficios, este es el que menos gente coge y el que más se echa en falta cuando hace falta un anillo.</p>
+      </div>
+      <div>
+        <dl class="facts">
+          <div class="fact"><dt>Recetas</dt><dd>184</dd></div>
+          <div class="fact"><dt>Accesorios del juego</dt><dd>92</dd></div>
+          <div class="fact"><dt>Recursos base</dt><dd>Madera + Éter</dd></div>
+          <div class="fact"><dt>Clases que lo piden</dt><dd>Sorc · Spirit · Chanter</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="panel" id="p-alq" role="tabpanel" hidden>
+      <div>
+        <h3>Alquimia</h3>
+        <p class="role">140 recetas · pociones y consumibles</p>
+        <p>El oficio de <b>Cleric</b> por afinidad y el de todos por necesidad. Y aquí está la diferencia de fondo con los otros cuatro: <b>lo que fabricas se gasta</b>. Un arma la haces una vez; las pociones hay que reponerlas cada semana, las tuyas y las de tu legión.</p>
+        <p>Por eso es el que antes se rentabiliza aunque sea el tercero por número de recetas. No compites con nadie: hay demanda constante.</p>
+        <p>Tira de <b>hierbas y éter</b>.</p>
+      </div>
+      <div>
+        <dl class="facts">
+          <div class="fact"><dt>Recetas</dt><dd>140</dd></div>
+          <div class="fact"><dt>Consumibles del juego</dt><dd>44</dd></div>
+          <div class="fact"><dt>Recursos base</dt><dd>Hierbas + Éter</dd></div>
+          <div class="fact"><dt>Clase afín</dt><dd>Cleric</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="panel" id="p-coc" role="tabpanel" hidden>
+      <div>
+        <h3>Cocina</h3>
+        <p class="role">88 recetas · el más pequeño de los cinco</p>
+        <p>La mitad de recetas que Armaduras, y eso es justamente su ventaja: <b>es el único que se puede completar de verdad</b> sin que se te vaya la temporada. 64 comidas y 24 bebidas, y ya está.</p>
+        <p>Como los materiales son los más baratos de los cinco, es el sitio donde practicar los combos sin arruinarte: aquí un fallo cuesta hierbas, no cuernos de dragón.</p>
+        <p>El que todo el mundo deja para el final, hasta que la comida empieza a decidir peleas.</p>
+      </div>
+      <div>
+        <dl class="facts">
+          <div class="fact"><dt>Recetas</dt><dd>88</dd></div>
+          <div class="fact"><dt>Comidas</dt><dd>64</dd></div>
+          <div class="fact"><dt>Bebidas</dt><dd>24</dd></div>
+          <div class="fact"><dt>Coste de materiales</dt><dd>El más bajo</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">La herramienta</span>
+    <h2>¿Cuánto me queda?</h2>
+    <p class="intro">Dime dónde estás, adónde vas y qué estás fabricando. Con la curva de experiencia real del juego, te digo cuántas veces tienes que darle al botón.</p>
+
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="rango">Rango</label>
+          <select id="rango">
+            <option value="pro" selected>Profesional (1 – 70)</option>
+            <option value="ini">Iniciación (1 – 50)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Vas del nivel… al nivel</label>
+          <div class="row">
+            <input type="number" id="desde" value="50" min="1" max="70" aria-label="Nivel actual">
+            <input type="number" id="hasta" value="70" min="1" max="70" aria-label="Nivel objetivo">
+          </div>
+        </div>
+        <div class="field">
+          <label for="pieza">Qué fabricas</label>
+          <select id="pieza">
+            <option value="618" selected>Cuerno de dragón refinado, robusto — 618 exp</option>
+            <option value="868">Cuerno de dragón refinado, preciso — 868 exp</option>
+            <option value="439">Cuerno de dragón refinado, afilado — 439 exp</option>
+            <option value="383">Cuerno de dragón refinado, sólido — 383 exp</option>
+            <option value="600">Guarda de oricalco de maestro — 600 exp</option>
+            <option value="240">Guarda de oricalco de artesano — 240 exp</option>
+            <option value="84">Guarda de oricalco — 84 exp</option>
+            <option value="20">Lingote de oricalco — 20 exp</option>
+            <option value="custom">Otra pieza (la escribo yo)</option>
+          </select>
+          <input type="number" id="expManual" value="618" min="1" hidden aria-label="Experiencia por pieza">
+        </div>
+        <div class="field">
+          <label for="exito">Cuántas te salen bien: <span class="mono" id="exitoVal">100%</span></label>
+          <input type="range" id="exito" min="10" max="100" value="100" step="5">
+          <p class="hint">Fallar no es tirar el material: un intento fallido te da igualmente el <b>30%</b> de la experiencia. Baja este control a tu tasa real y el cálculo cuenta también los fallos.</p>
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="big mono" id="crafts">236</div>
+        <div class="big-label" id="craftsLabel">veces que tienes que fabricarlo</div>
+        <div class="bar"><span id="barFill"></span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Experiencia que te falta</dt><dd id="expFalta">145.549</dd></div>
+          <div class="fact"><dt>Por intento, de media</dt><dd id="expMedia">618</dd></div>
+          <div class="fact"><dt>Tramo</dt><dd id="tramo">Prof. 50 → 70</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Las tres reglas</span>
+    <h2>Cómo se reparte la experiencia</h2>
+    <p class="intro">Tres números que cambian por completo la cuenta de arriba. El primero consuela, el segundo premia y el tercero es el que hace perder semanas a quien no lo sabe.</p>
+
+    <div class="rules">
+      <div class="rule keep">
+        <div class="pct">30%</div>
+        <h3>Si fallas, cobras igual</h3>
+        <p>Un intento fallido entrega el 30% de la experiencia que habría dado el acierto. La maestría sube aunque la pieza se rompa.</p>
+      </div>
+      <div class="rule up">
+        <div class="pct">130%</div>
+        <h3>El combo paga extra</h3>
+        <p>Si la pieza tiene combo y lo clavas, cobras un 30% de más. Una guarda de maestro pasa de 600 a 780 de una tacada.</p>
+      </div>
+      <div class="rule down">
+        <div class="pct">−53%</div>
+        <h3>El botón de x10 te roba</h3>
+        <p>Fabricar en lote da bastante menos de la mitad que fabricar de uno en uno. Mismo material, misma cantidad, la mitad de maestría.</p>
+      </div>
+    </div>
+
+    <div class="compare">
+      <div class="cmp good">
+        <div class="way">Polvo de piedra espiritual ×3, diez veces seguidas</div>
+        <div class="val mono">240</div>
+        <div class="of">de experiencia</div>
+        <div class="track"><span style="width:100%"></span></div>
+      </div>
+      <div class="cmp bad">
+        <div class="way">Polvo de piedra espiritual ×30, de una sola vez</div>
+        <div class="val mono">112</div>
+        <div class="of">de experiencia — mismo material</div>
+        <div class="track"><span style="width:46.7%"></span></div>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:18px;max-width:64ch">Pasa exactamente igual con los lingotes de oricalco: 200 de experiencia haciéndolos de uno en uno, 112 usando el lote. Usa el x10 solo cuando ya no te importe la maestría y solo quieras el objeto.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">La curva</span>
+    <h2>Experiencia acumulada por nivel</h2>
+    <p class="intro">Los hitos de los dos rangos. Fíjate en el salto: llegar al final de Iniciación cuesta menos que subir <em>un solo nivel</em> en la parte alta de Profesional.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Nivel</th><th>Iniciación</th><th>Profesional</th></tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="notice" style="margin-top:28px">
+      <p><b>De dónde salen estos números.</b> La curva de experiencia la midió la comunidad coreana del juego, que lleva meses con él en marcha, y se actualizó tras el parche que amplió el tope a Profesional 70. Los recuentos de recetas y los materiales de cada escalón vienen de una base de datos extraída del propio cliente del juego: <b>820 recetas</b> con sus cantidades exactas.</p>
+      <p><b>Y lo que hay que comprobar.</b> Esto es del servidor de Corea. Para la versión global las mecánicas serán las mismas, pero los números concretos pueden bailar. En cuanto lo juguemos, se corrige lo que no cuadre.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">IMPERIUM</div>
+    <p>Guía de oficios de Aion 2 · datos del servidor coreano, pendientes de confirmar en la versión global del 5 de octubre.</p>
+  </div>
+</footer>
+
+<script>
+  // ── Datos reales de la curva de maestría ─────────────────────────
+  // Experiencia ACUMULADA necesaria para completar cada nivel.
+  const INI = [0,26,54,86,120,152,185,220,256,294,334,376,420,466,514,568,627,689,755,824,896,
+    1009,1128,1253,1384,1522,1667,1818,1977,2144,2319,2505,2703,2913,3137,3375,3628,3897,4183,
+    4487,4810,5154,5519,5907,6320,6759,7226,7722,8249,8809];
+  const PRO = [0,602,1223,1862,2522,3202,3903,4625,5370,6138,6930,7750,8600,9481,10394,11339,
+    12319,13334,14386,15475,16612,17798,19034,20325,21671,23075,24540,26122,27715,29378,31113,
+    32922,34810,36780,38833,40976,43211,45541,47973,50510,53155,55916,58795,61797,64930,68198,
+    71604,75160,78869,82734,87307,92077,97049,102239,107652,113294,119184,125327,131730,138414,
+    145796,153490,161521,169898,178629,187742,197247,207155,217497,228283];
+
+  const $ = (id) => document.getElementById(id);
+  const fmt = (n) => Math.round(n).toLocaleString('es-ES');
+
+  // ── Pestañas de oficio ───────────────────────────────────────────
+  const tabs = [...document.querySelectorAll('.tab')];
+  tabs.forEach((t) => {
+    t.addEventListener('click', () => {
+      tabs.forEach((o) => {
+        o.setAttribute('aria-selected', String(o === t));
+        $(o.dataset.panel).hidden = o !== t;
+      });
+    });
+  });
+
+  // ── Calculadora ──────────────────────────────────────────────────
+  const campos = ['rango','desde','hasta','pieza','expManual','exito'].map($);
+
+  function expPorPieza(){
+    return $('pieza').value === 'custom'
+      ? Math.max(1, Number($('expManual').value) || 1)
+      : Number($('pieza').value);
+  }
+
+  function calcular(){
+    const rango = $('rango').value;
+    const tabla = rango === 'pro' ? PRO : INI;
+    const tope = tabla.length - 1;
+
+    // El selector de pieza abre el campo libre cuando hace falta
+    const manual = $('pieza').value === 'custom';
+    $('expManual').hidden = !manual;
+    if (!manual) $('expManual').value = $('pieza').value;
+
+    $('desde').max = tope; $('hasta').max = tope;
+    let desde = Math.min(Math.max(1, Number($('desde').value) || 1), tope);
+    let hasta = Math.min(Math.max(1, Number($('hasta').value) || 1), tope);
+
+    const tasa = Number($('exito').value) / 100;
+    $('exitoVal').textContent = Math.round(tasa * 100) + '%';
+
+    const falta = tabla[hasta] - tabla[desde];
+    const porPieza = expPorPieza();
+    // Un fallo entrega el 30% de lo que daría el acierto
+    const media = tasa * porPieza + (1 - tasa) * porPieza * 0.3;
+    const intentos = falta > 0 ? Math.ceil(falta / media) : 0;
+
+    const nombre = rango === 'pro' ? 'Prof.' : 'Inic.';
+    $('tramo').textContent = `${nombre} ${desde} → ${hasta}`;
+    $('expFalta').textContent = falta > 0 ? fmt(falta) : '—';
+    $('expMedia').textContent = fmt(media);
+    $('crafts').textContent = falta > 0 ? fmt(intentos) : '0';
+    $('crafts').classList.toggle('warn', hasta <= desde);
+    $('craftsLabel').textContent = hasta <= desde
+      ? 'el nivel de destino tiene que ser mayor'
+      : (tasa === 1 ? 'veces que tienes que fabricarlo' : 'intentos, contando los fallos');
+    $('barFill').style.width = (falta > 0 ? Math.min(100, (tabla[desde] / tabla[hasta]) * 100) : 0) + '%';
+  }
+
+  campos.forEach((c) => { c.addEventListener('input', calcular); c.addEventListener('change', calcular); });
+
+  // ── Tabla de hitos ───────────────────────────────────────────────
+  const hitos = [1,5,10,20,30,40,49,50,60,70];
+  $('tbody').innerHTML = hitos.map((n) => {
+    const ini = n <= 49 ? fmt(INI[n]) : '—';
+    const pro = n <= 69 ? fmt(PRO[n]) : (n === 70 ? fmt(PRO[69]) : '—');
+    const clase = (n === 49 || n === 70) ? ' class="milestone"' : '';
+    const etiqueta = n === 49 ? '49 · fin de rango' : (n === 70 ? '70 · tope' : String(n));
+    return `<tr${clase}><td>${etiqueta}</td><td>${ini}</td><td>${pro}</td></tr>`;
+  }).join('');
+
+  calcular();
+</script>

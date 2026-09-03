@@ -4,7 +4,15 @@
       "mcp__firecrawl__firecrawl_search_feedback",
       "Skill(deep-research)",
       "Skill(deep-research:*)",
-      "Workflow(deep-research)"
+      "Workflow(deep-research)",
+      "Bash(docker version *)",
+      "Bash(curl -s -o /dev/null -w 'HTTP %{http_code}\\\\n' --max-time 6 http://localhost:3002/)",
+      "Bash(claude mcp *)",
+      "PowerShell($c = Get-Command claude -ErrorAction SilentlyContinue; if \\($c\\) { \"claude en: $\\($c.Source\\)\"; claude mcp list 2>&1 | Select-Object -First 20 } else { \"claude NO está en el PATH de PowerShell\" })",
+      "Bash(curl -s -o /dev/null -w 'local 3003: %{http_code}\\\\n' --max-time 8 http://localhost:3003/)",
+      "Bash(curl -s -o /dev/null -w 'local 3000: %{http_code}\\\\n' --max-time 8 http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w 'supabase REST: %{http_code} en %{time_total}s\\\\n' --max-time 20 \"https://fihjqermiqhuubwepfcc.supabase.co/rest/v1/\")",
+      "Bash(curl -s -o /dev/null -w 'supabase auth: %{http_code} en %{time_total}s\\\\n' --max-time 20 \"https://fihjqermiqhuubwepfcc.supabase.co/auth/v1/health\")"
     ]
   }
 }

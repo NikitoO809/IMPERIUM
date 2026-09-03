@@ -166,6 +166,32 @@ const PAUSA = 900;
 const cuenta = { entregado: 0, cerrado: 0, error: 0 };
 const cerrados = [];
 
+// Un 403 puede ser DOS cosas muy distintas, y confundirlas cuesta caro:
+//
+//   a) esa persona no acepta privados → se salta y a la siguiente.
+//   b) Discord ha puesto al bot en CUARENTENA por spam → no le llega a NADIE.
+//
+// Sin distinguirlas, un reparto entero informa de "todos tienen los privados
+// cerrados" cuando en realidad el bot está sancionado. Por eso se mira el
+// cuerpo del error y, si es cuarentena, se para en seco.
+async function pararSiEsCuarentena(res) {
+  let texto = "";
+  try {
+    texto = await res.text();
+  } catch {
+    return;
+  }
+  if (!/anti-spam|quarantine/i.test(texto)) return;
+  console.error(
+    "\n  DISCORD HA PUESTO AL BOT EN CUARENTENA.\n\n" +
+      "  No es que esta persona tenga los privados cerrados: el bot no puede\n" +
+      "  mandar privados a NADIE hasta que se levante. Los mensajes en canales\n" +
+      "  siguen funcionando con normalidad.\n\n" +
+      "  Se apela aquí:  https://dis.gd/app-quarantine\n"
+  );
+  process.exit(1);
+}
+
 console.log("");
 for (const m of gente) {
   const quien = nombre(m);
@@ -175,8 +201,10 @@ for (const m of gente) {
       method: "POST",
       body: JSON.stringify({ recipient_id: m.user.id }),
     });
-    // 403 = esa persona no acepta privados de este servidor. Es lo más común.
+    // 403 = esa persona no acepta privados de este servidor. Es lo más común
+    // (pero puede ser la cuarentena del bot, y entonces se para todo).
     if (canal.status === 403) {
+      await pararSiEsCuarentena(canal);
       estado = "cerrado";
       break;
     }
@@ -194,6 +222,7 @@ for (const m of gente) {
       break;
     }
     if (res.status === 403) {
+      await pararSiEsCuarentena(res);
       estado = "cerrado";
       break;
     }

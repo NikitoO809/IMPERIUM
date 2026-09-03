@@ -1,0 +1,30 @@
+{
+  "foro": "1542632433499901992",
+  "titulo": "🔰 Qué hacer el primer día",
+  "etiquetas": ["🔰 Para empezar", "🗺️ PvE", "🎥 Vídeo"],
+  "mensajes": [
+    {
+      "texto": "**No corras a subir un personaje al máximo.** Si el día del lanzamiento te centras en uno solo, tu cuenta se queda coja para siempre.\n\nEl objetivo del día uno es llegar a **nivel 22 con cuatro personajes**, no a nivel 45 con uno.\n\n**¿Por qué el 22?**\nAhí se desbloquea la **energía de expedición**: un recurso de la cuenta entera que se acumula solo, juegues o no.\n\nY no es un extra. Sin energía activa, el botín de las mazmorras que importan se desploma — la Caverna de Krao y compañía te sueltan migajas. Puedes hacerlas, pero sales con las manos vacías.\n\nPor eso el día uno va de encender ese reloj en tantos personajes como puedas: cada uno que llega al 22 es una fábrica produciendo en segundo plano mientras tú haces otra cosa.\n\n-# Imagen: NCSoft",
+      "imagen": "capturas-aion2/oficial/cabecera-aion2.jpg"
+    },
+
+    "## 1️⃣ Tu personaje principal, del 1 al 22\n\nVe directo y sin distracciones:\n\n• **Campaña principal** (misiones amarillas). Es tu carril rápido.\n• **Misiones regionales** (verdes) **solo cuando las necesites**: si te falta item level para seguir, o si te hacen falta pendientes, colgantes o anillos.\n• **Los coleccionables complicados, ni los mires todavía.**\n\n**Lo único que sí debes recoger por el camino: las plumas flotantes.**\nCógelas todas y entrégalas en el monolito de cada región. A cambio: puntos de maestría, estadísticas pasivas y pergaminos de mejora de equipo. Saltártelas es la forma más tonta de quedarte corto de daño más adelante.\n\n⏹️ **En cuanto toques el 22, para en seco.** Ni una misión más. Sal al selector de personajes.",
+
+    {
+      "texto": "## 2️⃣ Tres alters, ni uno más\n\nEl número es **tres alters — cuatro personajes en total**. Y hay un motivo concreto para no pasarse:\n\n> El servidor limita a **84 entradas de mazmorra por semana** contando todos tus personajes juntos. A partir del cuarto alter no sacas más: repartes las mismas entradas entre más bocas y el botín por personaje se penaliza.\n\nSube cada alter al 22 por el mismo camino que el main: amarillas, verdes cuando haga falta, plumas al monolito. Uno detrás de otro.\n\n## 3️⃣ Ahora sí, el main al 45\n\nCon los cuatro en el 22, tu cuenta genera energía de expedición a tope. **Ese es el momento** de volver al principal y empujarlo hasta 45, el tope en el lanzamiento global.",
+      "imagen": "capturas-aion2/infografias/ruta-dia-uno.png"
+    },
+
+    {
+      "texto": "## 🔄 Qué se comparte y qué no\n\nEsto es lo que más gente arruina por no saberlo.\n\n**SÍ se comparte** (por el almacén de cuenta):\n• **Aspectos y diseños** → van al armario común, y cada uno desbloqueado da estadísticas pasivas a **toda** la cuenta\n• **Mascotas y alas**\n• **Piedras de amplificación** y **cristales de alma**\n\n**NO se comparte:**\n• **Puntos de abismo** → cada alter se gana los suyos\n• **Equipo PvP y compras en la tienda del abismo**\n• **Fragmentos Daevanion** → no se pueden pasar entre personajes\n\n**Tres trucos que salen de ahí:**\n1. Que tus alters **gasten sus monedas en aspectos** en la tienda de la pesadilla. Aunque el alter no le importe a nadie, cada aspecto sube las estadísticas de tu principal.\n2. Que los alters **abran los cofres de mascotas**. Así tu main se guarda los puntos de temporada para comprar directamente alas de grado alto.\n3. Los fragmentos Daevanion no viajan, **pero la pieza acabada sí**. Fusiónalos en el alter hasta completar el estigma, y entonces pásasela al main por el almacén.",
+      "imagen": "capturas-aion2/infografias/que-se-comparte.png"
+    },
+
+    {
+      "texto": "## 📅 Rutina diaria\n\n• **Mazmorras de la pesadilla** (jefes en solitario): **2 intentos al día por personaje**. Hazlas siempre con los alters — de ahí salen los puntos de aspecto, los fragmentos de amplificación y los cristales.\n• **Ronda de conexiones**: entra diez segundos con cada alter y recoge su recompensa diaria de inicio de sesión. Son treinta segundos de tu vida.\n\n## 🗓️ Rutina semanal\n\n• **Pruebas de ascensión** (mazmorras en solitario): **3 entradas por personaje**. La mina de oro de la semana — dan **Silentium**, que vendes en el mercado por kinah o cambias por puntos de abismo, más las piedras de maná que tu main necesita sí o sí.\n• **Captura del artefacto** (el PvP de facciones): que **todos** tus personajes estén en la facción fuerte y en una legión activa. El cofre de esa instancia ronda las **500.000 monedas**. Esta no se perdona.\n\n⏱️ En total: unas **dos horas por semana y por alter** si te organizas.",
+      "imagen": "capturas-aion2/infografias/rutina.png"
+    },
+
+    "## ✅ Resumen del día uno\n\n```\n1. Main → nivel 22      (amarillas + plumas al monolito)\n2. Alter 1 → 22\n3. Alter 2 → 22\n4. Alter 3 → 22         ← aquí tu cuenta ya produce a tope\n5. Main → nivel 45\n```\n\n⚠️ **Datos del servidor de Taiwán, pendientes de confirmar en global.** NCSoft puede cambiar el límite de 84 entradas, el tope de nivel 45 o los materiales. En cuanto lo comprobemos jugando, actualizamos la guía."
+  ]
+}
