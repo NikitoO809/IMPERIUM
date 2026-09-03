@@ -273,6 +273,7 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
 function ocupaTodo(b: Bloque): boolean {
   switch (b.t) {
     case "skills":
+    case "especialidades":
     case "rotacion":
     case "pestanas":
     case "calculadora":
@@ -517,6 +518,89 @@ function BloqueView({ b, lang, acento, modo }: { b: Bloque; lang: Lang; acento: 
               </ul>
             </div>
           ))}
+        </div>
+      );
+
+    case "especialidades":
+      return (
+        <div className="grid gap-4 md:grid-cols-2">
+          {b.items.map((sk, i) => {
+            // A un nivel aparecen varios efectos a la vez (alternativas) y en
+            // los otros, uno solo. Si el juego obliga a elegir entre los del
+            // mismo nivel no está en ninguna fuente: no se afirma aquí.
+            const alternativas = sk.opciones.filter((o) => o.alternativa);
+            const fijas = sk.opciones.filter((o) => !o.alternativa);
+            return (
+              <div key={i} className="border-l-2 bg-[#12121a] p-4" style={{ borderColor: colorModo }}>
+                <div className="flex items-center gap-3">
+                  {sk.icono && (
+                    <Image
+                      src={sk.icono}
+                      alt=""
+                      width={40}
+                      height={40}
+                      unoptimized
+                      className="h-10 w-10 shrink-0 border border-white/10 bg-black/40 object-contain"
+                    />
+                  )}
+                  <div className="min-w-0">
+                    <div className="font-title text-[17px] font-bold">{t(sk.nombre)}</div>
+                    <div className="font-mono text-xs text-white/30">{sk.ko}</div>
+                  </div>
+                  {sk.anillo !== undefined && (
+                    <div className="ml-auto shrink-0 text-right">
+                      <div className="font-mono text-[15px] tabular-nums" style={{ color: acento }}>
+                        {lang === "es" ? String(sk.anillo).replace(".", ",") : sk.anillo}%
+                      </div>
+                      <div className="font-hud text-[9px] tracking-[0.14em] text-white/35">
+                        {lang === "es" ? "EN EL ANILLO" : "ON THE RING"}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {sk.nota && <p className="mt-2.5 text-[14px] leading-relaxed text-white/60">{ricos(t(sk.nota))}</p>}
+
+                {alternativas.length > 0 && (
+                  <>
+                    <div className="mt-3.5 font-hud text-[10px] tracking-[0.16em] text-white/35">
+                      {lang === "es" ? `NIVEL ${alternativas[0].nivel}` : `LEVEL ${alternativas[0].nivel}`}
+                    </div>
+                    <ul className="mt-2 flex flex-col gap-1.5">
+                      {alternativas.map((o, j) => (
+                        <li
+                          key={j}
+                          className="flex items-start gap-2.5 border border-white/[0.07] px-3 py-2 text-[15px]"
+                          style={o.recomendada ? { borderColor: `${colorModo}66`, background: `${colorModo}14` } : undefined}
+                        >
+                          <span
+                            className="mt-px shrink-0 font-mono text-[12px]"
+                            style={{ color: o.recomendada ? colorModo : "rgba(255,255,255,0.3)" }}
+                          >
+                            {o.recomendada ? "✓" : j + 1}
+                          </span>
+                          <span className={o.recomendada ? "text-white" : "text-white/65"}>{ricos(t(o.efecto))}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {fijas.length > 0 && (
+                  <ul className="mt-3 flex flex-col gap-1.5 border-t border-white/[0.06] pt-2.5">
+                    {fijas.map((o, j) => (
+                      <li key={j} className="flex gap-2.5 text-[14px] leading-snug text-white/60">
+                        <span className="shrink-0 font-mono text-[12px] text-white/30">
+                          {lang === "es" ? "nv" : "lv"} {o.nivel}
+                        </span>
+                        <span>{ricos(t(o.efecto))}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
         </div>
       );
 

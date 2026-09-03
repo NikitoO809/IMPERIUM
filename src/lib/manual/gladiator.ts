@@ -504,11 +504,161 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 6. Pasivas y estigmas ───────────────────────────────────
+    // ── 6. Especializaciones ────────────────────────────────────
+    {
+      eyebrow: { es: "Especializaciones", en: "Specialties" },
+      titulo: { es: "Lo que desbloquea cada skill", en: "What each skill unlocks" },
+      intro: [
+        {
+          es: "Subir una skill no solo le sube el número: a **nivel 8, 12 y 16** cada una desbloquea efectos que le cambian el comportamiento. Esto sale del volcado del cliente del juego, así que aquí no hay opiniones — es lo que hace cada cosa.",
+          en: "Levelling a skill does more than raise its number: at **levels 8, 12 and 16** each one unlocks effects that change how it behaves. This comes from the game client dump, so there are no opinions here — it is what each thing does.",
+        },
+        {
+          es: "La marca **✓** señala los efectos que ya lleva la build de esta guía. El porcentaje de la derecha es otra cosa: **cuántos de los 662 Gladiators medidos graban esa skill en el anillo**.",
+          en: "The **✓** marks the effects the build in this guide already runs. The percentage on the right is a different thing: **how many of the 662 measured Gladiators engrave that skill on their ring**.",
+        },
+      ],
+      bloques: [
+        {
+          t: "especialidades",
+          items: [
+            {
+              nombre: { es: "Machaque descendente", en: "Overhead Slam" },
+              ko: "내려찍기",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_017.webp",
+              anillo: 65.1,
+              nota: { es: "La más grabada de todas. Su nivel 16 es de las cosas más fuertes que tiene la clase.", en: "The most engraved of them all. Its level 16 is one of the strongest things the class has." },
+              opciones: [
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "Roba un 0,7% de vida", en: "Absorbs 0.7% HP" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Pasa a golpear en área", en: "Changes to an AoE skill" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Añade la cadena [Golpe ascendente]", en: "Adds the [Upward Strike] chain skill" } },
+                { nivel: 12, efecto: { es: "Crítico garantizado al acertar", en: "Guaranteed critical hit on hit" } },
+                { nivel: 16, recomendada: true, efecto: { es: "**Borra el tiempo de recarga**", en: "**Removes the cooldown**" } },
+              ],
+            },
+            {
+              nombre: { es: "Embate de perdición", en: "Ruinous Blow" },
+              ko: "파멸의 맹타",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_010.webp",
+              anillo: 63.4,
+              nota: { es: "Con la que entras al jefe. Los tres efectos de nivel 8 tiran hacia sitios distintos.", en: "The one you open on the boss with. Its three level-8 effects pull in different directions." },
+              opciones: [
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "+20% de velocidad de skill", en: "+20% skill speed" } },
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "+12,5 m de alcance", en: "+12.5m range" } },
+                { nivel: 8, alternativa: true, efecto: { es: "+30% de crítico de la skill", en: "+30% skill critical hit" } },
+                { nivel: 12, efecto: { es: "Daño extra al acertar", en: "Extra damage on hit" } },
+                { nivel: 16, recomendada: true, efecto: { es: "**Golpes múltiples que ignoran bloqueo y evasión**", en: "**Lands as Multi-Hit, ignoring block and evasion**" } },
+              ],
+            },
+            {
+              nombre: { es: "Embate cortante", en: "Rending Blow" },
+              ko: "절단의 맹타",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_001.webp",
+              anillo: 63.0,
+              nota: { es: "El relleno que te sostiene el espíritu. Sus efectos van de aguantar, no de pegar.", en: "The filler that keeps your spirit up. Its effects are about holding on, not hitting." },
+              opciones: [
+                { nivel: 8, alternativa: true, efecto: { es: "−20% de espíritu consumido", en: "−20% MP consumed" } },
+                { nivel: 8, alternativa: true, efecto: { es: "+200 de bloqueo mientras la usas", en: "+200 block while using it" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Se puede usar en movimiento", en: "Becomes usable while moving" } },
+                { nivel: 12, efecto: { es: "Hasta +12% de daño cuantos menos enemigos haya", en: "Up to +12% damage the fewer targets you hit" } },
+                { nivel: 16, efecto: { es: "Recupera 50 de espíritu al crítico", en: "Restores 50 MP on a critical hit" } },
+              ],
+            },
+            {
+              nombre: { es: "Onda trituradora", en: "Crushing Wave" },
+              ko: "분쇄 파동",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_005.webp",
+              anillo: 51.9,
+              nota: { es: "**Su nivel 12 es la razón de toda la rotación de campo:** al crítico se reinicia y la vuelves a lanzar.", en: "**Its level 12 is why the whole open-world rotation works:** on a crit it resets and you throw it again." },
+              opciones: [
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "Roba un 2% de vida", en: "Absorbs 2% HP" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Recupera 50 de espíritu al crítico", en: "Restores 50 MP on a critical hit" } },
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "Hasta +20% de daño cuantos más enemigos haya", en: "Up to +20% damage the more targets you hit" } },
+                { nivel: 12, recomendada: true, efecto: { es: "**Reinicia su propia recarga al crítico**", en: "**Resets its own cooldown on a critical hit**" } },
+                { nivel: 16, efecto: { es: "50% de probabilidad de atraer al enemigo", en: "50% chance to pull the enemy in" } },
+              ],
+            },
+            {
+              nombre: { es: "Golpe afilado", en: "Keen Strike" },
+              ko: "예리한 일격",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp",
+              anillo: 31.7,
+              nota: { es: "Parece relleno y no lo es: su nivel 12 le quita recarga al Embate de perdición cada vez que aciertas.", en: "It looks like filler and it is not: its level 12 shaves cooldown off Ruinous Blow every time you hit." },
+              opciones: [
+                { nivel: 8, alternativa: true, efecto: { es: "+20% de espíritu recuperado", en: "+20% MP restored" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Roba un 1% de vida", en: "Absorbs 1% HP" } },
+                { nivel: 8, alternativa: true, efecto: { es: "+50% de golpes múltiples al acertar", en: "+50% Multi-Hit on hit" } },
+                { nivel: 12, efecto: { es: "**−1 s de recarga al Embate de perdición** al acertar", en: "**−1s Ruinous Blow cooldown** on hit" } },
+                { nivel: 16, efecto: { es: "Añade la cadena [Golpe temerario]", en: "Adds the [Reckless Strike] chain skill" } },
+              ],
+            },
+            {
+              nombre: { es: "Danza de filos", en: "Sword Aura Rampage" },
+              ko: "검기난무",
+              icono: "https://aion2t.com/db-item-icons/ICON_TE_SKILL_034.webp",
+              anillo: 31.1,
+              nota: { es: "La primera de la build en PvE. Su nivel 16 le baja un segundo a **todas** tus recargas.", en: "First in the PvE build. Its level 16 takes a second off **every** cooldown you have." },
+              opciones: [
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "Roba un 5% de vida", en: "Absorbs 5% HP" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Recupera 120 de espíritu", en: "Restores 120 MP" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Se puede usar en movimiento", en: "Becomes usable while moving" } },
+                { nivel: 12, recomendada: true, efecto: { es: "Golpes múltiples al acertar", en: "Multi-Hit on hit" } },
+                { nivel: 16, recomendada: true, efecto: { es: "**−1 s a todas tus recargas** al acertar", en: "**−1s to all your cooldowns** on hit" } },
+              ],
+            },
+            {
+              nombre: { es: "Espada arrasadora", en: "Mocking Blade" },
+              ko: "유린의 검",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_028.webp",
+              nota: { es: "La de rematar en campo. Contra un enemigo inmune al control roba un 15% de vida, no un 4%.", en: "The finisher in the open world. Against a control-immune target it absorbs 15% HP, not 4%." },
+              opciones: [
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "Roba un 4% de vida — un **15%** si el objetivo es inmune al control", en: "Absorbs 4% HP — **15%** if the target has incapacitated immunity" } },
+                { nivel: 8, alternativa: true, efecto: { es: "El golpe al suelo pasa a hacer daño en área", en: "The down strike becomes AoE damage" } },
+                { nivel: 8, alternativa: true, efecto: { es: "Añade 2 golpes más", en: "Adds 2 more strikes" } },
+                { nivel: 12, efecto: { es: "+1 s de derribo", en: "+1s knockdown duration" } },
+                { nivel: 16, efecto: { es: "Golpes múltiples que ignoran bloqueo y evasión", en: "Lands as Multi-Hit, ignoring block and evasion" } },
+              ],
+            },
+            {
+              nombre: { es: "Grillete aéreo", en: "Aerial Snare" },
+              ko: "공중 결박",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_015.webp",
+              nota: { es: "**No está en la build de arriba, y en Corea dicen que debería.** Ver el aviso de abajo.", en: "**It is not in the build above, and in Korea they say it should be.** See the note below." },
+              opciones: [
+                { nivel: 8, alternativa: true, efecto: { es: "Golpes múltiples al acertar", en: "Multi-Hit on hit" } },
+                { nivel: 8, alternativa: true, efecto: { es: "+25% de probabilidad de levantar por el aire", en: "+25% airborne chance" } },
+                { nivel: 8, alternativa: true, efecto: { es: "+100% de daño contra enemigos inmunes al control", en: "+100% damage against control-immune targets" } },
+                { nivel: 12, efecto: { es: "Añade la cadena [Caída forzada]", en: "Adds the [Forced Fall] chain skill" } },
+                { nivel: 16, efecto: { es: "−50% de tiempo de recarga", en: "−50% cooldown" } },
+              ],
+            },
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**Lo del Grillete aéreo viene del tablón coreano, no de una medición.** El jugador que publicó el montaje que lidera el medidor dice que la mete sí o sí: que a nivel 14 pega más que el Machaque descendente, que saca **cuatro veces más barra de groggy**, y que entre usarla y no usarla hay unos 50.000-100.000 de DPS. Es la build de una persona, no el porcentaje de 662 — pero es la única pista pública que hay sobre qué especializaciones elegir.",
+              en: "**The Aerial Snare note comes from the Korean board, not from a measurement.** The player behind the setup that tops the meter says he always slots it: at level 14 it hits harder than Overhead Slam, builds **four times more groggy gauge**, and running it versus not is worth some 50,000-100,000 DPS. It is one person's build, not a percentage out of 662 — but it is the only public hint on which specialties to pick.",
+            },
+            {
+              es: "**Nadie publica el porcentaje de adopción de las especializaciones.** Ni cielui ni la web oficial: se puede medir lo que la gente lleva puesto encima, pero no lo que ha elegido dentro de cada skill. Así que aquí tienes lo que hace cada una y lo que lleva esta build; el resto, de momento, es probarlo en el muñeco.",
+              en: "**Nobody publishes adoption rates for specialties.** Neither cielui nor the official site: what people wear can be measured, what they picked inside each skill cannot. So here is what each one does and what this build runs; the rest, for now, is testing it on the dummy.",
+            },
+          ],
+        },
+      ],
+    },
+
+    // ── 7. Pasivas y estigmas ───────────────────────────────────
     {
       eyebrow: { es: "Pasivas y estigmas", en: "Passives and stigmas" },
       titulo: { es: "Lo que no se ve pero se nota", en: "What you cannot see but do feel" },
       intro: [
+        {
+          es: "El orden de abajo no lo hemos decidido nosotros: es **el porcentaje de 662 Gladiators de élite que graba cada pasiva**, pieza por pieza. Y hay una sorpresa — la que más se lleva no es la que sube el daño plano.",
+          en: "The order below is not our call: it is **the percentage of 662 top Gladiators who engrave each passive**, slot by slot. And there is a surprise — the most-used one is not the flat damage boost.",
+        },
         {
           es: "Las pasivas no aparecen en la barra, pero son la mitad de tu daño. Y ojo con esto: **también se meten como grabados en el equipo** — por eso en la tabla de stats verás nombres de pasivas entre las opciones de casco, peto y guantes.",
           en: "Passives never show on your bar, but they are half your damage. And note this: **they also slot as engravings on gear** — which is why you will spot passive names among the helmet, chest and glove options in the stats table.",
@@ -516,16 +666,107 @@ export const gladiator: Guia = {
       ],
       bloques: [
         {
-          t: "tabla",
-          primeraNum: true,
-          cabeceras: [{ es: "#", en: "#" }, { es: "Pasiva", en: "Passive" }, { es: "Por qué", en: "Why" }],
-          filas: [
-            [{ es: "1", en: "1" }, { es: "**Preparación de ataque**", en: "**Attack Readiness**" }, { es: "Sube ataque y defensa a la vez: el escalón más barato de todos", en: "Raises attack and defence at once: the cheapest step of all" }],
-            [{ es: "2", en: "2" }, { es: "**Detectar debilidad**", en: "**Weak Point Detection**" }, { es: "Crítico y perfección — estabiliza toda la rotación", en: "Crit and perfection — steadies the whole rotation" }],
-            [{ es: "3", en: "3" }, { es: "Contraataque veterano", en: "Veteran Counter" }, { es: "Pico de daño tras bloquear. Súbela si usas Bloqueo concentrado", en: "Damage spike after a block. Level it if you run Focused Block" }],
-            [{ es: "4", en: "4" }, { es: "Estallido de sed de sangre", en: "Bloodlust Burst" }, { es: "Daño por acumulación de golpes: encaja con cancelar el básico", en: "Damage from stacking hits: pairs with auto-cancelling" }],
-            [{ es: "5", en: "5" }, { es: "Absorción de sangre · Postura de supervivencia", en: "Blood Absorption · Survival Stance" }, { es: "Para farmeo en grupo y cuando haces de tanque de apoyo", en: "For group grinding and when you off-tank" }],
+          t: "skills",
+          items: [
+            {
+              orden: { es: "62,5%", en: "62.5%" },
+              nombre: { es: "Contraataque veterano", en: "Veteran Counter" },
+              ko: "노련한 반격",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_008.webp",
+              puntos: [
+                { es: "**La más grabada de la clase, y por goleada.** No baja del 60% en ninguna pieza.", en: "**The most engraved passive in the class, by a mile.** It never drops below 60% on any slot." },
+                { es: "Al bloquear: **+5,4% de daño PvE** durante 20 segundos **para ti y para tu grupo**", en: "On block: **+5.4% PvE damage** for 20 seconds **for you and your party**" },
+                { es: "+0,4% de daño por ataque frontal", en: "+0.4% front attack damage" },
+                { es: "No se acumula con la Furia del Templar — si lleváis los dos, uno sobra", en: "Does not stack with a Templar's Fury — if you both run it, one is wasted" },
+                { es: "Se desbloquea a nivel 21", en: "Unlocks at level 21" },
+              ],
+            },
+            {
+              orden: { es: "55,6%", en: "55.6%" },
+              nombre: { es: "Preparación de ataque", en: "Attack Readiness" },
+              ko: "공격 준비",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_005.webp",
+              puntos: [
+                { es: "**No tiene condición: está encendida siempre.** Eso la hace la más fácil de aprovechar.", en: "**No condition to meet: it is always on.** That makes it the easiest one to get value from." },
+                { es: "+5,5% de daño PvE, +2% de defensa y +100 de precisión", en: "+5.5% PvE damage, +2% defence and +100 accuracy" },
+                { es: "Se desbloquea a nivel 13", en: "Unlocks at level 13" },
+              ],
+            },
+            {
+              orden: { es: "54,6%", en: "54.6%" },
+              nombre: { es: "Estallido de sed de sangre", en: "Bloodlust Burst" },
+              ko: "살기 파열",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_010.webp",
+              puntos: [
+                { es: "**Premia pegar mucho, que es justo lo que hace un Gladiator.** Encaja con cancelar el básico.", en: "**It rewards hitting a lot, which is exactly what a Gladiator does.** It pairs with auto-cancelling." },
+                { es: "Cada golpe acumula Amenaza; a las **5 acumulaciones estalla** en área contra 4 enemigos", en: "Each hit stacks Menace; at **5 stacks it bursts** in an area against 4 enemies" },
+                { es: "El estallido te deja +5,5% de daño crítico durante 3 segundos", en: "The burst leaves you +5.5% critical damage for 3 seconds" },
+                { es: "Se desbloquea a nivel 25", en: "Unlocks at level 25" },
+              ],
+            },
+            {
+              orden: { es: "50,9%", en: "50.9%" },
+              nombre: { es: "Impacto certero", en: "Impact Hit" },
+              ko: "충격 적중",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_006.webp",
+              puntos: [
+                { es: "+11,2% de probabilidad de impacto y +0,3% de doble golpe", en: "+11.2% Impact-type chance and +0.3% double chance" },
+                { es: "**Es la cuarta y se nota:** en collar y pendiente sube al 64%, en pantalón y capa baja al 35%. Cuando hay que sacrificar una, cae esta.", en: "**It is the fourth and you can tell:** 64% on necklace and earring, 35% on pants and cape. When something has to go, this is what goes." },
+                { es: "Se desbloquea a nivel 15", en: "Unlocks at level 15" },
+              ],
+            },
+            {
+              orden: { es: "20,2%", en: "20.2%" },
+              nombre: { es: "Detectar debilidad", en: "Weak Point Detection" },
+              ko: "약점 파악",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_Passive_004.webp",
+              puntos: [
+                { es: "**Esta no va en todas las piezas, y ahí está el truco.** La élite la graba en **pendiente (54%) y collar (50%)**, y casi nunca en pantalón (2%), capa (3%) o casco (5%).", en: "**This one does not go on every slot, and that is the trick.** Top players engrave it on **earring (54%) and necklace (50%)**, and almost never on pants (2%), cape (3%) or helmet (5%)." },
+                { es: "+100 de crítico y +0,5% de perfección", en: "+100 critical hit and +0.5% perfect chance" },
+                { es: "Se desbloquea a nivel 11 — la primera que tendrás", en: "Unlocks at level 11 — the first one you will get" },
+              ],
+            },
+            {
+              orden: { es: "2,6%", en: "2.6%" },
+              nombre: { es: "Postura de supervivencia", en: "Survival Stance" },
+              ko: "생존 자세",
+              icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_026.webp",
+              puntos: [
+                { es: "**Casi nadie la graba, y no es por despiste.** El hueco vale más con daño.", en: "**Almost nobody engraves it, and it is not an oversight.** The slot is worth more with damage on it." },
+                { es: "+200 de vida, +7% de vida máxima y +5,5% de aguante en PvE", en: "+200 HP, +7% max HP and +5.5% PvE damage tolerance" },
+                { es: "Tiene sentido si haces de tanque de apoyo o vas muy justo de vida en una mazmorra dura", en: "It makes sense if you off-tank or you are dying in a hard dungeon" },
+              ],
+            },
           ],
+        },
+        {
+          t: "tabla",
+          cabeceras: [
+            { es: "Pieza", en: "Slot" },
+            { es: "Contraataque", en: "Veteran C." },
+            { es: "Preparación", en: "Attack R." },
+            { es: "Sed de sangre", en: "Bloodlust" },
+            { es: "Impacto", en: "Impact" },
+            { es: "Detectar deb.", en: "Weak Point" },
+          ],
+          filas: [
+            [{ es: "**Pendiente**", en: "**Earring**" }, { es: "65%", en: "65%" }, { es: "65%", en: "65%" }, { es: "64%", en: "64%" }, { es: "64%", en: "64%" }, { es: "**54%**", en: "**54%**" }],
+            [{ es: "**Collar**", en: "**Necklace**" }, { es: "65%", en: "65%" }, { es: "64%", en: "64%" }, { es: "62%", en: "62%" }, { es: "62%", en: "62%" }, { es: "**50%**", en: "**50%**" }],
+            [{ es: "Hombreras", en: "Shoulder" }, { es: "64%", en: "64%" }, { es: "62%", en: "62%" }, { es: "60%", en: "60%" }, { es: "59%", en: "59%" }, { es: "25%", en: "25%" }],
+            [{ es: "Peto", en: "Torso" }, { es: "61%", en: "61%" }, { es: "59%", en: "59%" }, { es: "56%", en: "56%" }, { es: "57%", en: "57%" }, { es: "26%", en: "26%" }],
+            [{ es: "Casco", en: "Helmet" }, { es: "62%", en: "62%" }, { es: "55%", en: "55%" }, { es: "55%", en: "55%" }, { es: "48%", en: "48%" }, { es: "5%", en: "5%" }],
+            [{ es: "Guantes", en: "Gloves" }, { es: "62%", en: "62%" }, { es: "56%", en: "56%" }, { es: "54%", en: "54%" }, { es: "48%", en: "48%" }, { es: "8%", en: "8%" }],
+            [{ es: "Botas", en: "Boots" }, { es: "63%", en: "63%" }, { es: "54%", en: "54%" }, { es: "50%", en: "50%" }, { es: "48%", en: "48%" }, { es: "8%", en: "8%" }],
+            [{ es: "Pantalón", en: "Pants" }, { es: "60%", en: "60%" }, { es: "42%", en: "42%" }, { es: "44%", en: "44%" }, { es: "36%", en: "36%" }, { es: "2%", en: "2%" }],
+            [{ es: "Capa", en: "Cape" }, { es: "61%", en: "61%" }, { es: "42%", en: "42%" }, { es: "46%", en: "46%" }, { es: "34%", en: "34%" }, { es: "3%", en: "3%" }],
+          ],
+        },
+        {
+          t: "parrafo",
+          texto: {
+            es: "**Detectar debilidad es la excepción que explica la tabla.** En collar y pendiente la lleva la mitad de la élite; en pantalón y capa, dos de cada cien. La lectura es simple: en los accesorios caben las cinco, y en la armadura hay que elegir — y ahí gana siempre el daño de las cuatro primeras.",
+            en: "**Weak Point Detection is the exception that explains the table.** Half of the top players run it on necklace and earring; on pants and cape, two in a hundred. The reading is simple: accessories fit all five, armour makes you choose — and the damage of the first four always wins there.",
+          },
         },
         {
           t: "parrafo",
@@ -586,7 +827,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 7. Rotación ─────────────────────────────────────────────
+    // ── 8. Rotación ─────────────────────────────────────────────
     {
       eyebrow: { es: "Rotación", en: "Rotation" },
       titulo: { es: "El orden de los golpes", en: "The order of your swings" },
@@ -676,7 +917,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 8. Errores ──────────────────────────────────────────────
+    // ── 9. Errores ──────────────────────────────────────────────
     {
       eyebrow: { es: "Los tropiezos", en: "Common trips" },
       titulo: { es: "Errores que cuestan daño", en: "Mistakes that cost damage" },
@@ -698,7 +939,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 9. Alas y mascota ───────────────────────────────────────
+    // ── 10. Alas y mascota ───────────────────────────────────────
     {
       eyebrow: { es: "Alas y mascota", en: "Wings and pet" },
       titulo: { es: "Los dos huecos de fuera", en: "The two outside slots" },
@@ -739,7 +980,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 10. Equipo ──────────────────────────────────────────────
+    // ── 11. Equipo ──────────────────────────────────────────────
     {
       eyebrow: { es: "Equipo", en: "Gear" },
       titulo: { es: "Lo que llevan puesto", en: "What they are wearing" },
@@ -779,8 +1020,12 @@ export const gladiator: Guia = {
 
   fuentes: [
     {
-      es: "**De dónde sale todo esto.** Los porcentajes de equipo, stats y grabados vienen de una plataforma que mide el combate real del servidor coreano y agrega lo que llevan puesto 6.834 Gladiators; se actualiza a diario y estos datos son del 2 de septiembre. El sistema de arcanas, las prioridades de skill, los estigmas y la rotación vienen de guías de la comunidad del juego, revisadas entre enero y agosto.",
-      en: "**Where all this comes from.** The gear, stat and engraving percentages come from a platform that measures real combat on the Korean server and aggregates what 6,834 Gladiators have equipped; it updates daily and this snapshot is from 2 September. The arcana system, skill priorities, stigmas and rotation come from community guides for the game, revised between January and August.",
+      es: "**De dónde sale todo esto.** Los porcentajes de equipo, stats y grabados vienen de una plataforma que mide el combate real del servidor coreano y agrega lo que llevan puesto 6.834 Gladiators; se actualiza a diario y estos datos son del 2 de septiembre. La prioridad de las pasivas y los grabados del anillo son de la misma plataforma, sobre **662 Gladiators de PvE**. El sistema de arcanas, las prioridades de skill, los estigmas y la rotación vienen de guías de la comunidad del juego, revisadas entre enero y agosto.",
+      en: "**Where all this comes from.** The gear, stat and engraving percentages come from a platform that measures real combat on the Korean server and aggregates what 6,834 Gladiators have equipped; it updates daily and this snapshot is from 2 September. The passive priority and the ring engravings come from the same platform, over **662 PvE Gladiators**. The arcana system, skill priorities, stigmas and rotation come from community guides for the game, revised between January and August.",
+    },
+    {
+      es: "**Las especializaciones salen del volcado del cliente del juego** (26 de agosto), que publica una base de datos extraída del propio juego: los efectos son exactos. Lo que NO existe en ninguna fuente pública es el porcentaje de gente que elige cada una — lo marcado con ✓ es lo que lleva la build de esta guía, y el añadido del Grillete aéreo es la build de un jugador del tablón coreano. Está señalado en su sitio.",
+      en: "**The specialties come from the game client dump** (26 August), a database extracted from the game itself: the effects are exact. What does NOT exist in any public source is how many players pick each one — what is marked with ✓ is what this guide's build runs, and the Aerial Snare note is one player's build from the Korean board. It is flagged where it appears.",
     },
     {
       es: "**Lo que hay que tener en cuenta.** Es el servidor coreano, con un parche por delante del que llegará al global el 5 de octubre. Las mecánicas serán las mismas; los números y el meta pueden moverse. Y en PvP, más: el propio autor de la guía avisa de que el meta cambia constantemente, así que trátalo como punto de partida y no como ley.",

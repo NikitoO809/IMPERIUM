@@ -41,6 +41,29 @@ export type Skill = {
   puntos: Par[];
 };
 
+/** Una especialización de habilidad: el efecto que se desbloquea a un nivel. */
+export type Especialidad = {
+  /** Nivel de la skill al que aparece. */
+  nivel: number;
+  efecto: Par;
+  /** true = a ese nivel aparecen varias a la vez, como alternativas. */
+  alternativa?: boolean;
+  /** Marcada como la que recomienda la guía. */
+  recomendada?: boolean;
+};
+
+/** Las especializaciones de una habilidad, con su icono. */
+export type SkillEspecialidades = {
+  nombre: Par;
+  ko: string;
+  icono?: string;
+  /** Por qué esta skill importa, en una línea. */
+  nota?: Par;
+  /** % de Gladiators de élite que la graba en el anillo, si está medido. */
+  anillo?: number;
+  opciones: Especialidad[];
+};
+
 /** Tarjeta con título, subtítulo y una lista. */
 export type Tarjeta = {
   titulo: Par;
@@ -67,6 +90,8 @@ export type Bloque =
   | { t: "stats"; filas: FilaStat[] }
   | { t: "tarjetas"; columnas?: 2 | 3; items: Tarjeta[] }
   | { t: "skills"; items: Skill[] }
+  /** Especializaciones por habilidad: qué se desbloquea a cada nivel. */
+  | { t: "especialidades"; items: SkillEspecialidades[] }
   | { t: "rotacion"; titulo: Par; cuando: Par; pasos: Paso[] }
   | { t: "aviso"; parrafos: Par[] }
   | { t: "subtitulo"; texto: Par }
