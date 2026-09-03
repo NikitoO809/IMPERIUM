@@ -17,6 +17,8 @@ type NavItem = {
 const NAV: NavItem[] = [
   { href: "/admin", label: "Panel", icon: "▣", exact: true },
   { href: "/admin/aprobaciones", label: "Aprobaciones", icon: "✓", exact: false, supremoOnly: true, badgeKey: "pending" },
+  { href: "/admin/anuncios", label: "Anuncios", icon: "📣", exact: false, publishersOnly: true },
+  { href: "/admin/manual", label: "Manual de Atreia", icon: "📖", exact: false, supremoOnly: true },
   { href: "/admin/proximos", label: "Próximos juegos", icon: "◆", exact: false, publishersOnly: true },
   { href: "/admin/horizonte", label: "MMORPG horizonte", icon: "✧", exact: false, publishersOnly: true },
   { href: "/admin/nosotros", label: "Nosotros", icon: "✦", exact: false, publishersOnly: true },

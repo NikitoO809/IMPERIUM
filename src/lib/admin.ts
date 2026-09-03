@@ -64,6 +64,15 @@ export async function requireAdmin(): Promise<string> {
   return id;
 }
 
+// Sesión con permiso de PUBLICAR (admin/supremo) para las APIs de /api/*.
+// A diferencia de requirePublisher(), NO redirige: devuelve null para que el
+// route handler conteste 401 en JSON (un redirect rompería el fetch del panel).
+export async function getApiPublisher(): Promise<StaffSession | null> {
+  const session = await getRank();
+  if (!session || !canPublish(session.rank)) return null;
+  return session;
+}
+
 export type AdminGame = {
   id: string;
   slug: string;
