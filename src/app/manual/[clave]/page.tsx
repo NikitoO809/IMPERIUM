@@ -1,20 +1,21 @@
-// Manual de Atreia — índice privado.
+// Manual de Atreia — índice.
 //
-// Solo el Supremo. Aunque alguien tenga el enlace, sin esa sesión no pasa de
-// aquí: requireSupremo redirige antes de que se pinte nada.
+// Ya no pide sesión: la puerta es el enlace. La clave viaja dentro de la URL y
+// se compara con MANUAL_CLAVE; si no cuadra, 404 — la misma cara que pondría
+// una página que no existe, para no confirmarle a nadie que hay algo aquí.
 import Image from "next/image";
 import Link from "next/link";
-import { requireSupremo } from "@/lib/admin";
+import { notFound } from "next/navigation";
+import { claveValida } from "@/lib/manual/acceso";
 import { GUIAS } from "@/lib/manual";
 import { HudLabel } from "@/components/hud";
 
-export const metadata = { title: "Manual de Atreia" };
-
-export default async function ManualIndexPage() {
-  await requireSupremo();
+export default async function ManualIndexPage({ params }: { params: Promise<{ clave: string }> }) {
+  const { clave } = await params;
+  if (!claveValida(clave)) notFound();
 
   return (
-    <div className="flex h-full flex-col">
+    <div className="flex h-full min-h-0 flex-col">
       <header className="relative overflow-hidden border-b border-white/10 bg-black/30 px-8 py-4">
         <Image
           src="/manual/aion2-portada.webp"
@@ -36,15 +37,15 @@ export default async function ManualIndexPage() {
 
       <div className="flex-1 overflow-auto px-8 py-6">
         <p className="mb-6 max-w-2xl text-sm text-white/40">
-          Guías de Aion 2 con datos del servidor coreano. No están enlazadas desde ningún sitio
-          público y solo se abren con tu sesión.
+          Guías de Aion 2 con datos del servidor coreano. No están enlazadas desde ningún sitio ni
+          salen en buscadores: se entra solo con este enlace, así que cuida a quién se lo pasas.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {GUIAS.map((g) => (
             <Link
               key={g.slug}
-              href={`/admin/manual/${g.slug}`}
+              href={`/manual/${encodeURIComponent(clave)}/${g.slug}`}
               className="group overflow-hidden border border-white/10 bg-black/20 transition-colors hover:border-white/25"
               style={{ borderLeftWidth: 3, borderLeftColor: g.acento }}
             >

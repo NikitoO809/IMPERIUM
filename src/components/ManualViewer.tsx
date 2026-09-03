@@ -7,6 +7,9 @@
 // próxima vez entras directamente en el que dejaste.
 //
 // Todo el contenido vive en src/lib/manual/<clase>.ts — aquí solo hay pintura.
+//
+// Quién puede verlo lo decide la página que lo monta: el visor no sabe nada de
+// permisos, solo recibe a dónde vuelve el enlace del índice.
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useSyncExternalStore } from "react";
@@ -61,7 +64,7 @@ function ricos(texto: string): React.ReactNode[] {
   );
 }
 
-export function ManualViewer({ guia }: { guia: Guia }) {
+export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string }) {
   const lang = useSyncExternalStore(idiomaStore.subscribe, idiomaStore.leer, () => "es" as Lang);
   const [modo, setModo] = useState<Modo>("pve");
 
@@ -73,7 +76,7 @@ export function ManualViewer({ guia }: { guia: Guia }) {
       {/* Barra: título, idioma y vuelta al índice */}
       <header className="sticky top-0 z-20 border-b border-white/10 bg-[#0d0d14]/95 px-8 py-3 backdrop-blur">
         <div className="flex items-center gap-4">
-          <Link href="/admin/manual" className="font-hud text-[10px] tracking-[0.2em] text-white/40 hover:text-white/80">
+          <Link href={volverA} className="font-hud text-[10px] tracking-[0.2em] text-white/40 hover:text-white/80">
             ← {lang === "es" ? "ÍNDICE" : "INDEX"}
           </Link>
           <h1 className="font-title text-lg font-extrabold tracking-wide" style={{ color: acento }}>

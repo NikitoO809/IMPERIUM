@@ -92,7 +92,7 @@ export type Portada = {
 };
 
 export type Guia = {
-  /** Parte de la URL: /admin/manual/<slug> */
+  /** Parte de la URL: /manual/<clave>/<slug> */
   slug: string;
   /** Nombre en el índice y en la pestaña. */
   nombre: string;
