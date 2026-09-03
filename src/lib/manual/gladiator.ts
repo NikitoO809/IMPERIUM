@@ -1267,6 +1267,57 @@ export const gladiator: Guia = {
             },
           ],
         },
+        { t: "subtitulo", texto: { es: "Y qué es el groggy", en: "And what groggy is" } },
+        {
+          t: "parrafo",
+          texto: {
+            es: "Sale por toda la guía y el juego tampoco lo explica. **Los jefes de mazmorra llevan una segunda barra, verde, debajo de la de vida: es la barra de groggy.** Casi todas tus skills se la bajan, y cuánto se la bajan viene escrito en la propia skill como «daño a la barra de groggy» (그로기 게이지 피해량). Las skills normales quitan poco —de 2 a 15—; **los estigmas quitan 20, y hay uno de 50 en cada clase**.",
+            en: "It shows up all over this guide and the game does not explain it either. **Dungeon bosses carry a second bar, green, under their health bar: the groggy bar.** Nearly every skill of yours drains it, and how much is written on the skill itself as «Stagger Gauge Damage» (그로기 게이지 피해량). Regular skills take little —2 to 15—; **stigmas take 20, and every class has one that takes 50**.",
+          },
+        },
+        {
+          t: "tarjetas",
+          columnas: 3,
+          items: [
+            {
+              titulo: { es: "Cuando la vacías", en: "When you empty it" },
+              sub: { es: "Se abre la ventana", en: "The window opens" },
+              puntos: [
+                { es: "El jefe **entra en groggy**: se queda indefenso y empieza la ventana de daño máximo", en: "The boss **goes groggy**: it is left helpless and the burst window starts" },
+                { es: "**Te vas detrás de él** — ahí los golpes entran por la espalda, que amplifica aparte", en: "**You go round behind it** — from there your hits land in the back, which amplifies separately" },
+                { es: "Y usas las skills que **solo funcionan con el objetivo en groggy**", en: "And you use the skills that **only work on a groggy target**" },
+              ],
+            },
+            {
+              titulo: { es: "Las tuyas de groggy", en: "Your groggy skills" },
+              sub: { es: "Gladiator", en: "Gladiator" },
+              puntos: [
+                { es: "**Danza de filos** (Sword Aura Rampage) — solo se puede usar si el jefe está en groggy", en: "**Sword Aura Rampage** — it can only be used while the boss is groggy" },
+                { es: "**Impulso destructivo** (Destructive Impulse) — pasiva: +146 de daño extra contra objetivos en groggy o con estado de impacto", en: "**Destructive Impulse** — passive: +146 extra damage against groggy targets or ones under an Impact-type status" },
+                { es: "**Onda de ira** (Wrath Wave) — tu estigma de **50 de daño a la barra**, con 60 s de recarga", en: "**Wrath Wave** — your **50 gauge damage** stigma, on a 60s cooldown" },
+                { es: "**Bendición de Zikel** a especialización 5 da **+50% de daño a la barra de groggy**", en: "**Zikel's Blessing** at specialty 5 gives **+50% Stagger Gauge Damage**" },
+              ],
+            },
+            {
+              titulo: { es: "Y por qué no es opcional", en: "And why it is not optional" },
+              sub: { es: "Aquí se muere el grupo", en: "This is where the party dies" },
+              puntos: [
+                { es: "**En varias mazmorras, si no la vacías a tiempo, el jefe lanza un patrón que mata a todo el grupo**", en: "**In several dungeons, if you do not empty it in time, the boss fires a pattern that wipes the party**" },
+                { es: "El caso típico: la barra está **bloqueada** hasta que el jefe baja del 50% de vida, y ahí se abre con un tiempo límite", en: "The classic case: the bar is **locked** until the boss drops below 50% HP, and then it opens with a time limit" },
+                { es: "Por eso **el estigma de 50 se lleva siempre a mazmorra y se guarda**: tiene una recarga larguísima y si no lo tienes cuando toca, no hay segunda oportunidad", en: "That is why **the 50 stigma always goes to the dungeon and gets saved**: its cooldown is enormous and if you do not have it when the moment comes, there is no second chance" },
+              ],
+            },
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**Ahora se entiende por qué la Bendición de Zikel no se pulsa en cuanto está lista.** No es solo que suba el ataque un 20%: a especialización 5 le mete **un 50% más de daño a la barra de groggy**. Soltarla a destiempo no es perder un buff, es perder la mitad de la velocidad a la que tumbas la barra — y en un jefe con patrón de aniquilación, eso es el grupo entero.",
+              en: "**Now it is clear why Zikel's Blessing is not pressed the moment it is ready.** It is not just the 20% attack: at specialty 5 it adds **50% more Stagger Gauge Damage**. Firing it early is not losing a buff, it is losing half the speed at which you break the bar — and on a boss with a wipe pattern, that is the whole party.",
+            },
+          ],
+        },
       ],
     },
   ],
@@ -1285,8 +1336,8 @@ export const gladiator: Guia = {
       en: "**The macro and the hits per minute** come from the class's Korean board: the setup guide from 30 August —the one with 346 replies—, its in-game macro counterpart, and another player's test counting a minute of hits at ten different combat speeds, three runs each. These are players, not a lab: the numbers are theirs, on their machine. The mouse macro is third-party software and not a game feature; that is stated where it appears.",
     },
     {
-      es: "**El diccionario de atributos** sale de dos artículos de la comunidad coreana: el del Panteón, que enumera los diez atributos de dios y sus dos efectos leyéndolos uno a uno en la ventana de personaje (20 de noviembre), y el de mecánicas de daño (24 de diciembre), que recoge y verifica los experimentos de varios jugadores taiwaneses y coreanos sobre crítico, perfección, golpe fuerte, golpes múltiples, penetración y amplificaciones. Lo de la resistencia al golpe fuerte de los jefes es de un tercer artículo, de enero. Son medidas de jugadores, no del desarrollador: la propia fuente avisa de que el tope del 50% de crítico puede seguir existiendo fuera del muñeco.",
-      en: "**The attribute glossary** comes from two Korean community articles: the Pantheon one, which lists the ten god attributes and their two effects by reading each one in the character window (20 November), and the damage mechanics one (24 December), which collects and verifies experiments by several Taiwanese and Korean players on crit, perfection, heavy strike, multi-hit, penetration and amplifications. The boss heavy-strike resistance figure is from a third article, in January. These are player measurements, not the developer's: the source itself warns the 50% crit cap may still apply outside the dummy.",
+      es: "**El diccionario de atributos** sale de dos artículos de la comunidad coreana: el del Panteón, que enumera los diez atributos de dios y sus dos efectos leyéndolos uno a uno en la ventana de personaje (20 de noviembre), y el de mecánicas de daño (24 de diciembre), que recoge y verifica los experimentos de varios jugadores taiwaneses y coreanos sobre crítico, perfección, golpe fuerte, golpes múltiples, penetración y amplificaciones. Lo de la resistencia al golpe fuerte de los jefes es de un tercer artículo, de enero, y **lo del groggy** de un cuarto que explica la barra, los patrones de aniquilación y qué estigma de 50 tiene cada clase. Son medidas de jugadores, no del desarrollador: la propia fuente avisa de que el tope del 50% de crítico puede seguir existiendo fuera del muñeco.",
+      en: "**The attribute glossary** comes from two Korean community articles: the Pantheon one, which lists the ten god attributes and their two effects by reading each one in the character window (20 November), and the damage mechanics one (24 December), which collects and verifies experiments by several Taiwanese and Korean players on crit, perfection, heavy strike, multi-hit, penetration and amplifications. The boss heavy-strike resistance figure is from a third article, in January, and **the groggy section** from a fourth one explaining the bar, the wipe patterns and which 50-damage stigma each class has. These are player measurements, not the developer's: the source itself warns the 50% crit cap may still apply outside the dummy.",
     },
     {
       es: "**Lo que hay que tener en cuenta.** Es el servidor coreano, con un parche por delante del que llegará al global el 5 de octubre. Las mecánicas serán las mismas; los números y el meta pueden moverse. Y en PvP, más: el propio autor de la guía avisa de que el meta cambia constantemente, así que trátalo como punto de partida y no como ley.",

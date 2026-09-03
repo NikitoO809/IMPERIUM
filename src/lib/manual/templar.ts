@@ -1654,6 +1654,56 @@ export const templar: Guia = {
             },
           ],
         },
+        { t: "subtitulo", texto: { es: "Y qué es el groggy", en: "And what groggy is" } },
+        {
+          t: "parrafo",
+          texto: {
+            es: "Sale por toda la guía y el juego tampoco lo explica. **Los jefes de mazmorra llevan una segunda barra, verde, debajo de la de vida: es la barra de groggy.** Casi todas tus skills se la bajan, y cuánto se la bajan viene escrito en la propia skill como «daño a la barra de groggy» (그로기 게이지 피해량). Las skills normales quitan poco —el Aporreo continuo 3, el Juicio 5, el Golpe de escudo 10—; **los estigmas quitan 20, y el Castigo del Señor Empíreo quita 50**.",
+            en: "It shows up all over this guide and the game does not explain it either. **Dungeon bosses carry a second bar, green, under their health bar: the groggy bar.** Nearly every skill of yours drains it, and how much is written on the skill itself as «Stagger Gauge Damage» (그로기 게이지 피해량). Regular skills take little —Pummel 3, Judgment 5, Shield Smite 10—; **stigmas take 20, and Empyrean Lord's Punishment takes 50**.",
+          },
+        },
+        {
+          t: "tarjetas",
+          columnas: 3,
+          items: [
+            {
+              titulo: { es: "Cuando la vacías", en: "When you empty it" },
+              sub: { es: "Se abre la ventana", en: "The window opens" },
+              puntos: [
+                { es: "El jefe **entra en groggy**: se queda indefenso y empieza la ventana de daño máximo", en: "The boss **goes groggy**: it is left helpless and the burst window starts" },
+                { es: "**Danza de destellos** (Flash Rampage) es tu skill de groggy: **solo funciona con el jefe en ese estado**", en: "**Flash Rampage** is your groggy skill: **it only works while the boss is in that state**" },
+                { es: "Es lo que la guía llama «cancelar en groggy»: **el ataque básico se desactiva solo** y su sitio lo ocupa la Danza, que tiene mejor coeficiente y animación más rápida", en: "This is what the guide calls the «groggy cancel»: **the basic attack switches itself off** and Flash Rampage takes its place, with a better coefficient and a faster animation" },
+              ],
+            },
+            {
+              titulo: { es: "Y por eso compensa", en: "And that is why it pays" },
+              sub: { es: "Aunque casi nadie la suba", en: "Even though almost nobody levels it" },
+              puntos: [
+                { es: "Solo el 37,9% la lleva a nivel 12 y el 1,0% a 20 — es **la skill más abandonada de la clase**", en: "Only 37.9% take it to 12 and 1.0% to 20 — it is **the most abandoned skill in the class**" },
+                { es: "Pero durante el groggy sube los golpes, **baja la recarga del Estandarte** y devuelve espíritu", en: "But during a groggy it raises your hit count, **cuts the Banner's cooldown** and gives MP back" },
+                { es: "Su nivel 16 le quita **1 segundo a todas tus recargas** al acertar", en: "Its level 16 takes **1 second off every cooldown you have** on hit" },
+              ],
+            },
+            {
+              titulo: { es: "Y por qué no es opcional", en: "And why it is not optional" },
+              sub: { es: "Aquí se muere el grupo", en: "This is where the party dies" },
+              puntos: [
+                { es: "**En varias mazmorras, si no la vacías a tiempo, el jefe lanza un patrón que mata a todo el grupo**", en: "**In several dungeons, if you do not empty it in time, the boss fires a pattern that wipes the party**" },
+                { es: "El caso típico: la barra está **bloqueada** hasta que el jefe baja del 50% de vida, y ahí se abre con un tiempo límite", en: "The classic case: the bar is **locked** until the boss drops below 50% HP, and then it opens with a time limit" },
+                { es: "Por eso el **Castigo del Señor Empíreo** —tu único estigma de 50— se lleva siempre y se guarda: lo tiene el 77,4% a nivel 20", en: "That is why **Empyrean Lord's Punishment** —your only 50 stigma— always goes in and gets saved: 77.4% run it at level 20" },
+              ],
+            },
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**Y aquí el Templar tiene un papel que ninguna otra clase tiene.** Sumando lo que quitan tus skills, entre Provocación (20), Escudo de perdición (20), Carga de escudo (20), Enganche (10) y el Castigo del Señor Empíreo (50), eres de los que más rápido tumban la barra — y eres además el que decide cuándo, porque el jefe está mirándote a ti. Si el grupo llega tarde al groggy, mira primero si estabas guardando el estigma de 50 para nada.",
+              en: "**And here the Templar has a job no other class has.** Adding up what your skills take —Taunt (20), Doom Shield (20), Shield Rush (20), Poach (10) and Empyrean Lord's Punishment (50)— you are among the fastest at breaking the bar, and you are also the one who decides when, because the boss is looking at you. If the party arrives late to the groggy, first check whether you were saving that 50 stigma for nothing.",
+            },
+          ],
+        },
       ],
     },
   ],
@@ -1672,8 +1722,8 @@ export const templar: Guia = {
       en: "**The rotation, the macro, the hits per minute and everything about aggro** come from the class's Korean board: the base setup guide from 21 August, the cycle and macro guide from 28 August, the hit-count comparison across some 60 Templars from 31 August, the two block-setup guides, and a dozen threads about losing aggro — from the people who lose it and the people who do not. These are players, not a lab: the numbers are theirs, on their machines. The mouse macro is third-party software and not a game feature; that is stated where it appears.",
     },
     {
-      es: "**El diccionario de atributos** sale de dos artículos de la comunidad coreana: el del Panteón, que enumera los diez atributos de dios y sus dos efectos leyendo uno a uno el detalle en la ventana de personaje (20 de noviembre), y el de mecánicas de daño (24 de diciembre), que recoge y verifica los experimentos de varios jugadores taiwaneses y coreanos sobre crítico, perfección, golpe fuerte, golpes múltiples, penetración y amplificaciones. Lo de la resistencia al golpe fuerte de los jefes es de un tercer artículo, de enero. Son medidas de jugadores, no del desarrollador: la propia fuente avisa de que el tope del 50% de crítico puede seguir existiendo fuera del muñeco.",
-      en: "**The attribute glossary** comes from two Korean community articles: the Pantheon one, which lists the ten god attributes and their two effects by reading each entry in the character window (20 November), and the damage mechanics one (24 December), which collects and verifies experiments by several Taiwanese and Korean players on crit, perfection, heavy strike, multi-hit, penetration and amplifications. The boss heavy-strike resistance figure is from a third article, in January. These are player measurements, not the developer's: the source itself warns the 50% crit cap may still apply outside the dummy.",
+      es: "**El diccionario de atributos** sale de dos artículos de la comunidad coreana: el del Panteón, que enumera los diez atributos de dios y sus dos efectos leyendo uno a uno el detalle en la ventana de personaje (20 de noviembre), y el de mecánicas de daño (24 de diciembre), que recoge y verifica los experimentos de varios jugadores taiwaneses y coreanos sobre crítico, perfección, golpe fuerte, golpes múltiples, penetración y amplificaciones. Lo de la resistencia al golpe fuerte de los jefes es de un tercer artículo, de enero, y **lo del groggy** de un cuarto que explica la barra, los patrones de aniquilación y qué estigma de 50 tiene cada clase. Son medidas de jugadores, no del desarrollador: la propia fuente avisa de que el tope del 50% de crítico puede seguir existiendo fuera del muñeco.",
+      en: "**The attribute glossary** comes from two Korean community articles: the Pantheon one, which lists the ten god attributes and their two effects by reading each entry in the character window (20 November), and the damage mechanics one (24 December), which collects and verifies experiments by several Taiwanese and Korean players on crit, perfection, heavy strike, multi-hit, penetration and amplifications. The boss heavy-strike resistance figure is from a third article, in January, and **the groggy section** from a fourth one explaining the bar, the wipe patterns and which 50-damage stigma each class has. These are player measurements, not the developer's: the source itself warns the 50% crit cap may still apply outside the dummy.",
     },
     {
       es: "**Lo que hay que tener en cuenta.** Es el servidor coreano, con un parche por delante del que llegará al global el 5 de octubre. Las mecánicas serán las mismas; los números y el meta pueden moverse. Y en este caso hay algo más: el parche del retardo mínimo de cancelación tiene a la clase entera pidiendo que lo revisen, así que **el ciclo de esta guía es el de septiembre de 2026 en Corea y puede no ser el que te encuentres al entrar**. Los umbrales de bloqueo tampoco están cerrados por nadie: las tres cifras que damos son de tres jugadores distintos y las tres van marcadas como estimación.",
