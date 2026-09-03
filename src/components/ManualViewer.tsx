@@ -311,7 +311,9 @@ export function ManualViewer({ guia, volverA }: { guia: Guia; volverA: string })
 
 // Los bloques que llevan dentro su propia parrilla (habilidades, tarjetas,
 // rotaciones…) piden la anchura entera; el texto corrido, las tablas y los
-// avisos caben a media.
+// avisos caben a media. Los subtítulos también van enteros: si entran en el
+// reparto de columnas acaban al lado de la tabla que encabezan, y entonces ya
+// no se sabe qué está titulando.
 function ocupaTodo(b: Bloque): boolean {
   switch (b.t) {
     case "skills":
@@ -320,6 +322,7 @@ function ocupaTodo(b: Bloque): boolean {
     case "pestanas":
     case "calculadora":
     case "fuentes":
+    case "subtitulo":
       return true;
     case "tarjetas":
       return b.columnas !== 2;

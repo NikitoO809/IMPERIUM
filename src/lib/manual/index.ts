@@ -6,8 +6,9 @@
 import type { Guia } from "./tipos";
 import { oficios } from "./oficios";
 import { gladiator } from "./gladiator";
+import { templar } from "./templar";
 
-export const GUIAS: Guia[] = [oficios, gladiator];
+export const GUIAS: Guia[] = [oficios, gladiator, templar];
 
 export function getGuia(slug: string): Guia | undefined {
   return GUIAS.find((g) => g.slug === slug);
