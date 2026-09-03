@@ -510,12 +510,12 @@ export const gladiator: Guia = {
       titulo: { es: "Lo que desbloquea cada skill", en: "What each skill unlocks" },
       intro: [
         {
-          es: "Subir una skill no solo le sube el número: a **nivel 8, 12 y 16** cada una desbloquea efectos que le cambian el comportamiento. Esto sale del volcado del cliente del juego, así que aquí no hay opiniones — es lo que hace cada cosa.",
-          en: "Levelling a skill does more than raise its number: at **levels 8, 12 and 16** each one unlocks effects that change how it behaves. This comes from the game client dump, so there are no opinions here — it is what each thing does.",
+          es: "Subir una skill no solo le sube el número: a **nivel 8, 12 y 16** cada una desbloquea efectos que le cambian el comportamiento. Pero **no te los llevas todos** — cada skill tiene **tres ranuras** de especialización, y la tercera está cerrada hasta el nivel 16. Eliges qué metes en cada una y lo que dejes fuera se queda apagado.",
+          en: "Levelling a skill does more than raise its number: at **levels 8, 12 and 16** each one unlocks effects that change how it behaves. But **you do not get them all** — each skill has **three specialty slots**, and the third stays locked until level 16. You choose what goes in each one, and whatever you leave out stays dark.",
         },
         {
-          es: "La marca **✓** señala los efectos que ya lleva la build de esta guía. El porcentaje de la derecha es otra cosa: **cuántos de los 662 Gladiators medidos graban esa skill en el anillo**.",
-          en: "The **✓** marks the effects the build in this guide already runs. The percentage on the right is a different thing: **how many of the 662 measured Gladiators engrave that skill on their ring**.",
+          es: "Los efectos y los niveles salen del volcado del cliente del juego, así que son exactos. La marca **✓** señala lo que recomienda esta guía; el porcentaje de la derecha es otra cosa: **cuántos de los 662 Gladiators medidos graban esa skill en el anillo**.",
+          en: "The effects and levels come from the game client dump, so they are exact. The **✓** marks what this guide recommends; the percentage on the right is a different thing: **how many of the 662 measured Gladiators engrave that skill on their ring**.",
         },
       ],
       bloques: [
@@ -583,12 +583,12 @@ export const gladiator: Guia = {
               ko: "예리한 일격",
               icono: "https://aion2t.com/db-item-icons/ICON_GL_SKILL_002.webp",
               anillo: 31.7,
-              nota: { es: "Parece relleno y no lo es: su nivel 12 le quita recarga al Embate de perdición cada vez que aciertas.", en: "It looks like filler and it is not: its level 12 shaves cooldown off Ruinous Blow every time you hit." },
+              nota: { es: "**De esta sabemos lo que elige un jugador de cabeza**, porque publicó la captura: se queda con los golpes múltiples y con la recarga, y deja fuera el espíritu y el robo de vida.", en: "**For this one we know what a top player picks**, because he posted the screenshot: he keeps Multi-Hit and the cooldown, and leaves the MP and the lifesteal out." },
               opciones: [
                 { nivel: 8, alternativa: true, efecto: { es: "+20% de espíritu recuperado", en: "+20% MP restored" } },
                 { nivel: 8, alternativa: true, efecto: { es: "Roba un 1% de vida", en: "Absorbs 1% HP" } },
-                { nivel: 8, alternativa: true, efecto: { es: "+50% de golpes múltiples al acertar", en: "+50% Multi-Hit on hit" } },
-                { nivel: 12, efecto: { es: "**−1 s de recarga al Embate de perdición** al acertar", en: "**−1s Ruinous Blow cooldown** on hit" } },
+                { nivel: 8, alternativa: true, recomendada: true, efecto: { es: "+50% de golpes múltiples al acertar", en: "+50% Multi-Hit on hit" } },
+                { nivel: 12, recomendada: true, efecto: { es: "**−1 s de recarga al Embate de perdición** al acertar", en: "**−1s Ruinous Blow cooldown** on hit" } },
                 { nivel: 16, efecto: { es: "Añade la cadena [Golpe temerario]", en: "Adds the [Reckless Strike] chain skill" } },
               ],
             },
@@ -642,8 +642,8 @@ export const gladiator: Guia = {
               en: "**The Aerial Snare note comes from the Korean board, not from a measurement.** The player behind the setup that tops the meter says he always slots it: at level 14 it hits harder than Overhead Slam, builds **four times more groggy gauge**, and running it versus not is worth some 50,000-100,000 DPS. It is one person's build, not a percentage out of 662 — but it is the only public hint on which specialties to pick.",
             },
             {
-              es: "**Nadie publica el porcentaje de adopción de las especializaciones.** Ni cielui ni la web oficial: se puede medir lo que la gente lleva puesto encima, pero no lo que ha elegido dentro de cada skill. Así que aquí tienes lo que hace cada una y lo que lleva esta build; el resto, de momento, es probarlo en el muñeco.",
-              en: "**Nobody publishes adoption rates for specialties.** Neither cielui nor the official site: what people wear can be measured, what they picked inside each skill cannot. So here is what each one does and what this build runs; the rest, for now, is testing it on the dummy.",
+              es: "**Nadie publica el porcentaje de adopción de las especializaciones.** Ni cielui ni la web oficial: se puede medir lo que la gente lleva puesto encima, pero no lo que ha elegido dentro de cada skill. Lo único de primera mano son las capturas que publican los propios jugadores de cabeza — de ahí sale lo del Golpe afilado. El resto, de momento, es probarlo en el muñeco.",
+              en: "**Nobody publishes adoption rates for specialties.** Neither cielui nor the official site: what people wear can be measured, what they picked inside each skill cannot. The only first-hand material is the screenshots top players post themselves — that is where the Keen Strike pick comes from. The rest, for now, is testing it on the dummy.",
             },
           ],
         },
@@ -827,7 +827,140 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 8. Rotación ─────────────────────────────────────────────
+    // ── 8. La macro ─────────────────────────────────────────────
+    {
+      eyebrow: { es: "La macro", en: "The macro" },
+      titulo: { es: "Cómo se juega de verdad al Gladiator", en: "How the Gladiator is actually played" },
+      intro: [
+        {
+          es: "Aion 2 trae **una macro de habilidades dentro del juego**: metes skills en orden, le pones un retardo en milisegundos y salen con un solo botón. En Corea nadie juega al Gladiator sin ella, y su termómetro no es el DPS — es el **número de golpes por minuto**, lo que ellos llaman «tasu».",
+          en: "Aion 2 ships **a skill macro inside the game**: you queue skills in order, set a delay in milliseconds and they fire off one button. In Korea nobody plays Gladiator without it, and their yardstick is not DPS — it is **hits per minute**, what they call «tasu».",
+        },
+        {
+          es: "**98 golpes es el techo práctico.** Si te quedas en 78-86, el problema casi nunca es tu equipo: es la configuración o el ordenador.",
+          en: "**98 hits is the practical ceiling.** If you are stuck at 78-86, the problem is almost never your gear: it is the setup or the computer.",
+        },
+      ],
+      bloques: [
+        {
+          t: "tarjetas",
+          columnas: 2,
+          items: [
+            {
+              titulo: { es: "La del juego", en: "The in-game one" },
+              sub: { es: "Menú de habilidades → Macro de habilidades", en: "Skills menu → Skill macro" },
+              ordenada: true,
+              puntos: [
+                { es: "Tienes **tres macros** (pestañas 1, 2 y 3) y a cada una le metes las skills en orden", en: "You get **three macros** (tabs 1, 2 and 3) and you queue skills into each in order" },
+                { es: "Cada macro lleva su **retardo en milisegundos**. En la captura de referencia: **10 ms**", en: "Each macro carries its own **delay in milliseconds**. In the reference screenshot: **10 ms**" },
+                { es: "La combinación que publica la referencia es **Golpe afilado → Embate cortante**", en: "The combination the reference publishes is **Keen Strike → Rending Blow**" },
+                { es: "Se dispara con el botón que le asignes en Ajustes → Teclas → Barra rápida", en: "It fires with whatever key you bind in Settings → Keys → Quickslots" },
+              ],
+              nota: { es: "Es una función del propio juego. Esta es la vía limpia.", en: "It is a feature of the game itself. This is the clean route." },
+            },
+            {
+              titulo: { es: "La del ratón", en: "The mouse one" },
+              sub: { es: "Software del ratón — Razer, Logitech…", en: "Mouse software — Razer, Logitech…" },
+              ordenada: true,
+              puntos: [
+                { es: "Va en el **clic derecho**, y se mantiene pulsado", en: "It goes on **right click**, held down" },
+                { es: "El orden que publica la referencia: **Golpe afilado** → Estallido de furia, Espada vampírica, Grillete aéreo, Machaque descendente → **Danza de filos**", en: "The order the reference publishes: **Keen Strike** → Rage Burst, Lifestealing Blade, Aerial Snare, Overhead Slam → **Sword Aura Rampage**" },
+                { es: "Retardo de **1 ms**; si tu PC se atraganta, súbelo a 2 o más", en: "**1 ms** delay; if your PC chokes, raise it to 2 or more" },
+                { es: "**Separa los buffs del Machaque descendente.** Juntos no cancela y pierdes golpes", en: "**Keep the buffs away from Overhead Slam.** Together it does not cancel and you lose hits" },
+              ],
+              nota: { es: "Ojo: esto es software de terceros automatizando el combate, no una función del juego. Lo usa media Corea a la vista de todos, pero el riesgo es tuyo.", en: "Careful: this is third-party software automating combat, not a game feature. Half of Korea uses it in the open, but the risk is yours." },
+            },
+          ],
+        },
+        { t: "subtitulo", texto: { es: "Cuánta velocidad de combate hace falta", en: "How much combat speed you need" } },
+        {
+          t: "parrafo",
+          texto: {
+            es: "Un jugador midió los golpes de un minuto bajando la velocidad de combate poco a poco, tres pasadas por cada valor. La conclusión es tajante: **por encima del 101% ya no ganas nada, y por debajo del 100% empiezas a perder de verdad.**",
+            en: "A player counted a full minute of hits while stepping combat speed down, three runs per value. The conclusion is blunt: **above 101% you gain nothing, and below 100% you start losing for real.**",
+          },
+        },
+        {
+          t: "tabla",
+          cabeceras: [
+            { es: "Velocidad", en: "Speed" },
+            { es: "Golpe ascendente", en: "Upward Strike" },
+            { es: "Machaque desc.", en: "Overhead Slam" },
+            { es: "Embate cortante", en: "Rending Blow" },
+            { es: "Total", en: "Total" },
+          ],
+          filas: [
+            [{ es: "111,6%", en: "111.6%" }, { es: "98", en: "98" }, { es: "197", en: "197" }, { es: "180", en: "180" }, { es: "1.015", en: "1,015" }],
+            [{ es: "106,6%", en: "106.6%" }, { es: "98", en: "98" }, { es: "197", en: "197" }, { es: "181", en: "181" }, { es: "**1.016**", en: "**1,016**" }],
+            [{ es: "**101,6%**", en: "**101.6%**" }, { es: "97", en: "97" }, { es: "194", en: "194" }, { es: "177", en: "177" }, { es: "**1.009**", en: "**1,009**" }],
+            [{ es: "99,6%", en: "99.6%" }, { es: "95", en: "95" }, { es: "191", en: "191" }, { es: "173", en: "173" }, { es: "995", en: "995" }],
+            [{ es: "97,6%", en: "97.6%" }, { es: "93", en: "93" }, { es: "188", en: "188" }, { es: "172", en: "172" }, { es: "983", en: "983" }],
+            [{ es: "96,1%", en: "96.1%" }, { es: "92", en: "92" }, { es: "186", en: "186" }, { es: "169", en: "169" }, { es: "976", en: "976" }],
+            [{ es: "94,6%", en: "94.6%" }, { es: "91", en: "91" }, { es: "183", en: "183" }, { es: "166", en: "166" }, { es: "965", en: "965" }],
+            [{ es: "92,6%", en: "92.6%" }, { es: "88", en: "88" }, { es: "177", en: "177" }, { es: "161", en: "161" }, { es: "943", en: "943" }],
+            [{ es: "90,9%", en: "90.9%" }, { es: "87", en: "87" }, { es: "176", en: "176" }, { es: "157", en: "157" }, { es: "934", en: "934" }],
+            [{ es: "85,9%", en: "85.9%" }, { es: "84", en: "84" }, { es: "170", en: "170" }, { es: "154", en: "154" }, { es: "918", en: "918" }],
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**De 101,6% a 111,6% ganas 6 golpes de mil.** Seis. Por eso la velocidad de combate está al 100% en todas las listas de stats y ahí se queda: pasado ese punto, cada punto que metas es un punto que le quitas al daño. Al revés sí duele — bajar al 90,9% te cuesta **75 golpes por minuto**.",
+              en: "**From 101.6% to 111.6% you gain 6 hits out of a thousand.** Six. That is why combat speed sits at 100% on every stat list and stops there: past that point, every point you add is a point taken from damage. Downwards it does hurt — dropping to 90.9% costs you **75 hits per minute**.",
+            },
+          ],
+        },
+        { t: "subtitulo", texto: { es: "Lo que no va en la macro", en: "What does not go in the macro" } },
+        {
+          t: "tarjetas",
+          columnas: 3,
+          items: [
+            {
+              titulo: { es: "Los buffs y el bloqueo", en: "Buffs and blocking" },
+              sub: { es: "A mano, mirando", en: "By hand, watching" },
+              puntos: [
+                { es: "La Bendición de Zikel y el bloqueo **se pulsan tú**, viendo lo que hace el jefe", en: "Zikel's Blessing and blocking are **pressed by you**, watching what the boss does" },
+                { es: "Si los metes en la macro salen a destiempo y llegas al jefe con todo en recarga", en: "Put them in the macro and they fire early, so you reach the boss with everything on cooldown" },
+                { es: "Para usar un buff, **suelta el clic derecho** primero", en: "To use a buff, **let go of right click** first" },
+              ],
+            },
+            {
+              titulo: { es: "El ataque básico", en: "The basic attack" },
+              sub: { es: "No se pulsa", en: "You do not press it" },
+              puntos: [
+                { es: "Contra un jefe **no se usa**: solo contra bichos pequeños", en: "Against a boss you **do not use it**: only against small mobs" },
+                { es: "Su sitio lo ocupa la cancelación, que es lo que sube el número de golpes", en: "Its place is taken by cancelling, which is what raises your hit count" },
+              ],
+            },
+            {
+              titulo: { es: "El Embate cortante suelto", en: "Rending Blow on its own key" },
+              sub: { es: "El error que sube el muñeco", en: "The mistake that inflates the dummy" },
+              puntos: [
+                { es: "Sacarlo a su propia tecla **sube el número en el muñeco**", en: "Moving it to its own key **raises the dummy number**" },
+                { es: "Pero contra un jefe con mecánicas **pierdes DPS**: a un jugador le subió **22 segundos** el tiempo de Atheron pesadilla", en: "But against a boss with mechanics **you lose DPS**: one player added **22 seconds** to his nightmare Atheron clear" },
+                { es: "Déjalo dentro, encima del Machaque descendente", en: "Leave it inside, above Overhead Slam" },
+              ],
+            },
+          ],
+        },
+        {
+          t: "aviso",
+          parrafos: [
+            {
+              es: "**Si no llegas a los golpes, mira el ordenador antes que el equipo.** El autor de la guía de referencia lo midió: con unos **100 FPS estables y sin tirones** salen 98 golpes con cualquier ratón, incluso con la velocidad de combate al 86%. En los comentarios hay gente con equipos de 900.000 de poder sacando 78 golpes — y uno que, solo arreglando la configuración, pasó de 86 a 96 y **ganó entre 200.000 y 300.000 de DPS**.",
+              en: "**If you are not hitting the numbers, look at the computer before the gear.** The author of the reference guide measured it: with around **100 stable FPS and no stutter** you get 98 hits with any mouse, even at 86% combat speed. In the comments there are players with 900,000 power output sitting at 78 hits — and one who, just by fixing his setup, went from 86 to 96 and **gained 200,000-300,000 DPS**.",
+            },
+            {
+              es: "**Y ojo con esto: el montaje del muñeco no es el de la mazmorra.** La referencia lleva dos árboles de habilidades y avisa de ello tres veces en su propio hilo: uno para hacer números en el muñeco y otro para entrar a mazmorra de verdad. Si copias el del muñeco y te vas a un jefe, vas a ir peor que antes.",
+              en: "**And watch this: the dummy setup is not the dungeon setup.** The reference runs two skill trees and says so three times in his own thread: one to post numbers on the dummy and one to actually enter a dungeon. Copy the dummy one into a boss fight and you will do worse than before.",
+            },
+          ],
+        },
+      ],
+    },
+
+    // ── 9. Rotación ─────────────────────────────────────────────
     {
       eyebrow: { es: "Rotación", en: "Rotation" },
       titulo: { es: "El orden de los golpes", en: "The order of your swings" },
@@ -917,7 +1050,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 9. Errores ──────────────────────────────────────────────
+    // ── 10. Errores ──────────────────────────────────────────────
     {
       eyebrow: { es: "Los tropiezos", en: "Common trips" },
       titulo: { es: "Errores que cuestan daño", en: "Mistakes that cost damage" },
@@ -939,7 +1072,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 10. Alas y mascota ───────────────────────────────────────
+    // ── 11. Alas y mascota ───────────────────────────────────────
     {
       eyebrow: { es: "Alas y mascota", en: "Wings and pet" },
       titulo: { es: "Los dos huecos de fuera", en: "The two outside slots" },
@@ -980,7 +1113,7 @@ export const gladiator: Guia = {
       ],
     },
 
-    // ── 11. Equipo ──────────────────────────────────────────────
+    // ── 12. Equipo ──────────────────────────────────────────────
     {
       eyebrow: { es: "Equipo", en: "Gear" },
       titulo: { es: "Lo que llevan puesto", en: "What they are wearing" },
@@ -1026,6 +1159,10 @@ export const gladiator: Guia = {
     {
       es: "**Las especializaciones salen del volcado del cliente del juego** (26 de agosto), que publica una base de datos extraída del propio juego: los efectos son exactos. Lo que NO existe en ninguna fuente pública es el porcentaje de gente que elige cada una — lo marcado con ✓ es lo que lleva la build de esta guía, y el añadido del Grillete aéreo es la build de un jugador del tablón coreano. Está señalado en su sitio.",
       en: "**The specialties come from the game client dump** (26 August), a database extracted from the game itself: the effects are exact. What does NOT exist in any public source is how many players pick each one — what is marked with ✓ is what this guide's build runs, and the Aerial Snare note is one player's build from the Korean board. It is flagged where it appears.",
+    },
+    {
+      es: "**La macro y los golpes por minuto** salen del tablón coreano de la clase: la guía de configuración del 30 de agosto —la que tiene 346 respuestas—, su versión para la macro del propio juego, y la prueba de otro jugador que contó los golpes de un minuto a diez velocidades de combate distintas, tres pasadas por cada una. Son jugadores, no un laboratorio: los números son suyos y en su ordenador. La macro de ratón es software de terceros y no una función del juego; queda dicho donde aparece.",
+      en: "**The macro and the hits per minute** come from the class's Korean board: the setup guide from 30 August —the one with 346 replies—, its in-game macro counterpart, and another player's test counting a minute of hits at ten different combat speeds, three runs each. These are players, not a lab: the numbers are theirs, on their machine. The mouse macro is third-party software and not a game feature; that is stated where it appears.",
     },
     {
       es: "**Lo que hay que tener en cuenta.** Es el servidor coreano, con un parche por delante del que llegará al global el 5 de octubre. Las mecánicas serán las mismas; los números y el meta pueden moverse. Y en PvP, más: el propio autor de la guía avisa de que el meta cambia constantemente, así que trátalo como punto de partida y no como ley.",
