@@ -1501,14 +1501,14 @@ export const templar: Guia = {
             [{ es: "Pendiente", en: "Earring" }, { es: "Pendientes del Rey Dragón Cornudo", en: "Horned Dragon Lord Earrings" }, { es: "21,7", en: "21.7" }, { es: "Pendientes del Rey Dragón de Ébano", en: "Ebony Dragon Lord Earrings" }],
             [{ es: "Collar", en: "Necklace" }, { es: "Collar del Rey Dragón Cornudo", en: "Horned Dragon Lord Necklace" }, { es: "22,2", en: "22.2" }, { es: "Collar del Rey Dragón de Ébano", en: "Ebony Dragon Lord Necklace" }],
             [{ es: "Runa", en: "Rune" }, { es: "Runa del choque", en: "Clash Rune" }, { es: "84,6", en: "84.6" }, { es: "Runa de la devoción", en: "Devotion Rune" }],
-            [{ es: "Alas", en: "Wings" }, { es: "Alas de Talisra", en: "Talisra Wings" }, { es: "32,4", en: "32.4" }, { es: "Alas de pesadilla (19,1%)", en: "Nightmare Wings (19.1%)" }],
+            [{ es: "Alas", en: "Wings" }, { es: "Alas de Talisra", en: "Talisra Wings" }, { es: "34,2", en: "34.2" }, { es: "Alas de pesadilla (22,6%)", en: "Nightmare Wings (22.6%)" }],
           ],
         },
         {
           t: "parrafo",
           texto: {
-            es: "**Las alas son la sorpresa.** En el Gladiator las Alas de Talisra son la respuesta única; en el Templar las lleva solo un tercio, y en PvP ni siquiera son las primeras — ahí manda las **Alas del destello azur** (Azure Flash Wings). Tiene sentido: Talisra y Pesadilla dan **exactamente las mismas opciones**, así que aquí sí hay margen para elegir.",
-            en: "**The wings are the surprise.** For the Gladiator, Talisra Wings are the single answer; for the Templar only a third run them, and in PvP they are not even first — there the **Azure Flash Wings** lead. It makes sense: Talisra and Nightmare roll **exactly the same options**, so there is genuine room to choose here.",
+            es: "**Las alas son la sorpresa.** Las Alas de Talisra son las primeras en PvE en las ocho clases, pero en el Templar bajan al 34,2% — el Gladiator las lleva al 40,6% y la media de todas las clases es del 57,1%—, y **en PvP del Templar ni siquiera son las primeras**: ahí mandan las Alas del destello azur (32,2%, frente al 25,6% de Talisra). Tiene sentido, porque Talisra y Pesadilla dan **exactamente las mismas opciones**: aquí sí hay margen para elegir.",
+            en: "**The wings are the surprise.** Talisra Wings are first in PvE across all eight classes, but on the Templar they drop to 34.2% — the Gladiator runs them at 40.6% and the all-class average is 57.1% — and **on a PvP Templar they are not even first**: there the Azure Flash Wings lead (32.2%, against Talisra's 25.6%). It makes sense, because Talisra and Nightmare roll **exactly the same options**: there is genuine room to choose here.",
           },
         },
         { t: "subtitulo", texto: { es: "La mascota", en: "The pet" } },

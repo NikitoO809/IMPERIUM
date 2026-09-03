@@ -1083,11 +1083,12 @@ export const gladiator: Guia = {
           items: [
             {
               titulo: { es: "Alas", en: "Wings" },
-              sub: { es: "Dato medido · sin discusión", en: "Measured data · no debate" },
+              sub: { es: "Las primeras, pero no las únicas", en: "First, but not the only ones" },
               puntos: [
                 { es: "**Alas de Talisra**", en: "**Talisra Wings**" },
-                { es: "Son las recomendadas para **las ocho clases**, no solo para Gladiator", en: "They are the pick for **all eight classes**, not just Gladiator" },
-                { es: "No hay decisión que tomar aquí: es el mismo par para todo el mundo", en: "There is no decision to make here: it is the same pair for everyone" },
+                { es: "Las lleva el **40,6% de los Gladiators en PvE** y el **57,5% en PvP**", en: "**40.6% of Gladiators in PvE** and **57.5% in PvP** run them" },
+                { es: "Son las primeras en PvE en todas las clases: sobre 53.025 personajes medidos, las lleva el 57,1%", en: "They are first in PvE across every class: over 53,025 measured characters, 57.1% run them" },
+                { es: "**Pero no son unanimidad.** Seis de cada diez Gladiators de PvE llevan otra cosa — detrás van las Alas de pesadilla (17,6%) y las Alas de la salvación (11,4%)", en: "**But they are not unanimous.** Six out of ten PvE Gladiators run something else — behind them come Nightmare Wings (17.6%) and Salvation Wings (11.4%)" },
               ],
             },
             {
@@ -1137,7 +1138,7 @@ export const gladiator: Guia = {
             [{ es: "Amuleto", en: "Amulet" }, { es: "Amuleto de la Revelación", en: "Revelation Amulet" }, { es: "99,5", en: "99.5" }, { es: "— no hay debate", en: "— no debate" }],
             [{ es: "Colgante", en: "Pendant" }, { es: "Colgante dracónico", en: "Draconic Pendant" }, { es: "70,9", en: "70.9" }, { es: "", en: "" }],
             [{ es: "Runa", en: "Rune" }, { es: "Runa del choque", en: "Clash Rune" }, { es: "100", en: "100" }, { es: "— no hay debate", en: "— no debate" }],
-            [{ es: "Alas", en: "Wings" }, { es: "Alas de Talisra", en: "Talisra Wings" }, { es: "—", en: "—" }, { es: "Las mismas para las ocho clases", en: "The same for all eight classes" }],
+            [{ es: "Alas", en: "Wings" }, { es: "Alas de Talisra", en: "Talisra Wings" }, { es: "40,6", en: "40.6" }, { es: "Alas de pesadilla (17,6%)", en: "Nightmare Wings (17.6%)" }],
           ],
         },
         {
