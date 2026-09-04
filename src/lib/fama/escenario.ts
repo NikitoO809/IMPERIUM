@@ -218,9 +218,12 @@ export class Escenario {
       void main() {
         vec2 uv = vUv;
 #ifdef REFLEJO
-        // solo se refleja lo que está por encima del suelo, y tiembla como agua
+        // Solo se refleja lo que está por encima del suelo, y tiembla como
+        // agua. El temblor es MUY corto a propósito: en el reflejo lo único
+        // que se distingue son los acantilados de los lados, y al moverse
+        // parecían una montaña suelta flotando bajo los pies.
         if (uv.y < uHorizonte) discard;
-        uv.x += (sin(uv.y * 40.0 + uTime * 1.6) * 0.004 + sin(uv.y * 17.0 - uTime * 1.1) * 0.002);
+        uv.x += sin(uv.y * 40.0 + uTime * 1.6) * 0.0014 + sin(uv.y * 17.0 - uTime * 1.1) * 0.0007;
 #endif
         vec3 col = texture2D(uMap, uv).rgb;
         // neblina dorada que deriva por el horizonte
@@ -231,8 +234,12 @@ export class Escenario {
         float borde = smoothstep(0.0, 0.09, uv.x) * (1.0 - smoothstep(0.91, 1.0, uv.x)) * (1.0 - smoothstep(0.86, 1.0, uv.y));
         float a = borde * uFade;
 #ifdef REFLEJO
-        col *= 0.42;
-        a *= (1.0 - smoothstep(uHorizonte, uHorizonte + 0.33, uv.y)) * 0.9;
+        // del reflejo interesa el resplandor del centro (la luz sobre el
+        // agua), no los acantilados de los extremos: se apagan a los lados y
+        // se desvanece antes al alejarse de la orilla
+        col *= 0.30;
+        a *= (1.0 - smoothstep(uHorizonte, uHorizonte + 0.20, uv.y)) * 0.75;
+        a *= 1.0 - smoothstep(0.20, 0.46, abs(uv.x - 0.5));
 #endif
         gl_FragColor = vec4(col, a); // valores ya en sRGB (sin conversión)
       }`;
@@ -445,14 +452,20 @@ export class Escenario {
 
       // el reflejo queda bajo el suelo: se pinta sin test de profundidad, encima del suelo opaco
       const matR = new THREE.ShaderMaterial({ uniforms: uni, vertexShader: VERTEX, fragmentShader: FRAGMENT, transparent: true, depthWrite: false, depthTest: false, side: THREE.DoubleSide, defines: { REFLEJO: 1 } });
-      // el reflejo se espeja en el plano donde pisa (el suelo o la grada); el
-      // de los que vuelan se espeja en el suelo, y por eso queda separado de
-      // sus pies (como cualquier cosa que flota sobre un lago)
-      const reflejo = new THREE.Mesh(geo, matR);
-      reflejo.position.set(x, ley.vuela ? -y : y, z);
-      reflejo.scale.set(escala, -escala, escala);
-      reflejo.renderOrder = 1;
-      this.scene.add(reflejo);
+      // El reflejo se espeja en el plano donde pisa (el suelo o la grada).
+      // Los que vuelan NO se reflejan: al estar tan altos, su reflejo caía
+      // muy lejos de ellos y se leía como una mancha suelta flotando en el
+      // negro, no como un reflejo.
+      let reflejo: THREE.Mesh | null = null;
+      if (!ley.vuela) {
+        reflejo = new THREE.Mesh(geo, matR);
+        reflejo.position.set(x, y, z);
+        reflejo.scale.set(escala, -escala, escala);
+        reflejo.renderOrder = 1;
+        this.scene.add(reflejo);
+      } else {
+        matR.dispose();
+      }
 
       // charco de luz bajo los pies (se enciende con el color del gesto);
       // los que vuelan alto no lo tienen
@@ -749,7 +762,6 @@ export class Escenario {
       // los gestos pueden desplazar a cualquiera
       const bob = p.vuela && !this.reduce ? Math.sin(ahora * 1.1 + (p.uni.uSeed.value as number) * 9) * 0.07 : 0;
       p.mesh.position.set(p.x, p.y + bob + p.ofs.y, p.z + p.ofs.z);
-      if (p.vuela && p.reflejo) p.reflejo.position.set(p.x, -(p.y + bob + p.ofs.y), p.z + p.ofs.z);
       if (p.halo) {
         // el halo sigue al líder, a la altura del pecho, y late despacio
         p.halo.position.set(p.x, p.y + bob + p.ofs.y + H * p.escala * 0.5, p.z + p.ofs.z - 0.15);
