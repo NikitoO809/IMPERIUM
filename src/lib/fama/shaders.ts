@@ -56,13 +56,16 @@ void main() {
   p.x += alto * sin(t * 1.3 + uv.x * 4.0) * 0.004 * H * viento;
 
   // los que vuelan: aleteo lento (los tercios exteriores de la imagen, de
-  // la cintura hacia arriba, suben y bajan) y las telas ondean más
+  // la cintura hacia arriba, suben y bajan) y las telas ondean más.
+  // El aleteo se mantiene CORTO aunque el gesto sople viento: pasado un
+  // punto la figura deja de leerse como un ala y se ve como una imagen
+  // estirada.
   if (uVuelo > 0.5) {
     float lado = abs(uv.x - 0.5) * 2.0;
     float ala = smoothstep(0.2, 0.95, lado) * smoothstep(0.3, 0.7, uv.y);
     float bat = sin(t * 2.2);
-    p.y += ala * ala * bat * 0.09 * H * (1.0 + uWind * 2.5);
-    p.z -= ala * (0.5 + 0.5 * bat) * 0.06 * H;
+    p.y += ala * ala * bat * 0.075 * H * (1.0 + uWind * 0.7);
+    p.z -= ala * (0.5 + 0.5 * bat) * 0.05 * H;
     p.x += tela * sin(t * 3.0 + uv.y * 10.0) * 0.008 * H;
   }
 

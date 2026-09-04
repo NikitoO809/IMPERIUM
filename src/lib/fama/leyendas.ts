@@ -114,7 +114,7 @@ export const LEYENDAS: Leyenda[] = [
     mano: [0.5, 0.5], escala: 1.06, lider: true, vuela: { x: 0, y: 0.85, z: 1.3 } },
   // Celeris, sublíder: vuela en el flanco izquierdo (el lado corto de la fila)
   { id: "celeris", nombre: "Celeris", guild: IMPERIUM, efecto: "halo", color: "#9fdcff",
-    mano: [0.5, 0.5], escala: 0.95, vuela: { x: -7.4, y: 1.35, z: 0.3 } },
+    mano: [0.5, 0.5], escala: 0.95, vuela: { x: -6.3, y: 1.35, z: 0.3 } },
 ];
 
 // Proporción ancho/alto de cada imagen (la escribe procesar_leyendas.py).

@@ -116,9 +116,9 @@ LEYENDAS: list[tuple[str, str, str, int]] = [
      "fully visible, floating with no ground under his feet", 117),
     ("celeris", "Celeris",
      "female Daeva archmage flying in mid air with large luminous pale blue feathered wings spread "
-     "wide, fully covered flowing silver and sky blue robe armor, long white hair and cloth streaming "
-     "in the wind, holding a glowing crystal staff, graceful hovering pose seen from the front, whole "
-     "body and both wings fully visible, floating with no ground under her feet", 118),
+     "wide, fully covered flowing silver and sky blue robe armor, long vivid red hair and cloth "
+     "streaming in the wind, holding a glowing crystal staff, graceful hovering pose seen from the "
+     "front, whole body and both wings fully visible, floating with no ground under her feet", 318),
 ]
 
 

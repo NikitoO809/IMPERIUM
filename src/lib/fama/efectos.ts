@@ -507,8 +507,10 @@ export const EFECTOS: Record<EfectoId, Efecto> = {
     gesto: GESTO.ninguno,
     paso(c, t) {
       const kk = k(t);
-      c.mover(-0.35 * kk, 0.9 * kk);
-      c.uni.uWind.value = kk;
+      // el picado es corto a propósito: si se acerca mucho a la cámara, la
+      // figura plana se nota y parece que se deforma
+      c.mover(-0.12 * kk, 0.4 * kk);
+      c.uni.uWind.value = kk * 0.45;
       const pecho = c.ancla([0.5, 0.42], -0.12);
       const g = flash(c, "halo", "destello");
       g.obj.position.copy(pecho);
