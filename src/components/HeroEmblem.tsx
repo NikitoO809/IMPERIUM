@@ -218,10 +218,15 @@ export function HeroEmblem() {
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const lowEnd = window.matchMedia("(pointer: coarse)").matches;
+    const dpr = window.devicePixelRatio || 1;
 
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: !lowEnd, powerPreference: "high-performance" });
+    // La escena es pequeña (unos miles de triángulos), así que el móvil también
+    // puede dibujarla a 2×: a 1× los anillos salían dentados y todo se veía
+    // borroso en pantallas de mucha densidad. Con 2× el suavizado por
+    // multimuestreo ya no hace falta (y en el móvil sale caro).
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: dpr < 1.5, powerPreference: "high-performance" });
     renderer.setClearColor(0x000000, 0);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, lowEnd ? 1 : 1.6));
+    renderer.setPixelRatio(Math.min(dpr, 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
 
     const scene = new THREE.Scene();
@@ -237,6 +242,13 @@ export function HeroEmblem() {
     rig.position.y = RIG_Y;
     rig.scale.setScalar(RIG_SCALE);
     scene.add(rig);
+
+    // En un lienzo estrecho y alto (el móvil) la cámara ve mucho menos a lo
+    // ancho, así que el emblema desbordaba la pantalla y sus anillos cruzaban
+    // el título. Lo encogemos con la proporción del lienzo para que vuelva a
+    // ser un sello DETRÁS del texto. En escritorio (más ancho que alto) el
+    // factor es 1: nada cambia.
+    const encaje = (aspect: number) => Math.max(0.56, Math.min(1, aspect / 1.2));
 
     const soft = makeSoftTexture();
     const ticks = makeTickTexture();
@@ -325,6 +337,11 @@ export function HeroEmblem() {
       renderer.setSize(r.width, r.height, false);
       camera.aspect = r.width / Math.max(1, r.height);
       camera.updateProjectionMatrix();
+      // encoge el sello, pero lo mantiene a la altura del rótulo (no baja con
+      // él, o se pondría detrás del párrafo)
+      const k = encaje(camera.aspect);
+      rig.scale.setScalar(RIG_SCALE * k);
+      rig.position.y = RIG_Y * (0.75 + 0.25 * k);
     };
 
     const mouse = { x: 0, y: 0, tx: 0, ty: 0 };

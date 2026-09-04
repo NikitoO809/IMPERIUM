@@ -1275,7 +1275,13 @@ body {
 .sh-doc:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 8px; }
 
 @media (max-width: 640px) {
-  .sh-hero { padding-bottom: clamp(40px, 8vw, 64px); }
+  /* en vertical el emblema es un sello pequeño detrás del rótulo, así que el
+     marco se ajusta al contenido en vez de dejar un palmo de negro arriba */
+  .sh-hero {
+    min-height: clamp(460px, calc(100svh - 190px), 720px);
+    padding-top: clamp(48px, 12vw, 76px);
+    padding-bottom: clamp(40px, 8vw, 64px);
+  }
   .sh-flute, .sh-doc { display: none; }
   .sh-stat { position: static; margin: 26px auto 0; width: min(100%, 320px); }
 }
