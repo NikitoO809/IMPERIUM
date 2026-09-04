@@ -40,10 +40,6 @@ export async function CommunityLive() {
               <div className="font-num text-2xl font-bold text-white">{nf.format(stats.members)}</div>
               <div className="text-[10px] uppercase tracking-[0.14em] text-zinc-500">Miembros</div>
             </div>
-            <div className="text-center">
-              <div className="font-num text-2xl font-bold text-gold">{nf.format(stats.donors)}</div>
-              <div className="text-[10px] uppercase tracking-[0.14em] text-zinc-500">Donantes</div>
-            </div>
           </div>
         </div>
 
