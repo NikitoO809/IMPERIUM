@@ -26,7 +26,21 @@ const epic = Cinzel({
 });
 
 const SHARE_TITLE = "IMPERIUM — Tu comunidad de juego";
-const SHARE_DESC = "Guías, builds y asistente IA para tus juegos. Únete a la comunidad.";
+const SHARE_DESC = "Guías paso a paso, tu progreso guardado y gente con quien jugar.";
+
+// Imagen que sale al compartir el enlace (WhatsApp, Discord, X…): banner con
+// el lenguaje actual del sitio (negro + oro, rótulo Cinzel y las Leyendas del
+// Salón de la Fama de fondo). Es un archivo estático porque WhatsApp descarga
+// la vista previa con prisa y no siempre espera a una imagen generada al vuelo.
+// Se rehace con scripts/og/generar_portada.py; si cambias el diseño, guárdalo
+// con OTRO nombre: WhatsApp cachea la imagen por su URL durante semanas.
+const SHARE_IMAGE = {
+  url: "/og/portada.jpg",
+  width: 1200,
+  height: 630,
+  type: "image/jpeg",
+  alt: "IMPERIUM — las Leyendas de la comunidad",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -40,11 +54,13 @@ export const metadata: Metadata = {
     url: "/",
     title: SHARE_TITLE,
     description: SHARE_DESC,
+    images: [SHARE_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: SHARE_TITLE,
     description: SHARE_DESC,
+    images: [SHARE_IMAGE],
   },
 };
 
