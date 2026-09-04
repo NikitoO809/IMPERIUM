@@ -59,3 +59,7 @@ scripts/sql/*.build.log
 
 # Maquetas de revision que generan las skills (se rehacen)
 scripts/data/preview-*.html
+
+# Renders en bruto de las Leyendas del Salon de la Fama (se rehacen con
+# scripts/fama/generar_leyendas.py; el arte final va en public/fama/leyendas)
+/scripts/fama/raw/
