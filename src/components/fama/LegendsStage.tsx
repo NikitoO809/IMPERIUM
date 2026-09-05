@@ -5,7 +5,7 @@
 // su nombre y su guild como botones reales (se pueden recorrer con Tab y
 // disparan el gesto igual que el ratón). Si no hay WebGL, o el navegador pide
 // ahorrar datos, queda la fila estática con las mismas imágenes.
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import type { CSSProperties } from "react";
 import { Escenario, hayWebGL } from "@/lib/fama/escenario";
 import { rutaArte, type Leyenda } from "@/lib/fama/leyendas";
@@ -14,8 +14,18 @@ export function LegendsStage({ leyendas }: { leyendas: Leyenda[] }) {
   const host = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const etiquetas = useRef<Record<string, HTMLElement | null>>({});
+  const contenedor = useRef<HTMLDivElement>(null);
   const motor = useRef<Escenario | null>(null);
-  const [hover, setHover] = useState<string | null>(null);
+
+  // El hover NO pasa por el estado de React: cambiar de personaje volvería a
+  // pintar los 19 botones. Se tocan las clases directamente, que es lo único
+  // que cambia, y así el barrido rápido del ratón no cuesta ningún render.
+  const marcarHover = (id: string | null) => {
+    contenedor.current?.classList.toggle("is-alguno", !!id);
+    for (const [clave, el] of Object.entries(etiquetas.current)) {
+      el?.classList.toggle("is-on", clave === id);
+    }
+  };
 
   useEffect(() => {
     const h = host.current;
@@ -35,7 +45,7 @@ export function LegendsStage({ leyendas }: { leyendas: Leyenda[] }) {
         leyendas,
         reducirMovimiento: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
         etiquetas: () => etiquetas.current,
-        onHover: setHover,
+        onHover: marcarHover,
         onListo: () => h.classList.add("is-3d"),
       });
     } catch {
@@ -77,7 +87,7 @@ export function LegendsStage({ leyendas }: { leyendas: Leyenda[] }) {
       <canvas ref={canvas} className="ly-canvas" aria-hidden />
 
       {/* nombre y guild bajo cada personaje; el motor los coloca en cada frame */}
-      <div className={`ly-etiquetas${hover ? " is-alguno" : ""}`}>
+      <div ref={contenedor} className="ly-etiquetas">
         {leyendas.map((l) => (
           <button
             key={l.id}
@@ -85,7 +95,7 @@ export function LegendsStage({ leyendas }: { leyendas: Leyenda[] }) {
               etiquetas.current[l.id] = el;
             }}
             type="button"
-            className={`ly-etiqueta${hover === l.id ? " is-on" : ""}`}
+            className="ly-etiqueta"
             style={{ "--c": l.color } as CSSProperties}
             aria-label={`${l.nombre}, ${l.guild}`}
             onPointerEnter={() => motor.current?.hover(l.id)}

@@ -31,6 +31,7 @@ type Personaje = {
   mesh: THREE.Mesh;
   reflejo: THREE.Mesh | null; // los que vuelan no se reflejan
   charco: THREE.Sprite | null;
+  picker: THREE.Mesh; // gemelo plano de 2 triángulos: SOLO para saber a quién señala el ratón
   halo: THREE.Sprite | null; // solo el líder: resplandor dorado permanente a su espalda
   uni: Record<string, THREE.IUniform>;
   ancho: number;
@@ -41,6 +42,8 @@ type Personaje = {
   ofs: { y: number; z: number }; // desplazamiento temporal que pide un gesto (picado, elevarse)
   fila: 0 | 1; // 0 = delante, 1 = detrás
   escala: number;
+  color: THREE.Color; // su color, creado una vez (antes se creaba uno por frame)
+  ultX: number; ultY: number; ultOp: number; // último estilo escrito en su etiqueta
   dimBase: number;    // su brillo propio (los de los extremos van algo apagados)
   atenuar: number;    // 0..1 · baja cuando el ratón señala a OTRO
   hoverZ: number;     // el señalado da un paso hacia la cámara
@@ -66,6 +69,7 @@ const PAISAJE_ALTO = 13; // alto mínimo del paisaje en unidades (crece si hace 
 const PAISAJE_BASE = 0.42; // fracción de la pintura (desde abajo: su lago con el reflejo) que queda bajo nuestro suelo
 const PAISAJE_RUTA = "/fama/fondo.webp";
 const ALPHA_W = 48, ALPHA_H = 96;
+const ORO = new THREE.Color(0xe3b341); // se crea una vez, no una por frame
 
 // Colores "crudos" para el shader del personaje (que no pasa por la gestión
 // de color de three): el hexadecimal tal cual, sin convertir a lineal.
@@ -105,6 +109,7 @@ export class Escenario {
   private ultimo = 0;
   private readonly mouse = { x: 0, y: 0, tx: 0, ty: 0, dentro: false };
   private ndc: THREE.Vector2 | null = null;
+  private ndcSucio = false; // ¿se ha movido el ratón desde el último picado?
   private hoverRaton: string | null = null;
   private hoverExterno: string | null = null;
   private hoverActual: string | null = null;
@@ -461,7 +466,10 @@ export class Escenario {
         uVuelo: { value: ley.vuela ? 1 : 0 },
       };
 
-      const geo = new THREE.PlaneGeometry(ancho, H, 28, 56).translate(0, H / 2, 0);
+      // La deformación (respiración, telas, gesto) es suave, así que 18×36 se
+      // ve igual que 28×56 y cuesta la mitad de vértices, cada uno con su
+      // lectura de textura del relieve.
+      const geo = new THREE.PlaneGeometry(ancho, H, 18, 36).translate(0, H / 2, 0);
       const mat = new THREE.ShaderMaterial({ uniforms: uni, vertexShader: VERTEX, fragmentShader: FRAGMENT, transparent: true, depthWrite: true, side: THREE.DoubleSide });
       const mesh = new THREE.Mesh(geo, mat);
       mesh.position.set(x, y, z);
@@ -472,19 +480,22 @@ export class Escenario {
 
       // el reflejo queda bajo el suelo: se pinta sin test de profundidad, encima del suelo opaco
       const matR = new THREE.ShaderMaterial({ uniforms: uni, vertexShader: VERTEX, fragmentShader: FRAGMENT, transparent: true, depthWrite: false, depthTest: false, side: THREE.DoubleSide, defines: { REFLEJO: 1 } });
+      // El reflejo va aún más basto: se ve borroso y apagado bajo el agua.
+      const geoR = new THREE.PlaneGeometry(ancho, H, 10, 20).translate(0, H / 2, 0);
       // El reflejo se espeja en el plano donde pisa (el suelo o la grada).
       // Los que vuelan NO se reflejan: al estar tan altos, su reflejo caía
       // muy lejos de ellos y se leía como una mancha suelta flotando en el
       // negro, no como un reflejo.
       let reflejo: THREE.Mesh | null = null;
       if (!ley.vuela) {
-        reflejo = new THREE.Mesh(geo, matR);
+        reflejo = new THREE.Mesh(geoR, matR);
         reflejo.position.set(x, y, z);
         reflejo.scale.set(escala, -escala, escala);
         reflejo.renderOrder = 1;
         this.scene.add(reflejo);
       } else {
         matR.dispose();
+        geoR.dispose();
       }
 
       // charco de luz bajo los pies (se enciende con el color del gesto);
@@ -519,7 +530,14 @@ export class Escenario {
         uni.uAngulo.value = (grados * Math.PI) / 180 * (t.x >= p.x ? 1 : -1);
       }
 
-      this.personajes.push({ ley, mesh, reflejo, charco, halo, uni, ancho, x, y, z, vuela: !!ley.vuela, ofs: { y: 0, z: 0 }, fila, escala, dimBase: uni.uDim.value as number, atenuar: 1, hoverZ: 0,
+      // Gemelo plano para el picado: 2 triángulos con las mismas uv. Cuelga
+      // del personaje, así hereda su sitio sin cálculos extra, y no se dibuja.
+      const picker = new THREE.Mesh(new THREE.PlaneGeometry(ancho, H).translate(0, H / 2, 0));
+      picker.visible = false;
+      mesh.add(picker);
+
+      this.personajes.push({ ley, mesh, reflejo, charco, picker, halo, uni, ancho, x, y, z, vuela: !!ley.vuela, ofs: { y: 0, z: 0 }, fila, escala, color: new THREE.Color(ley.color), ultX: -1e9, ultY: -1e9, ultOp: -1,
+        dimBase: uni.uDim.value as number, atenuar: 1, hoverZ: 0,
         pxParallax: ley.vuela ? 9 : fila === 0 ? 7 : 4,
         alpha: null, hover: 0, hovered: false, activo: null, listo: false, nacido: 0 });
     });
@@ -594,6 +612,8 @@ export class Escenario {
     const visibleHalf = d * tanH * this.camera.aspect;
     this.panMax = Math.max(0, this.halfW - visibleHalf);
     this.mundoPorPixel0 = (2 * this.distancia * tanH * this.camera.aspect) / w;
+    this.lienzo.w = w; this.lienzo.h = h;
+    for (const p of this.personajes) { p.ultX = -1e9; p.ultY = -1e9; }
     const escalaPx = h / (2 * tanH);
     this.luz.escala = escalaPx;
     this.materia.escala = escalaPx;
@@ -619,7 +639,11 @@ export class Escenario {
       this.mouse.tx = nx;
       this.mouse.ty = ny;
       this.mouse.dentro = true;
-      this.ndc = (this.ndc ?? new THREE.Vector2()).set(nx, -ny);
+      const ndc = (this.ndc ??= new THREE.Vector2());
+      if (Math.abs(ndc.x - nx) > 1e-4 || Math.abs(ndc.y + ny) > 1e-4) {
+        ndc.set(nx, -ny);
+        this.ndcSucio = true;
+      }
     }
     this.arrancar();
   };
@@ -679,11 +703,17 @@ export class Escenario {
   }
 
   // ¿Qué personaje hay bajo el puntero? (con la silueta real, no el rectángulo)
+  private readonly pickers: THREE.Mesh[] = [];
+  private readonly hits: THREE.Intersection[] = [];
   private buscar(ndc: THREE.Vector2): string | null {
+    // contra los gemelos planos (2 triángulos), no contra la malla completa
+    this.pickers.length = 0;
+    for (const p of this.personajes) if (p.listo) this.pickers.push(p.picker);
     this.ray.setFromCamera(ndc, this.camera);
-    const hits = this.ray.intersectObjects(this.personajes.filter((p) => p.listo).map((p) => p.mesh), false);
+    this.hits.length = 0;
+    const hits = this.ray.intersectObjects(this.pickers, false, this.hits);
     for (const h of hits) {
-      const p = this.personajes.find((q) => q.mesh === h.object);
+      const p = this.personajes.find((q) => q.picker === h.object);
       if (!p || !p.alpha || !h.uv) continue;
       const ax = Math.min(ALPHA_W - 1, Math.max(0, Math.floor(h.uv.x * ALPHA_W)));
       const ay = Math.min(ALPHA_H - 1, Math.max(0, Math.floor((1 - h.uv.y) * ALPHA_H)));
@@ -734,7 +764,7 @@ export class Escenario {
       if (p.charco) {
         const mat = p.charco.material as THREE.SpriteMaterial;
         mat.opacity = ((p.ley.lider ? 0.3 : 0.16) + p.hover * 0.35) * (p.uni.uFade.value as number);
-        mat.color.lerpColors(new THREE.Color(0xe3b341), new THREE.Color(p.ley.color), p.hover);
+        mat.color.lerpColors(ORO, p.color, p.hover);
       }
       if (!p.activo) continue;
       const { t0, ef, ctx } = p.activo;
@@ -782,7 +812,11 @@ export class Escenario {
     this.camera.lookAt(this.centro + this.pan, miraY, 0);
     this.luzDir.value.set(this.mouse.x * 0.9 + 0.2, 0.55 - this.mouse.y * 0.45, 1.0).normalize();
 
-    if (this.ndc && this.mouse.dentro && !this.arrastre) this.ponerHoverRaton(this.buscar(this.ndc));
+    // el picado solo cuando el ratón se ha movido: quieto no cuesta nada
+    if (this.ndcSucio && this.ndc && this.mouse.dentro && !this.arrastre) {
+      this.ndcSucio = false;
+      this.ponerHoverRaton(this.buscar(this.ndc));
+    }
 
     // quien pide menos movimiento no tiene parallax (el hover sí: es respuesta a su gesto)
     const movRaton = this.reduce ? 0 : this.mouse.x;
@@ -814,7 +848,7 @@ export class Escenario {
     if (this.foco) {
       if (senal && senal.hover > 0.004) {
         const m = this.foco.material as THREE.SpriteMaterial;
-        m.color.set(senal.ley.color);
+        m.color.copy(senal.color);
         m.opacity = senal.hover * 0.34 * (senal.uni.uFade.value as number);
         this.foco.visible = true;
         this.foco.scale.set(2.6 * senal.escala, 3.5 * senal.escala, 1);
@@ -844,9 +878,10 @@ export class Escenario {
   }
 
   private readonly v3 = new THREE.Vector3();
+  private lienzo = { w: 1, h: 1 }; // medido al redimensionar, no en cada frame
   private colocarEtiquetas() {
     const etiquetas = this.o.etiquetas();
-    const r = this.o.host.getBoundingClientRect();
+    const r = this.lienzo;
     for (const p of this.personajes) {
       const el = etiquetas[p.ley.id];
       if (!el) continue;
@@ -856,10 +891,18 @@ export class Escenario {
       if (p.vuela) this.v3.set(p.mesh.position.x, p.mesh.position.y - 0.04, p.mesh.position.z);
       else this.v3.set(p.mesh.position.x, 0, p.z + (p.fila === 1 ? ESCALONADO : 0) + ETIQUETA_Z);
       this.v3.project(this.camera);
-      const sx = (this.v3.x * 0.5 + 0.5) * r.width;
-      const sy = (-this.v3.y * 0.5 + 0.5) * r.height + 4 + (p.fila === 1 ? ZIGZAG_PX : 0);
-      el.style.transform = `translate3d(${sx.toFixed(1)}px, ${sy.toFixed(1)}px, 0) translate(-50%, 0)`;
-      el.style.opacity = p.listo ? String(Math.min(1, p.uni.uFade.value)) : "0";
+      const sx = (this.v3.x * 0.5 + 0.5) * r.w;
+      const sy = (-this.v3.y * 0.5 + 0.5) * r.h + 4 + (p.fila === 1 ? ZIGZAG_PX : 0);
+      // solo se escribe si cambió: cada escritura cuesta recalcular estilo
+      if (Math.abs(sx - p.ultX) > 0.25 || Math.abs(sy - p.ultY) > 0.25) {
+        p.ultX = sx; p.ultY = sy;
+        el.style.transform = `translate3d(${sx.toFixed(1)}px, ${sy.toFixed(1)}px, 0) translate(-50%, 0)`;
+      }
+      const op = p.listo ? Math.min(1, p.uni.uFade.value as number) : 0;
+      if (Math.abs(op - p.ultOp) > 0.01) {
+        p.ultOp = op;
+        el.style.opacity = String(op);
+      }
     }
   }
 
@@ -898,6 +941,7 @@ export class Escenario {
     host.style.cursor = "";
     for (const p of this.personajes) {
       p.activo?.ef.terminar?.(p.activo.ctx);
+      p.picker.geometry.dispose();
       p.mesh.geometry.dispose();
       (p.mesh.material as THREE.Material).dispose();
       (p.reflejo?.material as THREE.Material | undefined)?.dispose();

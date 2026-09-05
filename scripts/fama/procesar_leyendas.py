@@ -35,7 +35,7 @@ OUT = ROOT / "public" / "fama" / "leyendas"
 META = ROOT / "src" / "lib" / "fama" / "leyendas-arte.json"
 REJILLA = RAW / "rejilla"
 
-ALTO = 1024          # alto final de la figura (px); ~2× lo que se ve en pantalla
+ALTO = 768           # alto final de la figura (px); en pantalla se ven a ~275 px
 MARGEN = 0.02        # aire alrededor de la silueta (fracción del alto)
 CAP_RELIEVE = 0.075  # a esta distancia del borde (fracción del alto) el relieve ya es 1
 

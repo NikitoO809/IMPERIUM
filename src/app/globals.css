@@ -1520,7 +1520,7 @@ body {
   pointer-events: auto;
   transform-origin: 50% 0;
   will-change: transform;
-  transition: opacity 0.9s var(--ease-fluid);
+  contain: layout style;
 }
 .ly-etiqueta::before {
   content: "";
@@ -1528,7 +1528,7 @@ body {
   height: 1px;
   margin-bottom: 5px;
   background: linear-gradient(90deg, transparent, rgba(227, 179, 65, 0.75), transparent);
-  transition: width 0.4s var(--ease-fluid), background 0.4s var(--ease-fluid);
+  transition: width 0.4s var(--ease-fluid), background 0.4s var(--ease-fluid), opacity 0.35s var(--ease-fluid);
 }
 .ly-nombre {
   font-family: var(--font-sans-imperium), system-ui, sans-serif;
@@ -1538,7 +1538,8 @@ body {
   line-height: 1.1;
   white-space: nowrap;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.95), 0 0 3px rgba(0, 0, 0, 0.9);
-  transition: color 0.3s var(--ease-fluid), text-shadow 0.3s var(--ease-fluid), transform 0.3s var(--ease-fluid);
+  transition: color 0.3s var(--ease-fluid), text-shadow 0.3s var(--ease-fluid),
+    transform 0.3s var(--ease-fluid), opacity 0.3s var(--ease-fluid);
 }
 .ly-guild {
   font-family: var(--font-mono-imperium), monospace;
@@ -1548,7 +1549,7 @@ body {
   text-transform: uppercase;
   color: rgba(227, 179, 65, 0.82);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.95);
-  transition: color 0.3s var(--ease-fluid);
+  transition: color 0.3s var(--ease-fluid), opacity 0.3s var(--ease-fluid);
 }
 .ly-etiqueta.is-on .ly-nombre,
 .ly-etiqueta:focus-visible .ly-nombre {
@@ -1559,10 +1560,13 @@ body {
 .ly-etiqueta.is-on .ly-guild,
 .ly-etiqueta:focus-visible .ly-guild { color: color-mix(in srgb, var(--c, var(--gold)) 55%, #fff); }
 
-/* cuando el ratón señala a alguien, los demás nombres se apagan un poco:
-   manda el personaje, no el texto */
-.ly-etiquetas.is-alguno .ly-etiqueta:not(.is-on) { opacity: 0.45; }
-.ly-etiqueta { transition: opacity 0.35s var(--ease-fluid); }
+/* Cuando el ratón señala a alguien, los demás nombres se apagan un poco:
+   manda el personaje, no el texto. Se aplica al TEXTO y no al botón porque la
+   opacidad del botón la escribe el motor en cada aparición (un estilo en línea
+   gana a esta regla y el atenuado no se vería). */
+.ly-etiquetas.is-alguno .ly-etiqueta:not(.is-on) .ly-nombre,
+.ly-etiquetas.is-alguno .ly-etiqueta:not(.is-on) .ly-guild { opacity: 0.42; }
+.ly-etiquetas.is-alguno .ly-etiqueta:not(.is-on)::before { opacity: 0.35; }
 .ly-etiqueta.is-on::before,
 .ly-etiqueta:focus-visible::before {
   width: 46px;
