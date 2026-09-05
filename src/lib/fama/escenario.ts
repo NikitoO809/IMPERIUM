@@ -2,10 +2,13 @@
 //
 // Una fila de personajes (planos con su render recortado, deformados por el
 // shader para que respiren y ondeen) sobre un suelo oscuro que los refleja,
-// con un resplandor dorado en el horizonte y motas de luz flotando. La cámara
-// hace un parallax suave con el ratón; al posarlo sobre un personaje, este
-// hace su gesto (efectos.ts). Se dibuja solo cuando la sección está a la
-// vista y se apaga con la pestaña oculta.
+// con un resplandor dorado en el horizonte y motas de luz flotando.
+// La cámara NO se mueve: el ratón desplaza unos pocos píxeles cada capa
+// (fondo, fila de atrás, fila de delante) y esa diferencia es la que da la
+// profundidad. Al posar el ratón sobre un personaje, el resto baja de brillo,
+// él da un paso al frente, se enciende una luz a su espalda y hace su gesto
+// (efectos.ts). Se dibuja solo cuando la sección está a la vista y se apaga
+// con la pestaña oculta.
 import * as THREE from "three";
 import { ALTO_LEYENDA as H, FRAGMENT, GESTO, VERTEX } from "./shaders";
 import { EFECTOS, type CtxEfecto, type Efecto } from "./efectos";
@@ -38,6 +41,10 @@ type Personaje = {
   ofs: { y: number; z: number }; // desplazamiento temporal que pide un gesto (picado, elevarse)
   fila: 0 | 1; // 0 = delante, 1 = detrás
   escala: number;
+  dimBase: number;    // su brillo propio (los de los extremos van algo apagados)
+  atenuar: number;    // 0..1 · baja cuando el ratón señala a OTRO
+  hoverZ: number;     // el señalado da un paso hacia la cámara
+  pxParallax: number; // píxeles que se mueve con el parallax (más cerca, más)
   alpha: Uint8Array | null;
   hover: number;
   hovered: boolean;
@@ -89,6 +96,8 @@ export class Escenario {
   private readonly ray = new THREE.Raycaster();
   private readonly loader = new THREE.TextureLoader();
   private readonly motas: { points: THREE.Points; mat: THREE.ShaderMaterial };
+  private foco: THREE.Sprite | null = null; // la luz que se enciende detrás del señalado
+  private mundoPorPixel0 = 0.01;            // cuánto mundo mide un píxel a la altura de la fila
   private raf = 0;
   private visible = false;
   private cargando = false;
@@ -143,6 +152,17 @@ export class Escenario {
     this.crearHorizonte();
     this.motas = this.crearMotas(lowEnd ? 70 : 150, suave);
     this.crearPersonajes(suave);
+
+    // Una sola luz para todos: se coloca detrás del personaje que señala el
+    // ratón y se enciende con su color. Barata (un sprite) y hace el trabajo
+    // de separarlo del fondo.
+    const foco = new THREE.Sprite(
+      new THREE.SpriteMaterial({ map: suave, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending })
+    );
+    foco.renderOrder = 2;
+    foco.visible = false;
+    this.scene.add(foco);
+    this.foco = foco;
 
     this.ro = new ResizeObserver(() => this.redimensionar());
     this.ro.observe(o.host);
@@ -499,7 +519,9 @@ export class Escenario {
         uni.uAngulo.value = (grados * Math.PI) / 180 * (t.x >= p.x ? 1 : -1);
       }
 
-      this.personajes.push({ ley, mesh, reflejo, charco, halo, uni, ancho, x, y, z, vuela: !!ley.vuela, ofs: { y: 0, z: 0 }, fila, escala, alpha: null, hover: 0, hovered: false, activo: null, listo: false, nacido: 0 });
+      this.personajes.push({ ley, mesh, reflejo, charco, halo, uni, ancho, x, y, z, vuela: !!ley.vuela, ofs: { y: 0, z: 0 }, fila, escala, dimBase: uni.uDim.value as number, atenuar: 1, hoverZ: 0,
+        pxParallax: ley.vuela ? 9 : fila === 0 ? 7 : 4,
+        alpha: null, hover: 0, hovered: false, activo: null, listo: false, nacido: 0 });
     });
   }
 
@@ -571,6 +593,7 @@ export class Escenario {
     this.distancia = d;
     const visibleHalf = d * tanH * this.camera.aspect;
     this.panMax = Math.max(0, this.halfW - visibleHalf);
+    this.mundoPorPixel0 = (2 * this.distancia * tanH * this.camera.aspect) / w;
     const escalaPx = h / (2 * tanH);
     this.luz.escala = escalaPx;
     this.materia.escala = escalaPx;
@@ -702,6 +725,12 @@ export class Escenario {
       const objetivo = p.hovered ? 1 : 0;
       p.hover += (objetivo - p.hover) * (1 - Math.exp(-dt * 7));
       p.uni.uHover.value = p.hover;
+      // cuando el ratón señala a alguien, el resto baja de brillo…
+      const atObjetivo = this.hoverActual && !p.hovered ? 0.58 : 1;
+      p.atenuar += (atObjetivo - p.atenuar) * (1 - Math.exp(-dt * 6));
+      p.uni.uDim.value = p.dimBase * p.atenuar;
+      // …y el señalado da un paso hacia la cámara
+      p.hoverZ += ((p.hovered ? 0.3 : 0) - p.hoverZ) * (1 - Math.exp(-dt * 6));
       if (p.charco) {
         const mat = p.charco.material as THREE.SpriteMaterial;
         mat.opacity = ((p.ley.lider ? 0.3 : 0.16) + p.hover * 0.35) * (p.uni.uFade.value as number);
@@ -755,18 +784,50 @@ export class Escenario {
 
     if (this.ndc && this.mouse.dentro && !this.arrastre) this.ponerHoverRaton(this.buscar(this.ndc));
 
+    // quien pide menos movimiento no tiene parallax (el hover sí: es respuesta a su gesto)
+    const movRaton = this.reduce ? 0 : this.mouse.x;
+    let senal: Personaje | null = null;
     for (const p of this.personajes) {
       p.uni.uTime.value = idle;
       if (p.listo && p.uni.uFade.value < 1) p.uni.uFade.value = Math.min(1, Math.max(0, (ahora - p.nacido) / 0.9));
       // los que vuelan se mecen en el aire (y su reflejo con ellos, al revés);
       // los gestos pueden desplazar a cualquiera
       const bob = p.vuela && !this.reduce ? Math.sin(ahora * 1.1 + (p.uni.uSeed.value as number) * 9) * 0.07 : 0;
-      p.mesh.position.set(p.x, p.y + bob + p.ofs.y, p.z + p.ofs.z);
+      // Parallax: al mover el ratón a los lados, cada capa se desplaza unos
+      // pocos píxeles, y las de delante más que las del fondo. La cámara NO
+      // se mueve: lo que da la profundidad es la diferencia entre capas.
+      const par = movRaton * p.pxParallax * this.mundoPorPixel0 * ((this.distancia - p.z) / this.distancia);
+      const px = p.x + par;
+      const pz = p.z + p.ofs.z + p.hoverZ;
+      const py = p.y + bob + p.ofs.y;
+      p.mesh.position.set(px, py, pz);
+      if (p.reflejo) p.reflejo.position.set(px, p.y, pz);
+      if (p.charco) p.charco.position.set(px, (p.vuela ? 0 : p.y) + 0.02, pz + 0.15);
       if (p.halo) {
         // el halo sigue al líder, a la altura del pecho, y late despacio
-        p.halo.position.set(p.x, p.y + bob + p.ofs.y + H * p.escala * 0.5, p.z + p.ofs.z - 0.15);
+        p.halo.position.set(px, py + H * p.escala * 0.5, pz - 0.15);
         (p.halo.material as THREE.SpriteMaterial).opacity = (0.26 + 0.08 * Math.sin(ahora * 1.3)) * (p.uni.uFade.value as number);
       }
+      if (!senal || p.hover > senal.hover) senal = p;
+    }
+    // la luz de fondo se muda al personaje señalado y se apaga sola al salir
+    if (this.foco) {
+      if (senal && senal.hover > 0.004) {
+        const m = this.foco.material as THREE.SpriteMaterial;
+        m.color.set(senal.ley.color);
+        m.opacity = senal.hover * 0.34 * (senal.uni.uFade.value as number);
+        this.foco.visible = true;
+        this.foco.scale.set(2.6 * senal.escala, 3.5 * senal.escala, 1);
+        this.foco.position.set(senal.mesh.position.x, senal.mesh.position.y + H * senal.escala * 0.5, senal.mesh.position.z - 0.4);
+      } else if (this.foco.visible) {
+        this.foco.visible = false;
+      }
+    }
+    if (this.paisaje?.mesh.visible) {
+      // el fondo también se mueve, pero mucho menos: es lo que está más lejos
+      const parF = movRaton * 1.6 * this.mundoPorPixel0 * ((this.distancia - PAISAJE_Z) / this.distancia);
+      this.paisaje.mesh.position.x = parF;
+      this.paisaje.espejo.position.x = parF;
     }
     this.pasoGestos(dt, ahora);
     this.luz.actualizar(dt, ahora);
@@ -793,7 +854,7 @@ export class Escenario {
       // la fila de atrás bajan una línea (zigzag) para no pisarse. Las de los
       // que vuelan van justo bajo sus pies, y se mecen con ellos.
       if (p.vuela) this.v3.set(p.mesh.position.x, p.mesh.position.y - 0.04, p.mesh.position.z);
-      else this.v3.set(p.x, 0, p.z + (p.fila === 1 ? ESCALONADO : 0) + ETIQUETA_Z);
+      else this.v3.set(p.mesh.position.x, 0, p.z + (p.fila === 1 ? ESCALONADO : 0) + ETIQUETA_Z);
       this.v3.project(this.camera);
       const sx = (this.v3.x * 0.5 + 0.5) * r.width;
       const sy = (-this.v3.y * 0.5 + 0.5) * r.height + 4 + (p.fila === 1 ? ZIGZAG_PX : 0);
@@ -842,6 +903,10 @@ export class Escenario {
       (p.reflejo?.material as THREE.Material | undefined)?.dispose();
       p.charco?.material.dispose();
       p.halo?.material.dispose();
+    }
+    if (this.foco) {
+      this.scene.remove(this.foco);
+      this.foco.material.dispose();
     }
     this.flashes.dispose();
     this.luz.dispose();

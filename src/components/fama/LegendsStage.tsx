@@ -77,7 +77,7 @@ export function LegendsStage({ leyendas }: { leyendas: Leyenda[] }) {
       <canvas ref={canvas} className="ly-canvas" aria-hidden />
 
       {/* nombre y guild bajo cada personaje; el motor los coloca en cada frame */}
-      <div className="ly-etiquetas">
+      <div className={`ly-etiquetas${hover ? " is-alguno" : ""}`}>
         {leyendas.map((l) => (
           <button
             key={l.id}

@@ -1538,7 +1538,7 @@ body {
   line-height: 1.1;
   white-space: nowrap;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.95), 0 0 3px rgba(0, 0, 0, 0.9);
-  transition: color 0.3s var(--ease-fluid), text-shadow 0.3s var(--ease-fluid);
+  transition: color 0.3s var(--ease-fluid), text-shadow 0.3s var(--ease-fluid), transform 0.3s var(--ease-fluid);
 }
 .ly-guild {
   font-family: var(--font-mono-imperium), monospace;
@@ -1548,12 +1548,21 @@ body {
   text-transform: uppercase;
   color: rgba(227, 179, 65, 0.82);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.95);
+  transition: color 0.3s var(--ease-fluid);
 }
 .ly-etiqueta.is-on .ly-nombre,
 .ly-etiqueta:focus-visible .ly-nombre {
   color: var(--c, var(--gold));
   text-shadow: 0 0 16px color-mix(in srgb, var(--c, var(--gold)) 75%, transparent), 0 1px 14px rgba(0, 0, 0, 0.95);
+  transform: translateY(-1px);
 }
+.ly-etiqueta.is-on .ly-guild,
+.ly-etiqueta:focus-visible .ly-guild { color: color-mix(in srgb, var(--c, var(--gold)) 55%, #fff); }
+
+/* cuando el ratón señala a alguien, los demás nombres se apagan un poco:
+   manda el personaje, no el texto */
+.ly-etiquetas.is-alguno .ly-etiqueta:not(.is-on) { opacity: 0.45; }
+.ly-etiqueta { transition: opacity 0.35s var(--ease-fluid); }
 .ly-etiqueta.is-on::before,
 .ly-etiqueta:focus-visible::before {
   width: 46px;
